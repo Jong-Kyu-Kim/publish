@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html dir="ltr" lang="ko" class="ie7"><![endif]-->
+<!--[if IE 8]><html dir="ltr" lang="ko" class="ie8"><![endif]-->
+<!--[if IE 9]><html dir="ltr" lang="ko" class="ie9"><![endif]-->
+<html dir="ltr" lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1200, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.min.js"></script>
+	<script src="../../js/html5shiv.js"></script>
+	<script src="../../js/core.js"></script>
+	<script src="../../js/ui.js"></script>
+    <script src="../../js/calendar.js"></script>
+</head>
+ 
+<body>
+	<header>
+		<div class="inner_header">
+			<a href="#container" class="skip_nav">본문 바로가기</a>
+			<a href="#" class="logo"><h1><img src="../../images/common/logo.png" alt="Lotte rent-a-car"></h1></a>
+			<a href="#" class="side_logo"><img src="../../images/common/logo_hertz.png" alt="hertz"></a>
+			<ul id="extra_menu" class="extra_menu">
+				<!--// 비회원일 경우 -->
+				<li class="login"><a href="#">Login</a></li>
+				<li class="join"><a href="#">Register</a></li>
+
+				<!--// 회원일 경우 -->
+				<li class="logout"><a href="#">My Reservation</a></li>
+				<li class="mypage_quick">
+					<a class="btn_dropdown_menu pr0" href="#">Mypage</a>
+				</li>
+				<li class="language"><a href="#">KOREAN</a></li>
+			</ul>
+		</div>
+		<div id="gnb" class="gnb">
+			<ul class="menus">
+				<li class="menu idx1">
+					<a href="#">Reservations</a>
+				</li>
+				<li class="menu idx2">
+					<a href="#">Car rental</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">Rental information </a>
+							<ul>
+								<li>
+									<a href="#">Rental Cost Information</a>
+								</li>
+								<li>
+									<a href="#">Additional Rate</a>
+								</li>
+								<li>
+									<a href="#">Rental information for foreigner</a>
+								</li>
+								<li>
+									<a href="#">Overseas Reservation</a>
+								</li>
+								<li>
+									<a href="#">Chauffeured Service</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="menu idx3">
+					<a href="#">Location</a>
+				</li>
+			</ul>
+		</div>
+		<div class="gnb_open"></div>
+		<ul id="breadcrumb" class="breadcrumb">
+			<li class="path home"><a href="#"></a></li>
+			<li class="path">
+				<a class="dropdown_path_btn" href="#">Car rental</a>
+				<div class="dropdown_path">
+					<a class="active" href="#">빌릴 때</a>
+					<a href="#">살 때</a>
+					<a href="#">팔 때</a>
+					<a href="#">기기 장비렌탈</a>
+					<a href="#">이벤트</a>
+					<a href="#">고객센터</a>
+				</div>
+			</li>
+			<li class="path">
+				<a class="dropdown_path_btn" href="#">Rental information</a>
+				<div class="dropdown_path">
+					<a class="active" href="#">빌릴 때</a>
+					<a href="#">살 때</a>
+					<a href="#">팔 때</a>
+					<a href="#">기기 장비렌탈</a>
+					<a href="#">이벤트</a>
+					<a href="#">고객센터</a>
+				</div>
+			</li>
+			<li class="path">
+				<a class="dropdown_path_btn" href="#">Rental Requirements</a>
+				<div class="dropdown_path">
+					<a class="active" href="#">빌릴 때</a>
+					<a href="#">살 때</a>
+					<a href="#">팔 때</a>
+					<a href="#">기기 장비렌탈</a>
+					<a href="#">이벤트</a>
+					<a href="#">고객센터</a>
+				</div>
+			</li>
+		</ul>
+	</header>
+	<div id="container">
+		<!-- content -->
+		<article class="content">
+			<h2>Rental information </h2>
+			<div class="content">
+                <!-- 본문삽입 -->  
+                <div class="wrap_tab">
+                    <ul class="tab_menu mb50">
+                        <li class="active"><a href="#tab_useinfo">Rental Requirements</a></li>
+                        <li><a href="#tab_rentinfo">Rental/Return Procedures</a></li>
+                        <li><a href="#tab_insurance">Insurance & Other Coverages</a></li>
+                        <li><a href="#tab_etc">Other information</a></li>
+                    </ul>
+                    <div class="tab_content" id="tab_useinfo">
+                        <!-- 이용 안내 -->
+                        <div class="wrap_useinfo">
+                            <div class="wrap_stab">
+                                <ul class="stab_menu mb50">
+                                    <li class="active"><a href="#stab_inland">Mainland</a></li>
+                                    <li><a href="#stab_jejuIsland">Jeju</a></li>
+                                </ul>
+                                <div class="stab_content" id="stab_inland">
+                                    <h3>단기렌터카란?</h3>
+                                    <p class="txt">For your vacation or business trip , Rent a car for minimum 1 hour to 1 month Choose LOTTE rent-a-car And enjoy the nation’s largest sales network!</p>
+
+                                    <div class="rent_about1">
+                                        <h4>Online Reservation Special Promotion</h4>
+                                        <ul class="rent_about">
+                                            <li class="img1"><p>Additional 5,000won discount for prepaid reservations</p></li>
+                                            <li class="img2"><p>Up to 60% off for online reservations</p></li>
+                                        </ul>
+                                    </div>
+                                    <div class="rent_about2">
+                                        <h4>Nation’s Largest Vehicle Inventory </h4>
+                                        <ul class="rent_about">
+                                            <li class="img3"><p>LOTTE rent-a-car : 110,000 vehicles</p></li>
+                                            <li class="img4"><p>Other : 50,000 vehicles</p></li>
+                                        </ul>
+                                    </div>
+                                    <div class="rent_about3">
+                                        <h4>Variety of Amenities for Your Convenience</h4>
+                                        <ul class="rent_about">
+                                            <li class="img5"><p>Free Navigation</p></li>
+                                            <li class="img6"><p>Large Inventory of Car Seats</p></li>
+                                            <li class="img7"><p>LOTTE Smart-Pick Service</p></li>
+                                            <li class="img8"><p>Delivery Service</p></li>
+                                        </ul>
+                                    </div>
+                                </div> 
+
+                                <div class="stab_content" id="stab_jejuIsland">
+                                    <h3>LOTTE rent-a-car Jeju Auto House Information</h3>
+                                    <p class="txt">제주 여행, 롯데렌터카로 시작해 보세요. 아름다운 섬 제주에서도 롯데렌터카가 고객님을 찾아갑니다.</p>
+
+                                    <div class="rent_about1">
+                                        <h4>Online Reservation Special Promotion</h4>
+                                        <ul class="rent_about">
+                                            <li class="img1"><p>Additional 5,000won discount for prepaid reservations</p></li>
+                                            <li class="img2"><p>Up to 60% off for online reservations</p></li>
+                                        </ul>
+                                    </div>
+                                    <div class="rent_about2">
+                                        <h4>Nation’s Largest Vehicle Inventory</h4>
+                                        <ul class="rent_about">
+                                            <li class="img3"><p>LOTTE rent-a-car : 110,000 vehicles</p></li>
+                                            <li class="img4"><p>Other : 50,000 vehicles</p></li>
+                                        </ul>
+                                    </div>
+                                    <div class="rent_about3">
+                                        <h4>Variety of Amenities for Your Convenience</h4>
+                                        <ul class="rent_about">
+                                            <li class="img5"><p>Free Jeju Navigation</p></li>
+                                            <li class="img6"><p>Large Inventory of Car Seats</p></li>
+                                            <li class="img7"><p>LOTTE Smart-Pick Service</p></li>
+                                        </ul>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <!-- // 이용 안내 -->
+                    </div>
+                    <div class="tab_content" id="tab_rentinfo">
+                        <!-- 대여 안내 -->
+                        <div class="wrap_rentinfo">
+                            <h3>Rental Requirements</h3>
+                            <ul class="qualification">
+                                <li class="icon1">
+                                    <strong>General Requirements (up to 9 passengers)</strong>
+                                    <ul class="txt_list">
+                                        <li class="gray f14">Minimum 21 years of age</li>
+                                        <li class="gray f14">Valid international driving permit, Class 2 or higher</li>
+                                        <li class="gray f14">The international driving permit must have been issued at least one (1) year prior to the rental date</li>
+                                    </ul>
+                                </li>
+                                <li class="icon2">
+                                    <strong>Van Rental Requirements (11 passengers, 12 passengers)</strong>
+                                    <ul class="txt_list">
+                                        <li class="gray f14">Minimum 21 years of age</li>
+                                        <li class="gray f14">Valid international driving permit, Class 1 or higher</li>
+                                        <li class="gray f14">The international driving permit must have been issued at least one (1) year prior to the rental date</li>
+                                    </ul>
+                                </li>
+                                <li class="icon3">
+                                    <strong>15 passengers (CAUNTY Limousine)</strong>
+                                    <ul class="txt_list">
+                                        <li class="gray f14">Must rent with a driver</li>
+                                        <li class="gray f14">Inquiry : <span class="txt_point">02-547-8000</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <ul class="txt_list mb50">
+                                <li class="red">Under the Passenger Transport Act Regulations Article 67, LOTTE rent-a-car provides only vehicles for 15 passengers or less.</li>
+                                <li class="red">The driver's license must be valid for the entire rental period.</li>
+                                <li class="red">In case of the international driving permit class 1, the license expires a year after the aptitude test; and rental is not available with the expired international driving permit.</li>
+                            </ul>
+                             
+                            
+                            <div class="wrap_stab">
+                                <ul class="stab_menu mb50">
+                                    <li class="active"><a href="#stab_inland2">Mainland</a></li>
+                                    <li><a href="#stab_jejuIsland2">Jeju</a></li>
+                                </ul>
+                                <div class="stab_content" id="stab_inland2">
+                                    <h3 class="mb40">Rental Procedures</h3>
+                                    <ul class="rent_process">
+                                        <li class="icon1">
+                                            <strong>01. Visit a local branch</strong>
+                                            <ul class="txt_list">
+                                                <li class="gray f14">
+                                                    On the day of car pick-up, visit the branch and give our agent in charge your reservation number or name under which the reservation is made
+                                                </li>
+                                                <li class="gray f14">
+                                                    If you are foreigner, Passport and international driving permit are required for identification.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="icon2">
+                                            <strong>02. Confirm customer information</strong>
+                                            <ul class="txt_list">
+                                                <li class="gray f14">
+                                                    Check the reservation information and present your international driving permit so that we can confirm the customer information for preparing the Car rental Agreement.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="icon3">
+                                            <strong>03. Make a payment</strong>
+                                            <ul class="txt_list">
+                                                <li class="gray f14">       
+                                                    After confirmation is completed on rental period, type of car, and options, you are asked to pay the stated rental fee. * Your own credit card is the first priority as means of payment.
+                                                </li>
+                                                <li class="gray f14">
+                                                    You will get back your ID card, international driving permit, credit card, etc, which you presented to the agency in charge
+                                                </li>
+                                            </ul>
+                                         </li>
+                                         <li class="icon4">
+                                             <strong>04. Sign contract</strong>
+                                             <ul class="txt_list">
+                                                <li class="gray f14"> 
+                                                    Check the car in the parking garage ready to go, and execute and sign the car rental agreement guided by our agent.
+                                                </li>
+                                                <li class="gray f14">
+                                                    Once you receive a copy of the Agreement and the key, you are ready to use the car.
+                                                </li>  
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    
+                                    <h3 class="mb40">Return Procedures</h3>
+                                    <ul class="rent_process">
+                                        <li class="icon1">
+                                            <strong>01. Visit a local branch</strong>
+                                            <ul class="txt_list">
+                                                <li class="gray f14">
+                                                    Park the car in the parking garage of the branch where the car is to be returned, stop the engine, take out your belongings and enter the office carrying the car key with you.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="icon5">
+                                            <strong>02. Confirm the final documents and return the key</strong>
+                                            <ul class="txt_list">
+                                                <li class="gray f14">
+                                                    Hand over the key and the copy of the car rental agreement to the agent in charge.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="icon6">
+                                            <strong>03. Vehicle Inspection</strong>
+                                            <ul class="txt_list">
+                                                <li class="gray f14">       
+                                                    Accompany the agent in charge to the parking place, who will check the interior and exterior, operation and the fuel gauge of the car.
+                                                </li>
+                                            </ul>
+                                         </li>
+                                         <li class="icon7">
+                                             <strong>04. Assess for additional fees</strong>
+                                             <ul class="txt_list">
+                                                <li class="gray f14"> 
+                                                    In case of late returning, any additional costs such as loss or damage to the car, and traffic fines, you are asked to pay additional fee as relevant.
+                                                </li>
+                                                <li class="gray f14">
+                                                    Once the process for returning the rental car is completed, you may leave as guided by the agent in charge.
+                                                </li>  
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    
+                                    
+                                </div>
+                                
+                                <div class="stab_content" id="stab_jejuIsland2">
+                                    <h3 class="mb40">Rental Procedures</h3>
+                                    <ul class="rent_process">
+                                        <li class="icon9">
+                                            <strong>01. Jeju Airport(Towards GATE #2)</strong>
+                                            <ul class="txt_list">
+                                                <li class="gray f14">
+                                                    Confirm reservation at LOTTE rent-a-car kiosk at Jeju Airport (Towards GATE #2) 
+                                                </li> 
+                                            </ul>
+                                        </li>
+                                        <li class="icon8">
+                                            <strong>02. Jeju location shuttle bus</strong>
+                                            <ul class="txt_list">
+                                                <li class="gray f14">
+                                                    Hop on the free LOTTE rent-a-car Jeju location shuttle bus ( Gate #5 in front of the international terminal )
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="icon4">
+                                            <strong>03. Sign the contract</strong>
+                                            <ul class="txt_list">
+                                                <li class="gray f14">       
+                                                    Get off the shuttle bus at LOTTE rent-a-car Jeju location, verify the lessee’s identity and sign the contract(Please bring your international driving permit and credit card)
+                                                </li> 
+                                            </ul>
+                                         </li>
+                                         <li class="icon6">
+                                             <strong>04. Inspect the rented vehicle</strong>
+                                             <ul class="txt_list">
+                                                <li class="gray f14"> 
+                                                    After making payment, inspect the rented vehicle at the LOTTE rent-a-car Jeju location parking lot
+                                                </li>  
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    
+                                    <h3 class="mb40">Return Procedures</h3>
+                                    <ul class="rent_process">
+                                        <li class="icon1">
+                                            <strong>01. Go to jeju location</strong>
+                                            <ul class="txt_list">
+                                                <li class="gray f14">
+                                                    Go to LOTTE rent-a-car Jeju location to return your rental vehicle
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="icon6">
+                                            <strong>02. Inspect the vehicle</strong>
+                                            <ul class="txt_list">
+                                                <li class="gray f14">
+                                                    Staff will guide you to park the vehicle to a designated spot, then the staff will assess fuel and mileage, and inspect the vehicle 
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="icon8">
+                                            <strong>03. Jeju location shuttle bus</strong>
+                                            <ul class="txt_list">
+                                                <li class="gray f14">       
+                                                    After confirming the return, depart to Jeju airport via free LOTTE rent-a-car Jeju location shuttle bus
+                                                </li>
+                                            </ul>
+                                        </li> 
+                                    </ul> 
+                                </div> 
+                                
+                            </div> 
+                        </div> 
+                        <!-- // 대여 안내 -->
+                    </div>
+
+                    <div class="tab_content" id="tab_insurance">
+                        <!-- 보험 및 보상 -->
+                        <div class="wrap_coverage">
+                            <h3>Insurance & Other Coverages in the Event of Auto Accident</h3>
+                            <p class="txt1">LOTTE rent-a-car endeavors to protect all customers in case of auto accidents through the insurance and coverages below.</p>
+                            
+                            <h3>Auto Accident Car Damage Waiver (CDW)</h3>
+                            <p class="txt1">All losses or damages to the rented vehicle during the rental period, for any reason attributable to the customer, is the customer’s responsibility.<br> However, Car Damage Waiver (CDW) is an optional service which offers protection from financial liability for losses or damages to the rented vehicle through your fault.</p>
+                            
+                            <h3>Deductibles in Auto Accident Car Damage Waiver</h3>
+                            <p class="txt1 mb30">Paying 50,000- 300,000 won per accident can protect you from the liability for losses or damages to the car, regardless of the amount. However, the fee may vary by Car Damage Waiver Deductible policy</p>
+                            
+                            <div class="rent_about1">
+                                <h4>Types of Deductibles Policy</h4>
+                                <ul class="rent_about">
+                                    <li class="img1"><p>Domestic (Korean) Vehicle</p></li>
+                                    <li class="img2"><p>Imported Vehicle </p></li>
+                                </ul>
+                                <ul class="txt_list mt20">
+                                    <li class="red">Depending on your deductible policy, you will be responsible for the cost of the vehicle damage if the repair cost is less than the
+deductible. If the cost of the damage exceeds the deductible, you are only responsible for your policy deductible.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="rent_about2">
+                                <h4>Jeju Deductible Policy</h4>
+                                <ul class="rent_about">
+                                    <li class="img1"><p>Domestic (Korean) Vehicle</p></li>
+                                    <li class="img2"><p>Imported Vehicle</p></li>
+                                </ul>
+                                <ul class="txt_list mt20">
+                                    <li class="red">Regardless of the cost of loss or damage, Car Damage Waiver (CDW) protects you and relieves of the liability for loss or damage to the car.</li>
+                                </ul>
+                            </div>
+                            
+                            <h3 class="noBorder mb5">Liability Exemption Policy at 7 Mainland Airport Locations</h3>
+                            <div class="grid mb70">
+                                <table class="tb_row">
+                                    <caption></caption>
+                                    <colgroup>
+                                        <col style="width:200px">
+                                        <col style="width:auto"> 
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Available Locations</th>
+                                            <td>Gimpo International Airport, Incheon International Air port, Gimhae International Airport, Sacheon Airport, Pohang Airport, Gwangju Airport, Yeosu Airport locations
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Customer Liability</th>
+                                            <td>Liability Exemption, 50,000won, 300,000won are available</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h3>Vehicle Repair Costs</h3>
+                            <p class="txt1 mb35">All losses or damages to the rented vehicle, for any reason attributable to the customer, during the rental period isthe customer’s responsibility. (However, Car Damage Waiver (CDW) is an optional service which offers protection from financial liability for losses or damages to the rented vehicle through your fault. )</p>
+                            
+                            <h4>Compensation for an Inactive Vehicle</h4>
+                            <p class="txt1">Whether a customer signs up for CDW or not, the customer is responsible for losses caused by disruption in car rentalservice for the duration of repair. In such case, the customer will be charged for compensation for an inactive vehicle, which is 50% of normal rental fee of the damaged vehicle.</p>
+                            
+                            
+                            
+                        </div>
+                        <!-- // 보험 및 보상 -->
+                    </div>
+
+                    <div class="tab_content" id="tab_etc">
+                        <!-- 기타  -->
+                        <div class="wrap_rent_etc">
+                            <h3>Other information</h3>
+                            <p class="txt1">롯데렌터카를 좀 더 스마트하게 이용하실 수 있는 기타 사항들을 안내해 드립니다.</p>
+                            <ul>
+                                <li class="icon1">
+                                    <strong>Traffic Regulations</strong>
+                                    <ul class="txt_list">
+                                        <li class="black f14">You will be liable as the lessee, driver, or operator for any penalty charge incurred from traffic violations.</li>
+                                        <li class="black f14">In the event of traffic violation, you may not be able to partially or entirely benefit from insurance and other coverage.</li>
+                                    </ul>
+                                </li>
+                                <li class="icon2">
+                                    <strong>Fuel & Mileage</strong>
+                                    <ul class="txt_list">
+                                        <li class="black f14">Lessee is responsible for the fueling charge.</li>
+                                        <li class="black f14">All vehicles are rented with Full Tank (full amount of gas) and must be returned with Full Tank as well.</li>
+                                        <li class="black f14">Unlimited driving mileage</li>
+                                    </ul>
+                                </li>
+                                <li class="icon3">
+                                    <strong>Extension of the Contract</strong>
+                                    <ul class="txt_list">
+                                        <li class="black f14">A rental location’s prior consent is required if the lessee needs to extend the contract during the rental period.</li>
+                                        <li class="black f14">In such case, the lessee is responsible for any additional fees.</li>
+                                        <li class="black f14">In the event that the lessee extends the rental period without LOTTE’s prior consent, the lessee may not be able to partially or entirely benefit from surance and other coverage.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                        <!-- // 기타  -->
+                    </div>
+
+                </div>
+                <!--// 본문삽입 --> 
+            </div>
+		</article>
+	</div>
+	<footer>
+		<div class="inner_footer">
+			<div class="sitemap">
+				<ul>
+					<li><a href="#">COMPANY</a> ㅣ</li>
+					<li><a href="#">USER AGREEMENT</a> ㅣ</li>
+					<li><a href="#">CONTACT US</a></li>
+				</ul>
+			</div>
+
+			<div class="sns">
+				<ul>
+					<li>
+						<a class="twitter" href="#" target="_blank"><img src="../../images/common/img_footer_sns_twitter.png"></a>
+					</li>
+					<li>
+						<a class="facebook" href="#" target="_blank"><img src="../../images/common/img_footer_sns_facebook.png"></a>
+					</li>
+					<li>
+						<a class="blog" href="#" target="_blank"><img src="../../images/common/img_footer_sns_blog.png"></a>
+					</li>					
+				</ul>
+			</div>
+
+			<div class="information">
+				<span class="entrepreneur_info">
+					LOTTE rental co.,ltd. | President : Pyo, Hyun-Myung | Business Registration # : 214-87-79183
+				</span>
+				<span class="address">Communication Service # : 2010-Gyunggi Anyang 420 | Address : 8F Shinwonvision Tower 898. Hogye-dong, Dongan-Gu, Anyang </span>
+				<span class="phone">Main Contact 1588-1230 | FAX 02-2141-9022</span>
+				<span class="copyright">copyright ⓒ 2016 LOTTE rental co.ltd.All Rrights Reserved.</span>
+			</div>
+
+			<div class="certifications">
+				<ul>
+					<li>
+						<img src="../../images/common/img_footer_cert_1.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_2.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_3.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_4.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_5.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_6.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_7.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_8.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_9.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_10.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_11.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_12.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_13.png">
+					</li>	
+				</ul>
+			</div>
+		
+			<div class="big-banner">
+				<img src="../../images/common/img_footer_big_banner.png">
+			</div>
+		</div>
+	</footer>
+    
+    
+</body>
+</html>

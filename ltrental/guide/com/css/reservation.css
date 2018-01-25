@@ -1,0 +1,465 @@
+@charset "utf-8";
+
+/****************************************/
+/*	Name: LOTTE HOTEL
+/*	PART: SITE COMMON STYLE
+/*	Version: 1.0
+/*	Author: LeeYumi
+/****************************************/
+
+/*Float Release*/
+.mem_step,
+.step_lst,
+.splitSec,
+.lst_select,
+.box_calendar .wrap,
+.dateSelect,
+.infoCon dl,
+.titArea,
+.questInfo,
+.tblA_wrap,
+.tblB_wrap,
+.questTit,
+.reserv_opt,
+.conFview .total,
+.resrv_inquiry,
+.inqArea,
+.infoBox,
+.infoBox dl{*zoom:1;}
+
+.mem_step:after,
+.step_lst:after,
+.splitSec:after,
+.lst_select:after,
+.box_calendar .wrap:after,
+.dateSelect:after,
+.infoCon dl:after,
+.titArea:after,
+.questInfo:after,
+.questTit:after,
+.reserv_opt:after,
+.conFview .total:after,
+.resrv_inquiry:after,
+.inqArea:after,
+.infoBox dl:after{display:block; content:""; clear:both;}
+
+
+/* rev_layout */
+.scroll{overflow-y:auto; overflow-x:hidden;}
+.splitSec{border:1px solid #e8e8e8; border-left:none;}
+.splitSec .section, .specialCode{position:relative; margin:24px 20px 10px;}
+#reservation .splitSec .section, .specialCode{margin:14px 20px 0px;}
+.splitSec > div{position:relative; float:left; height:507px; border-left:1px solid #e8e8e8;}
+#reservation .splitSec > div {height:455px;}
+.splitSec.infono > div{height:608px;}
+.splitSec .col3{width:238px;}
+.splitSec .col4{width:318px;}
+.splitSec .col4.first{width:320px;}
+.splitSec .col6{width:480px;}
+.splitSec .col6.first{width:477px;}
+.splitSec .col8{width:639px;}
+.splitSec .col9{width:719px;}
+
+/* title */
+.resrv_cont h2.hide{position:absolute; text-indent:-9999px;}
+.resrv_cont .tit3dep, .resrv_cont .titArea.base{font-size:14px; margin-bottom:25px;}
+#reservation .resrv_cont .tit3dep, .resrv_cont .titArea.base{margin-bottom:5px;}
+.resrv_cont .tit3dep .titBot{display:block; margin-top:11px; font-size:11px; color:#666; font-weight:normal;}
+#reservation .resrv_cont .tit3dep .titBot{margin:5px 0 10px;}
+.resrv_cont .tit4dep{margin-bottom:7px; font-size:13px; color:#222; font-weight:bold;}
+.titArea{margin-bottom:15px;}
+#reservation .titArea{margin-bottom:5px;}
+.titArea .tit3dep{float:left; margin-bottom:0;}
+.titArea .right{float:right;}
+.conFview dt, .questInfo dt{font-size:15px; text-decoration:underline; color:#000;}
+.resrv_cont .stit, .reserv_opt dt,
+.roomNum table tbody tr th span,
+.optSt1 .tbl_wrapA table tbody tr th span,
+.specialCode dt{font-weight:bold; color:#000; padding-left:8px; background:url(/front/img/com/bg_dotlist_3x3_999.gif) 0 6px no-repeat;}
+/* essential */
+.es, .dCheck{color:#ed1c24;}
+.titArea .es, .titArea .right .txt{display:block; padding-top:3px; font-weight:normal;}
+.titArea .btn_set+.es{display:inline; padding-left:2px;}
+
+
+/* form */
+.resrv_cont select{width:100%; border:1px solid #e8e8e8; color:#666;}
+.resrv_cont input[type="text"], .resrv_cont input[type="password"]{border:1px solid #e5e5e5; color:#666; line-height:17px;}
+.resrv_cont form>fieldset{font-size:0;}
+.resrv_cont input[type="radio"], .resrv_cont input[type="checkbox"]{margin-top:-2px;}
+.questInfo dd input[type="radio"], 
+.questTit dd input[type="radio"]{margin-left:20px;}
+
+/* btn_bottom */
+.resrv_cont .btn_mult{margin:10px 0;}
+.resrv_cont .btn_bot .btn_set{position:absolute; top:0;}
+.resrv_cont .btn_bot .btn_set.btn_stA{right:0;}
+.resrv_cont .btn_bot .btn_set.btn_stB{left:0;}
+.resrv_cont .btn_bot .lst_commend{float:left; margin-top:4px; line-height:20px;}
+.resrv_cont .cust_txt{padding-top:7px; text-align:center; line-height:18px; font-size:13px; color:#666;}
+
+
+/* step */
+.step_lst{border-right:1px solid #e5e5e5;}
+.step_lst li{float:left;}
+.step_lst li a{float:left; display:inline-block; height:60px; padding:0 3px 0 13px; border-left:1px solid #e5e5e5;}
+#reservation .step_lst li a{height:40px;}
+.step_lst li a span{float:left; color:#666; line-height:16px; font-size:13px;}
+.step_lst li a .num{color:#949494; font-size:34px; margin:-4px 12px 0 0; line-height:1;}
+.step_lst li.on a{border-color:#222;}
+.step_lst li.on a span{color:#000}
+/* step - split */
+.step_lst.col2 li{width:478px;}
+.step_lst.col2 li a{width:460px;}
+.step_lst.col3 li{width:318px;}
+.step_lst.col3 li a{width:300px;}
+.step_lst.col5 li{width:191px;}
+.step_lst.col5 li a{width:173px;}
+
+
+/** table **/
+/* base-gray */
+.tblA{border-bottom:1px solid #efefef;}
+.tblA caption{width:auto; height:auto; padding:3px 0 5px; border:1px solid #efefef; background:#fbfbfb; font-size:12px; text-indent:0; line-height:16px; text-align:center; color:#222; font-weight:bold;}
+.tblA tr th, .tblA tr td{padding:4px 0 5px;}
+.tblA tr th span, .tblA tr td .td_cont{padding:0 5px;}
+.tblA tr th span{display:block;  color:#333; font-weight:bold;}
+.tblA thead tr th{border-bottom:1px solid #efefef;}
+.tblA tbody tr td{text-align:center; color:#666;}
+.tbl_wrapA .thL tbody tr th{text-align:left;}
+/* row-gray */
+.tblA_wrap.row{position:relative;}
+.tblA_wrap.row .tblA{border:1px solid #efefef; border-top:none;}
+.tblA_wrap.row .tblA caption,
+.tblB.tbl_info .hide{overflow:hidden; position:absolute; left:-9999px; display:block; width:0; height:0; border:none; padding:0; margin:0; font-size:0; line-height:0; text-indent:-9999px;}
+.tblA_wrap.row .tblA tr th, .tblA_wrap.row .tblA tr td{text-align:left;}
+.tblA_wrap.row .tblA tbody th, .tblA_wrap.row .tblA tbody td{*position:relative;}
+.tblA_wrap.row .tblA tbody tr:first-child th, .tblA_wrap.row .tblA tbody tr:first-child td{border-top:1px solid #efefef;}
+.tblA_wrap.row .tblA tbody tr th{background:#fbfbfb; border-right:1px solid #f1f1f1;}
+.tblA_wrap.row .tblA tr th, .tblA_wrap.row .tblA tr td{padding:4px 0;}
+.tblA_wrap.row .tblA tr th span, .tblA_wrap.row .tblA tr td .td_cont{padding:0 6px 0 10px; line-height:18px;}
+/* tblA_border Style - confirm */
+.tblA_wrap.row .borSt{border-top:1px solid red; border:none;}
+.tblA.borSt tbody tr td{border-right:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1;}
+.tblA.borSt tbody tr th{border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1;}
+.tblA.borSt .aft{padding-right:10px;}
+.tblA.borSt .opt th, .tblA.borSt .opt td{border:none; line-height:16px;}
+.tblA_wrap.row .tblA.borSt{border:none;}
+.tblA_wrap.row .borSt tbody tr td{text-align:center;}
+.tblA_wrap.row .borSt tbody tr th, .tblA_wrap.row .borSt tbody tr td{padding-top:3px; padding-bottom:4px;}
+.tblA_wrap.row .borSt tfoot tr td{text-align:right;}
+.tblA_wrap.row .borSt tfoot tr th, .tblA_wrap.row .borSt tfoot tr td{padding-bottom:0;}
+.tblA_wrap.row .borSt tfoot tr th span{padding-left:0; color:#000; font-weight:normal;}
+.tblA_wrap.row .borSt tfoot tr td .td_cont{font-size:12px; color:#000; font-weight:bold;}
+/* table-transparent _ tbl_data*/
+.tblB th span{display:block; color:#000;}
+.tblB tbody tr th{text-align:left;}
+.tblB tbody tr th, .tblB tbody tr td{padding:3px 0; line-height:18px;}
+#reservation .tblB tbody tr th, .tblB tbody tr td{padding-top:1px;}
+.tblB tbody tr td.hei1{padding-top:7px; padding-bottom:7px;}
+.tblB tbody tr td .td_cont{color:#666;} 
+.tblB tbody tr th.vaT span, .tblB tbody tr th.vaT span{padding-top:5px;} 
+.tblB td .td_cont .cal_txt{color:#333;} 
+.tblB tbody tr td .txt_dsc, .optSt1 .txt_dsc{margin:5px 0 7px; line-height:16px;}
+.tblB tbody tr td input[type="radio"]+label, .tblB tbody tr td input[type="checkbox"]+label{margin-right:20px;}
+
+/* table-transparent + info  */
+.tblB.tbl_info .bold{font-weight:bold; color:#333;}
+.tblB.tbl_info th span{color:#666;}
+.tblB.tbl_info th.vaT span, .tblB.infoPd th.vaT span{padding-top:0;}
+.tblB.tbl_info tbody tr th, .tblB.tbl_info tbody tr td, .tblB.infoPd tbody tr td{padding:5px 0 6px;}
+#reservation .tblB.tbl_info tbody tr th, .tblB.tbl_info tbody tr td, .tblB.infoPd tbody tr td{padding:1px 0 2px;}
+/* table-from  */
+.dCheck{margin:3px 0 4px; font-size:11px;}
+
+/* dot_list */
+.lst_dot li, .dotlineT{padding:11px 0 7px; background:url(/front/img/com/bg_dotted_line_2x1_ccc.gif) left top repeat-x;}
+.lst_dot li:first-child{background:none;}
+.lst_dot.bgB li, .lst_dot.bgB li:first-child{background:url(/front/img/com/bg_dotted_line_2x1_ccc.gif) left bottom repeat-x;}
+
+/* commend */
+.lst_commend{font-size:11px; line-height:16px;}
+.lst_commend{margin-top:8px;}
+.lst_commend p, .lst_commend li{text-indent:-13px; margin-left:13px; color:#666;}
+.lst_commend .exc{padding:0 5px; text-align:center;}
+
+
+/* .sub_tab */
+.sub_tab ul{margin-bottom:10px;}
+
+
+/* base_dotline/grayBox */
+.grBox{border:1px solid #f1f1f1; background:#fbfbfb;}
+.dateRemark, .conf_wrap .splitSec {margin-top:10px;}/*{background:url(/front/img/com/bg_dotted_line_2x1_ccc.gif) left bottom repeat-x;}*/
+
+
+/* step_Bottom_infoWrap */
+.infoCon{background:url(/front/img/com/reservation/bg_infoCon_x.gif) left bottom repeat-x;}
+.infoCon .scroll{height:101px;}
+#reservation .infoCon .scroll{height:81px;}
+.infoCon .clB{clear:both;}
+.infoCon dl{float:left; width:780px; padding:8px 20px 0;}
+#reservation .infoCon dl {padding-top:8px;}
+.infoCon dl .wid1{width:255px;}
+.infoCon dl .wid2{width:72px;}
+.infoCon dl .wid3{width:332px;}
+.infoCon dl .flL{float:left; clear:none;}
+.infoCon dl dt, .infoCon dl dd{margin-top:8px; font-size:13px;}
+#reservation .infoCon dl dt, .infoCon dl dd{margin-top:2px;}
+.infoCon dl dt{clear:both; float:left; width:100px; padding-left:9px; background:url(/front/img/com/bg_dot3x3_66574a.gif) left 8px no-repeat; font-weight:bold; color:#66574a;}
+.infoCon dl dd{float:left; width:670px;}
+.infoCon dl dd ul li{display:inline; padding-right:5px;}
+.infoCon dl dd ul li span{padding-right:9px; font-weight:bold; color:#000;}
+.infoCon .ico_img{float:right; margin:10px 7px 0 0; /* background:url(/front/img/com/bg_dotline_2x3_bababa_fff.gif) left top repeat-y; */}
+.infoCon .ico_img a{width:103px; height:60px; padding-top:25px; background:url(/front/img/com/reservation/bg_resetBox.png) left top no-repeat;}
+#reservation .infoCon .ico_img a {height:48px; padding-top:13px;}
+
+
+
+/** step1. SELECT A HOTEL **/
+.lst_select dt{float:left; width:59px; margin-top:5px;}
+.lst_select dd{float:left; width:219px; margin-bottom:8px;}
+
+/** step1. SPECIAL CODE **/
+.specialCode{position:absolute; bottom:19px;}
+.specialCode dt a{position:relative; display:block; line-height:13px; width:270px;}
+.specialCode dt a .more{position:absolute; top:1px; right:0; font-weight:normal; color:#666; padding-right:19px; cursor:pointer; background:url(/front/img/com/reservation/bg_arr_sp.png) right -56px no-repeat; font-size:11px;}
+.specialCode dt a.open .more{background-position:right 3px;}
+.specialCode dd{position:relative; width:280px; margin-top:14px;}
+.specialCode dd select{width:104px;}
+.specialCode dd input{width:120px}
+.specialCode dd .btn_set{position:absolute; right:0;}
+
+/** step1. SELECT YOUR CHECK-IN DATES **/
+.dateSelect{height:328px;}
+#reservation .dateSelect{height:318px;}
+.dateSelect .tit3dep{clear:both;}
+.dateRemark{margin-bottom:12px;}
+.dateRemark span{display:inline-block; height:20px; line-height:19px; padding:0 26px; margin-bottom:10px; background:url(/front/img/com/reservation/bg_select_date.gif) 0 -60px no-repeat;}
+.dateRemark span:first-child{background-position:0 0;}
+/* calendar */
+.box_calendar{float:left; width:437px; padding-top:10px; background:url(/front/img/com/bg_dotted_line_2x1_ccc.gif) 0 0 repeat-x;}
+.box_calendar .month_cal{color:#666; margin-bottom:17px;}
+.box_calendar .month_cal > span{display:inline-block; margin-top:-3px;}
+.box_calendar .month_cal > .btn {position:absolute; top:0; width:23px; height:23px; background:url(/front/img/com/btn_arr.png) 0 -2350px no-repeat;}
+.box_calendar .month_cal > .btn.prev {left:3px;}
+.box_calendar .month_cal > .btn.next {right:3px; background-position:0 -2430px;}
+/* table */
+.box_calendar .wrap_cal {float:left; padding:0;}
+.box_calendar .wrap_cal {width:209px;}
+.box_calendar .wrap_cal.right {margin-left:19px;}
+.box_calendar .wrap_cal .tbl_calendar td span {color:#ccc;}
+.box_calendar .wrap_cal .tbl_calendar td a {width:27px; padding:6px 0; border:1px solid #f1f1f1; background:#fbfbfb;}
+.box_calendar .wrap_cal .tbl_calendar td a.on {width:29px; padding:7px 0; background:#333; color:#fff; border:none;}
+/* checkInOut_info */
+.dateInfo{float:right; width:100px; height:184px; padding:18px 20px 20px; margin-top:0;}/* margin-top:29px;}*/
+.dateInfo dl dt{color:#555;}
+.dateInfo dl dd{height:17px; margin:4px 0 18px; font-size:13px; color:#000; font-weight:bold;}
+.dateInfo .btn_set{display:block; margin-top:-4px;}
+
+/** step1.SELECT A NUMBER OF ROOMS AND GUESTS **/
+.roomGstNum{border-top:1px solid #e5e5e5;}
+.roomGstNum select{width:100px;}
+.roomGstNum .section{margin-bottom:0;}
+.roomGstNum .scroll{height:76px;}
+#reservation .roomGstNum .scroll{height:84px;}
+.infono .roomGstNum .scroll{height:177px;}
+.roomSel{float:left; margin:22px 28px 0 20px;}
+.roomSel label, .roomNum table tr th span{padding-right:7px;}
+.roomNum .tbl_wrapA{float:left; width:260px;}
+.roomNum .tbl_wrapA select{margin-right:4px;}
+.roomNum .tbl_wrapA th, .roomNum .tbl_wrapA td{text-align:left;}
+.roomNum .tbl_wrapA thead tr th{color:#666; vertical-align:top; padding-bottom:4px;}
+.roomNum .tbl_wrapA tbody tr td{padding:3px 0;}
+
+
+/* step2. SELECT A ROOM TYPE */
+.lst_ty li a{display:block; color:#666; padding:9px 20px 10px;}
+.lst_ty li.on a{background:#666; color:#fff;}
+.lst_ty li a:focus {outline:none;}
+#reservation .lst_ty li a{padding:4px 20px 5px;}
+
+/* step2. DETAILS */
+.infoDetails{margin-right:0;}
+.infoDetails img{width:100%; *width:260px;}
+.infoDetails dl{margin:14px 0 13px;}
+.infoDetails dl dt{margin-bottom:5px; color:#222; font-weight:bold;}
+.infoDetails dl dd{font-size:11px; line-height:16px;}
+
+
+/* step3. ENTER GUEST/BOOKER INFORMATION */
+.questInfo{margin:15px 0 30px;}
+.questInfo dt{float:left;}
+.questInfo dd{float:right; padding-top:4px;}
+
+/* step3. AGREEMENT */
+.agreeArea{margin-top:34px;}
+#reservation .agreeArea{margin-top:24px;}
+.agreeArea .tit3dep{margin-bottom:8px;}
+.agreeArea .grBox{height:80px; padding:12px; font-size:11px;} 
+.agreeArea .agCheck{margin-top:25px; color:#333;} 
+#reservation .agreeArea .agCheck{margin-top:10px;} 
+
+
+/* step4. SELECT OPTION */
+.questTit dt{float:left; font-size:13px;}
+.questTit dd{float:left; margin-top:1px;}
+.optSt1 .tbl_wrapA {margin:25px 0 30px;}
+.optSt1 .tbl_wrapA .td_cont {padding:3px 0 0; height:26px; }
+.optSt1 .tbl_wrapA .td_cont input[type="radio"] {margin:7px 0 8px 20px;}
+.optSt1 .tbl_wrapA .td_cont input[type="radio"]:first-child {margin:0;}
+.optSt1 .sub_tab {margin:25px 0 0;}
+.optSt1 .txt_dsc {margin-top:18px;}
+.reserv_opt dt, .reserv_opt dd {float:left; width:92px; margin:7px 0 8px;}
+.reserv_opt dd {width:auto; padding:2px 0; margin:0;}
+.reserv_opt dt{position:relative;}
+.reserv_opt dt.tit {width:100%;}
+.reserv_opt dt.tit + dd {width:100%;}
+.reserv_opt dt.tit .es {position:absolute; top:0; left:408px; font-weight:normal;}
+
+/* step5.REVIEW & COMPLETE BOOKING / RESERVATION CONFIRMATION */
+/* common */
+.conf_wrap .col6, 
+.conf_wrap .splitSec{border-color:#fff;}
+#reservation .conf_wrap .splitSec > div, .conf_wrap .splitSec > div{height:auto;}
+.conf_wrap .tit2dep{padding:14px 0 18px; margin-bottom:0; border:1px solid #999; font-size:20px; color:#000; text-align:center; font-weight:normal;}
+.conFview dt{margin-bottom:13px; position:relative;}
+.conFview dt a{float:right; position:absolute; top:-2px; right:0;}
+.conFview dt+dd+dt{margin-top:25px;}
+.conFview .total{margin-top:14px; padding:7px 10px 8px; background:#666; color:#fff;}
+.conFview .total span{float:right; font-weight:bold; font-size:14px;}
+.conFview .total span:first-child{float:left; font-weight:normal;}
+.conFview .lst_dot{margin-bottom:13px;}
+.confNum strong{display:block; color:#66574a; font-size:20px; margin-bottom:6px;}
+.conf_txt {margin-top:16px; font-size:11px; line-height:20px;}
+
+/* restaurant one_calender */
+.dateSelect.type_oneM {height:300px;}
+.type_oneM .dateInfo {float:left; width:145px; margin:0 20px 0 0;}
+.type_oneM .dateInfo dl dd {height:auto;}
+.type_oneM .box_calendar {position:absolute; right:0; top:5px; width:210px;}
+.type_oneM .dateRemark span {padding: 0 20px 0 24px;}
+
+
+/** View/Modify/Cancel **/
+/* common_infoBox */
+.resrv_cont .splitSec .infoBox {float:none; clear:both; border-left:none; padding-top:17px;}
+.infoBox dl.grBox{margin-bottom:30px; padding:14px 18px 15px;}
+.infoBox dl dt{float:left; font-weight:bold; line-height:20px; color:#333;}
+.infoBox dl dd{float:right; width:692px}
+.infoBox dl dd .lst_commend{margin:0; line-height:20px;}
+.col6 .infoBox dl dt {padding-bottom:10px;}
+.col6 .infoBox dl dd {width:auto;}
+
+/* reservation_inquiry */
+.resrv_inquiry{border:1px solid #e5e5e5; padding:41px 40px 50px;}
+.resrv_inquiry .tit2dep{float:left; font-size:30px; font-weight:normal; line-height:35px;}
+.inq_wrap{position:relative; float:right; width:700px;}
+.inq_wrap p{font-size:14px; line-height:20px; padding:4px 0 0px; margin-bottom:50px;}/* background:url(/front/img/com/bg_dotted_line_2x1_ccc.gif) left bottom repeat-x; */
+.inq_wrap p span{display:block; margin-top:10px; color:#66574a; font-weight:bold;}
+.inqArea label{display:inline-block; font-size:14px; font-weight:bold; color:#222; margin-right:15px;}
+.inqArea input[type="text"], .inqArea .area1 select{height:29px; border:1px solid #999; line-height:27px;}
+.inqArea > div{float:left;}
+.inqArea .area1 select{width:190px; height:36px;}
+.inqArea .area2 input{width:188px;}
+.inqArea .area3 input{width:226px;}
+/* .inqArea .area3 input+input{width:120px;} */
+.inqArea.wid2 .area2 input{width:188px;}
+.inqArea.wid2 .area3 input{width:88px;}
+.inqArea.wid2 .area3 input + input {width:132px;}
+.inqArea .btn_set{position:absolute; right:0; bottom:0; width:60px;}
+.inqArea .btn_set span{padding:0 0 2px 0; line-height:30px;}
+/* .inqArea .area1, .inqArea .area2{margin-right:15px;} */
+.inqArea .area1 {width:100%; margin-bottom:10px}
+.inqArea .area2 {width:286px;}
+
+.inq_wrap .grBox {padding:34px 30px 37px; margin-bottom:30px;}
+.inq_wrap .grBox label {margin-right:19px; color:#333;}
+
+/* CURRENCY CONVERTER lpop */
+.curr_convert {text-align:left;}
+.curr_convert .lst03dep {padding-bottom:24px; margin-bottom:30px; background:url(/front/img/com/bg_dot2x1_ccc.png) 0 100% repeat-x;}
+.curr_convert .lst03dep li > strong {display:inline-block; width:97px; color:#66574a;}
+.curr_convert .lst03dep li {background-position:0 11px; color:#333;}
+/* .curr_convert .grBox {padding:18px 30px 25px 20px; background:url(/front/img/com/reservation/bg_converterLpop.png) 190px -70px no-repeat #fbfbfb;}
+.curr_convert .grBox .rate {float:left; max-width:135px; height:auto; padding-left:30px; background:url(/front/img/com/reservation/bg_converterLpop.png) 0 7px no-repeat;}
+.curr_convert .grBox .usd {float:right; background-position:0 -43px;}
+.curr_convert .grBox .rate strong {float:none;}
+.curr_convert .grBox .usd strong {color:#0072bc;}
+1.9 |강완| 디자인 수정됨 */
+.curr_convert .dep03Sec dt {margin-top:24px;}
+.curr_convert .dep03Sec dt:first-child {margin-top:0;}
+.curr_convert .rateBox {background:url(/front/img/com/bg_dot2x1_ccc.png) 0 100% repeat-x; padding-bottom:19px;}
+.curr_convert .rateBox strong {color:#0072bc;}
+.curr_convert .lst_commend {margin-top:13px;}
+/* FONT-FAMILY */
+.ex{font-family: Georgia;}
+.ex{font-family: malgun gothic;}
+
+/** FONT_SIZE **/
+/* font_size:9px */
+.ex{font-size:9px;}
+
+/* font_size:10px */
+.ex{font-size:10px;}
+
+/* font_size:13px */
+.curr_convert .lst03dep li,
+.curr_convert .rateBox ,
+.ex {font-size:13px; }
+
+/* font-size:14px */
+.curr_convert .lst03dep li > strong,
+.inq_wrap .grBox,
+.ex {font-size:14px;}
+
+/* font-size:15px */
+.ex {font-size:15px;}
+
+/* font-size:18px */
+.ex {font-size:18px;}
+
+/* font-size:20px */
+.ex {font-size:20px;}
+
+/* font_size:22px */
+.ex{font-size:22px;}
+
+/* font-size:23px */
+.curr_convert .rateBox strong,
+.ex {font-size:23px;}
+
+/* font-size:35px */
+.ex {font-size:35px;}
+
+/* font-size:25px */
+.ex{font-size:25px;}
+
+/** LINE-HEIGHT **/
+/* line-height:13px */
+.ex1{line-height:13px;}
+
+/* line-height:18px */
+.ex{line-height:18px;}
+
+/* line-height:20px */
+.ex {line-height:20px;}
+
+/* line-height:21px */
+.ex {line-height:21px;}
+
+/* line-height:22px */
+.ex {line-height:22px;}
+
+/* line-height:24px */
+.curr_convert .lst03dep li ,
+.ex {line-height:24px;}
+
+/* line-height:28px */
+.ex {line-height:28px;}
+
+/* line-height:34px */
+.ex {line-height:34px;}
+
+/* line-height:47px */
+.ex {line-height:47px;}

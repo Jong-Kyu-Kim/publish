@@ -1,0 +1,122 @@
+/* main page */
+.main header {height:126px;border-bottom:none;}
+.main header .inner_header {height:126px;}
+.main header .gnb {top:-73px;}
+
+.main .content {padding-bottom:40px;}
+
+.main .stab_menu.stab3 li a {min-width:122px;}
+
+.main .txt_list li {line-height: inherit;}
+
+.main button {overflow:visible; border:0; line-height:normal !important; cursor:pointer;}
+
+.main .btn {display:inline-block; *display:inline; *zoom:1; position:relative; vertical-align:middle; cursor:pointer;}
+.main .btn.red {background-color:#ff6767; color:#fff;}
+.main .btn.big {width:100%; height:48px; font-size:17px; line-height:48px;}
+
+.main .section.main .rent_popWrap {margin-top:0;}
+
+.main .content .content_top {position:relative; height:800px; margin-bottom:15px;}
+.main .content .content_top .depth_box {float:left; height:800px; margin-left:10px; padding:27px 29px; border:1px solid #d6d6d6; box-sizing:border-box;}
+.main .content .content_top .depth_box:first-child {margin-left:0;}
+.main .content .content_top .depth_box.first {width:432px;}
+.main .content .content_top .depth_box.second {width:223px;}
+.main .content .content_top .depth_box.third {width:223px;}
+.main .content .content_top .depth_box.last {width:292px; padding:0; border:0;}
+.main .content .content_top .depth_box .tit_head {margin-bottom:15px; font-size:50px; color:#313131; text-align:center; line-height:1;font-family: 'NotoSansKR','맑은 고딕','돋음', dotum, sans-serif; font-weight: 500;letter-spacing:-5px}
+.main .content .content_top .depth_box .txt {display:block; margin-bottom:16px; font-size:14px; color:#f04040; text-align:center; line-height:1;}
+
+.main .btn_wrap {padding:30px 0;}
+
+.main .thumbMenu_wrap {position:relative;}
+.main .thumbMenu_wrap li {height:100px; margin-top:30px; text-align:center;}
+.main .thumbMenu_wrap li a {display:block; padding-top:64px; font-size:15px; color:#646466;}
+.main .thumbMenu_wrap li.list01 a {background:url('../images/main/ico_mainList01.png') 50% 0 no-repeat;}
+.main .thumbMenu_wrap li.list02 a {background:url('../images/main/ico_mainList02.png') 50% 0 no-repeat;}
+.main .thumbMenu_wrap li.list03 a {background:url('../images/main/ico_mainList03.png') 50% 0 no-repeat;}
+.main .thumbMenu_wrap li.list04 a {background:url('../images/main/ico_mainList04.png') 50% 0 no-repeat;}
+.main .thumbMenu_wrap li.list05 a {background:url('../images/main/ico_mainList05.png') 50% 0 no-repeat;}
+.main .thumbMenu_wrap li.list06 a {background:url('../images/main/ico_mainList06.png') 50% 0 no-repeat;}
+.main .thumbMenu_wrap li.list07 a {background:url('../images/main/ico_mainList07.png') 50% 0 no-repeat;}
+.main .thumbMenu_wrap li.list08 a {background:url('../images/main/ico_mainList08.png') 50% 0 no-repeat;}
+.main .thumbMenu_wrap li.list09 a {background:url('../images/main/ico_mainList09.png') 50% 0 no-repeat;}
+.main .thumbMenu_wrap li.list10 a {background:url('../images/main/ico_mainList10.png') 50% 0 no-repeat;}
+
+.main .login_wrap {margin-bottom:10px; background-color:#606062;}
+.main .login_wrap .main_loginBox {height:270px; padding:20px 30px; box-sizing:border-box;}
+.main .main_loginBox .nameBox {position:relative;}
+.main .main_loginBox .nameBox:after {display:block; content:""; clear:both;}
+.main .main_loginBox .nameBox .tit_name {display:inline-block; margin-bottom:17px; font-size:28px; font-family:'NotoSansKR','맑은 고딕','돋음', dotum, sans-serif;font-weight:500;color:#fff;}
+.main .main_loginBox .nameBox .ico_setting {position:absolute; right:0; top:18px; z-index:10; width:25px; height:24px; background:url('../images/common/ico_setting.png') 0 0 no-repeat;}
+.main .tab_nav {margin-bottom:10px;}
+.main .tab_nav ul:after {display:block; content:""; clear:both;}
+.main .tab_nav ul li {float:left; width:50%; height:40px; text-align:center;}
+.main .tab_nav ul li a {display:block; height:39px; border-bottom:1px solid #9d9d9d; font-size:13px; color:#d7d7d7; line-height:40px;}
+.main .tab_nav ul li.on a {border:1px solid #9d9d9d; border-bottom:1px solid #606062; color:#fff;}
+
+.main .tab_cont {display:none; position:relative;}
+.main .tab_cont.on {display:block;}
+
+.main .loginBox {margin-bottom:10px;}
+.main .loginBox ul li {margin-top:2px;}
+.main .loginBox ul li:first-child {margin-top:0;}
+.main .loginBox ul li input {width:179px;}
+.main .loginBox .btn_login {position:absolute; right:0; top:0; width:68px; height:62px; padding:0; background-color:#ff6767; font-size:14px; color:#fff; line-height:62px;}
+.main .main_loginBox label {color:#d8d8d8;}
+.main .main_loginBox .checkbox input[type=checkbox] + label .icon {background-color: #606062;border:1px solid #ff6767;}
+.main .main_loginBox .checkbox input[type=checkbox]:checked + label .icon {background:url('../images/common/check_black.png') -1px -17px no-repeat;}
+
+.main .search_menu {margin-top:10px; font-size:0;}
+.main .search_menu li {float:left;}
+.main .search_menu li:nth-child(1) {width:35%;}
+.main .search_menu li:nth-child(2) {width:40%;}
+.main .search_menu li:nth-child(3) {width:25%;}
+.main .search_menu a {display:inline-block;font-size:13px; color:#d8d8d8;}
+
+.main .rent_countBox {padding:22px 0; border-bottom:1px solid #707072;line-height: 1}
+.main .rent_countBox:after {display:block; content:""; clear:both;}
+.main .rent_countBox .text {float:left; font-size:15px; color:#c9c9ca;}
+.main .rent_countBox .numBox {float:right;}
+.main .rent_countBox a {font-size:16px; color:#fff; text-decoration:underline;}
+.main .rent_countBox span {font-size:16px; color:#c9c9ca; text-decoration:none;}
+
+.main .myMenuBox ul:after {display:block; content:""; clear:both;}
+.main .myMenuBox ul li {float:left; padding-top:25px;color:#c9c9ca;text-align: center}
+.main .myMenuBox ul li:nth-child(1) {width:20%;}
+.main .myMenuBox ul li:nth-child(2) {width:50%;}
+.main .myMenuBox ul li:nth-child(3) {width:30%;}
+.main .myMenuBox ul li .tit {display: block; margin-bottom:15px;font-size: 15px;}
+.main .myMenuBox ul li .desc {display:table-cell;width:130px;height:43px;vertical-align: middle;text-align: center}
+.main .myMenuBox ul li .desc a {padding-bottom:1px;color:#fff;border-bottom: 1px solid #fff}
+.main .myMenuBox ul li.place .desc a {border:none;}
+.main .myMenuBox ul li .desc a.reg {padding:8px 13px;color:#fff;border: 1px solid #c9c9ca}
+
+.main .customerBox {padding:29px;height:125px; background-color:#6b6e71;box-sizing: border-box;line-height:1}
+.main .customerBox h2 {display:block; margin-bottom:20px;font-size:28px;font-family: 'NotoSansKR','맑은 고딕','돋음', dotum, sans-serif; font-weight: 500; color:#fff;}
+.main .customerBox ul {margin-top:25px;padding-left:3px;}
+.main .customerBox ul li {float:left;}
+.main .customerBox ul li:nth-child(1) {width:40%;}
+.main .customerBox ul li:nth-child(2) {width:45%;}
+.main .customerBox ul li:nth-child(3) {width:15%;}
+.main .customerBox ul li a {display:inline-block;font-size:15px; color:#fff;}
+
+.main .ban_visualWrap {position:relative; height:395px; border:1px solid #e6e9d9; box-sizing:border-box;}
+.main .ban_visualWrap .bx-controls {position:absolute; left:0; bottom:32px; z-index:1; width:100%;}
+.main .ban_visualWrap .bx-pager {text-align:center;}
+.main .ban_visualWrap .bx-pager-item {display:inline-block; text-align:center;}
+.main .ban_visualWrap .bx-pager a {display:block; width:9px; height:9px; margin:0 5px; border:1px solid #969894; background-color:#fff; box-sizing:border-box; text-indent:-9999px;}
+.main .ban_visualWrap .bx-pager a.active {background-color:#969894;}
+
+.main .ban_footer {position:relative;}
+.main .ban_footer .banList:after {display:block; content:""; clear:both;}
+.main .ban_footer .banList li {position:relative; float:left; width:292px; height:292px; margin-left:10px;}
+.main .ban_footer .banList li:first-child {margin-left:0;}
+.main .ban_footer .banList li .inner {border:1px solid #d6d6d6;}
+.main .banList li .inner a {position:absolute; left:14px; bottom:14px; z-index:10; width:264px; height:114px; background:rgba(0,0,0,0.2); text-align:center;}
+.main .banList li .inner a .tit {display:block; margin-top:15px; font-size:28px; color:#fff;}
+.main .banList li .inner a .desc {display:block;font-size:13px; color:#fff; line-height:20px;}
+
+.main .wrap_reservation { overflow: hidden; }
+.main .wrap_reservation .left { float: left; width:590px; margin:0 66px 0 0; padding: 45px 0 0 0; }
+.main .wrap_reservation .right { float: left; width:544px; padding: 75px 0 0 0;}

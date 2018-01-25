@@ -1,0 +1,1451 @@
+<!doctype html>
+<!--[if IE 7]><html dir="ltr" lang="ko" class="ie7"><![endif]-->
+<!--[if IE 8]><html dir="ltr" lang="ko" class="ie8"><![endif]-->
+<!--[if IE 9]><html dir="ltr" lang="ko" class="ie9"><![endif]-->
+<html dir="ltr" lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    <script src="../../js/ui.js"></script>
+</head>
+
+<body>
+ 
+  
+    
+    <main class="container">
+        <h3>대탭메뉴 - wrap_tab </h3>
+        <div class="wrap_tab">
+            <ul class="tab_menu">
+                <li><a href="#tab-1">탭 1</a></li>
+                <li><a href="#tab-2">탭 Two</a></li>
+                <li><a href="#tab-3">탭 Three</a></li>
+                <li><a href="#tab-4">탭 Four</a></li>
+            </ul>
+            <div class="tab_content" id="tab-1">1111</div>
+            <div class="tab_content" id="tab-2">2222</div>
+            <div class="tab_content" id="tab-3">333</div>
+            <div class="tab_content" id="tab-4">444</div>
+        </div>
+        <br>
+        <br>
+        <h3>소탭메뉴 - wrap_stab </h3>
+        <div class="wrap_stab">
+            <ul class="stab_menu">
+                <li><a href="#stab-1">sTab 1</a></li>
+                <li><a href="#stab-2">sTab Two</a></li>
+                <li><a href="#stab-3">sTab Three</a></li>
+                <li><a href="#stab-4">sTab Four</a></li>
+            </ul>
+            <div class="stab_content" id="stab-1">1111</div>
+            <div class="stab_content" id="stab-2">2222</div>
+            <div class="stab_content" id="stab-3">333</div>
+            <div class="stab_content" id="stab-4">444</div>
+        </div>
+        <br>
+        <br>
+        <h3>테이블 - grid tb_col</h3>
+        <div class="grid">
+            <table class="tb_col">
+                <caption></caption>
+                <colgroup>
+                    <col style="width:140px" />
+                    <col style="width:140px" />
+                    <col style="width:225px" />
+                    <col style="width:225px" />
+                    <col style="width:auto" /> 
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col" colspan="2">구분</th>
+                        <th scope="col">일반 회원</th>
+                        <th scope="col">골드 회원</th>
+                        <th scope="col">더블골드 회원</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="noBorderL" rowspan="2" scope="row">할인율</th>
+                        <th>평일</th>
+                        <td>35% (40%)</td>
+                        <td>40% (45%)</td>
+                        <td>45% (50%)</td>
+                    </tr>
+                    <tr>
+                        <th class="borderL">평일</th>
+                        <td>35% (40%)</td>
+                        <td>40% (45%)</td>
+                        <td>45% (50%)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <br>
+        <div class="grid">
+            <table class="tb_col">
+                <caption></caption>
+                <colgroup>
+                    <col style="width:200px" />
+                    <col style="width:33%" />
+                    <col style="width:auto" /> 
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col" rowspan="2" class="bgGray">bgGray</th>
+                        <th scope="col" class="bgGray2">bgGray2</th>
+                        <th scope="col" class="bgGray2">bgGray2</th>
+                    </tr>
+                    <tr> 
+                        <th scope="col" class="bgGray2 borderL">borderL</th>
+                        <th scope="col" class="bgGray2">bgGray2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="noBorderL">noBorderL</th>
+                        <td>123,000</td>
+                        <td>123,000</td>
+                    </tr> 
+                </tbody>
+            </table>
+        </div>
+        <br><br>
+        
+        <div class="grid">
+            <table class="tb_col">
+                <caption></caption>
+                <colgroup>
+                    <col style="width:33%" />
+                    <col style="width:33%" />
+                    <col style="width:auto" /> 
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">일반 회원</th>
+                        <th scope="col">골드 회원</th>
+                        <th scope="col">더블골드 회원</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>35% (40%)</td>
+                        <td>40% (45%)</td>
+                        <td>45% (50%)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="no_data">보유 쿠폰이 없습니다.</td> 
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="paging">
+            <a href="#" class="btn_first">처음</a>
+            <a href="#" class="btn_prev">이전</a>
+            <em>1</em><!-- 현재 페이지 일경우-->
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#">10</a>
+            <a href="#" class="btn_next">다음</a>
+            <a href="#" class="btn_last">맨끝</a>
+        </div>
+        
+        <br>
+        <br>
+        <h3>테이블(grid) - grid tb_row</h3>
+        <div class="grid">
+            <table class="tb_row">
+                <caption></caption>
+                <colgroup>
+                    <col style="width:200px" />
+                    <col style="width:auto" /> 
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">자격조건</th>
+                        <td>홈페이지 회원가입</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">무료 업그레이드 혜택</th>
+                        <td> 
+                            등급별 대여 횟수에 따라 차량 무료 업그레이드 서비스 제공 
+                            <span class="block txt_gray">
+                                5번째, 15번째, 25번째, 35번째, 45번째, 55번째 (+10회 단위) 대여 시 소형 예약 차량 → 중형 업그레이드 중형 예약 차량 → 중대형 업그레이드
+                            </span>
+                            <ul class="txt_list">
+                                <li class="red">
+                                    대형, 수입차, SUV/RV, 승합 차량은 업그레이드 대상에서 제외됩니다. 
+                                </li>
+                                <li class="red">
+                                    해당 차수만 이용 가능 (이월 없음)<br> 
+                                    ※ 업그레이드 예약 후, 다른 대여건이 먼저 발생하면 차수가 변경될 수 있으니 유의하시기 바랍니다. 
+                                </li>
+                                <li class="red">
+                                    업그레이드 서비스는 사전 예약제로 진행 (홈페이지 및 유선 예약 / 대여 6시간 전)됩니다.<br> 
+                                    ※ 해당 지점 업그레이드 가용 차량이 있는 경우에 한해 서비스 이용 가능<br> 
+                                    ※ 무료이용권 + 업그레이드 적용 시 실제 대여 할 업그레이드 후 차종과 소지하고 있는 무료이용권 차종이 동일할 때 사용 가능 </li>
+                                <li class="red">
+                                    자세한 사항은 해당 지점으로 문의 바랍니다. 
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="grid">
+            <table class="tb_row">
+                <caption></caption>
+                <colgroup>
+                    <col style="width:200px" />
+                    <col style="width:auto" /> 
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row"><label for="">현재 비밀번호</label></th>
+                        <td><input type="password" name="" id="" placeholder="현재 비밀번호를 입력해 주세요." style="width:400px;"></td>
+                    </tr> 
+                    <tr>
+                        <th scope="row"><label for="">새 비밀번호</label></th>
+                        <td>
+                            <input type="password" name="" id="" placeholder="새 비밀번호를 입력해 주세요." style="width:400px;">
+                            <ul class="txt_list">
+                                <li class="red">
+                                    8~15자의 영문자, 숫자, 특수문자를 함께 입력해 주세요.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="">새 비밀번호 확인</label></th>
+                        <td>
+                            <input type="password" name="" id="" placeholder="새 비밀번호를 다시 입력해 주세요." style="width:400px;">
+                            <span class="select">
+                                                    <label for="">선택</label>
+                                                    <select id="" title="">
+                                                        <option selected="selected">선택</option>
+                                                    </select>
+                                                </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <br>
+        <br>
+        
+        <h3>입력목록 - .grid .tb_noBorder</h3>
+        <div class="grid noBorderT">
+            <table class="tb_noBorder">
+                <caption></caption>
+                <colgroup>
+                    <col style="width:140px" />
+                    <col style="width:auto" /> 
+                    <col style="width:100px" />
+                    <col style="width:auto" /> 
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row"><label for="">회원등급</label></th>
+                        <td>
+                            <input type="text" name="" id="" value="" style="width:300px;">
+                            <ul class="txt_list">
+                                <li class="red">
+                                    대형, 수입차, SUV/RV, 승합 차량은 업그레이드 대상에서 제외됩니다. 
+                                </li>
+                                <li class="red">
+                                    대형, 수입차, SUV/RV, 승합 차량은 업그레이드 대상에서 제외됩니다. 
+                                </li>
+                            </ul>
+                        </td>
+                        <th scope="row"><label for="">회원등급</label></th>
+                        <td><input type="text" name="" id="" value="" style="width:300px;"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="">이름</label></th>
+                        <td><input type="text" name="" id="" value="" style="width:300px;"></td>
+                        <th scope="row"><label for="">회원등급</label></th>
+                        <td><input type="text" name="" id="" value="" style="width:300px;"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="">전화번호</label></th>
+                        <td colspan="3">
+                            <input type="text" name="" id="" value="" style="width:77px;">
+                            <ins class="hyphen">-</ins>
+                            <input type="text" name="" id="" value="" style="width:100px;">
+                            <ins class="hyphen">-</ins>
+                            <input type="text" name="" id="" value="" style="width:100px;">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br><br><br><br>
+
+
+
+        <h3>텍스트 리스트 - txt_list / li.gray </h3>
+        <ul class="txt_list">
+            <li class="gray">
+                대형, 수입차, SUV/RV, 승합 차량은 업그레이드 대상에서 제외됩니다.  
+            </li>
+            <li class="gray"> 
+                해당 차수만 이용 가능 (이월 없음)<br> 
+                ※ 업그레이드 예약 후, 다른 대여건이 먼저 발생하면 차수가 변경될 수 있으니 유의하시기 바랍니다. 
+            </li> 
+        </ul>
+        <br>
+        <br>
+
+
+        <h3>텍스트 리스트 - txt_list / li.red </h3>
+        <ul class="txt_list">
+            <li class="red">
+                대형, 수입차, SUV/RV, 승합 차량은 업그레이드 대상에서 제외됩니다. 
+            </li>
+            <li class="red"> 
+                해당 차수만 이용 가능 (이월 없음)<br> 
+                ※ 업그레이드 예약 후, 다른 대여건이 먼저 발생하면 차수가 변경될 수 있으니 유의하시기 바랍니다. 
+            </li>
+            <li class="red"> 
+                업그레이드 서비스는 사전 예약제로 진행 (홈페이지 및 유선 예약 / 대여 6시간 전)됩니다.<br> 
+                ※ 해당 지점 업그레이드 가용 차량이 있는 경우에 한해 서비스 이용 가능<br> 
+                ※ 무료이용권 + 업그레이드 적용 시 실제 대여 할 업그레이드 후 차종과 소지하고 있는 무료이용권 차종이 동일할 때 사용 가능 </li>
+            <li class="red"> 
+                자세한 사항은 해당 지점으로 문의 바랍니다. 
+            </li>
+        </ul>
+
+
+        <br>
+        <br>
+
+        <h3>텍스트 리스트 - txt_list / li.bul</h3>
+        <ul class="txt_list">
+            <li class="bul">텍스트</li> 
+            <li class="bul">텍스트</li> 
+        </ul>
+        <br>
+        <br>
+
+
+        <h3>텍스트 리스트 - txt_list / li.black.f16 </h3>
+        <ul class="txt_list">
+            <li class="black f16">텍스트</li> 
+            <li class="black f16">텍스트</li> 
+        </ul> 
+        <br>
+        <br>
+
+        <h3>텍스트 리스트 - txt_list / li.check.f14 </h3>
+        <ul class="txt_list">
+            <li class="check f14">텍스트</li> 
+            <li class="check f14">텍스트</li> 
+        </ul> 
+        <br>
+        <br>
+
+        <h3>텍스트 리스트 - txt_list li.black  / txt_list li.bul.f16</h3>
+        <ul class="txt_list">
+            <li class="black">
+                텍스트
+                <ul class="txt_list">
+                    <li class="bul f16">텍스트</li> 
+                    <li class="bul f16">텍스트</li> 
+                </ul>
+            </li> 
+            <li class="black">
+        </ul>
+        <br>
+        <br>
+
+        <h3>텍스트 리스트 - txt_list+li.black.f16  / txt_list li.red.f12</h3>
+        <ul class="txt_list">
+            <li class="black f16">
+                텍스트
+                <ul class="txt_list">
+                    <li class="red f12">텍스트</li> 
+                    <li class="red f12">텍스트</li> 
+                </ul>
+            </li> 
+            <li class="black f16">텍스트</li> 
+        </ul>
+        <br>
+        <br>
+
+        <h3>텍스트 리스트 - txt_list+li.black.f16  / txt_list li.check.f12  / txt_list li.bul.f12</h3>
+        <ul class="txt_list">
+            <li class="black f16">
+                텍스트
+                <ul class="txt_list">
+                    <li class="check f12">텍스트
+                        <ul class="txt_list">
+                            <li class="bul f12">텍스트</li>  
+                        </ul>
+                    </li> 
+                    <li class="check f12">텍스트</li> 
+                </ul>
+            </li> 
+            <li class="black f16">텍스트</li> 
+        </ul>
+        <br>
+        <br>
+
+        
+        <h3>프로세스바 - process4 </h3> 
+        <ul class="process4 step1"> <!-- process4 : 4개유형 / step1 : 현재 스텝  -->
+            <li>
+                <em>01</em>
+                <strong>차량 선택</strong>
+            </li>
+            <li>
+                <em>02</em>
+                <span>옵션 선택</span>
+            </li>
+            <li>
+                <em>03</em>
+                <span>정보 입력</span>
+            </li>
+            <li>
+                <em>04</em>
+                <span>결제</span>
+            </li>
+        </ul>
+        <br>
+
+        <ul class="process4 step2">
+            <li>
+                <em class="check"></em> <!-- 이전스탭 완료표시 클래스 추가 -->
+                <span>차량 선택</span>
+            </li>
+            <li>
+                <em>02</em>
+                <strong>옵션 선택</strong>
+            </li>
+            <li>
+                <em>03</em>
+                <span>정보 입력</span>
+            </li>
+            <li>
+                <em>04</em>
+                <span>결제</span>
+            </li>
+        </ul>
+        <br>
+
+        <ul class="process4 step3">
+            <li>
+                <em class="check"></em>
+                <span>차량 선택</span>
+            </li>
+            <li>
+                <em class="check"></em>
+                <span>옵션 선택</span>
+            </li>
+            <li>
+                <em>03</em>
+                <strong>정보 입력</strong>
+            </li>
+            <li>
+                <em>04</em>
+                <span>결제</span>
+            </li>
+        </ul>
+        <br>
+
+        <ul class="process4 step4">
+            <li>
+                <em class="check"></em>
+                <span>차량 선택</span>
+            </li>
+            <li>
+                <em class="check"></em>
+                <span>옵션 선택</span>
+            </li>
+            <li>
+                <em class="check"></em>
+                <span>정보 입력</span>
+            </li>
+            <li>
+                <em>04</em>
+                <strong>결제</strong>
+            </li>
+        </ul>
+        <br><br><br>
+
+        <h3>프로세스바 - process3 </h3>
+        <ul class="process3 step1"> <!-- process4 : 3개유형 / step1 : 현재 스텝  -->
+            <li>
+                <em>01</em>
+                <span>차량 선택</span>
+            </li>
+            <li>
+                <em>02</em>
+                <span>옵션 선택</span>
+            </li>
+            <li>
+                <em>03</em>
+                <span>정보 입력</span>
+            </li> 
+        </ul>
+        <br>
+        
+        <ul class="process3 step2"> 
+            <li>
+                <em>01</em>
+                <span>차량 선택</span>
+            </li>
+            <li>
+                <em>02</em>
+                <span>옵션 선택</span>
+            </li>
+            <li>
+                <em>03</em>
+                <span>정보 입력</span>
+            </li> 
+        </ul>
+        <br>
+        
+        <ul class="process3 step3"> 
+            <li>
+                <em>01</em>
+                <span>차량 선택</span>
+            </li>
+            <li>
+                <em>02</em>
+                <span>옵션 선택</span>
+            </li>
+            <li>
+                <em>03</em>
+                <span>정보 입력</span>
+            </li> 
+        </ul>
+        <br><br><br>
+        
+        
+        <h3>차 목록 & 필터 - list_car & filter</h3>
+        <div class="filter">
+            <button type="button" class="btn_filter"><span>필터</span></button>
+            <div class="grid" style=" display: none;">
+                <table class="tb_row">
+                    <caption></caption>
+                    <colgroup>
+                        <col style="width:105px" />
+                        <col style="width:auto" /> 
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">차량 유형</th>
+                            <td>
+                                <ul class="radio_filter">
+                                    <li>
+                                        <input type="checkbox" id="check1-1">
+                                        <label for="check1-1" class=""><span class="icon"></span>전체</label> 
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="check1-2">
+                                        <label for="check1-2" class=""><span class="icon"></span>소형</label> 
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="check1-3">
+                                        <label for="check1-3" class=""><span class="icon"></span>중형</label> 
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="check1-4">
+                                        <label for="check1-4" class=""><span class="icon"></span>대형</label> 
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="check1-5">
+                                        <label for="check1-5" class=""><span class="icon"></span>승합</label> 
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="check1-6">
+                                        <label for="check1-6" class="mr15"><span class="icon"></span>SUV/RV</label> 
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="check1-7">
+                                        <label for="check1-7" class=""><span class="icon"></span>수입차</label> 
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="check1-8">
+                                        <label for="check1-8" class=""><span class="icon"></span>인기 수입차</label> 
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="check1-9">
+                                        <label for="check1-9" class=""><span class="icon"></span>전기차</label> 
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="check1-10">
+                                        <label for="check1-10" class=""><span class="icon"></span>캐릭터카</label>  
+                                    </li>
+                                </ul>
+                                
+                            </td>
+                        </tr> 
+                        <tr>
+                            <th scope="row">연료 유형</th>
+                            <td>
+                                <ul class="radio_filter">
+                                    <li>
+                                        <input type="checkbox" id="check2-1">
+                                        <label for="check2-1" class="mr15"><span class="icon"></span>전체</label> 
+                                    </li>
+                                    <li> 
+                                        <input type="checkbox" id="check2-2">
+                                        <label for="check2-2" class="mr15"><span class="icon"></span>휘발유</label> 
+                                        </li>
+                                    <li> 
+                                        <input type="checkbox" id="check2-3">
+                                        <label for="check2-3" class="mr15"><span class="icon"></span>경유</label>
+                                    </li>
+                                    <li> 
+                                        <input type="checkbox" id="check2-4">
+                                        <label for="check2-4" class="mr15"><span class="icon"></span>LPG</label> 
+                                    </li>
+                                    <li> 
+                                        <input type="checkbox" id="check2-5">
+                                        <label for="check2-5" class="mr15"><span class="icon"></span>전기차</label> 
+                                    </li>
+                                    <li> 
+                                        <input type="checkbox" id="check2-6">
+                                        <label for="check2-6" class="mr15"><span class="icon"></span>하이브리드</label> 
+                                    </li>
+                                </ul>
+                                
+                            </td>
+                        </tr> 
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="list_car">
+            <ul>
+                <li>
+                    <dl>
+                        <dt><strong class="tit">1,000~2,000CC이하 승용차</strong></dt>
+                        <dd> 
+                            <div class="img">
+                                <img src="../../images/common/thumb_188x124.png" alt=""><span class="tag_promo"><em>프로모션</em></span>
+                            </div>
+                            <div class="tag">
+                                <span class="tag_compact">소형</span>
+                                <span class="tag_gas">휘발유</span>
+                            </div>
+                            <p class="txt">가솔린 | 4인승, 4도어 | 대형가방 2개</p>
+                            <ul class="option">
+                                <li class="none">[보험 불포함]</li>
+                                <li>5만원</li>
+                                <li>30만원</li>
+                            </ul>
+                            <strong class="price">25,000<em>원</em></strong>
+                            <del class="price2">25,000<em>원</em></del>
+                            <button type="button" class="btn_book btn_black">예약</button>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><strong class="tit">1,000~2,000CC이하 승용차</strong></dt>
+                        <dd> 
+                            <div class="img">
+                                <img src="../../images/common/thumb_188x124.png" alt="">
+                            </div>
+                            <div class="tag">
+                                <span class="tag_compact">소형</span>
+                                <span class="tag_gas">휘발유</span>
+                            </div>
+                            <p class="txt">가솔린 | 4인승, 4도어 | 대형가방 2개</p>
+                            <ul class="option">
+                                <li class="none">[보험 불포함]</li>
+                                <li>5만원</li>
+                                <li>30만원</li>
+                            </ul>
+                            <strong class="price">25,000<em>원</em></strong>
+                            <del class="price2">25,000<em>원</em></del>
+                            <button type="button" class="btn_book btn_black">예약</button>
+                        </dd>
+                    </dl>
+                </li>
+                <li class="no_car"> <!--예약가능한 차량이 없을 경우-->
+                    <dl>
+                        <dt><strong class="tit">1,000~2,000CC이하 승용차</strong></dt>
+                        <dd> 
+                            <div class="img">
+                                <img src="../../images/common/thumb_188x124.png" alt="">
+                            </div>
+                            <div class="tag">
+                                <span class="tag_compact">소형</span>
+                                <span class="tag_gas">휘발유</span>
+                            </div>
+                            <p class="txt">가솔린 | 4인승, 4도어 | 대형가방 2개</p>
+                            <ul class="option">
+                                <li class="none">[보험 불포함]</li>
+                                <li>5만원</li>
+                                <li>30만원</li>
+                            </ul>
+                            <strong class="price">25,000<em>원</em></strong>
+                            <del class="price2">25,000<em>원</em></del>
+                            <button type="button" class="btn_black btn_book disabled" disabled>예약</button>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+        <br><br>
+         
+        
+        
+        <h3>차 정보 - box_schd & box_car_info / width:392px </h3>
+        <div class="box_schd">
+            <a href="#layerEditBook" class="layerEditBook btn_layer">
+                <span>
+                    <strong>제주 오토하우스</strong>
+                    <em>2016/02/02 9시 00분</em>
+                </span>
+                <em class="ico_to">to</em>
+                <span>
+                    <strong>제주 오토하우스</strong>
+                    <em>2016/02/02 9시 00분</em>
+                </span>
+            </a>
+        </div>
+        <div class="box_car_info mb10">
+            <h3>쉐보레 AVEO(G) 1.6</h3>
+            <div class="img_car"><a href="#layerSelCar" class="layerSelCar btn_layer"><img src="../../images/common/thumb_350x230.png" alt=""></a></div>
+            <div class="grid">
+                <table class="tb_row">
+                    <caption></caption>
+                    <colgroup>
+                        <col style="width:100px">
+                        <col style="width:auto"> 
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">대여</th>
+                            <td class="noBorderL">논현(학동역) – 2016/09/29 10:00</td>
+                        </tr> 
+                        <tr>
+                            <th scope="row">반납</th>
+                            <td class="noBorderL">논현(학동역) – 2016/09/29 10:00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">이벤트/할인</th>
+                            <td class="noBorderL">이벤트:가을맞이 전차종</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">보험</th>
+                            <td class="noBorderL">완전면책</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">기타옵션</th>
+                            <td class="noBorderL">없음</td>
+                        </tr> 
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <br><br>
+        
+        
+        
+        <h3>가격 정보 - box_price / width:392px </h3>
+        <div class="box_price">
+            <dl>
+                <dt>대여금액</dt>
+                <dd class="price">1,125,000<em>원</em></dd> 
+                <dt>
+                    할인금액
+                    <span>가을맞이 전차종 할인 이벤트</span>
+                </dt>
+                <dd class="price">-1,000<em>원</em></dd> 
+                <dt>
+                    보험 및 기타 옵션
+                    <span>보험 미적용</span>
+                </dt>
+                <dd class="price">0<em>원</em></dd> 
+                <dt class="last">금액</dt>
+                <dd class="last price">1,125,000<em>원</em></dd>
+            </dl>
+        </div>
+        <br><br>
+        
+        <h3>박스 & 스크롤 - box scroll </h3>
+        <div class="box scroll book">
+            클래스 "box" - 박스 <br><br>
+            클래스 "scroll" 추가시 스크롤 발생 <br><br>
+            넓이나 높이는 개별 클래스 선언 하여 사용한다<br><br>
+            test<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br> test<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br> test<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br> 
+        </div>
+
+        <br>
+        
+        <div class="box">스크롤 없는 박스</div>
+        
+        
+        <br><br>
+        
+        
+        <h3>달력 - wrap_cal  </h3>
+        <div class="wrap_cal"> 
+            <div class="left_cal">
+                <h6>대여일시</h6>
+                <div class="top_cal">
+                    <a href="#" class="btn_prev">이전</a>
+                    <a href="#" class="btn_next">다음</a>
+                    <span class="txt">2016년 09월</span>
+                </div>
+                <div class="calendar">
+                    <table>
+                    <colgroup>
+                        <col style="width:45px;" />
+                        <col style="width:45px;" />
+                        <col style="width:45px;" />
+                        <col style="width:45px;" />
+                        <col style="width:45px;" />
+                        <col style="width:45px;" />
+                        <col style="width:45px;" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>일</th>
+                            <th>월</th>
+                            <th>화</th>
+                            <th>수</th>
+                            <th>목</th>
+                            <th>금</th>
+                            <th>토</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="sun"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="sat past">1</td>
+                        </tr>
+                        <tr>
+                            <td class="sun past">2</td>
+                            <td class="past">3</td>
+                            <td class="past">4</td>
+                            <td class="past">5</td>
+                            <td class="past">6</td>
+                            <td class="past">7</td>
+                            <td class="sat past">8</td>
+                        </tr>
+                        <tr>
+                            <td class="sun past">9</td>
+                            <td class="past">10</td>
+                            <td class="past">11</td>
+                            <td class="past">12</td>
+                            <td class="past">13</td>
+                            <td class="past">14</td>
+                            <td class="sat past">15</td>
+                        </tr>
+                        <tr>
+                            <td class="sun past">16</td> <!-- 일요일 sun -->
+                            <td class="past">17</td> 
+                            <td class="past">18</td> <!-- 이전날 past -->
+                            <td class="on"><a href="#">19</a></td> <!-- 선택날 on -->
+                            <td><a href="#">20</a></td>
+                            <td><a href="#">21</a></td>
+                            <td class="sat"><a href="#">22</a></td> <!-- 일요일 sat -->
+                        </tr>
+                        <tr>
+                            <td class="sun"><a href="#">23</a></td>
+                            <td><a href="#">24</a></td>
+                            <td><a href="#">25</a></td>
+                            <td><a href="#">26</a></td>
+                            <td><a href="#">27</a></td>
+                            <td><a href="#">28</a></td>
+                            <td class="sat"><a href="#">29</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sun"><a href="#">30</a></td>
+                            <td><a href="#">31</a></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="sat"></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <div class="cal_date">
+                    <strong class="date">2016/12/24</strong>
+                    <span class="select">
+                        <label for="">00시</label>
+                        <select id="" title="">
+                            <option selected="selected">00시</option>
+                            <option>01시</option>
+                            <option>02시</option>
+                            <option>03시</option>
+                        </select>
+                    </span>
+                    <span class="select">
+                        <label for="">00시</label>
+                        <select id="" title="">
+                            <option selected="selected">00분</option>
+                            <option>01분</option>
+                            <option>02분</option>
+                            <option>03분시</option>
+                        </select>
+                    </span>
+                </div>
+            </div>
+            
+            <div class="arrow"></div>
+            
+            <div class="right_cal">
+                <h6>반납일시</h6>
+                <div class="top_cal">
+                    <a href="#" class="btn_prev">이전</a>
+                    <a href="#" class="btn_next">다음</a>
+                    <span class="txt">2016년 09월</span>
+                </div>
+                <div class="calendar">
+                    <table>
+                    <colgroup>
+                        <col style="width:45px;" />
+                        <col style="width:45px;" />
+                        <col style="width:45px;" />
+                        <col style="width:45px;" />
+                        <col style="width:45px;" />
+                        <col style="width:45px;" />
+                        <col style="width:45px;" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>일</th>
+                            <th>월</th>
+                            <th>화</th>
+                            <th>수</th>
+                            <th>목</th>
+                            <th>금</th>
+                            <th>토</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="sun"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="sat past">1</td>
+                        </tr>
+                        <tr>
+                            <td class="sun past">2</td>
+                            <td class="past">3</td>
+                            <td class="past">4</td>
+                            <td class="past">5</td>
+                            <td class="past">6</td>
+                            <td class="past">7</td>
+                            <td class="sat past">8</td>
+                        </tr>
+                        <tr>
+                            <td class="sun past">9</td>
+                            <td class="past">10</td>
+                            <td class="past">11</td>
+                            <td class="past">12</td>
+                            <td class="past">13</td>
+                            <td class="past">14</td>
+                            <td class="sat past">15</td>
+                        </tr>
+                        <tr>
+                            <td class="sun past">16</td> <!-- 일요일 sun -->
+                            <td class="past">17</td> 
+                            <td class="past">18</td> <!-- 이전날 past -->
+                            <td class="on"><a href="#">19</a></td> <!-- 선택날 on -->
+                            <td><a href="#">20</a></td>
+                            <td><a href="#">21</a></td>
+                            <td class="sat"><a href="#">22</a></td> <!-- 일요일 sat -->
+                        </tr>
+                        <tr>
+                            <td class="sun"><a href="#">23</a></td>
+                            <td><a href="#">24</a></td>
+                            <td><a href="#">25</a></td>
+                            <td><a href="#">26</a></td>
+                            <td><a href="#">27</a></td>
+                            <td><a href="#">28</a></td>
+                            <td class="sat holiday"><a href="#">29</a><!-- 공휴일 holiday --></td>
+                        </tr>
+                        <tr>
+                            <td class="sun"><a href="#">30</a></td>
+                            <td><a href="#">31</a></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="sat"></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <div class="cal_date">
+                    <strong class="date">2016/12/24</strong>
+                    <span class="select">
+                        <label for="">00시</label>
+                        <select id="" title="">
+                            <option selected="selected">00시</option>
+                            <option>01시</option>
+                            <option>02시</option>
+                            <option>03시</option>
+                        </select>
+                    </span>
+                    <span class="select">
+                        <label for="">00시</label>
+                        <select id="" title="">
+                            <option selected="selected">00분</option>
+                            <option>01분</option>
+                            <option>02분</option>
+                            <option>03분시</option>
+                        </select>
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+        <br><br><br> 
+        
+        <h3>상단 정보박스 - top_info  </h3>
+        <div class="top_info"> 
+            <div class="inner">
+                <ul class="txt_list">
+                    <li class="gray f14">
+                        예약 신청 후 예약 가능 여부는 익일에 전화 또는 이메일로 안내를 드립니다. (신청일이 주말 또는 공휴일인 경우 다음 영업일에 안내를 드립니다.) </li> 
+                    <li class="gray f14">원활한 차량 대여를 위해서 대여를 원하시는 날보다 최소 24시간 이전에 예약 신청을 하시기 바랍니다.</li> 
+                    <li class="gray f14">지점에 따라 불가능한 차종이 있을 수 있습니다.</li> 
+                    <li class="gray f14">기사포함 예약은 15인승 차량까지만 대여가 가능합니다.</li> 
+                    <li class="gray f14">기사포함 렌터카 문의 : (02)547-8000</li> 
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="top_info"> 
+            <div class="inner">
+                <strong class="tit">R2B란 ?</strong>
+                <p class="txt">원활한 차량 대여를 위해서 대여를 원하시는 날보다 최소 24시간 이전에 예약 신청을 하시기 바랍니다 대여를 위해서 대여를 원하시는 날보다 최소 24시간 이전에 예약 신청을 하시기 바랍니다 대여를 위해서 대여를 원하시는 날보다 최소 24시간 이전에 예약 신청을 하시기 바랍니다 대여를 위해서 대여를 원하시는 날보다 최소 24시간 이전에 예약 신청을 하시기 바랍니다.</p>
+            </div>
+        </div>
+        <br>
+        <div class="top_info"> 
+            <div class="inner"> 
+                <p class="txt txt_point">원활한 차량 대여를 위해서 대여를 원하시는 날보다  </p>
+            </div>
+        </div>  
+        <br>
+        <div class="top_info noBG"> 
+            <div class="inner"> 
+                <strong class="tit2">월간렌터카란?</strong>
+                <p class="txt">원활한 차량 대여를 위해서 대여를 원하시는 날보다  </p>
+            </div>
+        </div>
+        <br><br><br> 
+        
+        <div class="qaList">
+            <ul> 
+                <li> 
+                    <a href="#">
+                        <span class="q">Q1</span>
+                        빠른 서비스를 이용하기 위해서는 어떻게 해야하나요 
+                    </a>
+                    <div class="answer">
+                        홈페이지에서는 바른 서비스를 위한 예약홈페이지에서는 바른 서비스를 위한 예약 홈페이지에서는 바른 서비스를 위한 예약 홈페이지에서는 바른 서비스를 위한 예약 홈페이지에서는 바른 서비스를 위한 예약 
+                    </div>
+                </li> 
+                <li> 
+                    <a href="#">
+                        <span class="q">Q2</span>
+                        빠른 서비스를 이용하기 위해서는 어떻게 해야하나요 빠른 서비스를 이용하기 위해서는 어떻게 해야하나요 빠른 서비스를 이용하기 위해서는 어떻게 해야하나요 빠른 서비스를 이용하기 위해서는 어떻게 해야하나요 
+                    </a>
+                    <div class="answer">
+                        홈페이지에서는 바른 서비스를 위한 예약홈페이지에서는 바른 서비스를 위한 예약 홈페이지에서는 바른 서비스를 위한 예약 홈페이지에서는 바른 서비스를 위한 예약 홈페이지에서는 바른 서비스를 위한 예약 
+                    </div>
+                </li>
+                <li> 
+                    <a href="#">
+                        <span class="q">Q3</span>
+                        빠른 서비스를 이용하기 위해서는 어떻게 해야하나요 
+                    </a>
+                    <div class="answer">
+                        홈페이지에서는 바른 서비스를 위한 예약홈페이지에서는 바른 서비스를 위한 예약 홈페이지에서는 바른 서비스를 위한 예약 홈페이지에서는 바른 서비스를 위한 예약 홈페이지에서는 바른 서비스를 위한 예약 
+                    </div>
+                </li>
+            </ul>
+        </div> 
+        <br><br><br>
+        
+         
+        <div>
+            <input type="text" name="" value="인풋박스">
+            <input type="text" name="" readonly="readonly" value="readonly">
+            <input type="text" name="" disabled="disabled" value="disable" >
+        </div>
+         <br>
+        <br>
+        <div>
+            anchor 태그 버튼 : <br>
+            <a href="" class="btn_white">흰버튼</a>
+            <a href="" class="btn_black">검은색버튼</a>
+            <a href="" class="btn_calendar">반납일시</a>
+            <a href="" class="btn_black disabled">검은색버튼 비활성화</a>
+            <a href="" class="btn_red">빨간버튼</a>   
+            <a href="" class="btn_red disabled">빨간버튼 비활성화</a> <br>
+            <br>
+            anchor 태그 큰 버튼 : <br>
+            <a href="" class="btn_white big">흰버튼</a>
+            <a href="" class="btn_black big">검은색버튼</a> 
+            <a href="" class="btn_black big disabled">검은색버튼 비활성화</a>
+            <a href="" class="btn_red big">빨간버튼</a>   
+            <a href="" class="btn_red big disabled">빨간버튼 비활성화</a>  
+        </div>
+        <br><br>
+        <div>
+            button 태그 버튼 : <br>
+            <button type="button" class="btn_white">흰버튼</button>
+            <button type="button" class="btn_black">검은색버튼</button>
+            <button type="button"  class="btn_calendar">반납일시</button>
+            <button type="button" class="btn_black disabled" disabled>검은색버튼 비활성화</button>
+            <button type="button" class="btn_red">빨간버튼</button>   
+            <button type="button" class="btn_red disabled" disabled>빨간버튼 비활성화</button>    
+            <br><br>
+            
+            button 태그 큰 버튼 : <br>
+            <button type="button" class="btn_white big">흰버튼</button>
+            <button type="button" class="btn_black big">검은색버튼</button>
+            <button type="button" class="btn_black big disabled" disabled>검은색버튼 비활성화</button>
+            <button type="button" class="btn_red big">빨간버튼</button>   
+            <button type="button" class="btn_red big disabled" disabled>빨간버튼 비활성화</button>    
+            <br><br>
+            
+            버튼 정렬 : <br> 
+            <div class="btn_wrap">
+                <span class="left">
+                    <a href="#" class="btn_white">좌측버튼</a>
+                </span> 
+                <span class="right">
+                    <a href="#" class="btn_white">우측버튼</a>
+                </span> 
+            </div>
+            <br>
+            <div class="btn_wrap"> 
+                <span class="center">
+                    <a href="#" class="btn_white">가운데</a>
+                    <a href="#" class="btn_white">가운데</a>
+                </span> 
+            </div> 
+        </div>
+        <br><br>
+        
+        
+        
+        <h3>체크박스</h3>
+        <input type="checkbox" id="check-1">
+        <label for="check-1" class="mr15"><span class="icon"></span>체크</label>
+
+        <input type="checkbox" id="check-2">
+        <label for="check-2" class="mr15"><span class="icon"></span>체크</label>
+
+        <input type="checkbox" id="check-3" disabled>
+        <label for="check-3"><span class="icon"></span>disabled</label>
+
+        <br><br>
+        
+        <h3>라디오</h3>
+        <input type="radio" id="radio1-1" name="radio1">
+        <label for="radio1-1" class="mr15"><span class="icon"></span>오프라인</label>
+        <input type="radio" id="radio1-2" name="radio1">
+        <label for="radio1-2" class="mr15"><span class="icon"></span>오프라인</label>
+        <input type="radio" id="radio1-3" name="radio1" disabled>
+        <label for="radio1-3"><span class="icon"></span>disabled</label>
+ 
+        <br><br>
+         
+        <h3>셀렉트</h3> 
+        <span class="select">
+            <label for="00시">00시</label>
+            <select id="" title="">
+                <option selected="selected">00시</option>
+                <option>01시</option>
+                <option>02시</option>
+                <option>03시</option>
+            </select>
+        </span>
+
+        <!-- select 비활성-->
+        <span class="select disabled">
+            <label for="">선택</label>
+            <select id="" title="" disabled="disabled" class="disabled">
+            </select>
+        </span> 
+        <br><br>
+        
+        
+        <h1>title</h1>
+        <br><br>
+        <h2>h2 title</h2>
+        <h3>h3 title</h3>
+        <!-- h3 title width tooltip -->
+        <div class="titleBox">
+          <h3>h3 title 과 툴팁</h3>
+          <span class="tooltip">
+            <a href="#none" class="btn_tooltip">툴팁</a>
+          </span>
+        </div>
+        <h4>h4 title</h4>
+        <div class="titleBox noLine">
+          <h4>h4 title 과 툴팁</h4>
+          <span class="tooltip">
+            <a href="#none" class="btn_tooltip">툴팁</a>
+          </span>
+        </div>
+        <br><br>
+        <section class="section main first mt15">
+            <div class="titleBox noLine">
+                <h4>기간 선택</h4>
+                <span class="tooltip">
+                    <a href="#none" class="btn_tooltip">툴팁</a>
+                </span>
+            </div>
+            <div class="rent_popWrap mt5">
+                <div class="innerBox rentBox">
+                  <a href="#none" class="noData"><!-- Default class="noData" -->
+                    <span class="tit">대여일시</span>
+                  </a>
+                </div>
+                <div class="innerBox returnBox">
+                  <a href="#none">
+                    <span class="tit">반납일시</span>
+                    <span class="date">2016/09/29</span>
+                    <span class="hour">10시 00분</span>
+                  </a>
+                </div>
+            </div>
+            <p class="txt_list_red mb30">대여시간이 24시간 이상인 경우에만 할인이 적용됩니다.</p>
+        </section>
+        <!-- //기간 선택 -->
+        <!-- 지점 선택 -->
+        <section class="section main">
+            <h4>지점 선택</h4>
+            <div class="deliveryWrap mt5">                                  
+                <input type="checkbox" name="" id="chk1" class="ds_check"><label for="chk1" class="mr10"><span class="icon"></span>딜리버리 서비스(DS)</label>
+                <span>
+                    <a href="#none" class="btn_tooltip">툴팁</a>  
+                </span>
+            
+                <!-- 딜리버리 서비스 체크시 노출 영역 -->
+                <div class="inner ds_radio">
+                    <input type="radio" name="s_selLocation" id="s_selLocation1">
+                    <label for="s_selLocation1" class="mr30"><span class="icon"></span>대여 + 반납</label>
+                
+                    <input type="radio" name="s_selLocation" id="s_selLocation2">
+                    <label for="s_selLocation2" class="mr30"><span class="icon"></span>대여</label>
+                
+                    <input type="radio" name="s_selLocation" id="s_selLocation3">
+                    <label for="s_selLocation3" class="mr30"><span class="icon"></span>반납</label>
+                </div>
+                <!-- //딜리버리 서비스 체크시 노출 영역 -->
+            </div>
+
+            <div class="rent_popWrap areaBox">
+                <div class="innerBox rentBox">
+                  <a href="#none" class="noData"><!-- Default class="noData" -->
+                    <span class="tit">대여지점</span>
+                  </a>
+                </div>
+                <div class="innerBox returnBox">
+                  <a href="#none">
+                    <span class="tit">반납지점</span>
+                    <span class="area">논현(학동역)</span>
+                  </a>
+                </div>
+            </div>
+            <p class="txt_list_red mb25">대여지점과 다른 지점으로 반납하실 경우 별도의 수수료가 부가됩니다.</p>
+        </section>
+        <!-- //지점 선택 -->
+        <!-- 차량 선택 -->
+        <section class="section main">
+            <h4>차량 선택</h4>
+            <div class="sel_carWrap">
+                <div class="innerBox normal">
+                    <div class="radio large">
+                        <input type="radio" name="s_selCar" id="s_selCar1">
+                        <label for="s_selCar1"><span class="icon"></span>일반예약</label>
+                    </div>
+                  <div class="desc_box">                                      
+                    <ul class="txt_list mt10">
+                        <li class="gray">
+                            회원/비회원 모두 예약 가능
+                        </li>
+                        <li class="gray">
+                            특정 차종 지정 가능
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="innerBox saving">
+                    <div class="radio large">
+                        <input type="radio" name="s_selCar" id="s_selCar2">
+                        <label for="s_selCar2"><span class="icon"></span>알뜰카</label>
+                    </div>
+                    <div class="desc_box">
+                        <ul class="txt_list mt10">
+                            <li class="gray">
+                                회원(로그인)만 예약 가능
+                            </li>
+                            <li class="gray">
+                                차급만 선택 가능, 저렴한 가격
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <br><br>
+        <div>
+        <h3>레이어</h3>
+         <a href="#layer_s1" class="btn_layer">작은레이어1</a><br><br>
+         <a href="#layer_s2" class="btn_layer">작은레이어2</a><br><br>
+         <a href="#layer_b1" class="btn_layer">큰레이어1</a><br><br>   
+         <a href="#layer_b2" class="btn_layer">큰레이어2</a>
+         <br><br><br>
+         <div class="dimm">
+         </div>
+         <div id ="layer_b1" class="layer layer_b">
+            <div class="layer_tit">
+                <h2>큰레이어1</h2>
+                <a href="#" class="btn_layer_close"><img src="../../images/common/btn_layer_close.png"></a>
+            </div>
+            <div class="layer_con">
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+            </div>
+        </div>
+         <div id ="layer_b2" class="layer layer_b">
+            <div class="layer_tit">
+                <h2>큰레이어2</h2>
+                <a href="#" class="btn_layer_close"><img src="../../images/common/btn_layer_close.png"></a>
+            </div>
+            <div class="layer_con">
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+            </div>
+        </div>        
+         <div id="layer_s1" class="layer layer_s">
+            <div class="layer_tit">
+                <h2>작은 레이어 1</h2>
+                <a class="btn_layer_close" href="#"><img src="../../images/common/btn_layer_close.png"></a>
+            </div>
+            <div class="layer_con">
+            <h3>tests</h3>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용
+            </div>
+        </div>         
+         <div id="layer_s2" class="layer layer_s">
+            <div class="layer_tit">
+                <h2>작은 레이어 2</h2>
+                <a class="btn_layer_close" href="#"><img src="../../images/common/btn_layer_close.png"></a>
+            </div>
+            <div class="layer_con">
+            <h3>tests</h3>
+                레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용
+            </div>
+        </div>
+            
+            
+        </div>
+    </main>    
+</body>
+
+</html>

@@ -1,0 +1,587 @@
+<!doctype html>
+<html dir="ltr" lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+    <script src="../../js/jquery.sidebar.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    <script src="../../js/core.m.js"></script>
+    <script src="../../js/calendar.m.js"></script>
+    <script src="../../js/ui.js"></script>
+    
+</head>
+<body>
+	<header>
+		<a class="logo" href="#"><h1><img src="../../images/m/logo.png" alt="롯데렌터카 로고"></h1></a>
+		<div class="controls">
+			<a class="member_btn" href="#"></a>
+			<a id="drawer_btn" class="drawer_btn" href="#"></a>
+		</div>
+	</header>
+	<div class="sub_header">
+		<a class="back_btn" href="#"></a>
+		<h2 class="title">중고차판매 지인 추천</h2>
+	</div>
+	<div id="container" class="friend wrap_driver_sv">
+		<!-- 본문삽입 -->
+		<div class="top_banner mb40">
+			<img src="../../images/sell/img_sell_promotion02.jpg" alt="추천 받아 문의하기 - 원하는 장소로 무료 방문하여 견적확인 해드리는 롯데렌터카 중고차 팔기로 편하게 중고차 판매하세요!">
+		</div>
+		<div class="mg">
+			<h3 class="mb10">혜택 안내</h3>
+			<div class="box">
+				<ul class="txt_list">
+					<li class="black"><strong>견적문의 완료시 :</strong> <br>추천인에게 <span class="txt_point">L.POINT 50,000P</span> 적립</li>
+				</ul>
+			</div>
+			<ul class="txt_list mt5">
+				<li class="red f12">L.POINT는 견적문의 또는 계약 완료한 날짜 기준으로 익월 초 일괄 지급합니다. <br>
+				(피추천인의 견적문의 건에 대하여는 1인 1회 적용(중복지급X) <br>
+				단, 추천인 및 지인은 L.POINT 회원이어야 하며, 회원이 아닌 경우 L.POINT 적립이 불가하오니, L.POINT 회원이 아닌 경우 회원가입 후 진행하시기 바랍니다.
+				</li>
+			</ul>
+		</div>
+		<h3 class="counseling_tit">중고차 팔기 문의하기</h3>
+		<div class="personal_info mt30 mg">
+			<h4 class="counseling_tit2 mb15">개인 정보<span class="txt_must">* 모든 항목은 필수기재입니다.</span></h4>
+			<div class="grid noBorderT">
+				<table class="tb_noBorder">
+					<caption></caption>
+					<colgroup>
+						<col style="width:85px">
+						<col style="width:auto">  
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"><label for="">추천인</label></th>
+							<td>
+								<input type="text" id="" name="" value="t*st (010-****-5678)" readonly="readonly">
+							</td> 
+						</tr>
+						<tr>
+							<th scope="row"><label for="">이름</label></th>
+							<td>
+								<input type="text" id="" name="" value="홍길도" readonly="readonly">
+							</td> 
+						</tr>
+						<tr>
+							<th scope="row"><label for="">지역 선택</label></th>
+							<td>
+								<div class="w100 mb5">
+									<div class="cell">
+										<input type="tel" name="" id="" value="">
+									</div>
+									<div class="cell hyphen">
+										-
+									</div>
+									<div class="cell">
+										<input type="tel" name="" id="" value="">
+									</div>
+									<div class="cell hyphen">
+										-
+									</div>
+									<div class="cell">
+										<input type="tel" name="" id="" value="">
+									</div>
+								</div>
+							</td> 
+						</tr>
+						<tr>
+							<th scope="row"><label for="">차량명</label></th>
+							<td>
+								<input type="text" id="" name="" value="" placeholder="차량명을 입력하세요.">
+							</td> 
+						</tr> 
+						<tr>
+							<th scope="row"><label for="">차량번호</label></th>
+							<td>
+								<input type="text" id="" name="" value="" placeholder="차량번호를 입력하세요. (예시)01가1234">
+							</td> 
+						</tr>  
+						<tr>
+							<th scope="row"><label for="">지역 선택</label></th>
+							<td>
+								<div class="w100">
+									<div class="cell">
+										<span class="select"> 
+											<select id="" title="">
+												<option selected="selected">선택</option>
+												<option>서울</option>
+												<option>경기</option>
+												<option>인천</option>
+												<option>강원</option>
+												<option>부산</option>
+												<option>울산</option>
+												<option>경남</option>
+												<option>제주</option>
+											</select>
+										</span>
+									</div>
+									<div class="cell pl5">
+										<span class="select disabled"> 
+											<select id="" title="" disabled="disabled" class="disabled">
+												<option selected="selected">전체</option>
+												<option>강남구</option>
+												<option>강동구</option>
+												<option>강북구</option>
+												<option>강서구</option>
+												<option>은평구</option>
+												<option>종로구</option>
+												<option>중구</option>
+												<option>중량구</option>
+											</select>
+										</span>
+									</div>
+								</div>
+							</td> 
+						</tr> 
+						<tr>
+							<th scope="row"><label for="">상담 희망일시</label></th>
+							<td>
+								<div class="w100">
+									<div class="cell" style="width:40px;">
+										<a href="#cal3" title="상담 희망일시 레이어 팝업 열림" class="cal3 btn_calendar btn_layer">날짜선택</a> 
+									</div>
+									<div class="cell pl5">
+										<input type="hidden" class="sd_date">
+										<input type="hidden" class="sd_hour">
+										<input type="hidden" class="sd_minute">
+										<input type="text" name="" id="" value="" placeholder="상담 희망일시" class="start_cal" readonly > 
+									</div> 
+								</div> 
+							</td> 
+						</tr> 
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="user_agreement mt40 mg">
+			<h4 class="counseling_tit2 mb0">중고차 팔기를 위한 이용자 동의 사항</h4>
+			<p class="border">
+				<input type="checkbox" id="agree3">
+				<label for="agree3" class="mr15"><span class="icon"></span>개인정보 수집 및 이용 동의(필수)</label>
+				<a href="#layerAgreeCollect" class="layerAgreeCollect btn_more btn_layer">더보기</a>
+			</p>
+		</div>							
+		<div class="btn_wrap mb20">
+			<button type="button" class="btn_red btn_230">중고차 팔기 문의하기</button>
+		</div>  
+		<!-- //본문삽입 -->
+	</div>
+	<footer>
+		<div class="inner_footer">
+			<div class="upper">
+				<div class="sns">
+					<a class="twitter" href="#" target="_blank"><img src="../../images/m/footer_sns_twitter_img.png" alt="트위터"></a>
+					<a class="facebook" href="#" target="_blank"><img src="../../images/m/footer_sns_facebook_img.png" alt="페이스북"></a>
+					<a class="blog" href="#" target="_blank"><img src="../../images/m/footer_sns_blog_img.png" alt="블로그"></a>
+				</div>
+				<ul class="phone">
+					<li class="">대표전화 1588-1230</li>
+					<li class="">해외 82-2-797-8000</li>
+				</ul>
+			</div>
+			<div class="lower">
+				<div class="sitemap">
+					<a href="#">개인정보 처리방침</a><a href="#">영상정보 처리기기 운영관리방침</a><br>
+					<a href="#">이용약관</a><a href="#">무단 이메일 수집거부</a><a href="#">CONTACT US</a>
+				</div>
+				<div class="information">
+					<span class="address">서울시 강남구 테헤란로 422 KT타워 6~9층</span>
+					<ul class="entrepreneur_info">
+						<li>대표이사 표현명</li>
+						<li>사업자등록번호  214-87-79183</li>
+					</ul>
+					<span class="copyright">ⓒ LOTTE rental Co.Ltd</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<nav id="drawer" class="drawer">
+		<div class="drawer_header">
+			<a class="title" href="/m/html/main/main.html">홈</a>
+			<button id="drawer_close_btn" class="drawer_close_btn"></button>
+		</div>
+		<div class="drawer_body">
+			<div class="menu_container" aria-hidden="true">
+				<ul>
+					<li class="idx1">빌릴 때</li>
+					<li class="idx2">살 때</li>
+					<li class="idx3">팔 때</li>
+					<li class="idx4">기기/장비렌탈</li>
+					<li class="idx5" onclick="location.href='/m/html/event/FN05.html'">이벤트</li>
+					<li class="idx6">고객센터</li>
+					<li class="idx7">회사소개</li>
+					<li class="idx8">롯데렌탈 APP</li>
+				</ul>
+			</div>
+			<div class="submenu_container">
+				<ul class="menus">
+					<li class="menu">
+						<a href="#"><span>빌릴 때</span></a>
+						<ul class="submenu">
+							<li>
+								<a class="slide_menu_btn" href="#">단기렌터카</a>
+								<ul class="slide_menu">
+									<li>
+										<a href="/m/html/rent/FN010101.html">실시간 예약</a>
+									</li>
+									<li>
+										<a class="slide_menu_btn" href="#">단기렌터카 서비스 안내</a>
+										<ul class="slide_menu">
+											<li>
+												<a href="#">대여 안내</a>
+											</li>
+											<li>
+												<a href="#">요금 안내</a>
+											</li>
+											<li>
+												<a href="#">부가 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">해외렌트 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">딜리버리 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">빠른 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">기사포함 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">보험대차 서비스 안내</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a class="slide_menu_btn" href="#">롯데렌터카만의 서비스</a>
+										<ul class="slide_menu">
+											<li>
+												<a href="#">대여 안내</a>
+											</li>
+											<li>
+												<a href="#">요금 안내</a>
+											</li>
+											<li>
+												<a href="#">부가 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">해외렌트 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">딜리버리 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">빠른 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">기사포함 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">보험대차 서비스 안내</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a class="slide_menu_btn" href="#">월간렌터카</a>
+								<ul class="slide_menu">
+									<li>
+										<a href="#">대여 신청</a>
+									</li>
+									<li>
+										<a href="#">월간렌터카 서비스 안내</a>
+									</li>											
+								</ul>
+							</li>
+							<li>
+								<a href="#">그린카(카셰어링)</a>
+							</li>							
+						</ul>
+					</li>
+					<li class="menu">
+						<a href="#"><span>살 때</span></a>
+						<ul class="submenu">
+							<li>
+								<a class="slide_menu_btn" href="#">신차 장기 렌터카</a>
+								<ul class="slide_menu">
+									<li>
+										<a href="#">간편 견적</a>
+									</li>
+									<li>
+										<a href="#">프로모션</a>
+									</li>
+									<li>
+										<a class="slide_menu_btn" href="#">신차 장기렌터카 서비스 안내</a>
+										<ul class="slide_menu">
+											<li>
+												<a href="#">신차장기렌터카 안내</a>
+											</li>
+											<li>
+												<a href="#">이용절차 및 Q&amp;A</a>
+											</li>
+											<li>
+												<a href="#">LPG60 장기렌터카 안내</a>
+											</li>
+											<li>
+												<a href="#">전기차 장기렌터카 안내</a>
+											</li>
+											<li>
+												<a href="#">오토 체인지 프로그램</a>
+											</li>
+										</ul>									
+									</li>
+									<li>
+										<a class="slide_menu_btn" href="#">롯데렌터카만의 서비스</a>
+										<ul class="slide_menu">
+											<li>
+												<a href="#">신차장기렌터카 안내</a>
+											</li>
+											<li>
+												<a href="#">이용절차 및 Q&amp;A</a>
+											</li>
+											<li>
+												<a href="#">LPG60 장기렌터카 안내</a>
+											</li>
+											<li>
+												<a href="#">전기차 장기렌터카 안내</a>
+											</li>
+											<li>
+												<a href="#">오토 체인지 프로그램</a>
+											</li>
+										</ul>									
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a class="slide_menu_btn" href="#">승계 게시판</a>
+								<ul class="slide_menu">
+									<li>
+										<a href="#">승계 매물 등록</a>
+									</li>
+									<li>
+										<a href="#">승계 매물 검색</a>
+									</li>
+									<li>
+										<a href="#">승계 게시판 서비스 안내</a>
+									</li>
+								</ul>								
+							</li>
+							<li>
+								<a class="slide_menu_btn" href="#">중고차 장기렌터카</a>	
+								<ul class="slide_menu">
+									<li>
+										<a href="#">중고차 장기렌터카 검색</a>
+									</li>
+									<li>
+										<a href="#">중고차 장기렌터카 서비스 안내</a>
+									</li>
+									<li>
+										<a href="#">오토리스</a>
+									</li>
+								</ul>								
+							</li>
+							<li>
+								<a class="slide_menu_btn" href="#">법인 장기렌터카</a>	
+								<ul class="slide_menu">
+									<li>
+										<a href="#">견적 상담</a>
+									</li>
+									<li>
+										<a href="#">법인 장기렌터카 서비스 안내</a>
+									</li>
+								</ul>								
+							</li>
+						</ul>
+					</li>
+					<li class="menu">
+						<a href="#"><span>팔 때</span></a>
+						<ul class="submenu">
+							<li>
+								<a class="slide_menu_btn" href="#">중고차 팔기</a>
+								<ul class="slide_menu">
+									<li>
+										<a href="#">견적 상담</a>
+									</li>
+									<li>
+										<a class="slide_menu_btn" href="#">중고차 경매 서비스 안내</a>
+										<ul class="slide_menu">
+											<li>
+												<a href="#">경매 출품 안내</a>
+											</li>
+											<li>
+												<a href="#">입찰 안내</a>
+											</li>
+											<li>
+												<a href="#">판매가 출품 보장 안내</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">오토옥션</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu">
+						<a href="#"><span>기기/장비렌탈</span></a>
+						<ul class="submenu">	
+							<li>
+								<a href="#">산업용기기렌탈</a>
+							</li>
+							<li>
+								<a href="#">OA렌탈</a>
+							</li>
+							<li>
+								<a href="#">측정기렌탈</a>
+							</li>
+							<li>
+								<a href="#">지점안내</a>
+							</li>																									
+							<li>
+								<a href="#">입찰 매각 공지</a>
+							</li>
+						</ul>						
+					</li>
+					<li class="menu event">
+						<a href="#"><span>이벤트</span></a>
+					</li>
+					<li class="menu">
+						<a href="#"><span>고객 센터</span></a>
+						<ul class="submenu">
+							<li>
+								<a href="#">지점 안내</a>
+							</li>
+							<li>
+								<a href="#">FAQ</a>
+							</li>
+							<li>
+								<a href="#">고객의견</a>
+							</li>
+							<li>
+								<a href="#">상담 문의</a>
+							</li>
+							<li>
+								<a href="#">공지&amp;뉴스</a>
+							</li>
+						</ul>						
+					</li>
+					<li class="menu">
+						<a href="#"><span>회사소개</span></a>
+						<ul class="submenu">
+							<li>
+								<a href="#">개요</a>
+							</li>
+							<li>
+								<a href="#">CEO인사말</a>
+							</li>
+							<li>
+								<a href="#">연혁</a>
+							</li>
+							<li>
+								<a href="#">비전</a>
+							</li>
+							<li>
+								<a href="#">CI/BI 소개</a>
+							</li>							
+							<li>
+								<a class="slide_menu_btn" href="#">PR센터</a>
+								<ul class="slide_menu">
+									<li>
+										<a href="#">신차장 캠페인</a>
+									</li>
+									<li>
+										<a href="#">나의 자동차 생활백서</a>
+									</li>									
+								</ul>
+							</li>
+							<li>
+								<a class="slide_menu_btn" href="#">윤리경영</a>
+								<ul class="slide_menu">								
+									<li>
+										<a class="slide_menu_btn" href="#">윤리 경영 원칙</a>
+										<ul class="slide_menu">
+											<li>
+												<a href="#">新 윤리 경영 원칙</a>
+											</li>
+											<li>
+												<a href="#">비윤리행위 신고와 보상</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a class="slide_menu_btn" href="#">사이버 신문고</a>
+										<ul class="slide_menu">
+											<li>
+												<a href="#">소개</a>
+											</li>
+											<li>
+												<a href="#">제보자보호</a>
+											</li>
+											<li>
+												<a href="#">제보 결과 확인</a>
+											</li>											
+										</ul>
+									</li>
+									<li>
+										<a class="slide_menu_btn" href="#">공정거래 자율준수</a>
+										<ul class="slide_menu">
+											<li>
+												<a href="#">개요</a>
+											</li>
+											<li>
+												<a href="#">대표이사 의지선언문</a>
+											</li>
+											<li>
+												<a href="#">조직체계 및 프로그램 운영현황</a>
+											</li>
+											<li>
+												<a href="#">핫라인(내부고발제도)</a>
+											</li>											
+										</ul>
+									</li>									
+								</ul>
+							</li>
+							<li>
+								<a class="slide_menu_btn" href="#">위치안내</a>
+								<ul class="slide_menu">
+									<li>
+										<a href="#">안양 사옥</a>
+									</li>
+									<li>
+										<a href="#">선릉 사옥</a>
+									</li>									
+								</ul>
+							</li>														
+						</ul>					
+					</li>					
+					<li class="menu app">
+						<a href="#"><span>롯데렌탈 APP</span></a>
+						<ul class="submenu">
+							<li>
+								<a href="#"><img src="../../images/m/ico_greencar.png" alt="그린카 앱 아이콘"><span>그린카</span></a>
+							</li>
+							<li>
+								<a href="#"><img src="../../images/m/ico_automanager.png" alt="오토매니저 앱 아이콘"><span>오토매니저</span></a>
+							</li>							
+						</ul>						
+					</li>				
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+</body>
+</html>

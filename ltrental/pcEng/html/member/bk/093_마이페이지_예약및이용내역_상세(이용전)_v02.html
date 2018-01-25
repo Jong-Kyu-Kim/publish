@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1200, initial-scale=1">
+
+	<title></title>
+	<link rel="stylesheet" href="../../css/style.css">
+	
+
+	<!--// jQuery core -->
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.min.js"></script>
+	<script src="../../js/html5shiv.js"></script>
+	<script src="../../js/core.js"></script>
+	<script src="../../js/ui.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="inner_header">
+			<a href="#container" class="skip_nav">본문 바로가기</a>
+			<a href="#" class="logo"><h1><img src="../../images/common/logo.png" alt="Lotte rent-a-car"></h1></a>
+			<a href="#" class="side_logo"><img src="../../images/common/logo_hertz.png" alt="hertz"></a>
+			<ul id="extra_menu" class="extra_menu">
+				<!--// 비회원일 경우 -->
+				<li class="login"><a href="#">Login</a></li>
+				<li class="join"><a href="#">Register</a></li>
+
+				<!--// 회원일 경우 -->
+				<li class="logout"><a href="#">My Reservation</a></li>
+				<li class="mypage_quick">
+					<a class="btn_dropdown_menu pr0" href="#">Mypage</a>
+				</li>
+				<li class="language"><a href="#">KOREAN</a></li>
+			</ul>
+		</div>
+		<div id="gnb" class="gnb">
+			<ul class="menus">
+				<li class="menu idx1">
+					<a href="#">Reservations</a>
+				</li>
+				<li class="menu idx2">
+					<a href="#">Car rental</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">Rental information </a>
+							<ul>
+								<li>
+									<a href="#">Rental Cost Information</a>
+								</li>
+								<li>
+									<a href="#">Additional Rate</a>
+								</li>
+								<li>
+									<a href="#">Rental information for foreigner</a>
+								</li>
+								<li>
+									<a href="#">Overseas Reservation</a>
+								</li>
+								<li>
+									<a href="#">Chauffeured Service</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="menu idx3">
+					<a href="#">Location</a>
+				</li>
+			</ul>
+		</div>
+		<div class="gnb_open"></div>
+		<ul id="breadcrumb" class="breadcrumb">
+			<li class="path home"><a href="#"></a></li>
+			<li class="path">My page</li>
+		</ul>
+	</header>
+	<!-- container -->
+	<div id="container" class="mypage">
+		<!-- content -->		
+			<h2>My Reservation</h2>
+			<div class="grid reservation_info">
+				<table class="tb_row">
+					<caption></caption>
+					<colgroup>
+						<col style="width:195px">
+						<col style="width:362px">
+						<col style="width:195px">
+						<col style="width:362px">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">Reservation No.</th>
+							<td colspan="3">1622614010</td>
+						</tr>
+						<tr>
+							<th scope="row">Name</th>
+							<td colspan="3">Hong Gil Dong</td>
+						</tr>
+						<tr>
+							<th scope="row">Car</th>
+							<td colspan="3">AVANTE AD</td>
+						</tr>
+						<tr>
+							<th scope="row">Date</th>
+							<td>2016/00/00 18:00</td>
+							<th scope="row">Return Date</th>
+							<td>2016/00/00 18:00</td>
+						</tr>            
+						<tr>
+							<th scope="row">Pick up Branch</th>
+							<td>Gangnam <a href="#" class="btn_white">Branch</a></td>
+							<th scope="row">Retrun Branch</th>
+							<td>Gangnam<a href="#" class="btn_white">Branch</a></td>				                
+						</tr>
+						<tr>
+							<th scope="row">Event Discount</th>
+							<td colspan="3">Membership Discount(40%)</td>
+						</tr>
+						<tr>
+							<th scope="row">Point Discount</th>
+							<td colspan="3">0 KRW</td>
+						</tr>
+						<tr>
+							<th scope="row">CDW</th>
+							<td colspan="3">0 KRW</td>
+						</tr>
+						<tr>
+							<th scope="row">기타 옵션</th>
+							<td colspan="3">
+								<p>Navigation: 0KRW</p>
+								<p>옵션항목명: 0KRW</p>
+							</td>
+						</tr>        
+						<tr>
+							<th scope="row">Total Charge</th>
+							<td colspan="3">111,000KRW</td>
+						</tr>				            
+					</tbody>
+				</table>
+				<div class="btn_wrap mt_70">
+					<a href="#reserveCancel" class="reserveCancel btn_layer btn_gray btn_200">예약 취소</a>
+					<a href="#" class="btn_gray btn_200">예약 수정</a>
+					<a href="#" class="btn_red btn_200">예약 결제</a>
+				</div>				    
+			</div>  
+		<!-- content -->
+	</div>
+	<!-- container -->
+	<footer>
+		<div class="inner_footer">
+			<div class="sitemap">
+				<ul>
+					<li><a href="#">COMPANY</a> ㅣ</li>
+					<li><a href="#">USER AGREEMENT</a> ㅣ</li>
+					<li><a href="#">CONTACT US</a></li>
+				</ul>
+			</div>
+
+			<div class="sns">
+				<ul>
+					<li>
+						<a class="twitter" href="#" target="_blank"><img src="../../images/common/img_footer_sns_twitter.png"></a>
+					</li>
+					<li>
+						<a class="facebook" href="#" target="_blank"><img src="../../images/common/img_footer_sns_facebook.png"></a>
+					</li>
+					<li>
+						<a class="blog" href="#" target="_blank"><img src="../../images/common/img_footer_sns_blog.png"></a>
+					</li>					
+				</ul>
+			</div>
+
+			<div class="information">
+				<span class="entrepreneur_info">
+					LOTTE rental co.,ltd. | President : Pyo, Hyun-Myung | Business Registration # : 214-87-79183
+				</span>
+				<span class="address">Communication Service # : 2010-Gyunggi Anyang 420 | Address : 8F Shinwonvision Tower 898. Hogye-dong, Dongan-Gu, Anyang </span>
+				<span class="phone">Main Contact 1588-1230 | FAX 02-2141-9022</span>
+				<span class="copyright">copyright ⓒ 2016 LOTTE rental co.ltd.All Rrights Reserved.</span>
+			</div>
+
+			<div class="certifications">
+				<ul>
+					<li>
+						<img src="../../images/common/img_footer_cert_1.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_2.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_3.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_4.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_5.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_6.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_7.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_8.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_9.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_10.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_11.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_12.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_13.png">
+					</li>	
+				</ul>
+			</div>
+		
+			<div class="big-banner">
+				<img src="../../images/common/img_footer_big_banner.png">
+			</div>
+		</div>
+	</footer>
+	<div class="dimm"></div>
+	<div id="reserveCancel" class="layer layer_s">
+		    <div class="layer_tit">
+		        <h2>예약 취소</h2>
+		        <a href="#" class="btn_layer_close"><img src="../../images/common/btn_layer_close.png" alt="close"></a>
+		    </div>
+		    <div class="layer_con">
+		    	<div class="cancel_top mt25">
+					<p>예약을 취소하시겠습니까?</p>
+					<p>취소사유를 선택하세요</p>
+					<span class="select mt20">
+					    <select id="select1" title="">
+					        <option selected="selected">취소 사유 선택</option>
+					        <option>이중계약</option>
+					        <option>가격불만</option>
+					        <option>여행일정 변경</option>
+					        <option>기타 사유</option>
+					    </select>
+					</span>				
+				</div>
+				<div class="no_show mt20">
+					<h4>취소 수수료/노 쇼(No Show) 수수료 환불 규정</h4>
+					<div class="grid">
+					    <table class="tb_col">
+					        <caption></caption>
+					        <colgroup>
+					            <col style="width:33%">
+					            <col style="width:33%">
+					            <col style="width:auto"> 
+					        </colgroup>
+					        <thead>
+					            <tr>
+					                <th scope="col">대여 예정일<br>24시간 이전</th>
+					                <th scope="col">대여 예정일<br>24시간 이내</th>
+					                <th scope="col">대여 예정일<br>24시간 이후</th>
+					            </tr>
+					        </thead>
+					        <tbody>
+					            <tr>
+					                <td>100% 환불</td>
+					                <td>3,000원<br>(취소 수수료)</td>
+					                <td>차량대여<br>요금의 10%<br>(노쇼 수수료)</td>
+					            </tr>
+					        </tbody>
+					    </table>
+					</div>                                    			
+				</div>	
+		    	<div class="layer_foot nb btn_wrap">
+						<a href="#" class="btn_layer_close btn_gray btn_160">Cancel</a>
+						<a href="#" class="btn_red btn_160">Submit</a>
+		    	</div>
+		    </div>
+		</div>		
+</body>
+</html>

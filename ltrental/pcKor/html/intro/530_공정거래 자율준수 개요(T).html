@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html dir="ltr" lang="ko" class="ie7"><![endif]-->
+<!--[if IE 8]><html dir="ltr" lang="ko" class="ie8"><![endif]-->
+<!--[if IE 9]><html dir="ltr" lang="ko" class="ie9"><![endif]-->
+<html dir="ltr" lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1200, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.min.js"></script>
+	<script src="../../js/html5shiv.js"></script>
+	<script src="../../js/core.js"></script>
+	<script src="../../js/ui.js"></script>
+    <script src="../../js/calendar.js"></script>
+</head>
+ 
+<body>
+	<header>
+		<div class="inner_header">
+			<a href="#container" class="skip_nav">본문 바로가기</a>
+			<a href="../main/main.html" class="logo"><h1><img src="../../images/common/logo.png" alt="롯데렌터카"></h1></a>
+			<ul id="extra_menu" class="extra_menu">
+				<!--// 비회원일 경우 -->
+				<li class="login"><a href="#">로그인</a></li>
+				<li class="join"><a href="#" class="lPointAutoChange btn_layer">회원가입</a></li>
+
+				<!--// 회원일 경우 -->
+				<li class="logout"><a href="#">로그아웃</a></li>
+				<li class="mypage_quick">
+					<a class="btn_dropdown_menu" href="#">마이페이지</a>
+					<ul class="dropdown_menu">
+						<!--<li class="active"><a href="#">예약 및 이용 내역</a></li>-->
+						<li class="active"><a href="#">예약 및 이용 내역</a></li>
+						<li><a href="#">계약서 조회</a></li>
+						<li><a href="#">상담문의 내역</a></li>
+					</ul>
+				</li>
+
+				<li class="language"><a href="#">ENGLISH</a></li>
+			</ul>
+		</div>
+		<div id="gnb" class="gnb">
+			<ul class="menus">
+				<li class="menu idx1">
+					<a href="../rent/FN010101_2_1_1.html">빌릴 때</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">단기렌터카</a>
+							<ul>
+								<li>
+									<a href="#">실시간 예약</a>
+								</li>
+								<li class="btn_dropdown_menu">
+									<a href="#">단기렌터카 서비스 안내</a>
+									<ul class="dropdown_menu">
+										<li>
+											<a href="#">대여 안내</a>
+										</li>
+										<li>
+											<a href="#">요금 안내</a>
+										</li>
+										<li>
+											<a href="#">부가 서비스 안내</a>
+										</li>
+										<li>
+											<a href="#">해외렌트 서비스 안내</a>
+										</li>
+										<li>
+											<a href="#">딜리버리 서비스 안내</a>
+										</li>
+										<li>
+											<a href="#">빠른 서비스 안내</a>
+										</li>
+										<li>
+											<a href="#">기사포함 서비스 안내</a>
+										</li>
+										<li>
+											<a href="#">보험대차 서비스 안내</a>
+										</li>
+									</ul>
+								</li>
+								<li class="btn_dropdown_menu">
+									<a href="#">롯데렌터카만의 서비스</a>
+									<ul class="dropdown_menu">
+										<li>
+											<a href="#">롯데 스마트픽 서비스</a>
+										</li>
+										<li>
+											<a href="#">패키지 상품</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">월간렌터카</a>
+							<ul>
+								<li>
+									<a href="#">대여 신청</a>
+								</li>
+								<li>
+									<a href="#">월간렌터카 서비스 안내</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">그린카(카셰어링)</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu idx2">
+					<a href="../buy/FN020101.html">살 때</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">신차 장기 렌터카</a>
+							<ul>
+								<li>
+									<a href="#">간편 견적</a>
+								</li>
+								<li>
+									<a href="#">프로모션</a>
+								</li>
+								<li class="btn_dropdown_menu">
+									<a href="#">신차 장기렌터카 서비스 안내</a>
+									<ul class="dropdown_menu">
+										<li>
+											<a href="#">신차장기렌터카 안내</a>
+										</li>
+										<li>
+											<a href="#">이용절차 및 Q&amp;A</a>
+										</li>
+										<li>
+											<a href="#">LPG60 장기렌터카 안내</a>
+										</li>
+										<li>
+											<a href="#">전기차 장기렌터카 안내</a>
+										</li>
+										<li>
+											<a href="#">오토 체인지 프로그램</a>
+										</li>
+									</ul>									
+								</li>
+								<li class="btn_dropdown_menu">
+									<a href="#">롯데렌터카만의 서비스</a>
+									<ul class="dropdown_menu">
+										<li>
+											<a href="#">오토매니저</a>
+										</li>
+										<li>
+											<a href="#">정비패키지</a>
+										</li>
+										<li>
+											<a href="#">오토 할부&amp;오토 캐시백 </a>
+										</li>
+										<li>
+											<a href="#">제휴 카드 </a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="depth2">
+							<a href="#">중고차 장기렌터카</a>
+							<ul>
+								<li>
+									<a href="#">중고차 장기렌터카 검색</a>
+								</li>
+								<li>
+									<a href="#">중고차 장기렌터카 서비스 안내</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">승계 게시판</a>
+							<ul>
+								<li>
+									<a href="#">승계 매물 등록</a>
+								</li>
+								<li>
+									<a href="#">승계 매물 검색</a>
+								</li>
+								<li>
+									<a href="#">승계 게시판 서비스 안내</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">법인 장기렌터카</a>
+							<ul>
+								<li>
+									<a href="#">견적 상담</a>
+								</li>
+								<li>
+									<a href="#">법인 장기렌터카 서비스 안내</a>
+								</li>
+							</ul>
+						</li>
+						<li class="depth2">
+							<a href="#">오토리스</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu idx3">
+					<a href="../sell/FN030101.html">팔 때</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">중고차 팔기</a>
+							<ul>
+								<li>
+									<a href="#">견적 상담</a>
+								</li>
+								<li class="btn_dropdown_menu">
+									<a href="#">중고차 경매 서비스 안내</a>
+									<ul class="dropdown_menu">
+										<li>
+											<a href="#">경매 출품 안내</a>
+										</li>
+										<li>
+											<a href="#">입찰 안내</a>
+										</li>
+										<li>
+											<a href="#">판매가 출품 보장 안내</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="submenu">
+						<li class="depth2"><a href="#">오토옥션</a></li>
+					</ul>
+				</li>
+				<li class="menu idx4">
+					<a href="#">기기/장비렌탈</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<!--<a href="#">기기/장비렌탈</a>-->
+							<ul>
+								<li>
+									<a href="#">산업용기기렌탈</a>
+								</li>
+								<li>
+									<a href="#">OA렌탈</a>
+								</li>
+								<li>
+									<a href="#">측정기렌탈</a>
+								</li>
+								<li>
+									<a href="#">지점안내</a>
+								</li>																								
+								<li>
+									<a href="#">입찰 매각 공지</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="menu idx5">
+					<a href="../event/FN05_1.html">이벤트</a>
+				</li>
+				<li class="menu idx6">
+					<a href="#">고객센터</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<!--<a href="#">고객 센터</a>-->
+							<ul>
+								<li>
+									<a href="#">지점 안내</a>
+								</li>
+								<li>
+									<a href="#">FAQ</a>
+								</li>
+								<li>
+									<a href="#">고객의견</a>
+								</li>
+								<li>
+									<a href="#">상담 문의</a>
+								</li>
+								<li>
+									<a href="#">공지&amp;뉴스</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="gnb_open"></div>
+		<ul id="breadcrumb" class="breadcrumb">
+			<li class="path home"><a href="#"></a></li>
+			<li class="path">
+				<a class="dropdown_path_btn" href="#">회사소개</a>
+				<div class="dropdown_path">
+					<a class="active" href="#">회사소개</a>
+					<a href="#">기타</a>
+				</div>
+			</li>
+			<li class="path">
+				<a class="dropdown_path_btn" href="#">윤리 경영</a>
+				<div class="dropdown_path">
+					<a class="active" href="#">윤리 경영</a>
+					<a href="#">기타</a>
+				</div>
+			</li>
+			<li class="path">
+				<a class="dropdown_path_btn" href="#">공정거래 자율준수</a>
+				<div class="dropdown_path">
+					<a class="active" href="#">공정거래 자율준수</a>
+					<a href="#">기타</a>
+				</div>
+			</li>
+		</ul>
+	</header>
+	<div id="container">
+		<!-- content -->
+		<article class="content">
+			<h2 class="pb10">공정거래 자율준수</h2>
+			<div class="content">
+				<!-- 본문삽입 -->
+				<div class="wrap_tab">
+					<ul class="tab_menu">
+						<li class="active"><a href="#tab-1">개요</a></li>
+						<li><a href="#tab-2">대표이사 의지선언문</a></li>
+						<li><a href="#tab-3">조직체계 및 프로그램 운영현황</a></li>
+						<li><a href="#tab-4">핫라인 (내부고발제도)</a></li>
+					</ul>
+					<div class="tab_content mb90" id="tab-1">
+						<div class="mt50">
+							<img src="../../images/intro/img_cp_program.jpg" alt="기업들이 공정거래 관련 법규를 준수하기 위해서 자체적으로 제정 · 운영하는 교육,감독 등 내부 준법시스템! 공정거래 자율준수 프로그램(Compliance Program : CP)">
+						</div>
+						<h3 class="mt70">공정거래 자율준수 프로그램 (CP) 7대 요소</h3>
+						<ul class="txt_list mt20">
+							<li class="black f14">CEO의 공정거래 자율준수 의지를 대내외 천명</li>
+							<li class="black f14">실질적인 권한과 책임을 가진 임원급의 자율준수 관리자의 지정/운영</li>
+							<li class="black f14">공정거래법규준수를 위한 사례중심의 편람 작성</li>
+							<li class="black f14">반기당 최소 2시간 이상의 부서별/계층별 특성을 고려한 차등화 교육</li>
+							<li class="black f14">위반행위예방 등을 위한 감독시스템 구축</li>
+							<li class="black f14">법 위반에 따른 제재조치</li>
+							<li class="black f14">문서관리체계 구축</li>
+						</ul>
+					</div>
+					<div class="tab_content mb90" id="tab-2">
+						<h3 class="nb mt50">대표이사 자율준수 의지 선언문</h3>
+						<p class="txt mt10"><strong>업계 전반의 투명하고 공정한 거래를 위하여 공정거래 자율준수 프로그램(Compliance Program : CP)을 도입합니다.</strong></p>
+						<div class="ceo_txt2">
+							<div class="left">
+								<img src="../../images/intro/img_ceo.png" alt="롯데렌탈㈜ 대표이사 사장 표현명">
+							</div>
+							<div class="right">
+								<p>롯데렌탈 임직원 여러분 </p>
+								<p class="mt30">롯데렌탈은 업계 전반의 투명하고 공정한 거래를 위하여 공정거래 자율준수 프로그램을 도입합니다. <br>공정거래 자율준수 프로그램이란 관련 법 준수 및 윤리규정 준수를 위한 구체적인 행동기준을 제시하여 당사 임직원의 자발적인 준법의식, 윤리의식을 향상시키며, 규정 위반행위에 대한 리스크를 사전에 예방할 수 있는 시스템입니다.</p>
+								<p class="mt30">롯데렌탈 내에 자율준수 문화가 정착되기 위하여, 우선 CP운영의 책임자인 자율준수관리자를 임명하고, 편람 제작 및 교육을 실시할 예정입니다.<br> 임직원 여러분은 공정거래 관련 교육 및 편람을 통하여 업무상 행동준칙을 습득하여, 리스크를 예방하여야 합니다. 당사의 거래상 지위를 이용하여 불공정 거래를 하거나, 하도급 거래에서 법을 위반하는 행위 등에 관하여는 인사상 불이익은 물론이고, 엄중하게 책임을물을 것입니다. 이와 관련하여 대표적인 행동준칙을 정하였으니, 임직원 여러분은 준수하시길 바랍니다. </p>
+								<p class="mt30">첫째, 협력사에게 우월적 지위를 이용하여 어떠한 형태의 부당한 행위를 강요하거나 영향력을 행사하지 않는다.</p>
+								<p class="mt30">둘째, 롯데렌탈의 지위를 이용하여 금품 등 부당이익을 수취하거나 제공받지 않는다.</p>
+								<p class="mt30">셋째, 경쟁사업자와 거래조건에 관한 정보를 공유하거나 협의하지 않는다.</p>
+								<p class="mt30">넷째, 거래 상대방에 따라 거래조건 등의 차별을 두지 않는다.</p>
+							</div>
+						</div>
+					</div>
+					<div class="tab_content mb90" id="tab-3">
+						<h3 class="mt50">공정거래 자율준수 프로그램 조직 체계</h3>
+						<div class="organization_box">
+							<p class="txt01">대표이사</p>
+							<p class="txt02">자율준수관리자<span>(준법지원인)</span></p>
+							<ul class="txt_list">
+								<li class="black f14">공정거래 핫라인</li>
+							</ul>
+							<p class="txt03">자울준수사무국<span>(리스크관리팀)</span></p>
+							<ul class="txt_list">
+								<li class="black f14">CP 운영계획 및 운영규정 수립</li>
+								<li class="black f14">법위반행위 예방활동 수행</li>
+								<li class="black f14">편람제작 및 수정 보완</li>
+								<li class="black f14">교육운영 및 문서관리</li>
+								<li class="black f14">상담 및 자문</li>
+								<li class="black f14">CP운영상황 정리 및 운영결과 보고</li>
+								<li class="black f14">CP등급평가 준비</li>
+							</ul>
+							<p class="txt04">부서별 자율준수담당자<span>(준법지원담당자)</span></p>
+						</div>
+						<h3 class="mt70">공정거래 자율준수 프로그램 운영 현황</h3>
+						<p class="organization_txt">2016년 10월</p>
+						<ul class="txt_list">
+							<li class="black f14">대표이사 자율준수 의지 천명</li>
+							<li class="black f14">자율준수관리자 임명</li>
+							<li class="black f14">공정거래 자율준수프로그램 운영규정 제정</li>
+							<li class="black f14">공정거래 자율준수 현황 제작 및 배포</li>
+						</ul>
+					</div>
+					<div class="tab_content mb90" id="tab-4">
+						<h3 class="mt50">공정거래 핫라인(내부고발제도)</h3>
+						<div class="hotline_box">
+							<div class="left">
+								<span class="tit">롯데렌탈 자율준수 관리자</span>
+								<span class="txt">주소 : (06193) 서울시 강남구 테헤란로 422 <br>kt 타워 7층 (준법지원인 앞)</span>
+							</div>
+							<div class="right">
+								<span>공정거래 핫라인<em>(02)3404-9791</em></span>
+							</div>
+						</div>
+						<h3 class="mt70">제보대상</h3>
+						<ul class="txt_list mt20">
+							<li class="black f14">당사와의 거래를 목적으로 한 입찰담합 등 이해관계자의 부당 공동행위</li>
+							<li class="black f14">하도급 거래 공정화를 위한 행동준칙에 벗어나는 행위</li>
+							<li class="black f14">기타 거래상 지위남용 등 불공정거래 행위</li>
+							<li class="black f14">정당한 신고자에 대한 불이익 대우 및 신분노출 행위</li>
+							<li class="black f14">공정거래법, 표시광고법, 하도급법 등의 기타 부당한 고객유인 등 불공정거래 행위</li>
+							<li class="black f14">협력사 비리제보 및 불공정거래행위 신고</li>
+							<li class="black f14">이해관계자로부터 부당한 금품 · 접대 · 편의를 수수하는 행위</li>
+							<li class="black f14">뇌물, 횡령 등의 사건에 가담한 자</li>
+							<li class="black f14">직위 또는 직무를 이용하여 부당한 이익을 얻거나 회사에 손해를 끼치는 행위</li>
+							<li class="black f14">자신이나 타인의 이익을 위해 다른 직원의 공정한 업무수행을 방해하는 행위</li>
+							<li class="black f14">기업비밀, 고객정보를 허가 없이 유출하는 행위</li>
+						</ul>
+						<h3 class="mt70">제보자 보호</h3>
+						<ul class="txt_list mt20">
+							<li class="black f14">신고자의 신분 및 신고내용에 대한 비밀 철저히 보장</li>
+							<li class="black f14">신고자의 신분 누설 및 신고자 색출 행위 금지</li>
+							<li class="black f14">신고자에 대한 차별 및 불이익 대우 금지</li>
+						</ul>
+					</div>
+				</div>
+				<!--// 본문삽입 --> 
+			</div>
+		</article>
+	</div>
+	<footer>
+		<div class="links">
+			<ul class="inner_links">
+				<li class="link">
+					<a href="#">그린카</a>
+				</li>
+				<li class="link">
+					<a href="#">오토옥션</a>
+				</li>
+				<li class="link">
+					<a href="#">오토리스</a>
+				</li>				
+				<li class="link">
+					<a href="#">오토매니저</a>
+				</li>
+				<li id="familysite" class="familysite">
+					<a class="btn_dropdown_menu" href="#">FAMILY SITE</a>
+				</li>
+			</ul>
+		</div>
+		<div class="familysite_dropdown_menu">
+			<ul class="menus">
+				<li class="menu">
+					<span class="menu_title">식품부문</span>
+					<ul>
+						<li>
+							<a href="#" target="_blank">롯데제과</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데유통사업본부</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데칠성음료</a>
+						</li>						
+						<li>
+							<a href="#" target="_blank">롯데칠성음료 주류부문</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데아시히주류</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데푸드</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데리아</a>
+						</li>						
+					</ul>
+				</li>
+				<li class="menu">
+					<span class="menu_title">관광부문</span>
+					<ul>
+						<li>
+							<a href="#" target="_blank">롯데호텔</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">부산롯데호텔</a>
+						</li>						
+						<li>
+							<a href="#" target="_blank">롯데면세점</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데월드</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데물산</a>
+						</li>						
+						<li>
+							<a href="#" target="_blank">롯데리조트</a>
+						</li>						
+						<li>
+							<a href="#" target="_blank">롯데제이티비</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu">
+					<span class="menu_title">금융부문</span>
+					<ul>
+						<li>
+							<a href="#" target="_blank">롯데카드</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데손해보험</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데캐피탈</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데자이언츠</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데멤버스</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu">
+					<span class="menu_title">석유화학/건설/제조 부문</span>
+					<ul>
+						<li>
+							<a href="#" target="_blank">롯데케미칼</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">케이피켐텍</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데엠알시</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데건설</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데건설 CM사업본부</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">캐논코리아비즈니스솔루션㈜</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">한국후지필름</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데알미늄</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데기공</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu">
+					<span class="menu_title">유통부문</span>
+					<ul>
+						<li>
+							<a href="#" target="_blank">롯데백화점</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데마트</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데슈퍼</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데시네마</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데홈쇼핑</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">코리아세븐</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">FRL코리아</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데상사</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데닷컴</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데하이마트</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롭스</a>
+						</li>																														
+					</ul>
+				</li>
+				<li class="menu">
+					<span class="menu_title">서비스/연구/지원 부문</span>
+					<ul>
+
+						<li>
+							<a href="#" target="_blank">롯데정보통신</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">현대정보기술</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데스카이힐C.C</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">대홍기획</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데자산개발</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데로지스틱스</a>
+						</li>	
+						<li>
+							<a href="#" target="_blank">롯데피에스넷</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">마이비</a>
+						</li>	
+						<li>
+							<a href="#" target="_blank">이비카드</a>
+						</li>	
+						<li>
+							<a href="#" target="_blank">롯데중앙연구소</a>
+						</li>	
+						<li>
+							<a href="#" target="_blank">롯데인재개발원</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데미래전략센터</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데장학재단</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데복지재단</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데삼동복지재단</a>
+						</li>																								
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="inner_footer">
+			<div class="sitemap">
+				<ul>
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#" class="txt_point">개인정보처리방침</a></li>
+					<li><a href="#" class="txt_point">영상정보처리기기 운영관리방침</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">사이버신문고</a></li>
+					<li><a href="#">인재채용</a></li>
+					<li><a href="#">무단이메일수집거부</a></li>
+					<li><a href="#">계약서 조회</a></li>
+					<li><a href="#">CONTACT US</a></li>
+					<li><a href="#">사이트맵</a></li>
+				</ul>
+			</div>
+
+			<div class="sns">
+				<ul>
+					<li>
+						<a class="twitter" href="#" target="_blank"><img src="../../images/common/img_footer_sns_twitter.png" alt="트위터"></a>
+					</li>
+					<li>
+						<a class="facebook" href="#" target="_blank"><img src="../../images/common/img_footer_sns_facebook.png" alt="페이스북"></a>
+					</li>
+					<li>
+						<a class="blog" href="#" target="_blank"><img src="../../images/common/img_footer_sns_blog.png" alt="블로그"></a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="information">
+				<ul class="entrepreneur_info">
+					<li>롯데렌탈㈜</li>
+					<li>대표이사 표현명</li>
+					<li>사업자등록번호 214-87-79183</li>
+					<li>통신판매업신고번호 : 제2010-경기안양-420호</li>
+					<li><a href="http://www.ftc.go.kr/info/bizinfo/communicationList.jsp" target="_blank" class="btn_entrepreneur_info"><img src="../../images/common/btn_entrepreneur_info.png" alt="사업자 정보 확인"></a></li>					
+				</ul>
+				<ul class="address">
+					<li>경기도 안양시 동안구 전파로 88 신원비젼타워 8층</li>
+					<li>서울본사: 서울시 강남구 테헤란로 422 KT타워 6~9층</li>
+				</ul>
+				<ul class="phone">
+					<li>대표전화 1588-1230</li>
+					<li>해외 82-2-797-8000</li>
+					<li>보험대차 연락처 및 일반상품렌탈 연락처</li>
+					<li>보험대차 1588-4920</li>
+					<li>일반상품렌탈 1577-5100+1</li>
+				</ul>
+				<span class="copyright">copyright ⓒ 2016 LOTTE rental co.ltd.All Rrights Reserved.</span>
+			</div>
+
+			<div class="certifications">
+				<ul>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_1.png" alt="2015 한국서비스대상 명예의 전당"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_2.png" alt="2016 국가고객만족도렌터카부문1위(NCSI)"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_3.png" alt="2016 한국산업의 브랜드 파워 1위(K-BPI)"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_4.png" alt="2016 국가브랜드 대상(NBA)"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_5.png" alt="2016 대한민국 브랜드 스타"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_6.png" alt="2016 대한민국 퍼스트 브랜드"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_7.png" alt="2016 국가브랜드 경쟁력 지수 1위(NBCI)"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_8.png" alt="2016 한국산업의 고객만족도(KCSI)"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_9.png" alt="2016 한국서비스 품질지수 1위(KS-SQl)"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_10.png" alt="2014 한국서비스대상 종합대상"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_11.png" alt="2016 프리미엄 브랜드 지수 1위(KC-PBI)"></a></li>
+					<li>
+						<a href="https://sealinfo.verisign.com/splash?form_file=fdf/splash.fdf&amp;dn=www.lotterentacar.net&amp;lang=ko" target="_blank">
+							<img src="../../images/common/img_footer_cert_12.png" alt="노턴 시큐어">
+						</a>
+					</li>
+					<li>
+						<a href="#isms" class="isms btn_layer">
+							<img src="../../images/common/img_footer_cert_13.png" alt="정보보호 관리체계 ISMS 획득">
+						</a>
+					</li>					
+				</ul>
+			</div>
+
+			<div class="big-banner">
+				<img src="../../images/common/img_footer_big_banner.png" alt="Asia No.1 렌터카, 롯데렌터카! 롯데렌터카가 대한민국을 넘어 Asia 1위 렌터카로 우뚝 섰습니다.">
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

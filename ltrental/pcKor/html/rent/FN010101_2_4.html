@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html dir="ltr" lang="ko" class="ie7"><![endif]-->
+<!--[if IE 8]><html dir="ltr" lang="ko" class="ie8"><![endif]-->
+<!--[if IE 9]><html dir="ltr" lang="ko" class="ie9"><![endif]-->
+<html dir="ltr" lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1200, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.min.js"></script>
+	<script src="../../js/html5shiv.js"></script>
+	<script src="../../js/core.js"></script>
+	<script src="../../js/ui.js"></script>
+<script>
+	function layerPopPay (e,id) {
+		e.preventDefault();
+        $('html, body').css('overflow','hidden');
+        var layer = function() {
+				$('#' + id).width(480).height(519);
+            $('#' + id).css({
+                'top': ($(window).height() / 2) + $(window).scrollTop() - ($('#' + id).height() / 2),
+                'left': ($(window).width() - $('#' + id).width()) / 2,
+            });
+        }
+
+        $('.dimm').css({
+            'width': $('html, body').width(),
+            'height': $('html, body').height()
+        })
+        .show();
+
+        layer();       
+        $('#' + id).show().attr('tabindex',0).focus();
+
+        $(window).resize(function(){
+            layer();
+            $('.dimm').css({
+                'width': $('html, body').width(),
+                'height': $('html, body').height()
+            });
+        });
+	}
+
+	// 팝업 닫을시 실행
+	//$('#layerPay .btn_layer_close').trigger('click');
+
+    $(function () {
+        $("input[name='rdoPay']").click(function () {
+            if ($("#rdoPay1").is(":checked")) {
+                $(".lpay_info1").show(); 
+                $(".lpay_info2").hide();
+                $(".lpay_info3").hide();
+            }
+            else if ($("#rdoPay2").is(":checked")) {
+                $(".lpay_info2").show(); 
+                $(".lpay_info1").hide();
+                $(".lpay_info3").hide();
+            }
+            else if ($("#rdoPay3").is(":checked")) {
+                $(".lpay_info3").show(); 
+                $(".lpay_info1").hide();
+                $(".lpay_info2").hide();
+            }
+        });
+    });
+</script>	
+</head>
+ 
+<body>
+	<header>
+		<div class="inner_header">
+			<a href="#container" class="skip_nav">본문 바로가기</a>
+			<a href="../main/main.html" class="logo"><h1><img src="../../images/common/logo.png" alt="롯데렌터카"></h1></a>
+			<ul id="extra_menu" class="extra_menu">
+				<!--// 비회원일 경우 -->
+				<li class="login"><a href="#">로그인</a></li>
+				<li class="join"><a href="#" class="lPointAutoChange btn_layer">회원가입</a></li>
+
+				<!--// 회원일 경우 -->
+				<li class="logout"><a href="#">로그아웃</a></li>
+				<li class="mypage_quick">
+					<a class="btn_dropdown_menu" href="#">마이페이지</a>
+					<ul class="dropdown_menu">
+						<!--<li class="active"><a href="#">예약 및 이용 내역</a></li>-->
+						<li class="active"><a href="#">예약 및 이용 내역</a></li>
+						<li><a href="#">계약서 조회</a></li>
+						<li><a href="#">상담문의 내역</a></li>
+					</ul>
+				</li>
+
+				<li class="language"><a href="#">ENGLISH</a></li>
+			</ul>
+		</div>
+		<div id="gnb" class="gnb">
+			<ul class="menus">
+				<li class="menu idx1">
+					<a href="../rent/FN010101_2_1_1.html">빌릴 때</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">단기렌터카</a>
+							<ul>
+								<li>
+									<a href="#">실시간 예약</a>
+								</li>
+								<li class="btn_dropdown_menu">
+									<a href="#">단기렌터카 서비스 안내</a>
+									<ul class="dropdown_menu">
+										<li>
+											<a href="#">대여 안내</a>
+										</li>
+										<li>
+											<a href="#">요금 안내</a>
+										</li>
+										<li>
+											<a href="#">부가 서비스 안내</a>
+										</li>
+										<li>
+											<a href="#">해외렌트 서비스 안내</a>
+										</li>
+										<li>
+											<a href="#">딜리버리 서비스 안내</a>
+										</li>
+										<li>
+											<a href="#">빠른 서비스 안내</a>
+										</li>
+										<li>
+											<a href="#">기사포함 서비스 안내</a>
+										</li>
+										<li>
+											<a href="#">보험대차 서비스 안내</a>
+										</li>
+									</ul>
+								</li>
+								<li class="btn_dropdown_menu">
+									<a href="#">롯데렌터카만의 서비스</a>
+									<ul class="dropdown_menu">
+										<li>
+											<a href="#">롯데 스마트픽 서비스</a>
+										</li>
+										<li>
+											<a href="#">패키지 상품</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">월간렌터카</a>
+							<ul>
+								<li>
+									<a href="#">대여 신청</a>
+								</li>
+								<li>
+									<a href="#">월간렌터카 서비스 안내</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">그린카(카셰어링)</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu idx2">
+					<a href="../buy/FN020101.html">살 때</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">신차 장기 렌터카</a>
+							<ul>
+								<li>
+									<a href="#">간편 견적</a>
+								</li>
+								<li>
+									<a href="#">프로모션</a>
+								</li>
+								<li class="btn_dropdown_menu">
+									<a href="#">신차 장기렌터카 서비스 안내</a>
+									<ul class="dropdown_menu">
+										<li>
+											<a href="#">신차장기렌터카 안내</a>
+										</li>
+										<li>
+											<a href="#">이용절차 및 Q&amp;A</a>
+										</li>
+										<li>
+											<a href="#">LPG60 장기렌터카 안내</a>
+										</li>
+										<li>
+											<a href="#">전기차 장기렌터카 안내</a>
+										</li>
+										<li>
+											<a href="#">오토 체인지 프로그램</a>
+										</li>
+									</ul>									
+								</li>
+								<li class="btn_dropdown_menu">
+									<a href="#">롯데렌터카만의 서비스</a>
+									<ul class="dropdown_menu">
+										<li>
+											<a href="#">오토매니저</a>
+										</li>
+										<li>
+											<a href="#">정비패키지</a>
+										</li>
+										<li>
+											<a href="#">오토 할부&amp;오토 캐시백 </a>
+										</li>
+										<li>
+											<a href="#">제휴 카드 </a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="depth2">
+							<a href="#">중고차 장기렌터카</a>
+							<ul>
+								<li>
+									<a href="#">중고차 장기렌터카 검색</a>
+								</li>
+								<li>
+									<a href="#">중고차 장기렌터카 서비스 안내</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">승계 게시판</a>
+							<ul>
+								<li>
+									<a href="#">승계 매물 등록</a>
+								</li>
+								<li>
+									<a href="#">승계 매물 검색</a>
+								</li>
+								<li>
+									<a href="#">승계 게시판 서비스 안내</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">법인 장기렌터카</a>
+							<ul>
+								<li>
+									<a href="#">견적 상담</a>
+								</li>
+								<li>
+									<a href="#">법인 장기렌터카 서비스 안내</a>
+								</li>
+							</ul>
+						</li>
+						<li class="depth2">
+							<a href="#">오토리스</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu idx3">
+					<a href="../sell/FN030101.html">팔 때</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">중고차 팔기</a>
+							<ul>
+								<li>
+									<a href="#">견적 상담</a>
+								</li>
+								<li class="btn_dropdown_menu">
+									<a href="#">중고차 경매 서비스 안내</a>
+									<ul class="dropdown_menu">
+										<li>
+											<a href="#">경매 출품 안내</a>
+										</li>
+										<li>
+											<a href="#">입찰 안내</a>
+										</li>
+										<li>
+											<a href="#">판매가 출품 보장 안내</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="submenu">
+						<li class="depth2"><a href="#">오토옥션</a></li>
+					</ul>
+				</li>
+				<li class="menu idx4">
+					<a href="#">기기/장비렌탈</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<!--<a href="#">기기/장비렌탈</a>-->
+							<ul>
+								<li>
+									<a href="#">산업용기기렌탈</a>
+								</li>
+								<li>
+									<a href="#">OA렌탈</a>
+								</li>
+								<li>
+									<a href="#">측정기렌탈</a>
+								</li>
+								<li>
+									<a href="#">지점안내</a>
+								</li>																								
+								<li>
+									<a href="#">입찰 매각 공지</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="menu idx5">
+					<a href="../event/FN05_1.html">이벤트</a>
+				</li>
+				<li class="menu idx6">
+					<a href="#">고객센터</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<!--<a href="#">고객 센터</a>-->
+							<ul>
+								<li>
+									<a href="#">지점 안내</a>
+								</li>
+								<li>
+									<a href="#">FAQ</a>
+								</li>
+								<li>
+									<a href="#">고객의견</a>
+								</li>
+								<li>
+									<a href="#">상담 문의</a>
+								</li>
+								<li>
+									<a href="#">공지&amp;뉴스</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="gnb_open"></div>
+		<ul id="breadcrumb" class="breadcrumb">
+			<li class="path home"><a href="#"></a></li>
+			<li class="path">
+				<a class="dropdown_path_btn" href="#">빌릴 때</a>
+				<ul class="dropdown_path">
+					<li class="active" >
+						<a href="#">빌릴 때</a>
+					</li>
+					<li>
+						<a href="#">살 때</a>
+					</li>
+					<li>
+						<a href="#">팔 때</a>
+					</li>
+					<li>
+						<a href="#">기기 장비렌탈</a>
+					</li>
+					<li>
+						<a href="#">이벤트</a>
+					</li>
+					<li>
+						<a href="#">고객센터</a>
+					</li>
+				</ul>
+			</li>
+			<li class="path">
+				<a class="dropdown_path_btn" href="#">단기렌터카</a>
+				<ul class="dropdown_path">
+					<li class="active" >
+						<a href="#">빌릴 때</a>
+					</li>
+					<li>
+						<a href="#">살 때</a>
+					</li>
+					<li>
+						<a href="#">팔 때</a>
+					</li>
+					<li>
+						<a href="#">기기 장비렌탈</a>
+					</li>
+					<li>
+						<a href="#">이벤트</a>
+					</li>
+					<li>
+						<a href="#">고객센터</a>
+					</li>
+				</ul>
+			</li>
+			<li class="path">
+				<a class="dropdown_path_btn" href="#">실시간 예약</a>
+				<ul class="dropdown_path">
+					<li class="active" >
+						<a href="#">빌릴 때</a>
+					</li>
+					<li>
+						<a href="#">살 때</a>
+					</li>
+					<li>
+						<a href="#">팔 때</a>
+					</li>
+					<li>
+						<a href="#">기기 장비렌탈</a>
+					</li>
+					<li>
+						<a href="#">이벤트</a>
+					</li>
+					<li>
+						<a href="#">고객센터</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</header>
+	<div id="container">
+		<!-- content -->
+		<article class="content">
+			<h2>제주 예약</h2>
+			<div class="content">
+                <!-- 본문삽입 --> 
+                <ul class="process4 step4"> <!-- step4 : 현재 스텝  -->
+                    <li>
+                        <em class="check"></em>
+                        <span>차량 선택</span>
+                    </li>
+                    <li>
+                        <em class="check"></em>
+                        <span>옵션 선택</span>
+                    </li>
+                    <li>
+                        <em class="check"></em>
+                        <strong>정보 입력</strong>
+                    </li> 
+                    <li>
+                        <em>04</em>
+                        <strong>결제</strong>
+                    </li> 
+                </ul>
+                
+                <div class="wrap_reservation">
+                    <div class="left3"> 
+                        
+                        <div class="box_car_info mb10">
+                            <h3>쉐보레 AVEO(G) 1.6</h3>
+                            <div class="img_car"><img src="../../images/common/thumb_350x230.png" alt=""></div>
+                            
+                            <div class="grid">
+                                <table class="tb_row">
+                                    <caption></caption>
+                                    <colgroup>
+                                        <col style="width:95px">
+                                        <col style="width:auto"> 
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">대여</th>
+                                            <td class="noBorderL">제주오토하우스 – 2017/05/22 10:00</td>
+                                        </tr> 
+                                        <tr>
+                                            <th scope="row">반납</th>
+                                            <td class="noBorderL">제주오토하우스 – 2017/05/26 10:00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">이벤트/할인</th>
+                                            <td class="noBorderL">이벤트:가을맞이 전차종</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">보험</th>
+                                            <td class="noBorderL">완전면책</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">기타옵션</th>
+                                            <td class="noBorderL">없음</td>
+                                        </tr> 
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                        
+                        <div class="box_price">
+							<ul>
+								<li>
+									<span class="tit">대여금액</span><span class="price"><strong>1,125,000</strong>원</span>
+									<ul class="detail">
+										<li></li>
+									</ul>
+								</li>
+								<li>
+									<span class="tit">할인금액</span><span class="price"><strong>1,125,000</strong>원</span>
+									<ul class="detail">
+										<li>
+											<span class="tit">가을맞이 전차종 할인 이벤트</span><span class="price"><strong>1,125,000</strong>원</span>
+										</li>
+										<li>
+											<span class="tit">가을맞이 전차종 할인 이벤트</span><span class="price"><strong>1,125,000</strong>원</span>
+
+										</li>										
+									</ul>
+								</li>
+								<li>
+									<span class="tit">보험 및 기타옵션</span><span class="price"><strong>0</strong>원</span>
+									<ul class="detail">
+										<li>
+											<span class="tit">보험 미적용</span>
+											<span class="price"><strong>1,125,000</strong>원</span>
+										</li>
+										<li>
+											<span class="tit">딜리버리 서비스</span>
+											<span class="price"><strong>1,125,000</strong>원</span>
+										</li>
+										<li>
+											<span class="tit">딜리버리 서비스</span>
+											<span class="price"><strong>1,125,000</strong>원</span>
+										</li>
+										<li>
+											<span class="tit">딜리버리 서비스</span>
+											<span class="price"><strong>1,125,000</strong>원</span>
+										</li>
+										<li>
+											<span class="tit">딜리버리 서비스</span>
+											<span class="price"><strong>1,125,000</strong>원</span>
+										</li>
+										<li>
+											<span class="tit">딜리버리 서비스</span>
+											<span class="price"><strong>1,125,000</strong>원</span>
+										</li>																			
+
+									</ul>
+								</li>
+								<li class="total">
+									<span class="tit">금액</span><span class="price"><strong>1,125,000</strong>원</span>
+								</li>
+							</ul>
+						</div>
+ 
+                    </div>
+                    <div class="right3">  
+                        
+                        <section class="pay_info">
+                            <h3>선 결제 안내</h3>   
+                            
+                            <ul class="txt_list">
+                                <li class="black f14">
+                                    현장 사전 방문 결제, 온라인 선 결제, 전화 상으로 선 결제 할인이 모두 가능합니다.
+                                </li>
+                                <li class="black f14">
+                                    선 결제 이용방법 : 예약 후 대여일 기준 최소 6시간 이전까지 홈페이지 또는 전화      (고객 센터,  지점)를 통해   결제하셔야 합니다.
+                                    <ul class="txt_list">
+                                        <li class="bul f14">
+                                            본인명의 신용카드 이외에 체크카드로 결제 시에는 신용정보조회 동의를 요청드릴 수 있습니다.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="black f14">
+                                    본인명의 신용카드를 소유하고 계심에도 불구하고 그 사용을 원치 않으시는 경우, 차량 대여시 일단 신용   카드로 결제하시고 반납 시 신용카드 승인을 취소하고 체크카드로 재정산하실 수 있습니다.
+                                </li>
+                                <li class="black f14">
+                                    결제인과 신청인이 다를 경우, 현장에서 예약이 취소 될 수 있습니다.
+                                </li>
+                            </ul>                            
+
+                            <hr>
+                            
+                            <ul class="txt_list mb60">
+                                <li class="red">고객 센터나 지점을 통해 선결제를 진행하신 경우는 홈페이지에서는 해당 선결제에 대한  취소가 불가합니다. </li>
+                                <li class="red">본 신용정보조회는 개인 신용도에 영향을 미치지 않는 단순 조회이며, 조회 결과 신용상의  문제가 발견될 경우 대여가 불가능 합니다. </li>
+                            </ul>
+
+                            <h3>취소 수수료 / NO SHOW 수수료 및 환불 규정</h3>   
+                            <ul class="txt_list">
+                                <li class="black f14">수수료 청구방법 : 납입한 금액 중 수수료 금액을 차감한 나머지 금액을 환불 또는 납입한 카드 승인내역을 전부 취소 후 기승인한 카드로 수수료 금액 재청구 됩니다.
+                                </li>
+                            <li class="black f14">24시간 이상 이용시, 선 결제시 5,000원 할인됩니다.(포인트 결제 시에도 적용)
+                                </li>
+                            </ul>
+
+                            <hr>
+                            
+                            <ul class="txt_list mb30">
+                                <li class="red">
+                                    결제하실 금액 중에 대여금액이 6,000원 미만일 때 선 결제할인이 적용되지 않습니다. 
+                                </li>
+                            </ul>
+                            
+                            <div class="grid mb15">
+                                <table class="tb_col">
+                                    <caption></caption>
+                                    <colgroup>
+                                        <col style="width:100px">
+                                        <col style="width:200px">
+                                        <col style="width:200px">
+                                        <col style="width:auto"> 
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" rowspan="2" class="bgGray"></th>
+                                            <th scope="col" class="bgGray2">대여 예정일 24시간 이전</th>
+                                            <th scope="col" class="bgGray2">대여 예정일 24시간 이내</th>
+                                            <th scope="col" class="bgGray2">대여 예정일 24시간 이후</th>
+                                        </tr> 
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th class="noBorderL left">내용</th>
+                                            <td>100% 환불</td>
+                                            <td>3,000원</td>
+                                            <td>차량 대여요금의 10%</td>
+                                        </tr> 
+                                        <tr>
+                                            <th class="noBorderL left">비고</th>
+                                            <td>-</td>
+                                            <td>취소 수수료</td>
+                                            <td>NO SHOW 수수료</td>
+                                        </tr> 
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+							<div class="titleBox mt60">
+							<h3 class="mb0">결제수단 선택</h3>   
+	                            <ul class="txt_list tooltip">
+	                                <li class="black">L.POINT 회원으로 전환 시 , L.pay 결제 및 L.POINT 포인트 적립이 가능합니다. <a href="#" class="lpoint_lpay btn_layer btn_white" style="vertical-align:top; margin-top:-5px;">Lpay/L.POINT 소개</a></li> 
+	                                
+	                                <!--
+	                                    로그인 전/비회원 일때
+	                                    <li class="red">L.POINT 회원으로 가입 시 , 할인 및 포인트 적립이 가능합니다. <a href="#" class="btn_white" style="vertical-align:top; margin-top:-5px;">회원 특전 소개</a></li> 
+	                                --> 
+	                            </ul>
+                            </div>							
+							<ul class="radio_hr mt20">
+                                <li>
+                                    <input type="radio" id="rdoPay1" name="rdoPay">
+                                    <label for="rdoPay1" class="mr15"><span class="icon"></span><img src="../../images/common/logo_lpay.png" alt="Lpay"> 간편결제
+									</label> 
+                                </li>
+                                <li>
+                                    <input type="radio" id="rdoPay2" name="rdoPay">
+                                    <label for="rdoPay2" class="mr15"><span class="icon"></span>신용카드 결제</label>  
+                                </li>
+                                <li>
+                                    <input type="radio" id="rdoPay3" name="rdoPay">
+                                    <label for="rdoPay3" class="mr15"><span class="icon"></span>등록카드 결제</label>  
+                                </li>
+                            </ul>
+
+                            
+                            <!-- 회원 중 L.pay 기존 등록자 일때 -->
+							<div class="box box_lpay lpay_info1">
+								<ul class="txt_list">
+                                    <li class="black f14">비밀번호 없이 한번에 결제 OK!</li>
+								    <li class="black f14">L.pay는 결제정보를 미리 등록하여 비밀번호 입력만으로 빠르게 결제할 수 있는 간편결제 서비스 입니다.</li>
+                                </ul>
+							</div>
+                            
+                            <!-- 회원 중 L.pay 미등록자 일때  
+                            <div class="box box_lpay lpay_info1">
+								<ul class="txt_list">
+                                    <li class="black f14">L.pay 간편 결제 서비스는 L.pay 앱 설치 후 서비스 가입을 하셔야 합니다.</li>
+                                    <li class="black f14">[구글플레이/앱스토어]에서 “L.pay”나 “엘페이” 검색 후 다운로드 또는 우측 QR코드를 스캔하여 다운로드 하세요.</li>
+                                    <li class="black f14">L.pay 결제 서비스를 사용하기 위해서는 서비스 가입 후 결제 수단(신용카드)을 등록하셔야 합니다.</li>
+                                    <li class="black f14">자세한 문의는 L.pay 고객센터를 이용해 주세요. (고객센터 1899-6300)</li>
+                                </ul>
+							</div>
+                            -->
+                            
+                            <div class="box box_lpay lpay_info2" style="display:none;">
+								<ul class="txt_list">
+                                    <li class="black f14">[결제] 버튼 클릭시, 신용카드 결제 화면으로 연결되어 결제정보를 입력하실 수 있습니다.</li>
+                                </ul>
+							</div>
+                            
+                            <div class="box box_lpay lpay_info3" style="display:none;">
+								<ul class="txt_list">
+                                    <li class="black f14">[등록카드 결제]는 결제 시 사용할 카드정보를 한 번만 등록해 놓으면 예약 시 결제할 때마다 신용카드 정보를 입력하지 않고 클릭 한 번으로 간편하게 결제가 가능한 서비스입니다.</li>
+                                    <li class="black f14">카드 등록 후 다음 결제 시 부터 사용 가능합니다. <a href="#" class="btn_white">카드 등록하기</a> </li>
+                                </ul>
+							</div>
+							<div class="grid noBorderT">
+								<table class="tb_noBorder">
+									<caption></caption>
+									<colgroup>
+										<col style="width:110px"> 
+										<col style="width:auto">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row"><label for="">카드선택</label></th>
+											<td>
+												<span class="select" style="width:300px;">
+													<select id="" title="카드선택">
+														<option selected="selected">(주)국민카드(국민체크카드)</option>  
+													</select>
+												</span> 
+											</td>  
+										</tr>   
+										<tr>
+											<th scope="row"><label for="">할부선택</label></th>
+											<td>
+												<ul class="radio_hr">
+													<li>
+														<input type="radio" id="rdoPayType1" name="rdoPayType" checked>
+														<label for="rdoPayType1" class="mr20"><span class="icon"></span>일시불결제</label>
+													</li>
+													<li>
+														<input type="radio" id="rdoPayType2" name="rdoPayType">
+														<label for="rdoPayType2" class="mr20"><span class="icon"></span>무이자할부</label>
+													</li>
+													<li>
+														<input type="radio" id="rdoPayType3" name="rdoPayType">
+														<label for="rdoPayType3"><span class="icon"></span>일반할부</label>
+													</li>
+												</ul> 
+											</td>  
+										</tr>  
+										<tr>
+											<th scope="row"><label for="">할부기간</label></th>
+											<td>
+												<span class="select" style="width:300px;">
+													<select id="" title="할부기간">
+														<option selected="selected">일시불</option>  
+													</select>
+												</span> 
+											</td>  
+										</tr>  
+									</tbody>
+								</table>
+							</div>
+
+                             
+                        </section>
+                         
+                        <div class="btn_wrap pt70"> 
+                                <a href="#" class="btn_gray btn_200">이전</a>
+                                <a href="#" class="btn_red btn_200" onclick="layerPopPay(event, 'layerPay')">결제</a>
+                        </div>
+
+                    </div>
+                </div>
+
+				<!--// 본문삽입 -->
+			</div>
+		</article>
+	</div>
+	<footer>
+		<div class="links">
+			<ul class="inner_links">
+				<li class="link">
+					<a href="#">그린카</a>
+				</li>
+				<li class="link">
+					<a href="#">오토옥션</a>
+				</li>
+				<li class="link">
+					<a href="#">오토리스</a>
+				</li>				
+				<li class="link">
+					<a href="#">오토매니저</a>
+				</li>
+				<li id="familysite" class="familysite">
+					<a class="btn_dropdown_menu" href="#">FAMILY SITE</a>
+				</li>
+			</ul>
+		</div>
+		<div class="familysite_dropdown_menu">
+			<ul class="menus">
+				<li class="menu">
+					<span class="menu_title">식품부문</span>
+					<ul>
+						<li>
+							<a href="#" target="_blank">롯데제과</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데유통사업본부</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데칠성음료</a>
+						</li>						
+						<li>
+							<a href="#" target="_blank">롯데칠성음료 주류부문</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데아시히주류</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데푸드</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데리아</a>
+						</li>						
+					</ul>
+				</li>
+				<li class="menu">
+					<span class="menu_title">관광부문</span>
+					<ul>
+						<li>
+							<a href="#" target="_blank">롯데호텔</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">부산롯데호텔</a>
+						</li>						
+						<li>
+							<a href="#" target="_blank">롯데면세점</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데월드</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데물산</a>
+						</li>						
+						<li>
+							<a href="#" target="_blank">롯데리조트</a>
+						</li>						
+						<li>
+							<a href="#" target="_blank">롯데제이티비</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu">
+					<span class="menu_title">금융부문</span>
+					<ul>
+						<li>
+							<a href="#" target="_blank">롯데카드</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데손해보험</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데캐피탈</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데자이언츠</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데멤버스</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu">
+					<span class="menu_title">석유화학/건설/제조 부문</span>
+					<ul>
+						<li>
+							<a href="#" target="_blank">롯데케미칼</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">케이피켐텍</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데엠알시</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데건설</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데건설 CM사업본부</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">캐논코리아비즈니스솔루션㈜</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">한국후지필름</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데알미늄</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데기공</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu">
+					<span class="menu_title">유통부문</span>
+					<ul>
+						<li>
+							<a href="#" target="_blank">롯데백화점</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데마트</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데슈퍼</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데시네마</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데홈쇼핑</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">코리아세븐</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">FRL코리아</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데상사</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데닷컴</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데하이마트</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롭스</a>
+						</li>																														
+					</ul>
+				</li>
+				<li class="menu">
+					<span class="menu_title">서비스/연구/지원 부문</span>
+					<ul>
+
+						<li>
+							<a href="#" target="_blank">롯데정보통신</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">현대정보기술</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데스카이힐C.C</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">대홍기획</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데자산개발</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데로지스틱스</a>
+						</li>	
+						<li>
+							<a href="#" target="_blank">롯데피에스넷</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">마이비</a>
+						</li>	
+						<li>
+							<a href="#" target="_blank">이비카드</a>
+						</li>	
+						<li>
+							<a href="#" target="_blank">롯데중앙연구소</a>
+						</li>	
+						<li>
+							<a href="#" target="_blank">롯데인재개발원</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데미래전략센터</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데장학재단</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데복지재단</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데삼동복지재단</a>
+						</li>																								
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="inner_footer">
+			<div class="sitemap">
+				<ul>
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#" class="txt_point">개인정보처리방침</a></li>
+					<li><a href="#" class="txt_point">영상정보처리기기 운영관리방침</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">사이버신문고</a></li>
+					<li><a href="#">인재채용</a></li>
+					<li><a href="#">무단이메일수집거부</a></li>
+					<li><a href="#">계약서 조회</a></li>
+					<li><a href="#">CONTACT US</a></li>
+					<li><a href="#">사이트맵</a></li>
+				</ul>
+			</div>
+
+			<div class="sns">
+				<ul>
+					<li>
+						<a class="twitter" href="#" target="_blank"><img src="../../images/common/img_footer_sns_twitter.png" alt="트위터"></a>
+					</li>
+					<li>
+						<a class="facebook" href="#" target="_blank"><img src="../../images/common/img_footer_sns_facebook.png" alt="페이스북"></a>
+					</li>
+					<li>
+						<a class="blog" href="#" target="_blank"><img src="../../images/common/img_footer_sns_blog.png" alt="블로그"></a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="information">
+				<ul class="entrepreneur_info">
+					<li>롯데렌탈㈜</li>
+					<li>대표이사 표현명</li>
+					<li>사업자등록번호 214-87-79183</li>
+					<li>통신판매업신고번호 : 제2010-경기안양-420호</li>
+					<li><a href="http://www.ftc.go.kr/info/bizinfo/communicationList.jsp" target="_blank" class="btn_entrepreneur_info"><img src="../../images/common/btn_entrepreneur_info.png" alt="사업자 정보 확인"></a></li>					
+				</ul>
+				<ul class="address">
+					<li>경기도 안양시 동안구 전파로 88 신원비젼타워 8층</li>
+					<li>서울본사: 서울시 강남구 테헤란로 422 KT타워 6~9층</li>
+				</ul>
+				<ul class="phone">
+					<li>대표전화 1588-1230</li>
+					<li>해외 82-2-797-8000</li>
+					<li>보험대차 연락처 및 일반상품렌탈 연락처</li>
+					<li>보험대차 1588-4920</li>
+					<li>일반상품렌탈 1577-5100+1</li>
+				</ul>
+				<span class="copyright">copyright ⓒ 2016 LOTTE rental co.ltd.All Rrights Reserved.</span>
+			</div>
+
+			<div class="certifications">
+				<ul>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_1.png" alt="2015 한국서비스대상 명예의 전당"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_2.png" alt="2016 국가고객만족도렌터카부문1위(NCSI)"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_3.png" alt="2016 한국산업의 브랜드 파워 1위(K-BPI)"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_4.png" alt="2016 국가브랜드 대상(NBA)"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_5.png" alt="2016 대한민국 브랜드 스타"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_6.png" alt="2016 대한민국 퍼스트 브랜드"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_7.png" alt="2016 국가브랜드 경쟁력 지수 1위(NBCI)"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_8.png" alt="2016 한국산업의 고객만족도(KCSI)"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_9.png" alt="2016 한국서비스 품질지수 1위(KS-SQl)"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_10.png" alt="2014 한국서비스대상 종합대상"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_11.png" alt="2016 프리미엄 브랜드 지수 1위(KC-PBI)"></a></li>
+					<li>
+						<a href="https://sealinfo.verisign.com/splash?form_file=fdf/splash.fdf&amp;dn=www.lotterentacar.net&amp;lang=ko" target="_blank">
+							<img src="../../images/common/img_footer_cert_12.png" alt="노턴 시큐어">
+						</a>
+					</li>
+					<li>
+						<a href="#isms" class="isms btn_layer">
+							<img src="../../images/common/img_footer_cert_13.png" alt="정보보호 관리체계 ISMS 획득">
+						</a>
+					</li>					
+				</ul>
+			</div>
+
+			<div class="big-banner">
+				<img src="../../images/common/img_footer_big_banner.png" alt="Asia No.1 렌터카, 롯데렌터카! 롯데렌터카가 대한민국을 넘어 Asia 1위 렌터카로 우뚝 섰습니다.">
+			</div>
+		</div>
+	</footer>
+    
+     
+    
+<!-- Layer : dimm -->
+<div class="dimm"></div>  
+<div id="lpoint_lpay" class="layer layer_b">
+	<div class="layer_tit">
+	    <h2>L.POINT/L.pay소개</h2>
+	    <a href="#" class="btn_layer_close"><img src="../../images/common/btn_layer_close.png" alt="닫기"></a>
+	</div>
+	<div class="layer_con">
+		<div class="lpoint">
+			<h3>L.POINT 회원이라면 혜택을 확인하세요.</h3>
+			<div class="member_benefit mt30">
+				<h4>01. 회원 혜택</h4>
+				<ul class="benefit">
+					<li class="benefit1"><span>상품 구매 시 포인트 적립</span></li>
+					<li class="benefit2"><span>회원에게만 제공되는 파격가 상품</span></li>
+					<li class="benefit3"><span>단 1포인트도 현금처럼 사용</span></li>
+				</ul>					
+			</div>
+			<div class="event_coupon mt35">
+				<h4>02. 이벤트와 쿠폰</h4>
+				<ul class="event">
+					<li class="event1"><span>포인트 팡팡 다양한 이벤트</span></li>
+					<li class="event2"><span>혜택 가득 쿠폰 정보</span></li>
+					<li class="event3"><span>콘서트 / 영화 / 여행 응모</span></li>
+				</ul>					
+			</div>
+
+		</div>
+		<div class="lpay mt100">
+			<h3 class="mb30">간편함 그 이상의 결제 L.pay</h3>
+			<dl class="lpay1">
+				<dt>차이를 만드는 습관</dt>
+				<dd>L.POINT가 자동으로 적립되고 포인트 사용도 편리한 똑똑한 결제습관</dd>
+			</dl>
+			<dl class="lpay2 even">
+				<dt>간편한 복합결제</dt>
+				<dd>편리하게 이용하는 스마트한 결제 적립 + 결제, 사용 + 결제를 빠르게 한 번에</dd>
+			</dl>
+			<dl class="lpay3 mt30">
+				<dt>다양한 결제수단</dt>
+				<dd>체크카드, 신용카드, 은행계좌까지 다양하게 활용할 수 있는 결제 방법</dd>
+			</dl>
+			<dl class="lpay4 mt30 even">
+				<dt>한 눈에 보이는 결제 내역</dt>
+				<dd>결제한 모든 내역을 쉽고 빠르게 바로바로 확인</dd>
+			</dl>
+			<div class="layer_foot borderTop mt60">
+				<a href="#" class="btn_layer_close btn_200 btn_gray">L.POINT 이동</a>
+				<a href="#" class="btn_layer_close btn_200 btn_gray">L.pay 이동</a>
+			</div>				
+		</div>
+	   	<div class="layer_foot borderTop">
+			<a href="#" class="btn_layer_close btn_200 btn_red">확인</a>
+		</div>					
+	</div>
+</div>
+
+<div id="layerPay" class="layer_s layer">
+	<a href="#" class="btn_layer_close" style="display:none"></a>
+	<!-- 결제 iframe 영역 -->
+</div>
+
+</body>
+</html>

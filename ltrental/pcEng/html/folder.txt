@@ -1,0 +1,10 @@
+빌릴때 - rent
+살때 - buy
+팔때 - sell
+기기장비렌트 - equip
+이벤트 - event
+고객센터 - customer
+로그인 회원가입 마이페이지 등 - member
+
+템플릿 - temp
+

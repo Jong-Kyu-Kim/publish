@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>롯데렌터카 - 기본 가이드 | Publishing Guide -</title>
+<link rel="stylesheet" type="text/css" href="../../../../mbKor/css/reset.css">
+<link rel="stylesheet" type="text/css" href="../../../../mbKor/css/common.css">
+<link rel="stylesheet" type="text/css" href="../../com/css/guide.css">
+
+<script type="text/javascript" src="../../../com/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../../../com/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="../../com/js/d_menu.js"></script>
+<script type="text/javascript" src="../../com/js/d_jquery.js"></script>
+<script type="text/javascript" src="../../../../mbKor/js/ui.js"></script>
+<script type="text/javascript" src="../../../../mbKor/js/calendar.m.js"></script>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+
+<body>
+
+<div title="스킵메뉴" class="skipMenu">
+    <a href="#skipContent">본문 내용 바로가기</a>
+</div>
+<hr>
+<div id="wrapGuide">
+	<!-- HEADER s --><script type="text/javascript">TopArea();gnbBox_init(2);</script><!-- HEADER e //-->
+    <hr>
+    <div id="wgContainer" class="layout2 clfix">
+    	<!-- LNB s --><script type="text/javascript">LeftMenuMobile();lnb_menu('2','1');</script><!-- LNB e //-->
+        <div id="wgContent" class="clfix">
+            <div class="titArea">
+                <h1 class="gtit">서식 가이드</h1>
+                <!--<p><script type="text/javascript">map.print(1,1,1);</script></p> -->
+            </div>
+            
+            <div id="skipContent" class="wgDsc">
+                <div class="section cordView">
+                    <h3 class="gtit">■ 입력폼</h3>
+                    <div class="dscBox type01">
+                    <ul class="lstDsc">
+                       <li><strong>텍스트 박스</strong><br>
+                            <div class="panel">
+								<input type="text" name="" value="인풋박스"><br><br>
+								<input type="text" name="" readonly="readonly" value="readonly"><br><br>
+								<input type="text" name="" disabled="disabled" value="disable" ><br>                        
+                            </div>
+                            <pre class="brush: html;">
+								<input type="text" name="" value="인풋박스">
+								<input type="text" name="" readonly="readonly" value="readonly">
+								<input type="text" name="" disabled="disabled" value="disable" >
+                            </pre>
+                        </li>                    
+                        <li><strong>체크박스</strong><br>
+                            <div class="panel">
+								<input type="checkbox" id="check-1">
+								<label for="check-1" class="mr15"><span class="icon"></span>체크</label>
+
+								<input type="checkbox" id="check-2">
+								<label for="check-2" class="mr15"><span class="icon"></span>체크</label>
+
+								<input type="checkbox" id="check-3" disabled>
+								<label for="check-3"><span class="icon"></span>disabled</label>
+                            </div>
+                            <pre class="brush: html;">
+								<input type="checkbox" id="check-1">
+								<label for="check-1" class="mr15"><span class="icon"></span>체크</label>
+
+								<input type="checkbox" id="check-2">
+								<label for="check-2" class="mr15"><span class="icon"></span>체크</label>
+
+								<input type="checkbox" id="check-3" disabled>
+								<label for="check-3"><span class="icon"></span>disabled</label>
+                            </pre>
+                        </li>
+                        <li><strong>라디오</strong><br>
+                            <div class="panel">
+								<input type="radio" id="radio1-1" name="radio1">
+								<label for="radio1-1" class="mr15"><span class="icon"></span>오프라인</label>
+								<input type="radio" id="radio1-2" name="radio1">
+								<label for="radio1-2" class="mr15"><span class="icon"></span>오프라인</label>
+								<input type="radio" id="radio1-3" name="radio1" disabled>
+								<label for="radio1-3"><span class="icon"></span>disabled</label>
+                            </div>
+                            <pre class="brush: html;">
+								<input type="radio" id="radio1-1" name="radio1">
+								<label for="radio1-1" class="mr15"><span class="icon"></span>오프라인</label>
+								<input type="radio" id="radio1-2" name="radio1">
+								<label for="radio1-2" class="mr15"><span class="icon"></span>오프라인</label>
+								<input type="radio" id="radio1-3" name="radio1" disabled>
+								<label for="radio1-3"><span class="icon"></span>disabled</label>
+                            </pre>
+							<div class="panel">
+								<!-- 차량 선택 -->
+								<section>
+									<h3>차량 선택</h3>
+									<div class="sel_carWrap">
+										<div class="innerBox normal">
+											<div class="radio large">
+												<input type="radio" name="s_selCar" id="s_selCar1">
+												<label for="s_selCar1"><span class="icon"></span>일반예약</label>
+											</div>
+											<div class="desc_box">                                    
+												<ul class="txt_list mt10">
+													<li class="gray">
+														회원/비회원 모두 예약 가능
+													</li>
+													<li class="gray">
+														특정 차종 지정 가능
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="innerBox saving">
+											<div class="radio large">
+												<input type="radio" name="s_selCar" id="s_selCar2">
+												<label for="s_selCar2"><span class="icon"></span>알뜰카</label>
+											</div>
+											<div class="desc_box">
+												<ul class="txt_list mt10">
+													<li class="gray f12">
+														회원(로그인)만 예약 가능
+													</li>
+													<li class="gray f12">
+														차급만 선택 가능, 저렴한 가격
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</section>
+								<!-- //차량 선택 --> 
+							</div>
+							<pre class="brush: html;">
+								<section>
+									<h3>차량 선택</h3>
+									<div class="sel_carWrap">
+										<div class="innerBox normal">
+											<div class="radio large">
+												<input type="radio" name="s_selCar" id="s_selCar1">
+												<label for="s_selCar1"><span class="icon"></span>일반예약</label>
+											</div>
+											<div class="desc_box">                                    
+												<ul class="txt_list mt10">
+													<li class="gray">
+														회원/비회원 모두 예약 가능
+													</li>
+													<li class="gray">
+														특정 차종 지정 가능
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="innerBox saving">
+											<div class="radio large">
+												<input type="radio" name="s_selCar" id="s_selCar2">
+												<label for="s_selCar2"><span class="icon"></span>알뜰카</label>
+											</div>
+											<div class="desc_box">
+												<ul class="txt_list mt10">
+													<li class="gray f12">
+														회원(로그인)만 예약 가능
+													</li>
+													<li class="gray f12">
+														차급만 선택 가능, 저렴한 가격
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</section>
+							</pre>
+                        </li>
+                        <li><strong>셀렉트</strong><br>
+							<div class="panel">
+								<span class="select"> 
+									<select id="" title="">
+										<option selected="selected">00시</option>
+										<option>01시</option>
+										<option>02시</option>
+										<option>03시</option>
+									</select>
+								</span>
+								<br><br>
+
+								<!-- select 비활성-->
+								<span class="select disabled"> 
+									<select id="" title="" disabled="disabled" class="disabled">
+										<option selected="selected">disabled</option>
+									</select>
+								</span> 
+							</div>
+							<pre class="brush: html;">
+								<span class="select"> 
+									<select id="" title="">
+										<option selected="selected">00시</option>
+										<option>01시</option>
+										<option>02시</option>
+										<option>03시</option>
+									</select>
+								</span>
+								<br><br>
+
+								<!-- select 비활성-->
+								<span class="select disabled"> 
+									<select id="" title="" disabled="disabled" class="disabled">
+										<option selected="selected">disabled</option>
+									</select>
+								</span> 
+							</pre>
+						</li>
+						<li><strong>달력</strong><br>
+							<div class="panel">
+								<div class="wrap_cal">
+									<div class="calendar_b limit">
+									</div>
+									<div class="cal_date rent">
+										<h6>대여일시</h6>
+										<strong class="date">YYYY/MM/DD</strong>
+										<span class="select">
+											<select id="" title="" class="sel_hour">
+												<option value="00" selected="selected">00시</option>
+												<option value="01">01시</option>
+												<option value="02">02시</option>
+												<option value="03">03시</option>
+												<option value="04">04시</option>
+												<option value="05">05시</option>
+												<option value="06">06시</option>
+												<option value="07">07시</option>
+												<option value="08">08시</option>
+												<option value="09">09시</option>
+												<option value="10">10시</option>
+												<option value="11">11시</option>
+												<option value="12">12시</option>
+												<option value="13">13시</option>
+												<option value="14">14시</option>
+												<option value="15">15시</option>
+												<option value="16">16시</option>
+												<option value="17">17시</option>
+												<option value="18">18시</option>
+												<option value="19">19시</option>
+												<option value="20">20시</option>
+												<option value="21">21시</option>
+												<option value="22">22시</option>
+												<option value="23">23시</option>
+											</select>
+										</span>
+										<span class="select">
+											<select id="" title="" class="sel_minute">
+												<option value="00" selected="selected">00분</option>
+												<option value="10">10분</option>
+												<option value="20">20분</option>
+												<option value="30">30분</option>
+												<option value="40">40분</option>
+												<option value="50">50분</option>
+											</select>
+										</span>
+									</div>             
+									<div class="cal_date return">
+										<h6>대여일시</h6>
+										<strong class="date">YYYY/MM/DD</strong>
+										<span class="select">
+											<select id="" title="" class="sel_hour">
+												<option value="00" selected="selected">00시</option>
+												<option value="01">01시</option>
+												<option value="02">02시</option>
+												<option value="03">03시</option>
+												<option value="04">04시</option>
+												<option value="05">05시</option>
+												<option value="06">06시</option>
+												<option value="07">07시</option>
+												<option value="08">08시</option>
+												<option value="09">09시</option>
+												<option value="10">10시</option>
+												<option value="11">11시</option>
+												<option value="12">12시</option>
+												<option value="13">13시</option>
+												<option value="14">14시</option>
+												<option value="15">15시</option>
+												<option value="16">16시</option>
+												<option value="17">17시</option>
+												<option value="18">18시</option>
+												<option value="19">19시</option>
+												<option value="20">20시</option>
+												<option value="21">21시</option>
+												<option value="22">22시</option>
+												<option value="23">23시</option>
+											</select>
+										</span>
+										<span class="select">
+											<select id="" title="" class="sel_minute">
+												<option value="00" selected="selected">00분</option>
+												<option value="10">10분</option>
+												<option value="20">20분</option>
+												<option value="30">30분</option>
+												<option value="40">40분</option>
+												<option value="50">50분</option>
+											</select>
+										</span>
+									</div> 
+								</div>
+							</div>
+							<pre class="brush: html;">
+								<div class="wrap_cal">
+									<div class="calendar_b limit">
+									</div>
+									<div class="cal_date rent">
+										<h6>대여일시</h6>
+										<strong class="date">YYYY/MM/DD</strong>
+										<span class="select">
+											<select id="" title="" class="sel_hour">
+												<option value="00" selected="selected">00시</option>
+												<option value="01">01시</option>
+												<option value="02">02시</option>
+												<option value="03">03시</option>
+												<option value="04">04시</option>
+												<option value="05">05시</option>
+												<option value="06">06시</option>
+												<option value="07">07시</option>
+												<option value="08">08시</option>
+												<option value="09">09시</option>
+												<option value="10">10시</option>
+												<option value="11">11시</option>
+												<option value="12">12시</option>
+												<option value="13">13시</option>
+												<option value="14">14시</option>
+												<option value="15">15시</option>
+												<option value="16">16시</option>
+												<option value="17">17시</option>
+												<option value="18">18시</option>
+												<option value="19">19시</option>
+												<option value="20">20시</option>
+												<option value="21">21시</option>
+												<option value="22">22시</option>
+												<option value="23">23시</option>
+											</select>
+										</span>
+										<span class="select">
+											<select id="" title="" class="sel_minute">
+												<option value="00" selected="selected">00분</option>
+												<option value="10">10분</option>
+												<option value="20">20분</option>
+												<option value="30">30분</option>
+												<option value="40">40분</option>
+												<option value="50">50분</option>
+											</select>
+										</span>
+									</div>             
+									<div class="cal_date return">
+										<h6>대여일시</h6>
+										<strong class="date">YYYY/MM/DD</strong>
+										<span class="select">
+											<select id="" title="" class="sel_hour">
+												<option value="00" selected="selected">00시</option>
+												<option value="01">01시</option>
+												<option value="02">02시</option>
+												<option value="03">03시</option>
+												<option value="04">04시</option>
+												<option value="05">05시</option>
+												<option value="06">06시</option>
+												<option value="07">07시</option>
+												<option value="08">08시</option>
+												<option value="09">09시</option>
+												<option value="10">10시</option>
+												<option value="11">11시</option>
+												<option value="12">12시</option>
+												<option value="13">13시</option>
+												<option value="14">14시</option>
+												<option value="15">15시</option>
+												<option value="16">16시</option>
+												<option value="17">17시</option>
+												<option value="18">18시</option>
+												<option value="19">19시</option>
+												<option value="20">20시</option>
+												<option value="21">21시</option>
+												<option value="22">22시</option>
+												<option value="23">23시</option>
+											</select>
+										</span>
+										<span class="select">
+											<select id="" title="" class="sel_minute">
+												<option value="00" selected="selected">00분</option>
+												<option value="10">10분</option>
+												<option value="20">20분</option>
+												<option value="30">30분</option>
+												<option value="40">40분</option>
+												<option value="50">50분</option>
+											</select>
+										</span>
+									</div> 
+								</div>
+							</pre>
+                        </li>                            
+                    </ul>
+                    </div>
+                </div><!--// section div -->
+                
+                <div class="section cordView">
+                    <h3 class="gtit">■ <label> : radio, checkbox와 1:1 구성 필수<strong>(ID설정 필수)</strong></h3>
+                    <div class="dscBox type01">
+                    <p class="lstDsc">label은 명시적으로 사용.</p>
+                    <pre class="brush: html;">
+                        &lt;input type="checkbox" name="" id="ok" value="" checked=""> &lt;label for="ok">동의&lt;/label> 
+                    </pre>
+                    </div>
+                </div><!--// section div -->
+                
+                <div class="section cordView">
+                    <h3 class="gtit">■ overflow:scroll/overflow:auto 적용시 <strong>tabindex="0" 적용</strong></h3>
+                    <div class="dscBox type01">
+                    <ul class="lstDsc">
+                        <li>약관 또는 레이아웃 반영을 위해 엘리먼트에 <strong>overflow:scroll/overflow:auto 적용시 tabindex="0" 적용</strong>하도록 한다.
+                            <ul>
+                                <li><strong class="pointBl">CSS</strong>
+                                <pre class="brush: css;">
+                                    div.agreeBox {background:#f7f7f7; padding:10px; height:60px; border:1px #ddd solid; overflow-y:scroll;}
+                                </pre>
+                                </li>
+                                <li><strong class="pointGn">HTML</strong>
+                                <pre class="brush: html;">
+                                    &lt;div class="agreeBox" tabindex="0">
+                                    내용...
+                                    &lt;/div>
+                                </pre>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    </div>
+                </div><!--// section div -->
+                               
+                <!-- 여기서부터 내용 e -->
+            </div><!--// wgDsc div -->
+        </div><!--// wgContent div -->
+        
+    </div><!--// wgContainer div  -->
+    
+</div><!--// wrapGuide div -->
+</body>
+</html>

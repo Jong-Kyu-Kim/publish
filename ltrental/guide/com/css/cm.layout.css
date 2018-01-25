@@ -1,0 +1,614 @@
+@charset "utf-8";
+
+/****************************************/
+/*	Name: LOTTE HOTEL
+/*	PART: SITE COMMON STYLE
+/*	Version: 1.0
+/*	Author: [써냐]BLUEWEBD™
+/****************************************/
+
+/*Background-color*/
+/*global*/
+#global .header_top {background-color:#000;}
+#global .main, #global .subLayout01, #global .subLayout02 {background-color:#252220;}
+
+
+/*brand*/
+#hotel .main{background-color:#3b312a;}
+#signiel .header_top, #hotel .header_top, #cityHotel .header_top, #L7 .header_top {background-color:#000;}
+#signiel .subLayout01, #signiel .subLayout02 {background-color:#111;}
+#hotel .subLayout01, #hotel .subLayout02 {background-color:#3b312a;}
+#cityHotel .subLayout01, #cityHotel .subLayout02 {background-color:#2b2d2f;}
+#L7 {background-color:#fff;}
+#L7 #footer {background-color: #000;}
+
+/*chain*/
+#signiel.chSigniel .main, #signiel.chSigniel .subLayout01, #signiel.chSigniel .subLayout02 {background-color:#dcdcdc;}
+#signiel.chSigniel #footer {background-color:#111;}
+
+#hotel.chHotel .subLayout01, #hotel.chHotel .subLayout02, #hotel.chHotel{background-color:#d8d5d2;}
+#hotel.chHotel #footer {background-color:#3b312a;}
+
+#cityHotel.chCityHotel .subLayout01, #cityHotel.chCityHotel .subLayout02{background-color:#e0e2e4;}
+#cityHotel.chCityHotel #footer {background-color:#2b2d2f;}
+
+#L7.chL7 .subLayout01, #L7.chL7 .subLayout02 {background-color:#fff;}
+#L7 #footer {background-color:#000;}
+
+/*Float Release*/
+.inner, .gnb, .title .line_map, .split,
+.footer_body .brand_site,
+.family_site,
+.title .page_util {*zoom:1}
+
+.inner:after, .gnb:after, .title .line_map:after, .split:after,
+.footer_body .brand_site:after,
+.family_site:after,
+.title .page_util:after {display:block; content:''; clear:both;}
+
+/*Layout*/
+/* 2013.11.11 | bluewebd | modify skip navigation for focus 
+.skip_nav {height: 0; width: 0; font-size: 0; line-height: 0; margin: 0; padding: 0; overflow:hidden;}
+ */
+.skip_nav {overflow:hidden; position:relative; width:100%; z-index:2;}
+.skip_nav a {display:block; height:0px; width:0px; margin:0 -1px -1px 0; overflow:hidden; line-height:0; text-align:center;}
+.skip_nav a:focus, 
+.skip_nav a:hover, 
+.skip_nav a:active {background:#B40000; color:#fff; font-weight:bold; margin:0; height:20px; font-size:12px; line-height:1; margin:0; padding:8px 0 0 15px; width:auto;}
+/* google_api skipNav */
+.skip_gMap {overflow:hidden; position:relative; width:100%; z-index:2;}
+.skip_gMap a {display:block; height:0px; width:0px; margin:0 -1px -1px 0; overflow:hidden; font-size:0; line-height:0; text-align:center;}
+.skip_gMap a:focus, 
+.skip_gMap a:hover, 
+.skip_gMap a:active {background:#B40000; color:#fff; font-size:12px; font-weight:bold; margin:0; height:20px; font-size:12px; line-height:1; margin:0; padding:8px 0 0 15px; width:auto;}
+
+/*layout*/
+#wrap {min-width:1024px;}
+.inner {width:960px; margin:0 auto;}
+
+
+/*header*/
+#header {}
+#header .header_top {height:30px; background-color:#000;}
+#header .header_top .inner {/*position:relative; 2013.11.13 박현아 삭제 | ie 7 레이어 팝업 포지션 에러*/}
+#header .header_body {padding:45px 0 0 0;}
+#header .logo {position:absolute; display:block;width:220px; height:120px;}
+
+/*gnb*/
+.gnb {float:right; *zoom:1}
+.gnb>li {position:relative; float:left; margin-left:15px; height:35px; z-index:30; background:none; *zoom:1}
+.gnb>li:first-child {margin-left:0px;}
+.gnb>li>a {display:block; height:35px; letter-spacing:-1px;}
+.gnb>li.on {/* background:url(/front/img/com/brand/bg_hotel_gnb.png) 50% 100% no-repeat; */}
+.gnb>li.on>a {/*font-weight:bold;*/ background:url(/front/img/com/chain/bg_gnb1depth.png) 0 23px repeat-x;}
+
+.sub_gnb {position:absolute; left:50%; top:35px; height:0; overflow:hidden; /*padding:17px 0 8px 0;*/ background-color:#d8d5d2; z-index:30;}
+.sub_gnb>li {position:relative; *zoom:1}
+.sub_gnb>li>a {display:block; line-height:15px; padding:0 20px 7px 19px; font-size:11px;/*  text-indent:-10px; */ text-align:center;}
+.sub_gnb>li>a span {white-space:nowrap;}
+.sub_gnb>li.on>a {color:#fff; text-decoration:underline;}
+.sub_gnb>li.on>a span {background:url(/front/img/com/bg_subLine.png) 0 100% repeat-x;}
+.sub_gnb>li>a:focus {outline:none;}
+
+/*global*/
+#global .gnb>li.on {/* background:url(/front/img/com/global/bg_gnb_sub.png) 50% 100% no-repeat; */}
+#global .gnb>li.on>a, 
+#hotel .gnb>li.on>a{background-image:url(/front/img/com/global/bg_hotel_subLine.png);}
+#global .sub_gnb {display:none; background-color:#252220;}
+#global .sub_gnb>li>a{color:#8a7a6c}
+#global .sub_gnb>li.on>a,
+#signiel .sub_gnb>li.on>a,
+#L7 .sub_gnb>li.on>a,
+#hotel .sub_gnb>li.on>a{color:#fff;}
+#global .sub_gnb>li.on>a span, 
+#hotel .sub_gnb>li.on>a span {background:url(/front/img/com/global/bg_subLine.png) 0 100% repeat-x;}
+
+
+/*brand*/
+#signiel .gnb>li.on {background-image:url(/front/img/com/brand/bg_signiel_subLine.png);}
+#signiel .sub_gnb {background-color:#2e2e2e;}
+#signiel .sub_gnb>li>a {color:#a0a0a0}
+
+#cityHotel .gnb>li.on {}
+#cityHotel .gnb>li.on>a {background:url(/front/img/com/brand/bg_cityHotel_subLine.png) 0 23px repeat-x;}
+#cityHotel .sub_gnb {background-color:#e0e2e4;}
+#cityHotel .sub_gnb>li>a {color:#84888b;}
+#cityHotel .sub_gnb>li.on>a,
+#hotel.chHotel .sub_gnb>li.on>a{color:#222;}
+#cityHotel .sub_gnb>li.on>a span {background:url(/front/img/com/brand/bg_city_subLine.png) 0 100% repeat-x;}
+
+#L7 .gnb>li.on {background-image:url(/front/img/com/brand/bg_L7_subLine.png);}
+#L7 .sub_gnb {background-color:#92278f;}
+#L7 .sub_gnb>li>a {color:#e8c4e7;}
+
+#hotel .sub_gnb{background-color:#3b312a;}
+#hotel .sub_gnb>li>a{color:#cbc0b5;}
+#hotel.chHotel .sub_gnb{background-color:#d8d5d2;}
+#hotel.chHotel .sub_gnb>li>a{color:#8a7a6c;}
+
+#hotel .wedding .sub_gnb {background-color:#fff}
+
+/*gnb color*/
+#global .gnb>li>a,
+#signiel .gnb>li>a {color:#fff;}
+#hotel .gnb>li>a {color:#cbc0b5;}
+#cityHotel .gnb>li>a {color:#c7ccd0;}
+#L7 .gnb>li>a {color:#222;}
+
+
+#hotel.chHotel .gnb>li>a,
+#cityHotel.chCityHotel .gnb>li>a {color:#222;}
+
+#global .gnb>li.on>a,
+#hotel.chHotel .gnb>li.on>a {color:#8a7a6c;}
+
+#signiel.chSigniel .gnb>li>a,  
+
+#L7.chL7 .gnb>li>a {color:#352d27;}
+
+#cityHotel.chCityHotel .gnb>li.on>a {color:#84888b}
+
+/*gnb outline*/
+#global .gnb>li>a:focus, 
+#signie .gnb>li>a:focus,
+#hotel .gnb>li>a:focus,
+#cityHotel .gnb>li>a:focus,
+#L7 .gnb>li>a:focus {outline:none;}
+
+#hotel .wedding .gnb>li>a:focus {outline:none;}
+
+
+/* Content */
+/* marge , padding */
+.conSetion {margin-bottom:40px;}
+.subSection {margin-bottom:20px;}
+
+/*lnb*/
+.lnb {float:left; width:190px; padding-right:15px; padding-left:15px; background-color:#fff;}
+.lnbTit {padding-bottom:15px; font-size:20px; font-weight:bold; color:#8a7a6c; border-bottom:4px solid #8a7a6c;}
+.lbnMenu {}
+.lbnMenu>li {padding-top:8px;}
+.lbnMenu>li>a {display:block; padding:0 20px 0 4px; font-size:14px; line-height:23px; color:#999;}
+.lbnMenu>li>a:focus {outline:none;}
+.lbnMenu>li.on {margin-top:10px; background:url(/front/img/com/ico_lnb.png) 176px 17px no-repeat; border-top:1px solid #444; border-bottom:1px solid #444;}
+.lbnMenu>li.on>a {color:#222; padding-bottom:14px;}
+.lbnMenu>li.sub.on {background-position:176px -80px; }
+.lbnMenu>li.sub.on>a {}
+.lbnMenu>li.on:first-child {margin-top:0; border-top:0}
+.lbnMenu>li.over {background:url(/front/img/com/ico_lnb.png) 176px 17px no-repeat}
+.lbnMenu>li.over>a {color:#222;}
+.lbnMenu>li.sub.over {background-position:176px -80px;}
+.subMenu {/*height:0; overflow:hidden;*/ padding:0 14px;}
+.subMenu>li {text-indent:-10px; }
+.subMenu>li:first-child {padding-top:10px;}
+.subMenu>li>a {font-size:12px; line-height:23px; color:#8a7a6c;}
+.subMenu>li>a:focus {outline:none;}
+.subMenu>li.on a, .subMenu>li.over a {color:#222; background:url(/front/img/com/bg_lnbSub.png) 0 100% no-repeat;}
+.lbnMenu>li.sub.on .subMenu {padding:0 14px 11px 14px; background:url(/front/img/com/bg_lnb_dotline.png) 0 0 repeat-x;}
+/* lnb - color */
+#cityHotel.chCityHotel .lnbTit{border-color:#575a5d; color:#575a5d;}
+
+/*lnb_test*/
+.lbnMenu.off {}
+.lbnMenu.off>li.on {border-top:0; border-bottom:0}
+.lbnMenu.off>li.sub.on .subMenu {background:none}
+
+/*bodyContent*/
+.subLayout01 .bodyContent {width:960px;}
+.subLayout02 .bodyContent {float:right; width:710px;}
+
+/*container*/
+#container {min-height:500px; padding:35px 0 50px; background-color:#fff;}
+#reservation #container {padding-top:20px;}
+#L7 #container {border-top:1px solid #d5d5d5;}
+
+/*Title*/
+.title {position:relative; height:92px; margin-bottom:16px;}
+.title .subtitle {height:32px; *padding-bottom:7px; color:#222;}
+#reservation .title {height:74px;}
+
+.tit2dep {color:#222; font-weight:bold; margin-bottom:10px;}
+.tit2dep.tit {margin-bottom:16px; /* margin-bottom:16px; 2013.11.05 | 이유미 | line-height값 변경 여백 조정 */}
+.tit2dep strong {font-size:13px; color:#666; font-weight:normal;}
+.tit3dep {color:#222; font-weight:bold; margin-bottom:8px; /* margin-bottom:10px; 2013.11.05 | 이유미 | line-height값 변경 여백 조정 */}
+.tit3dep.tit{margin-bottom:4px; /* margin-bottom:5px; 2013.11.05 | 이유미 | line-height값 변경 여백 조정 */}
+
+/*line_map*/
+.title .line_map {height:19px; margin-bottom:28px; vertical-align:middle;}
+.title .line_map a > span {display:block; height: 0; width: 0; font-size: 0; line-height: 0; margin: 0; padding: 0; overflow:hidden;}
+.title .line_map a {display:block; float:left; height:12px; padding:1px 9px 4px 12px; background:url(/front/img/com/bg_lcarr.png) 0 6px no-repeat; text-decoration:underline;}
+.title .line_map a:first-child { width:19px; height:17px; vertical-align:middle; padding-left:0; padding-bottom:0; background:url(/front/img/com/ico_layout.png) 0 -100px no-repeat;}
+.title .line_map a:focus {outline:0;}
+.title .line_map>span {display:block; float:left; padding:1px 9px 4px 12px; vertical-align:0; background:url(/front/img/com/bg_lcarr.png) 0 6px no-repeat;}
+#reservation .title .line_map {margin-bottom:10px;}
+
+/*page_util*/
+.title .page_util {position:absolute; right:0; bottom:-16px;}
+.title .page_util>li {float:left; background:#fff url(/front/img/com/bg_lcline.png) 0px 17px no-repeat;}
+.title .page_util>li:first-child {width:56px; height:67px; background:none;}
+.title .page_util>li>a {display:block; width:64px; padding:37px 0 0 0; text-align:center; color:#444; background: url(/front/img/com/ico_layout.png) 15px 9px no-repeat;}
+.title .page_util>li>a.page_email {width:50px; text-align:right; background-position: -82px 9px;}
+.title .page_util>li>a.page_share {position:absolute;width:56px; text-align:center; background-position: -183px 9px;}
+.title .page_util>li>a.page_share.on {padding-bottom:16px; border-top:1px solid #575a5d; border-right:1px solid #575a5d; border-bottom:1px solid #fff; border-left:1px solid #575a5d;  z-index:25; background-color:#fff}
+
+.title .page_util>li .shares {display:none; position:absolute; left:0; top:65px; padding:0 10px; border:1px solid #575a5d; background-color:#fff;  z-index:20;}
+.title .page_util>li .shares li {width:149px; height:37px; padding:10px 0; background:url(/front/img/com/bg_dot3x1_ccc.png) 0 0 repeat-x;}
+.title .page_util>li .shares li a {display:block; width:97px; padding:11px 0 13px 52px; font-size:13px; color:#444; background: url(/front/img/com/ico_layout.png) -200px -300px no-repeat;}
+.title .page_util>li .shares li:first-child {background:none;}
+.title .page_util>li .shares li:first-child a {background-position:0 -300px;}
+
+.title .btnR{position:absolute; right:0; bottom:14px;}
+
+
+/* interval guide*/
+.dep02Sec {margin-bottom:43px; /*margin-bottom:42px; 2013.10.25 | 박현아 | ie8 기준 여백 조정*/ /* margin-bottom:40px; 2013.11.05 | 이유미 | line-height값 변경 여백 조정 */}
+.dep03Sec {margin-bottom:23px; /*margin-bottom:24px;2013.10.25 | 박현아 | ie8 기준 여백 조정*/ /* margin-bottom:20px; 2013.11.05 | 이유미 | line-height값 변경 여백 조정 */}
+.dep04Sec {margin-bottom:16px;}
+
+/* split guide */
+.split {}
+
+.split > .colSec {float:left;}
+.split.col2 > .colSec {width:345px; margin-left:20px;}
+.split.col3 > .colSec {width:230px; margin-left:10px;}
+
+.split.col2.imgTxtV > .colSec,
+.split.col3.imgTxtV > .colSec
+{margin-left:0; margin-top:30px;}
+.split.col2.imgTxtV > .colSec {margin-right:20px;}
+.split.col3.imgTxtV > .colSec {margin-right:10px;}
+
+.dep02Sec > .split.imgTxt {margin-bottom:27px; /* margin-bottom:26px;2013.10.25 | 박현아 | ie8 기준 여백 조정*//* 2013.11.05 | 이유미 | line-height값 변경 여백 조정 */ }
+.dep02Sec > .split.imgTxt.tit {margin-top:6px;}
+/*.dep02Sec > .split.imgTxt:first-child {margin-top:0px;}*/
+
+.split.imgMs > .colSec {width:230px;}
+.split.imgMs > .colSec.txt_dsc {width:460px; margin-left:20px; margin-bottom:0;}
+.split.imgMs .lstInfo.inline{margin-top:19px;}
+
+.split > .colSec > .dep03Sec, 
+.split > .colSec.txt_dsc > .dep03Sec > .txt_dsc,
+.split.imgTxt > .colSec.txt_dsc,
+dl.dep03Sec.type02 > .txt_dsc{margin-bottom:0;}
+.split > .colSec:first-child {margin-left:0px;}
+
+.split.imgTxtV .colSec > dl.dep03Sec {position:relative;}
+.split.imgTxtV .colSec > dl.dep03Sec > dd.imgArea {position:absolute; top:0; left:0;}
+.split.col2.imgTxtV .colSec > dl.dep03Sec {padding-top:210px;}
+.split.col3.imgTxtV .colSec > dl.dep03Sec {padding-top:140px;}
+dl.dep03Sec > dd > .split.col2 > .colSec {width:167px; margin-left:11px;}
+dl.dep03Sec > dd > .split.col2 > .colSec:first-child {margin-left:0;}
+
+dl.dep03Sec.type02 dt, dl.dep03Sec.type02 > dd {padding:0 20px;}
+dl.dep03Sec.type02 > dd.dotlineT {margin-top:10px; padding-top:10px;}
+.dotlineT {background:url(/front/img/com/bg_dotline3x1.gif) 0 0 repeat-x;}
+
+dl.dep03Sec.ico_illustSet {}
+dl.dep03Sec.ico_illustSet dt, dl.dep03Sec.ico_illustSet > dd {padding-left:75px;}
+dl.dep03Sec.ico_illustSet dd.ico_illust {background:url(/front/img/com/temp/ico_illustSet.png) 0 0 no-repeat; width:55px; height:55px;}
+.split.col2.imgTxtV .colSec > dl.dep03Sec.ico_illustSet > dd.ico_illust {position:absolute; top:215px; left:0;}
+
+.split.col2.imgTxtV .colSec > dl.dep03Sec .lstInfo{padding-top:10px;}
+.split.col2.imgTxtV .colSec > dl.dep03Sec.type02 .lstInfo{padding-top:0;}
+
+dl.dep03Sec.type02 dd.imgArea,
+dl.dep03Sec.ico_illustSet dd.imgArea{padding:0;}
+
+/* one_img */
+.bigimg_box{margin-bottom:23px;}
+
+/* content */
+.txt_dsc {margin-bottom:20px;}
+.txt_dsc.header {/*padding-top:10px;*/ padding-top:6px; /*2013.10.25 | 박현아 | ie8 기준 여백 조정*/}
+.txt_dsc.tit, .lst03dep.tit {margin-top:-6px;}
+.txt_dsc.ls {color:#444;}
+
+/* dotList_gray */
+.lst03dep li {padding-left:7px; background:url(/front/img/com/bg_dotlist_3x3_999.gif) 0 9px no-repeat; }
+.lst03dep.tbl {margin-top:14px; border:none;}
+/* dotList_black*/
+.lst03dep.dotBk li{padding-left:9px; background:url(/front/img/com/bg_dotCircle_4x4_222.png) 0 9px no-repeat; color:#222;}
+.lst03dep.dotBk li ul li, .lst03dep.dotBk li ol li{color:#666; padding-left:0; background:none;}
+.lst03dep.dotBk li .tbl_wrap{margin-top:5px;}
+.lst_min li{text-indent:-9px; margin-left:9px;}
+.lst03dep.dotBk .lst_min li .lst_commend{margin-left:5px;}
+
+
+.tbl_wrap.txtDsc{margin-top:-13px;} /* table_parent_txtDsc */
+
+.imgTxtV .dep03Sec img+.txt_dsc.alC{margin-top:5px;}
+
+.lstInfo {}
+.lstInfo li {margin-top:5px;}
+.lstInfo li:first-child {margin-top:0px;}
+.lstInfo li span {display:inline-block;}
+.lstInfo li span:first-child {width:40px; color:#666;}
+.lstInfo li span {color:#444;}
+.lstInfo.inline li{display:inline; padding-right:6px;}
+.lstInfo.inline li span:first-child{width:auto; padding-right:6px; border-left:1px solid #666; line-height:11px; padding-left:12px;}
+.lstInfo.inline li:first-child span:first-child{padding-left:0; border:none;}
+
+/*Layer PopUp*/
+/*layer pop*/
+.overlayerBg {position:absolute; left:0; top:0; background-color:#000; z-index:999;}
+.layerCont, .layerCont3, .roomMap_layer {position:absolute; left:50%; top:0; background-color:#fff; z-index:1000;}
+.layerCont2 {position:absolute; left:50%; top:50%; background-color:#fff; z-index:1001;}
+
+/* base_WHITE_layout 2013-12-03 이유미 수정
+#popWrap {background:#fff; position:relative;}
+#popWrap .scollSec {overflow-y:auto; overflow-x:hidden;}
+#popWrap .btnClose {display:inline-block; position:absolute; top:0; right:0; border-left:1px solid #666; background:url(/front/img/com/btn_close.png) no-repeat -1px 0; width:51px; height:50px;}
+#popWrap.laypop > #popHeader {height:51px; border-bottom:1px #d3d3d3 solid;}
+#popWrap > #popHeader h1.popTit {font-size:18px; line-height:52px; font-weight:bold; margin-left:20px;}
+#popWrap .popContainer {padding-bottom:20px;}*/
+/* base_BLACK_layout layer
+#popWrap.laypop.type2>#popHeader{overflow:hidden; border-bottom:none; background:#242424;}
+#popWrap.laypop.type2>#popHeader h1.popTit{float:left; margin:0 30px; color:#fff; font-style:italic; font-weight:normal;}
+#popWrap.laypop.type2>.btnClose{height:50px; background-position:-1px 0; border-left:1px solid #7d7d7d;}
+#popWrap.laypop.type2>.popImg{position:relative;}
+#popWrap.laypop.type2>.popContainer{position:relative; padding-bottom:0;}*/
+/* winpop = layer  
+#popWrap.winpop2 > #popHeader {height:50px; border-bottom:1px #d3d3d3 solid;}
+#popWrap.winpop2 > #popHeader h1.popTit {font-size:18px; line-height:48px; font-weight:bold; margin-left:20px;}
+#popWrap.winpop2 .popBody {margin:17px 20px 0;}	
+#popWrap.winpop2 .popContainer {padding-bottom:16px;}
+*/
+
+/* base */
+#popWrap {background:#fff; position:relative;}
+#popWrap .scollSec {overflow-y:auto; overflow-x:hidden;}
+/* base_WHITE_layout */
+#popWrap .btnClose {position:absolute; top:0; right:0; display:inline-block; width:50px; height:51px; background:url(/front/img/com/btn_close.png) 0 0 no-repeat;}
+#popWrap.laypop > #popHeader, #popWrap.winpop2 > #popHeader {height:51px; border-bottom:1px #d3d3d3 solid;}
+#popWrap > #popHeader h1.popTit {font-size:18px; line-height:47px; font-weight:bold; margin-left:20px;}
+#popWrap .popContainer {padding-bottom:20px;}
+#popWrap .popBody {margin:20px 20px 0;}	
+#popWrap .popImg {position:relative;} 
+/* BLACK_layout */
+#popWrap.type2 .btnClose:focus{outline-color:#999;}
+#popWrap.type2 > #popHeader {background:#242424; border-bottom:none; }
+#popWrap.type2 > #popHeader a:focus{outline-color:#fff;}
+#popWrap.type2 > #popHeader h1.popTit {float:left; color:#fff; font-size:22px; font-style:normal; font-weight:bold; margin-left:20px; line-height:47px; font-weight:normal;}
+#popWrap.type2 .btnClose{background-position:-1px 0; border-left:1px solid #7d7d7d;}
+#popWrap.type2 .popContainer {padding-bottom:20px;}
+#popWrap.type2 .popBody {margin:20px 20px 0;}	
+#popWrap.type2 .popImg {position:relative;}
+/* layer_Hor */
+#popWrap.layHor .scollSec {height:310px;}
+#popWrap.layHor #popHeader {margin:0 20px 0 330px;}
+#popWrap.layHor #popHeader h1.popTit {float:none; padding-top:14px; color:#444; font-size:18px; line-height:24px; font-weight:bold;}
+#popWrap.layHor .popContainer {padding-bottom:0px; margin:0 20px 0 330px;}
+#popWrap.layHor .popImg {position:absolute; top:0; left:0; width:310px; height:310px;}
+#popWrap.layHor .popBody {margin:14px 0 20px;}
+#popWrap.layHor .btnClose {position:absolute; top:0; right:-30px; background-position:-60px 0; width:30px; height:30px;}
+/* layer_Ver */
+#popWrap.layVer {height:345px;}
+#popWrap.layVer>#popHeader {padding-top:180px;}
+#popWrap.layVer>#popHeader h1.popTit {float:none; margin-left:15px; color:#222; font-size:17px; line-height:20px; font-weight:normal;}
+#popWrap.layVer .popContainer {padding-bottom:0px;}
+#popWrap.layVer .popImg {position:absolute; top:0; left:0; width:261px; height:165px;}
+#popWrap.layVer .popBody {margin:11px 15px 20px;}
+#popWrap.layVer .btnClose {position:absolute; top:0; right:-30px; background-position:-60px 0; width:30px; height:30px;}
+
+/* window_popup */
+/* type1 */
+.print_Area{padding:20px;}
+#popWrap.winpop1{background:#fcfcfc;}
+#popWrap.winpop1 .articleArea{height:460px; border:1px solid #999; background:#fff;}
+#popWrap.winpop1 > #popHeader {height:59px; line-height:55px;}
+#popWrap.winpop1 > #popHeader h1.popTit {font-size:20px; font-weight:bold; margin-left:20px;}
+#popWrap.winpop1 .popBody {margin:17px 20px 0;}	
+#popWrap.winpop1 .popContainer {padding-bottom:15px;}
+
+
+/* room map type layer 추가 */
+#popWrap.mapArea #popHeader h1.popTit {color:#222; text-align:left;}
+#popWrap.mapArea .popContainer{height:457px; padding-bottom:0px; text-align:center;}
+#popWrap.mapArea .popImg{padding-top:20px;}
+
+/* global popup_ find A hotel */
+/* .laypop.hotel_mInfo_lst .txt_dsc{position:absolute; right:30px; bottom:13px; color:#aaa;} */
+.laypop.hotel_mInfo_lst > * > .split{padding-top:28px}
+.laypop.hotel_mInfo_lst .tit2dep.tit, .laypop.hotel_mInfo_lst .split > .colSec dl{padding-left:30px; padding-right:20px;}
+.laypop.hotel_mInfo_lst .split > .colSec dl{height:322px;}
+.laypop.hotel_mInfo_lst .split > .colSec dl dt{padding:36px 0 23px;}
+.laypop.hotel_mInfo_lst .split > .colSec dl dt:first-child{padding-top:0}
+.laypop.hotel_mInfo_lst .split > .colSec dl dd{width:100%;}
+.laypop.hotel_mInfo_lst .split > .colSec dl dd, .laypop.hotel_mInfo_lst .split > .colSec dl dd a{font-size:15px;}
+.laypop.hotel_mInfo_lst .split > .colSec dl dd .colSec a{display:block; margin-bottom:8px;}
+.laypop.hotel_mInfo_lst .split > .colSec dl dd .colSec{width:50%;}
+
+/* titleRight list */
+.titR_lst {float:left; border-left:1px solid #565656;}
+.titR_lst li{float:left; border-right:1px solid #565656;}
+.titR_lst li a{display:block; width:51px; height:51px; background:url(/front/img/com/layer_ico_btn.png) no-repeat 18px 14px;;}
+.titR_lst li a span{display:block; overflow:hidden; height:0; width:0; font-size:0; line-height:0; margin:0; padding:0;}
+.titR_lst li a.ico_exmap {background-position:18px 14px;}
+.titR_lst li a.ico_exlist {background-position:-84px 15px;}
+.titR_lst li.on a.ico_exmap {background-position:18px -45px;}
+.titR_lst li.on a.ico_exlist {background-position:-84px -44px;}
+
+/*util*/
+.util_top {float:right; *zoom:1;}
+.util_top:after {display:block; content:''; clear:both;}
+.util_top>li {float:left;}
+.util_top>li>a {display:block; padding:8px 10px 8px 10px; font-size:11px; color:#a1a1a1; background:url(/front/img/com/bg_util_line.png) 0 11px no-repeat;}
+.util_top>li>a:hover, .util_top>li>a:focus {color:#fff;}
+.util_top>li>a:focus {outline:none;}
+.util_top>li:first-child>a { background:none;}
+.util_top>li.last>a {height:15px; overflow:hidden; padding:8px 36px 7px 15px; font-weight:bold; color:#fff; background:#74665a url(/front/img/com/bg_btn_ico12.png) 90px -251px no-repeat;}
+.util_top>li.lang {position:relative; width:91px; background:url(/front/img/com/bg_util_line.png) 0 11px no-repeat; z-index:35;}
+.util_top>li.lang>a {padding-right:37px; background:url(/front/img/com/btn_arr.png) 74px -1461px no-repeat;}
+.util_top>li.lang.on {background:none;}
+.util_top>li.lang.on>a {color:#fff; background-color:#464646; background-position:74px -1360px;}
+.util_top>li.lang .list_lang {display:none; position:absolute; left:-1px; top:30px; width:100%; z-index:35}
+.util_top>li.lang.on .list_lang {display:block; width:100%;  padding:4px 0 7px; background-color:#fff; border:1px solid #000;}
+.util_top>li.lang.on .list_lang>li {}
+.util_top>li.lang.on .list_lang>li>a {display:block; width:100%; padding-left:12px; line-height:22px; font-size:12px; color:#666;}
+.util_top>li.lang.on .list_lang>li.on a {text-decoration:underline; color:#222; font-weight:bold;}
+
+.util_top>li.lang .btn_ok {display:none;}
+.util_top>li.lang.sel>a {color:#fff; background:url(/front/img/com/btn_arr.png) 74px -1260px no-repeat}
+
+.util_top>li.lang.sel .btn_ok {position:absolute; top:30px;display:block; width:44px; padding-bottom:9px; background:#464646 url(/front/img/com/btn_arr.png) 70px -1561px no-repeat}
+.util_top>li.lang.sel .btn_ok:focus {border:1px dashed #fff;}
+.btn_layerPop:focus {border:1px dashed #fff;}
+/*footer*/
+#footer {min-width:1024px; padding-bottom:13px;}
+#footer .inner {padding-top:19px;}
+/* color */
+#hotel.chHotel #footer .inner{border-top:none;}
+#hotel #footer .inner{border-top:1px solid #61554c;}
+#footer a:focus {outline:#fff dashed 1px;}
+.footer_logo {float:left; width:240px; height:178px; background:url(/front/img/com/global/footer.png) 0 0 no-repeat;}
+.footer_logo a {display:block; width:174px; height:26px;}
+.footer_body {float:right; width:710px;}
+.footer_body .brand_site {padding-bottom:14px; background:url(/front/img/com/chain/footer_dot_b8a89a.png) 0 100% repeat-x;}
+
+.footer_body .brand_site li {float:left; margin-right:30px;}
+.footer_body .brand_site li a {display:block; width:97px; height:19px; background:url(/front/img/com/global/footer.png) -240px 0 no-repeat;}
+.footer_body .brand_site li.brand_site2 a {width:113px; background-position:-367px 0;}
+.footer_body .brand_site li.brand_site3 a {width:162px; background-position:-509px 0;}
+.footer_body .brand_site li.brand_site4 a {width:102px; background-position:-700px 0;}
+
+.footer_info {margin-top:13px;}
+.footer_info .util {margin-bottom:8px;}
+.footer_info .util a {padding:0 8px 0 12px; color:#867a6f; font-weight:bold; background:url(/front/img/com/chain/footer_dot_867a6f.png) 0 7px no-repeat;}
+.footer_info .util a:first-child {padding-left:0; background:none;}
+.office {margin-bottom:25px;}
+.office li {color:#867a6f;}
+.office strong {font-weight:bold;}
+.office li em {padding-left:5px;}
+.office .global_office .tel {padding-right:11px; background:url(/front/img/com/chain/footer_dot_867a6f.png) 100% 5px no-repeat;}
+.office .global_office .tel.bg_none {background:none;}
+
+.family_site {}
+.family_site a {display:block; float:left; width:132px; height:20px; margin-left:31px; background:url(/front/img/com/global/footer.png) -240px -134px no-repeat;}
+.family_site a:first-child {margin-left:0;}
+.family_site a.family_site2 {width:153px; background-position:-402px -134px;}
+.family_site a.family_site3 {width:107px; background-position:-585px -134px;}
+.family_site a.family_site4 {width:130px; background-position:-724px -134px;}
+
+.copyright {clear:both; padding:9px 12px 0 10px;}
+.copyright span {display:block; font-size:11px; color:#867a6f;}
+.copyright .left {}
+.copyright .right {margin-top:-13px; text-align:right;}
+
+#hotel .footer_logo {height:168px; background:url(/front/img/com/chain/footer.png) 0 0 no-repeat;}
+#hotel .footer_body .brand_site {background-image:url(/front/img/com/chain/footer_dot_b8a89a.png);}
+#hotel .footer_body .brand_site li a {background:url(/front/img/com/chain/footer.png) -250px 0 no-repeat;}
+#hotel .footer_body .brand_site li.brand_site2 a {background-position:-377px 0;}
+#hotel .footer_body .brand_site li.brand_site3 a {background-position:-519px 0;}
+#hotel .footer_body .brand_site li.brand_site4 a {background-position:-710px 0;}
+#hotel .copyright {border-top:1px solid #64584f;}
+
+#signiel .footer_logo, 
+#cityHotel .footer_logo, 
+#L7 .footer_logo {background-image:url(/front/img/com/brand/footer_signiel.png); background-position:0 10px;}
+
+#signiel .footer_body .brand_site li a, 
+#cityHotel .footer_body .brand_site li a, 
+#L7 .footer_body .brand_site li a {background-image:url(/front/img/com/brand/footer_signiel.png);}
+
+#signiel .footer_info .util a,
+#cityHotel .footer_info .util a,
+#L7 .footer_info .util a {color:#919396;}
+
+#signiel .office li,
+#cityHotel .office li,
+#L7 .office li {color:#919396;}
+
+#signiel .family_site a,
+#cityHotel .family_site a,
+#L7 .family_site a {background-image:url(/front/img/com/brand/footer_signiel.png);}
+
+#signiel .copyright span,
+#cityHotel .copyright span,
+#L7 .copyright span {color:#919396;}
+
+#global .copyright {border-top:1px solid #554e48;}
+#signiel .copyright {border-top:1px solid #353535;}
+#cityHotel .copyright {border-top:1px solid #464849;}
+#L7 .copyright {border-top:1px solid #2a2a2a;}
+
+
+
+
+/*wedding layout*/
+#hotel.chHotel #wrap.wedding {background:#fff url(/front/img/com/chain/bg_wedding.png) 0 0 repeat;}
+#hotel.chHotel #wrap.wedding #header .header_body {padding-top:0; background:url(/front/img/com/chain/bg_wedding_cont.png) 50% 0 repeat-y;}
+#hotel.chHotel #wrap.wedding #header .header_body .inner {padding-top:45px; background:url(/front/img/com/chain/bg_wedding_cont.png) 50% 0 repeat-y;}
+#hotel.chHotel #wrap.wedding #container {padding:0; background-color:transparent;}
+#hotel.chHotel #wrap.wedding #container .wrap_cont {width:100%;background:url(/front/img/com/chain/bg_wedding_cont.png) 50% 0 repeat-y;}
+#hotel.chHotel #wrap.wedding #container .wrap_cont .bg_top {width:100%;background:url(/front/img/com/chain/bg_wedding_top.png) 50% 0 no-repeat;}
+#hotel.chHotel #wrap.wedding #container .inner {padding:35px 0 50px 0;}
+#hotel.chHotel #wrap.wedding .etc_area {background-color:#d8d5d2;}
+
+/*wedding head*/
+#hotel.chHotel #wrap.wedding .logo {top:40px; height:80px;}
+.global_menu {position:absolute; display:block; width:220px; height:40px; }
+.global_menu:focus {outline:#fff dashed 1px; outline:none;}
+.global_menuLst {position:absolute; top:40px; padding:6px 0 11px 0;background-color:#8a7a6c; z-index:35}
+.global_menuLst li {width:180px; padding:0 20px;}
+.global_menuLst li a {display:block; color:#cab9aa; line-height:30px;}
+.global_menuLst li a:hover, .global_menuLst li a:focus {text-decoration:underline; color:#fff; outline:none;}
+
+/*wedding LNB Promotion*/
+.lbnPromotion {}
+.lbnPromotion li {margin-top:10px; border:1px solid #ccc;}
+.lbnPromotion li > a {display:block; padding:10px 10px 5px 10px;}
+.lbnPromotion li > a strong {display:block; height:34px; color:#999;}
+.lbnPromotion li > a span {display:block; letter-spacing:-1px; color:#999;}
+.lbnPromotion li.on {border:1px solid #222;}
+.lbnPromotion li.on a strong {color:#222;}
+.lbnPromotion li.on a span {color:#8a7a6c;}
+.lbnPromotion li.on a:hover, .lbnPromotion li.on a:focus {background-color:#fff; outline:#000 dashed 1px;}
+.lbnPromotion li.on a:hover strong, .lbnPromotion li.on a:focus strong {color:#222;}
+.lbnPromotion li.on a:hover span, .lbnPromotion li.on a:focus span {color:#8a7a6c;}
+.lbnPromotion li a:hover, .lbnPromotion li a:focus {background-color:#8a7a6c;}
+.lbnPromotion li a:hover strong, .lbnPromotion li a:focus strong {color:#ffffff;}
+.lbnPromotion li a:hover span, .lbnPromotion li a:focus span {color:#ffffff;}
+
+/* Reservation and Inquiry _layoutBottom */
+.etc_area{padding:16px 0;}
+.etc_area .inner{text-align:right;}
+.etc_area h2, .etc_area p, .etc_area .btn_set{display:inline-block; *display:inline; zoom:1; vertical-align:top; text-align:left;}
+.etc_area h2{color:#222; margin:-1px 44px 0 0; font-size:16px; font-weight:bold;}
+.etc_area p{margin-right:75px; line-height:20px; color:#635445;}
+
+/** Wedding Head **/
+.wedding .global_menu_sel {position:absolute; width:220px; height:40px; background-color:#766659;}
+.wedding .global_menu_sel > strong >a{display:block; float:left; width:150px; padding:12px 0px 13px 20px; color:#fff;}
+.wedding .global_menu_sel > a {display:block; float:right; width:17px; padding:12px 25px 13px 8px; color:#fff; background:#645549 url(/front/img/com/btn_arr.png) 32px -1557px no-repeat}
+
+/* Policy */
+.policyCon {}
+.policyCon .dep03Sec {margin-bottom:13px;}
+.policyCon .anchorLst {padding:20px 30px 23px; border:1px #999 solid;}
+.policyCon .anchorLst .anchorLstCon > li {line-height:30px;}
+.policyCon .anchorLst .anchorLstCon > li > span.lstNum{display:inline-block; width:50px; color:#666; font-size:13px;}
+.policyCon .anchorLst .anchorLstCon > li > a.lstTit {color:#343638; font-size:14px; font-weight:bold; text-decoration:underline;}
+.policyCon .anchorLst.split.col2 > .colSec {width:50%; margin:0;}
+
+.policyCon .tit2dep {color:#343638; font-size:14px; font-weight:bold;}
+.policyCon .tit2dep + .txt_dsc {padding-left:0;}
+.policyCon .tit3dep, .policyCon p.txt_dsc, .policyCon .letterLst > li {font-size:12px; color:#666; font-weight:normal;}
+.policyCon .tit3dep {margin-bottom:0; text-indent:-13px; padding-left:13px; line-height:20px;}
+.policyCon p.txt_dsc, .policyCon .letterLst > li {line-height:20px;}
+.policyCon .letterLst > li {text-indent:-20px; padding-left:20px;}
+.policyCon .letterLst > li > p {padding-left:0px; text-indent:0px; margin:0;}
+.policyCon .letterLst.type02 > li {text-indent:-10px; padding-left:10px; margin-top:5px;}
+.policyCon .letterLst.type03 {padding-left:0px; text-indent:0px; margin:0;}
+.policyCon .letterLst.type03 > li {text-indent:-15px; padding-left:15px; margin-top:10px;}
+.policyCon .letterLst > li > .letterLst {text-indent:0px; padding-left:0px;}
+.policyCon p.txt_dsc, .policyCon .letterLst {padding-left:13px;}
+.policyCon p.txt_dsc {margin-bottom:0;}
+.policyCon p.txt_dsc + .letterLst.type03, .policyCon p.txt_dsc + .letterLst.type03 > li {text-indent:0px; padding-left:0px; line-height:20px; margin:0;}
+.policyCon .tbl_wrap {margin-top:10px;}
+.policyCon .tbl_wrap td {text-align:left;}
+.policyCon .tbl_wrap .lst03dep li {background:none; padding-left:10px; text-indent:-10px;}
+.policyCon .tbl_wrap + p, .policyCon .tit3dep + .tit3dep {margin-top:10px;}
+.policyCon a {text-decoration:underline;}
+.policyDate {padding-top:110px;}
+
+

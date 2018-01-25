@@ -1,0 +1,718 @@
+.main .wrap_tab_menu, 
+.main .tab_menu > li {height:66px;line-height: 66px;font-size:24px;}
+.main .top_img img {width:100%;border-bottom:1px solid #ccc}
+.main .rentercar {margin-top:10px;padding:4%;border:1px solid #ccc;}
+.main .rentercar ul {font-size: 0}
+.main .rentercar ul li {display:inline-block;vertical-align:top;text-align:center;font-size:13px;color:#737373;}
+.main .rentercar.rent ul li:nth-child(1) {width:25%;background:url(../images/main/ico_short1.png) center 40% no-repeat;background-size: 75%}
+.main .rentercar.rent ul li:nth-child(2) {width:25%;margin:0 12.5%;background:url(../images/main/ico_short2.png) center 30% no-repeat;background-size: 75%}
+.main .rentercar.rent ul li:nth-child(3) {width:25%;background:url(../images/main/ico_short3.png) center 40% no-repeat;background-size: 75%}
+
+.main .rentercar.buy ul li:nth-child(1) {width:25%;background:url(../images/main/ico_newlong1.png) center 30% no-repeat;background-size: 50%}
+.main .rentercar.buy ul li:nth-child(2) {width:25%;margin:0 12.5%;background:url(../images/main/ico_newlong2.png) center 30% no-repeat;background-size: 75%}
+
+.main .rentercar.sell ul li:nth-child(1) {width:30%;background:url(../images/main/ico_auction1.png) center 30% no-repeat;background-size: 50%}
+.main .rentercar.sell ul li:nth-child(2) {width:30%;margin:0 5%;background:url(../images/main/ico_auction2.png) center 35% no-repeat;background-size: 45%}
+.main .rentercar.sell ul li:nth-child(3) {width:30%;background:url(../images/main/ico_auction3.png) center 25% no-repeat;background-size: 45%}
+
+.main .rentercar ul li a {display:inline-block;margin-bottom:20%;padding-top:80%;width:100%;}
+.main .ban_visual {position:relative;overflow: hidden;border:1px solid #ccc;}
+.main .ban_rcm {position:relative;overflow: hidden;}
+.main .ban_rcm .ban_slider {font-size:0;}
+.main .ban_rcm .swiper-slide.nodata {background:url(../images/main/img_logo2.png) center 35% no-repeat #f1f1f1}
+.main .ban_rcm .swiper-slide.nodata {background-size: 80%}
+.main .ban_rcm .swiper-slide.nodata p {margin-top:20%;width:100%;text-align:center;font-size:12px;color:#c4c4c4}
+.main .ban_rcm .swiper-slide {
+	position: relative;	
+	width: 40%;
+    text-align: center;    
+    background: #fff;
+    border:1px solid #ccc;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.main .ban_rcm .swiper-slide a {position: relative;}
+.main .ban_rcm .swiper-slide div {position: absolute;bottom:0.5%;margin:2%;padding:8%;width:96%;box-sizing:border-box;background-color: rgba(0,0,0,0.5)}
+.main .ban_rcm .swiper-slide div strong {display: block;font-family:nsm;font-weight:normal;font-size:18px;color:#fff;}
+.main .ban_rcm .swiper-slide div span {display: block;font-size:12px;color:#fff;}
+
+.main .swiper-pagination-bullet {width:5px;height:5px;border-radius:0;border:1px solid #969894;background-color: transparent;}
+.main .swiper-pagination-bullet-active {width:5px;height:5px;border:1px solid #969894;background-color:#969894;}
+
+.main .rent_info {padding:4%;overflow:hidden;border:1px solid #ccc;background:url(../images/main/ico_swipe.png) no-repeat 94% 10%;background-size: 60px}
+.main .rent_info.rent {padding-bottom: 0}
+.main .rent_info .list_wrap {width:100%;overflow: hidden}
+.main .rent_info .swiper-slide {
+    position: relative; 
+    text-align: center;    
+    font-size:13px;
+    color:#737373;
+    vertical-align: top;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.main .rent_info ul li:nth-child(1) {height:107px !important;background:url(../images/main/ico_shortinfo1.png) center bottom 55% no-repeat;background-size: 75%}
+.main .rent_info ul li:nth-child(2) {height:107px !important;background:url(../images/main/ico_shortinfo2.png) center bottom 60% no-repeat;background-size: 60%}
+.main .rent_info ul li:nth-child(3) {height:140px !important;background:url(../images/main/ico_shortinfo3.png) center bottom 75% no-repeat;background-size: 55%}
+.main .rent_info ul li:nth-child(4) {height:140px !important;background:url(../images/main/ico_shortinfo4.png) center bottom 80% no-repeat;background-size: 75%}
+.main .rent_info ul li:nth-child(5) {height:140px !important;background:url(../images/main/ico_shortinfo5.png) center bottom 70% no-repeat;background-size: 65%}
+.main .rent_info ul li:nth-child(6) {height:140px !important;background:url(../images/main/ico_shortinfo6.png) center bottom 75% no-repeat;background-size: 55%}
+.main .rent_info ul li:nth-child(7) {height:140px !important;background:url(../images/main/ico_shortinfo7.png) center bottom 65% no-repeat;background-size: 85%}
+.main .rent_info ul li:nth-child(8) {height:140px !important;background:url(../images/main/ico_shortinfo8.png) center bottom 75% no-repeat;background-size: 80%}
+
+.main .rent_info ul li a {position: relative;width:100%;}
+.main .rent_info ul li a span {position:absolute;bottom:2%;left:0;width:100%;text-align: center;}
+/*
+.main .short_rent_info ul li:nth-child(6) a {padding-top:60%;}
+
+.main .short_rent_info ul li:nth-child(4) a,
+.main .short_rent_info ul li:nth-child(5) a,
+
+.main .short_rent_info ul li:nth-child(7) a,
+.main .short_rent_info ul li:nth-child(8) a {padding-top:50%;}
+.main .short_rent_info ul li a {display:inline-block;padding-top:80%;width:100%;}
+*/
+
+.main .only_service {margin-top:10px;padding:4%;border:1px solid #ccc;}
+.main .only_service ul {font-size: 0}
+.main .only_service ul li {display:inline-block;margin:0 3%;vertical-align:top;text-align:center;font-size:13px;color:#737373;}
+.main .only_service ul li:nth-child(1) {width:25%;background:url(../images/main/ico_only1.png) center 25% no-repeat;background-size: 65%}
+.main .only_service ul li:nth-child(2) {width:25%;margin:0 6%;background:url(../images/main/ico_only2.png) center 30% no-repeat;background-size: 85%}
+
+.main .only_service ul li a {display:inline-block;padding-top:80%;width:100%;}
+.main .only_service ul li:nth-child(2) a {height:35px;}
+
+.main .counsel {margin-top:10px;padding:4%;text-align:center;box-sizing: border-box;border:1px solid #ccc;font-size:13px;}
+.main .counsel h3 {text-align: left}
+.main .counsel a {display:block;padding-top:20%;margin:0 auto 5%;width:25%;background:url(../images/main/ico_counsel.png) no-repeat center bottom 80%;background-size: 70%}
+
+.main .new_long {margin-top:10px;padding:4%;border:1px solid #ccc;}
+.main .new_long ul {font-size: 0}
+.main .new_long ul li {display:inline-block;margin:0 3%;vertical-align:top;text-align:center;font-size:13px;color:#737373;}
+.main .new_long ul li:nth-child(1) {width:25%;background:url(../images/main/ico_newlong1.png) center 25% no-repeat;background-size: 65%}
+.main .new_long ul li:nth-child(2) {width:25%;margin:0 6%;background:url(../images/main/ico_newlong2.png) center 30% no-repeat;background-size: 85%}
+
+.main .new_long ul li a {display:inline-block;padding-top:80%;width:100%;}
+.main .new_long ul li:nth-child(2) a {height:35px;}
+
+.main .main_link {display:block;margin-top:10px;padding-left:16px;height:56px;line-height:56px;font-size:16px;border:1px solid #ccc;box-sizing: border-box;background:url(../images/main/bul_link.png) no-repeat center right 16px;background-size:2.5% }
+.main .ban_main {display:block;margin-top:10px;}
+.main .ban_main img {width:100%;}
+
+.swiper-slide img {width:100%;}
+
+/* 로그인  */
+.login {position: relative;}
+.login .tab_content {margin-top:23px;overflow: hidden;}
+.login .tab_content p {text-align: center}
+.login .member_menu {width: 100%;font-size: 0}
+.login .member_menu li {display:inline-block;width:33.3%;font-size:13px;text-align: center;border-left:1px solid #ccc;box-sizing: border-box;}
+.login .member_menu li:first-child {width:33.4%;border:0;}
+
+.login .w100 .cell.hyphen {width:17px;}
+
+.login .bonus {background:url(../images/member/ico_login_link1.png) #f5f5f5 no-repeat 19px center;}
+.login .lpoint_lpay {background:url(../images/member/ico_login_link2.png) #f5f5f5 no-repeat 19px center;}
+.login .bonus ,
+.login .lpoint_lpay {background-size: 60px}
+
+.login .bonus a,
+.login .lpoint_lpay a {display:inline-block;padding:17px 24px 17px 94px;width:100%;box-sizing: border-box;}
+.login .bonus a span,
+.login .lpoint_lpay a span {display: block; background: no-repeat left center;}
+.login .bonus a .link_tit,
+.login .lpoint_lpay a .link_tit {display:block;margin-bottom:12px;font-family:nsm;font-size:14px}
+.login .bonus a .link_sub,
+.login .lpoint_lpay a .link_sub {font-size:12px}
+
+.forgot .top_info {text-align:center;}
+.forgot .lpoint {display:inline-block;width:49%;height:58px;background:url(../images/member/img_lpoint.png) #f5f5f5 no-repeat center 10px;}
+.forgot .rent {display:inline-block;margin-left:1%;width:49%;height:58px;background:url(../images/member/img_logo.png) #f5f5f5 no-repeat center;}
+.forgot .lpoint {background-size: 45%}
+.forgot .rent {background-size: 60%}
+.forgot .auth .phone {display:inline-block;background:url(../images/member/ico_auth_phone.png) no-repeat 65% 0;background-size: 50%}
+.forgot .auth .ipin {display:inline-block;background:url(../images/member/ico_auth_ipin.png) no-repeat 65% 0;background-size: 65%}
+
+.bonus .discount .grid .tb_col thead th, .bonus .discount .grid .tb_col tbody th, .grid .tb_col tbody td {padding:11px 6px 9px 5px;}
+.bonus #member_bonus .discount .discount_top {display:table-cell;vertical-align:middle;padding-left:91px;height:91px;box-sizing:border-box;background:url(../images/member/ico_member_bonus.png) 10px center no-repeat;background-size:66px}
+.bonus #member_bonus .discount .discount_top strong {display:inline-block;color:#313131;font-size:15px;font-weight: normal;}
+.bonus #member_bonus .discount .discount_top p {color:#646464}
+
+#bonus .tab_content, #lpoint_lpay .tab_content {padding:0;margin-top:50px;width:100%;}
+#bonus .tab_content .txt_list li .red,
+#lpoint_lpay .tab_content .txt_list li .red {color:#f40404;}
+
+#bonus #member_bonus .discount .discount_top {padding-bottom:47px;height:130px;background:url(../images/member/ico_member_bonus.png) 45px 36px no-repeat;}
+#bonus #member_bonus .discount .discount_top p {margin-left:240px;font-size:18px;}
+#bonus #member_bonus .discount .discount_top p:first-child {padding-top:45px;}
+#bonus #member_bonus .discount .discount_top p span {color:#f04040;}
+#bonus #member_bonus .grid tbody tr td .bul_grey:before {content:'-';float:left;padding-right:3px;}
+#bonus #member_bonus .grid .txt_list li {padding-left: 10px;}
+
+#bonus #point .use .use_top {height:100px;background:url(../images/member/ico_member_point1.png) 37px 37px no-repeat}
+#bonus #point .use .use_top p {margin-left:240px;font-size:18px;}
+#bonus #point .use .use_top p:first-child {padding-top:47px;}
+#bonus #point .use .use_top p span {color:#f04040;}
+#bonus #point .use ul {margin-top:45px;}
+
+#bonus #point .coupon .coupon_top {height:100px;background:url(../images/member/ico_member_point2.png) 37px 35px no-repeat}
+#bonus #point .coupon .coupon_top p {margin-left:240px;font-size:18px;}
+#bonus #point .coupon .coupon_top p:first-child {padding-top:53px;}
+#bonus #point .coupon .coupon_top p span {color:#f04040;}
+
+#bonus #point .mileage .mileage_top {height:100px;background:url(../images/member/ico_member_point2.png) 37px 35px no-repeat}
+#bonus #point .mileage .mileage_top p {margin-left:240px;font-size:18px;}
+#bonus #point .mileage .mileage_top p:first-child {padding-top:53px;}
+#bonus #point .mileage .mileage_top p span {color:#f04040;}
+#bonus #point .mileage .layer_foot a {letter-spacing: -1px}
+
+#bonus #insurance .cdw .cdw_top {height: 230px;background:url(../images/member/ico_member_insurance1.png) 37px 34px no-repeat}
+#bonus #insurance .cdw .cdw_top p {margin-left:240px;font-size:18px;}
+#bonus #insurance .cdw .cdw_top p:first-child {padding-top:47px;}
+#bonus #insurance .cdw .cdw_top p span {color:#f04040;}
+#bonus #insurance .cdw .cdw_con {padding-left:185px;line-height:1.7;vertical-align:middle;border-top:1px solid #d5d5d5 }
+#bonus #insurance .cdw .cdw_con.repair {height:105px;padding-top:30px;background:url(../images/member/ico_member_insurance2.png) 37px 30px no-repeat}
+#bonus #insurance .cdw .cdw_con.break {height:102px;padding-top:43px;background:url(../images/member/ico_member_insurance3.png) 37px 30px no-repeat}
+#bonus #insurance .cdw .cdw_con.rent {height:102px;padding-top:43px;background:url(../images/member/ico_member_insurance4.png) 37px 26px no-repeat}
+
+#bonus #foreign .hertz .hertz_top {padding-bottom:170px;height: 230px;background:url(../images/member/ico_member_foreign1.png) 37px 38px no-repeat}
+#bonus #foreign .hertz .hertz_top p {margin-left:240px;font-size:18px;}
+#bonus #foreign .hertz .hertz_top p:first-child {padding-top:47px;}
+#bonus #foreign .hertz .hertz_top p span {color:#f04040;}
+
+#lpoint_lpay .lpoint,
+#lpoint_lpay .lpay {padding: 50px 30px 0;}
+
+#lpoint_lpay .lpoint .member_benefit, 
+#lpoint_lpay .lpoint .event_coupon {height: 203px}
+
+#lpoint_lpay .lpoint .benefit li,
+#lpoint_lpay .lpoint .event li {float:left;width:33.3%;height:185px;text-align: center}
+#lpoint_lpay .lpoint .benefit li.benefit1 {background:url(../images/member/ico_lpoint1.png) center center no-repeat}
+#lpoint_lpay .lpoint .benefit li.benefit2 {background:url(../images/member/ico_lpoint2.png) center center no-repeat}
+#lpoint_lpay .lpoint .benefit li.benefit3 {background:url(../images/member/ico_lpoint3.png) center center no-repeat}
+#lpoint_lpay .lpoint .event li.event1 {background:url(../images/member/ico_lpoint4.png) center center no-repeat}
+#lpoint_lpay .lpoint .event li.event2 {background:url(../images/member/ico_lpoint5.png) center center no-repeat}
+#lpoint_lpay .lpoint .event li.event3 {background:url(../images/member/ico_lpoint6.png) center center no-repeat}
+#lpoint_lpay .lpoint .benefit li span,
+#lpoint_lpay .lpoint .event li span {display: block;margin-top:170px;}
+
+#lpoint_lpay .lpay {overflow: hidden;}
+#lpoint_lpay .lpay dl {float:left;}
+#lpoint_lpay .lpay dl.even {float:right;}
+#lpoint_lpay .lpay dl dt {margin-bottom:12px;line-height: 1}
+#lpoint_lpay .lpay dl dd {padding-top:202px;width:449px;height:13px;text-align: center}
+#lpoint_lpay .lpay .lpay1 dd {background:url(../images/member/img_lpay1.png) center top no-repeat}
+#lpoint_lpay .lpay .lpay2 dd {background:url(../images/member/img_lpay2.png) center top no-repeat}
+#lpoint_lpay .lpay .lpay3 dd {background:url(../images/member/img_lpay3.png) center top no-repeat}
+#lpoint_lpay .lpay .lpay4 dd {background:url(../images/member/img_lpay4.png) center top no-repeat}
+
+
+/* 아이디 찾기*/
+.forgot_id .select_accout {overflow: hidden;}
+.forgot_id .select_accout a {display:inline-block;float:left;margin:50px 0;width:540px;height:130px;}
+.forgot_id .select_accout a.lpoint {margin-right:8px;background: url(../images/member/img_lpoint.png) no-repeat center 22px #f5f5f5}
+.forgot_id .select_accout a.renter_car {background: url(../images/member/img_logo.png) no-repeat center 44px #f5f5f5}
+.forgot_id .select_accout a span {font-size:0;opacity:0}
+.forgot_id .select_accout ul.txt_list {float:left;margin-bottom:115px}
+
+.forgot_id .auth h3 {padding:0;margin-bottom:10px;border:0;}
+.forgot_id .auth p {color:000;}
+.forgot_id .auth .auth_wrap {padding: 0 130px;overflow: hidden;}
+.forgot_id .auth .auth_wrap span {display: inline-block;float:left;width:450px;height:320px;text-align:center;border: 1px solid #313131;}
+.forgot_id .auth .auth_wrap span.auth_phone {background:url(../images/member/ico_auth_phone.png) no-repeat center 60px;}
+.forgot_id .auth .auth_wrap span.auth_ipin {background:url(../images/member/ico_auth_ipin.png) no-repeat center 60px;}
+.forgot_id .auth .auth_wrap span a {margin-top:200px;}
+.forgot_id .auth .auth_wrap ul {float:left;}
+
+
+/* 비밀번호 재설정 */
+.password_reset input[type=password] {width:380px;}
+.password_reset .security {padding-right:10px;font-size:12px;color:#5b5a5a}
+.password_reset .security .level {color:f04040;;border-left:1px solid #bbb;}
+.password_reset .security .level.low {background: url(../images/member/img_auth_low.jpg) no-repeat right center}
+.password_reset .security .level.mid {background: url(../images/member/img_auth_mid.jpg) no-repeat right center}
+.password_reset .security .level.high {background: url(../images/member/img_auth_high.jpg) no-repeat right center}
+
+
+/* 아이디 확인 */
+.identify .id_result {padding:60px 0 20px;text-align:center;border-top: 1px solid #000;}
+.identify .id_result span {color:#000;}
+.identify .id_result span.yourid {display:block;font-size:12px;color:#f40404;}
+
+
+/* 마이페이지 */
+.mypage {overflow: hidden}
+.mypage .myinfo {overflow: hidden}
+.mypage .myinfo .tit {display: inline-block;font-size:18px;font-weight: bold}
+.mypage .myinfo .tit .txt_point {text-decoration: underline;}
+.mypage .myinfo .ico_grade {margin-right:10px;vertical-align:middle;}
+.mypage .myinfo .stat li {float:left;padding-top:44px;height:134px;width:33.2%;text-align:center;border:1px solid #ccc;border-top:1px solid #000;background-color:#fdfdfd}
+.mypage .myinfo .stat li:first-child, 
+.mypage .myinfo .stat li:last-child {border-left:0;border-right: 0}
+.mypage .myinfo .stat li a {display:inline-block;width:100%;height:100%;font-size:23px;}
+.mypage .myinfo .stat li a .num{margin-right:3px;font-size:45px;border-bottom: 1px solid #000}
+.mypage .myinfo .stat li .stat_tit {display:block;font-size: 16px;font-weight: bold}
+.mypage .more_info {margin-right:70px;}
+.mypage .more_info, .mypage .mypoint {display:inline-block;float:left;width:565px;}
+.mypage .more_info ul li, .mypage .mypoint ul li, .mypage .short_rent ul li{height:79px;line-height:79px;border-bottom:1px solid #ccc;background: url(../images/common/bu_arrow_rent.png) 530px center no-repeat}
+.mypage .short_rent ul li {background: url(../images/common/bu_arrow_rent.png) right 30px center no-repeat}
+.mypage .more_info ul li a, .mypage .mypoint ul li a , .mypage .short_rent ul li a {display: inline-block;width:100%;height:100%;font-size:16px;}
+
+.mypage .member_exit {padding:20px 0 50px;border-top:1px solid #000;color:#646464;}
+
+.mypage .branch_box {overflow: hidden}
+.mypage .branch {float:left;width:780px;}
+.mypage .branch .area {width:100%;}
+.mypage .branch .area td {width:20%;height:48px;text-align:center;border:1px solid #313131;}
+.mypage .branch .area td.active {background-color: #f40404;}
+.mypage .branch .area td a {display:inline-block;width:100%;height:100%;line-height:48px;}
+.mypage .branch .area td.active a {font-weight:bold;color:#fff;}
+.mypage .branch_list {height:250px;background-color: #fdfdfd;border:1px solid #ccc}
+.mypage .branch_list ul {display:none;padding:26px 0;}
+.mypage .branch_list ul li {float:left;padding:9px 0;width:20%;text-align:center}
+.mypage .branch_list ul li a:hover {color:#f40404;text-decoration: underline;}
+
+.mypage .mybranch {float:right;width:340px;}
+.mypage .mybranch ul li:first-child {margin-top:56px;}
+.mypage .mybranch ul li {margin-bottom:18px;padding:0 33px;width:338px;height:81px;line-height:81px;border:1px dashed #ccc;box-sizing: border-box;}
+.mypage .mybranch ul li.added {border:1px solid #f40404;}
+.mypage .mybranch ul li.added .added_area {padding-right:13px;color:#f40404;border-right:1px solid #ccc;}
+.mypage .mybranch ul li.added .added_branch {padding-left:13px;}
+.mypage .mybranch ul li.added a {float:right;display:inline-block;margin-top:27px;width:26px;height:26px;background: url(../images/member/ico_del.png) no-repeat center}
+
+.mypage .total_point table th, .mypage .total_point table td {height: 140px;}
+.mypage .total_point table th {font-size:18px;}
+.mypage .total_point table td {padding-right:50px;text-align:right;font-size:30px;color: #000}
+.mypage .total_point table td.red {color: #f04040}
+.mypage .total_point table td span {font-size:22px}
+
+.mypage .used_point tbody td {height:120px;font-weight: bold;}
+.mypage .used_point tbody td p {margin:0;font-weight: normal;}
+.mypage .used_point tbody td ul {margin-top:10px;font-weight: normal;}
+.mypage .used_point tbody td ul li {line-height:1.2}
+.mypage .used_point tbody td:first-child {padding-left:15px;text-align: left}
+.mypage .used_point tbody td .plus {display:block;color:#f40404;}
+.mypage .used_point tbody td .minus {display:block;color:#3b76ee;}
+.mypage .used_point tbody td.no_data {font-weight:normal;text-align: center;color:#888;}
+
+.mypage .point_trans .mileage .mileage_top {background: url(../images/member/img_mypage_point1.png) no-repeat center 48px}
+.mypage .point_trans .mileage .mileage_top p:first-child {padding-top:190px;}
+
+.mypage .point_trans .coupon .coupon_top {background: url(../images/member/img_mypage_point2.png) no-repeat center 48px}
+.mypage .point_trans .coupon .coupon_top p:first-child {padding-top:190px;}
+
+#conponRequest .layer_con .grid th {padding-left:0;background:none;}
+#conponRequest .layer_con .grid input[type=text],
+#conponRequest .layer_con .grid .select {width:100%;}
+
+/* 쿠폰 */
+.mypage .have_coupon tbody td {height:120px;font-weight: bold;line-height: 1.9}
+.mypage .have_coupon tbody td:first-child {padding-left:15px;text-align: left}
+.mypage .have_coupon tbody td p {margin:0;font-weight: normal;}
+.mypage .have_coupon tbody td ul li {font-weight: normal;}
+.mypage .have_coupon tbody td.no_data {font-weight:normal;text-align: center;color:#888;}
+.mypage .have_coupon + .paging {margin:52px 0 110px;}
+
+.mypage .coupon_register .top_info {padding:55px 0;text-align: center;background:#fafafa}
+.mypage .coupon_register .top_info label {margin-right:30px;vertical-align:middle;font-size: 18px}
+.mypage .coupon_register .top_info input[type=text] {margin-right:17px;width:440px;}
+.mypage .coupon_register .top_info button {width:76px;}
+
+
+/* 예약 및 이용 내역*/
+.mypage .tooltip {display:inline-block;vertical-align: text-bottom;}
+.mypage .reservation table td {height:60px;line-height: 1.6}
+.mypage .reservation tbody td.no_data {font-weight:normal;text-align: center;color:#888;}
+.mypage .reservation + .paging {margin:52px 0 110px;}
+
+#LayerReserveInfo .layer_con .no_show .grid .tb_col tbody td {height:120px;}
+#LayerReserveInfo .layer_con .pay_first div {padding: 48px 0 46px 185px;border-bottom:1px solid #ccc;}
+#LayerReserveInfo .layer_con .pay_first div:nth-child(2) {background: url(../images/member/ico_mypage_reservation1.png) no-repeat 20px 36px}
+#LayerReserveInfo .layer_con .pay_first div:nth-child(3) {background: url(../images/member/ico_mypage_reservation2.png) no-repeat 26px}
+#LayerReserveInfo .layer_con .pay_first div:nth-child(4) {background: url(../images/member/ico_mypage_reservation3.png) no-repeat 29px 36px}
+#LayerReserveInfo .layer_con .pay_first div:nth-child(5) {background: url(../images/member/ico_mypage_reservation4.png) no-repeat 31px 39px}
+#LayerReserveInfo .layer_con .no_show .txt_list li {line-height: 1}
+
+/* 계약서 조회*/
+.mypage .contract .grid input[type=text] {width:294px;}
+#showContract .layer_con .contract_top {padding:50px 30px;}
+#showContract .box {height:474px;}
+#showContract button {float:right;}
+
+/* 예약 및 이용 내역 상세*/
+.mypage .reservation_info {margin-bottom: 110px}
+.mypage .reservation_info .btn_area {margin-top:70px}
+.mypage .reservation_info td {position: relative;overflow: hidden;}
+.mypage .reservation_info td a {position: absolute;top:4px;right:9px;}
+
+#reserveCancel .layer_con .select {width:100%;}
+#reserveCancel .layer_con .no_show {padding-top:30px;border-top:1px solid #ccc;}
+#reserveCancel .layer_con .no_show h4 {margin-bottom:13px;line-height:1}
+
+.mypage .member_info {overflow: hidden}
+.mypage .member_info .pw, .mypage .member_info .exit{float:left;width:565px;}
+.mypage .member_info .pw .top_info.noBG,
+.mypage .member_info .exit .top_info.noBG {padding-left:0;height:75px;min-height: 75px}
+
+
+/* 결제카드 등록 및 수정 */
+.mypage .user_agreement .box {height:120px;background-color: #fdfdfd}
+.mypage .user_agreement .agree_all label {height:inherit;line-height: 1.5}
+.mypage .card_info input[type=text] {width:63px;}
+.mypage .card_info .card_sel .select {width:294px;}
+.mypage .card_info .card_date .select {width:114px}
+
+
+/* 부가정보등록및수정 */
+.mypage .licence_info .grid .select {width:295px;}
+.mypage .licence_info .grid  input[type=text] {width:63px;}
+.mypage .licence_info .grid .licence_num .select {width:113px;}
+.mypage .licence_info .grid .licence_num .middle_num {width:103px;}
+.mypage .licence_info .grid input.year {width:85px;}
+
+.mypage .question_list tbody td {line-height: 22px}
+.mypage .question_list tbody td:nth-child(2) {padding-left:35px;text-align: left;color:#646464}
+.mypage .question_list tbody td:nth-child(2) a {color:#646464;}
+.mypage .question_list tbody td.no_data {text-align: center}
+
+.mypage .question_answer .top {padding:25px 20px;border-top:1px solid #000;border-bottom:1px solid #ccc;}
+.mypage .question_answer .top strong {font-size:18px;}
+.mypage .question_answer .question .top .no_reply {padding:5px 10px;background-color: #f40404;font-size:13px;color:#fff;}
+.mypage .question_answer .question .top .reply {padding:5px 10px;background-color: #313131;font-size:13px;color:#fff;}
+.mypage .question_answer .con {padding:30px 20px;line-height: 30px;border-bottom:1px solid #000;}
+
+.mypage .question_answer .answer .top {background-color: #fafafa}
+.mypage .question_answer .answer .top strong {display:inline-block;padding-left:44px;height:24px;background: url(../images/member/bul_mypage_answer1.jpg) no-repeat center left}
+.mypage .question_answer .answer .top p {padding-left:44px;}
+.mypage .question_answer .answer .con {padding-left:66px;}
+
+/* 살때*/
+.procedure_qa .box_icon {line-height: 1.7}
+.procedure_qa .box_icon ul li:nth-child(1) {background: url(../images/buy/ico_procedure1.png) no-repeat 20px center}
+.procedure_qa .box_icon ul li:nth-child(2) {background: url(../images/buy/ico_procedure2.png) no-repeat left center}
+.procedure_qa .box_icon ul li:nth-child(3) {background: url(../images/buy/ico_procedure3.png) no-repeat 20px center}
+.procedure_qa .box_icon ul li:nth-child(4) {background: url(../images/buy/ico_procedure4.png) no-repeat left center}
+.procedure_qa .box_icon ul li p:first-child {margin-bottom:5px;}
+.procedure_qa .qaList h4 {font-size:18px; border-bottom:1px solid #ccc;}
+.procedure_qa .qaList .grid table {border:1px solid #ccc;}
+.procedure_qa .qaList .grid td {background-color: #fff;text-align: left}
+
+.easy_estimate .easy_estimate_top {padding: 55px 40px;border:10px solid #eee;background-color:#f4f5f7;}
+.easy_estimate .easy_estimate_top .car_select {position:relative;overflow: hidden}
+.easy_estimate .easy_estimate_top .car_select > strong {display:block;font-size:18px;color:#b77467;}
+.easy_estimate .easy_estimate_top .car_select .grid {float:left;}
+.easy_estimate .easy_estimate_top .car_select .grid tbody tr th {text-align: left;font-weight: normal;background:none}
+.easy_estimate .easy_estimate_top .car_select .grid tbody tr th,
+.easy_estimate .easy_estimate_top .car_select .grid tbody tr td {padding:5px 10px}
+.easy_estimate .easy_estimate_top .car_select .grid tbody tr td .select {width:296px}
+.easy_estimate .easy_estimate_top .condition tbody tr th {border-left:0;}
+.easy_estimate .easy_estimate_top .condition tbody tr td {background-color:#fff;}
+
+.easy_estimate .easy_estimate_top .car_img {position:absolute;top:0;display:inline-block;width:420px;text-align: center}
+.easy_estimate .easy_estimate_top .price {float:right;height:130px;line-height:130px;font-size:20px;}
+.easy_estimate .easy_estimate_top .price strong {display:inline-block;width:200px;text-align:right;font-size:40px;}
+
+.easy_estimate .easy_estimate_top.promotion .price {display:inline-block;float:left;margin-top:20px;margin-left:180px;line-height:1.8;vertical-align:middle;font-size:20px;}
+.easy_estimate .easy_estimate_top.promotion .price .car_name {display:block;}
+.easy_estimate .easy_estimate_top.promotion .price strong {display:inline-block;width:200px;text-align:right;font-size:40px;}
+.easy_estimate .easy_estimate_top.promotion .car_img {position:relative;display:block;float:right;margin-right: 140px}
+
+.easy_estimate .grid input, .easy_estimate .grid .select {width:296px;}
+.easy_estimate .grid .phone input {width:88px;}
+.easy_estimate .grid .phone .hyphen {width:10px;}
+
+.easy_estimate .benefit ul  {padding:20px 15px 20px 115px;background:url(../images/buy/ico_benefit1.png) no-repeat 15px center;}
+
+.promotion .top_banner {background:url(../images/buy/img_promotion_banner1.jpg) no-repeat;}
+.promotion .promotion_list ul {overflow: hidden}
+.promotion .promotion_list ul li {position:relative;display:inline-block;float:left;padding:30px;margin-right:12px;margin-bottom:12px;width:330px;height:340px;text-align:center;font-size:18px;color:#000;border:1px solid #ccc;}
+.promotion .promotion_list ul li span {display:block;text-align: left}
+.promotion .promotion_list ul li span.price {margin-top:30px;color:#f40404;}
+.promotion .promotion_list ul li span.price strong {font-size:30px;}
+.promotion .promotion_list ul li img {position: absolute;left:0;}
+
+.new_long .top_banner {background:url(../images/buy/img_newlong_banner1.jpg) no-repeat;}
+.new_long .box_icon ul li:nth-child(1) {background: url(../images/buy/ico_newlong1.png) no-repeat 30px center}
+.new_long .box_icon ul li:nth-child(2) {background: url(../images/buy/ico_newlong2.png) no-repeat 20px center}
+.new_long .box_icon ul li:nth-child(3) {background: url(../images/buy/ico_newlong3.png) no-repeat 20px center}
+.new_long .box_icon ul li:nth-child(4) {background: url(../images/buy/ico_newlong4.png) no-repeat 20px center}
+.new_long .grid .tb_col tbody th, .new_long .grid .tb_col tbody td {text-align: left}
+.new_long .grid .tb_row tbody td p {line-height: 1.8}
+
+.lpg60 .log60_about {line-height: 1.8}
+.lpg60 .log60_about .question {padding-top:20px;padding-left:295px;margin-top:54px;height:43px;background: url(../images/buy/ico_lpg60_question.png) no-repeat 230px center;letter-spacing:-0.5px}
+.lpg60 .log60_about .answer {padding-top:20px;padding-left:315px;margin-top:20px;height:67px;background: url(../images/buy/ico_lpg60_answer.png) no-repeat right 230px center;letter-spacing:-0.5px}
+.lpg60 .top_banner {background:url(../images/buy/img_lpg60_banner.jpg) no-repeat;}
+.lpg60 .box_icon ul li {padding:44px 180px;width:100%;}
+.lpg60 .box_icon ul li:first-child {padding:33px 180px;background: url(../images/buy/ico_lpg601.png) no-repeat 15px center}
+.lpg60 .box_icon ul li:nth-child(2) {background: url(../images/buy/ico_lpg602.png) no-repeat 30px center}
+.lpg60 .box_icon ul li:nth-child(3) {background: url(../images/buy/ico_lpg603.png) no-repeat 40px center}
+.lpg60 .box_icon ul li strong {font-size:18px;}
+.lpg60 .box_graph {padding:30px 50px;overflow:hidden;text-align: center;border:1px solid #ccc}
+.lpg60 .box_graph .graph {overflow: hidden;}
+.lpg60 .box_graph .graph p {float:left;}
+.lpg60 .box_graph .graph .desc {display: block;text-align: left}
+.lpg60 .box_graph .graph .data {display:inline-block;padding:15px 10px;text-align: left;border:1px solid #ccc;border-left:none;}
+.lpg60 .box_graph .graph .gray1, .lpg60 .box_graph .graph .red1 {border-left:1px solid  #ccc;}
+.lpg60 .box_graph .graph .gray1 {width:365px;background-color: #cecece}
+.lpg60 .box_graph .graph .gray2 {width:248px;background-color: #e8e8e8}
+.lpg60 .box_graph .graph .gray3 {width:375px;background-color: #f7f7f7}
+.lpg60 .box_graph .graph .red1 {width:433px;background-color: #f04040;border-right:0;}
+.lpg60 .box_graph .graph .red2 {width:293px;background-color:#ef8383;border-right:0;}
+.lpg60 .box_graph .graph .red3 {width:177px;background-color:#fae6e6}
+.lpg60 .box_graph .total {float:left;margin-top:5px;text-align: left}
+
+.electric .top_banner {background:url(../images/buy/img_electric_banner.jpg) no-repeat;}
+.electric .box_icon ul li {padding:44px 180px;width:100%;}
+.electric .box_icon ul li:first-child {background: url(../images/buy/ico_electric1.png) no-repeat 33px center}
+.electric .box_icon ul li:nth-child(2) {background: url(../images/buy/ico_electric2.png) no-repeat 33px center}
+.electric .box_icon ul li:nth-child(3) {background: url(../images/buy/ico_electric3.png) no-repeat 33px center}
+.electric .box_icon ul li strong {font-size:18px;}
+.electric .grid .tb_col tbody th, .electric .grid .tb_col tbody td {text-align: left}
+.electric .grid .tb_row tbody td p {line-height: 1.8}
+
+.auto_change .top_banner {background:url(../images/buy/img_autochange_banner.jpg) no-repeat;}
+.auto_change .rc {font-size:18px;}
+.auto_change .rc .big_num {margin-right:5px;vertical-align:middle;font-size: 30px}
+.auto_change .box_icon ul li {padding:44px 180px;width:100%;}
+.auto_change .box_icon ul li strong {font-size:18px;}
+.auto_change .box_icon ul li:first-child {background: url(../images/buy/ico_lpg603.png) no-repeat 42px center}
+.auto_change .box_icon ul li:nth-child(2) {background: url(../images/buy/ico_autochange2.png) no-repeat 17px center}
+.auto_change .box_icon ul li:nth-child(3) {background: url(../images/buy/ico_autochange3.png) no-repeat 15px center}
+
+.succeed_info .box_icon ul li {padding:59px 140px;border-bottom:1px solid #ccc;}
+.succeed_info .box_icon ul li:nth-child(1) {background: url(../images/buy/ico_succeedinfo1.png) no-repeat 17px center}
+.succeed_info .box_icon ul li:nth-child(2) {background: url(../images/buy/ico_succeedinfo2.png) no-repeat 17px center}
+.succeed_info .box_icon ul li:nth-child(3) {padding:46px 140px;background: url(../images/buy/ico_succeedinfo3.png) no-repeat 17px center}
+.succeed_info .box_icon ul li:nth-child(4) {background: url(../images/buy/ico_succeedinfo4.png) no-repeat 17px center}
+.succeed_info .box_icon ul li:nth-child(5) {border-bottom:none;background: url(../images/buy/ico_succeedinfo5.png) no-repeat 17px center}
+.succeed_info .box_icon ul li:nth-child(6) {border-bottom:none;background: url(../images/buy/ico_succeedinfo6.png) no-repeat 17px center}
+.succeed_info .box_icon ul li strong {font-size:16px;}
+.succeed_info .cautions .caution_list{padding: 20px}
+.succeed_info .cautions .caution_list h4 {font-size:18px;}
+
+.auto_manager .top_banner {background:url(../images/buy/img_automanager_banner.jpg) no-repeat;}
+.auto_manager .grid .tb_col tbody td {padding-left:35px;text-align: left}
+.auto_manager .good {margin-bottom:120px;}
+.auto_manager .good h4 {padding-bottom:10px;line-height:1;font-weight:normal;border-bottom:1px solid #ccc;}
+
+.auto_manager .box_icon ul li {padding:48px 136px;}
+.auto_manager .good .long.box_icon ul li:nth-child(1) {background: url(../images/buy/ico_automanager1.png) no-repeat 24px center}
+.auto_manager .good .long.box_icon ul li:nth-child(2) {background: url(../images/buy/ico_automanager2.png) no-repeat 24px center}
+.auto_manager .good .corporate.box_icon ul li:nth-child(1) {background: url(../images/buy/ico_automanager3.png) no-repeat 24px center}
+.auto_manager .good .corporate.box_icon ul li:nth-child(2) {background: url(../images/buy/ico_automanager4.png) no-repeat 24px center}
+.auto_manager .good .user.box_icon ul li:nth-child(1) {background: url(../images/buy/ico_automanager5.png) no-repeat 24px center}
+.auto_manager .good .user.box_icon ul li:nth-child(2) {background: url(../images/buy/ico_automanager6.png) no-repeat 4px center}
+.auto_manager .good .sp {padding-top:37px;height:141px;box-sizing: border-box;}
+
+.auto_manager .plus {display:inline-block;width:100%;height:116px;background: url(../images/buy/bul_plus.png) no-repeat center}
+
+.auto_manager .service h4 {padding-bottom:10px;line-height:1;font-weight:normal;border-bottom:1px solid #ccc;}
+.auto_manager .service .service_box div {padding:47px 140px;border-bottom:1px solid #ccc;}
+.auto_manager .service .service_box .contract {background: url(../images/buy/ico_automanager7.png) no-repeat 24px center}
+.auto_manager .service .service_box .run {background: url(../images/buy/ico_automanager8.png) no-repeat 24px center}
+.auto_manager .service .premium .box_icon {overflow: hidden}
+.auto_manager .service .premium .box_icon li {display:inline-block;float:left;padding:56px 0 56px 135px;width:33.3%;height:155px;box-sizing:border-box;border-bottom:1px solid #ccc;}
+.auto_manager .service .premium .box_icon li:nth-child(1) {background: url(../images/buy/ico_automanager9.png) no-repeat 10px center}
+.auto_manager .service .premium .box_icon li:nth-child(2) {background: url(../images/buy/ico_automanager10.png) no-repeat 10px center}
+.auto_manager .service .premium .box_icon li:nth-child(3) {background: url(../images/buy/ico_automanager11.png) no-repeat 10px center}
+.auto_manager .service .premium .box_icon li:nth-child(4) {background: url(../images/buy/ico_automanager12.png) no-repeat 10px center}
+.auto_manager .service .premium .box_icon li:nth-child(5) {background: url(../images/buy/ico_automanager13.png) no-repeat 10px center}
+
+.package .box_icon > ul > li {padding:194px 0 0;width:33.3%;text-align:center;border-bottom: none}
+.package .box_icon > ul > li:nth-child(1) {background: url(../images/buy/ico_package1.png) no-repeat center 65px}
+.package .box_icon > ul > li:nth-child(2) {background: url(../images/buy/ico_package2.png) no-repeat center 65px}
+.package .box_icon .txt_list li {margin-left:90px;text-align: left}
+.package .grid .tb_col tbody td {padding-left:15px;text-align: left}
+.package .grid .txt_list li:last-child {padding:0 0 4px 14px;}
+.package .travel h4 {margin-top:35px;padding-bottom:3px;border-bottom:1px solid #000;}
+
+.auto_cashbag .top_banner {background:url(../images/buy/img_autocashbag_banner.jpg) no-repeat;}
+.auto_cashbag .rc {font-size:18px;}
+.auto_cashbag .rc .big_num {margin-right:5px;vertical-align:middle;font-size: 30px}
+.auto_cashbag .box_icon ul li {padding:44px 180px;width:100%;height:135px;box-sizing: border-box;}
+.auto_cashbag .box_icon ul li:nth-child(1) {background:url(../images/buy/ico_autocashbag1.png) no-repeat 20px center;}
+.auto_cashbag .box_icon ul li:nth-child(2) {background:url(../images/buy/ico_autocashbag2.png) no-repeat 20px center;}
+.auto_cashbag .box_icon ul li:nth-child(3) {background:url(../images/buy/ico_autocashbag3.png) no-repeat 20px center;}
+.auto_cashbag .box_icon ul li strong {font-size: 18px}
+.auto_cashbag .condition {display:inline-block;float:left;margin-right:30px;width:600px;}
+.auto_cashbag .economic {display:inline-block;float:left;width:570px;height:228px;background:url(../images/buy/img_car1.jpg) no-repeat center 60px;}
+.auto_cashbag .economic h3 {position: relative;}
+.auto_cashbag .economic h3 .standard {position:absolute;right:0;bottom:3px;font-size:14px;color:#646464;}
+
+.partner_card .top_banner {background:url(../images/buy/img_card_banner.jpg) no-repeat;}
+.partner_card .car_life .life_circle {position: relative;width:100%;height:545px;background:url(../images/buy/bg_lifecircle.jpg) no-repeat center;}
+.partner_card .car_life .life_circle h4 {position: absolute;top:220px;left:250px;}
+.partner_card .car_life .life_circle h4 span {display:block;width:180px;text-align:center;font-size:20px;}
+.partner_card .car_life .life_circle h4 span.txt_point {font-size:50px}
+.partner_card .car_life .life_circle ul li {position: absolute;width:180px;text-align:center;}
+.partner_card .car_life .life_circle ul li p:first-child {font-size:17px;}
+.partner_card .car_life .life_circle ul li.rent {top:90px;left:400px;text-align: left}
+.partner_card .car_life .life_circle ul li.buy {top:295px;left:80px;}
+.partner_card .car_life .life_circle ul li.repair {bottom:0;left:145px;}
+.partner_card .car_life .life_circle ul li.drive {bottom:0;left:370px;}
+.partner_card .car_life .life_circle ul li.refuel {top:295px;left:410px;}
+.partner_card .car_life .life_circle ul li.public {top:360px;right:270px;width:250px;}
+.partner_card .car_life .life_circle ul li.golf {top:360px;right:90px;}
+.partner_card .discount .tb_col thead th {border-top:1px solid #000;}
+.partner_card .discount .tb_col thead th:first-child,
+.partner_card .discount .tb_col tbody th,
+.partner_card .discount .tb_col tbody td {text-align: left}
+
+.buy_search .filter {text-align: center}
+.buy_search .filter .grid {text-align: left}
+.buy_search .filter .grid input[type=text] {width:380px;}
+.buy_search .filter .grid .select {width:175px;margin:5px 3px 5px 0;}
+.buy_search .filter .grid .reg_date .select {width:93px;}
+.buy_search .filter .grid .reg_date .month.select {width:115px;}
+.buy_search .filter .grid .btn_tooltip {margin-left:5px;vertical-align: text-top;}
+.buy_search .filter .grid .fuel {padding-right: 410px}
+.buy_search .filter .grid .car_type {padding-right: 270px}
+.buy_search .filter .btn_filter {width:220px;}
+
+.buy_search .radio_filter li {margin:10px 10px 10px 0;width:150px;}
+.buy_search .radio_filter li:last-child {margin-right: 0}
+
+.buy_search_view {overflow: hidden}
+.buy_search_view .search_view_left {float:left;width:392px;}
+.buy_search_view .search_view_left .car_img {position: relative;width:390px;height:352px;line-height: 352px;text-align:center;border:1px solid #ccc;}
+.buy_search_view .search_view_left .car_img .btn_prev {position: absolute;top:158px;left:10px;display:none;width:18px;height:35px;background:url('../images/buy/btn_prev.png') center no-repeat;}
+.buy_search_view .search_view_left .car_img .btn_next {position: absolute;top:158px;right:10px;display:block;width:18px;height:35px;background:url('../images/buy/btn_next.png') center no-repeat;}
+.buy_search_view .search_view_left .thumb {margin-top:7px;width:392px;overflow: hidden;}
+.buy_search_view .search_view_left .thumb li {display:inline-block;float:left;padding:5px;margin-right:7px;margin-bottom:7px;width:114px;height:88px;line-height:88px;text-align:center;border:1px solid #ccc;}
+.buy_search_view .search_view_left .thumb li:nth-child(3n) {margin-right:0;}
+.buy_search_view .search_view_left .thumb li img {width:100%;}
+
+.buy_search_view .search_view_right {float:right;width:758px;}
+
+.buy_search_view .search_view_right .top_txt {padding:30px 0;background-color:#fafafa;border-top:1px solid #000;border-bottom:1px solid #ccc}
+.buy_search_view .search_view_right .top_txt > div {display: inline-block;width:49%;vertical-align:top;text-align: center;font-size:20px;}
+.buy_search_view .search_view_right .top_txt > div:first-child {border-right: 1px solid #d6d6d6}
+.buy_search_view .search_view_right .top_txt div .tit {display: block;margin-bottom:30px;font-size:16px;}
+.buy_search_view .search_view_right .top_txt div .num {font-size:45px;line-height: 1.2}
+.buy_search_view .search_view_right .top_txt div .date {display:block;font-size:16px;}
+.buy_search_view .search_view_right .top_txt .price {color:#f40404;}
+.buy_search_view .search_view_right .top_txt .term {color:#000;}
+
+.buy_search_view .search_view_right .option_info .tb_col tbody td {position: relative;}
+.buy_search_view .search_view_right .option_info td ul {position: relative;top:0;}
+.buy_search_view .search_view_right .option_info td ul li {display: inline-block;float:left;padding-left:20px;width:105px;text-align: left;}
+.buy_search_view .search_view_right .car_info,
+.buy_search_view .search_view_right .caution {line-height: 1.8}
+.buy_search_view .search_view_right .car_info ul li {color:#313131;}
+.buy_search_view .search_view_right .option_info td ul li.none {color:#ccc;}
+.buy_search_view .search_view_right .check_list div {padding:25px 0;text-align: center;border-bottom:1px solid #ccc;}
+.buy_search_view .search_view_right .check_list a {width:170px;margin-left:5px;text-align: center;}
+.buy_search_view .search_view_right .check_list a span {padding-left:17px;background: url(../images/buy/bul_check.png) no-repeat left center}
+
+#branchMap .layer_con {padding:0 30px;}
+#branchMap .layer_con .map_wrap {width:100%;}
+
+#repairHistory .grid {padding:0 30px;}
+#repairHistory .grid td {text-align: left}
+#repairHistory .grid td:first-child {text-align: center}
+
+.buy_search .recommand.list_car {overflow: hidden;}
+.buy_search .recommand.list_car .nav{float:right;}
+.buy_search .recommand.list_car .nav .num,
+.buy_search .recommand.list_car .nav .num span {vertical-align: top}
+.buy_search .recommand.list_car .nav .num .curr {font-weight: bold}
+.buy_search .recommand.list_car .titleBox .nav a {display: inline-block; width:30px;height:24px;}
+.buy_search .recommand.list_car .titleBox .nav a.btn_prev {margin-left:10px;background:url('../images/common/btn_prev.png') center no-repeat;}
+.buy_search .recommand.list_car .titleBox .nav a.btn_next {background:url('../images/common/btn_next.png') center no-repeat;}
+.buy_search .recommand.list_car > ul {overflow:hidden;border-bottom:1px solid #000;}
+.buy_search .recommand.list_car > ul > li {display:inline-block;float:left;padding:30px 0;width:33.3%;height:199px;border:none;}
+.buy_search .recommand.list_car dl dt {position: relative;padding: 0;margin-bottom:7px;}
+.buy_search .recommand.list_car dl dd {position: relative;padding: 0}
+.buy_search .recommand.list_car dl dd .price {position: relative;display:inline-block;top:inherit;right:inherit;font-size:24px;}
+.buy_search .recommand.list_car dl dd .term {position: relative;font-weight: bold;color: #000;font-size:24px;line-height: 32px;}
+.buy_search .recommand.list_car dl dd .img {position: relative;top:inherit;left:inherit;margin-top:7px;}
+.buy_search .recommand.list_car dl dt strong {padding:0;margin:0;font-size:19px;}
+.buy_search .recommand.list_car dl dd .option {position: absolute;top:50px;left:200px;}
+.buy_search .recommand.list_car dl dd .option li {display:block;color:#5a5a5a;background:url('../images/common/bul_black.png') 0 10px no-repeat;}
+.buy_search .recommand.list_car dl dd .option li:first-child {padding-left:8px;}
+.buy_search .recommand.list_car dl dd strong {display: inline-block;margin-left:5px;text-align: right}
+.buy_search .recommand.list_car dl dd .price em:first-child {padding-left:0;}
+.buy_search .recommand.list_car dl dd .term em {padding: 0 0 0 5px;font-size: 17px;}
+.buy_search .recommand.list_car dl dd button {left:200px;bottom:0;}
+
+.buy_search .product.list_car dl dd .option {width:470px;}
+.buy_search .product.list_car dl dd .option li {width:210px;color:#5a5a5a;background:url('../images/common/bul_black.png') 0 10px no-repeat;}
+.buy_search .product.list_car dl dd .option li:first-child {padding-left:8px;}
+.buy_search .product.list_car dl dd strong {display: inline-block;width:155px;text-align: right}
+.buy_search .product.list_car dl dd .price {right:220px;top:40px;}
+.buy_search .product.list_car dl dd .term {position: absolute;top: 80px;right: 220px;display: block;font-weight: bold;color: #000;font-size: 30px;line-height: 32px;}
+.buy_search .succeed.product.list_car dl dd .price, 
+.buy_search .succeed.product.list_car dl dd .term {right:10px;}
+.buy_search .product.list_car dl dd .term em {padding: 0 0 0 5px;font-size: 17px;}
+.buy_search .product.list_car dl dd button {bottom:70px;}
+.buy_search .product.list_car .no_data {padding:50px 0;text-align: center}
+.buy_search .product.list_car .no_data a {margin-top:30px;}
+
+.old_long .box_icon ul li {padding:45px 135px;border-bottom:1px solid #ccc;}
+.old_long .box_icon ul li strong {font-size:16px;}
+.old_long .box_icon ul li:nth-child(1) {background: url(../images/buy/ico_oldlong1.png) no-repeat 10px center}
+.old_long .box_icon ul li:nth-child(2) {background: url(../images/buy/ico_oldlong2.png) no-repeat 10px center}
+.old_long .box_icon ul li:nth-child(3) {background: url(../images/buy/ico_oldlong3.png) no-repeat 10px center}
+.old_long .box_icon ul li:nth-child(4) {background: url(../images/buy/ico_oldlong4.png) no-repeat 10px center}
+.old_long .box_icon ul li:nth-child(5) {background: url(../images/buy/ico_oldlong5.png) no-repeat 10px center}
+.old_long .box_icon ul li:nth-child(6) {background: url(../images/buy/ico_oldlong6.png) no-repeat 10px center}
+
+
+.trial_ride .user_agreement .box{height:200px;}
+.trial_ride .grid input[type=text] {width:295px;}
+.trial_ride .grid .phone input[type=text] {width:88.5px;}
+.trial_ride .grid .select, 
+.trial_ride .grid .btn_calendar {width:115px;}
+.trial_ride .grid .btn_calendar {text-align: center}
+
+.car_inquire .grid input[type=text] {width:255px;}
+.car_inquire .grid .price input[type=text] {width:90px;}
+.car_inquire .grid input[type=text].subject {width:100%;}
+.car_inquire .grid textarea.content {height:300px;}
+
+.estimate .grid .select, 
+.estimate .grid input[type=text] {width:255px;}
+.estimate .grid .phone input[type=text] {width:90px;}
+.estimate .grid input[type=text].subject {width:100%;}
+.estimate .grid textarea.content {height:300px;}
+
+.auto_lease {line-height: 1.8}
+.auto_lease .auto_lease_top {padding:60px 0  60px 355px;border-top:1px solid #000;border-bottom:1px solid #ccc;background: url(../images/buy/img_autolease.jpg) no-repeat 40px center}
+.auto_lease .auto_lease_top strong {font-weight: normal;font-size:18px;}
+.auto_lease .personal .box_icon ul li {width:33.3%;height:160px;padding:50px 0 50px 140px;}
+.auto_lease .personal .box_icon ul li:nth-child(1) {background: url(../images/buy/ico_autolease1.png) no-repeat 15px center}
+.auto_lease .personal .box_icon ul li:nth-child(2) {background: url(../images/buy/ico_autolease2.png) no-repeat 15px center}
+.auto_lease .personal .box_icon ul li:nth-child(3) {background: url(../images/buy/ico_autolease3.png) no-repeat 15px center;border-bottom:1px solid #ccc;}
+.auto_lease .personal .box_icon ul li:nth-child(4) {background: url(../images/buy/ico_autolease4.png) no-repeat 15px center}
+.auto_lease .personal .box_icon ul li:nth-child(5) {background: url(../images/buy/ico_autolease5.png) no-repeat 15px center}
+.auto_lease .personal .box_icon ul li:nth-child(6) {background: url(../images/buy/ico_autolease6.png) no-repeat 15px center}
+.auto_lease .personal .box_icon ul li strong {font-size: 16px}
+.auto_lease .truck strong {font-weight:normal;}
+
+

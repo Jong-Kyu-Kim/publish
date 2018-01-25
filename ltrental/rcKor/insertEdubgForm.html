@@ -1,0 +1,1018 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	
+
+
+
+
+
+
+
+
+
+
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title> | 롯데렌터카 ADMINISTRATOR SYSTEM </title>
+	
+	<link rel="stylesheet" type="text/css" href="com/css/cm.import.css" >
+	
+	<script type="text/javascript" src="com/js/jquery-1.11.1.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="com/js/jquery.easing.1.3.js" charset="utf-8"></script>
+	<script type="text/javascript" src="com/js/datepicker.js"></script>
+	<script type="text/javascript" src="com/js/cm.jQuery.layerPop.js"></script>
+	<script type="text/javascript" src="com/js/cm.jQuery.ui.js" charset="utf-8"></script>
+	<!--<script type="text/javascript" src="com/js/cm.jQuery.design.js" charset="utf-8"></script>-->
+	<script type="text/javascript" src="resource/js/jquery.form.js" charset="utf-8"></script>
+	<script type="text/javascript" src="resource/js/cm.function.js" charset="utf-8"></script>
+	<script type="text/javascript" src="resource/js/cm.validate.js" charset="utf-8"></script>
+	<script type="text/javascript" src="resource/editor/js/service/HuskyEZCreator.js" charset="utf-8"></script>
+	<script type="text/javascript" src="resource/js/EgovMainMenu.js"></script>
+
+	<script type="text/javascript" src="/js/moment.js"></script>
+</head>
+<body class="line01">
+	<div class="skipMenu">
+		<a href="#container">본문으로 바로가기</a>
+	</div><!-- //skip_nav -->
+	<div id="wrap">
+		<!-- HEADER s -->
+		<div id="header">
+			<div class="inner">
+				<h1><a href="#"><img src="images/logo.png" alt="LOTTE rental"></a></h1>
+				<ul class="gnb">				
+					<li class="">
+						<a href="#">인재상</a>
+					</li>
+					<li class="">
+						<a href="#">채용절차 안내</a>
+					</li>
+					<li class="">
+						<a href="#">채용공고</a>
+					</li>
+					<li class="">
+						<a href="#">온라인입사지원</a>
+					</li>
+					<li class="">
+						<a href="#">온라인입사지원결과</a>
+					</li>
+				</ul>
+			</div>
+		</div><!-- //header end -->
+		<div class="img_top">
+			<img src="images/img_apply_top.jpg" alt="롯데렌탈의 입사지원 입니다. 여러분이 LOTTE rental의 미래입니다.">
+		</div>		
+		<!-- HEADER e //-->
+		<div id="container">
+	<div class="content">
+			<div class="tit_top">
+				<h2 class="h2tit">온라인입사지원</h2>
+				<p class="location"><a href="#">HOME</a> &gt; <a href="#">온라인입사지원</a></p>			
+			</div><!-- //tit_top end -->
+			<ul class="process">
+				<li>
+					<a href="#"><span>01. 기본 인적 사항</span></a>
+				</li>
+				<li class="current">
+					<a href="#"><span>02. 학력/경력 사항</span></a>
+				</li>
+				<li>
+					<a href="#"><span>03. 외국어/자격 사항</span></a>
+				</li>
+				<li>
+					<a href="#"><span>04. 자기소개</span></a>
+				</li>
+				<li>
+					<a href="#"><span>05. 완료</span></a>
+				</li>
+			</ul>	
+			<form id="defaultFrm" name="defaultFrm" action="/fr/kor/recruit/apply/insertEdubgForm.do?profileSrl=40016&amp;atchFileId=FILE0000000000000488" method="post">
+				<input id="pageIndex" name="pageIndex" type="hidden" value="1"/>
+				<input type="hidden" name="profileSrl" id="profileSrl" value="40016"/>
+
+		<h3>학력사항</h3>
+		<div id="highschool" class="grid">
+			<table class="tb_col">
+				<colgroup>
+					<col width="140" />
+					<col width="250"/>
+					<col />
+					<col />
+					<col width="100" />
+					<col width="100" />
+					<col width="80" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th>학력</th>
+						<th>학교</th>
+						<th>학교소재지</th>
+						<th>계열</th>
+						<th>입학년월</th>
+						<th>졸업년월</th>
+						<th>졸업여부</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="right_line">고등학교</td>
+						<td>
+							<input type="hidden" id="txtSchoolCode_High" name="txtSchoolCode_High" value="" /> 
+							<input class="i_text" type="text" id="txtSchoolName_High" name="txtSchoolName_High" value="직접입력" readonly="readonly" style="width:100px"/> 
+							<!-- <a href="#searchHS" class="_searchDialog">검색</a> -->							
+							<a href="#" data-role="common-ui-layerPop-button" data-target="pop06" data-link="start" class="btn_default">검색</a>							
+							</td>
+						<td>							
+							<select id="txtSchoolArea_High" name="txtSchoolArea_High" class="required" title="학교소재지">
+								<option value="0">지역선택</option>
+								
+									
+										
+										
+											<option value="RS0101">서울특별시</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS0102">광주광역시</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS0103">대구광역시</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS0104">대전광역시</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS0105">부산광역시</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS0106">울산광역시</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS0107">인천광역시</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS0108">세종특별자치시</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS0109">경기도</option>
+										
+									
+								
+									
+										
+											<option selected="selected" value="RS0110">강원도</option>
+										
+										
+									
+								
+									
+										
+										
+											<option value="RS0111">경상남도</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS0112">경상북도</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS0113">전라남도</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS0114">전라북도</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS0115">충청남도</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS0116">충정북도</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS0117">제주특별자치도</option>
+							</select>							
+						</td>
+						<td>
+							<select id="txtMajorCode_High" name="txtMajorCode_High" class="required" title="계열">
+									<option value="0">계열선택</option>
+									
+										
+											
+											
+												<option value="RS2501">공업계</option>
+											
+										
+									
+										
+											
+											
+												<option value="RS2502">상업계</option>
+											
+										
+									
+										
+											
+											
+												<option value="RS2503">실업기타분야</option>
+											
+										
+									
+										
+											
+											
+												<option value="RS2504">예체능계</option>
+											
+										
+									
+										
+											
+												<option selected="selected" value="RS2505">인문계</option>
+											
+											
+										
+									
+										
+											
+											
+												<option value="RS2506">자연계</option>
+							</select>
+						</td>
+						<td colspan="2">
+							<fieldset>
+								<legend>Data</legend>
+								<div id="calendar_wrap" class="chking">
+								    <section class="cal_content">                    
+								        <div class="cal_input">
+								            <div class="wrap_input">
+								                <span>
+								                	<input id="dtEduStartDM_High" name="dtEduStartDM_High" class="datepicker_wrap" readonly="readonly" type="text" value="2017.04.01"/>
+								                    <a href="#" data-role="common-ui-layerPop-button" data-target="pop00" data-link="start"><img src="/publish/images/com/ico/ico_cal.gif" alt="입학일" ></a>
+								                </span>
+								            </div>
+								            
+								            <span class="dash">~</span>
+								            
+								            <div class="wrap_input right">
+								                <span>
+								                	<input id="dtEduEndDM_High" name="dtEduEndDM_High" class="datepicker_wrap" readonly="readonly" type="text" value="2017.04.04"/>
+								                    <a href="#" data-role="common-ui-layerPop-button" data-target="pop01" data-link="end"><img src="/publish/images/com/ico/ico_cal.gif" alt="졸업일" ></a> 
+								                </span>
+								            </div>
+								        </div>                                                                          
+								    </section>
+								</div>
+							</fieldset>
+						</td>
+						<td>
+							<select id="ddlCompletedTP_High" name="ddlCompletedTP_High" class="required" title="졸업여부">
+									<option value="0">계열선택</option>
+									
+										
+											
+											
+												<option value="RS2701">졸업</option>
+											
+										
+									
+										
+											
+												<option selected="selected" value="RS2702">재학</option>
+											
+											
+										
+									
+										
+											
+											
+												<option value="RS2703">졸업예정</option>
+							</select>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div><br><br>
+		<div id="college" class="grid">			
+			<table class="tb_col">
+				<colgroup>
+					<col width="130" />
+					<col width="200" />
+					<col width="200" />
+					<col width="100" />
+					<col />
+					<col width="70" />
+					<col width="70" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th>학력</th>
+						<th>학교</th>
+						<th>전공</th>
+						<th>학교소재지</th>
+						<th>학점</th>
+						<th>편입여부</th>
+						<th>삭제</th>
+					</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td rowspan="6" class="right_line">
+						<select id="degreeLevel" name="degreeLevel" class="required" title="학력">
+							<option value="0">학력선택</option>
+								
+									
+										
+										
+											<option value="RS1302">대학(2~3년제)</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS1303">대학교</option>
+										
+									
+								
+									
+										
+											<option selected="selected" value="RS1304">대학원(석사)</option>
+										
+										
+									
+								
+									
+										
+										
+											<option value="RS1305">대학원(박사)</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS1306">기타</option>
+						</select>
+					</td>
+					<td>
+						<input type="hidden" id="txtSchoolCode_1" name="txtSchoolCode" value="00137"/> 
+						<input class="i_text" type="text" id="txtSchoolName_1" name="txtSchoolName" value="인하공업전문대학" readonly="readonly" style="width:120px;"/> 
+						<!-- <a href="#searchUN" class="_searchDialog">검색</a> -->
+						<a href="#" data-role="common-ui-layerPop-button" data-target="pop07_1" data-link="start" class="btn_default">검색</a>
+					</td>
+					<td>
+						<input type="hidden" id ="txtMajorCode" name="txtMajorCode" value="RS1304" /> 
+						<input class="i_text" type="text" id="txtMajorName" name="txtMajorName" value="관광컴퓨터정보계열" readonly="readonly" style="width:120px;"/> 
+						<!-- <a href="#searchDE" class="_searchDialog">검색</a> -->
+						<a href="#" data-role="common-ui-layerPop-button" data-target="pop08" data-link="start" class="btn_default">검색</a>
+					</td>
+					<td>
+						<select id="txtSchoolArea" name="txtSchoolArea" class="required" title="학교소재지">
+							<option value="0">지역선택</option>
+							
+								
+									
+									
+										<option value="RS0101">서울특별시</option>
+									
+								
+							
+								
+									
+									
+										<option value="RS0102">광주광역시</option>
+									
+								
+							
+								
+									
+									
+										<option value="RS0103">대구광역시</option>
+									
+								
+							
+								
+									
+									
+										<option value="RS0104">대전광역시</option>
+									
+								
+							
+								
+									
+									
+										<option value="RS0105">부산광역시</option>
+									
+								
+							
+								
+									
+									
+										<option value="RS0106">울산광역시</option>
+									
+								
+							
+								
+									
+									
+										<option value="RS0107">인천광역시</option>
+									
+								
+							
+								
+									
+									
+										<option value="RS0108">세종특별자치시</option>
+									
+								
+							
+								
+									
+									
+										<option value="RS0109">경기도</option>
+									
+								
+							
+								
+									
+									
+										<option value="RS0110">강원도</option>
+									
+								
+							
+								
+									
+									
+										<option value="RS0111">경상남도</option>
+									
+								
+							
+								
+									
+									
+										<option value="RS0112">경상북도</option>
+									
+								
+							
+								
+									
+									
+										<option value="RS0113">전라남도</option>
+									
+								
+							
+								
+									
+										<option selected="selected" value="RS0114">전라북도</option>
+									
+									
+								
+							
+								
+									
+									
+										<option value="RS0115">충청남도</option>
+									
+								
+							
+								
+									
+									
+										<option value="RS0116">충정북도</option>
+									
+								
+							
+								
+									
+									
+										<option value="RS0117">제주특별자치도</option>
+						</select>
+					</td>
+					<td>
+						<input class="i_text" id="txtPoint" name="txtPoint" type="text" value="3.5" size="5" maxlength="4" style="width: 30px;" /> 
+						/ 
+						<select id="txtPointTot" name="txtPointTot" class="required" title="학점">
+							<option value="0">선택</option>
+				
+					
+						
+						
+							<option value="4.5">4.5</option>
+						
+					
+				
+					
+						
+							<option selected="selected" value="4.3">4.3</option>
+						
+						
+					
+				
+					
+						
+						
+							<option value="4.0">4.0</option>
+						
+					
+				
+					
+						
+						
+							<option value="100">100</option>
+						</select>
+					</td>
+					<td>
+						<input type="checkbox" id="rdoTransferYN" name="rdoTransferYN" value="Y"  />
+						<label for="rdoTransferYN">편입</label>
+						<!-- <input type="hidden" id="rdoTransferCheck" /> -->
+					</td>
+					<td rowspan="6" class="left_line">
+						<a href="#" onclick="fn_del(this);return false;" class="_table btn_default">삭제</a>
+						<!-- <a href="#college" id="_delItem" class="_table">삭제</a> -->
+					</td>
+				</tr>
+				<tr>
+					<th colspan="2">기타전공</th>
+					<th>입학년월</th>
+					<th>졸업년월</th>
+					<th>졸업여부</th>
+				</tr>
+				<tr>
+					<td colspan="2" style="border:1px solid #ccc">
+						<input type="hidden" id="txtMajorCode1" name="txtMajorCode1" value="00519" /> 
+						<input class="i_text" type="text" id="txtMajorName1" name="txtMajorName1" value="고속전기철도과"  readonly="readonly"/> 
+						<!-- <a href="#searchDE" class="_searchDialog">검색</a> -->
+						<a href="#" data-role="common-ui-layerPop-button" data-target="pop09" data-link="start" class="btn_default">검색</a>
+					</td>
+					<td colspan="2">
+						<div class="td_cont">
+							<fieldset>
+							<legend>Data</legend>
+								<div id="calendar_wrap" class="chking">
+								    <section class="cal_content">                    
+								        <div class="cal_input">
+								            <div class="wrap_input">
+								                <span>
+								                	<input id="dtEduStartDM" name="dtEduStartDM" class="datepicker_wrap" readonly="readonly" type="text" value=""/>
+								                    <a href="#" data-role="common-ui-layerPop-button" data-target="pop02" data-link="start"><img src="/publish/images/com/ico/ico_cal.gif" alt="복무 시작일" ></a>
+								                </span>
+								            </div>
+								 
+								            <span class="dash">~</span>
+								 
+								            <div class="wrap_input right">
+								                <span>
+								                	<input id="dtEduEndDM" name="dtEduEndDM" class="datepicker_wrap" readonly="readonly" type="text" value=""/>
+								                    <a href="#" data-role="common-ui-layerPop-button" data-target="pop03" data-link="end"><img src="/publish/images/com/ico/ico_cal.gif" alt="복무 종료일" ></a> 
+								                </span>
+								            </div>
+								        </div>                                                                          
+								    </section>
+								</div>
+							</fieldset>
+						</div>
+					</td>
+					<td>
+						<select id="ddlCompletedTP" name="ddlCompletedTP" class="required" title="졸업여부">
+							<option value="0">선택</option>
+								
+									
+										
+										
+											<option value="RS1201">졸업</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS1202">졸업예정</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS1203">휴학</option>
+										
+									
+								
+									
+										
+											<option selected="selected" value="RS1204">중퇴</option>
+										
+										
+									
+								
+									
+										
+										
+											<option value="RS1205">수료</option>
+										
+									
+								
+							</select>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+			<div class="add_btn">
+				<span>항목 추가시, 추가 버튼을 눌러주시기 바랍니다. 
+					<a href="#college" id="_addItem" class="_tr btn_default">추가</a>
+				</span>
+			</div>		
+		</div>
+		<h3>경력사항</h3>
+		<div id="careerbg" class="grid">
+			<table class="tb_col">
+				<colgroup>
+					<col width="180" />
+					<col width="180" />
+					<col width="180" />
+					<col width="220" />
+					<col width="70" />
+				</colgroup>
+				<thead>	
+					<tr class="items">
+						<th>근무처(회사명)</th>
+						<th>근무부서</th>
+						<th>직위</th>
+						<th>고용형태</th>
+						<th>삭제</th>
+					</tr>
+				</thead>			
+				<tbody>
+					<tr>
+						<td>
+							<input class="i_text" id="txtCompanyAddr" name="txtCompanyAddr" type="text" value="근무처" style="width: 150px;" />
+						</td>
+						<td>
+							<input class="i_text" id="txtDepartment" name="txtDepartment" type="text" value="근무부서" style="width: 150px;" />
+						</td>
+						<td>
+							<input class="i_text" id="txtPositionName" name="txtPositionName" type="text" value="직위" style="width: 150px;" />
+						</td>
+						<td>
+							<input class="i_text" id="ddlJob" name="ddlJob" type="text" value="고용형태" style="width: 150px;" />
+						</td>
+						<td rowspan="5">
+							<a href="#" onclick="fn_del2(this);return false;" class="_table btn_default">삭제</a>
+							<!-- <a href="#careerbg" id="_delItem" class="_table">삭제</a> -->
+						</td>
+					</tr>
+					<tr>
+						<th class="noBorderL">담당업무</th>
+						<th colspan="2">근무기간</th>
+						<th>최종연봉</th>
+					</tr>
+					<tr>
+						<td>
+							<input class="i_text" id="txtJobDtl" name="txtJobDtl" type="text" value="담업" style="width:150px;" />
+						</td>
+						<td colspan="2"><div class="item">
+						<fieldset>
+							<legend>Data</legend>
+								<div id="calendar_wrap" class="chking">
+								    <section class="cal_content">                    
+								        <div class="cal_input">
+								            <div class="wrap_input">
+								                <span>
+								                	<input id="dtWorkStartDM" name="dtWorkStartDM" class="datepicker_wrap" readonly="readonly" type="text" value="" style="width:150px"/>
+								                    <a href="#" data-role="common-ui-layerPop-button" data-target="pop04" data-link="start"><img src="/publish/images/com/ico/ico_cal.gif" alt="근무 시작일" ></a>
+								                </span>
+								            </div>
+								            
+								             <span class="dash">~</span>
+								             
+								            <div class="wrap_input right">
+								                <span>
+								                	<input id="dtWorkEndDM" name="dtWorkEndDM" class="datepicker_wrap" readonly="readonly" type="text" value="" style="width:150px"/>
+								                    <a href="#" data-role="common-ui-layerPop-button" data-target="pop05" data-link="end"><img src="/publish/images/com/ico/ico_cal.gif" alt="근무 종료일" ></a> 
+								                </span>
+								            </div>
+								        </div>                                                                          
+								    </section>
+								</div>
+							</fieldset>
+						</div></td>
+						<td>
+							<input class="i_text" id="txtIncome" name="txtIncome" type="text" size="10" value="23" style="width: 150px;" /> 만원							
+						</td>
+					</tr>
+					<tr>
+						<th class="noBorderL" colspan="4">퇴사 사유</th>
+					</tr>
+					<tr>
+						<td colspan="4">
+							<input type="text" class="i_text" id="txtResignationReason" name="txtResignationReason" value="이유가뭔데" style="width: 800px;" />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="add_btn">
+				<span>항목 추가시, 추가 버튼을 눌러주시기 바랍니다. 
+				<a href="#careerbg" id="_addItem2" class="_table btn_default">추가</a>
+				</span>
+			</div>			
+		</div>
+
+		<div class="btn_page">
+			<a href="#" id="btn_goPrevStep" class="btn btnRed"><span>이전 단계</span></a>
+			<a href="#" id="btn_save" class="btn btnGray"><span>임시 저장</span></a>
+			<a href="#" id="btn_goNextStep" class="btn btnRed"><span>다음 단계</span></a>
+		</div>
+	</form>
+</div>
+
+ <!-- LayerPopup -->
+ 
+<div class="layer_pop_wrap school" id="objLayerPopGroup">
+	
+
+	<div class="lay-pop lay-datepicker" id="pop07_1">
+		<div class="lay_wrap">
+			<p class="title">학교 검색</p>
+			<div class="date_wrap1">
+			<form id="defaultFrm3" name="defaultFrm3" action="/fr/kor/recruit/apply/insertEdubgForm.do?profileSrl=40016&amp;atchFileId=FILE0000000000000488" method="post">
+				<input type="hidden" name="searchType2" id="searchType2" value="UN" />
+				<div class="search_field">
+					<div class="item">
+						<label for="searchName2"><span>학교명</span></label>
+						<input class="i_text s_field" type="text" name="searchName2" id="searchName2" /> 
+						<a href="#" class="_searchCode btn_default" id="btn_searchCode2" name="btn_searchCode2">검색</a>
+					</div>
+				</div>				
+				<div class="searchResult2" style="height: 160px; overflow: auto;">
+					<ul name="searchResult2" id="searchResult2_1">
+						<li><a href='javascript:board.ok2("1","00116","아주자동차대학")'>아주자동차대학</a></li>
+						<li><a href='javascript:board.ok2("1","00117","안동과학대학")'>안동과학대학</a></li>
+						<li><a href='javascript:board.ok2("1","00118","안동정보대학")'>안동정보대학</a></li>
+						<li><a href='javascript:board.ok2("1","00187","동해대학")'>동해대학</a></li>
+						<li><a href='javascript:board.ok2("1","00188","동아인재대학")'>동아인재대학</a></li>
+						<li><a href='javascript:board.ok2("1","00209","안동대학교")'>안동대학교</a></li>
+						<li><a href='javascript:board.ok2("1","00231","경동대학교")'>경동대학교</a></li>
+						<li><a href='javascript:board.ok2("1","00241","관동대학교")'>관동대학교</a></li>
+						<li><a href='javascript:board.ok2("1","00249","극동대학교")'>극동대학교</a></li>
+						<li><a href='javascript:board.ok2("1","00251","꽃동네현도사회복지대학교")'>꽃동네현도사회복지대학교</a></li>
+						<li><a href='javascript:board.ok2("1","00266","동국대학교")'>동국대학교</a></li>
+						<li><a href='javascript:board.ok2("1","00267","동덕여자대학교")'>동덕여자대학교</a></li>
+						<li><a href='javascript:board.ok2("1","00268","동서대학교")'>동서대학교</a></li>
+						<li><a href='javascript:board.ok2("1","00269","동신대학교")'>동신대학교</a></li>
+						<li><a href='javascript:board.ok2("1","00270","동아대학교")'>동아대학교</a></li>
+						<li><a href='javascript:board.ok2("1","00271","동양대학교")'>동양대학교</a></li>
+						<li><a href='javascript:board.ok2("1","00272","동의대학교")'>동의대학교</a></li>
+						<li><a href='javascript:board.ok2("1","00273","동해대학교")'>동해대학교</a></li>
+						<li><a href='javascript:board.ok2("1","00316","영동대학교")'>영동대학교</a></li>
+						<li><a href='javascript:board.ok2("1","00353","한동대학교")'>한동대학교</a></li>
+						<li><a href='javascript:board.ok2("1","00407","동명정보대학교")'>동명정보대학교</a></li>
+						<li><a href='javascript:board.ok2("1","00408","동원산업대학교")'>동원산업대학교</a></li>
+						<li><a href='javascript:board.ok2("1","00435","동대문상업고등학교")'>동대문상업고등학교</a></li>
+						<li><a href='javascript:board.ok2("1","00021","강릉영동대학")'>강릉영동대학</a></li>
+						<li><a href='javascript:board.ok2("1","00026","경동정보대학")'>경동정보대학</a></li>
+						<li><a href='javascript:board.ok2("1","00044","극동정보대학")'>극동정보대학</a></li>
+						<li><a href='javascript:board.ok2("1","00059","대동대학")'>대동대학</a></li>
+						<li><a href='javascript:board.ok2("1","00063","동강대학")'>동강대학</a></li>
+						<li><a href='javascript:board.ok2("1","00064","동남보건대학")'>동남보건대학</a></li>
+						<li><a href='javascript:board.ok2("1","00065","동명대학")'>동명대학</a></li>
+						<li><a href='javascript:board.ok2("1","00066","동부산대학")'>동부산대학</a></li>
+						<li><a href='javascript:board.ok2("1","00067","동서울대학")'>동서울대학</a></li>
+						<li><a href='javascript:board.ok2("1","00068","동아방송대학")'>동아방송대학</a></li>
+						<li><a href='javascript:board.ok2("1","00069","동아인재대학")'>동아인재대학</a></li>
+						<li><a href='javascript:board.ok2("1","00070","동양공업전문대학")'>동양공업전문대학</a></li>
+						<li><a href='javascript:board.ok2("1","00071","동우대학")'>동우대학</a></li>
+						<li><a href='javascript:board.ok2("1","00072","동원대학")'>동원대학</a></li>
+						<li><a href='javascript:board.ok2("1","00073","동의과학대학")'>동의과학대학</a></li>
+						<li><a href='javascript:board.ok2("1","00074","동주대학")'>동주대학</a></li>
+					</ul>
+				</div>
+				<br>
+				<div class="etc_input">
+					<div class="item">
+						<label for="directField2"><span>직접입력</span></label>
+						<input class="i_text" type="text" name="directField2" id="directField2" /></a>
+						<span class="typing">* 검색이 되지 않을 경우 직접 입력해주세요.</span>
+					</div>
+					
+				</div>
+				<div class="btn_page">
+					<a href="#" class="btn btnRed _directInsert2" id="btn_insertCode2" name="btn_insertCode2">확인</a>
+				</div>
+			</form>
+		</div>
+			<a href="#" data-role="common-ui-layerPop-close" class="lay-close" id="layerClose" name="layerClose">X</a>
+		</div>
+	</div>
+
+	
+</div>
+
+
+			<!-- BODY e //-->
+		</div><!-- //container end -->
+	</div>
+		<!-- FOOTER s -->
+	<div id="footer">
+		<div class="inner">
+			<div class="footer_logo">
+				<img src="images/footerlogo.jpg" alt="LOTTE rental"></a>
+			</div>
+			<div class="info">
+				<a href="#">개인정보 취급방침</a>
+				<ul>
+					<li>롯데렌탈(주)</li>
+					<li>대표이사 표현명</li>
+					<li>사업자등록번호 214-87-79183</li>
+					<li>대표전화 1588-1230</li>
+				</ul>
+				<address>경기도 안양시 동안구 호계동 898 신원비전타워 8층</address>
+				<address>서울사무소 : 서울시 강남구 대치동 890-20 KT타워 6~9층</address>
+				<p>Copyright(c) 2015  LOTTE rental. all rights reserved.</p>
+			</div>
+		</div>
+	</div>
+	<div class="layer_pop_wrap">
+		<div class="lay-pop lay-datepicker" id="pop00">
+			<div class="lay_wrap">
+				<p class="title">날짜 선택</p>
+				<div class="date_wrap">
+
+				</div>
+				<a href="#" data-role="common-ui-layerPop-close" class="lay-close">
+					<img src="/publish/images/ico/btn_pop_close.png" alt="닫기" />
+				</a>
+			</div>
+		</div>
+		<div class="lay-pop lay-datepicker" id="pop01">
+			<div class="lay_wrap">
+				<p class="title">날짜 선택</p>
+				<div class="date_wrap">
+
+				</div>
+				<a href="#" data-role="common-ui-layerPop-close" class="lay-close">
+					<img src="/publish/images/ico/btn_pop_close.png" alt="닫기" />
+				</a>
+			</div>
+		</div>
+		<div class="lay-pop lay-datepicker" id="pop02">
+			<div class="lay_wrap">
+				<p class="title">날짜 선택</p>
+				<div class="date_wrap">
+
+				</div>
+				<a href="#" data-role="common-ui-layerPop-close" class="lay-close">
+					<img src="/publish/images/ico/btn_pop_close.png" alt="닫기" />
+				</a>
+			</div>
+		</div>
+		<div class="lay-pop lay-datepicker" id="pop03">
+			<div class="lay_wrap">
+				<p class="title">날짜 선택</p>
+				<div class="date_wrap">
+
+				</div>
+				<a href="#" data-role="common-ui-layerPop-close" class="lay-close">
+					<img src="/publish/images/ico/btn_pop_close.png" alt="닫기" />
+				</a>
+			</div>
+		</div>
+		<div class="lay-pop lay-datepicker" id="pop04">
+			<div class="lay_wrap">
+				<p class="title">날짜 선택</p>
+				<div class="date_wrap">
+
+				</div>
+				<a href="#" data-role="common-ui-layerPop-close" class="lay-close">
+					<img src="/publish/images/ico/btn_pop_close.png" alt="닫기" />
+				</a>
+			</div>
+		</div>
+		<div class="lay-pop lay-datepicker" id="pop05">
+			<div class="lay_wrap">
+				<p class="title">날짜 선택</p>
+				<div class="date_wrap">
+
+				</div>
+				<a href="#" data-role="common-ui-layerPop-close" class="lay-close">
+					<img src="/publish/images/ico/btn_pop_close.png" alt="닫기" />
+				</a>
+			</div>
+		</div>
+		<div class="lay-pop lay-datepicker" id="pop06">
+			<div class="lay_wrap">
+				<p class="title">날짜 선택</p>
+				<div class="date_wrap">
+
+				</div>
+				<a href="#" data-role="common-ui-layerPop-close" class="lay-close">
+					<img src="/publish/images/ico/btn_pop_close.png" alt="닫기" />
+				</a>
+			</div>
+		</div>
+		<div class="lay-pop lay-datepicker" id="pop07">
+			<div class="lay_wrap">
+				<p class="title">날짜 선택</p>
+				<div class="date_wrap">
+
+				</div>
+				<a href="#" data-role="common-ui-layerPop-close" class="lay-close">
+					<img src="/publish/images/ico/btn_pop_close.png" alt="닫기" />
+				</a>
+			</div>
+		</div>
+		<div class="lay-pop lay-datepicker" id="pop08">
+			<div class="lay_wrap">
+				<p class="title">날짜 선택</p>
+				<div class="date_wrap">
+
+				</div>
+				<a href="#" data-role="common-ui-layerPop-close" class="lay-close">
+					<img src="/publish/images/ico/btn_pop_close.png" alt="닫기" />
+				</a>
+			</div>
+		</div>
+		<div class="lay-pop lay-datepicker" id="pop09">
+			<div class="lay_wrap">
+				<p class="title">날짜 선택</p>
+				<div class="date_wrap">
+
+				</div>
+				<a href="#" data-role="common-ui-layerPop-close" class="lay-close">
+					<img src="/publish/images/ico/btn_pop_close.png" alt="닫기" />
+				</a>
+			</div>
+		</div>
+	</div>
+	<form name="subFrm" id="subFrm">
+		<input type="hidden" name="atchFileId" id="subFrmAtchFileId"/>
+		<input type="hidden" name="fileSn" id="subFrmFileSn"/>
+	</form>
+	<iframe name="defaultFrame" id="defaultFrame" title="업무 처리용 프레임" width="0" height="0" style="display:none;"></iframe>
+	<!-- FOOTER e //-->
+</body>
+</html>

@@ -1,0 +1,529 @@
+@charset "utf-8";
+
+/****************************************/
+/*	Name: LOTTE HOTEL KOREA
+/*	PART: SITE COMMON STYLE
+/*	Version: 1.0
+/*	Author: [써냐]BLUEWEBD™
+/****************************************/
+
+@import url(cm.reset.css);
+@import url(cm.layout.css);
+@import url(cm.lottehotel.css);
+
+/** 다국어 지원을 위한 이하 언어별 세팅 **/
+/* layout */
+.lstInfo li span:first-child,
+body, input, select, div, textarea, table, button,
+#popWrap.type2 #popHeader h1.popTit,
+/* main */
+#hotel.chHotel .main .wrap_weather li strong>span,
+/* chain */
+.package_view .bbs_view dl dd.data,
+.view_layout .split.col2.imgTxtV > .colSec dl.dep03Sec dd.price{font-family:malgun gothic, dotum, Tahoma, arial;}
+
+
+/* FONT-FAMILY */
+/* layout */
+.lstInfo li span,
+#popWrap.findHotel_map #popHeader h1.popTit, 
+#popWrap.hotel_mInfo_lst #popHeader h1.popTit,
+/* common */
+.resvt_box .tab_menu li a, 
+.resvt_box .form_box select, 
+.resvt_box .form_box input,
+.findHotel_info .linkBtn > a, 
+.findHotel_info .linkBtn > span,
+.count_paging>span,
+.bbs_view dl dd.data,
+.career_faq .secName,
+.findHotel_info.lst .findHotelLnb .findHotelLst,
+.bbs_view dl dd > span span.data,
+.hotel_mInfo_lst .tit2dep.tit .left,
+.hotel_mInfo_lst .split > .colSec dl,
+.hotel_mInfo_lst .split > .colSec dl dd a,
+.box_info li span,
+.listTxt .data,
+.resvt_box h3,
+.acCont.type02>dd>ul>li.left>ul>li>ul>li,
+.mPrice,
+.wrap_offers li>a .date,
+.select_area>a,
+/* main */
+.main_visual .list_visual li strong,
+.wrap_time span,
+.reserv_area .quick_reserv>li input,
+.reserv_area .quick_reserv>li>strong,
+#hotel.chHotel .main .weather dt,
+#hotel.chHotel .main .temperature span,
+/* global */
+.historyBox .tit3dep,
+.historyBox .dep03Sec .hlist li strong,
+/* chain */
+.facilities .box_info li span,
+.accommodation .box_info li span,
+.meeting .box_info li span,
+#hotel.chHotel #wrap.wedding .gnb>li>a,
+.lbnPromotion li > a span {font-family:Georgia, malgun gothic;}
+
+
+/* FONT-FAMILY */
+/* common */
+.box_calendar .wrap_cal .tbl_calendar th, 
+.box_calendar .wrap_cal .tbl_calendar td{font-family:arial;}
+
+
+/* FONT-FAMILY */
+/* main */
+#hotel.chHotel .main .temperature .unit_wt{font-family:Gulim;}
+
+
+
+/** FONT_SIZE **/
+/* font_size:0px */
+/* common */
+.findHotel_map .select_area .img_map em,
+.tbl tbody tr th .es strong,
+/* main */
+.main_visual .list_visual li > a>span,
+/* member */
+.wrap_bor > .tit_area .hide{font-size:0px;}
+
+/* font_size:9px */
+/* common */
+.bbs_list td .new{font-size:9px;}
+
+
+/* font_size:10px */
+/* layout */
+.title .page_util a,
+/* common */
+.acCont.type02>dt>.icon_menu>a {font-size:10px;}
+
+
+/* font-size:11px */
+/* layout */
+.lstInfo li span:first-child,
+/* common */
+.box_calendar .lstCal,
+.ico_img.txt .ico_downS,
+.lbnPromotion li > a span,
+.office li,
+/* main */
+#hotel.chHotel .main .wrap_weather li strong>span,
+/* global */
+.searchWord{font-size:11px;}
+
+
+/* font-size:12px */
+/* common */
+.list_thumb a span.tit,
+.tbl_group tbody tr th span, 
+.tbl_group tbody tr td .td_cont,
+.gallery_list .gallery_thumb li a span.tit,
+.findHotel_info .linkBtn > a, 
+.findHotel_info .linkBtn > span,
+.findHotel_info.lst .findHotelLnb .findHotelLst dt span,
+.gallery_list_area dl.dep03Sec dt.tit3dep .sub_txt,
+.hotel_mInfo_lst .tit2dep.tit .right,
+.hotel_mInfo_lst .split > .colSec dl dd,
+.lst_commend,
+.listTxt > dd,
+.wrap_offers li>a .date,
+.box_calendar .lstCal,
+.resvt_box .form_box select, 
+.resvt_box .form_box input,
+.career_faq .acCont>dt a,
+/* main */
+.reserv_area .quick_reserv>li>strong,
+#hotel.chHotel .main .split.col3 .colSec.intro span,
+/* chain */
+.box_info li span.txts,
+.view_layout .split.col2.imgTxtV > .colSec.simple_info .dep03Sec .listTxt > dt,
+.party_inqtext,
+.wrap_offers li>a .location {font-size:12px;}
+
+
+/* font-size:13px */
+/* common */
+.bbs_list td .td_cont,
+.bbs_list thead tr th,
+.tbl_group tbody tr th span,
+.ico_img.txt .ico_download,
+.bbs_view > dl > dt, 
+.bbs_view > dl > dd,
+.footer_info .util a,
+.gnb>li>a,
+/* main */
+.reserv_area .quick_reserv>li input,
+.reserv_area .btn_reserv,
+/* global */
+.storyfrom .btn_set span,
+.storybook ul li a span em,
+.academicCooper .acCont > dt > a{font-size:13px;}
+
+
+/* font_size:14px */
+/* layout */
+.tit3dep,
+.txt_dsc.ls,
+.lstInfo li span,
+/* common */
+.paging a,
+.list_gallery li.on span,
+.board_area .total,
+.wrap_gallery .lst li.on span,
+.srh_form ul li label,
+.ico_img.txt .ico_listview,
+.ico_img.txt .ico_mapview,
+.listTxt .data,
+.listTxt > dt,
+.acCont.type02>dd>ul>li .tit2dep span,
+.infoMst dt,
+.mPrice,
+/* main */
+#hotel.chHotel .main .wrap_weather li .unit_wt,
+/* global */
+.img_infoList dt,
+.historyBox .dep03Sec .hlist li strong,
+.search_info .ico_img,
+.virtualT .location .split.col2 dt,
+/* chain */
+.acCont.type02>dd>.split.col2>li>.lmenu>li,
+.select_icon li,
+.cont_package .lst03dep.type_big li,
+.event_offer .wrap_offers li>a .sub_tit,
+/* member */
+.mem_step li{font-size:14px;}
+
+/* font-size:15px */
+/* common */
+.wrap_gallery .view.split.col2 dl dt,
+/* global */
+.virtualT .popBody .split .colSec dt,
+.Philos .split.col3 .colSec .txt_dsc,
+/* chain */
+.view_layout .split.col2.imgTxtV > .colSec.simple_info .dep03Sec > .tit3dep{font-size:15px}
+
+
+/* font-size:16px */
+/* common */
+.board_area.gal_area .total,
+.sub_tab ul li a,
+.tbl_group tbody tr th strong,
+.count_paging>span,
+.gallery_list_area dl.dep03Sec dt.tit3dep strong,
+.resvt_box .form_box .btn_set span,
+.box_calendar .month_cal > strong,
+.wrap_offers li>a .sub_tit,
+.sub_tab2 ul li a,
+/* main */
+.main_visual .list_visual li .sub_tit,
+#hotel.chHotel .main .split.col3 .colSec.intro strong,
+/* chain */
+.select_lst .foot .btn_area > .btn_set span{font-size:16px;}
+
+
+/* font-size:18px */
+/* layout */
+.tit2dep,
+.box_info li span,
+/* common */
+.hotel_mInfo_lst .split > .colSec dl dt,
+/* main */
+.wrap_time span,
+#hotel.chHotel .main .wrap_weather li strong,
+/* global */
+.searchBox_in label,
+.storyfrom_info.bbs_view dt,
+.eventSpace .gallery_list_area .dep03Sec .tit3dep strong,
+.historyBox > .split > .colSec > .tit3dep,
+.greeting .list_thumb > span strong,
+.box_calendar .month_cal strong,
+/* chain */
+.cont_package .dep03Sec .btn_mult .price,
+/* member */
+.mem_step li span:first-child{font-size:18px;}
+
+
+/* font-size:20px */
+/* common */
+.resvt_box .tab_menu li a,
+/* main */
+#hotel.chHotel .main .weather dt,
+#hotel.chHotel .main .temperature span,
+/* global */
+.vision .tit2dep, 
+.Philos .tit2dep,
+.vision .split .colSec,
+/* chain */
+.acCont.type02>dd>.split.col2>li .tit2dep{font-size:20px;}
+
+
+/* font-size:22px */
+/* layout */
+#popWrap.type2 #popHeader h1.popTit,
+/* common */
+.findHotel_info.lst .findHotelLnb .findHotelLst dt,
+.career_faq .secName,
+.hotel_mInfo_lst .tit2dep.tit .left,
+.offers .tit_offers,
+.resvt_box h3,
+/* main */
+#hotel.chHotel .main .tit_chain,
+#cityHotelch.CityHotel .main .tit_chain,
+/* chain */
+.intro_info .split.col2.imgTxt > .colSec.txt_dsc .listTxt > dt{font-size:22px;}
+
+
+/* font-size:23px */
+/* global */
+.Philos .tit3dep{font-size:23px;}
+
+
+/* font-size:24px */
+/* chain */
+.view_layout .tit2dep{font-size:24px;}
+
+
+/* font-size:25px */
+/* global */
+.img_infoList dt strong,
+.virtualT .location .split.col2 dt strong,
+/* chain */
+.location .split.col2 dt strong,
+.print_Area .scollSec > .tit2dep{font-size:25px;}
+
+
+/*font_size:30px*/
+/* common */
+.mPrice span, 
+/* global */
+.virtualT .popContainer .popImg,
+/* member */
+.wrap_bor > .tit_area .tit02dep{font-size:30px;}
+
+
+/*font_size:34px*/
+/* layout */
+.title .subtitle {font-size:34px;}
+
+
+/* font_size:35px */
+/* global */
+.Philos .split.col3 .colSec .txt_dsc span{font-size:35px;}
+
+
+/* font_size:36px */
+/* main */
+.wrap_time span.timer span,
+/* global */
+.ubar,
+.historyBox .tit3dep{font-size:36px;}
+
+
+/* font_size:40px */
+/* main */
+.main_visual .list_visual li strong{font-size:40px;}
+
+
+
+/** LINE-HEIGHT **/
+/* line-height:0 */
+/* common */
+.select_area .img_map em,
+.tbl tbody tr th .es strong{line-height:0;}
+
+
+/* line-height:12px */
+/* chain */
+.acCont.type02>dt>.icon_menu>a {line-height:12px;}
+
+
+/* line-height:13px */
+/* layout */
+.title .line_map a, 
+.title .line_map>span {line-height:13px;}
+
+
+/* line-height:14px */
+/* common */
+.wrap_offers li>a .location {line-height:14px;}
+
+
+/* line-height:15px */
+/* common */
+.tbl tr th span, 
+.tbl tr td .td_cont,
+/* global */
+.storybook ul li a span em {line-height:15px;}
+
+
+/* line-height:16px */
+/* common */
+.hotel_mInfo_lst .split > .colSec dl dt,
+.lbnPromotion li > a strong,
+/* main */
+#hotel.chHotel .main .split.col3 .colSec.intro span,
+#hotel.chHotel .main .wrap_info .info dt,
+#hotel.chHotel .main .wrap_info .info dd {line-height:16px;}
+
+
+/* line-height:17px */
+/* common */
+.wrap_gallery .lst li.on span {line-height:17px;}
+
+
+/* line-height:18px */
+/* layout */
+.lstInfo li span,
+/* common */
+.wrap_gallery .view dl dt,
+.wrap_gallery .view dl dd.view_desc,
+.gallery_list .gallery_thumb li a span.tit,
+.tourInfoLst dt,
+.tourInfoLst dd,
+.findHotel_info.lst .findHotelLnb .findHotelLst dd > .fhLnb li > a,
+.resvt_box input,
+.office li ,
+/* global */
+.academicCooper .acCont > dd .down_box,
+.virtualT .popBody .split .colSec dt,
+/* chain */
+.view_layout .split.col2.imgTxtV > .colSec.simple_info .dep03Sec .listTxt > dd,
+.intro_info .split.col2.imgTxt > .colSec.txt_dsc .listTxt > dd,
+.event_offer .wrap_offers li>a .sub_tit{line-height:18px;}
+
+
+/* line-height:20px */
+/* layout */
+.txt_dsc,
+.lst03dep li,
+/* common */
+.career_faq .acCont>dt>a,
+.gallery_list_area dl.dep03Sec dt.tit3dep strong + .sub_txt,
+.lst_commend,
+.infoMst,
+.lstImp li,
+/* global */
+.academicCooper .acCont > dt > a,
+.ethicsRep .split.col2{line-height:20px;}
+
+
+/* line-height:21px */
+/* global */
+.career_opper .td_cont,
+.Philos .split.col3 .colSec .txt_dsc{line-height:21px;}
+
+
+/* line-height:22px */
+/* common */
+.gallery_list_area dl.dep03Sec dt.tit3dep .sub_txt + strong,
+/* global */
+.eventSpace .gallery_list_area .dep03Sec .tit3dep strong,
+/* chain */
+.intro_info .split.col2.imgTxt > .colSec.txt_dsc .listTxt > dd.info{line-height:22px;}
+
+
+/* line-height:23px */
+/* common */
+.keyword_srh input,
+.tbl_group tbody tr td .lst li,
+/* global */
+.historyBox .dep03Sec .hlist li{line-height:23px;}
+
+
+/* line-height:24px */
+/* common */
+.tbl_group tbody tr td .list li,
+.footer_info .util a,
+.lbnPromotion li > a span,
+.wrap_gallery.type2.thumb_small .view .tit,
+/* global */
+.greeting .tit2dep,
+.companyProfile .tit2dep,
+/* chain */
+.view_layout .tit2dep{line-height:24px;}
+
+
+/* line-height:25px */
+/* common */
+
+
+
+/* line-height:26px */
+/* common */
+.findHotel_info.lst .findHotelLnb .findHotelLst dt,
+.hotel_mInfo_lst .split > .colSec dl dd a,
+.career_faq .secName{line-height:26px;}
+
+
+/* line-height:27px */
+/* common */
+
+
+
+/* line-height:28px */
+/* global */
+.img_infoList dt strong,
+.vision .split .colSec,
+/* member */
+.conSize1 input{line-height:28px;}
+
+
+/* line-height:30px */
+/* main */
+.reserv_area .list_room li a{line-height:30px;}
+
+
+/* line-height:32px */
+/* layout */
+.title .subtitle {line-height:32px;}
+
+
+/* line-height:34px */
+/* common */
+
+/* global */
+.Philos .tit3dep {line-height:34px;}
+
+
+/* line-height:35px */
+/* common */
+
+
+
+/* line-height:36px */
+/* common */
+.ubar,
+/* main */
+.main_visual .list_visual li .sub_tit {line-height:36px;}
+
+
+/* line-height:37px */
+/* common */
+
+
+
+/* line-height:42px */
+/* global */
+.career_opper .td_cont.verM{line-height:42px;}
+
+
+/* line-height:49px */
+/* main */
+.main_visual .list_visual li strong{line-height:49px;}
+
+
+/* line-height:60px */
+/* member */
+.mem_step li{line-height:60px;}
+
+/* line-height:150px */
+/* global */
+.infoList_line .no_data{line-height:150px;}
+
+/* line-height:430px */
+/* global */
+.virtualT .popContainer .popImg{line-height:430px;}
+

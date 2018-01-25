@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html dir="ltr" lang="ko" class="ie7"><![endif]-->
+<!--[if IE 8]><html dir="ltr" lang="ko" class="ie8"><![endif]-->
+<!--[if IE 9]><html dir="ltr" lang="ko" class="ie9"><![endif]-->
+<html dir="ltr" lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1200, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/html5shiv.js"></script>
+	<script src="../../js/core.js"></script>
+    <script src="../../js/calendar.js"></script>
+    <script src="../../js/jquery.bxslider.js"></script>
+
+<style type="text/css">
+	.promo_201703 {position:relative; width:740px; margin:0px auto; padding-bottom:122px; background:#efede9;}
+	.promo_201703 .bx-wrapper img {height:auto}
+	.promo_201703 .bx-controls .bx-pager {position:static; padding-top:15px}
+	.promo_201703 .bx-controls .bx-pager a {display:inline-block; width:28px; height:18px; margin:0; border-radius:0; background:url(../../images/promotion/bg_dot.gif) 5px 0 no-repeat; text-indent:-9999px;}
+	.promo_201703 .bx-controls .bx-pager a.active, .promo_201703 .bx-controls .bx-pager a:hover {background:url(../../images/promotion/bg_dot.gif) -23px 0 no-repeat;}
+	.promo_201703 .compare {position:relative; text-align:center}
+	.promo_201703 .compare > a {position:absolute; left:50%; top:594px; margin-left:-155px}
+	.promo_201703 .promo_list2 {width:690px; padding:0 25px;}
+	.promo_list2 > ul {padding:14px 9px 0 9px; overflow:hidden}
+	.promo_list2 > ul > li {float:left; padding:8px}
+	.promo_list2 > ul > li > a img + img {display:none}
+	.promo_list2 > ul > li > a:hover img {display:none}
+	.promo_list2 > ul > li > a:hover img + img {display:block}
+	.promo_list2 .text {margin:21px 0 75px 0; text-align:center}
+	.present {margin:50px 0 0px; text-align:center}
+	.promo_201703 .toggle_list {padding:70px 0 0; text-align:center}
+	.promo_201703 .tit {margin-bottom:30px; text-align:center;}
+	.promo_201703 .t_bbs {width:690px; margin:0 auto 70px; text-align:left; }
+	.promo_201703 .t_bbs li {width:100%; border-top:1px solid #efede9; background:url(../../images/promotion/ico_dot.png) 23px 21px no-repeat #1a2648}
+	.promo_201703 .t_bbs li a {display:block; padding:13px 0 13px 40px; background:url(../../images/promotion/bg_tbbs.gif) 100% -28px no-repeat ; color:#fff; font-weight:bold; font-size:20px}
+	.promo_201703 .t_bbs li.on a, .promo_201703 .t_bbs li a:hover {background-position:100% 21px}
+	.promo_201703 .t_bbs li a + p {padding:16px 35px 21px; border-top:1px solid #cccccb; display:none; color:#413d3d; font-size:18px; line-height:1.6}
+	.promo_201703 .t_bbs li.on a + p {display:block; background:#fff;}
+	.promo_201703 .ytb_box {position:relative; width:690px; padding-top:62.5%; margin:0 auto 20px}
+	.promo_201703 .ytb_box > div {position:absolute; width:100%; height:100%; top:0}
+	.promo_201703 .lst {width:690px; margin:0 auto; overflow:hidden}
+	.promo_201703 .lst li {float:left;}
+	.promo_201703 .lst li + li {margin-left:22px}
+	.promo_201703 .floating {position:fixed; left:41.7%; bottom:0;  height:72px; margin-left:-308px; z-index:2001}
+	.promo_201703 .floating > a {position:relative; display:inline-block; width:auto; z-index:2002}
+	.promo_201703 .absol {position:absolute; bottom:0; left:0; width:851px; margin-left:-6.5%}
+	.promo_201703 .form {position:absolute; left:1px; bottom:72px; width:850px; height:0; /* height:694 */ margin:0; background:#efede9; z-index:600; overflow:hidden}
+	.promo_201703 .if {width:670px; margin-left:89px; *zoom:1;}
+	.promo_201703 .if + .if {margin-top:15px}
+	.promo_201703 .if:after {display:block; content:""; clear:both;}
+	.promo_201703 .if label {float:left; width:19%; line-height:56px}
+	.promo_201703 .if .block {float:left; width:81%}
+	.if span.block span.border {border:1px solid #dedede; border-radius:5px; display:block; background:#fff}
+	.promo_201703 .if .widthP {float:left}
+	.promo_201703 p.if input {height:56px; width:100%; text-indent:10px; font-size:18px; color:#959696; font-weight:bold; border:0; border-radius:5px; line-height:56px}
+	.promo_201703 p.if input:focus {border:0 !important;}
+	.promo_201703 p.if select {width:100%; height:56px; padding:17px 0 18px 10px; font-size:18px; color:#959696; font-weight:bold; border:0; border-radius:5px; -webkit-appearance: none; -moz-appearance: none; appearance: none; background: #f9f9f9 url(../../images/promotion/select_bg.png) no-repeat 100% 50%;}
+	.promo_201703 p.if select::-ms-expand { display: none; }
+	.promo_201703 p.if + p.chk {margin-top:30px}
+	.promo_201703 p.chk {width:670px; margin-top:20px; margin-left:89px;  *zoom:1}
+	.promo_201703 p.chk:after {display:block; content:""; clear:both;}
+	.promo_201703 a.chkBg {float:left; background:url(../../images/promotion/checkOff.png) 0 0 no-repeat;  height:32px; padding:0 0 0 42px; line-height:32px}
+	.promo_201703 a.chkBg.on {background:url(../../images/promotion/checkOn.png) 0 0 no-repeat; }
+	.promo_201703 a.chkBg input {width:0; height:0; overflow:hidden; visibility:hidden}
+	.promo_201703 a.viewBt {float:right}
+	.promo_201703 .subMit {padding:35px 0 40px; text-align:center;}
+	.promo_201703 .floating > .btn_close {position:absolute; right:0; top:-754px; display:none; width:auto}
+	.bg {position:absolute; left:0; top:0; width:100%; height:100%; opacity:0.6; background:#000; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"; display:none; z-index:2000}
+	.promo_list2.type_bg {height:auto; background:; overflow-y:hidden} /* //20170508 */
+	.bg2 {position:absolute; left:0; top:0; background:#000; opacity:0.7; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"}
+	.pop_cont {position:absolute; left:49px; top:0; z-index:2000; display:none}
+	.pop_cont > a {position:absolute; right:0; top:-60px}
+	.scroll_box {width:632px; height:300px; border:4px solid #de2c25; border-top:0; background:#fff; text-align:center; overflow-y:auto}
+	.bx-wrapper .bx-pager .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item {display:inline-block;}
+</style>
+<script>
+		$(document).ready(function(){
+		$('.promo_slide').bxSlider({
+			auto:true,
+			controls:false,
+			autoControls:false,
+			pager:true,
+			pause:4000
+		});
+		$(".t_bbs a").on("click", function(e){
+			e.preventDefault();
+			if(!$(this).parents("li").is(".on")){
+				$(".t_bbs li").removeClass("on");
+				$(this).parents("li").addClass("on");
+			}else{
+				$(this).parents("li").removeClass("on");
+			}
+		})
+		$(document).on("click",".promo_201703 .lst a",function(e){
+			e.preventDefault();
+			$("#videoPlayer").attr("src", $(this).attr("url"));
+		});
+		
+		$('#icon_tel').click(function(){
+			ga('send','event',' 프로모션_PC','전화문의_PC');
+			fbq('track', 'InitiateCheckout');
+		});
+
+		$(document).scroll(function(){
+			if($(document).scrollTop() < ($(document).height()-$(window).height()-505)){//3390
+				floating_banner(0)
+			}else{
+				floating_banner(1)
+			}						
+		});
+		
+		$(".floating .btn_form").on("click", function(e){
+			e.preventDefault();
+			if($(".floating .form").height()>=694){
+				open_form(0);
+			}else{
+				open_form(1);
+			}
+		});
+		
+		//fbq('track', 'Search');
+
+		$('#layerPromotion .btn_layer_close, #layerPromotionSelect .btn_layer_close').click(function(e){
+			e.preventDefault()
+			$('.layer').hide();
+			$('.dimm').remove()
+		})
+	})
+
+
+	function layerPop (event, id) {
+		event.preventDefault();
+        $('html, body').css('overflow','hidden');
+
+        var layer = function() {
+
+            if ($('#' + id).height() >= $(window).height()) {
+                $('#' + id).find('.layer_con').height($(window).height() - 160);
+            }
+
+            else {
+                $('#' + id).find('.layer_con').css('height','inherit');
+            }
+
+            $('#' + id).css({
+                'top': ($(window).height() / 2) + $(window).scrollTop() - ($('#' + id).height() / 2),
+                'left': ($(window).width() - $('#' + id).width()) / 2,
+            });
+        }
+
+        $('body').append('<div class="dimm" style="z-index:2002"></div>');
+        $('.dimm').css({
+            'width': $('html, body').width(),
+            'height': $('html, body').height()
+        })
+        .show();
+
+        layer();       
+        $('#' + id).show().attr('tabindex',0).focus();
+
+        $(window).resize(function(){
+            layer();
+            $('.dimm').css({
+                'width': $('html, body').width(),
+                'height': $('html, body').height()
+            });
+        });
+	}
+
+	function floating_banner(n){
+		if(n>0){
+			$(".floating").addClass("absol");
+		}else{
+			$(".floating").removeClass("absol");
+		}	
+	}
+	function open_form(m){
+		$(".bg2").remove();
+		$(".pop_cont").hide();
+		if(m>0){
+			if($(".bg").length<1){
+				$("<div class='bg'></div>").appendTo($("body")).css({width:$(document).width(), height:$(document).height()}).show();
+				$("body").addClass("hidden_body");
+			}
+			$(".floating .form").stop().animate({height:694}, 800, "swing",function(){
+				$(".btn_close").show();
+			});
+			
+			//ga('send','event','프로모션_PC','OPEN_PC');
+		}else{
+			$(".btn_close").hide();
+			$(".floating .form").stop().animate({height:0}, 800, "swing",function(){
+				$(".bg").remove();
+				$("body").removeClass("hidden_body");
+			});
+		}	
+	}
+	function func_pop(n){
+		event.preventDefault();
+		if($(".bg2").length<1){
+			$("<div class='bg2'></div>").appendTo($(".promo_201703")).css({width:$(".promo_201703").outerWidth(), height:$(".promo_201703").outerHeight()});
+			if(n=="pop01"){
+				$("#"+n).css("top",$(".floating").offset().top-1759).show();
+			}else{
+				$("#"+n).css("top",$(".floating").offset().top-1043).show();
+			}
+		}else{
+		
+		}
+		
+	}
+	function func_pop_clse(){
+		$(".bg2").remove();
+		$(".pop_cont").hide()
+	}
+</script>
+</head>
+ 
+<body>
+	<header>
+		<div class="inner_header">
+			<a href="#container" class="skip_nav">본문 바로가기</a>
+			<a href="../main/main.html" class="logo"><h1><img src="../../images/common/logo.png" alt="롯데렌터카"></h1></a>
+			<ul id="extra_menu" class="extra_menu">
+				<!--// 비회원일 경우 -->
+				<li class="login"><a href="#">로그인</a></li>
+				<li class="join"><a href="#" class="lPointAutoChange btn_layer">회원가입</a></li>
+
+				<!--// 회원일 경우 -->
+				<li class="logout"><a href="#">로그아웃</a></li>
+				<li class="mypage_quick">
+					<a class="btn_dropdown_menu" href="#">마이페이지</a>
+					<ul class="dropdown_menu">
+						<!--<li class="active"><a href="#">예약 및 이용 내역</a></li>-->
+						<li class="active"><a href="#">예약 및 이용 내역</a></li>
+						<li><a href="#">계약서 조회</a></li>
+						<li><a href="#">상담문의 내역</a></li>
+					</ul>
+				</li>
+
+				<li class="language"><a href="#">ENGLISH</a></li>
+			</ul>
+		</div>
+		<div id="gnb" class="gnb">
+			<ul class="menus">
+				<li class="menu idx1">
+					<a href="../rent/FN010101_2_1_1.html">빌릴 때</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">단기렌터카</a>
+							<ul>
+								<li>
+									<a href="#">실시간 예약</a>
+								</li>
+								<li class="btn_dropdown_menu">
+									<a href="#">단기렌터카 서비스 안내</a>
+									<ul class="dropdown_menu">
+										<li>
+											<a href="#">대여 안내</a>
+										</li>
+										<li>
+											<a href="#">요금 안내</a>
+										</li>
+										<li>
+											<a href="#">부가 서비스 안내</a>
+										</li>
+										<li>
+											<a href="#">해외렌트 서비스 안내</a>
+										</li>
+										<li>
+											<a href="#">딜리버리 서비스 안내</a>
+										</li>
+										<li>
+											<a href="#">빠른 서비스 안내</a>
+										</li>
+										<li>
+											<a href="#">기사포함 서비스 안내</a>
+										</li>
+										<li>
+											<a href="#">보험대차 서비스 안내</a>
+										</li>
+									</ul>
+								</li>
+								<li class="btn_dropdown_menu">
+									<a href="#">롯데렌터카만의 서비스</a>
+									<ul class="dropdown_menu">
+										<li>
+											<a href="#">롯데 스마트픽 서비스</a>
+										</li>
+										<li>
+											<a href="#">패키지 상품</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">월간렌터카</a>
+							<ul>
+								<li>
+									<a href="#">대여 신청</a>
+								</li>
+								<li>
+									<a href="#">월간렌터카 서비스 안내</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">그린카(카셰어링)</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu idx2">
+					<a href="../buy/FN020101.html">살 때</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">신차 장기 렌터카</a>
+							<ul>
+								<li>
+									<a href="#">간편 견적</a>
+								</li>
+								<li>
+									<a href="#">프로모션</a>
+								</li>
+								<li class="btn_dropdown_menu">
+									<a href="#">신차 장기렌터카 서비스 안내</a>
+									<ul class="dropdown_menu">
+										<li>
+											<a href="#">신차장기렌터카 안내</a>
+										</li>
+										<li>
+											<a href="#">이용절차 및 Q&amp;A</a>
+										</li>
+										<li>
+											<a href="#">LPG60 장기렌터카 안내</a>
+										</li>
+										<li>
+											<a href="#">전기차 장기렌터카 안내</a>
+										</li>
+										<li>
+											<a href="#">오토 체인지 프로그램</a>
+										</li>
+									</ul>									
+								</li>
+								<li class="btn_dropdown_menu">
+									<a href="#">롯데렌터카만의 서비스</a>
+									<ul class="dropdown_menu">
+										<li>
+											<a href="#">오토매니저</a>
+										</li>
+										<li>
+											<a href="#">정비패키지</a>
+										</li>
+										<li>
+											<a href="#">오토 할부&amp;오토 캐시백 </a>
+										</li>
+										<li>
+											<a href="#">제휴 카드 </a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="depth2">
+							<a href="#">중고차 장기렌터카</a>
+							<ul>
+								<li>
+									<a href="#">중고차 장기렌터카 검색</a>
+								</li>
+								<li>
+									<a href="#">중고차 장기렌터카 서비스 안내</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">승계 게시판</a>
+							<ul>
+								<li>
+									<a href="#">승계 매물 등록</a>
+								</li>
+								<li>
+									<a href="#">승계 매물 검색</a>
+								</li>
+								<li>
+									<a href="#">승계 게시판 서비스 안내</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">법인 장기렌터카</a>
+							<ul>
+								<li>
+									<a href="#">견적 상담</a>
+								</li>
+								<li>
+									<a href="#">법인 장기렌터카 서비스 안내</a>
+								</li>
+							</ul>
+						</li>
+						<li class="depth2">
+							<a href="#">오토리스</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu idx3">
+					<a href="../sell/FN030101.html">팔 때</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">중고차 팔기</a>
+							<ul>
+								<li>
+									<a href="#">견적 상담</a>
+								</li>
+								<li class="btn_dropdown_menu">
+									<a href="#">중고차 경매 서비스 안내</a>
+									<ul class="dropdown_menu">
+										<li>
+											<a href="#">경매 출품 안내</a>
+										</li>
+										<li>
+											<a href="#">입찰 안내</a>
+										</li>
+										<li>
+											<a href="#">판매가 출품 보장 안내</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="submenu">
+						<li class="depth2"><a href="#">오토옥션</a></li>
+					</ul>
+				</li>
+				<li class="menu idx4">
+					<a href="#">기기/장비렌탈</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<!--<a href="#">기기/장비렌탈</a>-->
+							<ul>
+								<li>
+									<a href="#">산업용기기렌탈</a>
+								</li>
+								<li>
+									<a href="#">OA렌탈</a>
+								</li>
+								<li>
+									<a href="#">측정기렌탈</a>
+								</li>
+								<li>
+									<a href="#">지점안내</a>
+								</li>																								
+								<li>
+									<a href="#">입찰 매각 공지</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="menu idx5">
+					<a href="../event/FN05_1.html">이벤트</a>
+				</li>
+				<li class="menu idx6">
+					<a href="#">고객센터</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<!--<a href="#">고객 센터</a>-->
+							<ul>
+								<li>
+									<a href="#">지점 안내</a>
+								</li>
+								<li>
+									<a href="#">FAQ</a>
+								</li>
+								<li>
+									<a href="#">고객의견</a>
+								</li>
+								<li>
+									<a href="#">상담 문의</a>
+								</li>
+								<li>
+									<a href="#">공지&amp;뉴스</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="gnb_open"></div>
+		<ul id="breadcrumb" class="breadcrumb">
+			<li class="path home"><a href="#"></a></li>
+			<li class="path">
+				<a class="dropdown_path_btn" href="#">빌릴 때</a>
+				<ul class="dropdown_path">
+					<li class="active" >
+						<a href="#">빌릴 때</a>
+					</li>
+					<li>
+						<a href="#">살 때</a>
+					</li>
+					<li>
+						<a href="#">팔 때</a>
+					</li>
+					<li>
+						<a href="#">기기 장비렌탈</a>
+					</li>
+					<li>
+						<a href="#">이벤트</a>
+					</li>
+					<li>
+						<a href="#">고객센터</a>
+					</li>
+				</ul>
+			</li>
+			<li class="path">
+				<a class="dropdown_path_btn" href="#">단기렌터카</a>
+				<ul class="dropdown_path">
+					<li class="active" >
+						<a href="#">빌릴 때</a>
+					</li>
+					<li>
+						<a href="#">살 때</a>
+					</li>
+					<li>
+						<a href="#">팔 때</a>
+					</li>
+					<li>
+						<a href="#">기기 장비렌탈</a>
+					</li>
+					<li>
+						<a href="#">이벤트</a>
+					</li>
+					<li>
+						<a href="#">고객센터</a>
+					</li>
+				</ul>
+			</li>
+			<li class="path">
+				<a class="dropdown_path_btn" href="#">실시간 예약</a>
+				<ul class="dropdown_path">
+					<li class="active" >
+						<a href="#">빌릴 때</a>
+					</li>
+					<li>
+						<a href="#">살 때</a>
+					</li>
+					<li>
+						<a href="#">팔 때</a>
+					</li>
+					<li>
+						<a href="#">기기 장비렌탈</a>
+					</li>
+					<li>
+						<a href="#">이벤트</a>
+					</li>
+					<li>
+						<a href="#">고객센터</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</header>
+	<div id="container">
+		<!-- content -->
+		<article class="content">
+			<h2>프로모션</h2>
+			<div class="content">
+				<!-- 본문삽입 -->  
+				<div class="wrap_event">
+					<div class="event_detail">
+						<span class="store">[전지점]</span>
+						<strong class="tit">중대형 및 수입차 60% 할인 이벤트</strong>
+						<em class="status">기간 : 2016/12/01 ~ 2016/12/22</em>
+					</div>    
+					<div class="event_cnt">
+						<!-- 프로모션 내용 시작 -->
+						<div class="promo_201703">
+							<img src="../../images/promotion/img_promo_201703.jpg" alt="" />
+							<div class="compare">
+								<img src="../../images/promotion/promo_compare.jpg" alt="" />
+								<a href="#pop01" onclick="func_pop('pop01');"><img src="../../images/promotion/btn_compare.png" alt="" /></a>
+								<div class="pop_cont" id="pop01">
+									<div class="pop_txt">
+										<img src="../../images/promotion/img_pop01.jpg" alt="" />
+									</div>
+									<div class="scroll_box">
+										<img src="../../images/promotion/img_pop011.jpg" alt="" style="padding-bottom:29px" />
+									</div>
+									<a href="javascript:return false;" onclick="func_pop_clse();"><img src="../../images/promotion/btn_close.gif" alt="" /></a>
+								</div>
+							</div>
+							<div>
+								<img src="../../images/promotion/promo_compare1.jpg" alt="" />
+							</div>
+							<!-- // -->
+							<div class="promo_list2 type_bg">
+								<ul>
+									<li>
+										<a href="#pop02" onclick="func_pop('pop02');"><img src="../../images/promotion/promo_product01.jpg" alt="" /><img src="../../images/promotion/promo_product01_hover.jpg" alt="" /></a>
+										<div class="pop_cont" id="pop02">
+											<div class="pop_txt">
+												<img src="../../images/promotion/img_pop02.jpg" alt="" />
+											</div>
+											<a href="javascript:return false;" onclick="func_pop_clse();"><img src="../../images/promotion/btn_close.gif" alt="" /></a>
+										</div>
+									</li>
+									<li>
+										<a href="#pop03" onclick="func_pop('pop03');"><img src="../../images/promotion/promo_product02.jpg" alt="" /><img src="../../images/promotion/promo_product02_hover.jpg" alt="" /></a>
+										<div class="pop_cont" id="pop03">
+											<div class="pop_txt">
+												<img src="../../images/promotion/img_pop03.jpg" alt="" />
+											</div>
+											<a href="javascript:return false;" onclick="func_pop_clse();"><img src="../../images/promotion/btn_close.gif" alt="" /></a>
+										</div>
+									</li>
+									<li>
+										<a href="#pop04" onclick="func_pop('pop04');"><img src="../../images/promotion/promo_product03.jpg" alt="" /><img src="../../images/promotion/promo_product03_hover.jpg" alt="" /></a>
+										<div class="pop_cont" id="pop04">
+											<div class="pop_txt">
+												<img src="../../images/promotion/img_pop04.jpg" alt="" />
+											</div>
+											<a href="javascript:return false;" onclick="func_pop_clse();"><img src="../../images/promotion/btn_close.gif" alt="" /></a>
+										</div>
+									</li>
+									<li>
+										<a href="#pop05" onclick="func_pop('pop05');"><img src="../../images/promotion/promo_product04.jpg" alt="" /><img src="../../images/promotion/promo_product04_hover.jpg" alt="" /></a>
+										<div class="pop_cont" id="pop05">
+											<div class="pop_txt">
+												<img src="../../images/promotion/img_pop05.jpg" alt="" />
+											</div>
+											<a href="javascript:return false;" onclick="func_pop_clse();"><img src="../../images/promotion/btn_close.gif" alt="" /></a>
+										</div>
+									</li>
+									<!-- 20170316 -->
+									<li>
+										<a href="#pop06" onclick="func_pop('pop06');"><img src="../../images/promotion/promo_product05.jpg" alt="" /><img src="../../images/promotion/promo_product05_hover.jpg" alt="" /></a>
+										<div class="pop_cont" id="pop06">
+											<div class="pop_txt">
+												<img src="../../images/promotion/img_pop06.jpg" alt="" />
+											</div>
+											<a href="javascript:return false;" onclick="func_pop_clse();"><img src="../../images/promotion/btn_close.gif" alt="" /></a>
+										</div>
+									</li>
+									<li>
+										<a href="#pop07" onclick="func_pop('pop07');"><img src="../../images/promotion/promo_product06.jpg" alt="" /><img src="../../images/promotion/promo_product06_hover.jpg" alt="" /></a>
+										<div class="pop_cont" id="pop07">
+											<div class="pop_txt">
+												<img src="../../images/promotion/img_pop07.jpg" alt="" />
+											</div>
+											<a href="javascript:return false;" onclick="func_pop_clse();"><img src="../../images/promotion/btn_close.gif" alt="" /></a>
+										</div>
+									</li>
+									<!-- //20170316 -->
+								</ul>
+								<p class="text">
+									<img src="../../images/promotion/promo_txt.gif" alt="" />
+								</p>
+							</div>
+							<ul class="promo_slide">
+								<li><img src="../../images/promotion/promo_slide_201703_0.jpg" alt="" /></li>
+								<li><img src="../../images/promotion/promo_slide_201703_1.jpg" alt="" /></li>
+								<li><img src="../../images/promotion/promo_slide_201703_2.jpg" alt="" /></li>
+								<li><img src="../../images/promotion/promo_slide_201703_3.jpg" alt="" /></li>
+							</ul>
+							<div class="promo_list2">
+								<div class="toggle_list">
+									<div class="tit">
+										<img src="../../images/promotion/tit_toggle.jpg" alt="" />
+									</div>
+									<ul class="t_bbs">
+										<li class="on">
+											<a href="#">
+												새 차를 뽑고 싶은 분께 딱!
+											</a>
+											<p>
+												늘 사던대로 사던 방식이 아닌, 보다 경제적이고 편리하게 자동차 생활을 즐기고  <br>
+												싶은 모든 분께 롯데렌터카 신차장~기렌터카를 추천합니다! <br>
+												차를 살 때는 좋지만 그 후에 따라오는 경제적 부담, 차량관리 부담, 중고차 처리  <br>
+												부담까지 생각하신다면 결론은 하나, 롯데렌터카 신차장~기렌터카입니다. <br>
+												귀찮은 일, 복잡한 일은 롯데렌터카가 다 알아서 해드릴거니까요~ <br>
+												이제 신차 뽑을 땐, 롯데렌터카 신차장~기렌터카로 잘 뽑으세요!										
+											</p>
+										</li>
+										<li>
+											<a href="#">
+												여성 운전자에게 딱!
+											</a>
+											<p>
+												자동차가 조금 어렵게 느껴지는 여성 운전자에게 롯데렌터카 신차장~기렌터카를 추천합니다! <br>
+												여기저기 피곤하게 다니실 필요없이 다양한 차종에 대한 친절한 상담부터, 계약 후 차량관리까지 다 알아서 해드립니다~ 사고처리도 롯데렌터카가 책임지니 직접 나서지 않으셔도 됩니다! 이제 롯데렌터카 신차장~기렌터카로 편하고 안전하게 자동차를 즐기세요~									
+											</p>
+										</li>
+										<li>
+											<a href="#">
+												개인/법인 사업자에게 딱!
+											</a>
+											<p>
+												비용절감과 자산운용이 중요한 개인/법인 사업자에게 롯데렌터카 신차장~기렌터카를 추천합니다! <br>
+												차량 렌트비는 비용처리가 가능해 절세효과를 누리실 수 있으며, 월 1회 렌트비만 내면 세금 및 보험료 등을 신경 쓸 필요없어 편하고 경제적입니다. 롯데렌터카의 차량관리시스템(FMS;Fleet Management System)을 통해 보다 효율적으로 차량을 관리할 수도 있습니다. <br>
+												이제 롯데렌터카 신차장~기렌터카 타고 부자되세요~!									
+											</p>
+										</li>
+										<li>
+											<a href="#">
+												전기차를 뽑고 싶은 분께 딱!
+											</a>
+											<p>
+												마이카로 전기차를 뽑고 싶은 앞서가는 고객님께 롯데렌터카 신차장~기렌터카를 추천합니다! <br>
+												개인 공모를 통해 전기차를 구매하시는 것보다 100~250만원 (36개월 계약기준) 저렴하고, 복잡한 행정절차도 롯데렌터카가 지원해드립니다. 장거리 운행이 걱정되는 고객님을 위해 롯데렌터카 무료이용권 제공은 물론이고, 계약기간 종료 후 반납 또는 인수 선택 가능하니 중고차 가격 걱정할 필요도 없습니다.  <br>
+												전기차도 이제 롯데렌터카 신차장~기렌터카로! 									
+											</p>
+										</li>
+									</ul>
+								</div>
+								<div class="tit">
+									<img src="../../images/promotion/tit_youtube.gif" alt="" />
+								</div>
+								<div class="ytb_box">
+									<div>
+										<iframe id="videoPlayer" width="100%" height="100%" src="https://www.youtube.com/embed/pMl3GM6Rhfw?wmode=opaque&autoplay=0&rel=0" frameborder="0" allowfullscreen></iframe>
+									</div>
+								</div>
+							</div>
+							<div class="floating">
+								<div class="form">
+									<form name="branchForm" id="branchForm" method="post" >
+										<fieldset id="" class="">
+											<p class="if" style="padding-top:93px; ">
+											<label for="carName"><img src="../../images/promotion/label1.png" alt="차량명" /></label>
+											<span class="block">
+												<span class="widthP" style="width:37%; margin-right:10px">
+													<span class="border">
+														<select title="차량명" name="sel_carname" id="sel_carname" onchange="setCarname();">
+															<option value="">차량명</option>
+															<option value="올뉴쏘렌토">올뉴쏘렌토</option>
+															<option value="THE NEW K3">THE NEW K3</option>
+															<option value="LF쏘나타">LF쏘나타</option>
+															<option value="QM6">QM6</option>
+															<option value="SM6">SM6</option>
+															<option value="BMW 520D">BMW 520D</option>
+															<option value="K5(LPG60)">K5(LPG60)</option>
+															<option value="etc">기타(전차종)</option>
+														</select>
+													</span>
+												</span>										
+												<span class="widthP" style="width:61%;"><span class="border"><input type="text" name="carName" id="carName" maxlength="80" class="it" title="차종입력" validator="isNotEmpty()" errormsg="차량명을 입력해주세요." placeholder="전차종 상담가능" readonly="true"></span></span>
+											</span>
+
+											</p>
+											<p class="if"><label for="customerName"><img src="../../images/promotion/label2.png" alt="성명"></label>
+												<span class="block">
+													<span class="border"><input type="text" name="customerName" class="it" id="customerName" maxlength="15" validator="isNotEmpty()" errormsg="이름을 입력하세요." placeholder="이름을 입력하세요."></span>
+												</span>
+											</p>
+											<p class="if">
+												<label for="customerMobile1"><img src="../../images/promotion/label3.png" alt="휴대전화"></label>
+												<span class="block">
+													<span class="widthP" style="width:32%;">
+														<span class="border">
+															<select title="통신사 선택" name="customerMobile1" id="customerMobile1">
+																<option value="010">010</option>
+																<option value="011">011</option>
+																<option value="016">016</option>
+																<option value="017">017</option>
+																<option value="018">018</option>
+																<option value="019">019</option>
+															</select>
+														</span>
+													</span>
+													<span class="widthP" style="width:32%; margin-left:2%;">
+														<span class="border">
+															<input title="휴대폰 가운데 숫자" name="customerMobile2" id="customerMobile2" class="it" type="text" maxlength="4" validator="isNotEmpty() &amp;&amp; isNumber()" errormsg="휴대전화(가운데)번호를 확인해주세요.">
+														</span>
+													</span>
+													<span class="widthP" style="width:32%; margin-left:2%;">
+														<span class="border">
+															<input title="휴대폰 마지막 숫자" name="customerMobile3" id="customerMobile3" class="it" type="text" maxlength="4" validator="isNotEmpty() &amp;&amp; isNumber()" errormsg="휴대전화(마지막)번호를 확인해주세요.">
+														</span>
+													</span>
+												</span>
+											</p>
+											<p class="if">
+												<label for="customerEmail1"><img src="../../images/promotion/label4.png" alt="이메일"></label>
+												<span class="block">
+													<span class="widthP" style="width:30%;">
+														<span class="border">
+															<input type="text" name="customerEmail1" value="" id="customerEmail1" class="it" validator="isNotEmpty()" errormsg="이메일을 입력해 주세요." title="이메일">
+														</span>
+													</span>
+													<span class="widthP gol" style="width:6%; margin:0 1%; font-size:22px; line-height:56px">@</span>
+													<span class="widthP" style="width:30%;">
+														<span class="border">
+															<input type="text" name="customerEmail2" value="" id="customerEmail2" class="it" title="이메일" readonly="true" validator="isNotEmpty()" errormsg="이메일을 선택해 주세요.">
+														</span>
+													</span>
+													<span class="widthP" style="width:30%; margin-left:2%;">
+														<span class="border">
+															<select name="sel_domain" title="" id="sel_domain" onchange="setEmail('load');">
+																<option value="set">선택</option>
+																<option value="n">직접입력</option>
+																<option value="naver.com" >네이버</option>
+																<option value="nate.com" >네이트</option>
+																<option value="dreamwiz.com" >드림위즈</option>
+																<option value="yahoo.co.kr" >야후</option>
+																<option value="empal.com" >엠팔(엠파스)</option>
+																<option value="unitel.co.kr" >유니텔</option>
+																<option value="gmail.com" >지메일</option>
+																<option value="korea.com" >코리아닷컴</option>
+																<option value="chol.com" >천리안</option>
+																<option value="paran.com" >파란닷컴</option>
+																<option value="freechal.com" >프리첼</option>
+																<option value="hanmail.net" >한메일다음</option>
+																<option value="hotmail.com" >핫메일</option>
+															</select>
+														</span>
+													</span>
+												</span>
+											</p>
+											<p class="if">
+												<label for="rentPlace"><img src="../../images/promotion/label5.png" alt="지역선택"></label>
+												<span class="block">
+													<span class="border">
+														<select title="지역선택" id="rentPlace" name="rentPlace" validator="isNotEmpty()" errormsg="지역을 선택해주세요.">
+															<option value="">선택</option>
+															<option value="429">서울 </option>
+															<option value="501">인천/경기/강원</option>
+															<option value="601">대구/부산/울산/경상</option>
+															<option value="701">대전/충청</option>
+															<option value="701">광주/전라</option>
+															<option value="601">제주</option>
+														</select>
+													</span>
+												</span>
+											</p>
+											<p class="chk">
+												<a href="#" class="chkBg">
+													<img src="../../images/promotion/checkTxt1.png" alt="필수사항 수집 동의(필수)"><input type="checkbox" value="Y" name="agreeChk1" id="agreeChk1Ok">
+												</a>
+												<a href="#layerPromotion" class="viewBt" onclick="layerPop(event, 'layerPromotion')"><img src="../../images/promotion/viewBt.png" alt="내용보기"></a>
+											</p>
+											<p class="chk">
+												<a href="#" class="chkBg">
+													<img src="../../images/promotion/checkTxt2.png" alt="마케팅 광고를 위한 수집 동의"><input type="checkbox" value="Y" name="agreeChk2" id="agreeChk2Ok">
+												</a>
+												<a  href="#layerPromotionSelect" class="viewBt" onclick="layerPop(event, 'layerPromotionSelect')"><img src="../../images/promotion/viewBt.png" alt="내용보기"></a>
+											</p>
+											<p class="subMit"><a href="javascript:validateChkForm();"><img src="../../images/promotion/subMit.png" alt=""></a></p>
+											<script type="text/javascript">
+											//<![CDATA[
+												$('.chkBg').each(function(){
+													$(this).on('click',function(){
+														if ($(this).hasClass('on')){
+															$(this).removeClass('on').find('input').prop('checked',false);
+														}else{
+															$(this).addClass('on').find('input').prop('checked',true);
+														}
+														return false;
+													})
+												})
+											//]]>
+											</script>
+										</fieldset>
+									</form>
+								</div>
+								<a href="#" class="btn_form"><img src="../../images/promotion/btn_form.gif" alt="" /></a><a href="#" id="icon_tel"><img src="../../images/promotion/btn_tel.gif" alt="" /></a>
+								<a href="javascript:return false;" onclick="open_form(0);" class="btn_close"><img src="../../images/promotion/btn_close.gif" alt="" /></a>
+							</div>
+						</div>
+						<!-- //프로모션 -->
+						</div>
+					</div>
+				</div>
+				<!--// 본문삽입 --> 
+			</div>
+		</article>
+	</div>
+	<footer>
+		<div class="links">
+			<ul class="inner_links">
+				<li class="link">
+					<a href="#">그린카</a>
+				</li>
+				<li class="link">
+					<a href="#">오토옥션</a>
+				</li>
+				<li class="link">
+					<a href="#">오토리스</a>
+				</li>				
+				<li class="link">
+					<a href="#">오토매니저</a>
+				</li>
+				<li id="familysite" class="familysite">
+					<a class="btn_dropdown_menu" href="#">FAMILY SITE</a>
+				</li>
+			</ul>
+		</div>
+		<div class="familysite_dropdown_menu">
+			<ul class="menus">
+				<li class="menu">
+					<span class="menu_title">식품부문</span>
+					<ul>
+						<li>
+							<a href="#" target="_blank">롯데제과</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데유통사업본부</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데칠성음료</a>
+						</li>						
+						<li>
+							<a href="#" target="_blank">롯데칠성음료 주류부문</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데아시히주류</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데푸드</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데리아</a>
+						</li>						
+					</ul>
+				</li>
+				<li class="menu">
+					<span class="menu_title">관광부문</span>
+					<ul>
+						<li>
+							<a href="#" target="_blank">롯데호텔</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">부산롯데호텔</a>
+						</li>						
+						<li>
+							<a href="#" target="_blank">롯데면세점</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데월드</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데물산</a>
+						</li>						
+						<li>
+							<a href="#" target="_blank">롯데리조트</a>
+						</li>						
+						<li>
+							<a href="#" target="_blank">롯데제이티비</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu">
+					<span class="menu_title">금융부문</span>
+					<ul>
+						<li>
+							<a href="#" target="_blank">롯데카드</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데손해보험</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데캐피탈</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데자이언츠</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데멤버스</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu">
+					<span class="menu_title">석유화학/건설/제조 부문</span>
+					<ul>
+						<li>
+							<a href="#" target="_blank">롯데케미칼</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">케이피켐텍</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데엠알시</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데건설</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데건설 CM사업본부</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">캐논코리아비즈니스솔루션㈜</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">한국후지필름</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데알미늄</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데기공</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu">
+					<span class="menu_title">유통부문</span>
+					<ul>
+						<li>
+							<a href="#" target="_blank">롯데백화점</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데마트</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데슈퍼</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데시네마</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데홈쇼핑</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">코리아세븐</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">FRL코리아</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데상사</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데닷컴</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데하이마트</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롭스</a>
+						</li>																														
+					</ul>
+				</li>
+				<li class="menu">
+					<span class="menu_title">서비스/연구/지원 부문</span>
+					<ul>
+
+						<li>
+							<a href="#" target="_blank">롯데정보통신</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">현대정보기술</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데스카이힐C.C</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">대홍기획</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데자산개발</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데로지스틱스</a>
+						</li>	
+						<li>
+							<a href="#" target="_blank">롯데피에스넷</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">마이비</a>
+						</li>	
+						<li>
+							<a href="#" target="_blank">이비카드</a>
+						</li>	
+						<li>
+							<a href="#" target="_blank">롯데중앙연구소</a>
+						</li>	
+						<li>
+							<a href="#" target="_blank">롯데인재개발원</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데미래전략센터</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데장학재단</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데복지재단</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데삼동복지재단</a>
+						</li>																								
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="inner_footer">
+			<div class="sitemap">
+				<ul>
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#" class="txt_point">개인정보처리방침</a></li>
+					<li><a href="#" class="txt_point">영상정보처리기기 운영관리방침</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">사이버신문고</a></li>
+					<li><a href="#">인재채용</a></li>
+					<li><a href="#">무단이메일수집거부</a></li>
+					<li><a href="#">계약서 조회</a></li>
+					<li><a href="#">CONTACT US</a></li>
+					<li><a href="#">사이트맵</a></li>
+				</ul>
+			</div>
+
+			<div class="sns">
+				<ul>
+					<li>
+						<a class="twitter" href="#" target="_blank"><img src="../../images/common/img_footer_sns_twitter.png" alt="트위터"></a>
+					</li>
+					<li>
+						<a class="facebook" href="#" target="_blank"><img src="../../images/common/img_footer_sns_facebook.png" alt="페이스북"></a>
+					</li>
+					<li>
+						<a class="blog" href="#" target="_blank"><img src="../../images/common/img_footer_sns_blog.png" alt="블로그"></a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="information">
+				<ul class="entrepreneur_info">
+					<li>롯데렌탈㈜</li>
+					<li>대표이사 표현명</li>
+					<li>사업자등록번호 214-87-79183</li>
+					<li>통신판매업신고번호 : 제2010-경기안양-420호</li>
+					<li><a href="http://www.ftc.go.kr/info/bizinfo/communicationList.jsp" target="_blank" class="btn_entrepreneur_info"><img src="../../images/common/btn_entrepreneur_info.png" alt="사업자 정보 확인"></a></li>					
+				</ul>
+				<ul class="address">
+					<li>경기도 안양시 동안구 전파로 88 신원비젼타워 8층</li>
+					<li>서울본사: 서울시 강남구 테헤란로 422 KT타워 6~9층</li>
+				</ul>
+				<ul class="phone">
+					<li>대표전화 1588-1230</li>
+					<li>해외 82-2-797-8000</li>
+					<li>보험대차 연락처 및 일반상품렌탈 연락처</li>
+					<li>보험대차 1588-4920</li>
+					<li>일반상품렌탈 1577-5100+1</li>
+				</ul>
+				<span class="copyright">copyright ⓒ 2016 LOTTE rental co.ltd.All Rrights Reserved.</span>
+			</div>
+
+			<div class="certifications">
+				<ul>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_1.png" alt="2015 한국서비스대상 명예의 전당"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_2.png" alt="2016 국가고객만족도렌터카부문1위(NCSI)"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_3.png" alt="2016 한국산업의 브랜드 파워 1위(K-BPI)"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_4.png" alt="2016 국가브랜드 대상(NBA)"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_5.png" alt="2016 대한민국 브랜드 스타"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_6.png" alt="2016 대한민국 퍼스트 브랜드"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_7.png" alt="2016 국가브랜드 경쟁력 지수 1위(NBCI)"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_8.png" alt="2016 한국산업의 고객만족도(KCSI)"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_9.png" alt="2016 한국서비스 품질지수 1위(KS-SQl)"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_10.png" alt="2014 한국서비스대상 종합대상"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_11.png" alt="2016 프리미엄 브랜드 지수 1위(KC-PBI)"></a></li>
+					<li>
+						<a href="https://sealinfo.verisign.com/splash?form_file=fdf/splash.fdf&amp;dn=www.lotterentacar.net&amp;lang=ko" target="_blank">
+							<img src="../../images/common/img_footer_cert_12.png" alt="노턴 시큐어">
+						</a>
+					</li>
+					<li>
+						<a href="#isms" class="isms btn_layer">
+							<img src="../../images/common/img_footer_cert_13.png" alt="정보보호 관리체계 ISMS 획득">
+						</a>
+					</li>					
+				</ul>
+			</div>
+
+			<div class="big-banner">
+				<img src="../../images/common/img_footer_big_banner.png" alt="Asia No.1 렌터카, 롯데렌터카! 롯데렌터카가 대한민국을 넘어 Asia 1위 렌터카로 우뚝 섰습니다.">
+			</div>
+		</div>
+	</footer>
+
+
+
+<!-- Layer : 개인정보 필수적 수집, 이용에 관한 사항 -->
+<div id="layerPromotion" class="layer layer_s" style="z-index:2003;">
+	<div class="layer_tit">
+		<h2>개인정보 필수적 수집, 이용에 관한 사항</h2>
+		<a href="#" class="btn_layer_close"><img src="../../images/common/btn_layer_close.png" alt="닫기"></a>
+	</div>
+	<div class="layer_con">
+		<!-- content -->
+		<div class="layer_padding pb40">
+			<p class="txt mb20">본인은 롯데렌터카가 아래의 내용과 같이 본인의 개인정보를 수집∙이용하는데 동의합니다.</p>
+			<ul class="txt_list">
+				<li class="black f14">개인정보의 수집, 이용목적
+					<ul>
+						<li class="f14">롯데렌터카 장기대여 견적신청, 견적회신 및 상담, 장기대여 계약의 체결∙이행∙관리, 신청서비스 제공, 본인여부 확인, 분쟁 및 민원 처리</li>
+					</ul>
+				</li>
+				<li class="black f14">수집, 이용할 개인정보의 내용
+					<ul>
+						<li class="f14">성명, 연락처(휴대폰), 주소, 이메일</li>
+					</ul>
+				</li>
+				<li class="black f14">개인정보의 보유, 이용기간
+					<ul>
+						<li class="f14">동의일로부터 1년</li>
+					</ul>
+				</li>
+			</ul>
+			<p class="txt f12">※ 귀하는 동의를 거부할 권리가 있으나, 위 사항에 동의하지 않으실 경우 롯데렌터카 견적신청, 견적회신 또는 상담 등이 불가능 할 수 있음을 알려드립니다.</p>
+		</div>
+		<!-- //content -->
+	</div>
+</div>
+
+
+<!-- Layer : 개인정보 선택적 수집, 이용에 관한 사항 -->
+<div id="layerPromotionSelect" class="layer layer_s" style="z-index:2003;">
+	<div class="layer_tit">
+		<h2>개인정보 선택적 수집, 이용에 관한 사항</h2>
+		<a href="#" class="btn_layer_close"><img src="../../images/common/btn_layer_close.png" alt="닫기"></a>
+	</div>
+	<div class="layer_con">
+		<!-- content -->
+		<div class="layer_padding pb40">
+			<p class="txt mb20">본인은 롯데렌터카가 아래의 내용과 같이 신상품(서비스) 안내 등을 위하여 본인의 개인정보를 수집∙이용하는데 동의합니다.</p>
+			<ul class="txt_list">
+				<li class="black f14">개인정보의 수집, 이용목적
+					<ul class="txt_list">
+						<li class="f14">롯데렌터카의 신상품(서비스) 소개, 프로모션 및 이벤트 안내</li>
+					</ul>
+				</li>
+				<li class="black f14">수집, 이용할 개인정보의 내용
+					<ul>
+						<li class="f14">성명, 연락처(휴대폰), 이메일</li>
+					</ul>
+				</li>
+				<li class="black f14">개인정보의 보유, 이용기간
+					<ul>
+						<li class="f14">동의일로부터 1년</li>
+					</ul>
+				</li>
+			</ul>
+			<p class="txt f12">※ 귀하는 동의를 거부할 권리가 있으나, 위 사항에 동의하지 않으실 경우 신상품(서비스)소개, 이벤트 안내 등에 따른 혜택의 제한이 있을 수 있습니다.<br>그 밖의 롯데렌터카 견적신청 등과 관련된 불이익은 없습니다.</p>
+		</div>
+		<!-- //content -->
+	</div>
+</div>
+</body>
+</html>

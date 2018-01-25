@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>롯데렌터카 - 기본 가이드 | Publishing Guide -</title>
+<link rel="stylesheet" type="text/css" href="../../../../mbKor/css/reset.css">
+<link rel="stylesheet" type="text/css" href="../../../../mbKor/css/common.css">
+<link rel="stylesheet" type="text/css" href="../../com/css/guide.css">
+
+<script type="text/javascript" src="../../../com/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../../../com/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="../../com/js/d_menu.js"></script>
+<script type="text/javascript" src="../../com/js/d_jquery.js"></script>
+<script type="text/javascript" src="../../../../mbKor/js/ui.js"></script>
+<script type="text/javascript" src="../../../../mbKor/js/calendar.m.js"></script>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+
+<body>
+
+<div title="스킵메뉴" class="skipMenu">
+    <a href="#skipContent">본문 내용 바로가기</a>
+</div>
+<hr>
+<div id="wrapGuide">
+	<!-- HEADER s --><script type="text/javascript">TopArea();gnbBox_init(2);</script><!-- HEADER e //-->
+    <hr>
+    <div id="wgContainer" class="layout2 clfix">
+    	<!-- LNB s --><script type="text/javascript">LeftMenuMobile();lnb_menu('3','1');</script><!-- LNB e //-->
+        <div id="wgContent" class="clfix">
+        	<div class="titArea">
+            	<h1 class="gtit">테이블가이드</h1>
+                <!--<p><script type="text/javascript">map.print(1,1,1);</script></p> -->
+            </div>
+            
+            <div id="skipContent" class="wgDsc">
+            	<!-- 여기서부터 내용 s -->
+                <div class="section cordView">
+                    <h3 class="gtit">■ 가로 테이블</h3>
+                    <div class="dscBox type01">
+                        <ul class="lstDsc">
+                            <li><strong>테이블 - grid tb_col</strong><br>
+								<div class="panel">
+									<div class="grid">
+										<table class="tb_col">
+											<caption></caption>
+											<colgroup>
+											<col style="width:140px" />
+											<col style="width:140px" />
+											<col style="width:225px" />
+											<col style="width:225px" />
+											<col style="width:auto" /> 
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col" colspan="2">구분</th>
+													<th scope="col">일반 회원</th>
+													<th scope="col">골드 회원</th>
+													<th scope="col">더블골드 회원</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th class="noBorderL" rowspan="2" scope="row">할인율</th>
+													<th>평일</th>
+													<td>35% (40%)</td>
+													<td>40% (45%)</td>
+													<td>45% (50%)</td>
+												</tr>
+												<tr>
+													<th class="borderL">평일</th>
+													<td>35% (40%)</td>
+													<td>40% (45%)</td>
+													<td>45% (50%)</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div> 
+								<pre class="brush: html;">
+									<div class="grid">
+										<table class="tb_col">
+											<caption></caption>
+											<colgroup>
+											<col style="width:140px" />
+											<col style="width:140px" />
+											<col style="width:225px" />
+											<col style="width:225px" />
+											<col style="width:auto" /> 
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col" colspan="2">구분</th>
+													<th scope="col">일반 회원</th>
+													<th scope="col">골드 회원</th>
+													<th scope="col">더블골드 회원</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th class="noBorderL" rowspan="2" scope="row">할인율</th>
+													<th>평일</th>
+													<td>35% (40%)</td>
+													<td>40% (45%)</td>
+													<td>45% (50%)</td>
+												</tr>
+												<tr>
+													<th class="borderL">평일</th>
+													<td>35% (40%)</td>
+													<td>40% (45%)</td>
+													<td>45% (50%)</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</pre>
+								<div class="panel">
+									<div class="grid">
+										<table class="tb_col">
+											<caption></caption>
+											<colgroup>
+											<col style="width:200px" />
+											<col style="width:33%" />
+											<col style="width:auto" /> 
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col" rowspan="2" class="bgGray">bgGray</th>
+													<th scope="col" class="bgGray2">bgGray2</th>
+													<th scope="col" class="bgGray2">bgGray2</th>
+												</tr>
+												<tr> 
+													<th scope="col" class="bgGray2 borderL">borderL</th>
+													<th scope="col" class="bgGray2">bgGray2</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th class="noBorderL">noBorderL</th>
+													<td>123,000</td>
+													<td>123,000</td>
+												</tr> 
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<pre class="brush: html;">
+									<div class="grid">
+										<table class="tb_col">
+											<caption></caption>
+											<colgroup>
+											<col style="width:200px" />
+											<col style="width:33%" />
+											<col style="width:auto" /> 
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col" rowspan="2" class="bgGray">bgGray</th>
+													<th scope="col" class="bgGray2">bgGray2</th>
+													<th scope="col" class="bgGray2">bgGray2</th>
+												</tr>
+												<tr> 
+													<th scope="col" class="bgGray2 borderL">borderL</th>
+													<th scope="col" class="bgGray2">bgGray2</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th class="noBorderL">noBorderL</th>
+													<td>123,000</td>
+													<td>123,000</td>
+												</tr> 
+											</tbody>
+										</table>
+									</div>
+								</pre>
+								<div class="panel">
+									<div class="grid">
+										<table class="tb_col">
+											<caption></caption>
+											<colgroup>
+											<col style="width:33%" />
+											<col style="width:33%" />
+											<col style="width:auto" /> 
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">일반 회원</th>
+													<th scope="col">골드 회원</th>
+													<th scope="col">더블골드 회원</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>35% (40%)</td>
+													<td>40% (45%)</td>
+													<td>45% (50%)</td>
+												</tr>
+												<tr>
+													<td colspan="3" class="no_data">보유 쿠폰이 없습니다.</td> 
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<pre class="brush: html;">
+									<div class="grid">
+										<table class="tb_col">
+											<caption></caption>
+											<colgroup>
+											<col style="width:33%" />
+											<col style="width:33%" />
+											<col style="width:auto" /> 
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">일반 회원</th>
+													<th scope="col">골드 회원</th>
+													<th scope="col">더블골드 회원</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>35% (40%)</td>
+													<td>40% (45%)</td>
+													<td>45% (50%)</td>
+												</tr>
+												<tr>
+													<td colspan="3" class="no_data">보유 쿠폰이 없습니다.</td> 
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</pre>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!--// section div -->
+                    
+                <div class="section cordView">
+                	<h3 class="gtit">■ 세로 테이블</h3>
+                    <div class="dscBox type01">
+                        <ul class="lstDsc">                    
+                            <li><strong>테이블 - grid tb_row</strong><br>
+								<div class="panel">
+									<div class="grid">
+										<table class="tb_row">
+											<caption></caption>
+											<colgroup>
+											<col style="width:100px" />
+											<col style="width:auto" /> 
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row">자격조건</th>
+													<td>홈페이지 회원가입</td>
+												</tr>
+												<tr>
+													<th scope="row">무료 업그레이드 혜택</th>
+													<td> 
+														등급별 대여 횟수에 따라 차량 무료 업그레이드 서비스 제공 
+														<span class="block txt_gray">
+															5번째, 15번째, 25번째, 35번째, 45번째, 55번째 (+10회 단위) 대여 시 소형 예약 차량 → 중형 업그레이드 중형 예약 차량 → 중대형 업그레이드
+														</span>
+														<ul class="txt_list">
+															<li class="red f12">
+																대형, 수입차, SUV/RV, 승합 차량은 업그레이드 대상에서 제외됩니다. 
+															</li>
+														</ul>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<pre class="brush: html;">
+									<div class="grid">
+										<table class="tb_row">
+											<caption></caption>
+											<colgroup>
+											<col style="width:100px" />
+											<col style="width:auto" /> 
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row">자격조건</th>
+													<td>홈페이지 회원가입</td>
+												</tr>
+												<tr>
+													<th scope="row">무료 업그레이드 혜택</th>
+													<td> 
+														등급별 대여 횟수에 따라 차량 무료 업그레이드 서비스 제공 
+														<span class="block txt_gray">
+															5번째, 15번째, 25번째, 35번째, 45번째, 55번째 (+10회 단위) 대여 시 소형 예약 차량 → 중형 업그레이드 중형 예약 차량 → 중대형 업그레이드
+														</span>
+														<ul class="txt_list">
+															<li class="red f12">
+																대형, 수입차, SUV/RV, 승합 차량은 업그레이드 대상에서 제외됩니다. 
+															</li>
+														</ul>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</pre>
+								<div class="panel">
+									<div class="grid">
+										<table class="tb_row">
+											<caption></caption>
+											<colgroup>
+											<col style="width:100px" />
+											<col style="width:auto" /> 
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row"><label for="">현재 비밀번호</label></th>
+													<td><input type="password" name="" id="" placeholder="현재 비밀번호를 입력해 주세요."></td>
+												</tr> 
+												<tr>
+													<th scope="row"><label for="">새 비밀번호</label></th>
+													<td>
+														<input type="password" name="" id="" placeholder="새 비밀번호를 입력해 주세요.">
+														<ul class="txt_list">
+															<li class="red f12">
+																8~15자의 영문자, 숫자, 특수문자를 함께 입력해 주세요.
+															</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row"><label for="">새 비밀번호 확인</label></th>
+													<td>
+														<div class="w100">
+															<div class="cell">
+																<input type="password" name="" id="" placeholder="새 비밀번호를 다시 입력해 주세요.">
+															</div>
+															<div class="cell pl5" style="width:70px;">
+																<span class="select">
+																	<select id="" title="">
+																		<option selected="selected">선택</option>
+																	</select>
+																</span>
+															</div> 
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<pre class="brush: html;">
+									<div class="grid">
+										<table class="tb_row">
+											<caption></caption>
+											<colgroup>
+											<col style="width:100px" />
+											<col style="width:auto" /> 
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row"><label for="">현재 비밀번호</label></th>
+													<td><input type="password" name="" id="" placeholder="현재 비밀번호를 입력해 주세요."></td>
+												</tr> 
+												<tr>
+													<th scope="row"><label for="">새 비밀번호</label></th>
+													<td>
+														<input type="password" name="" id="" placeholder="새 비밀번호를 입력해 주세요.">
+														<ul class="txt_list">
+															<li class="red f12">
+																8~15자의 영문자, 숫자, 특수문자를 함께 입력해 주세요.
+															</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row"><label for="">새 비밀번호 확인</label></th>
+													<td>
+														<div class="w100">
+															<div class="cell">
+																<input type="password" name="" id="" placeholder="새 비밀번호를 다시 입력해 주세요.">
+															</div>
+															<div class="cell pl5" style="width:70px;">
+																<span class="select">
+																	<select id="" title="">
+																		<option selected="selected">선택</option>
+																	</select>
+																</span>
+															</div> 
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</pre>
+                            </li>
+                        </ul>
+                    </div>                               
+                </div>
+                <div class="section cordView">
+                    <h3 class="gtit">■ 레이아웃 테이블</h3>
+                    <div class="dscBox type01">
+                        <ul class="lstDsc">
+                             <li><strong>입력목록 - .grid .tb_noBorder</strong><br>
+								<div class="panel">
+									<div class="grid noBorderT">
+										<table class="tb_noBorder">
+											<caption></caption>
+											<colgroup>
+											<col style="width:90px" />
+											<col style="width:auto" />  
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row"><label for="">회원등급</label></th>
+													<td>
+														<input type="text" name="" id="" value="">
+														<ul class="txt_list">
+															<li class="red f12">
+																대형, 수입차, SUV/RV, 승합 차량은 업그레이드 대상에서 제외됩니다. 
+															</li>
+														</ul>
+													</td> 
+												</tr>
+												<tr>
+													<th scope="row"><label for="">이름</label></th>
+													<td><input type="text" name="" id="" value=""></td> 
+												</tr>
+												<tr>
+													<th scope="row"><label for="">전화번호</label></th>
+													<td>
+														<div class="w100">
+															<div class="cell">
+																<input type="tel" name="" id="" value="">
+															</div>
+															<div class="cell hyphen">
+																-
+															</div>
+															<div class="cell">
+																<input type="tel" name="" id="" value="">
+															</div>
+															<div class="cell hyphen">
+																-
+															</div>
+															<div class="cell">
+																<input type="tel" name="" id="" value="">
+															</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row"><label for="">발급일</label></th>
+													<td>
+														<div class="w100">
+															<div class="cell">
+																<input type="text" name="" id="" value="" placeholder="YYYY">
+															</div>
+															<div class="cell date">
+																년
+															</div>
+															<div class="cell">
+																<input type="text" name="" id="" value="" placeholder="MM">
+															</div>
+															<div class="cell date">
+																월
+															</div>
+															<div class="cell">
+																<input type="text" name="" id="" value="" placeholder="DD">
+															</div>
+															<div class="cell date">
+																일
+															</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row"><label for="">이름</label></th>
+													<td>홍길동 <input type="text" name="" id="" value="" style="width:40px;"></td> 
+												</tr>
+												<tr>
+													<th scope="row"><label for="">이름</label></th>
+													<td>
+														<div class="wrap_txt">
+															<input type="checkbox" id="check4-1">
+															<label for="check4-1" class=""><span class="icon"></span>대형</label>
+
+															<input type="checkbox" id="check4-4">
+															<label for="check4-4" class="ml10"><span class="icon"></span>대형</label>
+														</div>
+													</td> 
+												</tr>
+												<tr>
+													<th scope="row"><label for="">이름</label></th>
+													<td>
+														<div class="wrap_txt">
+															대형, 수입차, SUV/RV, 승합 차량은 업그레이드 대상에서 제외됩니다.  
+														</div>
+													</td> 
+												</tr>
+												<tr>
+													<th scope="row"><label for="">이름</label></th>
+													<td>
+														<textarea></textarea>
+													</td> 
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<pre class="brush: html;">        
+									<div class="grid noBorderT">
+										<table class="tb_noBorder">
+											<caption></caption>
+											<colgroup>
+											<col style="width:90px" />
+											<col style="width:auto" />  
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row"><label for="">회원등급</label></th>
+													<td>
+														<input type="text" name="" id="" value="">
+														<ul class="txt_list">
+															<li class="red f12">
+																대형, 수입차, SUV/RV, 승합 차량은 업그레이드 대상에서 제외됩니다. 
+															</li>
+														</ul>
+													</td> 
+												</tr>
+												<tr>
+													<th scope="row"><label for="">이름</label></th>
+													<td><input type="text" name="" id="" value=""></td> 
+												</tr>
+												<tr>
+													<th scope="row"><label for="">전화번호</label></th>
+													<td>
+														<div class="w100">
+															<div class="cell">
+																<input type="tel" name="" id="" value="">
+															</div>
+															<div class="cell hyphen">
+																-
+															</div>
+															<div class="cell">
+																<input type="tel" name="" id="" value="">
+															</div>
+															<div class="cell hyphen">
+																-
+															</div>
+															<div class="cell">
+																<input type="tel" name="" id="" value="">
+															</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row"><label for="">발급일</label></th>
+													<td>
+														<div class="w100">
+															<div class="cell">
+																<input type="text" name="" id="" value="" placeholder="YYYY">
+															</div>
+															<div class="cell date">
+																년
+															</div>
+															<div class="cell">
+																<input type="text" name="" id="" value="" placeholder="MM">
+															</div>
+															<div class="cell date">
+																월
+															</div>
+															<div class="cell">
+																<input type="text" name="" id="" value="" placeholder="DD">
+															</div>
+															<div class="cell date">
+																일
+															</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row"><label for="">이름</label></th>
+													<td>홍길동 <input type="text" name="" id="" value="" style="width:40px;"></td> 
+												</tr>
+												<tr>
+													<th scope="row"><label for="">이름</label></th>
+													<td>
+														<div class="wrap_txt">
+															<input type="checkbox" id="check4-1">
+															<label for="check4-1" class=""><span class="icon"></span>대형</label>
+
+															<input type="checkbox" id="check4-4">
+															<label for="check4-4" class="ml10"><span class="icon"></span>대형</label>
+														</div>
+													</td> 
+												</tr>
+												<tr>
+													<th scope="row"><label for="">이름</label></th>
+													<td>
+														<div class="wrap_txt">
+															대형, 수입차, SUV/RV, 승합 차량은 업그레이드 대상에서 제외됩니다.  
+														</div>
+													</td> 
+												</tr>
+												<tr>
+													<th scope="row"><label for="">이름</label></th>
+													<td>
+														<textarea></textarea>
+													</td> 
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</pre>
+                            </li>
+                        </ul>
+                    </div>
+                </div>                
+                <!-- 여기서부터 내용 e -->
+            </div><!--// wgDsc div -->
+        </div><!--// wgContent div -->
+        
+    </div><!--// wgContainer div  -->
+    
+</div><!--// wrapGuide div -->
+</body>
+</html>

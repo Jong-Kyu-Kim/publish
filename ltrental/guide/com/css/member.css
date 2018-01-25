@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+/****************************************/
+/*	Name: LOTTE HOTEL
+/*	PART: SITE COMMON STYLE
+/*	Version: 1.0
+/*	Author: LeeYumi
+/****************************************/
+
+/*Float Release*/
+.mem_step, .overv_box .secBox .point_box,
+.overv_box .wrap_bor .mem_priv_info .myGrade {*zoom:1;}
+.mem_step:after, .overv_box .secBox .point_box:after,
+.overv_box .wrap_bor .mem_priv_info .myGrade:after
+{display:block; content:""; clear:both;}
+
+
+/* member_title */
+.wrap_bor > .tit_area{text-align:center; margin:33px 20px 38px;}
+.wrap_bor > .tit_area.mg1{margin-bottom:72px;}
+.wrap_bor > .tit_area.mg2{margin-bottom:48px;}
+.wrap_bor > .mem_step{margin-bottom:41px;}
+.wrap_bor > .tit_area .tit02dep{font-weight:normal; margin-bottom:10px; color:#222;}
+.wrap_bor > .tit_area .txt_dsc.ls{color:#666;}
+
+/* member_Step */
+.mem_step{border-bottom:1px solid #e8e8e8; background:url(/front/img/com/bg_stepShdw.gif) left bottom repeat-x;}
+.mem_step li{float:left; width:197px; height:62px; padding:0 20px; border-left:1px solid #e3e3e3; color:#999;}
+.mem_step li.on{background:#f0f0f0; color:#222;}
+.mem_step li:first-child{border:none;}
+.mem_step li span{float:right;}
+.mem_step li span:first-child{float:left; margin-top:-2px; font-weight:bold;}
+
+/* content_size */
+.boxShdw .contArea, .boxShdw .contArea .conSize1, .boxShdw .contArea .conSize2{width:710px; margin-left:auto; margin-right:auto;}
+.boxShdw .contArea .conSize1{width:290px;}
+.boxShdw .contArea .conSize2{width:700px;}
+
+/* content_btn */
+.conSize1 .btn_set.btn_stA {width:100%; padding:0;}
+
+/* content_formStyle */
+.conSize1 input[type="text"], .conSize1 input[type="password"]{width:139px; padding:2px 0 3px; height:29px; border:1px solid #9999; color:#999;}
+.conSize1 select{height:30px;}
+
+/* table_line Style */
+.tbline{border-top:1px solid #999;}
+.tbline tbody tr th, .tbline tbody tr td{border-bottom:1px solid #e5e5e5;}
+.tbline tbody tr th{font-weight:bold; color:#222; text-align:left;}
+.tbline tbody tr th span, .tbline tbody tr td .td_cont{display:block; padding:12px 0;}
+.tbline tbody tr td .td_cont{color:#666; text-align:right; padding-left:5px;}
+
+/* member_text_bottom */
+.info_text {margin:9px 0 5px 0;}
+.info_text a {color:#666;}
+
+/*menber_conSize1_margin*/
+.conSize1 .dep03Sec {margin-bottom: 13px;}
+
+/*card_infolist _ split*/
+.card_infolst{}
+.card_infolst .dep03Sec{overflow:hidden;}
+.card_infolst h3 {float:left; width:150px; padding-right:30px; font-size:16px;}
+.card_infolst .colSec{float:left; width:530px;}
+.card_infolst .dep03Sec .split.col2 .colSec {width:255px;}
+
+/*finish_content*/
+.finishCon .tit_area .tit02dep{font-size:18px; font-weight:bold;}
+
+/*finish_content02 margin_box*/
+.finishCon02 .tit_area{margin:18px;}
+.finishCon02 .txt_dsc{font-size:15px; line-height:28px;}
+.finishCon02 .tit_area .tit02dep{font-size:15px; font-weight:normal;}
+/*table_top*/
+.finishCon02 .tbl_wrap{margin-top:15px;}
+
+/*table _big text_won*/
+.won{font-size:18px; color:#666; font-weight:bold;}
+
+.cardbg{position:relative; height:190px; display:inline-block; *display:inline; zoom:1; background:url(/front/img/com/member/bg_card_shdw.png) center bottom no-repeat; text-align:center;}
+.bl{background-color:#133784;}
+.yegr {background-color:#625c41;}
+.rebw{background-color:#280e09;}
+.gn {background-color:#076324;}
+.bk {background-color:#101011;}
+/* cardInfo import */
+.cardInfo input{position:absolute; height:auto; padding:0; border:none; background:transparent; color:#959595; font-weight:bold; text-indent:0;}
+.cardInfo .name{top:110px; left:18px; width:180px;}
+.cardInfo .num{top:129px; left:18px; width:70px;}
+.cardInfo .date{top:129px; right:20px; width:110px; text-align:right;}
+
+/*My Privilege Overview_bgbox*/
+/* 12.23 | 강완 | 디자인 변경됨
+.overv_box .split{width:708px; padding-top:40px; background:url(/front/img/com/member/bg_overvBox.gif) no-repeat; border:1px solid #e8e8e8;	}
+.overv_box .split.col2 > .colSec {margin-left:0;}
+.overv_box .quotes_text {width:210px; height:auto; padding:0 0 30px 48px; margin:20px 0 0 40px; background-position:0px -500px; color:#fff; }
+.overv_box .quotes_text .more {display:inline-block; margin-left:10px; color:#fff; text-decoration:underline;}
+.overv_box .split.col2 > .colSec {width:320px}
+.overv_box .split.col2 > .colSec:first-child {width:345px; padding-right:10px;}
+.overv_box .mem_info {height:162px; padding:15px 0 0; overflow:hidden; color:#909090; font-size:15px;}
+.overv_box .mem_info .name_txt {display:block; font-size:24px;}
+.overv_box .mem_info .name_txt strong, .overv_box .mem_info .point_box strong {color:#fff;}
+.overv_box .mem_info .point_box {display:block; width:100%; background:url(/front/img/com/bg_dot2x1_ccc.png) 0 0 repeat-x; margin-top:18px; padding:17px 0 0;}
+
+
+.card_wrap {position:relative;}
+.card_wrap > span{position:absolute;  background:url(/front/img/com/member/bg_cardWrap.png) no-repeat;}
+.card_wrap > .posLT {width:54px; height:54px; left:35px; top:-16px;}
+.card_wrap > .posRB{width:54px; height:54px; right:25px; bottom:-25px; background-position:-45px -47px;}
+*/
+
+.overv_box .btn_area .btn_more {display:inline-block; padding-left:13px; margin-left:11px;  background:url(/front/img/com/bg_var_15x2_a2a2a2.png) 0 4px no-repeat; text-decoration:underline; color:#666;}
+.overv_box .btn_area .btn_more:first-child {background:none; padding:0; margin:0;}
+.overv_box .secBox {padding:30px;}
+.overv_box .secBox .name_txt {display:block; height:90px; overflow:hidden;}
+.overv_box .secBox .name_txt strong, .overv_box .secBox .point_box > span > strong {color:#8a7a6c;}
+.overv_box .secBox .name_txt strong {font-weight:normal;}
+.overv_box .secBox .point_box {padding-bottom:18px; margin-bottom:15px; background:url(/front/img/com/bg_dotted_line_2x1_aeaeae.gif) 0 100% repeat-x;}
+.overv_box .secBox .point_box > span {float:left;}
+.overv_box .secBox .point_box > .btn_area {float:right;}
+.overv_box .secBox .split.col2 > .colSec {width:522px; margin:0 0 0 30px;}
+.overv_box .secBox .split.col2 > .colSec:first-child {width:96px; margin:0}
+.overv_box .secBox .split.col2 > .colSec.txt_dsc .btn_more {font-weight:bold;}
+
+.overv_box .wrap_bor {padding:25px; margin:10px 0 43px;}
+.overv_box .wrap_bor .mem_priv_info {position:relative; margin-top:35px;}
+.overv_box .wrap_bor .mem_priv_info:first-child {margin:0;}
+.overv_box .wrap_bor .mem_priv_info dt {padding: 0 0 23px 0; background:url(/front/img/com/bg_dotted_line_2x1_e5e5e5.gif) 0 100% repeat-x;}
+.overv_box .wrap_bor .mem_priv_info .txt {padding:8px 0 0; text-align:right;}
+.overv_box .wrap_bor .mem_priv_info .num {position:absolute; top:0; right:0; padding-right:10px; background:url(/front/img/com/bg_qmark.png) 100% 3px no-repeat; color:#8a7a6c;}
+.overv_box .wrap_bor .mem_priv_info .num > strong {display:inline-block; padding-left:12px; background:url(/front/img/com/bg_qmark.png) 0 3px no-repeat;}
+.overv_box .wrap_bor .mem_priv_info .txt > strong {color:#222;}
+.overv_box .wrap_bor .mem_priv_info .txt .btn_set {margin-top:10px;}
+.overv_box .wrap_bor .mem_priv_info .myGrade {margin-top:30px; padding:0 0 0 59px; background:url(/front/img/ko/global/img_priv_myGrade.png) 0 0 no-repeat;}
+.overv_box .wrap_bor .mem_priv_info .myGrade li {float:left; width:135px; padding:28px 0 5px; text-align:center; font-weight:bold;}
+.overv_box .wrap_bor .mem_priv_info .myGrade li.on {background:url(/front/img/ko/global/img_priv_myGrade.png) -59px -89px no-repeat;}
+.overv_box .dep02Sec {position:relative;}
+.overv_box .dep02Sec .btn_more {position:absolute; right:0; top:10px; color:#444; text-decoration:underline; }
+.overv_box .lst03dep {margin-top:5px;}
+
+/* email-id convert */
+.email_convert .btn_set.btn_stB span {padding: 4px 0 7px;}
+
+/* sign in lpop */
+.popBody.box_sign .dep02Sec {margin-bottom:20px;} 
+
+/* join step */
+.mem_cont .tit_area .right_txt .es span {color:#606060;}
+.mem_cont .contArea.join_step4 .tbl_wrap {margin-top:35px}
+.mem_cont .contArea.join_step4 .btn_mult {margin-bottom:25px;}
+.mem_cont .secBox {font-size:11px;}
+.mem_cont .secBox .txtBl {margin-bottom:5px; color:#444}
+.box_sign {position:relative;}
+
+/* print temp privil card */
+.print_privArea .wrap_bor .cardbg {margin-bottom:30px;}
+
+/* membership level */
+.memberLevel .tbl_wrap + .lst03dep {margin-top:5px;}
+
+/* FONT-FAMILY */
+.overv_box .wrap_bor .mem_priv_info .num,
+.ex{font-family: Georgia;}
+.ex{font-family: malgun gothic;}
+
+/** FONT_SIZE **/
+/* font_size:9px */
+.ex{font-size:9px;}
+
+/* font_size:10px */
+.ex{font-size:10px;}
+
+/* font_size:12px */
+.overv_box .wrap_bor .mem_priv_info .txt,
+.ex{font-size:12px;}
+
+/* font_size:13px */
+.overv_box .secBox .split.col2 > .colSec.txt_dsc,
+.overv_box .secBox .split.col2 > .colSec.txt_dsc .btn_more,
+.overv_box .wrap_bor .mem_priv_info .txt.ls,
+.overv_box .wrap_bor .mem_priv_info .myGrade li,
+.overv_box .dep02Sec .btn_more,
+.ex {font-size:13px; }
+
+/* font-size:14px */
+.ex {font-size:14px;}
+
+/* font-size:15px */
+.overv_box .btn_area .btn_more,
+.overv_box .secBox, .overv_box .secBox .mem_info, .overv_box .mem_priv_info, .overv_box .secBox .point_box,
+.print_privArea .wrap_bor .txt_dsc,
+.finishCon .wrap_bor .txt_dsc,
+.ex {font-size:15px;}
+
+/* font-size:18px */
+.ex {font-size:18px;}
+
+/* font-size:20px */
+.ex {font-size:20px;}
+
+/* font_size:22px */
+.ex{font-size:22px;}
+
+/* font-size:23px */
+.ex {font-size:23px;}
+
+/* font-size:26px */
+.overv_box .secBox .name_txt,
+.overv_box .wrap_bor .mem_priv_info .num,
+.ex {font-size:26px;}
+
+/* font-size:35px */
+.ex {font-size:35px;}
+
+/* font-size:25px */
+.ex{font-size:25px;}
+
+/** LINE-HEIGHT **/
+/* line-height:13px */
+.ex1{line-height:13px;}
+
+/* line-height:18px */
+.ex{line-height:18px;}
+
+/* line-height:20px */
+.ex {line-height:20px;}
+
+/* line-height:21px */
+.ex {line-height:21px;}
+
+/* line-height:22px */
+.ex {line-height:22px;}
+
+/* line-height:24px */
+.ex {line-height:24px;}
+
+/* line-height:28px */
+.print_privArea .wrap_bor .txt_dsc,
+.finishCon .wrap_bor .txt_dsc,
+.ex {line-height:28px;}
+
+/* line-height:34px */
+.ex {line-height:34px;}
+
+/* line-height:47px */
+.ex {line-height:47px;}

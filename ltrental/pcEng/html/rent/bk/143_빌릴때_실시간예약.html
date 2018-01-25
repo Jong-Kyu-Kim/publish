@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html dir="ltr" lang="ko" class="ie7"><![endif]-->
+<!--[if IE 8]><html dir="ltr" lang="ko" class="ie8"><![endif]-->
+<!--[if IE 9]><html dir="ltr" lang="ko" class="ie9"><![endif]-->
+<html dir="ltr" lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1200, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.min.js"></script>
+	<script src="../../js/html5shiv.js"></script>
+	<script src="../../js/core.js"></script>
+	<script src="../../js/ui.js"></script>
+    <script src="../../js/calendar.js"></script>
+</head>
+ 
+<body>
+	<header>
+		<div class="inner_header">
+			<a href="#container" class="skip_nav">본문 바로가기</a>
+			<a href="#" class="logo"><h1><img src="../../images/common/logo.png" alt="Lotte rent-a-car"></h1></a>
+			<a href="#" class="side_logo"><img src="../../images/common/logo_hertz.png" alt="hertz"></a>
+			<ul id="extra_menu" class="extra_menu">
+				<!--// 비회원일 경우 -->
+				<li class="login"><a href="#">Login</a></li>
+				<li class="join"><a href="#">Register</a></li>
+
+				<!--// 회원일 경우 -->
+				<li class="logout"><a href="#">My Reservation</a></li>
+				<li class="mypage_quick">
+					<a class="btn_dropdown_menu pr0" href="#">Mypage</a>
+				</li>
+				<li class="language"><a href="#">KOREAN</a></li>
+			</ul>
+		</div>
+		<div id="gnb" class="gnb">
+			<ul class="menus">
+				<li class="menu idx1">
+					<a href="#">Reservations</a>
+				</li>
+				<li class="menu idx2">
+					<a href="#">Car rental</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">Rental information </a>
+							<ul>
+								<li>
+									<a href="#">Rental Cost Information</a>
+								</li>
+								<li>
+									<a href="#">Additional Rate</a>
+								</li>
+								<li>
+									<a href="#">Rental information for foreigner</a>
+								</li>
+								<li>
+									<a href="#">Overseas Reservation</a>
+								</li>
+								<li>
+									<a href="#">Chauffeured Service</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="menu idx3">
+					<a href="#">Location</a>
+				</li>
+			</ul>
+		</div>
+		<div class="gnb_open"></div>
+		<ul id="breadcrumb" class="breadcrumb">
+			<li class="path home"><a href="#"></a></li>
+			<li class="path">
+				<a class="dropdown_path_btn" href="#">Reservations</a>
+				<div class="dropdown_path">
+					<a class="active" href="#">빌릴 때</a>
+					<a href="#">살 때</a>
+					<a href="#">팔 때</a>
+					<a href="#">기기 장비렌탈</a>
+					<a href="#">이벤트</a>
+					<a href="#">고객센터</a>
+				</div>
+			</li>
+			<li class="path">
+				<a class="dropdown_path_btn" href="#">Book a Car</a>
+				<div class="dropdown_path">
+					<a class="active" href="#">빌릴 때</a>
+					<a href="#">살 때</a>
+					<a href="#">팔 때</a>
+					<a href="#">기기 장비렌탈</a>
+					<a href="#">이벤트</a>
+					<a href="#">고객센터</a>
+				</div>
+			</li>
+		</ul>
+	</header>
+	<div id="container">
+		<!-- content -->
+		<article class="content">
+			<h2>Reservations</h2>
+			<div class="content">
+                <!-- 본문삽입 --> 
+                <div class="wrap_tab">
+                    <ul class="tab_menu">
+                        <li class="active"><a href="#tab-1">Mainland Book a car</a></li>
+                        <li><a href="#tab-2">Jeju Book a car</a></li>
+                        <li><a href="#tab-3">Overseas Book a car</a></li>
+                    </ul>
+                    <div class="tab_content" id="tab-1">
+                        <div class="wrap_reservation">
+                            <div class="left1">
+                                 
+                                <section class="mb45"> 
+                                    <h3 class="mb20">Date & Time</h3> 
+                                    <div class="rent_popWrap big mt5 mb5"> <!-- 작은 화면시 big 클래스 제거 -->
+                                        <div class="innerBox rentBox">
+                                            <input type="hidden" id="" class="rent_date" value="">
+                                            <input type="hidden" id="" class="rent_hour" value="">
+                                            <input type="hidden" id="" class="rent_minute" value="">
+                                            <a href="#none" class="cal3 btn_layer noData"><!-- Default class="noData" -->
+                                                <span class="tit">Pickup Date & Time</span>
+                                                <span class="date"></span>
+                                                <span class="hour"></span>
+                                                <span class="minute"></span>
+                                            </a>
+                                        </div>
+                                        <div class="innerBox returnBox">
+                                            <input type="hidden" id="" class="return_date" value="">
+                                            <input type="hidden" id="" class="return_hour" value="">
+                                            <input type="hidden" id="" class="return_minute" value="">                                            
+                                            <a href="#none" class="cal3 btn_layer noData"><!-- Default class="noData" -->
+                                                <span class="tit">Return Date & Time</span>
+                                                <span class="date"></span>
+                                                <span class="hour"></span>
+                                                <span class="minute"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <ul class="txt_list mb30">
+                                        <li class="red">
+                                            대여시간이 24시간 이상인 경우에만 할인이 적용됩니다.
+                                        </li>
+                                    </ul>
+                                </section>
+                                <!-- //기간 선택 -->
+                                <!-- 지점 선택 -->
+                                <section class="mb40">
+                                    <h3 class="mb10">Location</h3>
+                                    <div class="deliveryWrap">						            
+                            
+                                        <input type="checkbox" name="" id="chk1" class="ds_check"><label for="chk1" class="mr5"><span class="icon"></span>Delivery Service (DS)</label>
+                                        <span>
+                                            <a href="layerEtcDv" class="layerEtcDv btn_tooltip btn_layer">툴팁</a>
+                                        </span>
+                                        <span class="btn_myStore"><a href="#layerMyStore" class="layerMyStore btn_layer btn_white">My Branch</a></span>
+
+                                        <!-- 딜리버리 서비스 체크시 노출 영역 -->
+                                        <div class="inner ds_radio">
+                                            <input type="radio" name="s_selLocation" id="s_selLocation1">
+                                            <label for="s_selLocation1" class="mr30"><span class="icon"></span>대여 + 반납</label>
+
+                                            <input type="radio" name="s_selLocation" id="s_selLocation2">
+                                            <label for="s_selLocation2" class="mr30"><span class="icon"></span>대여</label>
+
+                                            <input type="radio" name="s_selLocation" id="s_selLocation3">
+                                            <label for="s_selLocation3" class="mr30"><span class="icon"></span>반납</label>
+                                        </div>
+                                        <!-- //딜리버리 서비스 체크시 노출 영역 -->
+                                         
+                                    </div> 
+                                    
+                                    <div class="rent_popWrap areaBox">
+                                        <div class="innerBox rentBox">
+                                          <a href="#layerSelBranch" class="layerSelBranch noData btn_layer "><!-- Default class="noData" -->
+                                            <span class="tit">Pickup Location</span>
+                                          </a>
+                                        </div>
+                                        <div class="innerBox returnBox">
+                                          <a href="#layerSelBranchDS" class="layerSelBranch noData btn_layer">
+                                            <span class="tit">Return Location</span>
+                                            <!-- <span class="area">논현(학동역)</span> -->
+                                          </a>
+                                        </div>
+                                    </div>
+                                    <ul class="txt_list mb30">
+                                        <li class="red">
+                                            대여지점과 다른 지점으로 반납하실 경우 별도의 수수료가 부가됩니다.
+                                        </li>
+                                    </ul>
+                                     
+                                    
+                                     
+                                </section>
+                                <!-- //지점 선택 -->
+                                <!-- 차량 선택 -->
+                                <section>
+                                    <h3>Rental Car Type</h3>
+                                    <div class="sel_carWrap">
+                                        <div class="innerBox normal">
+                                            <div class="radio large">
+                                                <input type="radio" name="s_selCar" id="s_selCar1">
+                                                <label for="s_selCar1"><span class="icon"></span>일반예약</label>
+                                            </div>
+                                          <div class="desc_box">									  
+                                            <ul class="txt_list mt10">
+                                                <li class="gray">
+                                                    회원/비회원 모두 예약 가능
+                                                </li>
+                                                <li class="gray">
+                                                    특정 차종 지정 가능
+                                                </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                        <div class="innerBox saving">
+                                            <div class="radio large">
+                                                <input type="radio" name="s_selCar" id="s_selCar2">
+                                                <label for="s_selCar2"><span class="icon"></span>알뜰카</label>
+                                            </div>
+                                            <div class="desc_box">
+                                                <ul class="txt_list mt10">
+                                                    <li class="gray">
+                                                        회원(로그인)만 예약 가능
+                                                    </li>
+                                                    <li class="gray">
+                                                        차급만 선택 가능, 저렴한 가격
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- //차량 선택 --> 
+
+
+                            </div>
+                            <div class="right1">
+                                <div class="box scroll book">
+                                    <ul class="txt_list">
+                                        <li class="black f14">
+                                        <strong>기간 선택</strong>
+                                        <ul class="txt_list">
+                                            <li class="check f12">Reservation is available up to 60 days from pick date <br>(but, Incheon airport branch is available up to 90 days)
+                                            </li> 
+                                            <li class="check f12">대여시간이 24시간 이상인 경우에만 할인이 적용됩니다.</li> 
+                                        </ul>
+                                        </li> 
+                                        <li class="black f14">
+                                            <strong>지점 선택</strong>
+                                            <ul class="txt_list">
+                                                <li class="check f12">예약 시, 해당지점 영업시간 확인 바랍니다. </li> 
+                                                <li class="check f12">대여 및 반납지점 선택 시, 활성화되어 있지 않은 지점은 대여를 할 수 없습니다.</li> 
+                                                <li class="check f12">대여지점과 다른 지점으로 반납하실 경우 별도의 수수료가 부가됩니다.</li> 
+                                            </ul>
+                                        </li> 
+                                        <li class="black f14">
+                                            <strong>차량 선택</strong>
+                                            <ul class="txt_list">
+                                                <li class="check f12">차량 선택 시, 일반예약(차종 지정)과 알뜰카(차량 유형만 지정)</li> 
+                                                <li class="check f12">일반예약은 회원/비회원, 알뜰카는 회원만 예약 가능합니다.</li>  
+                                            </ul>
+                                        </li> 
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div>
+                        
+                        <div class="btn_wrap">
+                                <button type="button" class="btn_red btn_300">Search</button>
+                        </div>
+                        
+                    </div>
+                    <div class="tab_content" id="tab-2">
+                        <div class="wrap_reservation">
+                            <div class="left1">
+                                 
+                                <section class="mb45"> 
+                                    <h3 class="mb20">Date & Time</h3> 
+                                    <div class="rent_popWrap big mt5 mb5"> <!-- 작은 화면시 big 클래스 제거 -->
+                                        <div class="innerBox rentBox">
+                                            <input type="hidden" id="" class="rent_date" value="">
+                                            <input type="hidden" id="" class="rent_hour" value="">
+                                            <input type="hidden" id="" class="rent_minute" value="">
+                                            <a href="#none" class="cal3 btn_layer noData"><!-- Default class="noData" -->
+                                                <span class="tit">Pickup Date & Time</span>
+                                                <span class="date"></span>
+                                                <span class="hour"></span>
+                                                <span class="minute"></span>
+                                            </a>
+                                        </div>
+                                        <div class="innerBox returnBox">
+                                            <input type="hidden" id="" class="return_date" value="">
+                                            <input type="hidden" id="" class="return_hour" value="">
+                                            <input type="hidden" id="" class="return_minute" value="">                                            
+                                            <a href="#none" class="cal3 btn_layer noData"><!-- Default class="noData" -->
+                                                <span class="tit">Return Date & Time</span>
+                                                <span class="date"></span>
+                                                <span class="hour"></span>
+                                                <span class="minute"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <ul class="txt_list mb30">
+                                        <li class="red">
+                                            대여시간이 24시간 이상인 경우에만 할인이 적용됩니다.
+                                        </li>
+                                    </ul>
+                                </section>
+                                <!-- //기간 선택 -->
+                                <!-- 지점 선택 -->
+								<section class="mb40">
+									<h3 class="mb10">Location</h3>
+									<div class="deliveryWrap">						            
+
+										<input type="checkbox" name="" id="chk2" class="ds_check"><label for="chk2" class="mr5"><span class="icon"></span>빠른 서비스</label>
+										<span>
+											<a href="#layerService" class="layerService btn_layer btn_tooltip">툴팁</a>
+										</span>
+
+										<!-- 딜리버리 서비스 체크시 노출 영역  
+										<div class="inner ds_radio">
+											<input type="radio" name="s_selLocation" id="s_selLocation1">
+											<label for="s_selLocation1" class="mr30"><span class="icon"></span>대여 + 반납</label>
+
+											<input type="radio" name="s_selLocation" id="s_selLocation2">
+											<label for="s_selLocation2" class="mr30"><span class="icon"></span>대여</label>
+
+											<input type="radio" name="s_selLocation" id="s_selLocation3">
+											<label for="s_selLocation3" class="mr30"><span class="icon"></span>반납</label>
+										</div>
+									     -->
+
+									</div>
+
+                                    <div class="rent_popWrap areaBox">
+                                        <div class="innerBox rentBox">
+                                          <a href="#layerSelBranch" class="layerSelBranch noData btn_layer "><!-- Default class="noData" -->
+                                            <span class="tit">Pickup Location</span>
+                                          </a>
+                                        </div>
+                                        <div class="innerBox returnBox">
+                                          <a href="#layerSelBranchDS" class="layerSelBranch noData btn_layer">
+											<span class="tit">Return Location</span>
+											<!-- <span class="area">논현(학동역)</span> -->
+										  </a>
+                                        </div>
+                                    </div>
+                                    <ul class="txt_list mb30">
+                                        <li class="red">
+                                            대여지점과 다른 지점으로 반납하실 경우 별도의 수수료가 부가됩니다.
+                                        </li>
+                                    </ul>
+                                     
+                                </section>
+                                <!-- //지점 선택 -->
+                                <!-- 차량 선택 -->
+                                <section>
+                                    <h3>Rental Car Type</h3>
+                                    <div class="sel_carWrap">
+                                        <div class="innerBox normal">
+                                            <div class="radio large">
+                                                <input type="radio" name="s_selCar" id="s_selCar1">
+                                                <label for="s_selCar1"><span class="icon"></span>일반예약</label>
+                                            </div>
+                                          <div class="desc_box">									  
+                                            <ul class="txt_list mt10">
+                                                <li class="gray">
+                                                    회원/비회원 모두 예약 가능
+                                                </li>
+                                                <li class="gray">
+                                                    특정 차종 지정 가능
+                                                </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                        <div class="innerBox saving">
+                                            <div class="radio large">
+                                                <input type="radio" name="s_selCar" id="s_selCar2">
+                                                <label for="s_selCar2"><span class="icon"></span>알뜰카</label>
+                                            </div>
+                                            <div class="desc_box">
+                                                <ul class="txt_list mt10">
+                                                    <li class="gray">
+                                                        회원(로그인)만 예약 가능
+                                                    </li>
+                                                    <li class="gray">
+                                                        차급만 선택 가능, 저렴한 가격
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- //차량 선택 --> 
+
+
+                            </div>
+                            <div class="right1">
+                                <div class="box scroll book">
+                                    <ul class="txt_list">
+                                        <li class="black f14">
+                                        <strong>기간 선택</strong>
+                                        <ul class="txt_list">
+                                            <li class="check f12">Reservation is available up to 60 days from pick date <br>(but, Incheon airport branch is available up to 90 days)
+                                            </li> 
+                                            <li class="check f12">대여시간이 24시간 이상인 경우에만 할인이 적용됩니다.</li> 
+                                        </ul>
+                                        </li> 
+                                        <li class="black f14">
+                                            <strong>지점 선택</strong>
+                                            <ul class="txt_list">
+                                                <li class="check f12">예약 시, 해당지점 영업시간 확인 바랍니다. </li> 
+                                                <li class="check f12">대여 및 반납지점 선택 시, 활성화되어 있지 않은 지점은 대여를 할 수 없습니다.</li> 
+                                                <li class="check f12">대여지점과 다른 지점으로 반납하실 경우 별도의 수수료가 부가됩니다.</li> 
+                                            </ul>
+                                        </li> 
+                                        <li class="black f14">
+                                            <strong>차량 선택</strong>
+                                            <ul class="txt_list">
+                                                <li class="check f12">차량 선택 시, 일반예약(차종 지정)과 알뜰카(차량 유형만 지정)</li> 
+                                                <li class="check f12">일반예약은 회원/비회원, 알뜰카는 회원만 예약 가능합니다.</li>  
+                                            </ul>
+                                        </li> 
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div>
+                        
+                        <div class="btn_wrap">
+                                <button type="button" class="btn_red btn_300">Search</button>
+                        </div>
+                        
+                    </div>
+                    <div class="tab_content" id="tab-3">
+                        <div class="wrap_reservation">
+							<div class="wrap_book_hertz">
+								<h3>Overseas Reservation</h3>
+								<ul class="txt_list">
+									<li class="black f14">Overseas Reservation through Hertz
+										<ul class="txt_list">               
+											<li class="check f13">LOTTE rent-a-car’s provides overseas reservation in conjunction with Hertz, the world leader of car rental.</li>
+											<li class="check f13">At LOTTE rent-a-car, you can avail yourself of services by Hertz, equipped with 7,000 business network and 550,000 vehicles over 150 countries.</li>
+											<li class="check f13">Customer Service : 82-1588-1230</li>
+										</ul>
+									</li>
+									<li class="black f14">Guidelines for use
+										<ul class="txt_list">               
+											<li class="check f13">How to make reservation - LOTTE rent-a-car web site / 82-1588-1230</li>
+											<li class="check f13">If you make a reservation for overseas Hertz via our web site, our representative will call you within 24 hours.</li>
+										</ul>
+									</li>
+									<li class="black f14">Points to note
+										<ul class="txt_list">               
+											<li class="check f13">To apply for overseas Hertz reservation, it is crucial that you inform us of dates and places for car pick-up and return, flight name and arrival time at the destination, grade of the cars to be rented.</li>
+											<li class="check f13">In case of making a reservation of overseas Hertz via LOTTE rent-a-car, most of the cars rented are with unlimited mileage. However, special vehicles (van, jeep or luxury cars) or special conditions (e.g. returning to other areas) may be subject to some restrictions, so you are advised to check it while making reservation.</li>
+										</ul>
+									</li>
+								</ul>
+								<div class="btn_wrap">
+										<button type="button" class="btn_red btn_300">해외 렌터카 예약하기</button>
+								</div>  
+							</div>
+
+					</div>
+				</div> 
+				<!--// 본문삽입 -->
+			</div>
+		</article>
+	</div>
+	<footer>
+		<div class="inner_footer">
+			<div class="sitemap">
+				<ul>
+					<li><a href="#">COMPANY</a> ㅣ</li>
+					<li><a href="#">USER AGREEMENT</a> ㅣ</li>
+					<li><a href="#">CONTACT US</a></li>
+				</ul>
+			</div>
+
+			<div class="sns">
+				<ul>
+					<li>
+						<a class="twitter" href="#" target="_blank"><img src="../../images/common/img_footer_sns_twitter.png"></a>
+					</li>
+					<li>
+						<a class="facebook" href="#" target="_blank"><img src="../../images/common/img_footer_sns_facebook.png"></a>
+					</li>
+					<li>
+						<a class="blog" href="#" target="_blank"><img src="../../images/common/img_footer_sns_blog.png"></a>
+					</li>					
+				</ul>
+			</div>
+
+			<div class="information">
+				<span class="entrepreneur_info">
+					LOTTE rental co.,ltd. | President : Pyo, Hyun-Myung | Business Registration # : 214-87-79183
+				</span>
+				<span class="address">Communication Service # : 2010-Gyunggi Anyang 420 | Address : 8F Shinwonvision Tower 898. Hogye-dong, Dongan-Gu, Anyang </span>
+				<span class="phone">Main Contact 1588-1230 | FAX 02-2141-9022</span>
+				<span class="copyright">copyright ⓒ 2016 LOTTE rental co.ltd.All Rrights Reserved.</span>
+			</div>
+
+			<div class="certifications">
+				<ul>
+					<li>
+						<img src="../../images/common/img_footer_cert_1.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_2.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_3.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_4.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_5.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_6.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_7.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_8.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_9.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_10.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_11.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_12.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_13.png">
+					</li>	
+				</ul>
+			</div>
+		
+			<div class="big-banner">
+				<img src="../../images/common/img_footer_big_banner.png">
+			</div>
+		</div>
+	</footer>
+    
+    
+    
+    
+    
+    
+    
+<!-- Layer : dimm -->
+<div class="dimm"></div>    
+
+<!-- Layer : 기간선택 -->
+<div id="cal3" class="layer layer_b">
+    <div class="layer_tit">
+        <h2>기간 선택</h2>
+        <a href="#"  class="btn_layer_close"><img src="../../../rent_pc/images/common/btn_layer_close.png" alt="레이어 팝업 닫힘"></a>
+    </div>
+    <div class="layer_con">
+        <div class="wrap_cal"> 
+            <div class="left_cal">
+                <h6>Pickup Date & Time</h6>
+                <div class="calendar_b">
+                </div>
+                <div class="cal_date">
+                    <strong class="date"></strong>
+                    <span class="select">
+                        <select id="hh1" class="sel_hour">
+                            <option value="00" selected="selected">00h</option>
+                            <option value="01">01h</option>
+                            <option value="02">02h</option>
+                            <option value="03">03h</option>
+                        </select>
+                    </span>
+                    <span class="select">
+                        <select id="mm1" class="sel_minute">
+                            <option value="00" selected="selected">00m</option>
+                            <option value="01">01m</option>
+                            <option value="02">02m</option>
+                            <option value="03">03m</option>
+                        </select>
+                    </span>
+                </div>
+            </div>
+            <div class="arrow"></div>
+            <div class="right_cal">
+                <h6>Return Date & Time</h6>
+                <div class="calendar_b">
+                </div>
+                <div class="cal_date">
+                    <strong class="date">YYYY-MM-DD</strong>
+                    <span class="select">
+                        <select id="hh1" class="sel_hour">
+                            <option value="00" selected="selected">00h</option>
+                            <option value="01">01h</option>
+                            <option value="02">02h</option>
+                            <option value="03">03h</option>
+                        </select>
+                    </span>
+                    <span class="select">
+                        <select id="mm1" class="sel_minute">
+                            <option value="00" selected="selected">00m</option>
+                            <option value="01">01m</option>
+                            <option value="02">02m</option>
+                            <option value="03">03m</option>
+                        </select>
+                    </span>
+                </div>
+            </div>                                            
+        </div>
+        <ul class="txt_list ml100 mr100">
+            <li class="red">
+                Reservations are available in the Seoul vicinty, 4 hours from now, Daejeon/Chungcheong/Sejong/Gwangju/Jeolla are 4 hours from now, and other locations, 6 hours from now.
+            </li>
+        </ul>
+        <div class="layer_foot nb">
+            <a href="#" class="btn_layer_close btn_cal_confirm btn_red btn_200">confirm</a>
+            <!--
+                비활성화 시
+                <a href="#" class="btn_layer_close btn_cal_confirm btn_red btn_200 disabled">확인</a>
+            -->
+        </div>  
+    </div>
+</div> 
+    
+    
+    
+    
+
+<!-- Layer : 지점선택 -->
+<div id="layerSelBranch" class="layer layer_b">
+    <div class="layer_tit">
+        <h2>Location</h2>
+        <a href="#" class="btn_layer_close"><img src="../../images/common/btn_layer_close.png" alt="close"></a>
+    </div>
+    <div class="layer_con">
+        <!-- content -->
+        <div class="layer_padding"> 
+            <div class="wrap_branch">
+                <div class="left">
+                    <h6>Pickup Location</h6>
+                    <span class="select">
+                        <select id="" title="대여지점">
+                            <option selected="selected">선택하세요.</option>
+							<option>Seoul</option>
+                            <option>경기도</option>
+                            <option>충청도</option> 
+                        </select>
+                    </span>
+                    <div class="box scroll select_branch">
+                        <ul>
+                            <li>
+                                <input type="radio" id="rdo-1" name="radio1">
+                                <label for="rdo-1"><span class="icon"></span>Gangnam office</label>
+                                <a href="#layerBranchInfo" class="layerBranchInfo btn btn_white btn_layer">Branch Info</a>
+                            </li> 
+                            <li>
+                                <input type="radio" id="rdo-1" name="radio1" disabled>
+                                <label for="rdo-1"><span class="icon"></span>Nonhyun office</label>
+                                <a href="#layerBranchInfo" class="layerBranchInfo btn btn_white btn_layer">Branch Info</a>
+                            </li>
+                            <li>
+                                <input type="radio" id="rdo-1" name="radio1">
+                                <label for="rdo-1"><span class="icon"></span>Yeuido branch</label>
+                                <a href="#layerBranchInfo" class="layerBranchInfo btn btn_white btn_layer">Branch Info</a>
+                            </li>
+                            <li>
+                                <input type="radio" id="rdo-1" name="radio1">
+                                <label for="rdo-1"><span class="icon"></span>강남</label>
+                                <a href="#layerBranchInfo" class="layerBranchInfo btn btn_white btn_layer">Branch Info</a>
+                            </li>
+                            <li>
+                                <input type="radio" id="rdo-1" name="radio1">
+                                <label for="rdo-1"><span class="icon"></span>강남</label>
+                                <a href="#layerBranchInfo" class="layerBranchInfo btn btn_white btn_layer">Branch Info</a>
+                            </li>
+                            <li>
+                                <input type="radio" id="rdo-1" name="radio1">
+                                <label for="rdo-1"><span class="icon"></span>강남</label>
+                                <a href="#layerBranchInfo" class="layerBranchInfo btn btn_white btn_layer">Branch Info</a>
+                            </li>
+                            <li>
+                                <input type="radio" id="rdo-1" name="radio1">
+                                <label for="rdo-1"><span class="icon"></span>강남</label>
+                                <a href="#layerBranchInfo" class="layerBranchInfo btn btn_white btn_layer">Branch Info</a>
+                            </li>
+                            <li>
+                                <input type="radio" id="rdo-1" name="radio1">
+                                <label for="rdo-1"><span class="icon"></span>강남</label>
+                                <a href="#layerBranchInfo" class="layerBranchInfo btn btn_white btn_layer">Branch Info</a>
+                            </li>
+                            <li>
+                                <input type="radio" id="rdo-1" name="radio1">
+                                <label for="rdo-1"><span class="icon"></span>강남</label>
+                                <a href="#layerBranchInfo" class="layerBranchInfo btn btn_white btn_layer">Branch Info</a>
+                            </li>
+                            <li>
+                                <input type="radio" id="rdo-1" name="radio1">
+                                <label for="rdo-1"><span class="icon"></span>강남</label>
+                                <a href="#layerBranchInfo" class="layerBranchInfo btn btn_white btn_layer">Branch Info</a>
+                            </li>
+                        </ul>
+                    </div> 
+                    <ul class="txt_list mt5">
+                        <li class="red">
+                           대여지점과 다른 지점으로 반납하실 경우 별도의 수수료가 부가됩니다.
+                        </li> 
+                    </ul>
+                </div>
+                <div class="right"> 
+                    <h6>Return Location</h6>
+                    <input type="checkbox" id="check1-1">
+                    <label for="check1-1" class=""><span class="icon"></span>대여/반납지점 동일 </label> 
+                     
+                    <span class="select">
+                        <select id="" title="반납지점">
+                            <option selected="selected">선택하세요.</option>
+							<option>Seoul</option>
+                            <option>경기도</option>
+                            <option>충청도</option> 
+                        </select>
+                    </span>
+                    <div class="box scroll select_branch">
+                        <ul>
+                            <li>
+                                <input type="radio" id="rdo-1" name="radio1">
+                                <label for="rdo-1"><span class="icon"></span>Gangnam Office</label>
+                                <a href="#layerBranchInfo" class="layerBranchInfo btn btn_white btn_layer">Branch Info</a>
+                            </li>
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+            
+        </div>
+        <!-- //content -->
+        <div class="layer_foot">
+            <a href="#" class="btn_red btn_200">confirm</a>
+        </div>
+         
+    </div>
+</div>
+
+
+
+    
+<!-- Layer : 딜리버리 서비스(DS)  지점선택 -->
+<div id="layerSelBranchDS" class="layer layer_b">
+    <div class="layer_tit">
+        <h2>Delivery Service (DS) 지점선택</h2>
+        <a href="#" class="btn_layer_close"><img src="../../images/common/btn_layer_close.png" alt="close"></a>
+    </div>
+    <div class="layer_con">
+        <!-- content -->
+        <p class="txt_summary">딜리버리 서비스는 예약시점 기준으로 대여일시가 48시간이후 일 경우 예약이 가능한 서비스이며, <br>딜리버리 주소지 입력 시, 서비스 가능 지점이 설정됩니다.</p>
+        <div class="layer_padding"> 
+            <div class="wrap_branch">
+                <div class="left">
+                    <h6>Pickup Location</h6>
+                    <div class="addr">
+                        <p class="mb10">
+                            <input type="text" name="" id="" value="" style="width:90px;">
+                            <a href="#none" class="btn btn_black ml5">Zip code</a>                         
+                        </p>
+                        <p class="mb10">
+                        <input type="text" name="" id="" value="" style="width:100%;">
+                        </p>
+                        <p class="mb10">
+                        <input type="text" name="" id="" value="" placeholder="상세주소를 입력해 주세요." style="width:100%;">
+                        </p>
+                    </div>
+                     
+                    <span class="select">
+                        <select id="" title="대여지점">
+                            <option selected="selected">선택하세요.</option>
+							<option>Seoul</option>
+                            <option>경기도</option>
+                            <option>충청도</option> 
+                        </select>
+                    </span>
+                    <div class="box scroll select_branch type3">
+                        <ul>
+                            <li>
+                                <input type="radio" id="rdo-1" name="radio1">
+                                <label for="rdo-1"><span class="icon"></span>Gangnam office</label>
+                                <a href="#layerBranchInfo" class="layerBranchInfo btn btn_white btn_layer">Branch Info</a>
+                            </li>
+                        </ul>
+                    </div> 
+                    <ul class="txt_list mt5">
+                        <li class="red">
+                           대여지점과 다른 지점으로 반납하실 경우 별도의 수수료가 부가됩니다.
+                        </li> 
+                    </ul>
+
+
+
+					<!-- Default 
+                    <span class="select">
+                        <select id="" title="">
+                            <option selected="selected">선택하세요.</option>
+							<option>서울</option>
+                            <option>경기도</option>
+                            <option>충청도</option> 
+                        </select>
+                    </span>
+                    <div class="box scroll select_branch type3">
+                        <ul>
+                            <li>
+                                <input type="radio" id="rdo-1" name="radio1">
+                                <label for="rdo-1"><span class="icon"></span>강남</label>
+                                <a href="#layerBranchInfo" class="layerBranchInfo btn btn_white btn_layer">지점안내</a>
+                            </li>
+                        </ul>
+                    </div> 
+                    <ul class="txt_list mt5">
+                        <li class="red">
+                           대여지점과 다른 지점으로 반납하실 경우 별도의 수수료가 부가됩니다.
+                        </li> 
+                    </ul>
+					 
+					 // Default -->
+
+                </div>
+                <div class="right"> 
+                    <h6>Return Location</h6>
+                    <input type="checkbox" id="check1-1" disabled>
+                    <label for="check1-1" class=""><span class="icon"></span>대여/반납지점 동일 </label> 
+                    
+                    <div class="addr">
+                        <p class="mb10">
+                            <input type="text" name="" id="" value="" style="width:90px;">
+                            <a href="#none" class="btn btn_black ml5">Zip code </a>                         
+                        </p>
+                        <p class="mb10">
+                        <input type="text" name="" id="" value="" style="width:100%;">
+                        </p>
+                        <p class="mb10">
+                        <input type="text" name="" id="" value="" placeholder="상세주소를 입력해 주세요." style="width:100%;">
+                        </p>
+                    </div>
+                     
+                    <span class="select">
+                        <select id="" title="반납지점">
+                            <option selected="selected">선택하세요.</option>
+							<option>Seoul</option>
+                            <option>경기도</option>
+                            <option>충청도</option> 
+                        </select>
+                    </span>
+                    <div class="box scroll select_branch type3">
+                        <ul>
+                            <li>
+                                <input type="radio" id="rdo-1" name="radio1">
+                                <label for="rdo-1"><span class="icon"></span>Gangnam Office</label>
+                                <a href="#layerBranchInfo" class="layerBranchInfo btn btn_white btn_layer">Branch Info</a>
+                            </li>
+                        </ul>
+                    </div> 
+
+
+					<!-- Default 
+                    <span class="select">
+                        <select id="" title="">
+                            <option selected="selected">선택하세요.</option>
+							<option>서울</option>
+                            <option>경기도</option>
+                            <option>충청도</option> 
+                        </select>
+                    </span>
+                    <div class="box scroll select_branch type3">
+                        <ul>
+                            <li>
+                                <input type="radio" id="rdo-1" name="radio1">
+                                <label for="rdo-1"><span class="icon"></span>강남</label>
+                                <a href="#layerBranchInfo" class="layerBranchInfo btn btn_white btn_layer">지점안내</a>
+                            </li>
+                        </ul>
+                    </div> 
+                    <ul class="txt_list mt5">
+                        <li class="red">
+                           대여지점과 다른 지점으로 반납하실 경우 별도의 수수료가 부가됩니다.
+                        </li> 
+                    </ul>
+					 
+					 // Default -->
+
+
+                </div>
+            </div>
+            
+        </div>
+        <!-- //content -->
+        <div class="layer_foot">
+            <a href="#" class="btn_red btn_200">confirm</a>
+        </div>
+         
+    </div>
+</div>
+
+    
+
+<!-- Layer : 지점 안내 -->
+<div id="layerBranchInfo" class="layer layer_b">
+    <div class="layer_tit">
+        <h2>Branch Info</h2>
+        <a href="#" class="btn_layer_close"><img src="../../images/common/btn_layer_close.png" alt="close"></a>
+    </div>
+    <div class="layer_con">
+        <!-- content -->
+        <div class="top_info noBorderT"> 
+            <div class="inner"> 
+                <p class="txt txt_point">해당 지점은 선택하신 기간에 이용할 수 없는 지점으로 대여/반납일시를 변경하여 주시기 바랍니다.
+.</p>
+            </div>
+        </div>
+        <div class="layer_padding">  
+            <h3 class="noBorder">Gangnam office Info</h3>
+            <div class="grid mb20">
+                <table class="tb_row">
+                    <caption></caption>
+                    <colgroup>
+                        <col style="width:105px">
+                        <col style="width:auto"> 
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="left">Address</th>
+                            <td class="left">
+                                <ul class="txt_list">
+                                    <li class="bul f14">Seoul Medical Center, 171-1 Samseong-dong, Gangnam-gu, Seoul</li>
+                                </ul>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <th scope="row" class="left">Business Hours</th>
+                            <td class="left">
+                                <ul class="txt_list">
+                                    <li class="bul f14">Day - 00:00~24:00 / Weekend(holiday) - 00:00~24:00</li>
+                                </ul>
+							</td>
+                        </tr> 
+                        <tr>
+                            <th scope="row" class="left">Traffic Facilities</th>
+                            <td class="left">
+                                <ul class="txt_list">
+                                    <li class="bul f14">Subway Line No.2, Samsung Station Exit No.7, Go straight ahead for 50m then Turn right ahead for 150m in Seoul Medical Center</li>
+                                </ul>
+                            </td>
+                        </tr> 
+                    </tbody>
+                </table>
+            </div>
+            <div class="map">
+                지도 크기 : width:928px; / height:226px 
+            </div> 
+            <div class="btn_right"><a href="#" class="btn btn_black">Print</a></div>
+            
+        </div>
+        <!-- //content -->
+        <div class="layer_foot">
+            <a href="#" class="btn_red btn_200">confirm</a>
+        </div> 
+    </div>
+</div>
+
+ 
+<!-- Layer : 나의 지점 -->
+<div id="layerMyStore" class="layer layer_s">
+    <div class="layer_tit">
+        <h2>My Branch</h2>
+        <a href="#" class="btn_layer_close"><img src="../../images/common/btn_layer_close.png" alt="close"></a>
+    </div>
+    <div class="layer_con">
+        <!-- content -->
+        <div class="layer_padding">
+            <p class="txt mb20">If you select a point on the My Branch list rent my point and return point is automatically registered.</p>
+			<div class="grid">
+				<table class="tb_col">
+					<caption></caption>
+					<colgroup>
+						<col style="width:40px">
+						<col style="width:45%">
+						<col style="width:auto"> 
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col"></th>
+							<th scope="col">My Local</th>
+							<th scope="col">My Branch</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<input type="radio" id="radio1-1" name="radio1">
+						        <label for="radio1-1"><span class="icon"></span></label>
+							</td>
+							<td>Seoul</td>
+							<td>Gangnam office</td>
+						</tr>
+						<tr>
+							<td colspan="3" class="noStore">나의 지점이 없습니다. 등록해주세요. </td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+        </div>
+        <!-- //content -->
+        <div class="layer_foot">
+            <a href="#" class="btn_red btn_200">선택지점 등록</a>
+			<!-- <a href="#" class="btn_red btn_200">나의 지점 등록</a> -->
+        </div> 
+    </div>
+</div>
+  
+	
+
+<!-- Layer : 딜리버리서비스 안내 -->
+<div id="layerEtcDv" class="layer layer_b">
+    <div class="layer_tit">
+        <h2>딜리버리 서비스(DS) 안내</h2>
+        <a href="#" class="btn_layer_close"><img src="../../images/common/btn_layer_close.png" alt="close"></a>
+    </div>
+    <div class="layer_con">
+        <!-- content -->
+        <div class="layer_padding">   
+            
+            <h3 class="noBorder">딜리버리 서비스(DS) 이용고객 안내 사항</h3>
+            <div class="grid">
+                <table class="tb_row">
+                    <caption></caption>
+                    <colgroup>
+                        <col style="width:205px">
+                        <col style="width:auto"> 
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">대상</th>
+                            <td>롯데렌터카 회원(비회원은 회원가입 후 이용 가능)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">이용 금액</th>
+                            <td>정상가 : 15,000원 / 대여, 반납 별도</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">결제 방법</th>
+                            <td>임차인 본인 신용카드(법인카드 포함)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">서비스 가능 시간 및 지점</th>
+                            <td>
+                                <ul class="txt_list">
+                                    <li class="bul f14">
+                                        오전 09:30~18:00 (대여시간으로부터 48시간 이전 예약 필수) 
+                                    </li>
+                                    <li class="bul f14">
+                                        대여시간이 48시간 이내일 경우 지점으로 문의 후 딜리버리 서비스 가능여부 확인  
+                                        <ul class="txt_list">
+                                            <li class="gray">         
+                                            강남 지점 (02-3443-8000)
+                                            </li>
+                                            <li class="gray">
+                                            논현 지점 (02-511-1001)
+                                            </li>
+                                            <li class="gray">
+                                            잠실 지점 (02-2203-8000)
+                                            </li>
+                                            <li class="gray">
+                                            고속터미널 지점 (02-3444-8000)
+                                            </li>
+                                            <li class="gray">
+                                            구로 지점 (02-3664-8000)
+                                            </li>
+                                            <li class="gray">
+                                            강북지점 (02-922-8000)
+                                            </li>
+                                            <li class="gray">
+                                            서울역 지점 (02-715-0010)
+                                            </li>
+                                            <li class="gray">
+                                            여의도 지점 (02-785-8000)
+                                            </li>
+                                        </ul>    
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <ul class="txt_list mt5">
+                <li class="red">
+                    딜리버리 서비스는 고객연락 두절 시, 서비스 이용이 불가합니다. 고객연락처를 정확히 기입해 주시기 바랍니다.
+                </li>
+            </ul>
+            
+            <hr class="line">
+            
+            <ul class="txt_list mb50">
+                <li class="gray f14">
+                    DS는 <span class="txt_black">회원전용 서비스</span> 입니다.(비회원의 경우, 회원가입 후 이용 가능합니다.) 
+                    <ul class="txt_list mt5">
+                        <li class="gray f12">
+                            단, i-PIN인증 회원은 임대차계약서 작성을 위하여 주민번호 생성 작업을 요청 드릴 수 있습니다.
+                        </li>
+                    </ul>
+                </li>
+                <li class="gray f14">
+                    DS는 <span class="txt_black">예약자와 임차인이 동일</span> 하여야 하며, 상이할 경우 대여가 제한 될 수 있습니다.
+                </li>
+                <li class="gray f14">
+                    DS이용 시, 일부 지점은 배송시간이 제한 될 수 있습니다. <span class="txt_black"> (서비스 가능지역: 서울 전 지역)</span> 
+                </li>
+                <li class="gray f14">
+                    DS요금은 편도 15,000원(1회)이며, 20Km(반납시)초과시 추가요금이 부과됩니다.
+                </li>
+                <li class="gray f14">
+                    DS는 <span class="txt_black">임차인 본인의 신용카드와 포인트 결제만 가능</span>합니다.(차량대여 시 신용정보조회를 동반하는 현금(현금/무료이용권) 결제 불가합니다.)
+                </li>
+                <li class="gray f14">
+                    DS는 차량/기사 준비 및 이동시간을 고려하여 <span class="txt_black">사전예약필수 항목이며, 변경요청 시간에 따라 서비스가 제한 될 수 있습니다.(예약: 48시간 전)</span>
+                </li>
+                <li class="gray f14">
+                DS는     교통사정에 따라, 고객님이 지정해주신 시점에서 20~30분 이내에 도착 가능합니다.
+                </li>
+                <li class="gray f14">
+                    <span class="txt_black">차량인수(계약서 작성완료)시점부터 렌탈 시간에 포함됩니다.</span>
+                </li>
+                <li class="gray f14">
+                    차량색상, 차량번호 등 <span class="txt_black">고객의  단순변심으로 인한 교환, 취소의 경우 DS요금이 청구됩니다.</span>
+                </li>
+                <li class="gray f14">
+                    예약  시간 및 위치변경은 <span class="txt_point">3시간 전</span>까지만 요청가능하며, 관련 내용은 <span class="txt_point">해당지점으로 직접 문의</span>하셔야 합니다.
+                </li>
+                <li class="gray f14">
+                    DS는 <span class="txt_point">조기반납/ 반납지연/ 기간연장 시, 지점&고객 센터로 사전연락 필수</span> 서비스 입니다. 
+                    <ul class="txt_list mt5">
+                        <li class="gray f12">
+                            <span class="txt_point">지점&고객 센터로 사전 연락하지 않은 경우, DS 서비스가 제한</span>될 수 있습니다.
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+            
+            <h3 class="mb25">지역별 딜리버리 서비스 가능 지점 안내</h3>
+            <h5>서울</h5>
+            <div class="grid">
+                <table class="tb_col">
+                    <caption></caption>
+                    <colgroup>
+                        <col style="width:200px"> 
+                        <col style="width:auto"> 
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col"  class="bgGray2">가능지점</th>
+                            <th scope="col" class="bgGray2">딜리버리 가능 지역</th> 
+                        </tr> 
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="left noBorderL">강남 지점</th>
+                            <td rowspan="2" class="left">강남구, 서초구, 송파구, 성동구</td> 
+                        </tr> 
+                        <tr>
+                            <th class="left noBorderL">논현 지점</th>
+                        </tr>
+                        <tr>
+                            <th class="left noBorderL">잠실 지점</th>
+                            <td class="left">송파구, 강동구</td> 
+                        </tr>
+                        <tr>
+                            <th class="left noBorderL">고속터미널 지점</th>
+                            <td class="left">서초구, 관악구, 동작구, 용산구, 강남구</td> 
+                        </tr>
+                        <tr>
+                            <th class="left noBorderL">구로 지점</th>
+                            <td class="left">금천구, 관악구, 양천구, 동작구</td> 
+                        </tr>
+                        <tr>
+                            <th class="left noBorderL">강북 지점</th>
+                            <td class="left">성북구, 강북구, 도봉구, 노원구</td> 
+                        </tr>
+                        <tr>
+                            <th class="left noBorderL">서울역 지점</th>
+                            <td class="left">용산구, 마포구, 중구, 종로구, 서대문구, 동대문구</td> 
+                        </tr>
+                        <tr>
+                            <th class="left noBorderL">여의도 지점</th>
+                            <td class="left">강서구, 양천구, 영등포구, 동작구, 용산구</td> 
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <ul class="txt_list mt5">
+                <li class="red">
+                    사고 발생 시 DS로 반납 불가하며, 해당지점으로 반납해주여야 합니다.
+                </li>
+                <li class="red">
+                    차량 반납이전에 발생한 주차비, 과태료는 고객님 부담입니다.
+                </li>
+                <li class="red">
+                    딜리버리 주소지 입력 시, 서비스 가능 지점이 설정됩니다.
+                </li>
+                <li class="red">
+                    예약문의 : 롯데렌터카 지점 및 고객 센터 (T. 1588-1230)
+                </li>
+            </ul>
+
+        </div>
+        <!-- //content --> 
+        <div class="layer_foot">
+            <a href="#" class="btn_red btn_200">확인</a>
+        </div>
+    </div>
+</div>
+    
+<!-- Layer : 빠른서비스 -->
+<div id="layerService" class="layer layer_b">
+    <div class="layer_tit">
+        <h2>빠른(Express) 서비스</h2>
+        <a href="#" class="btn_layer_close"><img src="../../images/common/btn_layer_close.png" alt="닫기"></a>
+    </div>
+    <div class="layer_con">
+        <!-- content -->
+        <div class="layer_padding">  
+            <h3>빠른(Express) 서비스 이용 안내</h3>
+            <p class="txt_express">
+                당사 회원중 홈페이지를 통해 사전에 예약, 개인 정보 수정/확인,이용요금 결제, 개인정보이용 동의서를 모두 완료한 고객에 한하여 차량 대여시 지점에서 간단한 본인확인(운전면허증)과 계약서 사인만으로 차량을 대여할 수 있는 획기적인 렌탈 서비스 입니다.
+                <span>빠른(Express) 서비스는 제주 지점에서만 운영됩니다. 내륙지점 확대 서비스는 향후 적용될 예정입니다.</span>
+            </p>
+            
+            <h3>이용 절차</h3>
+            <ol class="express_process">
+                <li class="list1">
+                    <strong>01. 예약</strong>
+                    <ul class="txt_list">
+                        <li class="black f14">홈페이지에서 빠른(Express) 차량예약을 한 뒤, 선결제, 개인정보 이용동의서, 개인정보 사전 업데이트(주소, 연락처,   면허정보 등)를 완료합니다.</li>
+                        <li class="red">홈페이지를 통해 예약하는 고객 및 상기 내용을 모두 완료한 고객에 한해       서비스를 이용하실 수 있습니다.</li>
+                    </ul>
+                </li>
+                <li class="list2">
+                    <strong>02. 지점 도착</strong>
+                    <ul class="txt_list">
+                        <li class="black f14">제주 공항 도착 후, 롯데렌터카 셔틀 버스 탑승 후 지점으로 이동합니다.</li>
+                        <li class="black f14">지점 도착 후 빠른(Express) 서비스 주차 안내도를 확인  (이름, 차번, 주차구역) 합니다.</li>
+                        <li class="black f14">해당 주차구역으로 이동합니다.</li>
+                        <li class="red">주차 전광판은 제주지점에서만 운영되고 있으며, 내륙 지점은 직원을 통한     대여구역 안내 후 이동하게 됩니다.</li>
+                    </ul>
+                </li>
+                <li class="list3">
+                    <strong>03. 차량 대여</strong>
+                    <ul class="txt_list">
+                        <li class="black f14">차량 확인후 외부, 주유, 기능 설명 등을 안내 받습니다.</li>
+                        <li class="black f14">이후 면허증 확인과 계약서에 사인 한 뒤 차량을 대여합니다.</li>
+                        <li class="red">지점에서 차량 대여시 추가사항 (후 결제카드 변경, 추가 운전자 등록,    공동 임차인 등록, 계약내용 수정 등)발생시 지점에서 추가 업무가 발생   할 수 있고, 차량 반납 프로세스는 일반 고객과 동일합니다.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <!-- //content -->
+        <div class="layer_foot">
+            <a href="#" class="btn_red btn_200">확인</a>
+        </div> 
+    </div>
+</div>
+
+
+    
+</body>
+</html>

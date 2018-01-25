@@ -1,0 +1,1022 @@
+<!doctype html>
+<html dir="ltr" lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+    <script src="../../js/jquery.sidebar.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    <script src="../../js/core.m.js"></script>
+    <script src="../../js/calendar.m.js"></script>
+    <script src="../../js/ui.js"></script>
+    
+</head>
+<body>
+	<header>
+		<a class="logo" href="#"><h1><img src="../../images/m/logo.png" alt="롯데렌터카 로고"></h1></a>
+		<div class="controls">
+			<a class="member_btn" href="#"></a>
+			<a id="drawer_btn" class="drawer_btn" href="#"></a>
+		</div>
+	</header>
+	<div class="sub_header">
+		<a class="back_btn" href="#"></a>
+		<span class="title">회원 특전</span>
+
+	</div>
+	<div id="container" class="bonus">
+        <!-- 본문삽입 -->
+        <div class="wrap_tab">
+            <ul class="tab_menu">
+                <li class="active"><a href="#member_bonus">회원 특전</a></li>
+                <li><a href="#tab2">포인트</a></li>
+                <li><a href="#tab2">보험 할인</a></li>
+                <li><a href="#tab2">해외 예약</a></li>
+            </ul>
+            <div id="member_bonus" class="tab_content mg">
+            	<div class="discount">
+	            	<h3 class="mt20">회원 할인 안내</h3>
+	            	<div class="discount_top">
+		            	<strong>등급별 최재 60％ 할인!</strong>
+		            	<p>(단기렌터카 이용 시, 결제금액의 35％~45％할인 해드립니다.)</p>
+	            	</div>
+					<div class="grid mt10">
+			            <table class="tb_col">
+			                <caption></caption>
+			                <colgroup>
+			                <col style="width:19%">
+			                <col style="width:17%">
+			                <col style="width:21%">
+			                <col style="width:21%">
+			                <col style="width:22%"> 
+			                </colgroup>
+			                <thead>
+			                    <tr>
+			                        <th scope="col" colspan="2">구분</th>
+			                        <th scope="col">일반회원</th>
+			                        <th scope="col">골드회원</th>
+			                        <th scope="col">더블골드<br>회원</th>
+			                    </tr>
+			                </thead>
+			                <tbody>
+			                    <tr>
+			                        <th class="noBorderL" rowspan="2" scope="row">할인율 (온라인 할인율)</th>
+			                        <th>평일</th>
+			                        <td>35% (40%)</td>
+			                        <td>40% (45%)</td>
+			                        <td>45% (50%)</td>
+			                    </tr>
+			                    <tr>
+			                        <th class="borderL">휴일<br>(주말)</th>
+			                        <td>35% (40%)</td>
+			                        <td>40% (45%)</td>
+			                        <td>45% (50%)</td>
+			                    </tr>
+			                </tbody>
+			            </table>
+			            <ul class="txt_list mt10">
+			            	<li class="red">휴일 적용 기준
+			            	<ul class="txt_list">
+			            		<li class="txt_point none">- 휴일(주말) : 금요일 12시 ~ 일요일 11시 59분</li>
+			            		<li class="txt_point none">- (공)휴일 : 전일 12시 ~ (공)휴일 당일 11시 59분</li>
+			            	</ul>
+			            	</li>
+			            	<li class="red">자가운전 차량 대여시(24시간 이상)에만 할인이 적용되며, 제주지역은 별도의 적용요금으로 적용하여 운영하고 있습니다.</li>
+			            	<li class="red">차량 대여료에 대한 할인은 중복할인이 적용되지 않습니다.<br>
+								예) 회원할인과 이벤트 할인 중복 적용 불가</li>
+			            </ul>
+			        </div>
+		        </div>
+		        <div class="mt40">
+		        	<h3>등급별 상세 특전</h3>
+					<div class="wrap_stab mt15">
+			            <ul class="stab_menu">
+			                <li class="active"><a href="#normal">일반회원</a></li>
+			                <li><a href="#gold">골드회원</a></li>
+			                <li><a href="#double">더블골드회원</a></li>
+			            </ul>
+					    <div class="stab_content grid mt15" id="normal">
+						    <table class="tb_row mb10">
+						        <caption></caption>
+						        <colgroup>
+						            <col style="width:100px">
+						            <col style="width:auto"> 
+						        </colgroup>
+						        <tbody>
+						            <tr>
+						                <th scope="row">자격조건</th>
+						                <td>홈페이지 회원가입</td>
+						            </tr>
+						            <tr>
+						                <th scope="row">무료 업그레이드 혜택</th>
+						                <td> 
+						                    <span class="txt_black">등급별 대여 횟수에 따라 차량 무료 업그레이드 서비스 제공</span>
+						                    <span class="block txt_gray mt5">
+						                        5번째, 15번째, 25번째, 35번째, 45번째, 55번째 (+10회 단위) 대여 시 소형 예약 차량 → 중형 업그레이드 중형 예약 차량 → 중대형 업그레이드
+						                    </span>
+						                    <ul class="txt_list">
+						                        <li class="red">
+						                            대형, 수입차, SUV/RV, 승합 차량은 업그레이드 대상에서 제외됩니다. 
+						                        </li>
+						                        <li class="red">
+						                            해당 차수만 이용 가능 (이월 없음)<br> 
+						                            ※ 업그레이드 예약 후, 다른 대여건이 먼저 발생하면 차수가 변경될 수 있으니 유의하시기 바랍니다. 
+						                        </li>
+						                        <li class="red">
+						                            업그레이드 서비스는 사전 예약제로 진행 (홈페이지 및 유선 예약 / 대여 6시간 전)됩니다.<br> 
+						                            ※ 해당 지점 업그레이드 가용 차량이 있는 경우에 한해 서비스 이용 가능<br> 
+						                            ※ 무료이용권 + 업그레이드 적용 시 실제 대여 할 업그레이드 후 차종과 소지하고 있는 무료이용권 차종이 동일할 때 사용 가능 </li>
+						                        <li class="red">
+						                            자세한 사항은 해당 지점으로 문의 바랍니다. 
+						                        </li>
+						                    </ul>
+						                </td>
+						            </tr>
+						            <tr>
+						                <th scope="row">무료 이용권  혜택</th>
+						                <td> 
+						                    <span class="txt_black">등급별 대여 횟수에 따라 1일(24시간) 무료 이용권 제공</span>
+						                    <span class="block txt_gray mt5">
+						                        누적 10회, 20회, 30회, 40회, 50회 (+10회 단위) 이용 후, 중형 무료 이용권 지급
+						                    </span>
+						                    <span class="block txt_gray">
+						                    	예) 5회차 차량 이용 후 모바일 무료 이용권이 지급되며, 6회 부터 유효기간 내 사용 가능
+						                    </span>
+						                    <ul class="txt_list">
+						                        <li class="red">
+						                            단, CDW 가입은 필수
+						                        </li>
+						                        <li class="red">
+						                            유효 기간 : 발행 후 6개월까지
+						                        </li>
+						                        <li class="red">
+						                            발송 방법 : SMS를 통한 무료 이용권 발송 (SMS 수신동의 고객에 한함) <br> 
+						                            ※ SMS 수신 미동의 고객은 마이 페이지 내정보수정에서 동의하여 주십시오.
+						                        </li>
+						                        <li class="red">
+						                            발송 시기 : 매월 초 일괄 발송 (예 : 1월 대상자는 2월 초 지급) 
+						                        </li>
+						                    </ul>
+						                </td>
+						            </tr>
+						            <tr>
+						                <th scope="row">생일 할인 혜택</th>
+						                <td> 
+						                    <span class="txt_black">50% 할인 제공</span>
+						                    <ul class="txt_list">
+						                        <li class="red">
+						                            단, 성수기 생일 할인 사용 제한
+						                        </li>
+						                        <li class="red">
+						                            7월 생일 → 6월에 생일 할인 사용
+						                        </li>
+						                        <li class="red">
+						                            8월 생일 → 9월에 생일 할인 사용
+						                        </li>
+						                    </ul>
+						                </td>
+						            </tr>
+						            <tr>
+						                <th scope="row">추가 할인 혜택</th>
+						                <td> 
+											<ul class="txt_list">
+											    <li class="bul">CDW 20% 할인</li> 
+											    <li class="bul">인터넷 예약 시 추가 5% 할인</li>
+											    <li class="bul"> 평일 추가 5% 할인</li>
+											</ul>
+						                </td>
+						            </tr>
+						        </tbody>
+						    </table>
+							<ul class="txt_list mb50">
+					            <li class="red"> 
+					                대여 실적은 임차인 보인(계약 당사자) 기준입니다.
+					            <li class="red"> 
+					                인터넷 예약은 동기간 동안 1회만 가능 합니다.
+					            </li>
+							</ul>	
+					    </div>
+					    <div class="stab_content grid mt15" id="gold">
+						    <table class="tb_row mb10">
+						        <caption></caption>
+						        <colgroup>
+						            <col style="width:100px">
+						            <col style="width:auto"> 
+						        </colgroup>
+						        <tbody>
+						            <tr>
+						                <th scope="row">자격조건</th>
+						                <td>일반회원으로 가입 후 <span class="txt_black">대여횟수가 7회 이상인 회원이며, 자격 부여 후 8회 대여 시 부터</span> 더블골드회원 혜택 적용</td>
+						            </tr>
+						            <tr>
+						                <th scope="row">무료 업그레이드 혜택</th>
+						                <td> 
+						                    <span class="txt_black">등급별 대여 횟수에 따라 차량 무료 업그레이드 서비스 제공 </span>
+						                    <span class="block txt_gray mt5">
+						                        5번째, 15번째, 25번째, 35번째, 45번째, 55번째 (+10회 단위) 대여 시 소형 예약 차량 → 중형 업그레이드 중형 예약 차량 → 중대형 업그레이드
+						                    </span>
+						                    <ul class="txt_list">
+						                        <li class="red">
+						                            대형, 수입차, SUV/RV, 승합 차량은 업그레이드 대상에서 제외됩니다. 
+						                        </li>
+						                        <li class="red">
+						                            해당 차수만 이용 가능 (이월 없음)<br> 
+						                            ※ 업그레이드 예약 후, 다른 대여건이 먼저 발생하면 차수가 변경될 수 있으니 유의하시기 바랍니다. 
+						                        </li>
+						                        <li class="red">
+						                            업그레이드 서비스는 사전 예약제로 진행 (홈페이지 및 유선 예약 / 대여 6시간 전)됩니다.<br> 
+						                            ※ 해당 지점 업그레이드 가용 차량이 있는 경우에 한해 서비스 이용 가능<br> 
+						                            ※ 무료이용권 + 업그레이드 적용 시 실제 대여 할 업그레이드 후 차종과 소지하고 있는 무료이용권 차종이 동일할 때 사용 가능
+						                        </li>
+						                        <li class="red">
+						                            자세한 사항은 해당 지점으로 문의 바랍니다. 
+						                        </li>
+						                    </ul>
+						                </td>
+						            </tr>
+						            <tr>
+						                <th scope="row">무료 이용권  혜택</th>
+						                <td> 
+						                    <span class="txt_black">등급별 대여 횟수에 따라 1일(24시간) 무료 이용권 제공</span>
+						                    <span class="block txt_gray mt5">
+						                    	누적 10회, 20회, 30회, 40회, 50회 (+10회 단위) 이용 후, 중형 무료 이용권 지급
+						                    </span>
+											<span class="block txt_gray">
+												예) 5회차 차량 이용 후 모바일 무료 이용권이 지급되며, 6회 부터 유효기간 내 사용 가능
+											</span>
+						                    <ul class="txt_list">
+						                        <li class="red">
+						                            단, CDW 가입은 필수
+						                        </li>
+						                        <li class="red">
+						                            유효 기간 : 발행 후 6개월까지
+						                        </li>
+						                        <li class="red">
+						                            발송 방법 : SMS를 통한 무료 이용권 발송 (SMS 수신동의 고객에 한함) <br> 
+						                            ※ SMS 수신 미동의 고객은 마이 페이지 내정보수정에서 동의하여 주십시오.<br>
+						                        </li>
+						                        <li class="red">
+						                            발송 시기 : 매월 초 일괄 발송 (예 : 1월 대상자는 2월 초 지급) 
+						                        </li>
+						                    </ul>
+						                </td>
+						            </tr>
+						            <tr>
+						                <th scope="row">생일 할인 혜택</th>
+						                <td> 
+						                    50% 할인 제공
+						                    <ul class="txt_list">
+						                        <li class="red">
+						                            단, 성수기 생일 할인 사용 제한
+						                        </li>
+						                        <li class="red">
+						                            7월 생일 → 6월에 생일 할인 사용
+						                        </li>
+						                        <li class="red">
+						                            8월 생일 → 9월에 생일 할인 사용
+						                        </li>
+						                    </ul>
+						                </td>
+						            </tr>	            
+						            <tr>
+						                <th scope="row">추가 할인 혜택</th>							                
+						                <td> 
+											<ul class="txt_list">
+											    <li class="bul">CDW 20% 할인</li> 
+											    <li class="bul">인터넷 예약 시 추가 5% 할인</li>
+											    <li class="bul">평일 추가 5% 할인</li>
+											</ul>
+						                </td>
+						            </tr>
+						            <tr>
+						                <th scope="row">부가 혜택</th>
+						                <td> 
+						                    승격축하 선물 증정
+						                    <span class="block txt_gray bul_grey mt5">
+						                        3천원 상당 모바일 상품권 (신규 승급 및 SMS 수신동의 고객에 한함)
+						                    </span>
+						                    <!--
+						                    <ul class="txt_list">
+						                        <li class="red">
+						                            제주 지역 제외
+						                        </li>
+						                        <li class="red">
+						                            24시간 사전 요청 건에 한해 서비스가 제공되며, 성수기 등의 기간에 지점 사정에 의해 서비스가 제한될 수 있습니다.
+						                        </li>
+						                    </ul>
+						                    -->
+						                </td>
+						            </tr>							            
+						        </tbody>
+						    </table>
+							<ul class="txt_list mb50">
+					            <li class="red"> 
+					                대여 실적은 임차인 보인(계약 당사자) 기준입니다.
+					            <li class="red"> 
+					                인터넷 예약은 동기간 동안 1회만 가능 합니다.
+					            </li>
+							</ul>	
+					    </div>
+					    <div class="stab_content grid mt15" id="double">
+						    <table class="tb_row mb10">
+						        <caption></caption>
+						        <colgroup>
+						            <col style="width:100px">
+						            <col style="width:auto"> 
+						        </colgroup>
+						        <tbody>
+						            <tr>
+						                <th scope="row">자격조건</th>
+						                <td>일반회원으로 가입 후 대여횟수가 40회 이상인 회원이며, 자격 부여 후 41회 대여 시 부터 더블골드회원 혜택 적용</td>
+						            </tr>
+						            <tr>
+						                <th scope="row">무료 업그레이드 혜택</th>
+						                <td> 
+						                    등급별 대여 횟수에 따라 차량 무료 업그레이드 서비스 제공 
+						                    <span class="block txt_gray mt5">
+						                        5번째, 15번째, 25번째, 35번째, 45번째, 55번째 (+10회 단위) 대여 시 소형 예약 차량 → 중형 업그레이드 중형 예약 차량 → 중대형 업그레이드
+						                    </span>
+						                    <ul class="txt_list">
+						                        <li class="red">
+						                            대형, 수입차, SUV/RV, 승합 차량은 업그레이드 대상에서 제외됩니다. 
+						                        </li>
+						                        <li class="red">
+						                            해당 차수만 이용 가능 (이월 없음)<br> 
+						                            ※ 업그레이드 예약 후, 다른 대여건이 먼저 발생하면 차수가 변경될 수 있으니 유의하시기 바랍니다. 
+						                        </li>
+						                        <li class="red">
+						                            업그레이드 서비스는 사전 예약제로 진행 (홈페이지 및 유선 예약 / 대여 6시간 전)됩니다.<br> 
+						                            ※ 해당 지점 업그레이드 가용 차량이 있는 경우에 한해 서비스 이용 가능<br> 
+						                            ※ 무료이용권 + 업그레이드 적용 시 실제 대여 할 업그레이드 후 차종과 소지하고 있는 무료이용권 차종이 동일할 때 사용 가능 </li>
+						                        <li class="red">
+						                            자세한 사항은 해당 지점으로 문의 바랍니다. 
+						                        </li>
+						                    </ul>
+						                </td>
+						            </tr>
+						            <tr>
+						                <th scope="row">무료 이용권  혜택</th>
+						                <td> 
+						                    등급별 대여 횟수에 따라 1일(24시간) 무료 이용권 제공
+						                    <span class="block txt_gray mt5">
+						                    	누적 10회, 20회, 30회, 40회, 50회 (+10회 단위) 이용 후, 중형 무료 이용권 지급
+						                    </span>
+											<span class="block txt_gray">
+												예) 5회차 차량 이용 후 모바일 무료 이용권이 지급되며, 6회 부터 유효기간 내 사용 가능
+											</span>
+						                    <ul class="txt_list">
+						                        <li class="red">
+						                            단, CDW 가입은 필수
+						                        </li>
+						                        <li class="red">
+						                            유효 기간 : 발행 후 6개월까지
+						                        </li>
+						                        <li class="red">
+						                            발송 방법 : SMS를 통한 무료 이용권 발송 (SMS 수신동의 고객에 한함) <br> 
+						                            ※ SMS 수신 미동의 고객은 마이 페이지 내정보수정에서 동의하여 주십시오.<br>
+						                            ※ 무료이용권 + 업그레이드 적용 시 실제 대여 할 업그레이드 후 차종과 소지하고 있는 무료이용권 차종이 동일할 때 사용 가능
+						                        </li>
+						                        <li class="red">
+						                            발송 시기 : 매월 초 일괄 발송 (예 : 1월 대상자는 2월 초 지급) 
+						                        </li>
+						                    </ul>
+						                </td>
+						            </tr>
+						            <tr>
+						                <th scope="row">생일 할인 혜택</th>
+						                <td> 
+						                    50% 할인 제공
+						                    <ul class="txt_list">
+						                        <li class="red">
+						                            단, 성수기 생일 할인 사용 제한
+						                        </li>
+						                        <li class="red">
+						                            7월 생일 → 6월에 생일 할인 사용
+						                        </li>
+						                        <li class="red">
+						                            8월 생일 → 9월에 생일 할인 사용
+						                        </li>
+						                    </ul>
+						                </td>
+						            </tr>
+						            <tr>
+						                <th scope="row">추가 할인 혜택</th>
+						                <td> 
+											<ul class="txt_list">
+											    <li class="bul">CDW 20% 할인</li> 
+											    <li class="bul">인터넷 예약 시 추가 5% 할인</li>
+											    <li class="bul">평일 추가 5% 할인</li>
+											</ul>
+						                </td>
+						            </tr>
+						            <tr>
+						                <th scope="row">부가 혜택</th>
+						                <td> 
+						                    승격축하 선물 증정
+						                    <span class="block txt_gray bul_grey mt5">
+						                        5천원 상당 모바일 상품권 (신규 승급 및 SMS 수신동의 고객에 한함)
+						                    </span>
+						                    <span class="block txt_gray bul_grey">
+						                        평일 3일(72시간)이상 대여 시 인근 지역(5Km이내) 무료 대여반납 서비스
+						                    </span>							                    
+						                    <ul class="txt_list">
+						                        <li class="red">
+						                            제주 지역 제외
+						                        </li>
+						                        <li class="red">
+						                            24시간 사전 요청 건에 한해 서비스가 제공되며, 성수기 등의 기간에 지점 사정에 의해 서비스가 제한될 수 있습니다.
+						                        </li>
+						                    </ul>
+						                </td>
+						            </tr>								            
+						        </tbody>
+						    </table>
+							<ul class="txt_list mb50">
+					            <li class="red"> 
+					                대여 실적은 임차인 보인(계약 당사자) 기준입니다.
+					            <li class="red"> 
+					                인터넷 예약은 동기간 동안 1회만 가능 합니다.
+					            </li>
+							</ul>									    				    	
+					    </div>
+			        </div>		        	
+		        </div>
+
+            </div>
+            <div class="tab_content mg" id="tab2">
+            	<div class="top_info mb20"> 
+		            <div class="inner">
+		                <p class="txt_gray">비밀번호를 찾기 위해 이용하는 <span class="txt_point">회원계정을 선택</span>해주세요.</p>
+		            </div>
+		        </div>
+		        <a href="#" class="lpoint"><span class="ir">L.Point</span></a>
+		        <a href="#" class="rent"><span class="ir">롯데렌터카</span></a>
+		        <ul class="txt_list mt15">
+		        	<li class="red">롯데렌터카 회원정책에 따라 아이디/비밀번호 찾기는 L.POINT 회원 또는 롯데렌터카 회원 선택 후 진행해주시기 바랍니다.</li>
+		        	<li class="red">L.POINT 회원은 L.POINT 사이트 이동 후 아이디/비밀번호 찾기가 가능합니다.</li>
+		        </ul>
+            </div>
+            <div class="tab_content mg" id="tab3">
+            </div>
+            <div class="tab_content mg" id="tab4">
+            </div>            
+        </div>  
+        <!-- //본문삽입 -->
+    </div>
+	<footer>
+		<div class="inner_footer">
+			<div class="upper">
+				<div class="sns">
+					<a class="twitter" href="#" target="_blank"><img src="../../images/m/footer_sns_twitter_img.png" alt="트위터"></a>
+					<a class="facebook" href="#" target="_blank"><img src="../../images/m/footer_sns_facebook_img.png" alt="페이스북"></a>
+					<a class="blog" href="#" target="_blank"><img src="../../images/m/footer_sns_blog_img.png" alt="블로그"></a>
+				</div>
+				<div class="phone">
+					<span class="">대표전화 1588-1230</span>
+					<span class="">해외 82-2-797-8000</span>
+				</div>
+			</div>
+		</div>
+	</footer>    
+	
+	<nav id="drawer" class="drawer">
+		<div class="drawer_header">
+			<a class="title" href="#">홈</a>
+			<button id="drawer_close_btn" class="drawer_close_btn"></button>
+		</div>
+		<div class="drawer_body">
+			<div class="menu_container">
+				<ul class="menus">
+					<li class="menu idx_1 active">
+						<a href="#"><span>빌릴 때</span></a>
+						<ul class="submenu">
+							<li>
+								<a class="child title slide_menu_btn" href="#">단기렌터카</a>
+								<ul class="slide_menu">
+									<li>
+										<a class="child" href="#">실시간 예약</a>
+									</li>
+									<li>
+										<a class="child slide_menu_btn" href="#">단기렌터카 서비스 안내</a>
+										<ul class="slide_menu">
+											<li>
+												<a href="#">대여 안내</a>
+											</li>
+											<li>
+												<a href="#">요금 안내</a>
+											</li>
+											<li>
+												<a href="#">부가 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">해외렌트 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">딜리버리 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">빠른 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">기사포함 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">보험대차 서비스 안내</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a class="child slide_menu_btn" href="#">롯데렌터카만의 서비스</a>
+										<ul class="slide_menu">
+											<li>
+												<a href="#">대여 안내</a>
+											</li>
+											<li>
+												<a href="#">요금 안내</a>
+											</li>
+											<li>
+												<a href="#">부가 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">해외렌트 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">딜리버리 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">빠른 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">기사포함 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">보험대차 서비스 안내</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a class="child title slide_menu_btn" href="#">월간렌터카</a>
+								<ul class="slide_menu">
+									<li>
+										<a class="child" href="#">대여 신청</a>
+									</li>
+									<li>
+										<a class="child" href="#">월간렌터카 서비스 안내</a>
+									</li>											
+								</ul>
+							</li>
+							<li>
+								<a class="child title" href="#">그린카(카셰어링)</a>
+							</li>							
+						</ul>
+					</li>
+					<li class="menu idx_2">
+						<a href="#"><span>살 때</span></a>
+						<ul class="submenu">
+							<li>
+								<a class="child title slide_menu_btn" href="#">신차 장기 렌터카</a>
+								<ul class="slide_menu">
+									<li>
+										<a class="child" href="#">간편 견적</a>
+									</li>
+									<li>
+										<a class="child" href="#">프로모션</a>
+									</li>
+									<li>
+										<a class="child slide_menu_btn" href="#">신차 장기렌터카 서비스 안내</a>
+										<ul class="slide_menu">
+											<li>
+												<a href="#">신차장기렌터카 안내</a>
+											</li>
+											<li>
+												<a href="#">이용절차 및 Q&amp;A</a>
+											</li>
+											<li>
+												<a href="#">LPG60 장기렌터카 안내</a>
+											</li>
+											<li>
+												<a href="#">전기차 장기렌터카 안내</a>
+											</li>
+											<li>
+												<a href="#">오토 체인지 프로그램</a>
+											</li>
+										</ul>									
+									</li>
+									<li>
+										<a class="child slide_menu_btn" href="#">롯데렌터카만의 서비스</a>
+										<ul class="slide_menu">
+											<li>
+												<a href="#">신차장기렌터카 안내</a>
+											</li>
+											<li>
+												<a href="#">이용절차 및 Q&amp;A</a>
+											</li>
+											<li>
+												<a href="#">LPG60 장기렌터카 안내</a>
+											</li>
+											<li>
+												<a href="#">전기차 장기렌터카 안내</a>
+											</li>
+											<li>
+												<a href="#">오토 체인지 프로그램</a>
+											</li>
+										</ul>									
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a class="child title slide_menu_btn" href="#">승계 게시판</a>
+								<ul class="slide_menu">
+									<li>
+										<a class="child" href="#">승계 매물 등록</a>
+									</li>
+									<li>
+										<a class="child" href="#">승계 매물 검색</a>
+									</li>
+									<li>
+										<a class="child" href="#">승계 게시판 서비스 안내</a>
+									</li>
+								</ul>								
+							</li>
+							<li>
+								<a class="child title slide_menu_btn" href="#">중고차 장기렌터카</a>	
+								<ul class="slide_menu">
+									<li>
+										<a class="child" href="#">중고차 장기렌터카 검색</a>
+									</li>
+									<li>
+										<a class="child" href="#">중고차 장기렌터카 서비스 안내</a>
+									</li>
+									<li>
+										<a class="child title" href="#">오토리스</a>
+									</li>
+								</ul>								
+							</li>
+							<li>
+								<a class="child title slide_menu_btn" href="#">법인 장기렌터카</a>	
+								<ul class="slide_menu">
+									<li>
+										<a class="child" href="#">견적 상담</a>
+									</li>
+									<li>
+										<a class="child" href="#">법인 장기렌터카 서비스 안내</a>
+									</li>
+								</ul>								
+							</li>
+						</ul>
+					</li>
+					<li class="menu idx_3">
+						<a href="#"><span>팔 때</span></a>
+						<ul class="submenu">
+							<li>
+								<a class="child title slide_menu_btn" href="#">중고차 팔기</a>
+								<ul class="slide_menu">
+									<li>
+										<a class="child" href="#">견적 상담</a>
+									</li>
+									<li>
+										<a class="child slide_menu_btn" href="#">중고차 경매 서비스 안내</a>
+										<ul class="slide_menu">
+											<li>
+												<a href="#">경매 출품 안내</a>
+											</li>
+											<li>
+												<a href="#">입찰 안내</a>
+											</li>
+											<li>
+												<a href="#">판매가 출품 보장 안내</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a class="child title" href="#">오토옥션</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu idx_4">
+						<a href="#"><span>기기/장비렌탈</span></a>
+						<ul class="submenu">
+							<li>
+								<a class="child title slide_menu_btn" href="#">기기/장비렌탈</a>
+								<ul class="slide_menu">
+									<li><a class="child" href="#">기기/장비렌탈 서비스 안내</a></li>
+									<li><a class="child" href="#">입찰 매각 공지</a></li>
+								</ul>
+							</li>
+						</ul>						
+					</li>
+					<li class="menu idx_5">
+						<a href="#"><span>이벤트</span></a>
+					</li>
+					<li class="menu idx_6">
+						<a href="#"><span>고객 센터</span></a>
+						<ul class="submenu">
+							<li><a class="child title slide_menu_btn" href="#">고객 센터</a>
+								<ul class="slide_menu">
+									<li>
+										<a class="child" href="#">지점 안내</a>
+									</li>
+									<li>
+										<a class="child" href="#">FAQ</a>
+									</li>
+									<li>
+										<a class="child" href="#">고객의견</a>
+									</li>
+									<li>
+										<a class="child" href="#">상담 문의</a>
+									</li>
+									<li>
+										<a class="child" href="#">공지&amp;뉴스</a>
+									</li>
+								</ul>
+							</li>
+						</ul>						
+					</li>
+					<li class="menu idx_7">
+						<a href="#"><span>롯데렌탈 APP</span></a>
+					</li>
+				</ul>
+			</div>
+			<!--
+			<div class="submenu_container">
+				<div class="submenus idx_1">
+					<div class="submenu">
+						<a class="child title slide_menu_btn" href="#">단기렌터카</a>
+						<div class="slide_menu">
+							<a class="child" href="#">실시간 예약</a>
+							<a class="child slide_menu_btn" href="#">단기렌터카 서비스 안내</a>
+							<div class="slide_menu">
+								<a href="#">대여 안내</a>
+								<a href="#">요금 안내</a>
+								<a href="#">부가 서비스 안내</a>
+								<a href="#">해외렌트 서비스 안내</a>
+								<a href="#">딜리버리 서비스 안내</a>
+								<a href="#">빠른 서비스 안내</a>
+								<a href="#">기사포함 서비스 안내</a>
+								<a href="#">보험대차 서비스 안내</a>
+							</div>
+							<a class="child slide_menu_btn" href="#">롯데렌터카만의 서비스</a>
+							<div class="slide_menu">
+								<a href="#">대여 안내</a>
+								<a href="#">요금 안내</a>
+								<a href="#">부가 서비스 안내</a>
+								<a href="#">해외렌트 서비스 안내</a>
+								<a href="#">딜리버리 서비스 안내</a>
+								<a href="#">빠른 서비스 안내</a>
+								<a href="#">기사포함 서비스 안내</a>
+								<a href="#">보험대차 서비스 안내</a>
+							</div>
+						</div>
+					</div>
+					<div class="submenu">
+						<a class="child title slide_menu_btn" href="#">월간렌터카</a>
+						<div class="slide_menu">
+							<a class="child" href="#">대여 신청</a>
+							<a class="child" href="#">월간렌터카 서비스 안내</a>
+						</div>
+					</div>
+					<div class="submenu">
+						<a class="child title" href="#">그린카(카셰어링)</a>
+					</div>
+				</div>
+				<div class="submenus idx_2">
+					<div class="submenu">
+						<a class="child title slide_menu_btn" href="#">신차 장기 렌터카</a>
+						<div class="slide_menu">
+							<a class="child" href="#">간편 견적</a>
+							<a class="child" href="#">프로모션</a>
+							<a class="child slide_menu_btn" href="#">신차 장기렌터카 서비스 안내</a>
+							<div class="slide_menu">
+								<a href="#">신차장기렌터카 안내</a>
+								<a href="#">이용절차 및 Q&A</a>
+								<a href="#">LPG60 장기렌터카 안내</a>
+								<a href="#">전기차 장기렌터카 안내</a>
+								<a href="#">오토 체인지 프로그램</a>
+							</div>
+							<a class="child slide_menu_btn" href="#">롯데렌터카만의 서비스</a>
+							<div class="slide_menu">
+								<a href="#">신차장기렌터카 안내</a>
+								<a href="#">이용절차 및 Q&A</a>
+								<a href="#">LPG60 장기렌터카 안내</a>
+								<a href="#">전기차 장기렌터카 안내</a>
+								<a href="#">오토 체인지 프로그램</a>
+							</div>
+							<a class="child title slide_menu_btn" href="#">승계 게시판</a>
+							<div class="slide_menu">
+								<a class="child" href="#">승계 매물 등록</a>
+								<a class="child" href="#">승계 매물 검색</a>
+								<a class="child" href="#">승계 게시판 서비스 안내</a>
+							</div>
+						</div>
+					</div>
+					<div class="submenu">
+						<a class="child title slide_menu_btn" href="#">중고차 장기렌터카</a>
+						<div class="slide_menu">
+							<a class="child" href="#">중고차 장기렌터카 검색</a>
+							<a class="child" href="#">중고차 장기렌터카 서비스 안내</a>
+							<a class="child title" href="#">오토리스</a>
+						</div>
+					</div>
+					<div class="submenu">
+						<a class="child title slide_menu_btn" href="#">법인 장기렌터카</a>
+						<div class="slide_menu">
+							<a class="child" href="#">견적 상담</a>
+							<a class="child" href="#">법인 장기렌터카 서비스 안내</a> 
+						</div>
+					</div>
+				</div>
+				<div class="submenus idx_3">
+					<div class="submenu">
+						<a class="child title slide_menu_btn" href="#">중고차 팔기</a>
+						<div class="slide_menu">
+							<a class="child" href="#">견적 상담</a>
+							<a class="child slide_menu_btn" href="#">중고차 경매 서비스 안내</a> 
+							<div class="slide_menu">
+								<a href="#">경매 출품 안내</a>
+								<a href="#">입찰 안내</a>
+								<a href="#">판매가 출품 보장 안내</a>
+							</div>
+						</div>
+					</div>
+					<div class="submenu">
+						<a class="child title" href="#">오토옥션</a>
+					</div>
+				</div>
+				<div class="submenus idx_4">
+					<div class="submenu">
+						<a class="child title slide_menu_btn" href="#">기기/장비렌탈</a>
+						<div class="slide_menu">
+							<a class="child" href="#">기기/장비렌탈 서비스 안내</a>
+							<a class="child" href="#">입찰 매각 공지</a>
+						</div>
+					</div>
+				</div>
+				<div class="submenus idx_5">
+					<div class="submenu">
+						<a class="child title" href="#">이벤트</a>
+					</div>
+				</div>
+				<div class="submenus idx_6">
+					<div class="submenu">
+						<a class="child title slide_menu_btn" href="#">고객 센터</a>
+						<div class="slide_menu">
+							<a class="child" href="#">지점 안내</a>
+							<a class="child" href="#">FAQ</a>
+							<a class="child" href="#">고객의견</a>
+							<a class="child" href="#">상담 문의</a>
+							<a class="child" href="#">공지&뉴스</a>
+						</div>
+					</div>
+				</div>
+				<div class="submenus idx_7">
+					<div class="apps">
+						<a class="app">
+							<div class="app_icon">
+								<img src="../images/m/app_sample_img.png">
+							</div>
+							<span class="app_title">그린카</span>
+						</a>
+						<a class="app">
+							<div class="app_icon">
+								<img src="../images/m/app_sample_img.png">
+							</div>
+							<span class="app_title">그린카</span>
+						</a>
+						<a class="app">
+							<div class="app_icon">
+								<img src="../images/m/app_sample_img.png">
+							</div>
+							<span class="app_title">그린카</span>
+						</a>
+						<a class="app">
+							<div class="app_icon">
+								<img src="../images/m/app_sample_img.png">
+							</div>
+							<span class="app_title">그린카</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			-->
+		</div>
+	</nav>
+    
+    
+    
+    
+<div id="cal1" class="layer layer_b">
+    <div class="layer_tit">
+        <h2>기간선택</h2>
+        <a href="#" class="btn_layer_close"><img src="../../images/common/btn_layer_close.png" alt="닫기"></a>
+    </div>
+    <div class="layer_con">
+        <div class="wrap_cal">
+            <div class="calendar_b limit">
+            </div>
+            <div class="cal_date rent">
+                <h6>대여일시</h6>
+                <strong class="date">YYYY/MM/DD</strong>
+                <span class="select">
+                    <select id="" title="" class="sel_hour">
+                        <option value="00" selected="selected">00시</option>
+                        <option value="01">01시</option>
+                        <option value="02">02시</option>
+                        <option value="03">03시</option>
+                        <option value="04">04시</option>
+                        <option value="05">05시</option>
+                        <option value="06">06시</option>
+                        <option value="07">07시</option>
+                        <option value="08">08시</option>
+                        <option value="09">09시</option>
+                        <option value="10">10시</option>
+                        <option value="11">11시</option>
+                        <option value="12">12시</option>
+                        <option value="13">13시</option>
+                        <option value="14">14시</option>
+                        <option value="15">15시</option>
+                        <option value="16">16시</option>
+                        <option value="17">17시</option>
+                        <option value="18">18시</option>
+                        <option value="19">19시</option>
+                        <option value="20">20시</option>
+                        <option value="21">21시</option>
+                        <option value="22">22시</option>
+                        <option value="23">23시</option>
+                    </select>
+                </span>
+                <span class="select">
+                    <select id="" title="" class="sel_minute">
+                        <option value="00" selected="selected">00분</option>
+                        <option value="10">10분</option>
+                        <option value="20">20분</option>
+                        <option value="30">30분</option>
+                        <option value="40">40분</option>
+                        <option value="50">50분</option>
+                    </select>
+                </span>
+            </div>             
+            <div class="cal_date return">
+                <h6>대여일시</h6>
+                <strong class="date">YYYY/MM/DD</strong>
+                <span class="select">
+                    <select id="" title="" class="sel_hour">
+                        <option value="00" selected="selected">00시</option>
+                        <option value="01">01시</option>
+                        <option value="02">02시</option>
+                        <option value="03">03시</option>
+                        <option value="04">04시</option>
+                        <option value="05">05시</option>
+                        <option value="06">06시</option>
+                        <option value="07">07시</option>
+                        <option value="08">08시</option>
+                        <option value="09">09시</option>
+                        <option value="10">10시</option>
+                        <option value="11">11시</option>
+                        <option value="12">12시</option>
+                        <option value="13">13시</option>
+                        <option value="14">14시</option>
+                        <option value="15">15시</option>
+                        <option value="16">16시</option>
+                        <option value="17">17시</option>
+                        <option value="18">18시</option>
+                        <option value="19">19시</option>
+                        <option value="20">20시</option>
+                        <option value="21">21시</option>
+                        <option value="22">22시</option>
+                        <option value="23">23시</option>
+                    </select>
+                </span>
+                <span class="select">
+                    <select id="" title="" class="sel_minute">
+                        <option value="00" selected="selected">00분</option>
+                        <option value="10">10분</option>
+                        <option value="20">20분</option>
+                        <option value="30">30분</option>
+                        <option value="40">40분</option>
+                        <option value="50">50분</option>
+                    </select>
+                </span>
+            </div> 
+        </div>
+        <ul class="txt_list">
+            <li class="red">서울권역은 현재시간부터 4시간, 대전/충청/세종 및 광주/전라지역은 3시간, 그 외 권역은 6시간 이후 예약이 가능 합니다.</li>
+        </ul>            
+        <div class="btn_wrap">
+            <a href="#" class="btn_cal_confirm btn_red btn_230">확인</a>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

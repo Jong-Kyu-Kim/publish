@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html dir="ltr" lang="ko" class="ie7"><![endif]-->
+<!--[if IE 8]><html dir="ltr" lang="ko" class="ie8"><![endif]-->
+<!--[if IE 9]><html dir="ltr" lang="ko" class="ie9"><![endif]-->
+<html dir="ltr" lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1200, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.min.js"></script>
+	<script src="../../js/html5shiv.js"></script>
+	<script src="../../js/core.js"></script>
+	<script src="../../js/ui.js"></script>
+    <script src="../../js/calendar.js"></script>
+</head>
+ 
+<body>
+	<header>
+		<div class="inner_header">
+			<a href="#container" class="skip_nav">본문 바로가기</a>
+			<a href="#" class="logo"><h1><img src="../../images/common/logo.png" alt="Lotte rent-a-car"></h1></a>
+			<a href="#" class="side_logo"><img src="../../images/common/logo_hertz.png" alt="hertz"></a>
+			<ul id="extra_menu" class="extra_menu">
+				<!--// 비회원일 경우 -->
+				<li class="login"><a href="#">Login</a></li>
+				<li class="join"><a href="#">Register</a></li>
+
+				<!--// 회원일 경우 -->
+				<li class="logout"><a href="#">My Reservation</a></li>
+				<li class="mypage_quick">
+					<a class="btn_dropdown_menu pr0" href="#">Mypage</a>
+				</li>
+				<li class="language"><a href="#">KOREAN</a></li>
+			</ul>
+		</div>
+		<div id="gnb" class="gnb">
+			<ul class="menus">
+				<li class="menu idx1">
+					<a href="#">Reservations</a>
+				</li>
+				<li class="menu idx2">
+					<a href="#">Car rental</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">Rental information </a>
+							<ul>
+								<li>
+									<a href="#">Rental Cost Information</a>
+								</li>
+								<li>
+									<a href="#">Additional Rate</a>
+								</li>
+								<li>
+									<a href="#">Rental information for foreigner</a>
+								</li>
+								<li>
+									<a href="#">Overseas Reservation</a>
+								</li>
+								<li>
+									<a href="#">Chauffeured Service</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="menu idx3">
+					<a href="#">Location</a>
+				</li>
+			</ul>
+		</div>
+		<div class="gnb_open"></div>
+		<ul id="breadcrumb" class="breadcrumb">
+			<li class="path home"><a href="#"></a></li>
+			<li class="path">
+				<a class="dropdown_path_btn" href="#">Car rental</a>
+				<div class="dropdown_path">
+					<a class="active" href="#">빌릴 때</a>
+					<a href="#">살 때</a>
+					<a href="#">팔 때</a>
+					<a href="#">기기 장비렌탈</a>
+					<a href="#">이벤트</a>
+					<a href="#">고객센터</a>
+				</div>
+			</li>
+			<li class="path">
+				<a class="dropdown_path_btn" href="#">Additional Rate</a>
+				<div class="dropdown_path">
+					<a class="active" href="#">빌릴 때</a>
+					<a href="#">살 때</a>
+					<a href="#">팔 때</a>
+					<a href="#">기기 장비렌탈</a>
+					<a href="#">이벤트</a>
+					<a href="#">고객센터</a>
+				</div>
+			</li>
+		</ul>
+	</header>
+	<div id="container">
+		<!-- content -->
+		<article class="content">
+			<h2>Additional Rate</h2>
+			<div class="content">
+                <!-- 본문삽입 -->  
+                <div class="additional_service">
+                    <h3>Rental Service</h3>
+                    <p class="txt1">Experience a range of additional options, free or paid, offered from LOTTE rent-a-car!</p> 
+                    <ul class="list_add_service">
+                        <li class="icon1">
+                            <strong>Navigation Rental Service (Free)</strong>
+                            <ul class="txt_list">
+                                <li class="black f14">All LOTTE rent-a-car locations have navigation. Pre-reservation for navigation rental is available.</li>
+                            </ul>
+                        </li>
+                        <li class="icon2">
+                            <strong>Infant Car Seat Rental Service (paid)</strong>
+                            <ul class="txt_list">
+                                <li class="black f14">Available at LOTTE rent-a-car locations nationwide</li>
+                                <li class="black f14">Available through prior reservation</li>
+                                <li class="black f14">Car seat installation may be difficult depending on the type of rented vehicle</li>
+                            </ul>
+                        </li>
+                        <li class="icon3">
+                            <strong>One-Way Rental(paid)</strong>
+                            <ul class="txt_list">
+                                <li class="black f14">One-way rental service is available if you would like to return the rented car to different location, not the original location.</li>
+                                <li class="black f14">Available when the vehicle is rented for more than 24 hours/ additional charges may apply depending on the mileage.</li>
+                            </ul>
+                        </li> 
+                    </ul>
+                    <h3 class="mb50">항공사 마일리지 적립 서비스</h3>
+                    <div class="airline">
+                        <div class="left">
+                            <img src="../../images/rent/img_asiana.png" alt="아시아나">
+                            <strong>아시아나 항공</strong>
+                            <ul class="txt_list">
+                                <li class="black f14">예약 시 아시아나클럽 회원 임을 알려야 합니다.</li>
+                                <li class="black f14">실버(인터넷)회원 35%, 골드회원 40% 할인됩니다.<br>(내륙지점 기준, 제주지점 기간별 변동)</li>
+                                <li class="black f14">차량 픽업 시 회원번호 또는 카드를 제시해 주세요.(미 지참 시 적립 및 사후 적립 불가)</li>
+                                <li class="black f14">1일 당 100마일 적립됩니다.(1일 초과 반일 이상 사용 시 100마일 추가적립)</li>
+                                <li class="black f14">마일리지는 운전자(차량 임차인) 계좌로 적립됩니다.</li>
+                                <li class="black f14">운전기사를 포함한 차량 렌트는 적립 대상에서 제외 됩니다.</li>
+                                <li class="black f14">마일리지 적립은 이용일로부터 4~6주 소요됩니다.</li>
+                                <li class="black f14">마일리지가 적립되지 않은 경우, 이용일로부터 180일 이내에 <br>아래의 메일 주소로 마일리지 적립을 재 요청하시기 바랍니다.<br>(이메일 주소 : soohyun.lee@lotte.net)</li>
+                                <li class="black f14">예약 문의 및 기타 자세한 사항은 고객 센터로 연락바랍니다.<br>(롯데렌터카 고객 센터 : 1588-1230)</li>
+                                <li class="black f14">본 서비스는 롯데렌터카 회원 혜택 및 기타 제휴와 중복 적용이 불가합니다.</li>
+                            </ul> 
+                        </div>
+                        <div class="right"> 
+                            <img src="../../images/rent/img_koreanair.png" alt="대한항공">
+                            <strong>대한항공</strong>
+                            <ul class="txt_list">
+                                <li class="black f14">예약 시 스카이패스 회원 임을 알려야 합니다.</li>
+                                <li class="black f14">스카이패스 회원 30%, 모닝캄 회원 35% 할인됩니다.(내륙지점 Only)</li>
+                                <li class="black f14">차량 픽업 시 회원번호 또는 카드를 제시해 주세요.(미 지참 시 적립 및 사후 적립 불가)</li>
+                                <li class="black f14">1일 당 100마일 적립됩니다. (1일 초과 반일 이상 사용 시 100마일 추가적립, 최대 1,000마일까지 적립가능)</li>
+                                <li class="black f14">마일리지는 운전자(차량 임차인) 계좌로 적립됩니다.</li>
+                                <li class="black f14">운전기사를 포함한 차량 렌트는 적립 대상에서 제외됩니다.</li>
+                                <li class="black f14">마일리지 적립은 이용일로부터 2~4주 소요됩니다.</li>
+                                <li class="black f14">마일리지가 적립되지 않은 경우, 이용일로부터 180일 이내에 아래의 메일 주소로 마일리지 적립을 재 요청하시기 바랍니다.<br>(이메일 주소 : soohyun.lee@lotte.net)</li>
+                                <li class="black f14">예약 문의 및 기타 자세한 사항은 고객 센터로 연락바랍니다.<br>(롯데렌터카 고객 센터 : 1588-1230)</li>
+                                <li class="black f14">본 서비스는 롯데렌터카 회원 혜택 및 기타 제휴와 중복 적용이 불가합니다.</li>
+                            </ul>
+                        </div> 
+                    </div>
+                    
+                    
+                    
+                    
+                </div> 
+                <!--// 본문삽입 --> 
+            </div>
+		</article>
+	</div>
+
+	<footer>
+		<div class="inner_footer">
+			<div class="sitemap">
+				<ul>
+					<li><a href="#">COMPANY</a> ㅣ</li>
+					<li><a href="#">USER AGREEMENT</a> ㅣ</li>
+					<li><a href="#">CONTACT US</a></li>
+				</ul>
+			</div>
+
+			<div class="sns">
+				<ul>
+					<li>
+						<a class="twitter" href="#" target="_blank"><img src="../../images/common/img_footer_sns_twitter.png"></a>
+					</li>
+					<li>
+						<a class="facebook" href="#" target="_blank"><img src="../../images/common/img_footer_sns_facebook.png"></a>
+					</li>
+					<li>
+						<a class="blog" href="#" target="_blank"><img src="../../images/common/img_footer_sns_blog.png"></a>
+					</li>					
+				</ul>
+			</div>
+
+			<div class="information">
+				<span class="entrepreneur_info">
+					LOTTE rental co.,ltd. | President : Pyo, Hyun-Myung | Business Registration # : 214-87-79183
+				</span>
+				<span class="address">Communication Service # : 2010-Gyunggi Anyang 420 | Address : 8F Shinwonvision Tower 898. Hogye-dong, Dongan-Gu, Anyang </span>
+				<span class="phone">Main Contact 1588-1230 | FAX 02-2141-9022</span>
+				<span class="copyright">copyright ⓒ 2016 LOTTE rental co.ltd.All Rrights Reserved.</span>
+			</div>
+
+			<div class="certifications">
+				<ul>
+					<li>
+						<img src="../../images/common/img_footer_cert_1.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_2.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_3.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_4.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_5.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_6.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_7.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_8.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_9.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_10.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_11.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_12.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_13.png">
+					</li>	
+				</ul>
+			</div>
+		
+			<div class="big-banner">
+				<img src="../../images/common/img_footer_big_banner.png">
+			</div>
+		</div>
+	</footer>
+    
+    
+</body>
+</html>

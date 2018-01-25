@@ -1,0 +1,2354 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	
+
+
+
+
+
+
+
+
+
+
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title> | 롯데렌터카 ADMINISTRATOR SYSTEM </title>
+	
+	<link rel="stylesheet" type="text/css" href="com/css/cm.import.css" >
+	
+	<script type="text/javascript" src="com/js/jquery-1.11.1.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="com/js/jquery.easing.1.3.js" charset="utf-8"></script>
+	<script type="text/javascript" src="com/js/datepicker.js"></script>
+	<script type="text/javascript" src="com/js/cm.jQuery.layerPop.js"></script>
+	<script type="text/javascript" src="com/js/cm.jQuery.ui.js" charset="utf-8"></script>
+	<!--<script type="text/javascript" src="com/js/cm.jQuery.design.js" charset="utf-8"></script>-->
+	<script type="text/javascript" src="resource/js/jquery.form.js" charset="utf-8"></script>
+	<script type="text/javascript" src="resource/js/cm.function.js" charset="utf-8"></script>
+	<script type="text/javascript" src="resource/js/cm.validate.js" charset="utf-8"></script>
+	<script type="text/javascript" src="resource/editor/js/service/HuskyEZCreator.js" charset="utf-8"></script>
+
+</head>
+<body class="line01">
+	<div class="skipMenu">
+		<a href="#container">본문으로 바로가기</a>
+	</div><!-- //skip_nav -->
+	<div id="wrap">
+		<!-- HEADER s -->
+		<div id="header">
+			<div class="inner">
+				<h1><a href="#"><img src="images/logo.png" alt="LOTTE rental"></a></h1>
+				<ul class="gnb">				
+					<li class="">
+						<a href="#">인재상</a>
+					</li>
+					<li class="">
+						<a href="#">채용절차 안내</a>
+					</li>
+					<li class="">
+						<a href="#">채용공고</a>
+					</li>
+					<li class="">
+						<a href="#">온라인입사지원</a>
+					</li>
+					<li class="">
+						<a href="#">온라인입사지원결과</a>
+					</li>
+				</ul>
+			</div>
+		</div><!-- //header end -->
+		<div class="img_top">
+			<img src="images/img_apply_top.jpg" alt="롯데렌탈의 입사지원 입니다. 여러분이 LOTTE rental의 미래입니다.">
+		</div>		
+		<!-- HEADER e //-->
+		<div id="container">
+	<div class="content">
+		<div class="tit_top">
+			<h2 class="h2tit">온라인입사지원</h2>
+			<p class="location"><a href="#">HOME</a> &gt; <a href="#">온라인입사지원</a></p>			
+		</div><!-- //tit_top end -->
+		<ul class="process">
+			<li class="current">
+				<a href="#"><span>01. 기본 인적 사항</span></a>
+			</li>
+			<li>
+				<a href="#"><span>02. 학력/경력 사항</span></a>
+			</li>
+			<li>
+				<a href="#"><span>03. 외국어/자격 사항</span></a>
+			</li>
+			<li>
+				<a href="#"><span>04. 자기소개</span></a>
+			</li>
+			<li>
+				<a href="#"><span>05. 완료</span></a>
+			</li>
+		</ul>				
+			<form id="defaultFrm" name="defaultFrm" action="/fr/kor/recruit/apply/insertProfileForm.do" method="post">
+				<input id="pageIndex" name="pageIndex" type="hidden" value="1"/>
+				<input id="atchFileId" name="atchFileId" type="hidden" value=""/>
+				<input type="hidden" name="atchViewType" id="atchViewType" value="View"/>
+				<input type="hidden" name="categorySrl" id="categorySrl" value="40010"/>
+				<input type="hidden" name="profileSrl" id="profileSrl" value=""/>
+				<input type="hidden" name="txtUserPass" id="txtUserPass" value="1234"/>
+
+			<h3>개인정보</h3>
+			<div class="grid">
+				<table class="tb_row">
+					<colgroup>
+						<col style="width:10%" />
+						<col style="width:15%" />
+						<col style="width:10%" />
+						<col style="width:auto" />
+						<col style="width:10%" />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>한글성명</th>
+							<td>
+								<input class="i_text" id="txtUserName" type="text" name="txtUserName" readonly="readonly" value="테스트" style="width:120px" />
+							</td>
+							<th>생년월일</th>
+							<td>
+								<input class="i_text" id="txtRegNumberArry0" id="reg1" type="text" name="txtRegNumberArry0" value="901026" size="8" maxlength="6" readonly="readonly" />
+							</td>
+							<td rowspan="6" class="photo_wrap basic">
+								<div class="photo_area">
+									<img src="" width="100" height="120" />
+									<input type="file" id="">
+									<a href="#" class="btn_default">사진등록</a>
+									<span>최근 3개월 이내</span>
+									<span>100 x 120 픽셀</span>
+									<span>jpg 파일 사용해주세요.</span>
+								</div>
+								<!--
+								<iframe name="atchFileIdFrame" id="atchFileIdFrame" src="/atch/fileUpload.do?atchFileId=&fileCnt=5&atchFileIdNm=atchFileId&updateType=upload" style="height:70%;" height="50" frameborder="0" title="파일 업로드 폼"></iframe>
+								-->
+							</td>
+						</tr>
+						<tr>
+							<th>영문성명</th>
+							<td>
+								<input class="i_text" id="txtUserEname" type="text" name="txtUserEname" value="" style="width:120px"  />
+							</td>
+							<th>한문성명</th>
+							<td>
+								<input class="i_text" id="txtUserCname" type="text" name="txtUserCname" value="" style="width:120px"  />
+							</td>
+						</tr>
+						<tr>
+							<th>성별</th>
+							<td>
+								<input class="i_radio" id="rdoGender0" type="radio" name="rdoGender" value="1" /> <label>남</label> 
+								<input class="i_radio" id="rdoGender1" type="radio" name="rdoGender" value="2" /> <label>여</label>
+							</td>
+							<th>전화번호</th>
+							<td>
+								<input class="i_text" id="txtChoiceTelArry0" name="txtChoiceTel" type="text" value="" size="4" maxlength="3" /> 
+								- <input class="i_text" id="txtChoiceTelArry1" name="txtChoiceTel" type="text" value="" size="4" maxlength="4" /> 
+								- <input class="i_text" id="txtChoiceTelArry2" name="txtChoiceTel" type="text" value="" size="4" maxlength="4" />
+							</td>
+						</tr>
+						<tr>
+							<th>결혼유무</th>
+							<td>
+									<input class="i_radio" id="rdoIsMarry0" type="radio" name="rdoIsMarry" value="1" /> <label>기혼</label> 
+									<input class="i_radio" id="rdoIsMarry1" type="radio" name="rdoIsMarry" value="2" /> <label>미혼</label>
+								</td>
+							<th>휴대폰</th>
+							<td>
+								<div class="item" id="getCellAuth">
+									<select id="rdoCellZone" name="rdoCellZone" class="required" title="국가코드">
+										
+											
+												
+												
+													<option value="233">가나</option>
+												
+											
+										
+											
+												
+												
+													<option value="241">가봉</option>
+												
+											
+										
+											
+												
+												
+													<option value="220">감비아</option>
+												
+											
+										
+											
+												
+												
+													<option value="590">과들루프</option>
+												
+											
+										
+											
+												
+												
+													<option value="502">과테말라</option>
+												
+											
+										
+											
+												
+												
+													<option value="1671">괌</option>
+												
+											
+										
+											
+												
+												
+													<option value="1473">그레나다</option>
+												
+											
+										
+											
+												
+												
+													<option value="995">그루지아</option>
+												
+											
+										
+											
+												
+												
+													<option value="30">그리스</option>
+												
+											
+										
+											
+												
+												
+													<option value="299">그린랜드</option>
+												
+											
+										
+											
+												
+												
+													<option value="245">기니</option>
+												
+											
+										
+											
+												
+												
+													<option value="374">나고르노카라바흐</option>
+												
+											
+										
+											
+												
+												
+													<option value="264">나미비아</option>
+												
+											
+										
+											
+												
+												
+													<option value="234">나이지리아</option>
+												
+											
+										
+											
+												
+												
+													<option value="27">남아공화국</option>
+												
+											
+										
+											
+												
+												
+													<option value="31">네덜란드</option>
+												
+											
+										
+											
+												
+												
+													<option value="599">네덜란드령 안틸레스</option>
+												
+											
+										
+											
+												
+												
+													<option value="977">네팔</option>
+												
+											
+										
+											
+												
+												
+													<option value="47">노르웨이</option>
+												
+											
+										
+											
+												
+												
+													<option value="64">뉴질랜드</option>
+												
+											
+										
+											
+												
+												
+													<option value="687">뉴칼레도니</option>
+												
+											
+										
+											
+												
+												
+													<option value="227">니제르</option>
+												
+											
+										
+											
+												
+												
+													<option value="505">니카라과</option>
+												
+											
+										
+											
+												
+												
+													<option value="886">대만</option>
+												
+											
+										
+											
+												
+													<option selected="selected" value="82" selected="selected">대한민국</option>
+												
+												
+											
+										
+											
+												
+												
+													<option value="45">덴마크</option>
+												
+											
+										
+											
+												
+												
+													<option value="1809">도미니카 공화국</option>
+												
+											
+										
+											
+												
+												
+													<option value="49">독일</option>
+												
+											
+										
+											
+												
+												
+													<option value="856">라오스</option>
+												
+											
+										
+											
+												
+												
+													<option value="231">라이베리아</option>
+												
+											
+										
+											
+												
+												
+													<option value="371">라트비아</option>
+												
+											
+										
+											
+												
+												
+													<option value="961">레바논</option>
+												
+											
+										
+											
+												
+												
+													<option value="266">레소토</option>
+												
+											
+										
+											
+												
+												
+													<option value="262">레위니옹</option>
+												
+											
+										
+											
+												
+												
+													<option value="40">루마니아</option>
+												
+											
+										
+											
+												
+												
+													<option value="352">룩셈부르크</option>
+												
+											
+										
+											
+												
+												
+													<option value="250">르완다</option>
+												
+											
+										
+											
+												
+												
+													<option value="218">리비아</option>
+												
+											
+										
+											
+												
+												
+													<option value="370">리투아니아</option>
+												
+											
+										
+											
+												
+												
+													<option value="423">리히텐슈타인</option>
+												
+											
+										
+											
+												
+												
+													<option value="261">마다가스카르</option>
+												
+											
+										
+											
+												
+												
+													<option value="596">마르티니크</option>
+												
+											
+										
+											
+												
+												
+													<option value="691">마이크로네시아</option>
+												
+											
+										
+											
+												
+												
+													<option value="853">마카오</option>
+												
+											
+										
+											
+												
+												
+													<option value="389">마케도니아 공화국</option>
+												
+											
+										
+											
+												
+												
+													<option value="265">말라위</option>
+												
+											
+										
+											
+												
+												
+													<option value="60">말레이시아</option>
+												
+											
+										
+											
+												
+												
+													<option value="223">말리</option>
+												
+											
+										
+											
+												
+												
+													<option value="356">말타</option>
+												
+											
+										
+											
+												
+												
+													<option value="52">멕시코</option>
+												
+											
+										
+											
+												
+												
+													<option value="212">모로코</option>
+												
+											
+										
+											
+												
+												
+													<option value="230">모리셔스</option>
+												
+											
+										
+											
+												
+												
+													<option value="222">모리타니</option>
+												
+											
+										
+											
+												
+												
+													<option value="258">모잠비크</option>
+												
+											
+										
+											
+												
+												
+													<option value="373">몰도바</option>
+												
+											
+										
+											
+												
+												
+													<option value="960">몰디브</option>
+												
+											
+										
+											
+												
+												
+													<option value="976">몽고</option>
+												
+											
+										
+											
+												
+												
+													<option value="95">미얀마</option>
+												
+											
+										
+											
+												
+												
+													<option value="678">바누아투</option>
+												
+											
+										
+											
+												
+												
+													<option value="973">바레인</option>
+												
+											
+										
+											
+												
+												
+													<option value="1246">바베이도스</option>
+												
+											
+										
+											
+												
+												
+													<option value="880">방글라데시</option>
+												
+											
+										
+											
+												
+												
+													<option value="1441">버뮤다</option>
+												
+											
+										
+											
+												
+												
+													<option value="58">베네수엘라</option>
+												
+											
+										
+											
+												
+												
+													<option value="229">베닌</option>
+												
+											
+										
+											
+												
+												
+													<option value="84">베트남</option>
+												
+											
+										
+											
+												
+												
+													<option value="32">벨기에</option>
+												
+											
+										
+											
+												
+												
+													<option value="375">벨라루스</option>
+												
+											
+										
+											
+												
+												
+													<option value="501">벨리즈</option>
+												
+											
+										
+											
+												
+												
+													<option value="387">보스니아 헤르체고비나</option>
+												
+											
+										
+											
+												
+												
+													<option value="267">보츠와나</option>
+												
+											
+										
+											
+												
+												
+													<option value="591">볼리비아</option>
+												
+											
+										
+											
+												
+												
+													<option value="257">부룬디</option>
+												
+											
+										
+											
+												
+												
+													<option value="226">부르키나파소</option>
+												
+											
+										
+											
+												
+												
+													<option value="975">부탄</option>
+												
+											
+										
+											
+												
+												
+													<option value="359">불가리아</option>
+												
+											
+										
+											
+												
+												
+													<option value="55">브라질</option>
+												
+											
+										
+											
+												
+												
+													<option value="673">브루나이</option>
+												
+											
+										
+											
+												
+												
+													<option value="966">사우디아라비아</option>
+												
+											
+										
+											
+												
+												
+													<option value="1670">사이판</option>
+												
+											
+										
+											
+												
+												
+													<option value="221">세네갈</option>
+												
+											
+										
+											
+												
+												
+													<option value="381">세르비아 몬테그로</option>
+												
+											
+										
+											
+												
+												
+													<option value="248">세이셸</option>
+												
+											
+										
+											
+												
+												
+													<option value="1758">세인트루시아</option>
+												
+											
+										
+											
+												
+												
+													<option value="1784">세인트빈센트 그레나딘</option>
+												
+											
+										
+											
+												
+												
+													<option value="249">수단</option>
+												
+											
+										
+											
+												
+												
+													<option value="597">수리남</option>
+												
+											
+										
+											
+												
+												
+													<option value="94">스리랑카</option>
+												
+											
+										
+											
+												
+												
+													<option value="268">스와질란드</option>
+												
+											
+										
+											
+												
+												
+													<option value="46">스웨덴</option>
+												
+											
+										
+											
+												
+												
+													<option value="41">스위스</option>
+												
+											
+										
+											
+												
+												
+													<option value="34">스페인</option>
+												
+											
+										
+											
+												
+												
+													<option value="421">슬로바키아</option>
+												
+											
+										
+											
+												
+												
+													<option value="386">슬로베니아</option>
+												
+											
+										
+											
+												
+												
+													<option value="963">시리아</option>
+												
+											
+										
+											
+												
+												
+													<option value="232">시에라리온</option>
+												
+											
+										
+											
+												
+												
+													<option value="65">싱가포르</option>
+												
+											
+										
+											
+												
+												
+													<option value="971">아랍에미리트연합국</option>
+												
+											
+										
+											
+												
+												
+													<option value="297">아루바</option>
+												
+											
+										
+											
+												
+												
+													<option value="54">아르헨티나</option>
+												
+											
+										
+											
+												
+												
+													<option value="225">아이보리코스트</option>
+												
+											
+										
+											
+												
+												
+													<option value="354">아이슬란드</option>
+												
+											
+										
+											
+												
+												
+													<option value="509">아이티</option>
+												
+											
+										
+											
+												
+												
+													<option value="353">아일랜드</option>
+												
+											
+										
+											
+												
+												
+													<option value="994">아제르바이잔</option>
+												
+											
+										
+											
+												
+												
+													<option value="93">아프가니스탄</option>
+												
+											
+										
+											
+												
+												
+													<option value="376">안도라</option>
+												
+											
+										
+											
+												
+												
+													<option value="355">알바니아</option>
+												
+											
+										
+											
+												
+												
+													<option value="213">알제리</option>
+												
+											
+										
+											
+												
+												
+													<option value="244">앙골라</option>
+												
+											
+										
+											
+												
+												
+													<option value="1268">앤티가 바부다</option>
+												
+											
+										
+											
+												
+												
+													<option value="372">에스토니아</option>
+												
+											
+										
+											
+												
+												
+													<option value="593">에콰도르</option>
+												
+											
+										
+											
+												
+												
+													<option value="251">에티오피아</option>
+												
+											
+										
+											
+												
+												
+													<option value="503">엘살바도르</option>
+												
+											
+										
+											
+												
+												
+													<option value="44">영국</option>
+												
+											
+										
+											
+												
+												
+													<option value="1284">영국령 버진 제도</option>
+												
+											
+										
+											
+												
+												
+													<option value="967">예맨</option>
+												
+											
+										
+											
+												
+												
+													<option value="968">오만</option>
+												
+											
+										
+											
+												
+												
+													<option value="61">오스트레일리아</option>
+												
+											
+										
+											
+												
+												
+													<option value="43">오스트리아</option>
+												
+											
+										
+											
+												
+												
+													<option value="504">온두라스</option>
+												
+											
+										
+											
+												
+												
+													<option value="962">요르단</option>
+												
+											
+										
+											
+												
+												
+													<option value="256">우간다</option>
+												
+											
+										
+											
+												
+												
+													<option value="598">우루과이</option>
+												
+											
+										
+											
+												
+												
+													<option value="998">우즈베키스탄</option>
+												
+											
+										
+											
+												
+												
+													<option value="380">우크라이나</option>
+												
+											
+										
+											
+												
+												
+													<option value="964">이라크</option>
+												
+											
+										
+											
+												
+												
+													<option value="98">이란</option>
+												
+											
+										
+											
+												
+												
+													<option value="972">이스라엘</option>
+												
+											
+										
+											
+												
+												
+													<option value="20">이집트</option>
+												
+											
+										
+											
+												
+												
+													<option value="39">이탈리아</option>
+												
+											
+										
+											
+												
+												
+													<option value="91">인도</option>
+												
+											
+										
+											
+												
+												
+													<option value="62">인도네시아</option>
+												
+											
+										
+											
+												
+												
+													<option value="81">일본</option>
+												
+											
+										
+											
+												
+												
+													<option value="1876">자메이카</option>
+												
+											
+										
+											
+												
+												
+													<option value="260">잠비아</option>
+												
+											
+										
+											
+												
+												
+													<option value="86">중국</option>
+												
+											
+										
+											
+												
+												
+													<option value="236">중앙아프리카공화국</option>
+												
+											
+										
+											
+												
+												
+													<option value="253">지부티</option>
+												
+											
+										
+											
+												
+												
+													<option value="350">지브롤터</option>
+												
+											
+										
+											
+												
+												
+													<option value="263">짐바브웨</option>
+												
+											
+										
+											
+												
+												
+													<option value="235">차드</option>
+												
+											
+										
+											
+												
+												
+													<option value="420">체코</option>
+												
+											
+										
+											
+												
+												
+													<option value="56">칠레</option>
+												
+											
+										
+											
+												
+												
+													<option value="237">카메룬</option>
+												
+											
+										
+											
+												
+												
+													<option value="238">카보베르데</option>
+												
+											
+										
+											
+												
+												
+													<option value="7">카자흐스탄</option>
+												
+											
+										
+											
+												
+												
+													<option value="974">카타르</option>
+												
+											
+										
+											
+												
+												
+													<option value="855">캄보디아</option>
+												
+											
+										
+											
+												
+												
+													<option value="1">캐나다</option>
+												
+											
+										
+											
+												
+												
+													<option value="254">케냐</option>
+												
+											
+										
+											
+												
+												
+													<option value="1345">케이맨 제도</option>
+												
+											
+										
+											
+												
+												
+													<option value="269">코모로</option>
+												
+											
+										
+											
+												
+												
+													<option value="377">코소보</option>
+												
+											
+										
+											
+												
+												
+													<option value="506">코스타리카</option>
+												
+											
+										
+											
+												
+												
+													<option value="57">콜롬비아</option>
+												
+											
+										
+											
+												
+												
+													<option value="242">콩고</option>
+												
+											
+										
+											
+												
+												
+													<option value="243">콩고민주공화국</option>
+												
+											
+										
+											
+												
+												
+													<option value="53">쿠바</option>
+												
+											
+										
+											
+												
+												
+													<option value="965">쿠웨이트</option>
+												
+											
+										
+											
+												
+												
+													<option value="385">크로아티아</option>
+												
+											
+										
+											
+												
+												
+													<option value="996">키르기즈스탄</option>
+												
+											
+										
+											
+												
+												
+													<option value="686">키리바시</option>
+												
+											
+										
+											
+												
+												
+													<option value="992">타지키스탄</option>
+												
+											
+										
+											
+												
+												
+													<option value="255">탄자니아</option>
+												
+											
+										
+											
+												
+												
+													<option value="66">태국</option>
+												
+											
+										
+											
+												
+												
+													<option value="90">터키</option>
+												
+											
+										
+											
+												
+												
+													<option value="228">토고</option>
+												
+											
+										
+											
+												
+												
+													<option value="676">통가</option>
+												
+											
+										
+											
+												
+												
+													<option value="993">투르크메니스탄</option>
+												
+											
+										
+											
+												
+												
+													<option value="216">튀니지</option>
+												
+											
+										
+											
+												
+												
+													<option value="1868">트리니다드토바고</option>
+												
+											
+										
+											
+												
+												
+													<option value="670">티모르</option>
+												
+											
+										
+											
+												
+												
+													<option value="507">파나마</option>
+												
+											
+										
+											
+												
+												
+													<option value="595">파라과이</option>
+												
+											
+										
+											
+												
+												
+													<option value="92">파키스탄</option>
+												
+											
+										
+											
+												
+												
+													<option value="970">팔레스타인</option>
+												
+											
+										
+											
+												
+												
+													<option value="298">페로 제도</option>
+												
+											
+										
+											
+												
+												
+													<option value="51">페루</option>
+												
+											
+										
+											
+												
+												
+													<option value="351">포르투갈</option>
+												
+											
+										
+											
+												
+												
+													<option value="48">폴란드</option>
+												
+											
+										
+											
+												
+												
+													<option value="33">프랑스</option>
+												
+											
+										
+											
+												
+												
+													<option value="689">프랑스령 폴리네시아</option>
+												
+											
+										
+											
+												
+												
+													<option value="594">프랑스령기아나</option>
+												
+											
+										
+											
+												
+												
+													<option value="679">피지</option>
+												
+											
+										
+											
+												
+												
+													<option value="358">핀란드</option>
+												
+											
+										
+											
+												
+												
+													<option value="63">필리핀</option>
+												
+											
+										
+											
+												
+												
+													<option value="36">헝가리</option>
+												
+											
+										
+											
+												
+												
+													<option value="852">홍콩</option>										
+									</select>
+									<!-- 인증 번호 발송 전 번호 입력 -->
+									<input class="i_text" id="txtCellTel0" name="txtCellTel" type="text" size="4" maxlength="3" value=""/> 
+									- <input class="i_text" id="txtCellTel1" name="txtCellTel" type="text" size="4" maxlength="4" value=""/> 
+									- <input class="i_text" id="txtCellTel2" name="txtCellTel" type="text" size="4" maxlength="4" value=""/> 
+									<a href="#" class="_getCellAuth btn_default" id="btn_getCellAuth" name="btn_getCellAuth">인증번호 받기</a>
+								</div>
+								<!-- 인증 번호 발송 후 입력 전 -->
+								<!--
+								<div class="item" id="checkCellAuth">
+									인증번호 <input class="i_text" id="cellAuthCode" type="text" name="cellAuthCode" /> 
+									<a href="#" class="_checkCellAuth" id="btn_checkCellAuth" name="btn_checkCellAuth">확인</a>
+								</div>
+								-->
+							<!-- 인증 번호 받고 난 후  readonly="readonly"-->
+							<!--
+								<div class="item" id="resultCellAuth">
+									<input class="i_text" id="txtCellTel0" name="txtCellTel" type="text" size="4" maxlength="3" 
+										 /> 
+									- <input class="i_text" id="txtCellTel1" name="txtCellTel" type="text" size="4" maxlength="4" 
+										/> 
+									- <input class="i_text" id="txtCellTel2" name="txtCellTel" type="text" size="4" maxlength="4" 
+										 />
+								</div>
+							-->
+							</td>
+						</tr>
+						<tr>
+							<th>주소</th>
+							<td colspan="3">
+								<input class="i_radio" id="rdoAddressZone" type="radio" name="rdoAddressZone" value="1" /> <label>국내</label> 
+								<input class="i_radio" id="rdoAddressZone" type="radio" name="rdoAddressZone" value="2" /> <label>해외</label> <br /> 
+								<input class="i_text" id="txtZipcode0" name="txtZipcode" type="text" value="" size="5" /> 
+								- <input class="i_text" id="txtZipcode1" name="txtZipcode" type="text" value="" size="5" /> <br> 
+								
+								<input class="i_text" id="txtAddress1" type="text" name="txtAddress1" value="" style="width: 300px;margin-top:5px" /> <br /> 
+								<input class="i_text" id="txtAddress2" type="text" name="txtAddress2" value="" style="width: 400px;margin-top:5px" />
+							</td>
+						</tr>
+						<tr>
+							<th>이메일</th>
+							<td colspan="3">
+								<input class="i_text" id="txtUserEmailArry0" style="width: 150px;" name="txtUserEmail" type="text" value="" size="10" />
+								 @ <input class="i_text" id="txtUserEmailArry1" style="width: 100px;" name="txtUserEmail" type="text" value="" size="12" />
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+			<h3>가족사항</h3>
+			<div id="family" class="grid">
+				<table class="tb_col">
+					<colgroup>
+						<col width="50" />
+						<col width="250" />
+						<col />
+						<col width="120" />
+						<col width="80" />
+						<col width="70" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th>관계</th>
+							<th>성명</th>
+							<th>직업</th>
+							<th>학력</th>
+							<th>동거여부</th>
+							<th>삭제</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<select id="ddlFamilyRelation" name="ddlFamilyRelation" class="required" title="가족 관계">
+									<option value="0">관계선택</option>
+									
+										
+											
+											
+												<option value="RS2101">아버지</option>
+											
+										
+									
+										
+											
+											
+												<option value="RS2102">어머니</option>
+											
+										
+									
+										
+											
+											
+												<option value="RS2103">할아버지</option>
+											
+										
+									
+										
+											
+											
+												<option value="RS2104">할머니</option>
+											
+										
+									
+										
+											
+											
+												<option value="RS2105">형</option>
+											
+										
+									
+										
+											
+											
+												<option value="RS2106">오빠</option>
+											
+										
+									
+										
+											
+											
+												<option value="RS2107">누나</option>
+											
+										
+									
+										
+											
+											
+												<option value="RS2108">언니</option>
+											
+										
+									
+										
+											
+											
+												<option value="RS2109">남동생</option>
+											
+										
+									
+										
+											
+											
+												<option value="RS2110">여동생</option>
+											
+										
+									
+										
+											
+											
+												<option value="RS2111">배우자</option>
+											
+										
+									
+										
+											
+											
+												<option value="RS2112">자녀</option>
+								</select>
+							</td>
+							<td>
+								<label>성</label> <input class="i_text" id="txtFamilyNameFirst" size="2" type="text" name="txtFamilyNameFirst" value="" />
+								<label>이름</label> <input class="i_text" id="txtFamilyNameLast" size="6" type="text" name="txtFamilyNameLast" value="" />
+							</td>
+							<td>
+								<input class="i_text" id="txtCompanyAddr" size="10" type="text" name="txtCompanyAddr" value="" style="width: 90%;" />
+							</td>
+							<td>
+								<input class="i_text" id="txtDegree" size="10" type="text" name="txtDegree" value="" style="width: 90%;" />
+							</td>
+							<td>
+								<select id="rdoLiveYN" name="rdoLiveYN">
+									<option value="1"  >유</option>
+									<option value="2"  >무</option>
+								</select>
+							</td>
+							<td>
+								<a href="#family" id="_delItem" class="_tr btn_default">삭제
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="add_btn">
+					<span>항목 추가시, 추가 버튼을 눌러주시기 바랍니다. 
+						<a href="#family" id="_addItem" class="_tr btn_default"><!-- <img src="/modules/employ/skins/default/images/btn/plus_btn.jpg" /> -->추가</a>
+					</span>
+				</div>				
+			</div>
+
+			<h3>병역사항</h3>
+			<div class="grid">
+				<table class="tb_col">
+					<colgroup>
+						<col width="100" />
+						<col width="100" />
+						<col width="100" />
+						<col />
+					</colgroup>
+					<thead>
+						<tr>
+							<th>병역구분</th>
+							<th>군별</th>
+							<th>최종계급</th>
+							<th>복무기간</th>
+						</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>
+							<select id="ddlSort" name="ddlSort" class="required" title="병역구분">
+								<option value="0">구분</option>
+								
+									
+										
+										
+											<option value="RS1801">현역</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS1802">보충역</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS1803">면제</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS1804">미필</option>
+							</select>
+						</td>
+						<td>
+							<select id="ddlMilitaryType" name="ddlMilitaryType" class="required" title="군별">
+								<option value="0">군별선택</option>
+								
+									
+										
+										
+											<option value="RS2201">육군</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2202">해군</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2203">공군</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2204">해병</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2205">전경</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2206">의경</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2207">공익</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2208">기타</option>
+							</select>
+						</td>
+						<td>
+							<select id="ddlRank" name="ddlRank" class="required" title="최종계급">
+								<option value="0">계급선택</option>
+								
+									
+										
+										
+											<option value="RS2301">이병</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2302">일병</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2303">상병</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2304">병장</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2305">하사</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2306">중사</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2307">상사</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2308">원사</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2309">준위</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2310">소위</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2311">중위</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2312">대위</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2313">소령</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2314">중령</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2315">대령</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2316">준장</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2317">소장</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2318">중장</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2319">대장</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2320">기타</option>
+							</select>
+						</td>
+						<td>
+							<div class="td_cont">
+								<fieldset>
+								<legend>Data</legend>
+									<div id="calendar_wrap" class="chking">
+									    <section class="cal_content">                    
+									        <div class="cal_input">
+									            <div class="wrap_input">
+									                <span>
+									                	<input id="dtStartDm" name="dtStartDm" class="datepicker_wrap" readonly="readonly" type="text" value=""/>
+									                    <a href="#" data-role="common-ui-layerPop-button" data-target="pop02" data-link="start"><img src="" alt="복무 시작일" ></a>
+									                </span>
+									            </div>
+									 
+									            <span class="dash">~</span>
+									 
+									            <div class="wrap_input right">
+									                <span>
+									                	<input id="dtEndDm" name="dtEndDm" class="datepicker_wrap" readonly="readonly" type="text" value=""/>
+									                    <a href="#" data-role="common-ui-layerPop-button" data-target="pop03" data-link="end"><img src="" alt="복무 종료일" ></a> 
+									                </span>
+									            </div>
+									        </div>                                                                          
+									    </section>
+									</div>
+								</fieldset>
+							</div>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<h3>보훈사항</h3>
+			<div class="grid">
+				<table class="tb_col">
+					<colgroup>
+						<col width="100" />
+						<col width="100" />
+						<col width="250" />
+						<col />
+					</colgroup>
+					<thead>
+						<tr>
+							<th>보훈여부</th>
+							<th>보훈구분</th>
+							<th>보훈번호</th>
+							<th>관계</th>
+						</tr>
+					</thead>				
+					<tbody>
+						<tr>
+							<td>
+								<select name="ddlIsIdentify" id="ddlIsIdentify">
+									<option value="0">보훈대상</option>
+									<option value="1">대상</option>
+									<option value="2">비대상</option>
+								</select>
+							</td>
+							<td>
+								<select id="ddlIdentifySort" name="ddlIdentifySort" class="required" title="보훈구분">
+									<option value="0">보훈구분</option>
+									<option value="1">보훈청취업대상</option>
+									<option value="2">보훈대상</option>
+								</select>
+							</td>
+							<td>
+								<input class="i_text" id="txtIdentifyNumber" type="text" name="txtIdentifyNumber" value="" style="width: 230px;" />
+							</td>
+							<td>
+								<select id="ddlIdentifyRelation" name="ddlIdentifyRelation" class="required" title="관계">
+									<option value="0">관계선택</option>
+									<option value="RS2101">아버지</option>
+									<option value="RS2102">어머니</option>
+									<option value="RS2103">할아버지</option>								
+									<option value="RS2104">할머니</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			
+			<h3>장애사항</h3>
+			<div class="grid">
+				<table class="tb_col">
+					<colgroup>
+						<col width="100" />
+						<col width="100" />
+						<col />
+					</colgroup>
+					<thead>
+						<tr>
+							<th>장애여부</th>
+							<th>장애유형</th>
+							<th>장애등급</th>
+						</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>
+							<select name="ddlIsDisability" id="ddlIsDisability">
+								<option value="0">장애</option>
+								<option value="1"  >대상</option>
+								<option value="2"  >비대상</option>
+							</select>
+						</td>
+						<td>
+							<select id="ddlDisabilityType" name="ddlDisabilityType" class="required" title="장애유형">
+								<option value="0">장애유형</option>
+								
+									
+										
+										
+											<option value="RS2401">절단</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2402">지체</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2403">시력</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2404">청각</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2405">언어</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2406">정신</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2407">신장</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS2408">기타</option>
+							</select>
+						</td>
+						<td>
+							<select id="ddlDiasbilityRating" name="ddlDiasbilityRating" class="required" title="장애등급">
+								<option value="0">장애등급</option>
+								
+									
+										
+										
+											<option value="RS1901">1급</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS1902">2급</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS1903">3급</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS1904">4급</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS1905">5급</option>
+										
+									
+								
+									
+										
+										
+											<option value="RS1906">6급</option>
+							</select>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="btn_page">
+				<a href="#" id="btn_save" class="btn btnGray"><span>임시 저장</span></a>
+				<a href="#" id="btn_goNextStep" class="btn btnRed"><span>다음 단계</span></a>
+			</div>
+		</form>
+		</div>
+	</div>
+		
+			<!-- BODY e //-->
+		</div><!-- //container end -->
+	</div>
+		<!-- FOOTER s -->
+	<div id="footer">
+		<div class="inner">
+			<div class="footer_logo">
+				<img src="images/footerlogo.jpg" alt="LOTTE rental"></a>
+			</div>
+			<div class="info">
+				<a href="#">개인정보 취급방침</a>
+				<ul>
+					<li>롯데렌탈(주)</li>
+					<li>대표이사 표현명</li>
+					<li>사업자등록번호 214-87-79183</li>
+					<li>대표전화 1588-1230</li>
+				</ul>
+				<address>경기도 안양시 동안구 호계동 898 신원비전타워 8층</address>
+				<address>서울사무소 : 서울시 강남구 대치동 890-20 KT타워 6~9층</address>
+				<p>Copyright(c) 2015  LOTTE rental. all rights reserved.</p>
+			</div>
+		</div>
+	</div>
+	<div class="layer_pop_wrap">
+		<div class="lay-pop lay-datepicker" id="pop00">
+			<div class="lay_wrap">
+				<p class="title">날짜 선택</p>
+				<div class="date_wrap">
+
+				</div>
+				<a href="#" data-role="common-ui-layerPop-close" class="lay-close">
+					<img src="/publish/images/ico/btn_pop_close.png" alt="닫기" />
+				</a>
+			</div>
+		</div>
+		<div class="lay-pop lay-datepicker" id="pop01">
+			<div class="lay_wrap">
+				<p class="title">날짜 선택</p>
+				<div class="date_wrap">
+
+				</div>
+				<a href="#" data-role="common-ui-layerPop-close" class="lay-close">
+					<img src="/publish/images/ico/btn_pop_close.png" alt="닫기" />
+				</a>
+			</div>
+		</div>
+		<div class="lay-pop lay-datepicker" id="pop02">
+			<div class="lay_wrap">
+				<p class="title">날짜 선택</p>
+				<div class="date_wrap">
+
+				</div>
+				<a href="#" data-role="common-ui-layerPop-close" class="lay-close">
+					<img src="/publish/images/ico/btn_pop_close.png" alt="닫기" />
+				</a>
+			</div>
+		</div>
+		<div class="lay-pop lay-datepicker" id="pop03">
+			<div class="lay_wrap">
+				<p class="title">날짜 선택</p>
+				<div class="date_wrap">
+
+				</div>
+				<a href="#" data-role="common-ui-layerPop-close" class="lay-close">
+					<img src="/publish/images/ico/btn_pop_close.png" alt="닫기" />
+				</a>
+			</div>
+		</div>
+		<div class="lay-pop lay-datepicker" id="pop04">
+			<div class="lay_wrap">
+				<p class="title">날짜 선택</p>
+				<div class="date_wrap">
+
+				</div>
+				<a href="#" data-role="common-ui-layerPop-close" class="lay-close">
+					<img src="/publish/images/ico/btn_pop_close.png" alt="닫기" />
+				</a>
+			</div>
+		</div>
+		<div class="lay-pop lay-datepicker" id="pop05">
+			<div class="lay_wrap">
+				<p class="title">날짜 선택</p>
+				<div class="date_wrap">
+
+				</div>
+				<a href="#" data-role="common-ui-layerPop-close" class="lay-close">
+					<img src="/publish/images/ico/btn_pop_close.png" alt="닫기" />
+				</a>
+			</div>
+		</div>
+		<div class="lay-pop lay-datepicker" id="pop06">
+			<div class="lay_wrap">
+				<p class="title">날짜 선택</p>
+				<div class="date_wrap">
+
+				</div>
+				<a href="#" data-role="common-ui-layerPop-close" class="lay-close">
+					<img src="/publish/images/ico/btn_pop_close.png" alt="닫기" />
+				</a>
+			</div>
+		</div>
+		<div class="lay-pop lay-datepicker" id="pop07">
+			<div class="lay_wrap">
+				<p class="title">날짜 선택</p>
+				<div class="date_wrap">
+
+				</div>
+				<a href="#" data-role="common-ui-layerPop-close" class="lay-close">
+					<img src="/publish/images/ico/btn_pop_close.png" alt="닫기" />
+				</a>
+			</div>
+		</div>
+		<div class="lay-pop lay-datepicker" id="pop08">
+			<div class="lay_wrap">
+				<p class="title">날짜 선택</p>
+				<div class="date_wrap">
+
+				</div>
+				<a href="#" data-role="common-ui-layerPop-close" class="lay-close">
+					<img src="/publish/images/ico/btn_pop_close.png" alt="닫기" />
+				</a>
+			</div>
+		</div>
+		<div class="lay-pop lay-datepicker" id="pop09">
+			<div class="lay_wrap">
+				<p class="title">날짜 선택</p>
+				<div class="date_wrap">
+
+				</div>
+				<a href="#" data-role="common-ui-layerPop-close" class="lay-close">
+					<img src="/publish/images/ico/btn_pop_close.png" alt="닫기" />
+				</a>
+			</div>
+		</div>
+	</div>
+	<form name="subFrm" id="subFrm">
+		<input type="hidden" name="atchFileId" id="subFrmAtchFileId"/>
+		<input type="hidden" name="fileSn" id="subFrmFileSn"/>
+	</form>
+	<iframe name="defaultFrame" id="defaultFrame" title="업무 처리용 프레임" width="0" height="0" style="display:none;"></iframe>
+	<!-- FOOTER e //-->
+	<script>
+		$(function(){
+			var b = "";
+			var ua = window.navigator.userAgent;
+			if(ua.indexOf('MSIE') > 0 || ua.indexOf('Trident') > 0)
+			 b = "IE";
+			else if(ua.indexOf('Opera') > 0 || ua.indexOf('OPR') > 0)
+			 b = "Opera";
+			else if(ua.indexOf('Firefox') > 0)
+			 b = "Firefox";
+			else if(ua.indexOf('Safari') > 0) {
+			 if(ua.indexOf('Chrome') > 0)
+			  b = "Chrome";
+			 else
+			  b = "Safari";
+			}
+
+			var $photoBtn = $('.photo_area a'),
+				$filePhoto = $('.photo_area input');
+
+			$photoBtn.click(function(e){
+				e.preventDefault();
+				$filePhoto.trigger('click');
+			})
+
+			$filePhoto.change(function(){
+				if (b == 'IE') {
+					$('.photo_area img').attr('src', $filePhoto.val());
+				}
+				else {
+		            if (this.files && this.files[0]) {
+			            var reader = new FileReader();
+			            reader.onload = function(e) {
+			            	$('.photo_area img').attr('src', e.target.result);
+			            }
+			           	reader.readAsDataURL(this.files[0]);
+		            }
+	            }
+	       });
+		});
+
+	</script>
+</body>
+</html>

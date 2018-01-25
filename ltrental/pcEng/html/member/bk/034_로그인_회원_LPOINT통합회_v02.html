@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1200, initial-scale=1">
+
+	<title></title>
+	<link rel="stylesheet" href="../../css/style.css">
+	
+
+	<!--// jQuery core -->
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.min.js"></script>
+	<script src="../../js/html5shiv.js"></script>
+	<script src="../../js/core.js"></script>
+	<script src="../../js/ui.js"></script>
+	<style>
+		
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="inner_header">
+			<a href="#container" class="skip_nav">본문 바로가기</a>
+			<a href="#" class="logo"><h1><img src="../../images/common/logo.png" alt="Lotte rent-a-car"></h1></a>
+			<a href="#" class="side_logo"><img src="../../images/common/logo_hertz.png" alt="hertz"></a>
+			<ul id="extra_menu" class="extra_menu">
+				<!--// 비회원일 경우 -->
+				<li class="login"><a href="#">Login</a></li>
+				<li class="join"><a href="#">Register</a></li>
+
+				<!--// 회원일 경우 -->
+				<li class="logout"><a href="#">My Reservation</a></li>
+				<li class="mypage_quick">
+					<a class="btn_dropdown_menu pr0" href="#">Mypage</a>
+				</li>
+				<li class="language"><a href="#">KOREAN</a></li>
+			</ul>
+		</div>
+		<div id="gnb" class="gnb">
+			<ul class="menus">
+				<li class="menu idx1">
+					<a href="#">Reservations</a>
+				</li>
+				<li class="menu idx2">
+					<a href="#">Car rental</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">Rental information </a>
+							<ul>
+								<li>
+									<a href="#">Rental Cost Information</a>
+								</li>
+								<li>
+									<a href="#">Additional Rate</a>
+								</li>
+								<li>
+									<a href="#">Rental information for foreigner</a>
+								</li>
+								<li>
+									<a href="#">Overseas Reservation</a>
+								</li>
+								<li>
+									<a href="#">Chauffeured Service</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="menu idx3">
+					<a href="#">Location</a>
+				</li>
+			</ul>
+		</div>
+		<div class="gnb_open"></div>
+		<ul id="breadcrumb" class="breadcrumb">
+			<li class="path home"><a href="#"></a></li>
+			<li class="path">Login</li>
+		</ul>
+	</header>
+	<!-- container -->
+	<div id="container" class="login">
+		<h2>Book as a Guest</h2>
+		<!-- content -->		
+			<!-- content_top -->
+	        <div class="wrap_tab">
+	            <ul class="tab_menu">
+	                <li class="active"><a href="#tab-1">Member</a></li>
+	                <li><a href="#tab-2">Guest</a></li>
+	            </ul>
+	            <div class="tab_content mb90" id="tab-1">
+	            	<div class="con_left">
+						<h3 class="mb20">Welcome to LOTTE Rent-A-Car!</h3>
+		                <div class="wrap_stab">
+				            <div class="stab_content" id="stab-1">
+				            	<input type="text" name="" placeholder="ID" value="">
+				            	<input type="password" placeholder="Password" name="">
+								<input type="checkbox" id="auto">
+								<label for="auto" class="mt20 mr15"><span class="icon"></span>Remember ID</label>
+								<div class="btn_wrap mt20">
+									<span class="center">
+                                		<button type="button" class="btn_300 btn_red">Login</button>
+                                	</span>
+                                </div>
+								<ul class="member_menu mt30">
+									<li><a href="#">Find ID</a></li>
+									<li><a href="#">Find Password</a></li>
+									<li><a href="3">Register</a></li>
+								</ul>
+				            </div>
+
+				        </div>			        
+				    </div>
+				</div>	
+				<div class="tab_content nonmember" id="tab-2">
+					<div class="con_left tac">
+						<h3 class="tal">Welcome to LOTTE Rent-A-Car!</h3>
+						<p class="mt20 mb20 tal">Name and Cell # are required.</p>
+					<!-- 038 로그인 비회원 -->
+						<input type="text" name="" id="" value="" placeholder="Name" class="mb10">
+						<input type="text" name="" id="" value="" class="phone">
+						<ins class="hyphen">-</ins>
+						<input type="text" name="" id="" value="" class="phone">
+						<ins class="hyphen">-</ins>
+						<input type="text" name="" id="" value="" class="phone">
+						<input type="text" name="" id="" value="" placeholder="RSV No." class="mt10">						
+                        <button type="button" class="btn_300 btn_red mt20">Submit</button>
+					
+					<!-- 
+						<p>Join us for veriety benefits and coupons.<br>Please, click ‘submit’ button to Reservation</p>
+					-->
+					</div>
+	            </div>
+
+	        </div>
+			<div class="con_right">
+				<a href="#bonus" class="bonus mb10 btn_layer">
+					<span class="link_tit">Members Benefits</span>
+					<span class="link_sub">롯데렌터카 회원 가입하고 여러가지 할인혜택을 받으세요!</span>
+				</a>
+			</div>     	        
+		<!-- content -->
+	</div>
+	<!-- container -->
+	<footer>
+		<div class="inner_footer">
+			<div class="sitemap">
+				<ul>
+					<li><a href="#">COMPANY</a> ㅣ</li>
+					<li><a href="#">USER AGREEMENT</a> ㅣ</li>
+					<li><a href="#">CONTACT US</a></li>
+				</ul>
+			</div>
+
+			<div class="sns">
+				<ul>
+					<li>
+						<a class="twitter" href="#" target="_blank"><img src="../../images/common/img_footer_sns_twitter.png"></a>
+					</li>
+					<li>
+						<a class="facebook" href="#" target="_blank"><img src="../../images/common/img_footer_sns_facebook.png"></a>
+					</li>
+					<li>
+						<a class="blog" href="#" target="_blank"><img src="../../images/common/img_footer_sns_blog.png"></a>
+					</li>					
+				</ul>
+			</div>
+
+			<div class="information">
+				<span class="entrepreneur_info">
+					LOTTE rental co.,ltd. | President : Pyo, Hyun-Myung | Business Registration # : 214-87-79183
+				</span>
+				<span class="address">Communication Service # : 2010-Gyunggi Anyang 420 | Address : 8F Shinwonvision Tower 898. Hogye-dong, Dongan-Gu, Anyang </span>
+				<span class="phone">Main Contact 1588-1230 | FAX 02-2141-9022</span>
+				<span class="copyright">copyright ⓒ 2016 LOTTE rental co.ltd.All Rrights Reserved.</span>
+			</div>
+
+			<div class="certifications">
+				<ul>
+					<li>
+						<img src="../../images/common/img_footer_cert_1.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_2.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_3.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_4.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_5.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_6.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_7.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_8.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_9.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_10.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_11.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_12.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_13.png">
+					</li>	
+				</ul>
+			</div>
+		
+			<div class="big-banner">
+				<img src="../../images/common/img_footer_big_banner.png">
+			</div>
+		</div>
+	</footer>
+	<div class="dimm"></div>
+	<div id="bonus" class="layer layer_b">
+		<div class="layer_tit">
+		    <h2>Members Benefits</h2>
+		    <a href="#" class="btn_layer_close"><img src="../../images/common/btn_layer_close.png"></a>
+		</div>
+		<div class="layer_con">
+		    <div class="wrap_tab mb0">
+		        <ul class="tab_menu">
+		            <li class="active"><a href="#member_bonus">Members Benefits</a></li>
+		            <li><a href="#point">Points & Mileage</a></li>
+		            <li><a href="#insurance">Insurance Discount</a></li>
+		            <li><a href="#foreign">International Reservation</a></li>
+		        </ul>
+		        <div id="member_bonus" class="tab_content">
+		        	<div class="discount">
+		        		<h3>Member Discount</h3>	
+		        		<div class="discount_top">
+			        		<p>Up to <span>60%</span> Discount!</p>
+			        		<p>Get <span>35%~45%</span> Off of your short term rental fee.</p>
+		        		</div>
+				        <div class="discount_con2 grid mb55">
+				            <table class="tb_col">
+				                <caption></caption>
+				                <colgroup>
+				                    <col style="width:140px" />
+				                    <col style="width:140px" />
+				                    <col style="width:225px" />
+				                    <col style="width:225px" />
+				                    <col style="width:auto" /> 
+				                </colgroup>
+				                <thead>
+				                    <tr>
+				                        <th scope="col" colspan="2">Category</th>
+				                        <th scope="col">General Member</th>
+				                        <th scope="col">Gold Member</th>
+				                        <th scope="col">Double Gold Member</th>
+				                    </tr>
+				                </thead>
+				                <tbody>
+				                    <tr>
+				                        <th class="noBorderL" rowspan="2" scope="row">Discount Rate<br>(Online Discount Rate)</th>
+				                        <th>Weekdays</th>
+				                        <td>35% (40%)</td>
+				                        <td>40% (45%)</td>
+				                        <td>45% (50%)</td>
+				                    </tr>
+				                    <tr>
+				                        <th class="borderL">Weekend<br>(Holidays)</th>
+				                        <td>35% (40%)</td>
+				                        <td>40% (45%)</td>
+				                        <td>45% (50%)</td>
+				                    </tr>
+				                </tbody>
+				            </table>
+							<ul class="txt_list mt20">
+								<li class="red">Discount only applies to general vehicle rental (24 hours or more), and different rate applies to Jeju location.</li>
+								<li class="red">Discount offer cannot be combined for the rental fee.Ex) Membership discount cannot be combined with a promotional discount.</li>
+							</ul>
+				        </div>		            		
+		        	</div>
+		        	<div class="discount">
+		        		<h3>Weekend Criteria</h3>
+						<ul class="txt_list mb40 mt20">
+							<li class="black f14">Holiday (Weekends) : Friday 12AM - Sunday 11:59 PM</li>
+							<li class="black f14">(Public) Holiday: Day before the holiday 12AM - Holiday 11:59 PM</li>
+						</ul>
+					</div>
+		        	<div class="level">
+		        		<h3>Details of Member Level Benefits</h3>
+						<div class="wrap_stab mt50">
+						    <ul class="stab_menu">
+						        <li class="active"><a href="#normal">General Member</a></li>
+						        <li><a href="#gold">Gold Member</a></li>
+						        <li><a href="#double">Double Gold Member</a></li>
+						    </ul>
+						    <div class="stab_content grid mt20" id="normal">
+							    <table class="tb_row mb10">
+							        <caption></caption>
+							        <colgroup>
+							            <col style="width:200px">
+							            <col style="width:auto"> 
+							        </colgroup>
+							        <tbody>
+							            <tr>
+							                <th scope="row">Eligibility</th>
+							                <td>Sign up for membership on website.</td>
+							            </tr>
+							            <tr>
+							                <th scope="row">Free Upgrade Benefit</th>
+							                <td> 
+							                    A free vehicle upgrade service is provided when you reach a certain rental frequency at each membership level
+							                    <span class="block txt_gray mt5">
+							                        When you rent a car for 5th, 15th, 25th, 35th, 45th, or 55th time (+10 rentals unit) Compact vehicle for the appointment -> upgrade to intermediate-sized vehicle Intermediate-sized vehicle for the appointment -> upgrade to full-sized vehicle
+							                    </span>
+							                    <ul class="txt_list">
+													<li class="red">
+														CDW and late fees shall be applied based on the upgraded vehicle type
+													</li>
+													<li class="red">
+														Premium vehicles, imported vehicles, SUVs/RVs, and vans are excluded from the upgrade promotion
+													</li>
+													<li class="red">
+														Only the corresponding vehicle availability applies (no rain checks)
+													</li>
+													<li class="red">
+														Please apply in advance for the upgrade service so that we have enough time to have your car ready. For further questions, please ask in any office.
+													</li>
+							                    </ul>
+							                </td>
+							            </tr>
+							            <tr>
+							                <th scope="row">Free Pass Benefit</th>
+							                <td> 
+							                    A one-day (24-hour) free pass is provided when you reach a certain rental frequency at each membership level
+							                    <span class="block txt_gray mt5">
+							                        When you accumulate a history of five rentals, a free pass for a compact vehicle rental is provided When you accumulate a 10, 20, 30, 40, or 50 (+10 rental units) rental history, a free pass for an intermediate-size vehicle is provided. Example: When you return your fifth rental car, a mobile free pass will be provided which can be used towards your sixth rental within the valid period.
+							                    </span>
+							                    <ul class="txt_list">
+													<li class="red">
+														However, you must sign up for CDW
+													</li>
+													<li class="red">
+														Expiration date: 6 months after the issued date
+													</li>
+							                    </ul>
+							                </td>
+							            </tr>
+							            <tr>
+							                <th scope="row">Birthday Discount Benefits</th>
+							                <td> 
+							                    50% discount offer
+							                    <ul class="txt_list">
+							                        <li class="red">
+							                            단, 성수기 생일 할인 사용 제한
+							                        </li>
+							                        <li class="red">
+							                            7월 생일 → 6월에 생일 할인 사용
+							                        </li>
+							                        <li class="red">
+							                            8월 생일 → 9월에 생일 할인 사용
+							                        </li>
+							                    </ul>
+							                </td>
+							            </tr>
+							            <tr>
+							                <th scope="row">Additional Discount Benefits</th>
+							                <td> 
+												<ul class="txt_list">
+													<li class="bul">CDW 20% discount</li>
+													<li class="bul">Additional 5% off when you make online reservation</li>
+													<li class="bul">Additional 5% off on weekdays</li>
+												</ul>
+							                </td>
+							            </tr>
+							        </tbody>
+							    </table>
+								<ul class="txt_list mb50">
+									<li class="red"> 
+										Rental records and Point Accumulation is based on a single lessee (who signs the contract).
+									<li class="red"> 
+										Internet reservation is only available once during a single period.
+									</li>
+								</ul>	
+						    </div>
+						    <div class="stab_content grid mt20" id="gold">
+							    <table class="tb_row mb10">
+							        <caption></caption>
+							        <colgroup>
+							            <col style="width:200px">
+							            <col style="width:auto"> 
+							        </colgroup>
+							        <tbody>
+							            <tr>
+							                <th scope="row">Eligibility</th>
+							                <td>Have 7 or more vehicle rental records, after signing up as a general member. Gold Member benefits apply upon your 8th rental.</td>
+							            </tr>
+							            <tr>
+							                <th scope="row">Free Upgrade Benefit</th>
+							                <td> 
+							                    A free vehicle upgrade service is provided when you reach a certain rental frequency at each membership level
+							                    <span class="block txt_gray mt5">
+							                        When you rent a car for 5th, 15th, 25th, 35th, 45th, or 55th time (+10 rentals unit) Compact vehicle for the appointment -> upgrade to intermediate-sized vehicle Intermediate-sized vehicle for the appointment -> upgrade to full-sized vehicle
+							                    </span>
+												<ul class="txt_list">
+													<li class="red">
+														CDW and late fees shall be applied based on the upgraded vehicle type
+													</li>
+													<li class="red">
+														Premium vehicles, imported vehicles, SUVs/RVs, and vans are excluded from the upgrade promotion
+													</li>
+													<li class="red">
+														Only the corresponding vehicle availability applies (no rain checks)
+													</li>
+													<li class="red">
+														Please apply in advance for the upgrade service so that we have enough time to have your car ready. For further questions, please ask in any office.
+													</li>
+												</ul>
+							                </td>
+							            </tr>
+							            <tr>
+							                <th scope="row">Free Pass Benefit</th>
+							                <td> 
+							                    A one-day (24-hour) free pass is provided when you reach a certain rental frequency at each membership level
+							                    <span class="block txt_gray mt5">
+							                    	When you accumulate a history of five rentals, a free pass for a compact vehicle rental is provided When you accumulate a 10, 20, 30, 40, or 50 (+10 rental units) rental history, a free pass for an intermediate-size vehicle is provided. Example: When you return your fifth rental car, a mobile free pass will be provided which can be used towards your sixth rental within the valid period.
+												</span>
+												<ul class="txt_list">
+													<li class="red">
+														However, you must sign up for CDW
+													</li>
+													<li class="red">
+														Expiration date: 6 months after the issued date
+													</li>
+												</ul>
+							                </td>
+							            </tr>
+							            <tr>
+							                <th scope="row">Birthday Discount Benefits</th>
+							                <td> 
+							                    55% discount offer
+							                    <ul class="txt_list">
+							                        <li class="red">
+							                            단, 성수기 생일 할인 사용 제한
+							                        </li>
+							                        <li class="red">
+							                            7월 생일 → 6월에 생일 할인 사용
+							                        </li>
+							                        <li class="red">
+							                            8월 생일 → 9월에 생일 할인 사용
+							                        </li>
+							                    </ul>
+							                </td>
+							            </tr>	            
+							            <tr>
+							                <th scope="row">Additional Discount Benefits</th>							                
+							                <td> 
+												<ul class="txt_list">
+													<li class="bul">CDW 20% discount</li>
+													<li class="bul">Additional 5% off when you make online reservation</li>
+													<li class="bul">Additional 5% off on weekdays</li>
+												</ul>
+							                </td>
+							            </tr>
+							            <tr>
+							                <th scope="row">Further Benefits</th>
+							                <td> 
+												<ul class="txt_list">
+													<li class="bul">Membership Upgrade Gift Mobile Gift card (values at 3,000won)</li>
+													<li class="bul">Only available to newly upgraded member who have agreed to receive SMS messages.</li>
+												</ul>
+							                    <!--
+							                    <ul class="txt_list">
+							                        <li class="red">
+							                            제주 지역 제외
+							                        </li>
+							                        <li class="red">
+							                            24시간 사전 요청 건에 한해 서비스가 제공되며, 성수기 등의 기간에 지점 사정에 의해 서비스가 제한될 수 있습니다.
+							                        </li>
+							                    </ul>
+							                    -->
+							                </td>
+							            </tr>							            
+							        </tbody>
+							    </table>
+								<ul class="txt_list mb50">
+									<li class="red"> 
+										Rental records and Point Accumulation is based on a single lessee (who signs the contract).
+									</li>
+									<li class="red"> 
+										Internet reservation is only available once during a single period.
+									</li>
+								</ul>	
+						    </div>
+						    <div class="stab_content grid mt20" id="double">
+							    <table class="tb_row mb10">
+							        <caption></caption>
+							        <colgroup>
+							            <col style="width:200px">
+							            <col style="width:auto"> 
+							        </colgroup>
+							        <tbody>
+							            <tr>
+							                <th scope="row">Eligibility</th>
+							                <td>Have 40 or more vehicle rental records after signing up as a general member. Double Gold Member benefits apply upon your 41th rental.</td>
+							            </tr>
+							            <tr>
+							                <th scope="row">Free Upgrade Benefit</th>
+							                <td> 
+							                    A free vehicle upgrade service is provided when you reach a certain rental frequency at each membership level 
+							                    <span class="block txt_gray mt5">
+							                        When you rent a car for 5th, 15th, 25th, 35th, 45th, or 55th time (+10 rentals unit) Compact vehicle for the appointment -> upgrade to intermediate-sized vehicle Intermediate-sized vehicle for the appointment -> upgrade to full-sized vehicle
+							                    </span>
+												<ul class="txt_list">
+													<li class="red">
+														CDW and late fees shall be applied based on the upgraded vehicle type
+													</li>
+													<li class="red">
+														Premium vehicles, imported vehicles, SUVs/RVs, and vans are excluded from the upgrade promotion
+													</li>
+													<li class="red">
+														Only the corresponding vehicle availability applies (no rain checks)
+													</li>
+													<li class="red">
+														Please apply in advance for the upgrade service so that we have enough time to have your car ready. For further questions, please ask in any office.
+													</li>
+												</ul>
+							                </td>
+							            </tr>
+							            <tr>
+							                <th scope="row">Free Pass Benefit</th>
+							                <td> 
+							                    A one-day (24-hour) free pass is provided when you reach a certain rental frequency at each membership level
+							                    <span class="block txt_gray mt5">
+							                    	When you accumulate a history of five rentals, a free pass for a compact vehicle rental is provided When you accumulate a 10, 20, 30, 40, or 50 (+10 rental units) rental history, a free pass for an intermediate-size vehicle is provided. Example: When you return your fifth rental car, a mobile free pass will be provided which can be used towards your sixth rental within the valid period.
+
+												</span>
+												<ul class="txt_list">
+													<li class="red">
+														However, you must sign up for CDW
+													</li>
+													<li class="red">
+														Expiration date: 6 months after the issued date
+													</li>
+												</ul>
+							                </td>
+							            </tr>
+							            <tr>
+							                <th scope="row">Birthday Discount Benefits</th>
+							                <td> 
+							                    60% discount offer
+							                    <ul class="txt_list">
+							                        <li class="red">
+							                            단, 성수기 생일 할인 사용 제한
+							                        </li>
+							                        <li class="red">
+							                            7월 생일 → 6월에 생일 할인 사용
+							                        </li>
+							                        <li class="red">
+							                            8월 생일 → 9월에 생일 할인 사용
+							                        </li>
+							                    </ul>
+							                </td>
+							            </tr>
+							            <tr>
+							                <th scope="row">Additional Discount Benefits</th>
+							                <td> 
+												<ul class="txt_list">
+												    <li class="bul">CDW 20% discount</li>
+												    <li class="bul">Additional 5% off when you make online reservation</li>
+												    <li class="bul">Additional 5% off on weekdays</li>
+												</ul>
+							                </td>
+							            </tr>
+							            <tr>
+							                <th scope="row">Further Benefits</th>
+							                <td> 
+							                    Membership Upgrade Gift Mobile Gift card (values at 5,000won)
+							                    <span class="block txt_gray bul_grey mt5">
+							                        Only available to newly upgraded members who have agreed to receive SMS messages. When rented for 72 hours or more during weekdays, free rental return service within vicinity (5Km or less)
+							                    </span>
+							                    <ul class="txt_list">
+							                        <li class="red">
+							                            excludes Jeju
+							                        </li>
+							                        <li class="red">
+							                            Service only available for request made 24hours prior, and subject to change during high season, etc.
+							                        </li>
+							                    </ul>
+							                </td>
+							            </tr>								            
+							        </tbody>
+							    </table>
+								<ul class="txt_list mb50">
+									<li class="red"> 
+										Rental records and Point Accumulation is based on a single lessee (who signs the contract).
+									</li>
+									<li class="red"> 
+										Internet reservation is only available once during a single period.
+									</li>
+								</ul>
+						    </div>
+						</div>
+		        	</div>      	
+		        </div>
+		        <div class="tab_content" id="point">
+	        		<div class="use">
+	        			<h3>Points Redemption Criteria</h3>
+	        			<div class="use_top">
+			        		<p>If 50,000 or more Rent-A-Car points have accumulated, it is possible to cash out points for use towards car rental at any LOTTE Rent-A-Car location. </p>	
+	        			</div>
+		        		<ul class="txt_list">
+							<li class="black f14">LOTTE rent-a-car points can be redeemed if 50,000 or more have accumulated.</li>
+							<li class="black f14">Points redemption is only available for general vehicle rentals for less than 30days.</li>
+							<li class="black f14">Points redemption is only available towards rental fee. (CDW, DS, one-way rental, refueling service charge not available)</li>
+							<li class="black f14">Please check your points balance when making reservations, and mark the box if you would like to use your points  and if your points are 50,000 or more. Type in the amount of points you would like to redeem.</li>
+							<li class="red">Points Redemption will take place on the day of rental, at the rental location.</li>
+							<li class="red">If points are redeemed towards the rental fee, redeemed amount does not apply to points accumulation.</li>
+							<li class="red">However, this only applies to the points accumulated before January 12, 2015.If 50,000P or more rental points are accumulated, the remaining points may be used.</li>
+
+				        </ul>
+	        		</div>
+			        <div class="coupon mt40">
+			        	<h3>Converting your points to a discount coupon</h3>
+			        	<div class="coupon_top">
+							<p>총 누적 50,000포인트 미만일 경우, 50~60% 대여 할인쿠폰으로 전환 가능!</p>
+						</div>	
+						<ul class="txt_list mt40">
+				            <li class="black f14">If your total rental points are 50,000 P or less, you may request the conversion to discount coupons for rental.</li>
+				            <li class="f14">(General Member 50% discount coupon / Gold Member 55% discount coupon / Double Gold Member 60% discount coupon)</li>
+				            <li class="black f14">Partial request of [point conversion] is also available</li>
+				            <li class="f14">ex) 25,000 point for 1 discount tickets Deduct → 10,000 point for a discount tickets and remaining 15,000 point can be used for another discount tickets subsequently</li>
+						</ul>								
+						<div class="coupon_con grid mt40">
+						    <table class="tb_col">
+						        <caption></caption>
+						        <colgroup>
+						            <col style="width:33%">
+						            <col style="width:33%">
+						            <col style="width:auto"> 
+						        </colgroup>
+						        <thead>
+						            <tr>
+						                <th scope="col">Total Rental Points</th>
+						                <th scope="col">Redemption Detail</th>
+						                <th scope="col">Etc</th>
+						            </tr>
+						        </thead>
+						        <tbody>
+						            <tr>
+						                <td>~ 10,000 or less</td>
+						                <td>50~60% off Discount Coupon(1 Ticket)</td>
+						                <td rowspan="5" class="tal">
+											<ul class="txt_list ml50">
+												<li class="gray">
+													Car types : All cars (Imported cars excluded)
+												</li>
+												<li class="gray">
+													Available location : All locations (excluding Jeju)
+												</li>
+												<li class="gray">
+													Expiration period : 1 year after emission
+												</li>
+											</ul>
+						                </td>
+						            </tr>
+						            <tr>
+						                <td>10,000~19,999</td>
+						                <td>50~60% off Discount Coupon(2 Ticket)</td>
+						            </tr>
+						            <tr>
+						                <td>20,000~29,999</td>
+						                <td>50~60% off Discount Coupon(3 Ticket)</td>
+						            </tr>
+						            <tr>
+						                <td>30,000~39,999</td>
+						                <td>50~60% off Discount Coupon(4 Ticket)</td>
+						            </tr>
+						            <tr>
+						                <td>40,000~49,999</td>
+						                <td>50~60% off Discount Coupon(5 Ticket)</td>
+						            </tr>							            							            							            
+						        </tbody>
+						    </table>
+							<ul class="txt_list mt20">
+								<li class="black f14">Point conversion request is available through the website or customer service (1588-1230)</li>
+								<li class="black f14">If you have any additional questions, please make inquiries through the website customer service or call our customer service (1588-1230)</li>
+								<li class="black f14">The request period is until the last day of every month, and the discount coupon will be sent to you via SMS the next month.</li>
+								<li class="black f14">This policy may be modified by the company at its sole discretion, and a new provision shall prevail over the previous provision.</li>
+							</ul>							    
+						</div>										
+						<div class="layer_foot borderTop mt50">
+							<a href="#" class="btn_200 btn_black">Request for conversion to discount coupons</a>
+						</div>
+			        </div>		        
+		        </div>
+		        <div class="tab_content" id="insurance">
+		        	<div class="cdw">
+		        		<h3>Auto Accident Car Damage Waiver (CDW)</h3>
+		        		<div class="cdw_top">
+		        			<p>Additional 20% Discount</p>
+		        			<p>Get <span class="red">20% off</span> your CDW fee when you sign up for CDW.</p>
+		        			<span class="block mt40">All losses or damages to the rented vehicle, for any reason attributable to the customer, during the rental period iscustomer’s responsibility. However, Car Damage Waiver (CDW) is an optional service which offers protection from financialliability for losses or damages to the rented vehicle through your fault.</span>
+		        		</div>
+		        		<div class="cdw_con repair">
+		        			<h4>Vehicle Repair Cost</h4>
+		        			<span>All losses or damages to the rented vehicle, for any reason attributable to the customer, during the rental period is the customer’s responsibility. (However, Car Damage Waiver (CDW) is an optional service which offers protection from financial liability for loss or damage to the rented vehicle through your fault.)</span>
+		        		</div>
+		        		<div class="cdw_con break">
+		        			<h4>Compensation for Inactive Vehicle</h4>
+		        			<span>If the rented vehicle needs to be repaired from the accident, the customer is responsible for the loss of revenue for the rental car during the repair period. In such case, the customer will be charged for 50% of normal rental fee.</span>
+		        		</div>
+		        		<div class="cdw_con rent">
+		        			<h4>Insurance Rental Loss Deductible</h4>
+		        			<span>By paying 300,000won, you are automatically signed up and will have a worry-free insurance rental.</span>
+		        		</div>
+		        	</div>
+		        </div>
+		        <div class="tab_content" id="foreign">
+		        	<div class="hertz">
+		        		<h3>International Hertz Reservation Discount Service</h3>
+		        		<div class="hertz_top">
+		        			<p>Up to 25% Discount </p>
+		        			<p>Get <span class="red">10% - 25% off</span> when you make a Hertz car rental reservation through LOTTE Rent-A-Car international service</p>
+		        			<ul class="txt_list mt40">
+		        				<li class="black f14">When you use LOTTE rent-a-car international reservation service, you can conveniently use Hertz Car Rental in over 150 countries, 6,500 locations, with a 550,000 vehicle inventory.</li>
+								<li class="black f14">Let us know in advance the type of a rental vehicle, return location, rental date, and arrival flight number when you make a reservation, and enjoy a more convenient and faster international car rental service. 10 - 25% discount available depending on locations.</li>
+								<li class="red">International reservation is only available to lessees who are 25 years of age or older. Rental requirements and eligibility mayvary by location, so please review the information thoroughly when making reservation.</li>
+		        			</ul>
+		        		</div>
+		        	</div>		        
+		        </div>
+		    </div>
+		   	<div class="layer_foot borderTop">
+				<a href="#" class="btn_layer_close btn_200 btn_red">confirm</a>
+			</div>	
+		</div>
+	</div>
+	
+</body>
+</html>

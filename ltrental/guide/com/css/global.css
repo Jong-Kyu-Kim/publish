@@ -1,0 +1,337 @@
+@charset "utf-8";
+
+/****************************************/
+/*	Name: LOTTE HOTEL
+/*	PART: SITE COMMON STYLE
+/*	Version: 1.0
+/*	Author: LeeYumi
+/****************************************/
+
+/*Float Release*/
+.img_infoList, .searchWord,
+.storybook ul, .storyfrom_info .tit2dep,
+.historyBox .dep03Sec,
+.ico_set_in,
+.academicCooper .acCont > dt > a,
+.storyfrom .lst,
+.storyfrom .count_paging{*zoom:1;}
+
+.storybook ul:after, 
+.storyfrom_info .tit2dep:after,
+.historyBox .dep03Sec:after,
+.academicCooper .acCont > dt > a:after,
+.storyfrom .lst:after,
+.ico_set_in:after{display:block; content:''; clear:both;}
+
+/*List Tipe*/
+/*Img List */
+.img_infoList{border-top:1px solid #444; }
+.img_infoList dt {float:left; padding:15px 10px 0 15px;  width:230px; max-height:80px; color:#333; font-weight:bold;}
+.img_infoList .split.imgMs > .colSec.txt_dsc {margin-left:30px; width:450px;}
+.img_infoList .listExplain {padding:15px 0 4px 260px; background:#f6f6f6;}
+.img_infoList .listExplain .txt_dsc {margin-bottom:10px; color:#333;}
+.img_infoList .dotlineT {overflow:hidden; padding-top:25px; margin-bottom:0; }
+.img_infoList .txt_dsc.bottom_list {padding-bottom:20px; color:#333;}
+.img_infoList .lst03dep li {color: #333;}
+.infoList_line {border-bottom:1px solid #444;}
+.infoList_line .no_data{height:150px; text-align:center; border-top:1px solid #444;}
+
+/*where to go serch*/
+.searchBox_in {overflow:hidden; height:189px; padding:38px 28px 0 28px; border-top:1px solid #8a7a6c;}
+.searchBox_in label {padding:0 10px 0 10px; background:url("/front/img/com/bg_square3x3.gif") no-repeat 0 13px; font-weight:bold; color:#8a7a6c; }
+.searchBox_in .keyword_srh{width:396px; margin-right:8px; }
+.searchBox_in .btn_srh a {width:41px;}
+.searchWord {clear:both; margin:13px 0 0 150px;}
+.searchWord strong {float:left; margin-right:20px; color:#8a7a6c;font-weight:bold; ;}
+.searchWord ul {float:left;}
+.searchWord ul li {float:left; margin-left:14px; }
+.searchWord ul li:first-child {margin-left:0;}
+.searchWord ul li a {text-decoration:underline;}
+.search_info {clear:both;}
+.search_info strong {color:#333;}
+.search_info {overflow:hidden;}
+.search_info p {float:left; padding-top:7px;}
+.search_info .ico_img{float:right; padding-right:18px;}
+.search_info .ico_img.txt li a {color:#999;}
+.search_info .ico_img.txt li.on a {color:#333;}
+.ico_set_in{margin-bottom:9px;}
+.ico_set_in li{float:left;}
+.ico_img .ico_set_in li{height:32px; margin:0 0 0 18px; padding:4px 0 0 19px; background:url("/front/img/com/bg_dotted_line.gif") repeat-y left top;}
+.ico_img .ico_set_in li:first-child{margin-left:0; padding-left:0; background:none;}
+
+
+/* Stories from LOTTE */
+/* .storyfrom{margin-bottom:30px;}
+.storyfrom .split.col2 > .colSec.ar{text-align:right;}
+.storyfrom .count_paging{position:static; display:inline-block; zoom:1; *display:inline;}
+.storyfrom .count_paging>span{color:#999;}
+.storyfrom .count_paging>span.nowCount{color:#333;}
+.storyfrom .count_paging a{background-position:0 -499px;}
+.storyfrom .count_paging a:first-child{background-position:0 -399px;}
+.wrap_webzin {position:relative; margin-left:32px; overflow:hidden; width:660px; height:100%;}
+.storybook{height:272px; background:url(/front/img/com/global/bg_story_book.png) left top no-repeat;}
+.storybook ul{position:absolute; left:1px; top:0;}
+.storybook ul li{float:left;}
+.storybook ul li a{position:relative; display:block; width:95px; height:89px; margin-right:15px; padding-top:182px; text-align:center;}
+.storybook ul li a img{position:absolute; top:0; left:0;}
+.storybook ul li a span{display:inline-block; width:92px; color:#999;}
+.storybook ul li a span em{display:block;}
+.storybook ul li.on a, .storybook ul li a:hover, .storybook ul li.on a, .storybook ul li a:focus {padding-top:172px; height:99px;}
+.storybook ul li.on a span, .storybook ul li a:hover span, .storybook ul li.on a span, .storybook ul li a:focus span{padding-bottom:50px; background:url(/front/img/com/bg_dotline1x3_999.gif) center top repeat-y;}
+.storybook ul li.on a span em, .storybook ul li a:hover span em, .storybook ul li.on a span em, .storybook ul li a:focus span em{padding:9px 10px; border:1px solid #999; background:#fff; color:#222; font-weight:bold;}
+.storyfrom_info.bbs_view dt{float:none; width:auto; padding-top:11px; min-height:40px; background:url(/front/img/com/bg_dotline3x1.gif) left bottom repeat-x; font-weight:bold;}
+.storyfrom_info.bbs_view dt strong{font-weight:bold;}
+.storyfrom_info.bbs_view dd.edit{margin-top:30px;}
+.storyfrom_info .split.col2 > .colSec{width:330px;} 1.8 | 강완 | 디자인 변경됨 */
+.storyfrom .book_box {height:270px; padding:5px 0 48px 25px; margin-bottom:15px; background:url(/front/img/com/global/bg_storyfrL.png) 0 0 no-repeat;}
+.storyfrom .book_box .colSec:first-child {width:230px; height:270px;}
+.storyfrom .book_box .colSec {width:435px;}
+.storyfrom .book_box .colSec .tit2dep {margin:27px 0 15px;}
+.storyfrom .book_box .colSec .txt_dsc {height:89px;}
+.storyfrom .wrap_lst {border-top:1px solid #666; border-bottom:1px solid #666; padding-bottom:20px;}
+.storyfrom .lst {background:url(/front/img/com/global/bg_story_book_new.png) 0 0 repeat;}
+.storyfrom .lst li {position:relative; float:left; width:177px; *height:183px; height:184px; margin-top:20px; padding-top:20px; text-align:center;}
+.storyfrom .lst li a {display:inline-block; width:120px; height:162px; }
+.storyfrom .lst li a img {width:120px; height:162px;}
+.storyfrom .lst li a strong {display:block; margin-top:5px; font-weight:normal; color:#666;}
+.storyfrom .lst li em, .storyfrom .lst li .img_txt {position:absolute; left:28px; top:20px; width:0; height:0; font-size:0;}
+.storyfrom .lst li a:hover em {width:120px; height:162px; background:url(/front/img/com/bg_1x1_000_opa70.png) repeat;}
+.storyfrom .lst li a:hover em .img_txt {left:0; top:56px; width:120px; padding-top:37px; background:url(/front/img/com/bg_btn_ico14.png) no-repeat 41px -239px; color:#fff;}
+
+/* History Of Lotte Hotel */
+.historyBox .imgTxt {padding-bottom:29px; margin-bottom:8px; background:url(/front/img/com/bg_grad1x10_e3e3e3.png) left bottom repeat-x;}
+.historyBox .dep03Sec {padding:0 0 3px;}
+.historyBox .dep03Sec.no .hlist {background:none;}
+.historyBox .tit3dep {float:left; width:120px; padding-top:19px; color:#8a7a6c; font-style:italic; font-weight:normal;}
+.historyBox .hlist {float:right; width:590px; padding-top:24px; background: url(/front/img/com/bg_dotline3x1.gif) 0 0 repeat-x;}
+.historyBox .hlist li strong {float:left; width:60px; font-style:italic;}
+.historyBox .hlist li span{float:left; width:530px;}
+
+/* contact us */
+.contact_us {margin-top:-30px; margin-bottom:0px;}
+.contact_us > .split.col2 > .colSec {width: 265px; margin-left:0px;}
+.contact_us > .split.col2 > .colSec .split.col2 .colSec {width: 295px; margin-left:0px;}
+.contact_us.etc .split.col2 > .colSec {width: 590px;}
+.contact_us > .split.col2 > .colSec {width:530px; float:right; margin-left:0;}
+.contact_us > .split.col2 > .colSec.wrap_title {width:180px; padding-top:30px; float:left;}
+.contact_us.etc > .split.col2 > .colSec.wrap_title {max-width:120px; padding-top:0;}
+.contact_us.hotel .colSec .dep03Sec:first-child, .contact_us.etc > .split.col2:first-child {background:none;}
+.contact_us.etc > .split.col2, .contact_us.hotel .colSec .dep03Sec {background: url(/front/img/com/bg_dotline3x1.gif) 0 0 repeat-x; padding-top:30px;}
+.contact_us .dep03Sec .lst03dep {margin-bottom:28px;}
+.contact_us .split.col3 .colSec {width:170px;}
+.contact_us .tbl_group {margin-bottom:0;}
+.contact_us.hotel .lst03dep li {text-indent:0; padding-left:0; background:none;}
+.contact_us.hotel .lst03dep li > strong {display:block; padding-bottom:2px; margin-top:10px;}
+.contact_us .tit3dep {margin-bottom:5px;}
+.contact_us .tit2dep {margin-top:-3px; }
+/* CAREER OPPORTUNITIES */
+.career_opper .split {margin-bottom:36px; padding-top:10px;}
+
+/* wedding consult */
+.weddingConsut .ico_img .cal_txt {display:inline-block; width:auto; height:auto; background:none;}
+.weddingConsut .ico_img .cal_txt:first-child{margin-left:0;}
+
+/* virtual tour _ layerPopup */
+/*
+.laypop.virtualT .location .split.col2 dt {width:193px; font-weight:bold; color:#222;}
+.laypop.virtualT .location .split.col2 dt strong {display:block;}
+.laypop.virtualT .location .split.col2 dd {width:597px;}
+.laypop.virtualT .location .split.col2 dd .txt_dsc {margin-bottom:15px;}
+.laypop.virtualT .location .split.col2 dd .btn_mult {margin-bottom:0px;}
+11.11 디자인 변경됨 강완 */
+.virtualT .popTit {color:#222;}
+.virtualT .popContainer .popImg{height:430px; background:#ddd; color:#000; text-align:center}
+.virtualT .popBody .split .colSec{width:530px;}
+.virtualT .popBody .split .colSec dt {padding-bottom:6px; color:#222; font-weight:bold;}
+.virtualT .popBody .split .colSec dd .txt_dsc {margin-bottom:0;}
+.virtualT .popBody .split .colSec.btn_mult {float:right; width:auto; margin:0;}
+.virtualT .popBody .split .colSec.btn_mult .ico_set{margin-bottom:10px;}
+
+/* event space */
+.eventSpace .gallery_list_area {border-top:1px solid #444; padding-top:0px;}
+.eventSpace .gallery_list_area > .infoList_line > li {min-height:200px;  padding:31px 0 30px; background:url(/front/img/com/bg_dotline3x1.gif) 0 0 repeat-x;}
+.eventSpace .gallery_list_area > .infoList_line > li:first-child {background:none}
+.eventSpace .gallery_list_area .dep03Sec {position:relative; /* padding-left:365px; 11.11 강완*/ margin-bottom:0; min-height:200px;}
+/* .eventSpace .gallery_list_area .dep03Sec .imgArea {position:absolute; left:0; top:0px;} 11.11 강완 */
+.eventSpace .gallery_list_area .dep03Sec .btn_mult {margin-bottom:0;}
+.eventSpace .gallery_list_area .dep03Sec .tit3dep {margin-bottom:20px;}
+.eventSpace .gallery_list_area .dep03Sec .tit3dep strong {color:#333;}
+/* .eventSpace .gallery_list_area .paging {border-top:1px solid #666;} 11.11 강완 */
+
+/* greeting */
+.greeting .list_thumb {position:relative; }
+.greeting .list_thumb > span {position:absolute; left:0; bottom:0; width:210px; padding:9px 0 16px 20px; background: url(/front/img/com/bg_1x1_000_opa70.png) repeat; color:#fff;}
+.greeting .list_thumb > span strong {display:inline-block; padding-left:5px;}
+.greeting .txt_dsc {color:#444;}
+.greeting .split > .colSec > .dep03Sec {margin-bottom:23px;}
+.greeting .tit2dep {margin-top:-7px;}
+
+/* company profile */
+.companyProfile .txt_dsc {color:#444;}
+.companyProfile .split > .colSec > .dep03Sec {margin-bottom:23px;}
+.companyProfile .tit2dep {margin-top:-7px;}
+
+/* vision and Phliosophy */
+.vision, .Philos {padding-top:20px; margin-bottom:0;}
+.vision .tit2dep, .Philos .tit2dep {margin-bottom:30px; background: url(/front/img/com/bg_dotline3x1.gif) 0 18px repeat-x; color:#333;}
+.vision .tit2dep span, .Philos .tit2dep span {display:inline-block; padding-right:25px; background:#fff;}
+.vision .split, .Philos .split.col3 {position:relative; height:385px; background:url(/front/img/ko/global/img_vision.png) 190px 64px no-repeat;}
+.vision .split .colSec {position:absolute; left:300px; top:-7px; width:auto; color:#8a7a6c; text-align:center;}
+.vision .split .colSec.cont02 {left:46px; top:197px;}
+.vision .split .colSec.cont03 {left:540px; top:183px;} 
+.Philos .tit2dep {margin-bottom:25px;}
+.Philos .tit3dep {margin-bottom:32px; color:#666; font-weight:normal; text-align:center;}
+.Philos .tit3dep span {color:#8a7a6c;}
+.Philos .split.col3 {height:231px; margin-bottom:20px; background:url(/front/img/ko/global/img_philos.png) 0px 0px no-repeat;}
+.Philos .split.col3 .colSec {margin-left:20px; width:210px; }
+.Philos .split.col3 .colSec.cont03 {margin-left:18px; width:210px; }
+.Philos .split.col3 .colSec .txt_dsc {text-align:center; color:#333;}
+.Philos .split.col3 .colSec .txt_dsc span {display:block; margin:40px 0 27px; color:#8a7a6c;}
+.Philos .split.col2 .colSec {margin-left:40px; width:335px}
+.Philos .split.col2 .colSec:first-child {margin:0}
+.Philos .split.col2 .txt_dsc {margin-bottom:0; color:#333;}
+
+/* safety */
+.safe_box .infoList {padding-top:7px;}
+.safe_box .infoList > li {margin-top:30px;}
+.safe_box .infoList > li:first-child {margin-top:0;}
+.safe_box .infoList .dotBk.type02 {overflow:auto;}
+.safe_box .infoList .dotBk.type02 li {float:left; width:221px;}
+
+/* lotteOrganization */
+.lotteOrganization .img_box {padding-top:40px;}
+
+/* academicCooper */
+.academicCooper .dep02Sec {margin-bottom:32px; padding-top:0px;}
+.academicCooper .dep02Sec > .txt_dsc {margin-bottom:30px;}
+.academicCooper .acCont {border-top:1px solid #ccc;}
+.academicCooper .acCont > dt {border-top:0; padding-top:1px}
+.academicCooper .acCont > dt:hover {background:#f6f6f6; margin-top:0; padding-top:0; cursor:pointer;}
+.academicCooper .acCont > dt.on:hover {background:#f6f6f6; margin-top:-1px; padding-top:1px;}
+.academicCooper .acCont > dt > a {min-height:50px; height:auto;}
+.academicCooper .acCont > dt, .academicCooper .acCont > dd {border-left:0; border-right:0; margin-top:-1px;}
+.academicCooper .acCont > dt.on, .academicCooper .acCont > dd.on {border:1px solid #999;}
+.academicCooper .acCont > dt.on {border-bottom:0; background:#f6f6f6;}
+.academicCooper .acCont > dt.on a {background-position:671px -603px; color:#222; font-weight:bold;}
+.academicCooper .acCont > dt > a {background-position:671px -719px; font-weight:normal; color:#666;}
+.academicCooper .acCont > dt > a > span {float:right; width:568px; padding:14px 20px 15px 0; background:none;}
+.academicCooper .acCont > dt > a > span.chain_name {float:left; width:80px; padding-right:0;}
+.academicCooper .acCont > dd {margin:0; padding:0}
+.academicCooper .acCont > dd .txt_dsc, .academicCooper .acCont > dd .lst03dep {margin-bottom:20px;}
+.academicCooper .acCont > dd.on {top:1px; border-top:0}
+.academicCooper .acCont > dd .down_box {background: url(/front/img/com/bg_dotline3x1.gif) 0 0 repeat-x; padding:0;}
+.academicCooper .acCont > dd .down_box > .ico_download2 {display:block; padding:12px 20px 13px 60px; width:auto; height:auto; background-position:20px -267px}
+.academicCooper .acCont > dd .down_box > .ico_download2 > a {display:inline-block; padding-right:20px; width:auto; height:auto; background:none;}
+.academicCooper .acCont > dd > dl > dt, .academicCooper .acCont > dd > dl > dd {padding:0 20px;}
+
+
+/* ethicsReporting */
+.ethicsRep .dep02Sec {margin-bottom:12px;}
+.ethicsRep .split.col2 {margin-bottom:25px;}
+.ethicsRep .split.col2 > dt.colSec {width:65px; font-weight:bold; color:#8a7a6c; }
+.ethicsRep .split.col2 > dd.colSec {width:565px; margin-left:10px; padding-left:12px; background: url(/front/img/com/global/bg_grayline1x32_ccc.gif) 0 5px no-repeat;}
+.ethicsRep .txt_dsc dl {overflow:hidden;}
+.ethicsRep .txt_dsc dl dt {float:left; width:60px; }
+
+
+/* our brand */
+.ourBrand > div {position:relative; height:295px; overflow:hidden; padding:40px 0px 0 365px; margin-top: 10px; background:url(/front/img/ko/global/img_ourBrand01.jpg) 0 0 no-repeat #8a7a6c;}
+.ourBrand > div:first-child {margin:0;}
+.ourBrand > div.area_right {padding:40px 365px 0 0; background-position:100% 0;}
+.ourBrand > div .tit2dep {height:20px; padding-bottom:18px; margin:0 0 0 30px; background:url(/front/img/ko/global/img_oruBrand_h3.png) 0 0 no-repeat;}
+.ourBrand > div .txt_dsc {margin:0 35px 0 30px; color:#fff;}
+.ourBrand > div .btn_mult {position:absolute; bottom:1px;  margin:0 0 0 1px}
+.ourBrand > div .btn_mult .btn_set {display:block; width:295px; padding:5px 20px 5px 28px; background-color:#78695c; }
+
+.ourBrand > div.type_cityH {background-image:url(/front/img/ko/global/img_ourBrand02.jpg); background-color:#55595e;}
+.ourBrand > div.type_cityH .tit2dep {background-position:0 -73px;}
+.ourBrand > div.type_cityH .btn_mult .btn_set {background-color:#4b4f54;}
+
+/* Awards */
+.bigimg_box.awards{width:100%; height:300px; margin-bottom:30px; background:url(/front/img/ko/global/bg_awards.jpg) 0 0 no-repeat;}
+.bigimg_box.awards .txt_dsc{position:absolute; top:143px; right:35px; width:252px; color:#fff;}
+
+
+
+
+/* FONT-FAMILY */
+.storyfrom .lst li a strong,
+.ex{font-family: Georgia;}
+.ex{font-family: malgun gothic;}
+
+/** FONT_SIZE **/
+/* font_size:9px */
+.ex{font-size:9px;}
+
+/* font_size:10px */
+.ex{font-size:10px;}
+
+/* font_size:11px */
+.safe_box .infoList .dotBk,
+.ex{font-size:11px;}
+
+/* font_size:12px */
+.storyfrom .lst li a:hover em .img_txt,
+.ex {font-size:12px; }
+
+/* font_size:13px */
+.ex {font-size:13px; }
+
+/* font-size:14px */
+.storyfrom .lst li a strong,
+.ex {font-size:14px;}
+
+/* font-size:15px */
+.ex {font-size:15px;}
+
+/* font-size:18px */
+.ex {font-size:18px;}
+
+/* font-size:20px */
+.ex {font-size:20px;}
+
+/* font_size:22px */
+.ex{font-size:22px;}
+
+/* font-size:23px */
+.ex {font-size:23px;}
+
+/* font-size:35px */
+.ex {font-size:35px;}
+
+/* font-size:25px */
+.ex{font-size:25px;}
+
+/* font-size:30px */
+.error_box .tit2dep,
+.ex{font-size:30px;}
+
+/** LINE-HEIGHT **/
+/* line-height:13px */
+.ex1{line-height:13px;}
+
+/* line-height:18px */
+.ex{line-height:18px;}
+
+/* line-height:20px */
+.ex {line-height:20px;}
+
+/* line-height:21px */
+.ex {line-height:21px;}
+
+/* line-height:22px */
+.error_box .txt_dsc,
+.error_box .lst03dep li,
+.ex {line-height:22px;}
+
+/* line-height:24px */
+.ex {line-height:24px;}
+
+/* line-height:28px */
+.ex {line-height:28px;}
+
+/* line-height:34px */
+.ex {line-height:34px;}
+
+/* line-height:47px */
+.ex {line-height:47px;}

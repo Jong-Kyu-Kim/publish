@@ -1,0 +1,604 @@
+<!doctype html>
+<html dir="ltr" lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+    <script src="../../js/jquery.sidebar.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    <script src="../../js/core.m.js"></script>
+    <script src="../../js/calendar.m.js"></script>
+    <script src="../../js/ui.js"></script>
+    
+</head>
+<body>
+	<header>
+		<a class="logo" href="#"><h1><img src="../../images/m/logo.png" alt="롯데렌터카 로고"></h1></a>
+		<div class="controls">
+			<a class="member_btn" href="#"></a>
+			<a id="drawer_btn" class="drawer_btn" href="#"></a>
+		</div>
+	</header>
+	<div class="sub_header">
+		<a class="back_btn" href="#"></a>
+		<h2 class="title">예약 및 이용내역</h2>
+
+	</div>
+	<div id="container" class="password_reset">
+		<!-- 본문삽입 -->
+		<div class="mt20 mg">
+			<span class="select"> 
+				<select id="" title="">
+					<option selected="selected">전체</option>
+					<option>예약완료</option>
+					<option>결제완료</option>
+					<option>이용완료</option>
+					<option>취소완료</option>
+				</select>
+			</span>
+			<div class="tar mt20">
+				<span class="tal">
+					<a href="#LayerReserveInfo" title="레이어 팝업 열림" class="LayerReserveInfo btn_layer btn_tooltip">툴팁</a>
+				</span>
+			</div>
+			<div class="grid mt10">
+				<table class="tb_col tb_list">
+					<caption></caption>
+					<colgroup>
+						<col style="width:223px;">
+						<col style="width:auto"> 
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">예약 정보</th>
+							<th scope="col">상태</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="left">
+								예약 번호(1622519362)
+								<ul class="mt10">
+									<li>예약일 : 2016/00/00</li>
+									<li>기간 : 2016/00/00~2016/00/00</li>
+									<li>지점 : 대여(강남)-반납(강남)</li>
+								</ul>
+							</td>
+							<td>
+								예약완료
+							</td>
+						</tr>
+						<tr>
+							<td class="left">
+								예약 번호(1622519361)
+								<ul class="mt10">
+									<li>예약일 : 2016/00/00</li>
+									<li>기간 : 2016/00/00~2016/00/00</li>
+									<li>지점 : 대여(강남)-반납(강남)</li>
+								</ul>
+							</td>
+							<td>
+								이용안내
+							</td>
+						</tr>
+						<tr>
+							<td class="left">
+								예약 번호(1622519368)
+								<ul class="mt10">
+									<li>예약일 : 2016/00/00</li>
+									<li>기간 : 2016/00/00~2016/00/00</li>
+									<li>지점 : 대여(강남)-반납(강남)</li>
+								</ul>
+							</td>
+							<td>
+								취소안내
+							</td>
+						</tr>
+						<tr>
+							<td class="left">
+								예약 번호(1622519368)
+								<ul class="mt10">
+									<li>예약일 : 2016/00/00</li>
+									<li>기간 : 2016/00/00~2016/00/00</li>
+									<li>지점 : 대여(강남)-반납(강남)</li>
+								</ul>
+							</td>
+							<td>
+								결제완료
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="no_data">
+								예약 및 이용 내역이 없습니다.
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+		</div>
+		<!-- //본문삽입 -->
+	</div>
+
+	<footer>
+		<div class="inner_footer">
+			<div class="upper">
+				<div class="sns">
+					<a class="twitter" href="#" target="_blank"><img src="../../images/m/footer_sns_twitter_img.png" alt="트위터"></a>
+					<a class="facebook" href="#" target="_blank"><img src="../../images/m/footer_sns_facebook_img.png" alt="페이스북"></a>
+					<a class="blog" href="#" target="_blank"><img src="../../images/m/footer_sns_blog_img.png" alt="블로그"></a>
+				</div>
+				<ul class="phone">
+					<li class="">대표전화 1588-1230</li>
+					<li class="">해외 82-2-797-8000</li>
+				</ul>
+			</div>
+			<div class="lower">
+				<div class="sitemap">
+					<a href="#">개인정보 처리방침</a><a href="#">영상정보 처리기기 운영관리방침</a><br>
+					<a href="#">이용약관</a><a href="#">무단 이메일 수집거부</a><a href="#">CONTACT US</a>
+				</div>
+				<div class="information">
+					<span class="address">서울시 강남구 테헤란로 422 KT타워 6~9층</span>
+					<ul class="entrepreneur_info">
+						<li>대표이사 표현명</li>
+						<li>사업자등록번호  214-87-79183</li>
+					</ul>
+					<span class="copyright">ⓒ LOTTE rental Co.Ltd</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<nav id="drawer" class="drawer">
+		<div class="drawer_header">
+			<a class="title" href="/m/html/main/main.html">홈</a>
+			<button id="drawer_close_btn" class="drawer_close_btn"></button>
+		</div>
+		<div class="drawer_body">
+			<div class="menu_container" aria-hidden="true">
+				<ul>
+					<li class="idx1">빌릴 때</li>
+					<li class="idx2">살 때</li>
+					<li class="idx3">팔 때</li>
+					<li class="idx4">기기/장비렌탈</li>
+					<li class="idx5" onclick="location.href='/m/html/event/FN05.html'">이벤트</li>
+					<li class="idx6">고객센터</li>
+					<li class="idx7">회사소개</li>
+					<li class="idx8">롯데렌탈 APP</li>
+				</ul>
+			</div>
+			<div class="submenu_container">
+				<ul class="menus">
+					<li class="menu">
+						<a href="#"><span>빌릴 때</span></a>
+						<ul class="submenu">
+							<li>
+								<a class="slide_menu_btn" href="#">단기렌터카</a>
+								<ul class="slide_menu">
+									<li>
+										<a href="/m/html/rent/FN010101.html">실시간 예약</a>
+									</li>
+									<li>
+										<a class="slide_menu_btn" href="#">단기렌터카 서비스 안내</a>
+										<ul class="slide_menu">
+											<li>
+												<a href="#">대여 안내</a>
+											</li>
+											<li>
+												<a href="#">요금 안내</a>
+											</li>
+											<li>
+												<a href="#">부가 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">해외렌트 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">딜리버리 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">빠른 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">기사포함 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">보험대차 서비스 안내</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a class="slide_menu_btn" href="#">롯데렌터카만의 서비스</a>
+										<ul class="slide_menu">
+											<li>
+												<a href="#">대여 안내</a>
+											</li>
+											<li>
+												<a href="#">요금 안내</a>
+											</li>
+											<li>
+												<a href="#">부가 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">해외렌트 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">딜리버리 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">빠른 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">기사포함 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">보험대차 서비스 안내</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a class="slide_menu_btn" href="#">월간렌터카</a>
+								<ul class="slide_menu">
+									<li>
+										<a href="#">대여 신청</a>
+									</li>
+									<li>
+										<a href="#">월간렌터카 서비스 안내</a>
+									</li>											
+								</ul>
+							</li>
+							<li>
+								<a href="#">그린카(카셰어링)</a>
+							</li>							
+						</ul>
+					</li>
+					<li class="menu">
+						<a href="#"><span>살 때</span></a>
+						<ul class="submenu">
+							<li>
+								<a class="slide_menu_btn" href="#">신차 장기 렌터카</a>
+								<ul class="slide_menu">
+									<li>
+										<a href="#">간편 견적</a>
+									</li>
+									<li>
+										<a href="#">프로모션</a>
+									</li>
+									<li>
+										<a class="slide_menu_btn" href="#">신차 장기렌터카 서비스 안내</a>
+										<ul class="slide_menu">
+											<li>
+												<a href="#">신차장기렌터카 안내</a>
+											</li>
+											<li>
+												<a href="#">이용절차 및 Q&amp;A</a>
+											</li>
+											<li>
+												<a href="#">LPG60 장기렌터카 안내</a>
+											</li>
+											<li>
+												<a href="#">전기차 장기렌터카 안내</a>
+											</li>
+											<li>
+												<a href="#">오토 체인지 프로그램</a>
+											</li>
+										</ul>									
+									</li>
+									<li>
+										<a class="slide_menu_btn" href="#">롯데렌터카만의 서비스</a>
+										<ul class="slide_menu">
+											<li>
+												<a href="#">신차장기렌터카 안내</a>
+											</li>
+											<li>
+												<a href="#">이용절차 및 Q&amp;A</a>
+											</li>
+											<li>
+												<a href="#">LPG60 장기렌터카 안내</a>
+											</li>
+											<li>
+												<a href="#">전기차 장기렌터카 안내</a>
+											</li>
+											<li>
+												<a href="#">오토 체인지 프로그램</a>
+											</li>
+										</ul>									
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a class="slide_menu_btn" href="#">승계 게시판</a>
+								<ul class="slide_menu">
+									<li>
+										<a href="#">승계 매물 등록</a>
+									</li>
+									<li>
+										<a href="#">승계 매물 검색</a>
+									</li>
+									<li>
+										<a href="#">승계 게시판 서비스 안내</a>
+									</li>
+								</ul>								
+							</li>
+							<li>
+								<a class="slide_menu_btn" href="#">중고차 장기렌터카</a>	
+								<ul class="slide_menu">
+									<li>
+										<a href="#">중고차 장기렌터카 검색</a>
+									</li>
+									<li>
+										<a href="#">중고차 장기렌터카 서비스 안내</a>
+									</li>
+									<li>
+										<a href="#">오토리스</a>
+									</li>
+								</ul>								
+							</li>
+							<li>
+								<a class="slide_menu_btn" href="#">법인 장기렌터카</a>	
+								<ul class="slide_menu">
+									<li>
+										<a href="#">견적 상담</a>
+									</li>
+									<li>
+										<a href="#">법인 장기렌터카 서비스 안내</a>
+									</li>
+								</ul>								
+							</li>
+						</ul>
+					</li>
+					<li class="menu">
+						<a href="#"><span>팔 때</span></a>
+						<ul class="submenu">
+							<li>
+								<a class="slide_menu_btn" href="#">중고차 팔기</a>
+								<ul class="slide_menu">
+									<li>
+										<a href="#">견적 상담</a>
+									</li>
+									<li>
+										<a class="slide_menu_btn" href="#">중고차 경매 서비스 안내</a>
+										<ul class="slide_menu">
+											<li>
+												<a href="#">경매 출품 안내</a>
+											</li>
+											<li>
+												<a href="#">입찰 안내</a>
+											</li>
+											<li>
+												<a href="#">판매가 출품 보장 안내</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">오토옥션</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu">
+						<a href="#"><span>기기/장비렌탈</span></a>
+						<ul class="submenu">	
+							<li>
+								<a href="#">산업용기기렌탈</a>
+							</li>
+							<li>
+								<a href="#">OA렌탈</a>
+							</li>
+							<li>
+								<a href="#">측정기렌탈</a>
+							</li>
+							<li>
+								<a href="#">지점안내</a>
+							</li>																									
+							<li>
+								<a href="#">입찰 매각 공지</a>
+							</li>
+						</ul>						
+					</li>
+					<li class="menu event">
+						<a href="#"><span>이벤트</span></a>
+					</li>
+					<li class="menu">
+						<a href="#"><span>고객 센터</span></a>
+						<ul class="submenu">
+							<li>
+								<a href="#">지점 안내</a>
+							</li>
+							<li>
+								<a href="#">FAQ</a>
+							</li>
+							<li>
+								<a href="#">고객의견</a>
+							</li>
+							<li>
+								<a href="#">상담 문의</a>
+							</li>
+							<li>
+								<a href="#">공지&amp;뉴스</a>
+							</li>
+						</ul>						
+					</li>
+					<li class="menu">
+						<a href="#"><span>회사소개</span></a>
+						<ul class="submenu">
+							<li>
+								<a href="#">개요</a>
+							</li>
+							<li>
+								<a href="#">CEO인사말</a>
+							</li>
+							<li>
+								<a href="#">연혁</a>
+							</li>
+							<li>
+								<a href="#">비전</a>
+							</li>
+							<li>
+								<a href="#">CI/BI 소개</a>
+							</li>							
+							<li>
+								<a class="slide_menu_btn" href="#">PR센터</a>
+								<ul class="slide_menu">
+									<li>
+										<a href="#">신차장 캠페인</a>
+									</li>
+									<li>
+										<a href="#">나의 자동차 생활백서</a>
+									</li>									
+								</ul>
+							</li>
+							<li>
+								<a class="slide_menu_btn" href="#">윤리경영</a>
+								<ul class="slide_menu">								
+									<li>
+										<a class="slide_menu_btn" href="#">윤리 경영 원칙</a>
+										<ul class="slide_menu">
+											<li>
+												<a href="#">新 윤리 경영 원칙</a>
+											</li>
+											<li>
+												<a href="#">비윤리행위 신고와 보상</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a class="slide_menu_btn" href="#">사이버 신문고</a>
+										<ul class="slide_menu">
+											<li>
+												<a href="#">소개</a>
+											</li>
+											<li>
+												<a href="#">제보자보호</a>
+											</li>
+											<li>
+												<a href="#">제보 결과 확인</a>
+											</li>											
+										</ul>
+									</li>
+									<li>
+										<a class="slide_menu_btn" href="#">공정거래 자율준수</a>
+										<ul class="slide_menu">
+											<li>
+												<a href="#">개요</a>
+											</li>
+											<li>
+												<a href="#">대표이사 의지선언문</a>
+											</li>
+											<li>
+												<a href="#">조직체계 및 프로그램 운영현황</a>
+											</li>
+											<li>
+												<a href="#">핫라인(내부고발제도)</a>
+											</li>											
+										</ul>
+									</li>									
+								</ul>
+							</li>
+							<li>
+								<a class="slide_menu_btn" href="#">위치안내</a>
+								<ul class="slide_menu">
+									<li>
+										<a href="#">안양 사옥</a>
+									</li>
+									<li>
+										<a href="#">선릉 사옥</a>
+									</li>									
+								</ul>
+							</li>														
+						</ul>					
+					</li>					
+					<li class="menu app">
+						<a href="#"><span>롯데렌탈 APP</span></a>
+						<ul class="submenu">
+							<li>
+								<a href="#"><img src="../../images/m/ico_greencar.png" alt="그린카 앱 아이콘"><span>그린카</span></a>
+							</li>
+							<li>
+								<a href="#"><img src="../../images/m/ico_automanager.png" alt="오토매니저 앱 아이콘"><span>오토매니저</span></a>
+							</li>							
+						</ul>						
+					</li>				
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+<!-- Layer : 예약 선 결제 및 수수료 안내 -->
+<div id="LayerReserveInfo" class="layer layer_b">
+	<div class="layer_tit">
+		<h2>예약 선 결제 및 수수료 안내</h2>
+		<a href="#" class="btn_layer_close"><img src="../../images/common/btn_layer_close.png" alt="닫기"></a>
+	</div>
+	<div class="layer_con">
+		<!-- content --> 
+		<div class="pay_first layer_padding">
+			<h3>선 결제 안내</h3>
+			<div>
+				<h4>선 결제 방식</h4>
+				<p>현장, 온라인, 전화 상으로 선 결제 할인이 모두 가능합니다.</p>
+			</div>
+			<div>
+				<h4>선 결제 이용 방식</h4>
+				<p>예약 후 대여일 기준 최소 6시간 이전까지 홈페이지, 앱 또는 전화(고객센터, 지점)를 통해 결제 가능합니다.</p>
+			</div>
+			<div>
+				<h4>선 결제 확인</h4>
+				<p>24시간 이상 이용 시, 선 결제할 경우 5,000원 할인됩니다. (포인트 결제 시에도 적용)</p>
+			</div>
+			<div>
+				<h4>신용정보 확인</h4>
+				<p>본인명의 신용카드 이 외에 체크카드로 결제 시에는 신용정보조회 동의를 요청드릴 수 있습니다.</p>
+			</div>
+			<ul class="txt_list mt20">
+				<li class="red">고객 센터나 지점을 통해 선 결제를 진행하신 경우, 홈페이지, 앱에서는 해당 선 결제에 대한 취소가 불가합니다.</li>
+				<li class="red">본 신용정보 조회는 개인 신용도에 영향을 미치지 않는 단순 조회이며 조회결과 신용상의 문제가 발견될 경우 대여가 불가능 합니다.</li>
+				<li class="red">본인명의 신용카드를 소유하고 계심에도 불구하고 사용을 원치 않으시는 경우, 차량 대여 시 일단 신용카드로 결제하시고, 반납 시 신용카드 승인을 취소하고 체크카드로 재정산하실 수 있습니다.</li>
+				<li class="red">결제하실 금액 중에 대여금액이 6,000원 미만일때, 선 결제 할인이 적용되지 않습니다.</li>
+			</ul>
+		</div>
+		<div class="layer_padding">
+			<h3>취소 수수료/노 쇼(No Show) 수수료 환불 규정</h3>
+			<div class="grid">
+				<table class="tb_col">
+					<caption></caption>
+					<colgroup>
+						<col style="width:33%" />
+						<col style="width:33%" />
+						<col style="width:auto" /> 
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">대여 예정일 <br>24시간 이전</th>
+							<th scope="col">대여 예정일 <br>24시간 이내</th>
+							<th scope="col">대여 예정일 <br>24시간 이후</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>100% 환불</td>
+							<td>3,000원<br>(취소 수수료)</td>
+							<td>차량대여<br>요금의 10%<br>(노 쇼 수수료)</td>
+						</tr>
+					</tbody>
+				</table>
+				<ul class="txt_list mt20">
+					<li class="red">수수료 청구방법 : 납입한 금액 중 수수료 금액을 차감한 나머지 금액을 환불 또는 납입한 카드 승인 내역을 전부 취소 후 승인한 카드로 수수료 금액 재청구하실 수 있습니다.</li>
+				</ul>
+			</div>
+		</div>
+		<!-- //content -->  
+	</div>
+</div>
+
+</body>
+</html>

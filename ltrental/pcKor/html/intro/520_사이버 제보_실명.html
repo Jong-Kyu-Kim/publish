@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html dir="ltr" lang="ko" class="ie7"><![endif]-->
+<!--[if IE 8]><html dir="ltr" lang="ko" class="ie8"><![endif]-->
+<!--[if IE 9]><html dir="ltr" lang="ko" class="ie9"><![endif]-->
+<html dir="ltr" lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1200, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.min.js"></script>
+	<script src="../../js/html5shiv.js"></script>
+	<script src="../../js/core.js"></script>
+	<script src="../../js/ui.js"></script>
+    <script src="../../js/calendar.js"></script>
+</head>
+ 
+<body>
+	<header>
+		<div class="inner_header">
+			<a href="#container" class="skip_nav">본문 바로가기</a>
+			<a href="../main/main.html" class="logo"><h1><img src="../../images/common/logo.png" alt="롯데렌터카"></h1></a>
+			<ul id="extra_menu" class="extra_menu">
+				<!--// 비회원일 경우 -->
+				<li class="login"><a href="#">로그인</a></li>
+				<li class="join"><a href="#" class="lPointAutoChange btn_layer">회원가입</a></li>
+
+				<!--// 회원일 경우 -->
+				<li class="logout"><a href="#">로그아웃</a></li>
+				<li class="mypage_quick">
+					<a class="btn_dropdown_menu" href="#">마이페이지</a>
+					<ul class="dropdown_menu">
+						<!--<li class="active"><a href="#">예약 및 이용 내역</a></li>-->
+						<li class="active"><a href="#">예약 및 이용 내역</a></li>
+						<li><a href="#">계약서 조회</a></li>
+						<li><a href="#">상담문의 내역</a></li>
+					</ul>
+				</li>
+
+				<li class="language"><a href="#">ENGLISH</a></li>
+			</ul>
+		</div>
+		<div id="gnb" class="gnb">
+			<ul class="menus">
+				<li class="menu idx1">
+					<a href="../rent/FN010101_2_1_1.html">빌릴 때</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">단기렌터카</a>
+							<ul>
+								<li>
+									<a href="#">실시간 예약</a>
+								</li>
+								<li class="btn_dropdown_menu">
+									<a href="#">단기렌터카 서비스 안내</a>
+									<ul class="dropdown_menu">
+										<li>
+											<a href="#">대여 안내</a>
+										</li>
+										<li>
+											<a href="#">요금 안내</a>
+										</li>
+										<li>
+											<a href="#">부가 서비스 안내</a>
+										</li>
+										<li>
+											<a href="#">해외렌트 서비스 안내</a>
+										</li>
+										<li>
+											<a href="#">딜리버리 서비스 안내</a>
+										</li>
+										<li>
+											<a href="#">빠른 서비스 안내</a>
+										</li>
+										<li>
+											<a href="#">기사포함 서비스 안내</a>
+										</li>
+										<li>
+											<a href="#">보험대차 서비스 안내</a>
+										</li>
+									</ul>
+								</li>
+								<li class="btn_dropdown_menu">
+									<a href="#">롯데렌터카만의 서비스</a>
+									<ul class="dropdown_menu">
+										<li>
+											<a href="#">롯데 스마트픽 서비스</a>
+										</li>
+										<li>
+											<a href="#">패키지 상품</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">월간렌터카</a>
+							<ul>
+								<li>
+									<a href="#">대여 신청</a>
+								</li>
+								<li>
+									<a href="#">월간렌터카 서비스 안내</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">그린카(카셰어링)</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu idx2">
+					<a href="../buy/FN020101.html">살 때</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">신차 장기 렌터카</a>
+							<ul>
+								<li>
+									<a href="#">간편 견적</a>
+								</li>
+								<li>
+									<a href="#">프로모션</a>
+								</li>
+								<li class="btn_dropdown_menu">
+									<a href="#">신차 장기렌터카 서비스 안내</a>
+									<ul class="dropdown_menu">
+										<li>
+											<a href="#">신차장기렌터카 안내</a>
+										</li>
+										<li>
+											<a href="#">이용절차 및 Q&amp;A</a>
+										</li>
+										<li>
+											<a href="#">LPG60 장기렌터카 안내</a>
+										</li>
+										<li>
+											<a href="#">전기차 장기렌터카 안내</a>
+										</li>
+										<li>
+											<a href="#">오토 체인지 프로그램</a>
+										</li>
+									</ul>									
+								</li>
+								<li class="btn_dropdown_menu">
+									<a href="#">롯데렌터카만의 서비스</a>
+									<ul class="dropdown_menu">
+										<li>
+											<a href="#">오토매니저</a>
+										</li>
+										<li>
+											<a href="#">정비패키지</a>
+										</li>
+										<li>
+											<a href="#">오토 할부&amp;오토 캐시백 </a>
+										</li>
+										<li>
+											<a href="#">제휴 카드 </a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="depth2">
+							<a href="#">중고차 장기렌터카</a>
+							<ul>
+								<li>
+									<a href="#">중고차 장기렌터카 검색</a>
+								</li>
+								<li>
+									<a href="#">중고차 장기렌터카 서비스 안내</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">승계 게시판</a>
+							<ul>
+								<li>
+									<a href="#">승계 매물 등록</a>
+								</li>
+								<li>
+									<a href="#">승계 매물 검색</a>
+								</li>
+								<li>
+									<a href="#">승계 게시판 서비스 안내</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">법인 장기렌터카</a>
+							<ul>
+								<li>
+									<a href="#">견적 상담</a>
+								</li>
+								<li>
+									<a href="#">법인 장기렌터카 서비스 안내</a>
+								</li>
+							</ul>
+						</li>
+						<li class="depth2">
+							<a href="#">오토리스</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu idx3">
+					<a href="../sell/FN030101.html">팔 때</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">중고차 팔기</a>
+							<ul>
+								<li>
+									<a href="#">견적 상담</a>
+								</li>
+								<li class="btn_dropdown_menu">
+									<a href="#">중고차 경매 서비스 안내</a>
+									<ul class="dropdown_menu">
+										<li>
+											<a href="#">경매 출품 안내</a>
+										</li>
+										<li>
+											<a href="#">입찰 안내</a>
+										</li>
+										<li>
+											<a href="#">판매가 출품 보장 안내</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="submenu">
+						<li class="depth2"><a href="#">오토옥션</a></li>
+					</ul>
+				</li>
+				<li class="menu idx4">
+					<a href="#">기기/장비렌탈</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<!--<a href="#">기기/장비렌탈</a>-->
+							<ul>
+								<li>
+									<a href="#">산업용기기렌탈</a>
+								</li>
+								<li>
+									<a href="#">OA렌탈</a>
+								</li>
+								<li>
+									<a href="#">측정기렌탈</a>
+								</li>
+								<li>
+									<a href="#">지점안내</a>
+								</li>																								
+								<li>
+									<a href="#">입찰 매각 공지</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="menu idx5">
+					<a href="../event/FN05_1.html">이벤트</a>
+				</li>
+				<li class="menu idx6">
+					<a href="#">고객센터</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<!--<a href="#">고객 센터</a>-->
+							<ul>
+								<li>
+									<a href="#">지점 안내</a>
+								</li>
+								<li>
+									<a href="#">FAQ</a>
+								</li>
+								<li>
+									<a href="#">고객의견</a>
+								</li>
+								<li>
+									<a href="#">상담 문의</a>
+								</li>
+								<li>
+									<a href="#">공지&amp;뉴스</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="gnb_open"></div>
+		<ul id="breadcrumb" class="breadcrumb">
+			<li class="path home"><a href="#"></a></li>
+			<li class="path">
+				<a class="dropdown_path_btn" href="#">회사소개</a>
+				<div class="dropdown_path">
+					<a class="active" href="#">회사소개</a>
+					<a href="#">기타</a>
+				</div>
+			</li>
+			<li class="path">
+				<a class="dropdown_path_btn" href="#">윤리 경영 </a>
+				<div class="dropdown_path">
+					<a class="active" href="#">윤리 경영 </a>
+					<a href="#">기타</a>
+				</div>
+			</li>
+			<li class="path">
+				<a class="dropdown_path_btn" href="#">사이버신문고</a>
+				<div class="dropdown_path">
+					<a class="active" href="#">사이버신문고</a>
+					<a href="#">기타</a>
+				</div>
+			</li>
+		</ul>
+	</header>
+	<div id="container" class="cyber">
+	<!-- content -->
+		<h2 class="pb10">사이버 제보</h2>
+		<div class="content">
+			<!-- 본문삽입 -->
+			<div class="top_info mb70">
+				<div class="inner"> 
+					<p class="txt">롯데렌탈 임직원의 부정, 부조리 등에 대한 신고를 받으며, 사실에 근거하지 않는 비방, 개인 사생활과 관련된 사항은 민원으로 처리되지 않습니다.</p>
+					<p class="txt mt5">신고내용은 최대한 빠른 시일 내에 처리되며, 그 결과는 사이트에서 확인 할 수 있습니다.</p>
+					<p class="txt mt5">신고자의 비밀은 절대적으로 보호되며, 익명으로 신고한 경우 처리 결과는 통보하지 않습니다.</p>
+				</div>					
+			</div>
+			<h3 class="mb15">신고자 정보<span class="txt_must"><em class="txt_point">*</em> 모든 항목은 필수기재입니다.</span></h3>
+			<div class="grid noBorderT">
+				<table class="tb_noBorder reporter">
+					<caption></caption>
+					<colgroup>
+						<col style="width:110px">
+						<col style="width:480px"> 
+						<col style="width:130px">
+						<col style="width:480px"> 
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"><label for="">구분</label></th>
+							<td colspan="3">
+								<ul class="radio_hr">
+									<li>
+										<input type="radio" id="rdoIndiv" name="selIndvCorp" checked>
+										<label for="rdoIndiv" class="mr20"><span class="icon"></span>실명으로 제보</label>
+									</li>
+									<li>
+										<input type="radio" id="rdoCorp" name="selIndvCorp">
+										<label for="rdoCorp"><span class="icon"></span>익명으로 제보</label>
+									</li>
+								</ul> 
+							</td> 
+						</tr> 
+						<tr class="corp1" style="display:none;">
+							<th scope="row"><label for="">이름</label></th>
+							<td colspan="3">
+								<input type="text" name="" id="" value="익명제보" style="width:300px;" readonly="readonly">
+							</td>
+						</tr> 
+						<tr class="corp2">
+							<th scope="row"><label for="">이름</label></th>
+							<td>
+								<input type="text" name="" id="" value="" placeholder="홍길동" style="width:300px;" disabled>
+							</td>
+							<th scope="row"><label for="">이메일</label></th>
+							<td><input type="text" name="" id="" value="" placeholder="이메일을 입력하세요." style="width:300px;"></td>
+						</tr> 
+						<tr class="corp2">
+							<th scope="row"><label for="">휴대전화</label></th>
+							<td>
+								<input type="text" name="" id="" value="" style="width:71px;">
+								<ins class="hyphen">-</ins>
+								<input type="text" name="" id="" value="" style="width:100px;">
+								<ins class="hyphen">-</ins>
+								<input type="text" name="" id="" value="" style="width:100px;">
+							</td>
+							<th scope="row"><label for="">유선전화</label></th>
+							<td>
+								<input type="text" name="" id="" value="" style="width:71px;">
+								<ins class="hyphen">-</ins>
+								<input type="text" name="" id="" value="" style="width:100px;">
+								<ins class="hyphen">-</ins>
+								<input type="text" name="" id="" value="" style="width:100px;">
+							</td>
+						</tr>
+						<tr class="corp2">
+							<th scope="row"><label for="">주소</label></th>
+							<td colspan="3">
+								<p class="wrap_input">
+									<input type="text" name="" id="" value=""  style="width:120px;">
+									<a href="#none" class="pop_address btn_layer btn btn_black ml5">주소찾기</a>
+								</p>
+								<input type="text" name="" id="" value=""  style="width:435px;" class="mr5">
+								<input type="text" name="" id="" value="" placeholder="상세주소를 입력해 주세요."  style="width:466px;">
+							</td> 
+						</tr>  
+					</tbody>
+				</table>
+			</div>
+
+			<h3 class="mb15 mt70">피제보자 정보 및 제보내용</h3>
+			<div class="grid noBorderT">
+				<table class="tb_noBorder">
+					<caption></caption>
+					<colgroup>
+						<col style="width:110px">
+						<col style="width:auto">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"><label for="">제목</label></th>
+							<td>
+								<input type="text" name="" id="" value="" placeholder="제목을 입력하세요."  style="width:300px;">
+							</td> 
+						</tr>   
+						<tr>
+							<th scope="row"><label for="">내용</label></th>
+							<td>
+								 <textarea name="" placeholder="내용을 입력하세요."></textarea>
+								<ul class="txt_list mt15">
+									<li class="red">육하원칙에 의해 상세하게 기재해 주세요.</li>
+								</ul>
+							</td> 
+						</tr> 
+						<tr>
+							<th scope="row"><label for="">첨부</label></th>
+							<td>
+								<a href="#none" class="btn_black btn_file">파일선택</a> 
+								<input type="file" class="input_file">
+								<input type="file" class="input_file">
+								<input type="file" class="input_file">
+							</td> 
+						</tr> 
+						<tr>
+							<th scope="row"><label for="">결과통보</label></th>
+							<td>
+								<ul class="radio_hr">
+									<li>
+										<input type="radio" id="notify1" name="notify">
+										<label for="notify1" class="mr20"><span class="icon"></span>신청</label>
+									</li>
+									<li>
+										<input type="radio" id="notify2" name="notify">
+										<label for="notify2"><span class="icon"></span>미신청</label>
+									</li>
+								</ul> 
+							</td> 
+						</tr> 
+						<tr>
+							<th scope="row"><label for="">통보방법</label></th>
+							<td>
+								<ul class="radio_hr">
+									<li>
+										<input type="radio" id="method1" name="method">
+										<label for="method1" class="mr20"><span class="icon"></span>이메일 통보</label>
+									</li>
+									<li>
+										<input type="radio" id="method2" name="method">
+										<label for="method2"><span class="icon"></span>전화 통보</label>
+									</li>
+								</ul> 
+							</td> 
+						</tr> 
+					</tbody>
+				</table>
+			</div>
+
+			<h3 class="mb0 mt70">개인정보 취급안내 및 이용 동의</h3>  
+			<div class="user_agreement">
+				<p class="border">
+					<input type="checkbox" id="agree1">
+					<label for="agree1" class="mr15"><span class="icon"></span>개인정보의 수집 및 이용 동의(필수), 개인정보의 보유·이용기간 동의(필수)에 모두 동의합니다.</label>
+				</p>
+			</div>
+			<div class="user_agreement">
+				<p>
+					<input type="checkbox" id="agree2">
+					<label for="agree2" class="mr15"><span class="icon"></span>개인정보 수집, 이용 동의(필수) </label>
+				</p> 
+				<div class="box scroll"> 
+					<ul class="txt_list">
+						<li class="black f14">개인정보의 수집, 이용목적
+							<ul class="txt_list">
+								<li class="check f13">필수정보 (성명으로 신고시) : 고객의 성명, 휴대전화번호, 이메일, 주소, 개인 식별 정보</li>
+								<li class="check f13">선택정보 :  전화번호, 주소</li>
+							</ul>
+						</li>
+						<li class="black f14">수집방법
+							<ul class="txt_list">
+								<li class="check f13">롯데렌탈은 서비스제공을 위하여 필요한 최소한의 개인정보만을 수집합니다. 다만, 고객이 동의하는 경우에 한하여 선택정보를 수집/이용하고 있습니다.</li>
+							</ul>
+						</li>
+						<li class="black f14">이용목적
+							<ul class="txt_list">
+								<li class="check f13">회사의 모든 임직원은 본 윤리강령을 준수하여야 하며, 회사와 각종 거래관계를 갖는 개인, 법인 및 자회사에게는 본 윤리강령의 준수를 적극 권장한다.</li>
+							</ul>
+						</li>
+						<li class="black f14">해석기준
+							<ul class="txt_list">
+								<li class="check f13">회사의 윤리 경영 활동과 관련하여 윤리강령에 규정하고 있지 아니하거나 해석에 분쟁이 있는 경우 회사의 해석과 규정에 따른다.</li>
+							</ul>
+						</li>
+					</ul>
+				</div> 
+				 
+			</div>
+			<div class="user_agreement">
+				<p>
+					<input type="checkbox" id="agree3">
+					<label for="agree3" class="mr15"><span class="icon"></span>개인정보의 보유·이용기간 동의(필수) </label>
+				</p>
+				<div class="box scroll" style="height:160px">  
+					<ul class="txt_list">
+						<li class="black f14">개인정보의 보유·이용기간
+							<ul class="txt_list">
+								<li class="check f13">고객님의 개인정보는 접수완료통보, 신고 내용확인, 결과통보 등에 한하여 보유하고 이를 활용합니다. 다만 다른 법률에 특별한 규정이 있는 경우에는 관계 법령에 따라 보관합니다.
+									<ul class="txt_list">
+										<li class="red f12">이용기간 : 고객의 신고사항 처리시까지</li>
+										<li class="red f12">보유기간 : 고객의 신고사항 처리 후 3년(신고내용의 재 확인 및 통계용)</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div> 
+
+			<div class="btn_wrap pt70">
+					<button type="button" class="btn_red btn_300">사이버 제보</button>
+			</div>  
+			
+			<!--// 본문삽입 --> 
+		</div>
+	</div>
+	<footer>
+		<div class="links">
+			<ul class="inner_links">
+				<li class="link">
+					<a href="#">그린카</a>
+				</li>
+				<li class="link">
+					<a href="#">오토옥션</a>
+				</li>
+				<li class="link">
+					<a href="#">오토리스</a>
+				</li>				
+				<li class="link">
+					<a href="#">오토매니저</a>
+				</li>
+				<li id="familysite" class="familysite">
+					<a class="btn_dropdown_menu" href="#">FAMILY SITE</a>
+				</li>
+			</ul>
+		</div>
+		<div class="familysite_dropdown_menu">
+			<ul class="menus">
+				<li class="menu">
+					<span class="menu_title">식품부문</span>
+					<ul>
+						<li>
+							<a href="#" target="_blank">롯데제과</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데유통사업본부</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데칠성음료</a>
+						</li>						
+						<li>
+							<a href="#" target="_blank">롯데칠성음료 주류부문</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데아시히주류</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데푸드</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데리아</a>
+						</li>						
+					</ul>
+				</li>
+				<li class="menu">
+					<span class="menu_title">관광부문</span>
+					<ul>
+						<li>
+							<a href="#" target="_blank">롯데호텔</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">부산롯데호텔</a>
+						</li>						
+						<li>
+							<a href="#" target="_blank">롯데면세점</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데월드</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데물산</a>
+						</li>						
+						<li>
+							<a href="#" target="_blank">롯데리조트</a>
+						</li>						
+						<li>
+							<a href="#" target="_blank">롯데제이티비</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu">
+					<span class="menu_title">금융부문</span>
+					<ul>
+						<li>
+							<a href="#" target="_blank">롯데카드</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데손해보험</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데캐피탈</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데자이언츠</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데멤버스</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu">
+					<span class="menu_title">석유화학/건설/제조 부문</span>
+					<ul>
+						<li>
+							<a href="#" target="_blank">롯데케미칼</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">케이피켐텍</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데엠알시</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데건설</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데건설 CM사업본부</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">캐논코리아비즈니스솔루션㈜</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">한국후지필름</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데알미늄</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데기공</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu">
+					<span class="menu_title">유통부문</span>
+					<ul>
+						<li>
+							<a href="#" target="_blank">롯데백화점</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데마트</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데슈퍼</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데시네마</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데홈쇼핑</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">코리아세븐</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">FRL코리아</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데상사</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데닷컴</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데하이마트</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롭스</a>
+						</li>																														
+					</ul>
+				</li>
+				<li class="menu">
+					<span class="menu_title">서비스/연구/지원 부문</span>
+					<ul>
+
+						<li>
+							<a href="#" target="_blank">롯데정보통신</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">현대정보기술</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데스카이힐C.C</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">대홍기획</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데자산개발</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데로지스틱스</a>
+						</li>	
+						<li>
+							<a href="#" target="_blank">롯데피에스넷</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">마이비</a>
+						</li>	
+						<li>
+							<a href="#" target="_blank">이비카드</a>
+						</li>	
+						<li>
+							<a href="#" target="_blank">롯데중앙연구소</a>
+						</li>	
+						<li>
+							<a href="#" target="_blank">롯데인재개발원</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데미래전략센터</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데장학재단</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데복지재단</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데삼동복지재단</a>
+						</li>																								
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="inner_footer">
+			<div class="sitemap">
+				<ul>
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#" class="txt_point">개인정보처리방침</a></li>
+					<li><a href="#" class="txt_point">영상정보처리기기 운영관리방침</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">사이버신문고</a></li>
+					<li><a href="#">인재채용</a></li>
+					<li><a href="#">무단이메일수집거부</a></li>
+					<li><a href="#">계약서 조회</a></li>
+					<li><a href="#">CONTACT US</a></li>
+					<li><a href="#">사이트맵</a></li>
+				</ul>
+			</div>
+
+			<div class="sns">
+				<ul>
+					<li>
+						<a class="twitter" href="#" target="_blank"><img src="../../images/common/img_footer_sns_twitter.png" alt="트위터"></a>
+					</li>
+					<li>
+						<a class="facebook" href="#" target="_blank"><img src="../../images/common/img_footer_sns_facebook.png" alt="페이스북"></a>
+					</li>
+					<li>
+						<a class="blog" href="#" target="_blank"><img src="../../images/common/img_footer_sns_blog.png" alt="블로그"></a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="information">
+				<ul class="entrepreneur_info">
+					<li>롯데렌탈㈜</li>
+					<li>대표이사 표현명</li>
+					<li>사업자등록번호 214-87-79183</li>
+					<li>통신판매업신고번호 : 제2010-경기안양-420호</li>
+					<li><a href="http://www.ftc.go.kr/info/bizinfo/communicationList.jsp" target="_blank" class="btn_entrepreneur_info"><img src="../../images/common/btn_entrepreneur_info.png" alt="사업자 정보 확인"></a></li>					
+				</ul>
+				<ul class="address">
+					<li>경기도 안양시 동안구 전파로 88 신원비젼타워 8층</li>
+					<li>서울본사: 서울시 강남구 테헤란로 422 KT타워 6~9층</li>
+				</ul>
+				<ul class="phone">
+					<li>대표전화 1588-1230</li>
+					<li>해외 82-2-797-8000</li>
+					<li>보험대차 연락처 및 일반상품렌탈 연락처</li>
+					<li>보험대차 1588-4920</li>
+					<li>일반상품렌탈 1577-5100+1</li>
+				</ul>
+				<span class="copyright">copyright ⓒ 2016 LOTTE rental co.ltd.All Rrights Reserved.</span>
+			</div>
+
+			<div class="certifications">
+				<ul>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_1.png" alt="2015 한국서비스대상 명예의 전당"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_2.png" alt="2016 국가고객만족도렌터카부문1위(NCSI)"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_3.png" alt="2016 한국산업의 브랜드 파워 1위(K-BPI)"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_4.png" alt="2016 국가브랜드 대상(NBA)"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_5.png" alt="2016 대한민국 브랜드 스타"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_6.png" alt="2016 대한민국 퍼스트 브랜드"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_7.png" alt="2016 국가브랜드 경쟁력 지수 1위(NBCI)"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_8.png" alt="2016 한국산업의 고객만족도(KCSI)"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_9.png" alt="2016 한국서비스 품질지수 1위(KS-SQl)"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_10.png" alt="2014 한국서비스대상 종합대상"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_11.png" alt="2016 프리미엄 브랜드 지수 1위(KC-PBI)"></a></li>
+					<li>
+						<a href="https://sealinfo.verisign.com/splash?form_file=fdf/splash.fdf&amp;dn=www.lotterentacar.net&amp;lang=ko" target="_blank">
+							<img src="../../images/common/img_footer_cert_12.png" alt="노턴 시큐어">
+						</a>
+					</li>
+					<li>
+						<a href="#isms" class="isms btn_layer">
+							<img src="../../images/common/img_footer_cert_13.png" alt="정보보호 관리체계 ISMS 획득">
+						</a>
+					</li>					
+				</ul>
+			</div>
+
+			<div class="big-banner">
+				<img src="../../images/common/img_footer_big_banner.png" alt="Asia No.1 렌터카, 롯데렌터카! 롯데렌터카가 대한민국을 넘어 Asia 1위 렌터카로 우뚝 섰습니다.">
+			</div>
+		</div>
+	</footer>
+
+    
+<!-- Layer : dimm -->
+<div class="dimm"></div>  
+
+<!-- Layer : 주소찾기 -->
+<div id="pop_address" class="layer layer_b">
+	<div class="layer_tit">
+		<h2>주소찾기</h2>
+		<a href="#" class="btn_layer_close"><img src="../../images/common/btn_layer_close.png" alt="닫기"></a>
+	</div>
+	<div class="layer_add scroll box">
+		<div class="add_input">
+			<input type="text" name="" id="" value="" placeholder="도로명주소, 건물명 또는 지번을 입력해주세요." style="width:408px;"> <a href="#none" class="btn btn_red ml5">검색</a>
+			<p class="mt30">검색어 예 : 도로명+건물번호(반포대로 58), 건물명(독립기념관), 지번(삼성동 25)</p>
+			<ul class="txt_list tal">
+				<li class="red f12">도로명주소가 검색되지 않는 경우는 행정안전부 새주소 안내시스템(http://www.juso.go.kr) 에서 확인하시기 바랍니다.</li>
+			</ul>
+		</div>
+		<div class="list_notice grid mt30">
+			<table class="tb_col">
+				<caption></caption>
+				<colgroup>
+					<col style="width:57px">
+					<col style="width:auto">  
+					<col style="width:123px">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">No</th>
+						<th scope="col">주소</th> 
+						<th scope="col">우편번호</th> 
+					</tr>
+				</thead>
+				<tbody> 
+					<tr> 
+						<td >1</td>
+						<td class="left"><a href="#">서울특별시 성동구 시근동 2길 7-84(시근동)<br>서울특별시 성동구 시근동 311-17</a></td>
+						<td >12345</td>
+					</tr>
+					<tr> 
+						<td >2</td>
+						<td class="left"><a href="#">서울특별시 성동구 시근동 2길 7-84(시근동)<br>서울특별시 성동구 시근동 311-17</a></td>
+						<td >12345</td>
+					</tr>
+					<tr> 
+						<td >3</td>
+						<td class="left"><a href="#">서울특별시 성동구 시근동 2길 7-84(시근동)<br>서울특별시 성동구 시근동 311-17</a></td>
+						<td >12345</td>
+					</tr>
+					<tr> 
+						<td >4</td>
+						<td class="left"><a href="#">서울특별시 성동구 시근동 2길 7-84(시근동)<br>서울특별시 성동구 시근동 311-17</a></td>
+						<td >12345</td>
+					</tr>
+					<tr> 
+						<td >5</td>
+						<td class="left"><a href="#">서울특별시 성동구 시근동 2길 7-84(시근동)<br>서울특별시 성동구 시근동 311-17</a></td>
+						<td >12345</td>
+					</tr> 
+					<tr> 
+						<td class="noData" colspan="3">검색 결과가 없습니다.</td> 
+					</tr> 
+				</tbody>
+			</table>
+		</div>
+		
+		<div class="paging">
+			<a href="#" class="btn_first">처음</a>
+			<a href="#" class="btn_prev">이전</a>
+			<em>1</em><!-- 현재 페이지 일경우-->
+			<a href="#">2</a>
+			<a href="#">3</a>
+			<a href="#">4</a>
+			<a href="#">5</a>
+			<a href="#">6</a>
+			<a href="#">7</a>
+			<a href="#">8</a>
+			<a href="#">9</a>
+			<a href="#">10</a>
+			<a href="#" class="btn_next">다음</a>
+			<a href="#" class="btn_last">맨끝</a>
+		</div>
+	</div> 
+</div> 
+
+
+<script>
+	$(function () {
+		$("input[name='selIndvCorp']").click(function () {
+			if ($("#rdoCorp").is(":checked")) {
+				$('.reporter').find('colgroup').html('<col style="width: 110px;"><col><col><col>');
+				$("tr.corp1").show();
+				$("tr.corp2").hide();
+			} else {
+				$('.reporter').find('colgroup').html('<col style="width: 110px;"><col style="width: 480px;"><col style="width: 130px;"><col style="width: 480px;">');
+				$("tr.corp1").hide();
+				$("tr.corp2").show();
+			}
+		});
+
+		$('.btn_file').click(function(){
+			if ($('.file_txt').length >= 3) {
+				alert('파일 첨부는 3개까지만 가능합니다.');
+			}
+			else {
+				$('.input_file').each(function(i){
+					if ($(this).val() == '') {
+						$(this).trigger('click');
+						return false;
+					}
+				});
+			}
+		})
+
+		$('.input_file').each(function(i){
+			$(this).change(function(){	
+				$(this).parent().append('<span class="file_txt"><span class="file_name">' + this.files[0].name + '</span><a href="#"><span>삭제</span></a></span>');
+
+				$('.file_txt').eq($('.file_txt').length - 1).find('a').click(function(e){			
+					e.preventDefault();	
+					$('.input_file').eq(i).val('');
+					$(this).parent().remove();
+				});
+			});	
+		});
+	});
+</script>
+</body>
+</html>

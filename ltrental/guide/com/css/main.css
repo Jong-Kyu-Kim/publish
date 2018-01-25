@@ -1,0 +1,425 @@
+@charset "utf-8";
+
+/****************************************/
+/*	Name: LOTTE HOTEL
+/*	PART: SITE MAIN STYLE
+/*	Version: 1.0
+/*	Author: Hyun-Ah Park
+/****************************************/
+
+/*Float Release*/
+.main_visual .list_visual,
+.reserv_area .quick_reserv,
+.reserv_area,
+.reserv_area .quick_reserv>li,
+#hotel.chHotel .main .dep02Sec,
+.box_calendar .wrap,
+#hotel.chHotel .main .wrap_weather li,
+.main.wedding .wrap_contens,
+.main.wedding .global_menu_sel,
+.wrap_banner,
+.social {*zoom:1;}
+
+.main_visual .list_visual:after,
+.reserv_area .quick_reserv:after,
+.reserv_area:after,
+.reserv_area .quick_reserv>li:after,
+#hotel.chHotel .main .dep02Sec:after,
+.box_calendar .wrap:after,
+#hotel.chHotel .main .wrap_weather li:after,
+.main.wedding .wrap_contens:after,
+.main.wedding .global_menu_sel:after,
+.wrap_banner:after,
+.social:after {display:block; content:''; clear:both;}
+
+
+
+/*Main LayOut*/
+#header .logo {z-index:30}
+#global .main #container{padding:0 0 40px 0; background-color:#252220;}
+#global .main #footer .inner {border-top:1px solid #403b37;}
+
+#hotel .main #container{padding:0 0 30px 0; background-color:#3b312a;}
+
+#hotel.chHotel {}
+#hotel.chHotel .main, #hotel.chHotel .main #container {background-color:#d8d5d2;}
+
+#cityHotel.chCityHotel .main, #cityHotel.chCityHotel .main #container {background-color:#e0e2e4;}
+#cityHotel.chCityHotel .main #container {padding:0 0 30px 0; }
+ 
+#L7.chL7 .main #container {padding:0 0 30px 0; border-top:0;}
+
+#signiel.chSigniel .main #container {padding:0 0 30px 0; background-color:#dcdcdc;}
+
+
+/*main visual*/
+.main_visual {position:relative; /*width:1130px;*/ width:960px}
+.main_visual .view_visual {height:410px; /*margin-left:-170px;*/ margin-left:-170px}
+.main_visual .list_visual {position:absolute; left:53px; top:48px; z-index:20;}
+.main_visual .list_visual li {float:left; margin-right:5px}
+.main_visual .list_visual li .tit_visual {position:absolute; left:-28px; top:0; width:932px;}
+.main_visual .list_visual li strong {display:block; font-weight:normal; color:#fff;}
+.main_visual .list_visual li .sub_tit {color:#fff;}
+.main_visual .list_visual li > a {display:block; width:24px; height:24px;}
+.main_visual .list_visual li > a:focus{outline:#fff dashed 1px;}
+.main_visual .list_visual li > a>span {text-indent:-999px}
+.main_visual .bg_l {display:block; width:12px; height:24px; background:url(/front/img/com/btn_main_rolling.png) 0 -50px no-repeat;}
+.main_visual .bg_r {display:block; width:12px; height:24px; margin-left:12px;  background:url(/front/img/com/btn_main_rolling.png) 100% -50px no-repeat;}
+.main_visual .list_visual li.on .bg_l {background-position:0 0;}
+.main_visual .list_visual li.on .bg_r {background-position:100% 0;}
+
+.main_visual .btn_pause {position:absolute; left:25px; top:190px; display:block;width:24px; height:24px; background:url(/front/img/com/btn.png) 0 -500px no-repeat; z-index:20;}
+.main_visual .btn_pause.on {background-position:0 -400px;}
+.main_visual .btn_pause:focus{outline:#fff dashed 1px;}
+
+/*timer*/
+.wrap_time {position:absolute; right:0px; bottom:31px;}
+.wrap_time span {color:#fff;}
+.wrap_time span.meridiem {padding-left:3px;}
+
+/*reservation*/
+.reserv_area {}
+.reserv_area, #hotel.chHotel .reserv_area {position:relative; height:37px; margin:-17px 0 20px 0; background:url(/front/img/com/chain/bg_main_reserv.png) 3px 100% no-repeat;}
+.reserv_area .quick_reserv {float:left;width:776px; }
+.reserv_area .quick_reserv>li, #hotel.chHotel .reserv_area .quick_reserv>li{float:left; padding:11px 0 5px 14px;/* padding:8px 0 8px 14px; */ background-color:#fff;border-right:1px solid #bab3ae;}
+.reserv_area .quick_reserv>li input {float:left; width:90px; padding:0; text-indent:0; color:#635445; border:0;}
+.reserv_area .quick_reserv>li>strong {font-weight:normal; color:#635445; }
+.reserv_area .quick_reserv>li>a {margin-right:10px;}
+
+.reserv_area .quick_reserv>li.cal_check, #hotel.chHotel .reserv_area .quick_reserv>li.cal_check {width:121px;/*  padding:10px 0 6px 14px; */ padding:7px 0 9px 14px;}
+.reserv_area .quick_reserv>li.cal_check>a {float:right;display:block; width:19px; height:19px; background:url(/front/img/com/bg_btn_ico14.png) -11px -295px no-repeat;}
+.reserv_area .quick_reserv>li.cal_check.on {background-color:#000;}
+.reserv_area .quick_reserv>li.cal_check.on input {color:#fff; background-color:#000;}
+
+.reserv_area .quick_reserv>li.sel_room {width:211px;}
+.reserv_area .quick_reserv>li.sel_room strong,.reserv_area .quick_reserv>li.person strong {float:left;}
+.reserv_area .quick_reserv>li.sel_room input, .reserv_area .quick_reserv>li.person input {float:left; width:35px; text-align:center; margin:-3px 0 3px;}
+
+.reserv_area .quick_reserv>li.sel_room a, .reserv_area .quick_reserv>li.person a {float:left; display:block; width:13px; height:13px; background:url(/front/img/com/bg_btn_ico14.png) -17px -419px no-repeat}
+.reserv_area .quick_reserv>li.sel_room a.decrease, .reserv_area .quick_reserv>li.person a.decrease {background-position:-17px -473px;}
+.reserv_area .quick_reserv>li.person {width:124px;}
+
+.reserv_area .btn_reserv {display:block;float:left; width:169px; height:17px; overflow:hidden; padding:10px 0 8px 14px; font-weight:bold; color:#fff; background:#8a7a6c url(/front/img/com/bg_btn_ico14.png) 145px -348px no-repeat;}
+.reserv_area .list_room {position:absolute; left:272px; top:0; border: 1px solid #444;}
+.reserv_area .list_room li {}
+.reserv_area .list_room li a {display:block; width:199px; padding:0 11px 0 14px; color:#222; background-color:#fff;}
+.reserv_area .list_room li a:hover, .list_room li a:focus {background-color:#867a6f; color:#fff;}
+
+.reserv_area .quick_reserv>li.sel_reserv {position:relative; width:268px;}
+.reserv_area .quick_reserv>li.sel_reserv:first-child {width:206px;}
+.reserv_area .quick_reserv>li.sel_reserv input {width:234px; float:left;}
+.reserv_area .quick_reserv>li.sel_reserv:first-child input {width:170px;}
+.reserv_area .quick_reserv>li.sel_reserv>a {display:block; width:15px; height:13px; margin:0 0 0 244px; background:url(/front/img/com/btn_arr.png) 0 -1674px no-repeat;}
+.reserv_area .quick_reserv>li.sel_reserv:first-child>a {margin-left:180px;}
+
+.reserv_area .quick_reserv>li.sel_reserv.on {background-color:#000;}
+.reserv_area .quick_reserv>li.sel_reserv.on input {color:#fff; background-color:#000;}
+
+.reserv_area .sel_reserv .sel_list {position:absolute; left:-1px; top:-37px; height:0px; overflow:hidden;}
+.reserv_area .sel_reserv .sel_list li a {display:block; width:256px; padding:7px 11px 7px 14px; color:#222; background-color:#fff;}
+.reserv_area .sel_reserv:first-child .sel_list li a {width:195px;}
+.reserv_area .sel_reserv .sel_list li a:hover, .reserv_area .sel_reserv .sel_list li a:focus {background-color:#867a6f; color:#fff;}
+
+.reserv_area .sel_reserv.on .sel_list {padding:8px 0 10px 0; background-color:#fff; border: 1px solid #444; z-index:25;}
+
+
+/*Reservation Global*/
+#global .reserv_area, 
+#hotel .reserv_area{background-image:url(/front/img/com/global/bg_main_reserv.png);}
+#global .reserv_area .quick_reserv>li, 
+#hotel .reserv_area .quick_reserv>li{padding:8px 0 8px 14px;}
+
+#hotel .reserv_area{margin-bottom:30px;}
+#hotel .reserv_area .quick_reserv>li{border-right:1px solid #2d2520;}
+
+/* Reservation City Hotel */
+#cityHotel .reserv_area {background-image:url(/front/img/com/chain/bg_mainCity_reserv.png);}
+#cityHotel .reserv_area .btn_reserv {background-color:#575a5d;}
+
+/*Reservation L7*/
+#L7.chL7 .reserv_area {background:url(/front/img/com/chain/bg_mainL7_reserv.png) 3px 100% no-repeat;}
+#L7.chL7 .reserv_area .quick_reserv li {background-color:#373534;}
+#L7.chL7 .reserv_area .quick_reserv li input {color:#fff; background-color:#373534;}
+#L7.chL7 .reserv_area .quick_reserv li strong {color:#fff;}
+#L7.chL7 .reserv_area .quick_reserv>li.cal_check>a {background-position:-11px -885px}
+#L7.chL7 .reserv_area .quick_reserv>li.sel_room a, #L7.chL7 .reserv_area .quick_reserv>li.person a {background-position:-17px -958px;}
+#L7.chL7 .reserv_area .quick_reserv>li.sel_room a.decrease, #L7.chL7 .reserv_area .quick_reserv>li.person a.decrease {background-position:-17px -1022px;}
+#L7.chL7 .reserv_area .quick_reserv li.on {background-color:#000;}
+#L7.chL7 .reserv_area .quick_reserv li.on input {color:#b3b3b3; background-color:#000;}
+#L7.chL7 .reserv_area .quick_reserv>li.on.cal_check>a {background-position:-11px -815px}
+#L7.chL7 .reserv_area .btn_reserv {background-color:#92278f;}
+
+/* Reservation signiel */
+#signiel.chSigniel .reserv_area {background:url(/front/img/com/chain/bg_mainSigniel_reserv.png) 3px 100% no-repeat;}
+#signiel.chSigniel .reserv_area .btn_reserv {background-color:#2e2e2e;}
+
+/*offers*/
+#hotel.chHotel .main .offers {padding-top:0;}
+#hotel.chHotel .main .tit_offers {color:#352d27;}
+#hotel.chHotel .main .count_paging .btn_prev {background-position:0 -1780px; outline-color:#000;}
+#hotel.chHotel .main .count_paging .btn_next {background-position:0 -1880px; outline-color:#000;}
+#hotel.chHotel .main .offers .btn_all {position:absolute; right:0; top:0; display:block; width:23px; height:23px; background:url(/front/img/com/btn_arr.png) 0 -1980px no-repeat;}
+#hotel.chHotel .main .offers .btn_all.on {background-position:0 -2080px}
+#hotel.chHotel .main .count_paging>span.nowCount {color:#352d27;}
+#hotel.chHotel .main .count_paging>span.totalCount {color:#675b4f;}
+/* offers - color */
+#cityHotel.chCityHotel .wrap_offers li{background-color:#575a5d;}
+#cityHotel.chCityHotel .wrap_offers li>a .txt{color:#bbbec0;}
+#cityHotel.chCityHotel .wrap_offers li>a .date{color:#b9babc;}
+
+
+.main .split.col3 .colSec {width:240px; margin:0;}
+.main .split.col3 .colSec.intro {/* height:116px; */ height:116px; overflow:hidden; background-color:#b6b6b6;}
+.main .split.col3 .colSec.intro a {display:block; padding:14px 14px 13px 22px; border:1px solid #b6b6b6;}
+.main .split.col3 .colSec.intro a:focus {border-top:1px dashed #000; border-right:1px dashed #000; border-left:1px dashed #000;}
+.main .split.col3 .colSec.intro strong {display:block;color:#252525; font-weight:bold; margin-bottom:12px;}
+.main .split.col3 .colSec.intro span {color:#636363;}
+/* banner - color */
+#cityHotel.chCityHotel .main .split.col3 .colSec.intro{background:#bbbec0;}
+#cityHotel.chCityHotel .main .split.col3 .colSec.intro a{border-color:#bbbec0;}
+
+/*City hotel offers*/
+#cityHotel.chCityHotel .main .tit_offers {color:#352d27;}
+#cityHotel.chCityHotel .count_paging .btn_prev {background:url(/front/img/com/btn_arr2.png)0 -300px; outline-color:#000;}
+#cityHotel.chCityHotel .count_paging .btn_next {background:url(/front/img/com/btn_arr2.png)0 -400px; outline-color:#000;}
+#cityHotel.chCityHotel  .main .offers .btn_all {position:absolute; right:0; top:0; display:block; width:23px; height:23px; background:url(/front/img/com/btn_arr2.png) 0 -500px no-repeat;}
+#cityHotel.chCityHotel .main .count_paging>span.nowCount {color:#352d27;}
+#cityHotel.chCityHotel .main .count_paging>span.totalCount {color:#404950;}
+
+
+
+	/*Chain Info*/
+.main .dep03Sec {position:relative; width:210px; height:329px; padding:12px 14px 13px 14px; float:left; background-color:#fff; border:1px solid #fff;}
+.main .tit_chain {padding-left:8px; margin-bottom:14px; font-weight:bold; color:#2a2723;}
+.main .btn_wtOpen {position:absolute; right:24px; /* top:17px; */ top:260px; display:block; width:23px; height:23px; background:url(/front/img/com/btn_arr.png) 0 -2080px no-repeat;}
+
+.main .wrap_info .info {padding:17px 16px 21px 8px; border-top:1px solid #dbdbdb; background:url(/front/img/com/bg_dot3x1_ccc.png) 0 100% repeat-x;}
+.main .wrap_info .info dt {color:#2a2723; font-weight:bold;}
+.main .wrap_info .info dd {margin-bottom:16px; color:#666;}
+.main .wrap_info .info dd strong {font-weight:normal;}
+.main .wrap_info .info dd.last {margin-bottom:0;}
+.main .wrap_info .info dd.last strong {display:inline-block; margin-right:5px;}
+
+.main .weather {position:relative; padding:17px 5px 0 9px;}
+.main .weather dt {margin-bottom:21px; color:#666;}
+.main .temperature {color:#444;}
+/*.main .temperature .low {padding-right:16px; color:#8492ac; background:url(/front/img/com/bg_temperature.png) 100% 1px no-repeat;}
+.main .temperature .high {padding-left:4px; color:#fc3b33;}*/
+.main .temperature>li>ul {width:88px; margin-left:49px; *margin-top:-7px;}
+.main .temperature>li>ul li {font-size:14px; height:14px; padding:4px 11px 8px 0; text-align:right; background:url(/front/img/com/bg_dot3x1_ccc.png) 0 0 repeat-x;}
+.main .temperature>li>ul li:first-child {padding-top:0; *padding-bottom:2px; background:none;}
+
+.main .temperature>li>ul li .unit_wt {display:inline-block; margin-left:4px;}
+
+.main .ico_temperature {position:absolute; right:5px; bottom:-2px; width:45px; text-align:center;}
+.main .btn_wtClose {position:absolute; right:25px; top:17px; display:block; width:23px; height:23px; background:url(/front/img/com/btn_arr.png) 0 -2180px no-repeat;}
+
+.main .wrap_weather {border-top:1px solid #dbdbdb;}
+.main .wrap_weather .temperature>li {position:relative; height:39px; padding:7px 0 13px 8px; *padding-bottom:10px; border-top:1px solid #e2e2e2;}
+.main .wrap_weather .temperature>li:first-child {border-top:0;}
+.main .wrap_weather .temperature>li .ico_temperature {right:4px; bottom:50%;}
+.main .wrap_weather .temperature>li strong {display:block;/* width:66px;  */float:left; color:#666; font-weight:normal;}
+.main .wrap_weather .temperature>li strong>span {display:block; margin-top:3px; font-weight:bold;}
+.main .wrap_weather .temperature>li .low {display:block; float:left; width:30px; padding:6px 0 7px 0; background:url(/front/img/com/bg_temperature_s.png) 100% 17px no-repeat;}
+.main .wrap_weather .temperature>li .high {display:block; padding-top:16px;}
+
+/*L7 chain info*/
+#L7.chL7 .main .dep03Sec {border-top:1px solid #ccc; border-right:1px solid #fff; border-bottom:1px solid #ccc; border-left:1px solid #ccc;}
+
+/**** Chain Wedding ****/
+/*wedding Layout*/
+#hotel.chHotel #wrap.main.wedding #header .header_body {padding-top:0; background:url(/front/img/com/chain/bg_wedding_mainCont.png) 50% 0 repeat-y;}
+#hotel.chHotel #wrap.main.wedding #container .wrap_cont {width:100%;background:url(/front/img/com/chain/bg_wedding_mainCont.png) 50% 0 repeat-y;}
+#hotel.chHotel #wrap.main.wedding .list_visual {left:49px; top:377px}
+#hotel.chHotel #wrap.main.wedding .btn_pause {left:20px; top:377px}
+
+#hotel.chHotel #wrap.main.wedding #container .inner {padding-top:0}
+
+#hotel.chHotel #wrap.main.wedding .wrap_info {position:absolute; right:0; bottom:10px; width:200px; padding:26px 20px 24px 20px; background-color:#8a7a6c;}
+#hotel.chHotel #wrap.main.wedding .wrap_info>strong {display:block; margin-bottom:18px; color:#fff; font-weight:normal;}
+#hotel.chHotel #wrap.main.wedding .wrap_info>ul>li {color:#fff}
+#hotel.chHotel #wrap.main.wedding .wrap_info>ul>li>em {display:block; font-weight:bold;}
+#hotel.chHotel #wrap.main.wedding .wrap_info>ul>li>span {display:block;}
+
+.main.wedding .wrap_contens {padding-top:10px;}
+.main.wedding .wrap_contens .contL {float:left; width:680px; padding:10px 20px;}
+.main.wedding .wrap_contens .contL .tit {color:#82705f; font-weight:bold;}
+.main.wedding .wrap_contens .contL .tit span {font-weight:normal;}
+.main.wedding .wrap_contens .contL .bg_tit {width:432px; height:174px; margin:7px 0 23px 129px; background:url(/front/img/com/chain/txt_wedding_main.png) 0 0 no-repeat;}
+.main.wedding .wrap_contens .contL .txt {color:#444;}
+.main.wedding .wrap_contens .contR {float:right; width:240px;}
+.main.wedding .wrap_contens .contR .btn_counseling {margin-bottom:10px;}
+.main.wedding .wrap_contens .contR .btn_counseling a {display:block; padding:17px 73px 15px 20px; background:#222 url(/front/img/com/btn_arr.png) 209px -2260px no-repeat; color:#fff;}
+.main.wedding .wrap_contens .contR .banner {position:relative; background-color:#000;}
+.main.wedding .wrap_contens .contR .banner strong {position:absolute; left:20px; top:20px; display:block; width:180px; color:#fff;}
+.main.wedding .wrap_contens .contR .banner>span {position:absolute; left:20px; top:60px; display:block; width:180px; color:#fff; font-weight:bold;}
+.main.wedding .wrap_contens .contR .banner span>.date {display:block; margin-top:20px; }
+.main.wedding .wrap_contens .contR .banner a {position:absolute; left:20px; bottom:20px; display:block; width:66px; color:#fff; font-style:Italic; text-decoration:underline;}
+
+/* brand-#hotel */
+.wrap_cont{border-right:1px solid #52473f;}
+.wrap_cont a{display:block; cursor:pointer; color:#b8a89a;}
+.wrap_cont a:focus{outline-color:#b8a89a;}
+.wrap_cont h2{margin:-5px 0 10px; color:#fff; font-size:16px; font-weight:bold;}
+.wrap_cont .colSec{width:191px; height:189px;padding:10px 24px; border-left:1px solid #52473f;}
+.wrap_cont .info{width:431px;}
+.wrap_cont .info h2{margin:0 0 23px;}
+.wrap_cont .info a{font-size:13px; font-family:Georgia; line-height:20px;}
+.wrap_cont .info .more{display:block; margin-top:24px; font-size:12px; text-decoration:underline; font-style:italic;}
+.wrap_cont .brOffers{width:190px;}
+.wrap_cont .brOffers strong{display:block; margin:-3px 0 6px; font-size:14px;;}
+.wrap_cont .brOffers span{display:block; margin-bottom:15px;}
+.wrap_cont .findHotel a{height:153px; background: url(/front/img/com/brand/img_banner1.png) left bottom no-repeat;}
+
+
+
+/**** Tripadvisor ****/
+.tripadvisor .wrap {display:block; width:112px; height:24px;  margin:0 auto 11px;}
+.tripadvisor .gpa {display:block; width:50%; height:24px; background-color:#34a14a;}
+.tripadvisor .bg_gpa {font-size:0; text-indent:-9999px; display:block; width:112px; height:100%; background: url(/front/img/com/bg_tripadvisor.png) 0 0 no-repeat;}
+.tripadvisor .tit_tripadvisor {display:block; width:119px; height:21px; margin:11px auto; background: url(/front/img/com/bg_tripadvisor.png) 0 -100px no-repeat;}
+
+.main .split.col3 .colSec.tripadvisor {text-align:center; width:230px; height:106px; border:5px solid #34a14a; background-color:#fff;}
+.review_num {color:#333; font-style:Italic; border-bottom:1px solid #878787;}
+
+/**** auto_complete ****/
+.auto_on {position:absolute; left:640px; top:60px; width:298px; height:111px; padding:10px 14px 14px 14px; background:url(/front/img/com/bg_auto_on.png) 0 0 no-repeat; z-index:25;}
+.auto_on label {display:block; font-weight:bold; color:#fff; margin-bottom:6px;}
+.auto_on input {width:248px; padding:1px 0 4px 8px; text-indent:0; color:#666; border:0;}
+.auto_on .wrap_schtext {display:block; width:291px; height:30px; padding-top:5px; background-color:#fff;}
+.auto_on .btn_sch {display:block; width:35px; height:35px; margin:-35px 0 0 256px; background:#000 url(/front/img/com/btn_arr.png) 11px -1059px no-repeat;}
+
+.auto_complete {display:block; width:291px; margin-top:1px; *margin-top:-2px; background-color:#fff;}
+.auto_complete ul {}
+.auto_complete ul li {}
+.auto_complete ul li a {display:block; width:270px; padding-left:21px; color:#666;}
+.auto_complete ul li.on {background-color:#867a6f;}
+.auto_complete ul li.on a {color:#fff;}
+
+/*** global Banner Area ***/
+.banner1, .banner2, .banner3 {float:left}
+.social li {float:left}
+.social li a {display:block; width:60px; height:60px; background:url(/front/img/com/ico_social.png) 0 0 no-repeat}
+.social li.face_book a {background-position:-60px 0;}
+.social li.twiter a {background-position:-120px 0;}
+.social li.youtube a {background-position:-180px 0;}
+
+
+/* FONT-FAMILY */
+/*Georgia*/
+.main_visual .list_visual li strong,
+.wrap_time span,
+.reserv_area .quick_reserv>li.cal_check input,
+.reserv_area .quick_reserv>li.sel_reserv input,
+.reserv_area .quick_reserv>li>strong,
+#hotel.chHotel .main .temperature span,
+#hotel.chHotel #wrap.main.wedding .gnb>li>a,
+.main.wedding .wrap_contens .contR .btn_counseling a,
+.main.wedding .wrap_contens .contR .banner strong,
+.main.wedding .wrap_contens .contR .banner span>.date,
+.main.wedding .wrap_contens .contR .banner a,
+.review_num,
+.auto_on input {font-family:Georgia;}
+
+/*Gulim*/
+#hotel.chHotel .main .temperature .unit_wt {font-family:Gulim;}
+
+/*Malgun Gothic*/
+#hotel.chHotel .main .weather dt,
+#hotel.chHotel .main .wrap_weather li strong>span,
+#cityHotel.chCityHotel .main .weather dt,
+#cityHotel.chCityHotel .main .wrap_weather li strong>span,
+.reserv_area .quick_reserv>li input {font-family:Malgun Gothic;}
+
+/*Times New Roman*/
+#hotel.chHotel #wrap.main.wedding .wrap_info>strong {font-family:Times New Roman}
+
+/*Arial*/
+.auto_complete ul li a {font-family:arial;}
+
+/** FONT_SIZE **/
+/*font-size:0px*/
+.main_visual .list_visual li > a>span {font-size:0;}
+
+/*font-size:11px*/
+#hotel.chHotel .main .wrap_weather li strong>span,
+#cityHotel.chCityHotel .main .wrap_weather li strong>span{font-size:11px;}
+
+/*font-size:12px*/
+.reserv_area .quick_reserv>li>strong,
+#hotel.chHotel .main .split.col3 .colSec.intro span,
+.main.wedding .wrap_contens .contR .banner span>.date,
+.auto_complete ul li a {font-size:12px;}
+
+/*font-size:13px*/
+.reserv_area .quick_reserv>li input,
+.reserv_area .btn_reserv {font-size:13px;}
+
+/*font-size:14px*/
+#hotel.chHotel .main .wrap_weather li .unit_wt,
+.main.wedding .wrap_contens .contL .txt,
+.auto_on input {font-size:14px;}
+
+/*font-size:16px*/
+.main_visual .list_visual li .sub_tit,
+.main .split.col3 .colSec.intro strong,
+.main.wedding .wrap_contens .contR .btn_counseling a,
+.main.wedding .wrap_contens .contR .banner strong,
+.auto_on label {font-size:16px;}
+
+/*font-size:18px*/
+.wrap_time span,
+#hotel.chHotel .main .weather dt,
+#hotel.chHotel .main .wrap_weather li strong,
+#cityHotel.chCityHotel .main .weather dt,
+#cityHotel.chCityHotel .main .wrap_weather li strong,
+.box_calendar .month_cal  strong {font-size:18px;}
+
+/*font-size:20px*/
+#hotel.chHotel .main .temperature span,
+#hotel.chHotel #wrap.main.wedding .wrap_info>strong,
+.main.wedding .wrap_contens .contR .banner>span {font-size:20px;}
+
+/*font-size:22px*/
+.main .tit_chain,
+.main .temperature {font-size:22px;}
+
+/*font-size:24px*/
+.main.wedding .wrap_contens .contL .tit {font-size:24px;}
+
+/*font-size:36px*/
+.wrap_time span.timer span {font-size:36px;}
+
+/*font-size:40px*/
+.main_visual .list_visual li strong {font-size:40px;}
+
+
+/** LINE-HEIGHT **/
+/*line-height:16px*/
+#hotel.chHotel .main .split.col3 .colSec.intro span,
+#hotel.chHotel .main .wrap_info .info dt,
+#hotel.chHotel .main .wrap_info .info dd,
+#cityHotelch.CityHotel .main .split.col3 .colSec.intro span,
+#cityHotel.chCityHotel .main .wrap_info .info dt,
+#cityHotel.chCityHotel .main .wrap_info .info dd {line-height:16px;}
+
+/*line-height:20px*/
+#hotel.chHotel #wrap.main.wedding .wrap_info>ul>li>em,
+#hotel.chHotel #wrap.main.wedding .wrap_info>ul>li>span,
+.main.wedding .wrap_contens .contL .txt {line-height:20px;}
+
+/*line-height:22px*/
+.auto_on input {line-height:22px;}
+
+/*line-height:24px*/
+#hotel.chHotel #wrap.main.wedding .wrap_info>strong {line-height:24px;}
+
+/*line-height:30px*/
+.reserv_area .list_room li a {line-height:30px;}
+
+/*line-height:36px*/
+.main_visual .list_visual li .sub_tit,
+.auto_complete ul li a {line-height:36px;}
+
+/*line-height:49px*/
+.main_visual .list_visual li strong {line-height:49px;}

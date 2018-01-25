@@ -1,0 +1,1658 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html dir="ltr" lang="ko" class="ie7"><![endif]-->
+<!--[if IE 8]><html dir="ltr" lang="ko" class="ie8"><![endif]-->
+<!--[if IE 9]><html dir="ltr" lang="ko" class="ie9"><![endif]-->
+<html dir="ltr" lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1200, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    <script src="../../js/html5shiv.js"></script>
+    <script src="../../js/core.js"></script>
+    <script src="../../js/ui.js"></script>
+    <script src="../../js/calendar.js"></script>
+</head>
+
+<body>
+
+	<header>
+		<div class="inner_header">
+			<a href="#container" class="skip_nav">Skip to Content</a>
+			<a href="#" class="logo"><h1><img src="../../images/common/logo.png" alt="Lotte rent-a-car"></h1></a>
+			<a href="#" class="side_logo"><img src="../../images/common/logo_hertz.png" alt="hertz"></a>
+			<ul id="extra_menu" class="extra_menu">
+				<!--// 비회원일 경우 -->
+				<li class="login"><a href="#">Login</a></li>
+				<li class="join"><a href="#">Register</a></li>
+
+				<!--// 회원일 경우 -->
+				<li class="logout"><a href="#">My Reservation</a></li>
+				<li class="mypage_quick"><a href="#">Mypage</a></li>
+				<li class="language"><a href="#">KOREAN</a></li>
+			</ul>
+		</div>
+		<div id="gnb" class="gnb">
+			<ul class="menus">
+				<li class="menu idx1">
+					<a href="#">Reservations</a>
+				</li>
+				<li class="menu idx2">
+					<a href="#">Car rental</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">Rental information </a>
+							<ul>
+								<li>
+									<a href="#">Rental Cost Information</a>
+								</li>
+								<li>
+									<a href="#">Additional Rate</a>
+								</li>
+								<li>
+									<a href="#">Rental information for foreigner</a>
+								</li>
+								<li>
+									<a href="#">Overseas Reservation</a>
+								</li>
+								<li>
+									<a href="#">Chauffeured Service</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="menu idx3">
+					<a href="#">Location</a>
+				</li>
+			</ul>
+		</div>
+		<div class="gnb_open"></div>
+	</header>
+    <div id="container">
+        <!-- content -->
+        <article class="content">
+            <h2 class="border">Rental Cost Information</h2>
+            <div class="content">
+                <!-- 본문삽입 -->
+                <h3 class="noBorder">Membership Benefits</h3>
+                <ul class="join_benefit">
+                    <li class="icon1"> Member’s discount up to 60% <br>weekdays and weekends.</li>
+                    <li class="icon2"> Free vehicle upgrade /<br> free passes provided</li>
+                    <li class="icon3"> Economic travel is possible through various<br> travel information and discount coupons</li>
+                </ul>
+                <div class="wrap_tab">
+                    <ul class="tab_menu mb50">
+                        <li class="active"><a href="#tab_landPrice">Mainland Rate</a></li>
+                        <li><a href="#tab_jejuPrice">Jeju Rate</a></li>
+                        <li><a href="#tab_driverPrice">Chauffeured Rate</a></li>
+                        <li><a href="#tab_etcPrice">Additional Rate</a></li>
+                    </ul>
+                    <div class="tab_content" id="tab_landPrice">
+                        <!-- 내륙 요금 -->
+                        <div class="wrap_land_price">
+                            <div class="wrap_stab">
+                                <ul class="stab_menu mb50">
+                                    <li class="active"><a href="#stab_landPrice1">Compact</a></li>
+                                    <li><a href="#stab_landPrice2">Standard</a></li>
+                                    <li><a href="#stab_landPrice3">Premium</a></li>
+                                    <li><a href="#stab_landPrice4">Imported</a></li>
+                                    <li><a href="#stab_landPrice5">SUV/RV</a></li>
+                                </ul>
+                                <div class="stab_content" id="stab_landPrice1">
+                                    <h3 class="noBorder">
+                                         Compact Car Rental Cost
+                                         <span class="txt_must">The rates will be multiplied by days being used. (KRW)</span>
+                                    </h3>
+                                    <div class="grid mb5">
+                                        <table class="tb_col">
+                                            <caption></caption>
+                                            <colgroup>
+                                                <col style="width:316px">
+												<col>
+												<col>
+												<col>
+												<col>
+												<col>
+												<col>
+                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" rowspan="2" class="bgGray">Compact Car</th>
+                                                    <th scope="col" colspan="4" class="bgGray2">Daily Rate</th>
+                                                    <th scope="col" colspan="3" class="bgGray2">Hourly Rate</th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col" class="bgGray2 borderL">1~2days</th>
+                                                    <th scope="col" class="bgGray2">3~4days</th>
+                                                    <th scope="col" class="bgGray2">5~6days</th>
+                                                    <th scope="col" class="bgGray2">7days</th>
+                                                    <th scope="col" class="bgGray2">6hour</th>
+                                                    <th scope="col" class="bgGray2">10hour</th>
+                                                    <th scope="col" class="bgGray2">12hour</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="left noBorderL">SPARK / THE NEXT SPARK / MORNING / ALL NEW MORNING</th>
+                                                    <td><span class="txt_point">95,000</span></td>
+                                                    <td>86,000 </td>
+                                                    <td>81,000 </td>
+                                                    <td>76,000 </td>
+                                                    <td><span class="txt_point">53,000</span> </td>
+                                                    <td>68,000</td>
+                                                    <td>76,000 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">RAY / ACENT / CRUZE / PRIDE</th>
+                                                    <td><span class="txt_point">100,000</span></td>
+                                                    <td>90,000 </td>
+                                                    <td>85,000 </td>
+                                                    <td>80,000 </td>
+                                                    <td><span class="txt_point">56,000</span> </td>
+                                                    <td>72,000 </td>
+                                                    <td>80,000 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">RAY / ACENT / CRUZE / PRIDE</th>
+                                                    <td><span class="txt_point">110,000</span></td>
+                                                    <td>99,000 </td>
+                                                    <td>94,000 </td>
+                                                    <td>88,000 </td>
+                                                    <td><span class="txt_point">62,000</span> </td>
+                                                    <td>79,000 </td>
+                                                    <td>88,000 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">i30 / AVANTE HYBRID</th>
+                                                    <td><span class="txt_point">120,000</span></td>
+                                                    <td>108,000 </td>
+                                                    <td>102,000 </td>
+                                                    <td>96,000 </td>
+                                                    <td><span class="txt_point">67,000</span> </td>
+                                                    <td>86,000 </td>
+                                                    <td>96,000 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <ul class="txt_list">
+                                        <li class="red">Rates may fluctuate during peak season and special periods.</li>
+                                    </ul>
+                                </div>
+                                <div class="stab_content" id="stab_landPrice2">
+                                    <h3 class="noBorder">
+                                         Standard Car Rental Cost
+                                         <span class="txt_must">The rates will be multiplied by days being used. (KRW)</span>
+                                    </h3>
+                                    <div class="grid mb5">
+                                        <table class="tb_col">
+                                            <caption></caption>
+                                            <colgroup>
+                                                <col style="width:316px">
+                                                <col>
+												<col>
+												<col>
+												<col>
+												<col>
+												<col>
+                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" rowspan="2" class="bgGray">Standard Car</th>
+                                                    <th scope="col" colspan="4" class="bgGray2">Daily Rate</th>
+                                                    <th scope="col" colspan="3" class="bgGray2">Hourly Rate</th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col" class="bgGray2 borderL">1~2days</th>
+                                                    <th scope="col" class="bgGray2">3~4days</th>
+                                                    <th scope="col" class="bgGray2">5~6days</th>
+                                                    <th scope="col" class="bgGray2">7days</th>
+                                                    <th scope="col" class="bgGray2">6hour</th>
+                                                    <th scope="col" class="bgGray2">10hour</th>
+                                                    <th scope="col" class="bgGray2">12hour</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="cnt">
+                                                <!-- 20170207 -->
+                                                <tr>
+                                                    <th class="left noBorderL">K5 / YF SONATA / MALIBU / SONATA Y20 / SONATA HYBRID</th>
+                                                    <td class="txt_point">165,000 </td>
+                                                    <td> 149,000 </td>
+                                                    <td> 140,000 </td>
+                                                    <td> 132,000 </td>
+                                                    <td class="txt_point"> 92,000 </td>
+                                                    <td> 119,000 </td>
+                                                    <td> 132,000 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">NEW SM5 / ALL NEW MALIBU</th>
+                                                    <td class="txt_point">170,000</td>
+                                                    <td> 153,000 </td>
+                                                    <td> 145,000 </td>
+                                                    <td> 136,000 </td>
+                                                    <td class="txt_point"> 95,000 </td>
+                                                    <td> 122,000 </td>
+                                                    <td> 136,000 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">K5 MX / K5 SX / LF SONATA / SM6</th>
+                                                    <td class="txt_point">175,000</td>
+                                                    <td> 158,000 </td>
+                                                    <td> 149,000 </td>
+                                                    <td> 140,000 </td>
+                                                    <td class="txt_point"> 98,000 </td>
+                                                    <td> 126,000 </td>
+                                                    <td> 140,000 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">i40 SALOON</th>
+                                                    <td class="txt_point">200,000</td>
+                                                    <td> 180,000 </td>
+                                                    <td> 170,000 </td>
+                                                    <td> 160,000 </td>
+                                                    <td class="txt_point"> 112,000 </td>
+                                                    <td> 144,000 </td>
+                                                    <td> 160,000 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <ul class="txt_list">
+                                        <li class="red">Rates may fluctuate during peak season and special periods.</li>
+                                    </ul>
+                                </div>
+                                <div class="stab_content" id="stab_landPrice3">
+                                    <h3 class="noBorder">
+                                         Premium Car Rental Cost
+                                         <span class="txt_must">The rates will be multiplied by days being used. (KRW)</span>
+                                    </h3>
+                                    <div class="grid mb5">
+                                        <table class="tb_col">
+                                            <caption></caption>
+                                            <colgroup>
+                                                <col style="width:316px">
+                                                <col>
+												<col>
+												<col>
+												<col>
+												<col>
+												<col>
+                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" rowspan="2" class="bgGray">Premium Car</th>
+                                                    <th scope="col" colspan="4" class="bgGray2">Daily Rate</th>
+                                                    <th scope="col" colspan="3" class="bgGray2">Hourly Rate</th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col" class="bgGray2 borderL">1~2days</th>
+                                                    <th scope="col" class="bgGray2">3~4days</th>
+                                                    <th scope="col" class="bgGray2">5~6days</th>
+                                                    <th scope="col" class="bgGray2">7days</th>
+                                                    <th scope="col" class="bgGray2">6hour</th>
+                                                    <th scope="col" class="bgGray2">10hour</th>
+                                                    <th scope="col" class="bgGray2">12hour</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="cnt">
+                                                <!-- 20170207 -->
+                                                <tr>
+                                                    <th class="left noBorderL">ALL NEW K7 2.4 / K7 2.4 / SM7 2.0/2.5 / GRANDEUR HG240</th>
+                                                    <td class="txt_point">267,000</td>
+                                                    <td> 240,000 </td>
+                                                    <td> 227,000 </td>
+                                                    <td> 214,000 </td>
+                                                    <td class="txt_point"> 150,000 </td>
+                                                    <td> 193,000 </td>
+                                                    <td> 214,000 </td>
+                                                </tr>
+                                                <!-- 20170213 -->
+                                                <tr>
+                                                    <th class="left noBorderL">ALL NEW K7 3.0 / K7 2.7/3.0 / GRANDEUR HG220/HG300 / GRANDEUR IG 2.2 / 3.0 / IMPALA 2.5</th>
+                                                    <td class="txt_point">299,000</td>
+                                                    <td> 269,000 </td>
+                                                    <td> 254,000 </td>
+                                                    <td> 239,000 </td>
+                                                    <td class="txt_point"> 167,000 </td>
+                                                    <td> 215,000 </td>
+                                                    <td> 239,000 </td>
+                                                </tr>
+                                                <!-- //20170213 -->
+                                                <tr>
+                                                    <th class="left noBorderL">ASLAN 3.0</th>
+                                                    <td class="txt_point">377,000</td>
+                                                    <td> 339,000 </td>
+                                                    <td> 320,000 </td>
+                                                    <td> 302,000 </td>
+                                                    <td class="txt_point"> 211,000 </td>
+                                                    <td> 272,000 </td>
+                                                    <td> 302,000 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">CHAIRMAN W CW600</th>
+                                                    <td class="txt_point">378,000</td>
+                                                    <td> 340,000 </td>
+                                                    <td> 321,000 </td>
+                                                    <td> 302,000 </td>
+                                                    <td class="txt_point"> 211,000 </td>
+                                                    <td> 272,000 </td>
+                                                    <td> 302,000 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">G80 3.3 / K9 3.3 / THE NEW K9 3.3 / IMPALA 3.6 / GENESIS 3.3</th>
+                                                    <td class="txt_point">399,000</td>
+                                                    <td> 359,000 </td>
+                                                    <td> 339,000 </td>
+                                                    <td> 319,000 </td>
+                                                    <td class="txt_point"> 223,000 </td>
+                                                    <td> 287,000 </td>
+                                                    <td> 319,000 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">G80 3.8 / K9 3.8 / THE NEW K9 3.8 / EQUUS JS380/VS380 / GENESIS 3.8</th>
+                                                    <td class="txt_point">447,000</td>
+                                                    <td> 402,000 </td>
+                                                    <td> 380,000 </td>
+                                                    <td> 358,000 </td>
+                                                    <td class="txt_point"> 251,000 </td>
+                                                    <td> 322,000 </td>
+                                                    <td> 358,000 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">EQ900 3.3T / EQ900 3.8</th>
+                                                    <td class="txt_point">470,000</td>
+                                                    <td> 423,000 </td>
+                                                    <td> 400,000 </td>
+                                                    <td> 376,000 </td>
+                                                    <td class="txt_point"> 263,000 </td>
+                                                    <td> 338,000 </td>
+                                                    <td> 376,000 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">THE NEW K9 5.0</th>
+                                                    <td class="txt_point">500,000</td>
+                                                    <td> 450,000 </td>
+                                                    <td> 425,000 </td>
+                                                    <td> 400,000 </td>
+                                                    <td class="txt_point"> 280,000 </td>
+                                                    <td> 360,000 </td>
+                                                    <td> 400,000 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">EQUUS VS500</th>
+                                                    <td class="txt_point">550,000</td>
+                                                    <td> 495,000 </td>
+                                                    <td> 468,000 </td>
+                                                    <td> 440,000 </td>
+                                                    <td class="txt_point"> 308,000 </td>
+                                                    <td> 396,000 </td>
+                                                    <td> 440,000 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">GENESIS EQ900 5.0</th>
+                                                    <td class="txt_point">580,000</td>
+                                                    <td> 522,000 </td>
+                                                    <td> 493,000 </td>
+                                                    <td> 464,000 </td>
+                                                    <td class="txt_point"> 325,000 </td>
+                                                    <td> 418,000 </td>
+                                                    <td> 464,000 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">EQUUS VL500 LIMIUSINE</th>
+                                                    <td class="txt_point">600,000</td>
+                                                    <td> 540,000 </td>
+                                                    <td> 510,000 </td>
+                                                    <td> 480,000 </td>
+                                                    <td class="txt_point"> 336,000 </td>
+                                                    <td> 432,000 </td>
+                                                    <td> 480,000 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <ul class="txt_list">
+                                        <li class="red">Rates may fluctuate during peak season and special periods.</li>
+                                    </ul>
+                                </div>
+                                <div class="stab_content" id="stab_landPrice4">
+                                    <h3 class="noBorder">
+                                         Imported Car Rental Cost
+                                         <span class="txt_must">The rates will be multiplied by days being used. (KRW)</span>
+                                    </h3>
+                                    <div class="grid mb5">
+                                        <table class="tb_col">
+                                            <caption></caption>
+                                            <colgroup>
+                                                <col style="width:316px">
+                                                <col>
+												<col>
+												<col>
+												<col>
+												<col>
+												<col>
+                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" rowspan="2" class="bgGray">Imported Car</th>
+                                                    <th scope="col" colspan="4" class="bgGray2">Daily Rate</th>
+                                                    <th scope="col" colspan="3" class="bgGray2">Hourly Rate</th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col" class="bgGray2 borderL">1~2days</th>
+                                                    <th scope="col" class="bgGray2">3~4days</th>
+                                                    <th scope="col" class="bgGray2">5~6days</th>
+                                                    <th scope="col" class="bgGray2">7days</th>
+                                                    <th scope="col" class="bgGray2">6hour</th>
+                                                    <th scope="col" class="bgGray2">10hour</th>
+                                                    <th scope="col" class="bgGray2">12hour</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="cnt">
+                                                <tr>
+                                                    <th class="left noBorderL">AUDI A3 / BENZ A200 / JEEP CHEROKEE RENEGADE / JEEP WRANGLER / MINI COOPER / MUSTANG COUPE / PEUGEOT 3008 / VOLKSWAGEN BEETLE / VOLKSWAGEN JETTA</th>
+                                                    <td class="txt_point">350,000</td>
+                                                    <td>315,000</td>
+                                                    <td>298,000</td>
+                                                    <td>280,000</td>
+                                                    <td class="txt_point">196,000</td>
+                                                    <td>252,000</td>
+                                                    <td>280,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">BMW 118D / FORD TAURUS / HONDA CR-V 4WD / LEXUS CT200H / VOLKSWAGEN GOLF / VOLKSWAGEN PASSAT / INFINITI Q50 / TOYOTA CAMRY</th>
+                                                    <td class="txt_point">380,000</td>
+                                                    <td>342,000</td>
+                                                    <td>323,000</td>
+                                                    <td>304,000</td>
+                                                    <td class="txt_point">213,000</td>
+                                                    <td>274,000</td>
+                                                    <td>304,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">TOYOTA CAMRY HYBRID</th>
+                                                    <td class="txt_point">400,000</td>
+                                                    <td>360,000</td>
+                                                    <td>340,000</td>
+                                                    <td>320,000</td>
+                                                    <td class="txt_point">224,000</td>
+                                                    <td>288,000</td>
+                                                    <td>320,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">AUDI A4 / AUDI A5 / BENZ C200 / BENZ CLA200 / BMW 320D / FORD EXPLORER 3.5 / LEXUS NX300H / LINCOLN MKC / TOYOTA SIENNA 3.5 4WD / VOLKSWAGEN CC / VOLVO S60</th>
+                                                    <td class="txt_point">450,000</td>
+                                                    <td>405,000</td>
+                                                    <td>383,000</td>
+                                                    <td>360,000</td>
+                                                    <td class="txt_point">252,000</td>
+                                                    <td>324,000</td>
+                                                    <td>360,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">AUDI A6 / AUDI Q5 / BENZ CLA 2.0 AMG / BENZ E200/E220/E250 / BENZ GLK / BMW 520D/528i / CADILLAC CTS / EXPLORER CHEVY VAN / LAND ROVER DISCOVERY / LEXUS ES300H / LEXUS NX300H&nbsp;EXECUTIVE / MUSTANG 5.0 COUPE / RANGE ROVER EVOQUE / VOLKSWAGEN TOUAREG / JEEP GRAND CHEROKEE / INFINITI QX60</th>
+                                                    <td class="txt_point">500,000</td>
+                                                    <td>450,000</td>
+                                                    <td>425,000</td>
+                                                    <td>400,000</td>
+                                                    <td class="txt_point">280,000</td>
+                                                    <td>360,000</td>
+                                                    <td>400,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">CHEVY STARLIMO VAN / AUDI A6 TFSI QU SPORT / AUDI Q7 / BENZ E300/E350 / BMW X5/X6 / VOLKSWAGEN PHAETON</th>
+                                                    <td class="txt_point">550,000</td>
+                                                    <td>495,000</td>
+                                                    <td>468,000</td>
+                                                    <td>440,000</td>
+                                                    <td class="txt_point">308,000</td>
+                                                    <td>396,000</td>
+                                                    <td>440,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">AUDI A7 / AUDI Q5 / BMW 528i xDrive / BMW GT</th>
+                                                    <td class="txt_point">580,000</td>
+                                                    <td>522,000</td>
+                                                    <td>493,000</td>
+                                                    <td>464,000</td>
+                                                    <td class="txt_point">325,000</td>
+                                                    <td>418,000</td>
+                                                    <td>464,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">AUDI SQ5 / BENZ CLS250</th>
+                                                    <td class="txt_point">600,000</td>
+                                                    <td>540,000</td>
+                                                    <td>510,000</td>
+                                                    <td>480,000</td>
+                                                    <td class="txt_point">336,000</td>
+                                                    <td>432,000</td>
+                                                    <td>480,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">CHEVY STARCRAFT VAN / BMW 730D / BMW M4 / CADILLAC CT6 / EXPLORER LONG VAN / RANGE ROVER SPORTS / PORSCHE CAYENNE</th>
+                                                    <td class="txt_point">650,000</td>
+                                                    <td>585,000</td>
+                                                    <td>553,000</td>
+                                                    <td>520,000</td>
+                                                    <td class="txt_point">364,000</td>
+                                                    <td>468,000</td>
+                                                    <td>520,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">BENZ CLS400</th>
+                                                    <td class="txt_point">680,000</td>
+                                                    <td>612,000</td>
+                                                    <td>578,000</td>
+                                                    <td>544,000</td>
+                                                    <td class="txt_point">381,000</td>
+                                                    <td>490,000</td>
+                                                    <td>544,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">AUDI A8 / AUDI RS5 / BENZ S350 / BENZ CLS 63 AMG / BENZ ML 63 AMG / BMW 730Ld/740Li / BMW M5 / PORSCHE PANAMERA</th>
+                                                    <td class="txt_point">700,000</td>
+                                                    <td>630,000</td>
+                                                    <td>595,000</td>
+                                                    <td>560,000</td>
+                                                    <td class="txt_point">392,000</td>
+                                                    <td>504,000</td>
+                                                    <td>560,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">BENZ S400 / NEW BMW 750Li / BENZ S500</th>
+                                                    <td class="txt_point">800,000</td>
+                                                    <td>720,000</td>
+                                                    <td>680,000</td>
+                                                    <td>640,000</td>
+                                                    <td class="txt_point">448,000</td>
+                                                    <td>576,000</td>
+                                                    <td>640,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">BENZ S500 4MATIC</th>
+                                                    <td class="txt_point">900,000</td>
+                                                    <td>810,000</td>
+                                                    <td>765,000</td>
+                                                    <td>720,000</td>
+                                                    <td class="txt_point">504,000</td>
+                                                    <td>648,000</td>
+                                                    <td>720,000</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <ul class="txt_list">
+                                        <li class="red">Rates may fluctuate during peak season and special periods.</li>
+                                    </ul>
+                                </div>
+                                <div class="stab_content" id="stab_landPrice5">
+                                    <h3 class="noBorder">
+                                         SUV/RV Car Rental Cost
+                                         <span class="txt_must">The rates will be multiplied by days being used. (KRW)</span>
+                                    </h3>
+                                    <div class="grid mb5">
+                                        <table class="tb_col">
+                                            <caption></caption>
+                                            <colgroup>
+                                                <col style="width:316px">
+                                                <col>
+												<col>
+												<col>
+												<col>
+												<col>
+												<col>
+                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" rowspan="2" class="bgGray">SUV/RV Car</th>
+                                                    <th scope="col" colspan="4" class="bgGray2">Daily Rate</th>
+                                                    <th scope="col" colspan="3" class="bgGray2">Hourly Rate</th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col" class="bgGray2 borderL">1~2days</th>
+                                                    <th scope="col" class="bgGray2">3~4days</th>
+                                                    <th scope="col" class="bgGray2">5~6days</th>
+                                                    <th scope="col" class="bgGray2">7days</th>
+                                                    <th scope="col" class="bgGray2">6hour</th>
+                                                    <th scope="col" class="bgGray2">10hour</th>
+                                                    <th scope="col" class="bgGray2">12hour</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="cnt">
+                                                <tr>
+                                                    <th class="left noBorderL">QM3 / SPORTAGE R / ORLANDO / ALL NEW CARENS / KORANDO C / TUCSON ix / TRAX / TIVOLI</th>
+                                                    <td class="txt_point">180,000</td>
+                                                    <td> 162,000 </td>
+                                                    <td> 153,000 </td>
+                                                    <td> 144,000 </td>
+                                                    <td class="txt_point"> 101,000 </td>
+                                                    <td> 130,000 </td>
+                                                    <td> 144,000 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">ALL NEW SPORTAGE / ALL NEW TUCSON</th>
+                                                    <td class="txt_point">195,000</td>
+                                                    <td> 176,000 </td>
+                                                    <td> 166,000 </td>
+                                                    <td> 156,000 </td>
+                                                    <td class="txt_point"> 109,000 </td>
+                                                    <td> 140,000 </td>
+                                                    <td> 156,000 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">QM5 / CAPTIVA</th>
+                                                    <td class="txt_point">200,000</td>
+                                                    <td> 180,000 </td>
+                                                    <td> 170,000 </td>
+                                                    <td> 160,000 </td>
+                                                    <td class="txt_point"> 112,000 </td>
+                                                    <td> 144,000 </td>
+                                                    <td> 160,000 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">GRAND STAREX 11P/12P</th>
+                                                    <td class="txt_point">220,000</td>
+                                                    <td> 198,000 </td>
+                                                    <td> 187,000 </td>
+                                                    <td> 176,000 </td>
+                                                    <td class="txt_point"> 123,000 </td>
+                                                    <td> 158,000 </td>
+                                                    <td> 176,000 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">ALL NEW SORENTO / SANTAFE</th>
+                                                    <td class="txt_point">245,000</td>
+                                                    <td> 221,000 </td>
+                                                    <td> 208,000 </td>
+                                                    <td> 196,000 </td>
+                                                    <td class="txt_point"> 137,000 </td>
+                                                    <td> 176,000 </td>
+                                                    <td> 196,000 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">ALL NEW CARNIVAL 9P</th>
+                                                    <td class="txt_point">270,000</td>
+                                                    <td> 243,000 </td>
+                                                    <td> 230,000 </td>
+                                                    <td> 216,000 </td>
+                                                    <td class="txt_point"> 151,000 </td>
+                                                    <td> 194,000 </td>
+                                                    <td> 216,000 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">ALL NEW CARNIVAL 7P LIMOUSINE / KORANDO TURISUMO 9P / KORANDO TURISUMO 11P</th>
+                                                    <td class="txt_point">290,000</td>
+                                                    <td> 261,000 </td>
+                                                    <td> 247,000 </td>
+                                                    <td> 232,000 </td>
+                                                    <td class="txt_point"> 162,000 </td>
+                                                    <td> 209,000 </td>
+                                                    <td> 232,000 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">GRAND CARNIVAL 11P / MAXCRUZ / VERACRUZ / ALL NEW CANIVAL 11P</th>
+                                                    <td class="txt_point">299,000</td>
+                                                    <td> 269,000 </td>
+                                                    <td> 254,000 </td>
+                                                    <td> 239,000 </td>
+                                                    <td class="txt_point"> 167,000 </td>
+                                                    <td> 215,000 </td>
+                                                    <td> 239,000 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">MOHAVE</th>
+                                                    <td class="txt_point">350,000</td>
+                                                    <td> 315,000 </td>
+                                                    <td> 298,000 </td>
+                                                    <td> 280,000 </td>
+                                                    <td class="txt_point"> 196,000 </td>
+                                                    <td> 252,000 </td>
+                                                    <td> 280,000 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">ALL NEW CARNIVAL 7P HI-LIMOUSINE / ALL NEW CARNIVAL 9P HI-LIMOUSINE / GRAND CARNIVAL 11P HI-LIMOUSINE</th>
+                                                    <td class="txt_point">370,000</td>
+                                                    <td> 333,000 </td>
+                                                    <td> 315,000 </td>
+                                                    <td> 296,000 </td>
+                                                    <td class="txt_point"> 207,000 </td>
+                                                    <td> 266,000 </td>
+                                                    <td> 296,000 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <ul class="txt_list">
+                                        <li class="red">Rates may fluctuate during peak season and special periods.</li>
+                                    </ul>
+                                </div>
+                                <div class="btn_wrap pt70"><a href="#" class="btn_red btn_300">Mainland Reservation</a></div>
+                            </div>
+                        </div>
+                        <!-- // 내륙 요금 -->
+                    </div>
+                    <div class="tab_content" id="tab_jejuPrice">
+                        <!-- 제주 요금 -->
+                        <div class="wrap_jeju_price">
+                            <div class="wrap_stab">
+                                <ul class="stab_menu mb50">
+                                    <li class="active"><a href="#stab_jejuPrice1">Compact</a></li>
+                                    <li><a href="#stab_jejuPrice2">Standard</a></li>
+                                    <li><a href="#stab_jejuPrice3">Premium</a></li>
+                                    <li><a href="#stab_jejuPrice4">Imported</a></li>
+                                    <li><a href="#stab_jejuPrice5">SUV/RV</a></li>
+                                </ul>
+                                <div class="stab_content" id="stab_jejuPrice1">
+                                    <h3 class="noBorder">
+                                         General membership Rental Rates
+                                         <span class="txt_must">The rates will be multiplied by days being used. (KRW)</span>
+                                    </h3>
+                                    <div class="grid mb5">
+                                        <table class="tb_col">
+                                            <caption></caption>
+                                            <colgroup>
+                                                <col style="width:300px">
+                                                    <col>
+                                                        <col>
+                                                            <col>
+                                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" rowspan="2" class="bgGray">Compact</th>
+                                                    <th scope="col" class="bgGray2">Daily Rate</th>
+                                                    <th scope="col" colspan="3" class="bgGray2">Over Charge</th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col" class="bgGray2 borderL">24hours</th>
+                                                    <th scope="col" class="bgGray2">1hours</th>
+                                                    <th scope="col" class="bgGray2">6hours</th>
+                                                    <th scope="col" class="bgGray2">12hours</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="left noBorderL"><span>Morning</span></th>
+                                                    <td><span class="txt_point">26,400</span></td>
+                                                    <td>3,600</td>
+                                                    <td>14,700</td>
+                                                    <td>21,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL"><span>Accent / Ray</span></th>
+                                                    <td><span class="txt_point">29,100</span></td>
+                                                    <td>4,200</td>
+                                                    <td>16,500</td>
+                                                    <td>23,400</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL"><span>Avante MD / K3</span></th>
+                                                    <td><span class="txt_point">33,000</span></td>
+                                                    <td>4,800</td>
+                                                    <td>18,600</td>
+                                                    <td>26,400</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <ul class="txt_list mb60 mt5">
+                                        <li class="red">Depending on the period, the rental fee of general members can be different</li>
+                                        <li class="red">gold members / double gold members are able to rent with lower rental fee</li>
+                                    </ul>
+                                    <h3 class="noBorder">
+                                         Jeju reported rates
+                                         <span class="txt_must">Rates are based on the won. (KRW)</span>
+                                    </h3>
+                                    <div class="grid">
+                                        <table class="tb_col">
+                                            <caption></caption>
+                                            <colgroup>
+                                                <col style="width:300px">
+                                                    <col>
+                                                        <col>
+                                                            <col>
+                                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" rowspan="2" class="bgGray">Compact</th>
+                                                    <th scope="col" class="bgGray2">Daily Rate</th>
+                                                    <th scope="col" colspan="3" class="bgGray2">Over Charge</th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col" class="bgGray2 borderL">24hours</th>
+                                                    <th scope="col" class="bgGray2">1hours</th>
+                                                    <th scope="col" class="bgGray2">6hours</th>
+                                                    <th scope="col" class="bgGray2">12hours</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="left noBorderL"><span>Morning</span></th>
+                                                    <td><span class="txt_point">88,000</span></td>
+                                                    <td>12,000</td>
+                                                    <td>49,000</td>
+                                                    <td>70,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL"><span>Accent / Ray</span></th>
+                                                    <td><span class="txt_point">97,000</span></td>
+                                                    <td>14,000</td>
+                                                    <td>55,000</td>
+                                                    <td>78,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL"><span>Avante MD / K3</span></th>
+                                                    <td><span class="txt_point">110,000</span></td>
+                                                    <td>16,000</td>
+                                                    <td>62,000</td>
+                                                    <td>88,000</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <ul class="txt_list mt5">
+                                        <li class="red">Jeju National Tax Report : 2012/06/26 Criteria</li>
+                                    </ul>
+                                </div>
+                                <div class="stab_content" id="stab_jejuPrice2">
+                                    <h3 class="noBorder">
+                                         General membership Rental Rates
+                                         <span class="txt_must">Rates are based on the won. (KRW)</span>
+                                    </h3>
+                                    <div class="grid mb5">
+                                        <table class="tb_col">
+                                            <caption></caption>
+                                            <colgroup>
+                                                <col style="width:300px;">
+                                                    <col>
+                                                        <col>
+                                                            <col>
+                                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" rowspan="2" class="bgGray">Standard</th>
+                                                    <th scope="col" class="bgGray2">Daily Rate</th>
+                                                    <th scope="col" colspan="3" class="bgGray2">Over Charge</th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col" class="bgGray2">24hours</th>
+                                                    <th scope="col" class="bgGray2">1hours</th>
+                                                    <th scope="col" class="bgGray2">6hours</th>
+                                                    <th scope="col" class="bgGray2">12hours</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="left noBorderL">YF Sonata / K5 / New SM5</th>
+                                                    <td class="txt_point">39,000</td>
+                                                    <td>5,400</td>
+                                                    <td>21,600</td>
+                                                    <td>31,200</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">i40 1.7 (disel)</th>
+                                                    <td class="txt_point">48,000</td>
+                                                    <td>6,300</td>
+                                                    <td>26,400</td>
+                                                    <td>38,100</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <ul class="txt_list mb60 mt5">
+                                        <li class="red">Depending on the period, the rental fee of general members can be different</li>
+                                        <li class="red">gold members / double gold members are able to rent with lower rental fee</li>
+                                    </ul>
+                                    <h3 class="noBorder">
+                                         Jeju reported rates
+                                         <span class="txt_must">Rates are based on the won. (KRW)</span>
+                                    </h3>
+                                    <div class="grid">
+                                        <table class="tb_col">
+                                            <caption></caption>
+                                            <colgroup>
+                                                <col style="width:300px;">
+                                                    <col>
+                                                        <col>
+                                                            <col>
+                                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" rowspan="2" class="bgGray">Standard</th>
+                                                    <th scope="col" class="bgGray2">Daily Rate</th>
+                                                    <th scope="col" colspan="3" class="bgGray2">Over Charge</th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col" class="bgGray2">24hours</th>
+                                                    <th scope="col" class="bgGray2">1hours</th>
+                                                    <th scope="col" class="bgGray2">6hours</th>
+                                                    <th scope="col" class="bgGray2">12hours</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="left noBorderL">YF Sonata / K5 / New SM5</th>
+                                                    <td class="txt_point">130,000</td>
+                                                    <td>18,000</td>
+                                                    <td>72,000</td>
+                                                    <td>104,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">i40 1.7 (disel)</th>
+                                                    <td class="txt_point">160,000</td>
+                                                    <td>21,000</td>
+                                                    <td>88,000</td>
+                                                    <td>127,000</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <ul class="txt_list mt5">
+                                        <li class="red">Jeju National Tax Report : 2012/06/26 Criteria</li>
+                                    </ul>
+                                </div>
+                                <div class="stab_content" id="stab_jejuPrice3">
+                                    <h3 class="noBorder">
+                                         General membership Rental Rates
+                                         <span class="txt_must">Rates are based on the won. (KRW)</span>
+                                    </h3>
+                                    <div class="grid mb5">
+                                        <table class="tb_col">
+                                            <caption></caption>
+                                            <colgroup>
+                                                <col style="width:300px;">
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" rowspan="2" class="bgGray">Premium</th>
+                                                    <th scope="col" class="bgGray2">Daily Rate</th>
+                                                    <th scope="col" colspan="3" class="bgGray2">Over Charge</th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col" class="bgGray2">24hours</th>
+                                                    <th scope="col" class="bgGray2">1hours</th>
+                                                    <th scope="col" class="bgGray2">6hours</th>
+                                                    <th scope="col" class="bgGray2">12hours</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="left noBorderL">Genesis coupe</th>
+                                                    <td class="txt_point">60,600</td>
+                                                    <td>8,400</td>
+                                                    <td>33,600</td>
+                                                    <td>48,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">New Grandeur HG 3.0(gasoline, LPG)/K7 3.0(gasoline, LPG)</th>
+                                                    <td class="txt_point">64,200</td>
+                                                    <td>8,700</td>
+                                                    <td>35,700</td>
+                                                    <td>51,300</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">GENESIS / K9</th>
+                                                    <td class="txt_point">87,500</td>
+                                                    <td>12,250</td>
+                                                    <td>49,000</td>
+                                                    <td>70,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">New Equus P V380</th>
+                                                    <td class="txt_point">140,000</td>
+                                                    <td>19,600</td>
+                                                    <td>78,400</td>
+                                                    <td>112,000</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <ul class="txt_list mb60 mt5">
+                                        <li class="red">Depending on the period, the rental fee of general members can be different</li>
+                                        <li class="red">gold members / double gold members are able to rent with lower rental fee</li>
+                                    </ul>
+                                    <h3 class="noBorder">
+                                         Jeju reported rates
+                                         <span class="txt_must">Rates are based on the won. (KRW)</span>
+                                    </h3>
+                                    <div class="grid">
+                                        <table class="tb_col">
+                                            <caption></caption>
+                                            <colgroup>
+                                                <col style="width:300px;">
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" rowspan="2" class="bgGray">Premium</th>
+                                                    <th scope="col" class="bgGray2">Daily Rate</th>
+                                                    <th scope="col" colspan="3" class="bgGray2">Over Charge</th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col" class="bgGray2">24hours</th>
+                                                    <th scope="col" class="bgGray2">1hours</th>
+                                                    <th scope="col" class="bgGray2">6hours</th>
+                                                    <th scope="col" class="bgGray2">12hours</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="left noBorderL">Genesis coupe</th>
+                                                    <td class="txt_point">202,000</td>
+                                                    <td>28,000</td>
+                                                    <td>112,000</td>
+                                                    <td>160,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">New Grandeur HG 3.0(gasoline, LPG)/K7 3.0(gasoline, LPG)</th>
+                                                    <td class="txt_point">214,000</td>
+                                                    <td>29,000</td>
+                                                    <td>119,000</td>
+                                                    <td>171,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">GENESIS / K9</th>
+                                                    <td class="txt_point">250,000</td>
+                                                    <td>35,000</td>
+                                                    <td>140,000</td>
+                                                    <td>200,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">New Equus P V380</th>
+                                                    <td class="txt_point">400,000</td>
+                                                    <td>56,000</td>
+                                                    <td>224,000</td>
+                                                    <td>320,000</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <ul class="txt_list mt5">
+                                        <li class="red">Jeju National Tax Report : 2012/06/26 Criteria</li>
+                                    </ul>
+                                </div>
+                                <div class="stab_content" id="stab_jejuPrice4">
+                                    <h3 class="noBorder">
+                                         General membership Rental Rates
+                                         <span class="txt_must">Rates are based on the won. (KRW)</span>
+                                    </h3>
+                                    <div class="grid mb5">
+                                        <table class="tb_col">
+                                            <caption></caption>
+                                            <colgroup>
+                                                <col style="width:300px">
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" rowspan="2" class="bgGray">Imported Car</th>
+                                                    <th scope="col" class="bgGray2">Daily Rate</th>
+                                                    <th scope="col" colspan="3" class="bgGray2">Over Charge</th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col" class="bgGray2">24hours</th>
+                                                    <th scope="col" class="bgGray2">1hours</th>
+                                                    <th scope="col" class="bgGray2">6hours</th>
+                                                    <th scope="col" class="bgGray2">12hours</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="left noBorderL">TOYOTA Corolla</th>
+                                                    <td class="txt_point">38,500</td>
+                                                    <td>4,900</td>
+                                                    <td>21,350</td>
+                                                    <td>30,450</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">MINI Convertible / MINI Countryman</th>
+                                                    <td class="txt_point" rowspan="2">100,000</td>
+                                                    <td rowspan="2">90,000</td>
+                                                    <td rowspan="2">90,000</td>
+                                                    <td rowspan="2">90,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">BMW mini cooper S</th>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">BMW 328i Convertible / BMW 520d</th>
+                                                    <td class="txt_point">101,500</td>
+                                                    <td>14,000</td>
+                                                    <td>56,700</td>
+                                                    <td>81,200</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <ul class="txt_list mb60 mt5">
+                                        <li class="red">Depending on the period, the rental fee of general members can be different</li>
+                                        <li class="red">gold members / double gold members are able to rent with lower rental fee</li>
+                                    </ul>
+                                    <h3 class="noBorder">
+                                         Jeju reported rates
+                                         <span class="txt_must">Rates are based on the won. (KRW)</span>
+                                    </h3>
+                                    <div class="grid">
+                                        <table class="tb_col">
+                                            <caption></caption>
+                                            <colgroup>
+                                                <col style="width:300px">
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" rowspan="2" class="bgGray">Imported Car</th>
+                                                    <th scope="col" class="bgGray2">Daily Rate</th>
+                                                    <th scope="col" colspan="3" class="bgGray2">Over Charge</th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col" class="bgGray2">24hours</th>
+                                                    <th scope="col" class="bgGray2">1hours</th>
+                                                    <th scope="col" class="bgGray2">6hours</th>
+                                                    <th scope="col" class="bgGray2">12hours</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="left noBorderL">TOYOTA Corolla</th>
+                                                    <td class="txt_point">110,000</td>
+                                                    <td>14,000</td>
+                                                    <td>61,000</td>
+                                                    <td>87,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">MINI Convertible / MINI Countryman</th>
+                                                    <td class="txt_point" rowspan="2">230,000</td>
+                                                    <td rowspan="2">32,000</td>
+                                                    <td rowspan="2">128,000</td>
+                                                    <td rowspan="2">184,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">BMW mini cooper S</th>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">BMW 328i Convertible / BMW 520d</th>
+                                                    <td class="txt_point">290,000</td>
+                                                    <td>40,000</td>
+                                                    <td>162,000</td>
+                                                    <td>232,000</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <ul class="txt_list mt5">
+                                        <li class="red">Jeju National Tax Report : 2012/06/26 Criteria</li>
+                                    </ul>
+                                </div>
+                                <div class="stab_content" id="stab_jejuPrice5">
+                                    <h3 class="noBorder">
+                                         General membership Rental Rates
+                                         <span class="txt_must">Rates are based on the won. (KRW)</span>
+                                    </h3>
+                                    <div class="grid mb5">
+                                        <table class="tb_col">
+                                            <caption></caption>
+                                            <colgroup>
+                                                <col style="width:300px">
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" rowspan="2" class="bgGray">SUV/RV</th>
+                                                    <th scope="col" class="bgGray2">Daily Rate</th>
+                                                    <th scope="col" colspan="3" class="bgGray2">Over Charge</th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col" class="bgGray2">24hours</th>
+                                                    <th scope="col" class="bgGray2">1hours</th>
+                                                    <th scope="col" class="bgGray2">6hours</th>
+                                                    <th scope="col" class="bgGray2">12hours</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="left noBorderL">Orlando</th>
+                                                    <td class="txt_point">49,000</td>
+                                                    <td>6,650</td>
+                                                    <td>27,300</td>
+                                                    <td>39,200</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">Santafe / Sorento</th>
+                                                    <td class="txt_point">54,600</td>
+                                                    <td>7,350</td>
+                                                    <td>30,100</td>
+                                                    <td>43,400</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">New Santafe / New Sorento 5P</th>
+                                                    <td class="txt_point">61,600</td>
+                                                    <td>8,400</td>
+                                                    <td>34,300</td>
+                                                    <td>49,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">Veracruz</th>
+                                                    <td class="txt_point">74,900</td>
+                                                    <td>10,150</td>
+                                                    <td>41,650</td>
+                                                    <td>59,850</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">New Carnival 9P</th>
+                                                    <td class="txt_point">68,600</td>
+                                                    <td>9,450</td>
+                                                    <td>38,150</td>
+                                                    <td>54,600</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">Grand Starex 12P</th>
+                                                    <td class="txt_point">68,600</td>
+                                                    <td>9,450</td>
+                                                    <td>38,150</td>
+                                                    <td>54,600</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">Korando Turismo 11P</th>
+                                                    <td class="txt_point">68,600</td>
+                                                    <td>9,450</td>
+                                                    <td>38,150</td>
+                                                    <td>54,600</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <ul class="txt_list mb60 mt5">
+                                        <li class="red">Depending on the period, the rental fee of general members can be different</li>
+                                        <li class="red">gold members / double gold members are able to rent with lower rental fee</li>
+                                    </ul>
+                                    <h3 class="noBorder">
+                                         제Jeju reported rates
+                                         <span class="txt_must">Rates are based on the won. (KRW)</span>
+                                    </h3>
+                                    <div class="grid">
+                                        <table class="tb_col">
+                                            <caption></caption>
+                                            <colgroup>
+                                                <col style="width:300px">
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" rowspan="2" class="bgGray">SUV/RV</th>
+                                                    <th scope="col" class="bgGray2">Daily Rate</th>
+                                                    <th scope="col" colspan="3" class="bgGray2">Over Charge/th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col" class="bgGray2">24hours</th>
+                                                    <th scope="col" class="bgGray2">1hours</th>
+                                                    <th scope="col" class="bgGray2">6hours</th>
+                                                    <th scope="col" class="bgGray2">12hours</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="left noBorderL">Orlando</th>
+                                                    <td class="txt_point">140,000</td>
+                                                    <td>19,000</td>
+                                                    <td>78,000</td>
+                                                    <td>112,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">Santafe / Sorento</th>
+                                                    <td class="txt_point">156,000</td>
+                                                    <td>21,000</td>
+                                                    <td>86,000</td>
+                                                    <td>124,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">New Santafe / New Sorento 5P</th>
+                                                    <td class="txt_point">176,000</td>
+                                                    <td>24,000</td>
+                                                    <td>98,000</td>
+                                                    <td>140,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">Veracruz</th>
+                                                    <td class="txt_point">214,000</td>
+                                                    <td>29,000</td>
+                                                    <td>119,000</td>
+                                                    <td>171,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">New Carnival 9P</th>
+                                                    <td class="txt_point">196,000</td>
+                                                    <td>27,000</td>
+                                                    <td>109,000</td>
+                                                    <td>156,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">Grand Starex 12P</th>
+                                                    <td class="txt_point">196,000</td>
+                                                    <td>27,000</td>
+                                                    <td>109,000</td>
+                                                    <td>156,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="left noBorderL">Korando Turismo 11P</th>
+                                                    <td class="txt_point">196,000</td>
+                                                    <td>27,000</td>
+                                                    <td>109,000</td>
+                                                    <td>156,000</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <ul class="txt_list mt5">
+                                        <li class="red">Jeju National Tax Report : 2012/06/26 Criteria </li>
+                                    </ul>
+                                </div>
+                                <div class="btn_wrap pt70"><a href="#" class="btn_red btn_300">Jeju Reservation</a></div>
+                            </div>
+                        </div>
+                        <!-- // 제주 요금 -->
+                    </div>
+                    <div class="tab_content" id="tab_driverPrice">
+                        <!-- 기사포함 요금 -->
+                        <div class="wrap_driver_price">
+                            <div class="wrap_stab"> 
+                                <div class="stab_content" id="stab_driverPrice1">
+                                    <h3 class="noBorder">
+                                         Chauffeured Rate(For Seoul Area)
+                                         <span class="txt_must">The rates will be multiplied by days being used (KRW)</span>
+                                    </h3>
+                                    <div class="grid mb5">
+                                        <table class="tb_col">
+                                            <caption></caption>
+                                            <colgroup>
+                                                <col style="width:250px;">
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" rowspan="2" class="bgGray">Section</th>
+                                                    <th scope="col" colspan="3" class="bgGray2">Airport Service <br>(One Way)</th>
+                                                    <th scope="col" colspan="2" class="bgGray2">Rental Fee</th>
+                                                    <th scope="col" colspan="3" class="bgGray2">Extra Fee</th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col" class="bgGray2 borderL">ICN <img src="../../images/common/ico_arrow.png" alt="부터">
+                                                        <br> Seoul</th>
+                                                    <th scope="col" class="bgGray2">GMP <img src="../../images/common/ico_arrow.png" alt="부터">
+                                                        <br> Seoul</th>
+                                                    <th scope="col" class="bgGray2">ICN <img src="../../images/common/ico_arrow.png" alt="부터">
+                                                        <br> Seoul
+                                                        <br>(8 hours)</th>
+                                                    <th scope="col" class="bgGray2">3hour
+                                                        <br>(63Km)</th>
+                                                    <th scope="col" class="bgGray2">10hour 
+                                                        <br>(125Km)</th>
+                                                    <th scope="col" class="bgGray2">exceeds 3 hours
+                                                        <br>1hour(add)</th>
+                                                    <th scope="col" class="bgGray2">exceeds 10 hours
+                                                        <br>1hour(add)</th>
+                                                    <th scope="col" class="bgGray2">1Km(Add)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="bgGray2 left noBorderL">GRANDEUR HG300</th>
+                                                    <td>170,000</td>
+                                                    <td>140,000</td>
+                                                    <td>350,000</td>
+                                                    <td><span class="txt_point">150,000</span></td>
+                                                    <td>300,000</td>
+                                                    <td>35,000</td>
+                                                    <td>25,000</td>
+                                                    <td>300</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="bgGray2 left noBorderL">GENESIS BH330</th>
+                                                    <td>190,000</td>
+                                                    <td>160,000</td>
+                                                    <td>395,000</td>
+                                                    <td><span class="txt_point">170,000</span></td>
+                                                    <td>340,000</td>
+                                                    <td>40,000</td>
+                                                    <td>30,000</td>
+                                                    <td>400</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="bgGray2 left noBorderL">EQQUS VS380</th>
+                                                    <td>210,000</td>
+                                                    <td>170,000</td>
+                                                    <td>440,000</td>
+                                                    <td><span class="txt_point">190,000</span></td>
+                                                    <td>380,000</td>
+                                                    <td>45,000</td>
+                                                    <td>35,000</td>
+                                                    <td>450</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="bgGray2 left noBorderL">BENZ S Series BMW 7 Series CHEVY VAN</th>
+                                                    <td>350,000</td>
+                                                    <td>300,000</td>
+                                                    <td>795,000</td>
+                                                    <td><span class="txt_point">340,000</span></td>
+                                                    <td>700,000</td>
+                                                    <td>80,000</td>
+                                                    <td>60,000</td>
+                                                    <td>500</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="bgGray2 left noBorderL">GRAND STARREX</th>
+                                                    <td>150,000</td>
+                                                    <td>120,000</td>
+                                                    <td>315,000</td>
+                                                    <td><span class="txt_point">135,000</span></td>
+                                                    <td>270,000</td>
+                                                    <td>30,000</td>
+                                                    <td>25,000</td>
+                                                    <td>300</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="bgGray2 left noBorderL">GRAND STARREX HIGH LIMO /CANIVAL HIGH LIMO</th>
+                                                    <td>180,000</td>
+                                                    <td>150,000</td>
+                                                    <td>370,000</td>
+                                                    <td><span class="txt_point">165,000</span></td>
+                                                    <td>320,000</td>
+                                                    <td>35,000</td>
+                                                    <td>30,000</td>
+                                                    <td>350</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="bgGray2 left noBorderL">COUNTY / SOLATI</th>
+                                                    <td>210,000</td>
+                                                    <td>170,000</td>
+                                                    <td>430,000</td>
+                                                    <td><span class="txt_point">190,000</span></td>
+                                                    <td>370,000</td>
+                                                    <td>45,000</td>
+                                                    <td>35,000</td>
+                                                    <td>400</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <ul class="txt_list">
+                                        <li class="red">For more information on Chauffeured rent-a-car, please check the car rental department on the Chauffeured rent-a-car menu. </li>
+                                        <li class="red">Please contact us for local departure / arrival rates.</li>
+                                        <li class="red">Time-out rates apply from 1 hour to 30 minutes.</li>
+                                    </ul>
+                                </div> 
+                                <div class="btn_wrap pt70"><a href="#" class="btn_red btn_300">Chauffeured Reservation</a></div>
+                            </div>
+                        </div>
+                        <!-- // 기사포함 요금 -->
+                    </div>
+                    <div class="tab_content" id="tab_etcPrice">
+                        <!-- 추가 요금  -->
+                        <div class="wrap_etc_price">
+                            <h3>Additional Fee Information</h3>
+                            <ul class="additional_price">
+                                <li class="icon1"> <strong>Compensation for an Inactive Vehicle</strong>
+                                    <ul class="txt_list">
+                                        <li class="none">If the rented vehicle needs to be repaired from the accident (the lessee at fault), the customer is responsible for the loss of revenue for the rental car during the repair period. In such case, the customer will be charged for compensation for an inactive vehicle, which is 50% of normal rental fee.</li>
+                                    </ul>
+                                </li>
+                                <li class="icon2"> <strong>Vehicle Repair Cost</strong>
+                                    <ul class="txt_list">
+                                        <li class="none">In the case of damages to, or loss of, the vehicle during the rental period (caused through the fault of the lessee or unknown) the customer is liable for the rented vehicle repair cost. The repair must take place at a designated place through agreement with LOTTE rent-a-car., except under special circumstances.</li>
+                                    </ul>
+                                </li>
+                                <li class="icon3"> <strong>Traffic Violation Penalty</strong>
+                                    <ul class="txt_list">
+                                        <li class="none">The customer will be liable for any penalty charge incurred from traffic violations (Parking, bus lane, seat belt violation, etc.) during the rental period. In the event of traffic violations, you may not be able to partially or entirely benefit from insurance and other coverage.</li>
+                                    </ul>
+                                </li>
+                                <li class="icon4"> <strong>Refueling Service Charge</strong>
+                                    <ul class="txt_list">
+                                        <li class="none">All vehicles are rented with a Full Tank (the vehicle has full amount of fuel), and must be returned with a Full Tank. If the vehicle does not have required amount of fuel, please refuel at the nearest gas station, or pay the refueling service charge </li>
+                                        <li class="red">refueling service charge will be based on the rate set on the fuel cost chart, placed on the front desk at the rental location </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- // 추가 요금  -->
+                    </div>
+                </div>
+                <!--// 본문삽입 -->
+            </div>
+        </article>
+    </div>
+	<footer>
+		<div class="inner_footer">
+			<div class="sitemap">
+				<ul>
+					<li><a href="/fr/eng/content/211/main.do?mnCd=EN0401">COMPANY</a></li>
+					<li><a href="#">USER AGREEMENT</a></li>
+					<li><a href="#">CONTACT US</a></li>
+					<li><a href="#">SITE MAP</a></li>
+				</ul>
+			</div>
+			<div class="sns">
+				<ul>
+					<li>
+						<a class="twitter" href="#" target="_blank"><img src="../../images/common/img_footer_sns_twitter.png" alt="twitter"></a>
+					</li>
+					<li>
+						<a class="facebook" href="#" target="_blank"><img src="../../images/common/img_footer_sns_facebook.png" alt="facebook"></a>
+					</li>
+					<li>
+						<a class="blog" href="#" target="_blank"><img src="../../images/common/img_footer_sns_blog.png" alt="blog"></a>
+					</li>					
+				</ul>
+			</div>
+			<div class="information">
+				<ul class="entrepreneur_info">
+					<li>LOTTE rental co.ltd.</li>
+					<li>President : Pyo, Hyun-Myung</li>
+					<li>Business Registration # : 214-87-79183</li>
+				</ul>
+				<ul class="address">
+					<li>Communication Service # : 2010-Gyunggi Anyang 420</li>
+					<li>Address : 8F Shinwonvision Tower 898. Hogye-dong, Dongan-Gu, Anyang</li>
+				</ul>
+				<ul class="phone">
+					<li>Main Contact 1588-1230</li>
+					<li>FAX 02-2141-9022</li>
+				</ul>
+				<span class="copyright">copyright ⓒ 2016 LOTTE rental co.ltd.All Rrights Reserved.</span>
+			</div>
+
+			<div class="certifications">
+				<ul>
+					<li>
+						<img src="../../images/common/img_footer_cert_1.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_2.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_3.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_4.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_5.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_6.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_7.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_8.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_9.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_10.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_11.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_12.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_13.png" alt="">
+					</li>	
+				</ul>
+			</div>
+		
+			<div class="big-banner">
+				<img src="../../images/common/img_footer_big_banner.png" alt="Asia No.1 Rental cars, LOTTE RENT-A-CAR! The Lotte rented car stands for Asia No.1 in Asia">
+			</div>
+		</div>
+	</footer>
+
+
+</body>
+</html>

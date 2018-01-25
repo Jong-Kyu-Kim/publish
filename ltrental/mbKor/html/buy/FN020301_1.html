@@ -1,0 +1,890 @@
+<!doctype html>
+<html dir="ltr" lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+    <script src="../../js/jquery.sidebar.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    <script src="../../js/core.m.js"></script>
+    <script src="../../js/calendar.m.js"></script>
+    <script src="../../js/ui.js"></script>
+    
+</head>
+<body>
+	<header>
+		<a class="logo" href="#"><h1><img src="../../images/m/logo.png" alt="롯데렌터카 로고"></h1></a>
+		<div class="controls">
+			<a class="member_btn" href="#"></a>
+			<a id="drawer_btn" class="drawer_btn" href="#"></a>
+		</div>
+	</header>
+	<div class="sub_header">
+		<a class="back_btn" href="#"></a>
+		<h2 class="title">승계 매물 수정</h2>
+		<a class="share_btn" href="#"></a>
+	</div>
+	<div id="container" class="succeed_reg">
+		<!-- content -->
+		<!-- 본문삽입 -->  
+		<div class="top_info mb40"> 
+			<div class="inner">
+				<ul class="txt_list">
+					<li class="gray f14">본 단계에서 등록하는 정보는 고객과 승계희망자 간 원활한 의사소통을 위해 홈페이지 상에 공개되는 부분이니, 이 점을 인지하시어 신중하게 등록하여 주시기 바랍니다. </li>
+					<li class="gray f14">등록하신 매물은 승계가 완료되거나, 더 이상 승계를 원치 않으시는 경우 삭제하여 주시기 바랍니다. 등록 후 약 6개월이 지나면 관리자에 의해 삭제될 수 있습니다.</li>
+					<li class="red f14">본 승계매물등록 서비스는 롯데렌터카 고객인 경우에 한해 이용 가능합니다. </li>
+					<li class="red f14">허위 매물 등록 시, 롯데렌터카 서비스 이용에 제한이 있을 수 있으니 실제 승계를 원하시는 매물만 등록하여 주시기 바랍니다.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="personal_info mg">
+			<h3 class="mb15">개인 정보<span class="txt_must">* 모든 항목은 필수기재입니다.</span></h3>	
+			<div class="grid noBorderT mb40">
+				<table class="tb_noBorder">
+					<caption></caption>
+					<colgroup>
+					<col style="width:25%">
+					<col style="width:auto"> 
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"><label for="">이름</label></th>
+							<td>
+								<input type="text" name="" id="" value="" placeholder="이름을 입력하세요.">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="">이메일</label></th>
+							<td><input type="text" name="" id="" value="" placeholder="이메일을 입력하세요."></td>
+						</tr> 
+						<tr>                           
+							<th scope="row"><label for="">휴대전화</label></th>
+						    <td>
+								<div class="w100">
+	                                <div class="cell">
+	                                    <input type="tel" name="" id="" value="">
+	                                </div>
+	                                <div class="cell hyphen">
+	                                    -
+	                                </div>
+	                                <div class="cell">
+	                                    <input type="tel" name="" id="" value="">
+	                                </div>
+	                                <div class="cell hyphen">
+	                                    -
+	                                </div>
+	                                <div class="cell">
+	                                    <input type="tel" name="" id="" value="">
+	                                </div>
+	                            </div>
+						    </td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="">지역선택</label></th>
+							<td class="area">
+								<span class="select" style="width:48%">
+									<select id="" title="지역선택">
+										<option selected="selected">지역선택</option>
+									</select>
+								</span>
+								<span class="select disabled ml5" style="width:48%"> 
+									<select id="" title="도시선택" disabled="disabled">
+										<option selected="selected">도시선택</option>
+									</select>
+								</span>		                        
+							</td>							
+						</tr>
+					</tbody>
+				</table>
+			</div>        	
+		</div>
+		<div class="car_info mg">
+			<h3 class="mb15">차량 정보</h3>	
+			<div class="grid noBorderT mb40">
+				<table class="tb_noBorder">
+					<caption></caption>
+					<colgroup>
+					<col style="width:25%">
+					<col style="width:auto"> 
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"><label for="">차량번호</label></th>
+							<td>
+								<input type="text" name="" id="" value="" placeholder="차량번호를 입력하세요. (예시) 01가 1234">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="">월 대여료</label></th>
+							<td><input type="text" name="" id="" value="" placeholder="월 대여료를 입력하세요."></td>
+						</tr> 
+						<tr>
+							<th scope="row"><label for="">계약기간</label></th>
+							<td class="date">
+								<span class="select" style="width:48%">
+									<select id="" title="계약기간">
+										<option selected="selected">년</option>
+										<option value="">2017년</option>
+										<option value="">2018년</option>
+										<option value="">2019년</option>
+										<option value="">2020년</option>
+									</select>
+								</span>
+								<span class="select" style="width:44%">
+									<select id="" title="계약기간">
+										<option selected="selected">월</option>
+										<option value="">1월</option>
+										<option value="">2월</option>
+										<option value="">3월</option>
+										<option value="">4월</option>
+										<option value="">5월</option>
+										<option value="">6월</option>
+										<option value="">7월</option>
+										<option value="">8월</option>
+										<option value="">9월</option>
+										<option value="">10월</option>
+										<option value="">11월</option>
+										<option value="">12월</option>
+									</select>
+								</span>
+								~
+								<span class="select mt5" style="width:48%">
+									<select id="" title="계약기간">
+										<option selected="selected">년</option>
+										<option value="">2017년</option>
+										<option value="">2018년</option>
+										<option value="">2019년</option>
+										<option value="">2020년</option>	                                    
+									</select>
+								</span>
+								<span class="select mt5" style="width:44%">
+									<select id="" title="계약기간">
+										<option selected="selected">월</option>
+										<option value="">1월</option>
+										<option value="">2월</option>
+										<option value="">3월</option>
+										<option value="">4월</option>
+										<option value="">5월</option>
+										<option value="">6월</option>
+										<option value="">7월</option>
+										<option value="">8월</option>
+										<option value="">9월</option>
+										<option value="">10월</option>
+										<option value="">11월</option>
+										<option value="">12월</option>	                                    
+									</select>
+								</span>		                        
+							</td>  
+						</tr>
+						<tr>                              
+							<th scope="row"><label for="">잔여계약기간</label></th>
+							<td> 
+								<input type="text" name="" id="" value="" readonly="readonly" style="width:86%"> 개월
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="">제조사</label></th>
+							<td>
+								<input type="text" name="" id="" value="" placeholder="제조사를 입력하세요. (예시)현대자동차">
+							</td>    
+						</tr>
+						<tr>                            
+							<th scope="row"><label for="">차량명</label></th>
+							<td>
+								<input type="text" name="" id="" value="" placeholder="차량명을 입력하세요. (예시)소나타">
+							</td>   
+						</tr>
+						<tr>
+							<th scope="row"><label for="">색상</label></th>
+							<td>
+								<input type="text" name="" id="" value="" placeholder="색상을 입력하세요.">
+							</td>
+						</tr>
+						<tr>                            
+							<th scope="row"><label for="">차종</label></th>
+							<td>
+								<span class="select">
+									<select id="" title="차종">
+										<option selected="selected">선택</option>
+										<option>소형</option>
+										<option>중형</option>
+										<option>대형</option>
+										<option>SUV-RV</option>
+										<option>승합</option>
+										<option value="typing">직접입력</option>
+									</select>
+								</span>
+								<input type="text" class="typing">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="">연료</label></th>
+							<td>
+								<span class="select">
+									<select id="" title="차종">
+										<option selected="selected">선택</option>
+										<option>가솔린</option>
+										<option>디젤</option>
+										<option>LPG</option>
+										<option>하이브리드</option>
+										<option>전기차</option>
+										<option value="typing">직접입력</option>
+									</select>
+								</span>
+								<input type="text" class="typing">
+							</td>
+						</tr>
+						<tr>                        
+							<th scope="row"><label for="">주행거리</label></th>
+							<td>
+								<input type="text" name="" id="" value="" placeholder="주행거리를 입력하세요." style="width:86%"> Km
+							</td>
+						</tr>	                    	                    	                    
+					</tbody>
+				</table>
+			</div>
+		</div>     	
+		<div class="contract_info mg">
+			<h3 class="mb15">계약 정보</h3>	
+			<div class="grid noBorderT mb40">
+				<table class="tb_noBorder">
+					<caption></caption>
+					<colgroup>
+					<col style="width:25%">
+					<col style="width:auto"> 
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"><label for="">상태</label></th>
+							<td>
+								<span class="select">
+									<select id="" title="상태">
+										<option selected="selected">선택</option>
+										<option value="">인수옵션형</option>
+										<option value="">반납형</option>
+									</select>
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="">정비상품</label></th>
+							<td>
+								<span class="select">
+									<select id="" title="상태">
+										<option selected="selected">선택</option>
+										<option>고급형</option>
+										<option>기본형</option>
+										<option>알뜰형</option>
+										<option>불포함</option>										
+									</select>
+								</span>
+							</td>
+						</tr> 
+						<tr>
+							<th scope="row"><label for="">약정주행거리</label></th>
+							<td>
+								<input type="text" name="" id="" value="" placeholder="약정주행거리를 입력하세요" style="width:86%"> Km
+							</td>
+						</tr>    
+						<tr>                            
+							<th scope="row"><label for="">인수가</label></th>
+							<td> 
+								<input type="text" name="" id="" value="" placeholder="인수가를 입력하세요." style="width:86%"> 개월
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="">보증금</label></th>
+							<td>
+								<span class="select" style="width:86%">
+									<select id="" title="보증금">
+										<option selected="selected">선택</option>
+									</select>
+								</span>
+								만원
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="">선납금</label></th>
+							<td>
+								<input type="text" name="" id="" value="" placeholder="선납금을 입력하세요." style="width:86%"> 만원
+							</td>   
+						</tr>
+						<tr>
+							<th scope="row"><label for="">면책금</label></th>
+							<td>
+								<span class="select" style="width:86%">
+									<select id="" title="면책금">
+										<option selected="selected">선택</option>
+										<option>5</option>
+										<option>10</option>
+										<option>20</option>
+										<option>30</option>
+										<option>50</option>
+									</select>
+								</span>
+								만원
+							</td>
+						</tr>
+						<tr>      
+							<th scope="row"><label for="">추가지원금</label></th>
+							<td>
+								<input type="text" name="" id="" value="" placeholder="추가지원금을 입력하세요." style="width:86%"> 만원
+								<ul class="txt_list">
+									<li class="red f12">추가지원금은 선택 입력 항목입니다.</li>
+								</ul>
+							</td>   
+						</tr>                    	                    	                    
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="grid noBorderT option mb40 mg">
+			<h3>옵션 정보</h3>
+			<table class="tb_row">
+				<caption></caption>
+				<colgroup>
+				<col style="width:105px" />
+				<col style="width:auto" /> 	                
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">편의 장치</th>
+						<td>
+							<input type="checkbox" id="check-1">
+							<label for="check-1"><span class="icon"></span>파워 핸들</label>
+							<input type="checkbox" id="check-2">
+							<label for="check-2"><span class="icon"></span>파워 윈도우</label>
+							<input type="checkbox" id="check-3">
+							<label for="check-3"><span class="icon"></span>파워도어록</label>
+							<input type="checkbox" id="check-4">
+							<label for="check-4"><span class="icon"></span>전동접이식 백밀러</label>
+							<input type="checkbox" id="check-5">
+							<label for="check-5"><span class="icon"></span>핸들 리모컨</label>
+							<input type="checkbox" id="check-6">
+							<label for="check-6"><span class="icon"></span>무선도어 잠금장치</label>							
+							<input type="checkbox" id="check-7">
+							<label for="check-7"><span class="icon"></span>히팅시트</label>
+							<input type="checkbox" id="check-8">
+							<label for="check-8"><span class="icon"></span>풀오토 에어컨</label>
+							<input type="checkbox" id="check-9">
+							<label for="check-9"><span class="icon"></span>썬루프</label>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">안정 장치</th>
+						<td>
+							<input type="checkbox" id="check-21">
+							<label for="check-21"><span class="icon"></span>운전석 에어백</label>
+							<input type="checkbox" id="check-22">
+							<label for="check-22"><span class="icon"></span>조수석 에어백</label>
+							<input type="checkbox" id="check-23">
+							<label for="check-23"><span class="icon"></span>사이드 에어백</label>
+							<input type="checkbox" id="check-24">
+							<label for="check-24"><span class="icon"></span>커튼 에어백</label><br>				
+							<input type="checkbox" id="check-25">
+							<label for="check-25"><span class="icon"></span>ABS</label>
+							<input type="checkbox" id="check-26">
+							<label for="check-26"><span class="icon"></span>ESC</label>
+							<input type="checkbox" id="check-27">
+							<label for="check-27"><span class="icon"></span>ECM</label>							
+							<input type="checkbox" id="check-28">
+							<label for="check-28"><span class="icon"></span>후방감지센서</label>							
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">기타</th>
+						<td>
+							<input type="checkbox" id="check-31">
+							<label for="check-31"><span class="icon"></span>핸즈프리</label>
+							<input type="checkbox" id="check-32">
+							<label for="check-32"><span class="icon"></span>CD 플레이어</label>
+							<input type="checkbox" id="check-33">
+							<label for="check-33"><span class="icon"></span>블랙박스</label>
+							<input type="checkbox" id="check-34">
+							<label for="check-34"><span class="icon"></span>내비게이션</label>								
+						</td>
+					</tr>	            	
+				</tbody>
+			</table>
+		</div>
+		<div class="comment mb40 mg">
+			<h3 class="mb20">코멘트 등록</h3>
+			<textarea name="comment" id="" cols="30" rows="10" placeholder="위 항목에서 입력하지 못한 차량 및 계약 정보 / 차량 상태 등을 직접 입력해주시기 바랍니다. (최대 500자)"></textarea>
+		</div>
+		<div class="btn_wrap mb60">
+			<a href="#" class="btn_gray btn_130">목록</a>
+			<a href="#" class="btn_red btn_130">수정</a>
+		</div>  
+		<!--// 본문삽입 --> 
+	</div>
+
+	<footer>
+		<div class="inner_footer">
+			<div class="upper">
+				<div class="sns">
+					<a class="twitter" href="#" target="_blank"><img src="../../images/m/footer_sns_twitter_img.png" alt="트위터"></a>
+					<a class="facebook" href="#" target="_blank"><img src="../../images/m/footer_sns_facebook_img.png" alt="페이스북"></a>
+					<a class="blog" href="#" target="_blank"><img src="../../images/m/footer_sns_blog_img.png" alt="블로그"></a>
+				</div>
+				<ul class="phone">
+					<li class="">대표전화 1588-1230</li>
+					<li class="">해외 82-2-797-8000</li>
+				</ul>
+			</div>
+			<div class="lower">
+				<div class="sitemap">
+					<a href="#">개인정보 처리방침</a><a href="#">영상정보 처리기기 운영관리방침</a><br>
+					<a href="#">이용약관</a><a href="#">무단 이메일 수집거부</a><a href="#">CONTACT US</a>
+				</div>
+				<div class="information">
+					<span class="address">서울시 강남구 테헤란로 422 KT타워 6~9층</span>
+					<ul class="entrepreneur_info">
+						<li>대표이사 표현명</li>
+						<li>사업자등록번호  214-87-79183</li>
+					</ul>
+					<span class="copyright">ⓒ LOTTE rental Co.Ltd</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<nav id="drawer" class="drawer">
+		<div class="drawer_header">
+			<a class="title" href="/m/html/main/main.html">홈</a>
+			<button id="drawer_close_btn" class="drawer_close_btn"></button>
+		</div>
+		<div class="drawer_body">
+			<div class="menu_container" aria-hidden="true">
+				<ul>
+					<li class="idx1">빌릴 때</li>
+					<li class="idx2">살 때</li>
+					<li class="idx3">팔 때</li>
+					<li class="idx4">기기/장비렌탈</li>
+					<li class="idx5" onclick="location.href='/m/html/event/FN05.html'">이벤트</li>
+					<li class="idx6">고객센터</li>
+					<li class="idx7">회사소개</li>
+					<li class="idx8">롯데렌탈 APP</li>
+				</ul>
+			</div>
+			<div class="submenu_container">
+				<ul class="menus">
+					<li class="menu">
+						<a href="#"><span>빌릴 때</span></a>
+						<ul class="submenu">
+							<li>
+								<a class="slide_menu_btn" href="#">단기렌터카</a>
+								<ul class="slide_menu">
+									<li>
+										<a href="/m/html/rent/FN010101.html">실시간 예약</a>
+									</li>
+									<li>
+										<a class="slide_menu_btn" href="#">단기렌터카 서비스 안내</a>
+										<ul class="slide_menu">
+											<li>
+												<a href="#">대여 안내</a>
+											</li>
+											<li>
+												<a href="#">요금 안내</a>
+											</li>
+											<li>
+												<a href="#">부가 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">해외렌트 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">딜리버리 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">빠른 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">기사포함 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">보험대차 서비스 안내</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a class="slide_menu_btn" href="#">롯데렌터카만의 서비스</a>
+										<ul class="slide_menu">
+											<li>
+												<a href="#">대여 안내</a>
+											</li>
+											<li>
+												<a href="#">요금 안내</a>
+											</li>
+											<li>
+												<a href="#">부가 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">해외렌트 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">딜리버리 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">빠른 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">기사포함 서비스 안내</a>
+											</li>
+											<li>
+												<a href="#">보험대차 서비스 안내</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a class="slide_menu_btn" href="#">월간렌터카</a>
+								<ul class="slide_menu">
+									<li>
+										<a href="#">대여 신청</a>
+									</li>
+									<li>
+										<a href="#">월간렌터카 서비스 안내</a>
+									</li>											
+								</ul>
+							</li>
+							<li>
+								<a href="#">그린카(카셰어링)</a>
+							</li>							
+						</ul>
+					</li>
+					<li class="menu">
+						<a href="#"><span>살 때</span></a>
+						<ul class="submenu">
+							<li>
+								<a class="slide_menu_btn" href="#">신차 장기 렌터카</a>
+								<ul class="slide_menu">
+									<li>
+										<a href="#">간편 견적</a>
+									</li>
+									<li>
+										<a href="#">프로모션</a>
+									</li>
+									<li>
+										<a class="slide_menu_btn" href="#">신차 장기렌터카 서비스 안내</a>
+										<ul class="slide_menu">
+											<li>
+												<a href="#">신차장기렌터카 안내</a>
+											</li>
+											<li>
+												<a href="#">이용절차 및 Q&amp;A</a>
+											</li>
+											<li>
+												<a href="#">LPG60 장기렌터카 안내</a>
+											</li>
+											<li>
+												<a href="#">전기차 장기렌터카 안내</a>
+											</li>
+											<li>
+												<a href="#">오토 체인지 프로그램</a>
+											</li>
+										</ul>									
+									</li>
+									<li>
+										<a class="slide_menu_btn" href="#">롯데렌터카만의 서비스</a>
+										<ul class="slide_menu">
+											<li>
+												<a href="#">신차장기렌터카 안내</a>
+											</li>
+											<li>
+												<a href="#">이용절차 및 Q&amp;A</a>
+											</li>
+											<li>
+												<a href="#">LPG60 장기렌터카 안내</a>
+											</li>
+											<li>
+												<a href="#">전기차 장기렌터카 안내</a>
+											</li>
+											<li>
+												<a href="#">오토 체인지 프로그램</a>
+											</li>
+										</ul>									
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a class="slide_menu_btn" href="#">승계 게시판</a>
+								<ul class="slide_menu">
+									<li>
+										<a href="#">승계 매물 등록</a>
+									</li>
+									<li>
+										<a href="#">승계 매물 검색</a>
+									</li>
+									<li>
+										<a href="#">승계 게시판 서비스 안내</a>
+									</li>
+								</ul>								
+							</li>
+							<li>
+								<a class="slide_menu_btn" href="#">중고차 장기렌터카</a>	
+								<ul class="slide_menu">
+									<li>
+										<a href="#">중고차 장기렌터카 검색</a>
+									</li>
+									<li>
+										<a href="#">중고차 장기렌터카 서비스 안내</a>
+									</li>
+									<li>
+										<a href="#">오토리스</a>
+									</li>
+								</ul>								
+							</li>
+							<li>
+								<a class="slide_menu_btn" href="#">법인 장기렌터카</a>	
+								<ul class="slide_menu">
+									<li>
+										<a href="#">견적 상담</a>
+									</li>
+									<li>
+										<a href="#">법인 장기렌터카 서비스 안내</a>
+									</li>
+								</ul>								
+							</li>
+						</ul>
+					</li>
+					<li class="menu">
+						<a href="#"><span>팔 때</span></a>
+						<ul class="submenu">
+							<li>
+								<a class="slide_menu_btn" href="#">중고차 팔기</a>
+								<ul class="slide_menu">
+									<li>
+										<a href="#">견적 상담</a>
+									</li>
+									<li>
+										<a class="slide_menu_btn" href="#">중고차 경매 서비스 안내</a>
+										<ul class="slide_menu">
+											<li>
+												<a href="#">경매 출품 안내</a>
+											</li>
+											<li>
+												<a href="#">입찰 안내</a>
+											</li>
+											<li>
+												<a href="#">판매가 출품 보장 안내</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">오토옥션</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu">
+						<a href="#"><span>기기/장비렌탈</span></a>
+						<ul class="submenu">	
+							<li>
+								<a href="#">산업용기기렌탈</a>
+							</li>
+							<li>
+								<a href="#">OA렌탈</a>
+							</li>
+							<li>
+								<a href="#">측정기렌탈</a>
+							</li>
+							<li>
+								<a href="#">지점안내</a>
+							</li>																									
+							<li>
+								<a href="#">입찰 매각 공지</a>
+							</li>
+						</ul>						
+					</li>
+					<li class="menu event">
+						<a href="#"><span>이벤트</span></a>
+					</li>
+					<li class="menu">
+						<a href="#"><span>고객 센터</span></a>
+						<ul class="submenu">
+							<li>
+								<a href="#">지점 안내</a>
+							</li>
+							<li>
+								<a href="#">FAQ</a>
+							</li>
+							<li>
+								<a href="#">고객의견</a>
+							</li>
+							<li>
+								<a href="#">상담 문의</a>
+							</li>
+							<li>
+								<a href="#">공지&amp;뉴스</a>
+							</li>
+						</ul>						
+					</li>
+					<li class="menu">
+						<a href="#"><span>회사소개</span></a>
+						<ul class="submenu">
+							<li>
+								<a href="#">개요</a>
+							</li>
+							<li>
+								<a href="#">CEO인사말</a>
+							</li>
+							<li>
+								<a href="#">연혁</a>
+							</li>
+							<li>
+								<a href="#">비전</a>
+							</li>
+							<li>
+								<a href="#">CI/BI 소개</a>
+							</li>							
+							<li>
+								<a class="slide_menu_btn" href="#">PR센터</a>
+								<ul class="slide_menu">
+									<li>
+										<a href="#">신차장 캠페인</a>
+									</li>
+									<li>
+										<a href="#">나의 자동차 생활백서</a>
+									</li>									
+								</ul>
+							</li>
+							<li>
+								<a class="slide_menu_btn" href="#">윤리경영</a>
+								<ul class="slide_menu">								
+									<li>
+										<a class="slide_menu_btn" href="#">윤리 경영 원칙</a>
+										<ul class="slide_menu">
+											<li>
+												<a href="#">新 윤리 경영 원칙</a>
+											</li>
+											<li>
+												<a href="#">비윤리행위 신고와 보상</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a class="slide_menu_btn" href="#">사이버 신문고</a>
+										<ul class="slide_menu">
+											<li>
+												<a href="#">소개</a>
+											</li>
+											<li>
+												<a href="#">제보자보호</a>
+											</li>
+											<li>
+												<a href="#">제보 결과 확인</a>
+											</li>											
+										</ul>
+									</li>
+									<li>
+										<a class="slide_menu_btn" href="#">공정거래 자율준수</a>
+										<ul class="slide_menu">
+											<li>
+												<a href="#">개요</a>
+											</li>
+											<li>
+												<a href="#">대표이사 의지선언문</a>
+											</li>
+											<li>
+												<a href="#">조직체계 및 프로그램 운영현황</a>
+											</li>
+											<li>
+												<a href="#">핫라인(내부고발제도)</a>
+											</li>											
+										</ul>
+									</li>									
+								</ul>
+							</li>
+							<li>
+								<a class="slide_menu_btn" href="#">위치안내</a>
+								<ul class="slide_menu">
+									<li>
+										<a href="#">안양 사옥</a>
+									</li>
+									<li>
+										<a href="#">선릉 사옥</a>
+									</li>									
+								</ul>
+							</li>														
+						</ul>					
+					</li>					
+					<li class="menu app">
+						<a href="#"><span>롯데렌탈 APP</span></a>
+						<ul class="submenu">
+							<li>
+								<a href="#"><img src="../../images/m/ico_greencar.png" alt="그린카 앱 아이콘"><span>그린카</span></a>
+							</li>
+							<li>
+								<a href="#"><img src="../../images/m/ico_automanager.png" alt="오토매니저 앱 아이콘"><span>오토매니저</span></a>
+							</li>							
+						</ul>						
+					</li>				
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+<script>
+	$(function(){
+		$('.succeed_reg .photo .file_photo .add').height($('.succeed_reg .photo .file_photo').width() * 0.68);
+		$(window).resize(function(){
+			$('.succeed_reg .photo .file_photo .add').height($('.succeed_reg .photo .file_photo').width() * 0.68);
+		});
+
+		$('select').change(function() {
+			if ($(this).val() == 'typing') {
+					$(this).parent().siblings('.typing').show().focus();
+			}
+		});
+
+		var $filePhoto = $('.file_photo ');
+		
+		$filePhoto.find('a').click(function(e){
+			e.preventDefault();
+			$(this).siblings('input').trigger('click');
+		});	
+		
+		$filePhoto.find('.file').each(function(i){
+			var del = false;	
+			$(this).change(function(){
+				if (del == true) {
+					del = false;
+				}
+				else {
+					$(this).parent().find('.add').attr('class','none');
+					$(this).parent().append('<img src="" class="file_img">');
+					$(this).parent().append('<a href="#" class="del_photo"><span class="ir">사진 삭제</span></a>');
+					
+		            if (this.files && this.files[0]) {
+			            var reader = new FileReader();
+			            reader.onload = function(e) {
+			            	$filePhoto.eq(i).find('.file_img').attr('src', e.target.result);
+			            }
+			           	reader.readAsDataURL(this.files[0]);
+		            }
+		            
+		            del = true;
+
+					$filePhoto.eq(i).find('.del_photo').click(function(e){
+						e.preventDefault();
+						$(this).siblings('.none').attr('class','add');
+						$(this).siblings('.file_img').remove();
+						
+						$(this).siblings('.file').val('');
+						$(this).remove();
+						del = false;
+					});								            
+				}					
+			})
+		})
+	})
+</script>
+</body>
+</html>

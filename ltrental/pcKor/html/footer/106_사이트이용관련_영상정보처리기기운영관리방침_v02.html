@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html dir="ltr" lang="ko" class="ie7"><![endif]-->
+<!--[if IE 8]><html dir="ltr" lang="ko" class="ie8"><![endif]-->
+<!--[if IE 9]><html dir="ltr" lang="ko" class="ie9"><![endif]-->
+<html dir="ltr" lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1200, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.min.js"></script>
+	<script src="../../js/html5shiv.js"></script>
+	<script src="../../js/core.js"></script>
+	<script src="../../js/ui.js"></script>
+    <script src="../../js/calendar.js"></script>
+</head>
+ 
+<body>
+	<header>
+		<div class="inner_header">
+			<a href="#container" class="skip_nav">본문 바로가기</a>
+			<a href="../main/main.html" class="logo"><h1><img src="../../images/common/logo.png" alt="롯데렌터카"></h1></a>
+			<ul id="extra_menu" class="extra_menu">
+				<!--// 비회원일 경우 -->
+				<li class="login"><a href="#">로그인</a></li>
+				<li class="join"><a href="#" class="lPointAutoChange btn_layer">회원가입</a></li>
+
+				<!--// 회원일 경우 -->
+				<li class="logout"><a href="#">로그아웃</a></li>
+				<li class="mypage_quick">
+					<a class="btn_dropdown_menu" href="#">마이페이지</a>
+					<ul class="dropdown_menu">
+						<!--<li class="active"><a href="#">예약 및 이용 내역</a></li>-->
+						<li class="active"><a href="#">예약 및 이용 내역</a></li>
+						<li><a href="#">계약서 조회</a></li>
+						<li><a href="#">상담문의 내역</a></li>
+					</ul>
+				</li>
+
+				<li class="language"><a href="#">ENGLISH</a></li>
+			</ul>
+		</div>
+		<div id="gnb" class="gnb">
+			<ul class="menus">
+				<li class="menu idx1">
+					<a href="../rent/FN010101_2_1_1.html">빌릴 때</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">단기렌터카</a>
+							<ul>
+								<li>
+									<a href="#">실시간 예약</a>
+								</li>
+								<li class="btn_dropdown_menu">
+									<a href="#">단기렌터카 서비스 안내</a>
+									<ul class="dropdown_menu">
+										<li>
+											<a href="#">대여 안내</a>
+										</li>
+										<li>
+											<a href="#">요금 안내</a>
+										</li>
+										<li>
+											<a href="#">부가 서비스 안내</a>
+										</li>
+										<li>
+											<a href="#">해외렌트 서비스 안내</a>
+										</li>
+										<li>
+											<a href="#">딜리버리 서비스 안내</a>
+										</li>
+										<li>
+											<a href="#">빠른 서비스 안내</a>
+										</li>
+										<li>
+											<a href="#">기사포함 서비스 안내</a>
+										</li>
+										<li>
+											<a href="#">보험대차 서비스 안내</a>
+										</li>
+									</ul>
+								</li>
+								<li class="btn_dropdown_menu">
+									<a href="#">롯데렌터카만의 서비스</a>
+									<ul class="dropdown_menu">
+										<li>
+											<a href="#">롯데 스마트픽 서비스</a>
+										</li>
+										<li>
+											<a href="#">패키지 상품</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">월간렌터카</a>
+							<ul>
+								<li>
+									<a href="#">대여 신청</a>
+								</li>
+								<li>
+									<a href="#">월간렌터카 서비스 안내</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">그린카(카셰어링)</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu idx2">
+					<a href="../buy/FN020101.html">살 때</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">신차 장기 렌터카</a>
+							<ul>
+								<li>
+									<a href="#">간편 견적</a>
+								</li>
+								<li>
+									<a href="#">프로모션</a>
+								</li>
+								<li class="btn_dropdown_menu">
+									<a href="#">신차 장기렌터카 서비스 안내</a>
+									<ul class="dropdown_menu">
+										<li>
+											<a href="#">신차장기렌터카 안내</a>
+										</li>
+										<li>
+											<a href="#">이용절차 및 Q&amp;A</a>
+										</li>
+										<li>
+											<a href="#">LPG60 장기렌터카 안내</a>
+										</li>
+										<li>
+											<a href="#">전기차 장기렌터카 안내</a>
+										</li>
+										<li>
+											<a href="#">오토 체인지 프로그램</a>
+										</li>
+									</ul>									
+								</li>
+								<li class="btn_dropdown_menu">
+									<a href="#">롯데렌터카만의 서비스</a>
+									<ul class="dropdown_menu">
+										<li>
+											<a href="#">오토매니저</a>
+										</li>
+										<li>
+											<a href="#">정비패키지</a>
+										</li>
+										<li>
+											<a href="#">오토 할부&amp;오토 캐시백 </a>
+										</li>
+										<li>
+											<a href="#">제휴 카드 </a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="depth2">
+							<a href="#">중고차 장기렌터카</a>
+							<ul>
+								<li>
+									<a href="#">중고차 장기렌터카 검색</a>
+								</li>
+								<li>
+									<a href="#">중고차 장기렌터카 서비스 안내</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">승계 게시판</a>
+							<ul>
+								<li>
+									<a href="#">승계 매물 등록</a>
+								</li>
+								<li>
+									<a href="#">승계 매물 검색</a>
+								</li>
+								<li>
+									<a href="#">승계 게시판 서비스 안내</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">법인 장기렌터카</a>
+							<ul>
+								<li>
+									<a href="#">견적 상담</a>
+								</li>
+								<li>
+									<a href="#">법인 장기렌터카 서비스 안내</a>
+								</li>
+							</ul>
+						</li>
+						<li class="depth2">
+							<a href="#">오토리스</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu idx3">
+					<a href="../sell/FN030101.html">팔 때</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">중고차 팔기</a>
+							<ul>
+								<li>
+									<a href="#">견적 상담</a>
+								</li>
+								<li class="btn_dropdown_menu">
+									<a href="#">중고차 경매 서비스 안내</a>
+									<ul class="dropdown_menu">
+										<li>
+											<a href="#">경매 출품 안내</a>
+										</li>
+										<li>
+											<a href="#">입찰 안내</a>
+										</li>
+										<li>
+											<a href="#">판매가 출품 보장 안내</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="submenu">
+						<li class="depth2"><a href="#">오토옥션</a></li>
+					</ul>
+				</li>
+				<li class="menu idx4">
+					<a href="#">기기/장비렌탈</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<!--<a href="#">기기/장비렌탈</a>-->
+							<ul>
+								<li>
+									<a href="#">산업용기기렌탈</a>
+								</li>
+								<li>
+									<a href="#">OA렌탈</a>
+								</li>
+								<li>
+									<a href="#">측정기렌탈</a>
+								</li>
+								<li>
+									<a href="#">지점안내</a>
+								</li>																								
+								<li>
+									<a href="#">입찰 매각 공지</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="menu idx5">
+					<a href="../event/FN05_1.html">이벤트</a>
+				</li>
+				<li class="menu idx6">
+					<a href="#">고객센터</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<!--<a href="#">고객 센터</a>-->
+							<ul>
+								<li>
+									<a href="#">지점 안내</a>
+								</li>
+								<li>
+									<a href="#">FAQ</a>
+								</li>
+								<li>
+									<a href="#">고객의견</a>
+								</li>
+								<li>
+									<a href="#">상담 문의</a>
+								</li>
+								<li>
+									<a href="#">공지&amp;뉴스</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="gnb_open"></div>
+		<ul id="breadcrumb" class="breadcrumb">
+			<li class="path home"><a href="#"></a></li>
+			<li class="path">
+				<a class="dropdown_path_btn" href="#">사이트 이용관련</a>
+				<div class="dropdown_path">
+					<a class="active" href="#">사이트 이용관련</a>
+					<a href="#">기타</a>
+				</div>
+			</li>
+			<li class="path">
+				<a class="dropdown_path_btn" href="#">영상정보처리기기 운영관리방침</a>
+				<div class="dropdown_path">
+					<a class="active" href="#">영상정보처리기기 운영관리방침</a>
+					<a href="#">기타</a>
+				</div>
+			</li>
+		</ul>
+	</header>
+	<div id="container">
+		<!-- content -->
+		<article class="content">
+			<h2>영상정보처리기기 운영관리방침</h2>
+			<div class="content">
+				<!-- 본문삽입 -->
+				<h3>㈜롯데렌탈 영상정보처리기기 운영·관리 방침</h3>
+				<p class="mt30">㈜롯데렌탈(이하 ‘회사’)은 개인정보보호법 제25조 영상정보처리기기의 설치·운영 제한, 개인정보보호법 시행령 제25조 영상정보처리기기 운영관리 방침에 따라 영상정보처리기기의 설치, 관리, 운영에 관한 사항들을 정함으로써 정보주체의 개인영상정보와 권익을 보호하기 위하여 다음과 같은 운영·관리 방침을 두고 있습니다.</p>
+				<ul class="mb60">
+					<li>
+						<p class="policy_tit">가. 영상정보처리기기의 설치 · 운영목적</p>
+						<p class="policy_gray mt10">회사는 범죄예방, 증거확보, 시설안전 및 보호, 화재예방, 법규위반 단속 등을 목적으로 영상정보처리기기를 설치·운영하고 있습니다.</p>
+					</li>
+					<li>
+						<p class="policy_tit">나. 영상정보처리기기의 설치위치, 촬영범위</p>
+						<p class="policy_gray mt10">건물 로비ㆍ민원실, 주차장 등 주요 시설물을 촬영범위로 본사, 지점, 영업소 등 설치</p>
+					</li>
+					<li>
+						<p class="policy_tit">다. 관리책임자, 담당 부서 및 영상정보에 대한 접근권한을 부여 받은 업무 담당자</p>
+						<p class="policy_gray mt10">영상정보처리기기 관리책임자 : IT/중고차사업본부 본부장(02-3404-9999)</p>
+						<div class="list_notice grid mt20">
+							<table class="tb_col">
+								<caption></caption>
+								<colgroup>
+									<col style="width:25%"> 
+									<col style="width:25%"> 
+									<col style="width:25%"> 
+									<col style="width:auto"> 
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">설치장소</th> 
+										<th scope="col">담당부서</th> 
+										<th scope="col">담당자</th> 
+										<th scope="col">연락처</th> 
+									</tr>
+								</thead>
+								<tbody> 
+									<tr> 
+										<td>선릉본사</td>
+										<td>경영지원팀</td>
+										<td>경영지원팀장</td>
+										<td rowspan="2">02-3404-9999</td>
+									</tr>
+									<tr> 
+										<td>지점/영업소</td>
+										<td>해당지점/영업소</td>
+										<td>지점장 및 영업소장</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</li>
+					<li>
+						<p class="policy_tit">라. 영상정보의 촬영시간, 보관기간, 보관 장소 및 처리방법</p>
+						<ul class="policy_txt_list">
+							<li>1.영상정보의 촬영시간
+								<ul>
+									<li>24시간 연속</li>
+								</ul>
+							</li>
+							<li>2.영상정보의 보유 기간
+								<ul>
+									<li>(1) 영상정보처리기기에 의해 수집된 영상정보는 보유기간이 만료되면 지체 없이 파기 합니다.</li>
+									<li>(2) 평상시 수집된 영상정보는 수집 후 3개월 이상 장비의 저장능력 내 보관합니다.</li>
+									<li>(3) 다만 다음에 해당하는 경우에는 파기하지 아니합니다.
+										<ul class="txt_list">
+											<li class="gray">정보주체의 요청에 의한 경우</li>
+											<li class="gray">다른 법률에 특별한 규정이 있는 경우</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>3.영상정보의 보관 장소
+								<ul>
+									<li>영상정보는 녹화장치 DVR 하드디스크에 저장하고 이는 DVR이 설치된 장소에 보관합니다.</li>
+								</ul>
+							</li>
+							<li>4.영상정보의 관리
+								<ul>
+									<li>(1) 영상정보는 불법적 접근 및 변조 · 누출 · 훼손 등에 대비하여 아이디와 비밀 번호를 부여하여 관리합니다.</li>
+									<li>(2) 영상정보 제공 시에는 필요한 최소한의 기간 및 녹화범위로 제공하고, 제공된 사항에 대하여 기록하여 관리합니다.</li>
+								</ul>
+							</li>
+							<li>5.영상정보의 파기
+								<ul>
+									<li>(1) 영상정보가 기록된 출력물 사진 등은 파쇄 또는 소각</li>
+									<li>(2) 전자기적 파일 형태의 영상정보는 복원이 불가능한 기술적 방법으로 영구삭제</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<p class="policy_tit">마. 개인영상정보 관리책임자의 영상정보 확인 방법 및 장소</p>
+						<ul class="policy_txt_list02">
+							<li>(1) 영상정보처리기기의 주장치는 잠금장치 처리를 하여 상황실에 설치하고, 설치 된 장소는 제한구역으로 지정하여 접근권한이 부여된 자 외에는 열람·재생할 수 없으며, 열람·재생의 필요가 있을 경우 운영책임자의 승인을 받은 후 열람·재생할 수 있습니다.</li>
+							<li>(2) 영상정보 확인 장소 : 영상정보처리기기 녹화장치 DVR가 설치된 장소</li>
+						</ul>
+					</li>
+					<li>
+						<p class="policy_tit">바. 정보주체의 영상정보 열람 등 요구에 대한 조치</p>
+						<ul class="policy_txt_list02">
+							<li>(1) 정보주체는 개인영상정보 관리책임자가 처리하는 개인영상정보에 대하여 열람 또는 존재확인을 해당 개인영상정보 관리책임자에게 요구할 수 있습니다.</li>
+							<li>(2) 개인영상정보 관리책임자는 다음 경우를 제외하고는 열람 등 요구가 있을 경우 지체 없이 필요한 조치를 취합니다.
+								<ul class="txt_list mt5">
+									<li class="gray f14">영상정보의 보관기간이 경과하여 파기한 경우</li>
+									<li class="gray f14">법률에 따라 열람 등이 금지되거나 제한되는 경우</li>
+									<li class="gray f14">다른 사람의 생명ㆍ신체를 해할 우려가 있거나 다른 사람의 재산과 그 밖의 이익을 부당하게 침해할 우려가 있는 경우</li>
+									<li class="gray f14">기타 정보주체의 열람 등 요구를 거부할 만한 정당한 사유가 존재하는 경우</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<p class="policy_tit">사. 영상정보 보호를 위한 기술적 · 관리적 및 물리적 조치</p>
+						<p class="policy_gray mt10">회사는 서비스 이용계약, A/S 제공 및 그 부대업무의 대행 등 고객 편의 제공, 관리 등을 위하여 개인정보 취급업무를 위탁하고 있으며, 수탁자에 대해서는 “위.수탁계약서” 등을 통하여 관련 법규 및 지침의 준수, 정보보호 및 비밀유지, 제3자 제공 금지, 사고 시 책임부담, 위탁기간 종료 즉시 개인정보의 반납/파기 의무 등을 규정하여 관리하고 있습니다.</p>
+						<ul class="policy_txt_list02">
+							<li>(1) 영상정보의 안전한 처리를 위하여 내부 관리계획을 수립·시행하고 있습니다.</li>
+							<li>(2) 개인영상정보 관리책임자는 설치된 영상정보처리기기 설치현황을 파악하고 화상정보 관리 및 운영 실태를 주기적으로 점검 하고 있습니다.</li>
+							<li>(3) 수행하는 업무에 따라 영상정보에 대한 접근 권한을 제한하고 있습니다.</li>
+							<li>(4) 영상정보에 대하여 접근권한을 부여받은 자로 하여금 개인정보보호 교육을 이수 할 수 있도록 조치하고, 이에 필요한 교육은 자체적으로 실시하거나 전문기관에 위탁하여 실시하고 있습니다.</li>
+							<li>(5) 영상정보의 생성 일시 및 영상개인정보에 대해 열람을 허용할 경우 열람 목적·열람자·열람일시 등을 기록·관리하고 있습니다.</li>
+						</ul>
+					</li>
+				</ul>
+				<!--// 본문삽입 --> 
+			</div>
+		</article>
+	</div>
+	<footer>
+		<div class="links">
+			<ul class="inner_links">
+				<li class="link">
+					<a href="#">그린카</a>
+				</li>
+				<li class="link">
+					<a href="#">오토옥션</a>
+				</li>
+				<li class="link">
+					<a href="#">오토리스</a>
+				</li>				
+				<li class="link">
+					<a href="#">오토매니저</a>
+				</li>
+				<li id="familysite" class="familysite">
+					<a class="btn_dropdown_menu" href="#">FAMILY SITE</a>
+				</li>
+			</ul>
+		</div>
+		<div class="familysite_dropdown_menu">
+			<ul class="menus">
+				<li class="menu">
+					<span class="menu_title">식품부문</span>
+					<ul>
+						<li>
+							<a href="#" target="_blank">롯데제과</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데유통사업본부</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데칠성음료</a>
+						</li>						
+						<li>
+							<a href="#" target="_blank">롯데칠성음료 주류부문</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데아시히주류</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데푸드</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데리아</a>
+						</li>						
+					</ul>
+				</li>
+				<li class="menu">
+					<span class="menu_title">관광부문</span>
+					<ul>
+						<li>
+							<a href="#" target="_blank">롯데호텔</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">부산롯데호텔</a>
+						</li>						
+						<li>
+							<a href="#" target="_blank">롯데면세점</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데월드</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데물산</a>
+						</li>						
+						<li>
+							<a href="#" target="_blank">롯데리조트</a>
+						</li>						
+						<li>
+							<a href="#" target="_blank">롯데제이티비</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu">
+					<span class="menu_title">금융부문</span>
+					<ul>
+						<li>
+							<a href="#" target="_blank">롯데카드</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데손해보험</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데캐피탈</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데자이언츠</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데멤버스</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu">
+					<span class="menu_title">석유화학/건설/제조 부문</span>
+					<ul>
+						<li>
+							<a href="#" target="_blank">롯데케미칼</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">케이피켐텍</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데엠알시</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데건설</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데건설 CM사업본부</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">캐논코리아비즈니스솔루션㈜</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">한국후지필름</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데알미늄</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데기공</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu">
+					<span class="menu_title">유통부문</span>
+					<ul>
+						<li>
+							<a href="#" target="_blank">롯데백화점</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데마트</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데슈퍼</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데시네마</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데홈쇼핑</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">코리아세븐</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">FRL코리아</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데상사</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데닷컴</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데하이마트</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롭스</a>
+						</li>																														
+					</ul>
+				</li>
+				<li class="menu">
+					<span class="menu_title">서비스/연구/지원 부문</span>
+					<ul>
+
+						<li>
+							<a href="#" target="_blank">롯데정보통신</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">현대정보기술</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데스카이힐C.C</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">대홍기획</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데자산개발</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데로지스틱스</a>
+						</li>	
+						<li>
+							<a href="#" target="_blank">롯데피에스넷</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">마이비</a>
+						</li>	
+						<li>
+							<a href="#" target="_blank">이비카드</a>
+						</li>	
+						<li>
+							<a href="#" target="_blank">롯데중앙연구소</a>
+						</li>	
+						<li>
+							<a href="#" target="_blank">롯데인재개발원</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데미래전략센터</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데장학재단</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데복지재단</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데삼동복지재단</a>
+						</li>																								
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="inner_footer">
+			<div class="sitemap">
+				<ul>
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#" class="txt_point">개인정보처리방침</a></li>
+					<li><a href="#" class="txt_point">영상정보처리기기 운영관리방침</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">사이버신문고</a></li>
+					<li><a href="#">인재채용</a></li>
+					<li><a href="#">무단이메일수집거부</a></li>
+					<li><a href="#">계약서 조회</a></li>
+					<li><a href="#">CONTACT US</a></li>
+					<li><a href="#">사이트맵</a></li>
+				</ul>
+			</div>
+
+			<div class="sns">
+				<ul>
+					<li>
+						<a class="twitter" href="#" target="_blank"><img src="../../images/common/img_footer_sns_twitter.png" alt="트위터"></a>
+					</li>
+					<li>
+						<a class="facebook" href="#" target="_blank"><img src="../../images/common/img_footer_sns_facebook.png" alt="페이스북"></a>
+					</li>
+					<li>
+						<a class="blog" href="#" target="_blank"><img src="../../images/common/img_footer_sns_blog.png" alt="블로그"></a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="information">
+				<ul class="entrepreneur_info">
+					<li>롯데렌탈㈜</li>
+					<li>대표이사 표현명</li>
+					<li>사업자등록번호 214-87-79183</li>
+					<li>통신판매업신고번호 : 제2010-경기안양-420호</li>
+					<li><a href="http://www.ftc.go.kr/info/bizinfo/communicationList.jsp" target="_blank" class="btn_entrepreneur_info"><img src="../../images/common/btn_entrepreneur_info.png" alt="사업자 정보 확인"></a></li>					
+				</ul>
+				<ul class="address">
+					<li>경기도 안양시 동안구 전파로 88 신원비젼타워 8층</li>
+					<li>서울본사: 서울시 강남구 테헤란로 422 KT타워 6~9층</li>
+				</ul>
+				<ul class="phone">
+					<li>대표전화 1588-1230</li>
+					<li>해외 82-2-797-8000</li>
+					<li>보험대차 연락처 및 일반상품렌탈 연락처</li>
+					<li>보험대차 1588-4920</li>
+					<li>일반상품렌탈 1577-5100+1</li>
+				</ul>
+				<span class="copyright">copyright ⓒ 2016 LOTTE rental co.ltd.All Rrights Reserved.</span>
+			</div>
+
+			<div class="certifications">
+				<ul>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_1.png" alt="2015 한국서비스대상 명예의 전당"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_2.png" alt="2016 국가고객만족도렌터카부문1위(NCSI)"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_3.png" alt="2016 한국산업의 브랜드 파워 1위(K-BPI)"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_4.png" alt="2016 국가브랜드 대상(NBA)"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_5.png" alt="2016 대한민국 브랜드 스타"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_6.png" alt="2016 대한민국 퍼스트 브랜드"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_7.png" alt="2016 국가브랜드 경쟁력 지수 1위(NBCI)"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_8.png" alt="2016 한국산업의 고객만족도(KCSI)"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_9.png" alt="2016 한국서비스 품질지수 1위(KS-SQl)"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_10.png" alt="2014 한국서비스대상 종합대상"></a></li>
+					<li><a href="#award" class="award btn_layer"><img src="../../images/common/img_footer_cert_11.png" alt="2016 프리미엄 브랜드 지수 1위(KC-PBI)"></a></li>
+					<li>
+						<a href="https://sealinfo.verisign.com/splash?form_file=fdf/splash.fdf&amp;dn=www.lotterentacar.net&amp;lang=ko" target="_blank">
+							<img src="../../images/common/img_footer_cert_12.png" alt="노턴 시큐어">
+						</a>
+					</li>
+					<li>
+						<a href="#isms" class="isms btn_layer">
+							<img src="../../images/common/img_footer_cert_13.png" alt="정보보호 관리체계 ISMS 획득">
+						</a>
+					</li>					
+				</ul>
+			</div>
+
+			<div class="big-banner">
+				<img src="../../images/common/img_footer_big_banner.png" alt="Asia No.1 렌터카, 롯데렌터카! 롯데렌터카가 대한민국을 넘어 Asia 1위 렌터카로 우뚝 섰습니다.">
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

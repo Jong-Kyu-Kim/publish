@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1200, initial-scale=1">
+
+	<title></title>
+	<link rel="stylesheet" href="../../css/style.css">
+	
+
+	<!--// jQuery core -->
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.min.js"></script>
+	<script src="../../js/html5shiv.js"></script>
+	<script src="../../js/core.js"></script>
+	<script src="../../js/ui.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="inner_header">
+			<a href="#container" class="skip_nav">Skip to Content</a>
+			<a href="#" class="logo"><h1><img src="../../images/common/logo.png" alt="Lotte rent-a-car"></h1></a>
+			<a href="#" class="side_logo"><img src="../../images/common/logo_hertz.png" alt="hertz"></a>
+			<ul id="extra_menu" class="extra_menu">
+				<!--// 비회원일 경우 -->
+				<li class="login"><a href="#">Login</a></li>
+				<li class="join"><a href="#">Register</a></li>
+
+				<!--// 회원일 경우 -->
+				<li class="logout"><a href="#">My Reservation</a></li>
+				<li class="mypage_quick"><a href="#">Mypage</a></li>
+				<li class="language"><a href="#">KOREAN</a></li>
+			</ul>
+		</div>
+		<div id="gnb" class="gnb">
+			<ul class="menus">
+				<li class="menu idx1">
+					<a href="#">Reservations</a>
+				</li>
+				<li class="menu idx2">
+					<a href="#">Car rental</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">Rental information </a>
+							<ul>
+								<li>
+									<a href="#">Rental Cost Information</a>
+								</li>
+								<li>
+									<a href="#">Additional Rate</a>
+								</li>
+								<li>
+									<a href="#">Rental information for foreigner</a>
+								</li>
+								<li>
+									<a href="#">Overseas Reservation</a>
+								</li>
+								<li>
+									<a href="#">Chauffeured Service</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="menu idx3">
+					<a href="#">Location</a>
+				</li>
+			</ul>
+		</div>
+		<div class="gnb_open"></div>
+	</header>
+	<!-- container -->
+	<div id="container" class="mypage">
+		<!-- content -->		
+			<h2>Point</h2>
+			<div class="wrap_tab">
+				<ul class="tab_menu">
+					<li class="active"><a href="#tab-1">Point Used</a></li>
+					<li><a href="#tab-2">Point exchange</a></li>
+				</ul>
+				<div class="tab_content" id="tab-1">
+					<div class="grid total_point mt50">
+						<table class="tb_col">
+							<caption></caption>
+							<colgroup>
+								<col style="width:140px" />
+								<col style="width:460px" />
+								<col style="width:140px" />
+								<col style="width:auto" /> 
+							</colgroup>
+							<tbody>
+								<tr>
+									<th class="noBorderL">Total Point</th>
+									<td>300,000<span>p</span></td>
+									<th>Remaining point</th>
+									<td><span class="txt_point">20,000<span class="f22">p</span></span></td>
+								</tr>
+							</tbody>
+						</table>
+						<ul class="txt_list">
+							<li class="red">
+								If 50,000P or more rental points are accumulated, the remaining points may be used.
+							</li>
+						</ul>
+					</div>
+					<div>
+						<div class="titleBox mt70 nb">
+							<h4>Points Usage</h4>
+							<span class="tooltip">
+								<input type="radio" id="all" name="radio1">
+								<label for="all" class="mr15"><span class="icon"></span>All</label>
+								<input type="radio" id="save" name="radio1">
+								<label for="save" class="mr15"><span class="icon"></span>save</label>
+								<input type="radio" id="use" name="radio1">
+								<label for="use"><span class="icon"></span>Use</label>
+							</span>
+						</div>
+						<div class="grid used_point mt10">
+							<table class="tb_col">
+								<caption></caption>
+								<colgroup>
+									<col style="width:810px" />
+									<col style="width:193px" />
+									<col style="width:193px" /> 
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">Points Usage</th>
+										<th scope="col">적립일/사용일</th>
+										<th scope="col">Point</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="save">
+										<td>
+											<strong>단기렌터카 예약</strong>
+											<ul class="txt_list">
+											    <li class="gray f14">
+											        Date : 2016/00/00~2016/00/00
+											    </li>
+											    <li class="gray f14"> 
+											        Branch : Pick up(Gangnam)-Return(Gangnam)
+											    </li> 
+											</ul> 
+										</td>
+										<td>2016/00/00</td>
+										<td><span class="plus">+2,000</span>save</td> <!-- save 클래스 : 라디오 버튼에서 적립 선택시만 보임-->
+									</tr>
+									<tr class="save">
+										<td>
+											<strong>단기렌터카 예약</strong>
+											<ul class="txt_list">
+											    <li class="gray f14">
+											        Date : 2016/00/00~2016/00/00
+											    </li>
+											    <li class="gray f14"> 
+											        Branch : Pick up(Gangnam)-Return(Gangnam)
+											    </li> 
+											</ul> 
+										</td>
+										<td>2016/00/00</td>
+										<td><span class="minus">-1,000</span>Use</td>
+									</tr>
+									<tr class="use"> <!-- save 클래스 : 라디오 버튼에서 사용 선택시만 보임-->
+										<td>
+											<strong>아시아나 마일리지 전환</strong>
+											<ul class="txt_list">
+											    <li class="gray f14">
+											        항공 회원번호 : 0000-0000-0000-0000
+											    </li>
+											</ul> 
+										</td>
+										<td>2016/00/00</td>
+										<td><span class="minus">-145,000</span>Use</td>
+									</tr>
+									<tr>
+										<td>
+											<strong>할인쿠폰 전환</strong>
+											<ul class="txt_list">
+											    <li class="gray f14">
+											        50~60% 할인쿠폰 1매
+											    </li>
+											</ul> 
+										</td>
+										<td>2016/00/00</td>
+										<td><span class="minus">-1,000</span>Use</td>
+									</tr>																				
+									<tr>
+										<td colspan="3" class="no_data">History is not available.</td> 
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="paging">
+							<a href="#" class="btn_first">처음</a>
+							<a href="#" class="btn_prev">이전</a>
+							<em>1</em><!-- 현재 페이지 일경우-->
+							<a href="#">2</a>
+							<a href="#">3</a>
+							<a href="#">4</a>
+							<a href="#">5</a>
+							<a href="#">6</a>
+							<a href="#">7</a>
+							<a href="#">8</a>
+							<a href="#">9</a>
+							<a href="#">10</a>
+							<a href="#" class="btn_next">다음</a>
+							<a href="#" class="btn_last">맨끝</a>
+						</div>
+					</div>
+				</div>
+				<div class="tab_content point_trans" id="tab-2">
+					<div class="wrap_stab mt50">
+						<h4>Converting your points to a discount coupon</h4>
+						<div class="stab_content coupon">
+							<div class="coupon_top">
+								<p>If your total rental points are 50,000 P or less, you may request the conversion to discount coupons for rental. (General Member 50% discount coupon / Gold Member 55% discount coupon / Double Gold Member 60% discount coupon)</p>
+								<p class="txt_gray mt5">ex) 25,000 point for 1 discount tickets Deduct → 10,000 point for a discount tickets and remaining 15,000 point can be used for another discount tickets subsequently</p>
+								<p class="mt5">Partial request of [point conversion] is also available.</p>
+								<div class="grid mt45">
+									<table class="tb_col">
+										<caption></caption>
+										<colgroup>
+											<col style="width:33%">
+											<col style="width:33%">
+											<col style="width:auto"> 
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">Total Rental Points</th>
+												<th scope="col">Redemption Detail</th>
+												<th scope="col">Etc</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>~ 10,000 or less</td>
+												<td>50~60% off Discount Coupon(1 Ticket)</td>
+												<td rowspan="5" class="tal">
+													<ul class="txt_list ml50">
+														<li class="gray"> 
+															Car types : All cars (Imported cars excluded)
+														</li>
+														<li class="gray"> 
+															Available location : All locations (excluding Jeju)
+														</li>
+														<li class="gray"> 
+															Expiration period : 1 year after emission
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td>10,000~19,999</td>
+												<td>50~60% off Discount Coupon(2 Ticket)</td>
+											</tr>
+											<tr>
+												<td>20,000~29,999</td>
+												<td>50~60% off Discount Coupon(3 Ticket)</td>
+											</tr>
+											<tr>
+												<td>30,000~39,999</td>
+												<td>50~60% off Discount Coupon(4 Ticket)</td>
+											</tr>
+											<tr>
+												<td>40,000~49,999</td>
+												<td>50~60% off Discount Coupon(5 Ticket)</td>
+											</tr>
+										</tbody>
+									</table>
+									<ul class="txt_list mt5">
+										<li class="red">Point conversion request is available through the website or customer service (1588-1230)</li>
+										<li class="red">If you have any additional questions, please make inquiries through the website customer service or call our customer service (1588-1230)</li>
+										<li class="red">The request period is until the last day of every month, and the discount coupon will be sent to you via SMS the next month.</li>
+										<li class="red">This policy may be modified by the company at its sole discretion, and a new provision shall prevail over the previous provision.</li>
+									</ul>							    
+								</div>						
+							</div>
+							<div class="coupon_bottom mt60">
+                                <div class="btn_wrap">
+                                	<span class="center">
+                                		<a href="#" class="conponRequest btn_red btn_350">Request the conversion to discount coupons</a>
+                                	</span>
+                                </div>
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>
+		<!-- content -->
+	</div>
+	<!-- container -->
+	<footer>
+		<div class="inner_footer">
+			<div class="sitemap">
+				<ul>
+					<li><a href="/fr/eng/content/211/main.do?mnCd=EN0401">COMPANY</a></li>
+					<li><a href="#">USER AGREEMENT</a></li>
+					<li><a href="#">CONTACT US</a></li>
+					<li><a href="#">SITE MAP</a></li>
+				</ul>
+			</div>
+			<div class="sns">
+				<ul>
+					<li>
+						<a class="twitter" href="#" target="_blank"><img src="../../images/common/img_footer_sns_twitter.png" alt="twitter"></a>
+					</li>
+					<li>
+						<a class="facebook" href="#" target="_blank"><img src="../../images/common/img_footer_sns_facebook.png" alt="facebook"></a>
+					</li>
+					<li>
+						<a class="blog" href="#" target="_blank"><img src="../../images/common/img_footer_sns_blog.png" alt="blog"></a>
+					</li>					
+				</ul>
+			</div>
+			<div class="information">
+				<ul class="entrepreneur_info">
+					<li>LOTTE rental co.ltd.</li>
+					<li>President : Pyo, Hyun-Myung</li>
+					<li>Business Registration # : 214-87-79183</li>
+				</ul>
+				<ul class="address">
+					<li>Communication Service # : 2010-Gyunggi Anyang 420</li>
+					<li>Address : 8F Shinwonvision Tower 898. Hogye-dong, Dongan-Gu, Anyang</li>
+				</ul>
+				<ul class="phone">
+					<li>Main Contact 1588-1230</li>
+					<li>FAX 02-2141-9022</li>
+				</ul>
+				<span class="copyright">copyright ⓒ 2016 LOTTE rental co.ltd.All Rrights Reserved.</span>
+			</div>
+
+			<div class="certifications">
+				<ul>
+					<li>
+						<img src="../../images/common/img_footer_cert_1.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_2.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_3.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_4.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_5.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_6.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_7.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_8.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_9.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_10.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_11.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_12.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_13.png" alt="">
+					</li>	
+				</ul>
+			</div>
+		
+			<div class="big-banner">
+				<img src="../../images/common/img_footer_big_banner.png" alt="Asia No.1 Rental cars, LOTTE RENT-A-CAR! The Lotte rented car stands for Asia No.1 in Asia">
+			</div>
+		</div>
+	</footer>
+
+
+	<div class="dimm"></div>
+	<div id="conponRequest" class="layer layer_s">
+		<div class="layer_tit">
+	    	<h2>Request the conversion to discount coupons</h2>
+	    	<a href="#" class="btn_layer_close"><img src="../../images/common/btn_layer_close.png" alt="close"></a>
+		</div>
+		<div class="layer_con">
+            <div class="grid noBorderT mt20">
+			    <table class="tb_noBorder">
+			        <caption></caption>
+			        <colgroup>
+			            <col style="width:100px">
+			            <col style="width:auto"> 
+			        </colgroup>
+			        <tbody>
+			            <tr>
+			                <th scope="row"><label for="">Name</label></th>
+			                <td>
+			                    <input type="text" name="" readonly="readonly" value="Hong Gil Dong">
+			                </td>
+			            </tr>
+			            <tr>
+			                <th scope="row"><label for="">Level</label></th>
+			                <td>
+			                	<input type="text" name="" readonly="readonly" value="General Member">
+			                </td>
+			            </tr>
+			            <tr>
+			                <th scope="row"><label for="select1">Apply coupon</label></th>
+			                <td>
+								<span class="select">
+								    <select id="select1" title="">
+								        <option selected="selected">Select coupon</option>
+										<option>50 ∼ 60% 할인 쿠폰 1매</option>
+										<option>50 ∼ 60% 할인 쿠폰 2매</option>
+										<option>50 ∼ 60% 할인 쿠폰 3매</option>
+										<option>50 ∼ 60% 할인 쿠폰 4매</option>
+										<option>50 ∼ 60% 할인 쿠폰 5매</option>									        
+								    </select>
+								</span>				                
+			                </td>
+			            </tr>				            
+			        </tbody>
+			    </table>
+			</div>
+			<div class="layer_foot borderTop mt20">
+				<a href="#" class="btn_layer_close btn_black btn_160">Close</a>
+				<a href="#" class="btn_layer_close btn_red btn_160">Apply</a>
+			</div>   
+		</div>
+	</div>	
+
+<script>
+$(function(){
+	$('.conponRequest').click(function(){
+		if (!$('#agree2').prop('checked')) {
+			alert('Point conversion request is available Through customer service (1588-1230)');
+			$('.btn_layer_close').trigger('click');
+		}
+	});
+})
+</script>
+</body>
+</html>

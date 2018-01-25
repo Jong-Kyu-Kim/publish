@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html dir="ltr" lang="ko" class="ie7"><![endif]-->
+<!--[if IE 8]><html dir="ltr" lang="ko" class="ie8"><![endif]-->
+<!--[if IE 9]><html dir="ltr" lang="ko" class="ie9"><![endif]-->
+<html dir="ltr" lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1200, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.min.js"></script>
+	<script src="../../js/html5shiv.js"></script>
+	<script src="../../js/core.js"></script>
+	<script src="../../js/ui.js"></script>
+    <script src="../../js/calendar.js"></script>
+</head>
+ 
+<body>
+	<header>
+		<div class="inner_header">
+			<a href="#container" class="skip_nav">Skip to Content</a>
+			<a href="#" class="logo"><h1><img src="../../images/common/logo.png" alt="Lotte rent-a-car"></h1></a>
+			<a href="#" class="side_logo"><img src="../../images/common/logo_hertz.png" alt="hertz"></a>
+			<ul id="extra_menu" class="extra_menu">
+				<!--// 비회원일 경우 -->
+				<li class="login"><a href="#">Login</a></li>
+				<li class="join"><a href="#">Register</a></li>
+
+				<!--// 회원일 경우 -->
+				<li class="logout"><a href="#">My Reservation</a></li>
+				<li class="mypage_quick"><a href="#">Mypage</a></li>
+				<li class="language"><a href="#">KOREAN</a></li>
+			</ul>
+		</div>
+		<div id="gnb" class="gnb">
+			<ul class="menus">
+				<li class="menu idx1">
+					<a href="#">Reservations</a>
+				</li>
+				<li class="menu idx2">
+					<a href="#">Car rental</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">Rental information </a>
+							<ul>
+								<li>
+									<a href="#">Rental Cost Information</a>
+								</li>
+								<li>
+									<a href="#">Additional Rate</a>
+								</li>
+								<li>
+									<a href="#">Rental information for foreigner</a>
+								</li>
+								<li>
+									<a href="#">Overseas Reservation</a>
+								</li>
+								<li>
+									<a href="#">Chauffeured Service</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="menu idx3">
+					<a href="#">Location</a>
+				</li>
+			</ul>
+		</div>
+		<div class="gnb_open"></div>
+	</header>
+	<div id="container">
+		<!-- content -->
+		<article class="content">
+			<h2 class="border nb">Personal Information</h2>
+			<div class="content">
+                <!-- 본문삽입 -->  
+                <div class="wrap_month_rent">                                            
+                    <div class="grid noBorderT">
+                        <span class="txt_must"><em class="txt_point">*</em> fields are required.</span>
+                        <table class="tb_row">
+                            <caption></caption>
+                            <colgroup>
+                                <col style="width:200px">
+                                <col style="width:auto"> 
+                            </colgroup>
+                            <tbody>
+                                <tr class="borderTop">
+                                    <th scope="row"><label for="">Level <span class="txt_point">*</span></label></th>
+                                    <td>General Member</td> 
+                                </tr> 
+                                <tr>
+                                    <th scope="row"><label for="">ID <span class="txt_point">*</span></label></th>
+                                    <td>
+										Honggil123
+                                    </td>
+                                </tr> 
+                                <tr>
+                                    <th scope="row"><label for="">Password <span class="txt_point">*</span></label></th>
+                                    <td>
+                                        <input type="text" name="" id="" value="" style="width:300px;">
+										<span class="security ml15">Security Level |  <span class="txt_point">Error : It needs to be 8~15 character</span></span>
+                                    </td>
+                                </tr> 
+                                <tr>
+                                    <th scope="row"><label for="">Check Password <span class="txt_point">*</span></label></th>
+                                    <td>
+                                        <input type="text" name="" id="" value="" style="width:300px;">
+                                    </td>
+                                </tr> 
+                                <tr>
+                                    <th scope="row"><label for="">Name <span class="txt_point">*</span></label></th>
+                                    <td>
+											Hong Gil Dong
+                                    </td>
+                                </tr> 
+                                <tr>
+                                    <th scope="row"><label for="">Date of birth <span class="txt_point">*</span></label></th>
+                                    <td>        
+                                        <span class="select mr3 ml3">
+                                            <select id="" title="상담일자">
+                                                <option selected="selected">2017</option>
+                                                <option>2016</option>
+                                                <option>2015</option>
+                                                <option>2014</option>
+                                                <option>2013</option>
+                                                <option>2012</option>
+                                                <option>2011</option>
+                                                <option>2010</option>
+                                            </select>
+                                        </span>
+                                        <span class="select mr3">
+                                            <select id="" title="">
+                                                <option selected="selected">01</option>
+                                                <option>02</option>
+                                                <option>03</option>
+                                                <option>04</option>
+                                                <option>05</option>
+                                                <option>06</option>
+                                                <option>07</option>
+                                                <option>08</option>
+                                                <option>09</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                            </select>
+                                        </span>
+                                        <span class="select">
+                                            <select id="" title="">
+                                                <option selected="selected">1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                            </select>
+                                        </span>
+                                        <ul class="radio_hr mt10">
+                                            <li>
+                                                <input type="radio" id="rdoQuantity1" name="rdoQuantity">
+                                                <label for="rdoQuantity1" class="mr20"><span class="icon"></span>Lunar Cal. </label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="rdoQuantity2" name="rdoQuantity">
+                                                <label for="rdoQuantity2"><span class="icon"></span>Solar Cal. </label>
+                                            </li>
+                                        </ul> 
+										<ul class="txt_list">
+											<li class="red">It would be disadvantage for you to different birthdate of passport</li>
+										</ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="">Sex <span class="txt_point">*</span></label></th>
+                                    <td>
+                                        <ul class="radio_hr mt5">
+                                            <li>
+                                                <input type="radio" id="rdoQuantity3" name="rdoQuantity">
+                                                <label for="rdoQuantity3" class="mr20"><span class="icon"></span>Male</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="rdoQuantity4" name="rdoQuantity">
+                                                <label for="rdoQuantity4"><span class="icon"></span>Female</label>
+                                            </li>
+                                        </ul> 
+                                    </td>
+                                </tr> 
+                                <tr>
+                                    <th scope="row"><label for="">Zip Code <span class="txt_point">*</span></label></th>
+                                    <td>
+										<input type="text" name="" id="" value="" style="width:300px;">
+                                    </td>
+                                </tr> 
+                                <tr>
+                                    <th scope="row"><label for="">Local address <span class="txt_point">*</span></label></th>
+                                    <td>
+                                        <input type="text" name="" id="" value="서울시 강남구 대치동" class="block mb5" style="width:435px;">
+                                        <input type="text" name="" id="" value="123-123"  style="width:435px;">
+                                    </td> 
+                                </tr>  
+                                <tr>
+                                    <th scope="row"><label for="">Home Phone</label></th>
+                                    <td>
+										<input type="text" name="" id="" value="010" style="width:72px;">
+										<ins class="hyphen">-</ins>
+										<input type="text" name="" id="" value="1234" style="width:100px;">
+										<ins class="hyphen">-</ins>
+										<input type="text" name="" id="" value="5678" style="width:100px;">
+                                    </td> 
+                                </tr>  
+                                <tr>
+                                    <th scope="row"><label for="">Mobile Phone <span class="txt_point">*</span></label></th>
+                                    <td>
+										<input type="text" name="" id="" value="010" style="width:72px;">
+										<ins class="hyphen">-</ins>
+										<input type="text" name="" id="" value="1234" style="width:100px;">
+										<ins class="hyphen">-</ins>
+										<input type="text" name="" id="" value="5678" style="width:100px;">
+                                        <ul class="radio_hr mt10">
+                                            <li>
+                                                Agreement to SMS Reception
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="phone1" name="rdoQuantity">
+                                                <label for="phone1" class="mr20"><span class="icon"></span>I agree</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="phone2" name="rdoQuantity">
+                                                <label for="phone2"><span class="icon"></span>I disagree</label>
+											</li>
+										</ul>
+                                    </td> 
+                                </tr> 
+                                <tr>
+                                    <th scope="row"><label for="">E-mail <span class="txt_point">*</span></label></th>
+                                    <td>
+										<input type="text" name="" id="" value="12345678" style="width:200px;">
+										<ins class="hyphen">@</ins>
+										<input type="text" name="" id="" value="12345678" style="width:200px;">
+                                        <ul class="radio_hr mt10">
+                                            <li>
+                                                Agreement to EMAIL Reception
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="email1" name="rdoQuantity">
+                                                <label for="email1" class="mr20"><span class="icon"></span>I agree</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="email2" name="rdoQuantity">
+                                                <label for="email2"><span class="icon"></span>I disagree</label>
+											</li>
+										</ul>
+                                    </td> 
+                                </tr> 
+                            </tbody>
+                        </table>
+                    </div>
+
+                    
+                    <div class="btn_wrap">
+                            <button type="button" class="btn_red btn_300">Modify</button>
+                    </div>  
+                    
+                </div> 
+                <!--// 본문삽입 --> 
+            </div>
+		</article>
+	</div>
+	<footer>
+		<div class="inner_footer">
+			<div class="sitemap">
+				<ul>
+					<li><a href="/fr/eng/content/211/main.do?mnCd=EN0401">COMPANY</a></li>
+					<li><a href="#">USER AGREEMENT</a></li>
+					<li><a href="#">CONTACT US</a></li>
+					<li><a href="#">SITE MAP</a></li>
+				</ul>
+			</div>
+			<div class="sns">
+				<ul>
+					<li>
+						<a class="twitter" href="#" target="_blank"><img src="../../images/common/img_footer_sns_twitter.png" alt="twitter"></a>
+					</li>
+					<li>
+						<a class="facebook" href="#" target="_blank"><img src="../../images/common/img_footer_sns_facebook.png" alt="facebook"></a>
+					</li>
+					<li>
+						<a class="blog" href="#" target="_blank"><img src="../../images/common/img_footer_sns_blog.png" alt="blog"></a>
+					</li>					
+				</ul>
+			</div>
+			<div class="information">
+				<ul class="entrepreneur_info">
+					<li>LOTTE rental co.ltd.</li>
+					<li>President : Pyo, Hyun-Myung</li>
+					<li>Business Registration # : 214-87-79183</li>
+				</ul>
+				<ul class="address">
+					<li>Communication Service # : 2010-Gyunggi Anyang 420</li>
+					<li>Address : 8F Shinwonvision Tower 898. Hogye-dong, Dongan-Gu, Anyang</li>
+				</ul>
+				<ul class="phone">
+					<li>Main Contact 1588-1230</li>
+					<li>FAX 02-2141-9022</li>
+				</ul>
+				<span class="copyright">copyright ⓒ 2016 LOTTE rental co.ltd.All Rrights Reserved.</span>
+			</div>
+
+			<div class="certifications">
+				<ul>
+					<li>
+						<img src="../../images/common/img_footer_cert_1.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_2.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_3.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_4.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_5.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_6.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_7.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_8.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_9.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_10.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_11.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_12.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_13.png" alt="">
+					</li>	
+				</ul>
+			</div>
+		
+			<div class="big-banner">
+				<img src="../../images/common/img_footer_big_banner.png" alt="Asia No.1 Rental cars, LOTTE RENT-A-CAR! The Lotte rented car stands for Asia No.1 in Asia">
+			</div>
+		</div>
+	</footer>
+
+
+</body>
+</html>

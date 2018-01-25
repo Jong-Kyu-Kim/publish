@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html dir="ltr" lang="ko" class="ie7"><![endif]-->
+<!--[if IE 8]><html dir="ltr" lang="ko" class="ie8"><![endif]-->
+<!--[if IE 9]><html dir="ltr" lang="ko" class="ie9"><![endif]-->
+<html dir="ltr" lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1200, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.min.js"></script>
+	<script src="../../js/html5shiv.js"></script>
+	<script src="../../js/core.js"></script>
+	<script src="../../js/ui.js"></script>
+    <script src="../../js/calendar.js"></script>
+</head>
+ 
+<body>
+	<header>
+		<div class="inner_header">
+			<a href="#container" class="skip_nav">본문 바로가기</a>
+			<a href="#" class="logo"><h1><img src="../../images/common/logo.png" alt="Lotte rent-a-car"></h1></a>
+			<a href="#" class="side_logo"><img src="../../images/common/logo_hertz.png" alt="hertz"></a>
+			<ul id="extra_menu" class="extra_menu">
+				<!--// 비회원일 경우 -->
+				<li class="login"><a href="#">Login</a></li>
+				<li class="join"><a href="#">Register</a></li>
+
+				<!--// 회원일 경우 -->
+				<li class="logout"><a href="#">My Reservation</a></li>
+				<li class="mypage_quick">
+					<a class="btn_dropdown_menu pr0" href="#">Mypage</a>
+				</li>
+				<li class="language"><a href="#">KOREAN</a></li>
+			</ul>
+		</div>
+		<div id="gnb" class="gnb">
+			<ul class="menus">
+				<li class="menu idx1">
+					<a href="#">Reservations</a>
+				</li>
+				<li class="menu idx2">
+					<a href="#">Car rental</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">Rental information </a>
+							<ul>
+								<li>
+									<a href="#">Rental Cost Information</a>
+								</li>
+								<li>
+									<a href="#">Additional Rate</a>
+								</li>
+								<li>
+									<a href="#">Rental information for foreigner</a>
+								</li>
+								<li>
+									<a href="#">Overseas Reservation</a>
+								</li>
+								<li>
+									<a href="#">Chauffeured Service</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="menu idx3">
+					<a href="#">Location</a>
+				</li>
+			</ul>
+		</div>
+		<div class="gnb_open"></div>
+		<ul id="breadcrumb" class="breadcrumb">
+			<li class="path home"><a href="#"></a></li>
+			<li class="path">
+				<a class="dropdown_path_btn" href="#">Car rental</a>
+				<div class="dropdown_path">
+					<a class="active" href="#">빌릴 때</a>
+					<a href="#">살 때</a>
+					<a href="#">팔 때</a>
+					<a href="#">기기 장비렌탈</a>
+					<a href="#">이벤트</a>
+					<a href="#">고객센터</a>
+				</div>
+			</li>
+			<li class="path">
+				<a class="dropdown_path_btn" href="#">Chauffeured Service</a>
+				<div class="dropdown_path">
+					<a class="active" href="#">빌릴 때</a>
+					<a href="#">살 때</a>
+					<a href="#">팔 때</a>
+					<a href="#">기기 장비렌탈</a>
+					<a href="#">이벤트</a>
+					<a href="#">고객센터</a>
+				</div>
+			</li>
+		</ul>
+	</header>
+	<div id="container">
+		<!-- content -->
+		<article class="content">
+			<h2 class="mb10">Chauffeured Service</h2>
+			<div class="content">
+                <!-- 본문삽입 -->  
+                <div class="wrap_driver_sv"> 
+                     
+                    <div class="top_info mb70"> 
+                        <div class="inner">
+                            <ul class="txt_list">
+                                <li class="gray f14">After your booking request, We will response you back soon by call or Email. (if the booking request day is holiday, we will inform you next working day)</li>
+                                <li class="gray f14">Please booking 24hrs ahead for booking request</li>
+                                <li class="gray f14">Please be noticed that some vehicles are not available depends on the branches</li>
+                                <li class="gray f14">Maximum passanger for chauffeur service is 15 seat</li>
+                                <li class="gray f14">Chauffeured Service Enquiry : +82-2-547-8000  e-mail cksdnd87@lotte.net</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <h3 class="mb15">Personal Information<span class="txt_must"><em class="txt_point">*</em> 모든 항목은 필수기재입니다.</span></h3>
+                    <div class="grid noBorderT mb60">
+                        <table class="tb_noBorder">
+                            <caption></caption>
+                            <colgroup>
+                                <col style="width:110px">
+                                <col style="width:auto"> 
+                                <col style="width:110px">
+                                <col style="width:auto"> 
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><label for="">Name</label></th>
+                                    <td>
+                                        <input type="text" name="" id="" value="" placeholder="이름을 입력하세요." style="width:300px;">
+                                    </td>
+                                    <th scope="row"><label for="">E-mail</label></th>
+                                    <td><input type="text" name="" id="" value="" placeholder="이메일을 입력하세요." style="width:300px;"></td>
+                                </tr> 
+                                <tr>
+                                    <th scope="row"><label for="">Telephone</label></th>
+                                    <td colspan="3">
+                                        <input type="text" name="" id="" value="" style="width:71px;">
+                                        <ins class="hyphen">-</ins>
+                                        <input type="text" name="" id="" value="" style="width:100px;">
+                                        <ins class="hyphen">-</ins>
+                                        <input type="text" name="" id="" value="" style="width:100px;">
+                                    </td> 
+                                </tr> 
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <h3 class="mb15">Rental Information</h3>
+                    <div class="grid noBorderT mb60">
+                        <table class="tb_noBorder">
+                            <caption></caption>
+                            <colgroup>
+                                <col style="width:110px">
+                                <col style="width:auto">  
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><label for="">Pickup location</label></th>
+                                    <td>
+                                        <input type="text" name="" id="" value="" placeholder="배차 장소를 입력해 주세요." style="width:300px;">
+                                    </td> 
+                                </tr>  
+                                <tr>
+                                    <th scope="row"><label for="">Rental/ Return Date</label></th>
+                                    <td>
+                                        <input type="hidden" id="" class="" value=""><!--인풋 히든 위치는 달력버튼 앞 -->
+                                        <a href="#cal3" title="레이어 팝업 열림" class="cal3 btn_calendar btn_layer">대여일시</a>    
+                                        <span class="select mr3 ml3">
+                                            <select id="" title="상담일자">
+                                                <option selected="selected">00h</option>
+                                                <option>01h</option>
+                                                <option>02h</option>
+                                                <option>03h</option>
+                                                <option>04h</option>
+                                                <option>05h</option>
+                                                <option>06h</option>
+                                                <option>07h</option>
+                                                <option>08h</option>
+                                                <option>09h</option>
+                                                <option>10h</option>
+                                                <option>11h</option>
+                                                <option>12h</option>
+                                                <option>13h</option>
+                                                <option>14h</option>
+                                                <option>15h</option>
+                                                <option>16h</option>
+                                                <option>17h</option>
+                                                <option>18h</option>
+                                                <option>19h</option>
+                                                <option>20h</option>
+                                                <option>21h</option>
+                                                <option>22h</option>
+                                                <option>23h</option>
+                                            </select>
+                                        </span>
+                                        <span class="select">
+                                            
+                                            <select id="" title="">
+                                                <option selected="selected">00m</option>
+                                                <option>10m</option>
+                                                <option>20m</option>
+                                                <option>30m</option>
+                                                <option>40m</option>
+                                                <option>50m</option>
+                                            </select>
+                                        </span>
+                                        <ins class="hyphen ml5 mr5">~</ins>
+                                        <input type="hidden" id="" class="" value=""><!--인풋 히든 위치는 달력버튼 앞, -->
+                                        <a href="#cal3" title="레이어 팝업 열림" class="cal3 btn_calendar btn_layer">반납일시</a>   
+                                        <span class="select mr3 ml3">
+                                            
+                                            <select id="" title="상담일자">
+                                                <option selected="selected">00h</option>
+                                                <option>01h</option>
+                                                <option>02h</option>
+                                                <option>03h</option>
+                                                <option>04h</option>
+                                                <option>05h</option>
+                                                <option>06h</option>
+                                                <option>07h</option>
+                                                <option>08h</option>
+                                                <option>09h</option>
+                                                <option>10h</option>
+                                                <option>11h</option>
+                                                <option>12h</option>
+                                                <option>13h</option>
+                                                <option>14h</option>
+                                                <option>15h</option>
+                                                <option>16h</option>
+                                                <option>17h</option>
+                                                <option>18h</option>
+                                                <option>19h</option>
+                                                <option>20h</option>
+                                                <option>21h</option>
+                                                <option>22h</option>
+                                                <option>23h</option>
+                                            </select>
+                                        </span>
+                                        <span class="select">
+                                            
+                                            <select id="" title="">
+                                                <option selected="selected">00m</option>
+                                                <option>10m</option>
+                                                <option>20m</option>
+                                                <option>30m</option>
+                                                <option>40m</option>
+                                                <option>50m</option>
+                                            </select>
+                                        </span>
+                                    </td> 
+                                </tr> 
+                                <tr>
+                                    <th scope="row"><label for="">Destination</label></th>
+                                    <td> 
+                                        <input type="text" name="" id="" value="" placeholder="행선지를 입력해 주세요." style="width:300px;"> 
+                                    </td> 
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="">Number of Passengers</label></th>
+                                    <td> 
+                                        <input type="text" name="" id="" value="" placeholder="" style="width:50px;" class="tac">
+                                        people
+                                    </td> 
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="">Payment Method</label></th>
+                                    <td> 
+                                        <ul class="radio_hr">
+                                            <li>
+                                                <input type="radio" id="rdoPay1" name="rdoPay">
+                                                <label for="rdoPay1" class="mr20"><span class="icon"></span>Credit card</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="rdoPay2" name="rdoPay">
+                                                <label for="rdoPay2"><span class="icon"></span>Cash</label>
+                                            </li>
+                                        </ul> 
+                                    </td> 
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    
+                    <h3 class="mb15">Vehicle Information </h3>
+                    <div class="grid noBorderT mb60">
+                        <table class="tb_noBorder">
+                            <caption></caption>
+                            <colgroup>
+                                <col style="width:110px">
+                                <col style="width:auto">  
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><label for="">Vehicle type</label></th>
+                                    <td>
+                                        <span class="select">
+                                            <select id="" title="등급 선택">
+                                                <option selected="selected">Vehicle grade</option>
+                                                <option>FULL</option>
+                                                <option>VAN</option>
+                                                <option>IMPORTED CAR</option>
+                                            </select>
+                                        </span> 
+                                        <span class="select mr5 ml5 disabled">
+                                            <select id="" title="모델 선택" disabled>
+                                                <option selected="selected">Vehicle model</option>
+                                            </select>
+                                        </span> 
+                                        <input type="text" name="" id="" value="" placeholder="If you can't find the type of vehicle you want, please enter it." style="width:300px;">
+                                    </td> 
+                                </tr>   
+                                <tr>
+                                    <th scope="row"><label for="">Comments</label></th>
+                                    <td>
+                                         <textarea name="" placeholder="특이사항을 입력해 주세요."></textarea>
+                                    </td> 
+                                </tr> 
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <h3 class="mb0">User Agreement for Chauffeured Service</h3>
+                    <div class="user_agreement mb70">
+                        <p>
+                            <input type="checkbox" id="agree1" class="check2Driver">
+                            <label for="agree1" class="mr15"><span class="icon"></span>개인정보 수집 및 이용 동의(requirement)</label>
+                        </p>
+                        <div class="box scroll mb5"> 
+                            <p class="tit">본인은 롯데렌터카가 아래의 내용과 같이 본인의 개인정보를 수집∙이용하는데 동의합니다.</p>
+                            <ul class="txt_list">
+                                <li class="black f14">Purpose of gathering personal information
+                                    <ul class="txt_list">
+                                        <li class="check f13">LOTTE rent-a-car is garthering customer's information such reason as below<br>- To provide chauffeur service rental quotation</li>
+                                        <li class="check f13">LOTTE rent-a-car will not use customer's information except above purpose by Korean relation Act.</li>
+                                    </ul>
+                                </li>
+                                <li class="black f14">Personal information clause and the way of gathering
+                                    <ul class="txt_list">
+                                        <li class="check f13">Personal info clause<br>- name, registration number or company registration number: One's own verification and to provide chauffeur service rental quotation</li>
+                                        <li class="check f13">gathering method<br>- It will be confirmed if customer agree to tick below "I agree" box</li>
+                                    </ul>
+                                </li>
+                                <li class="black f14">Period of Personal information
+                                    <ul class="txt_list">               
+                                        <li class="check f13">LOTTE rent-a-car will maintain the personal information for 3 years.</li>
+                                    </ul>
+                                </li>
+                                <li class="red f12">귀하는 동의를 거부할 권리가 있으나, 위 사항에 동의하지 않으실 경우 롯데렌터카 견적신청, 견적회신 또는 상담 등이 불가능 할 수 있음을 알려드립니다.</li>
+                            </ul>
+                        </div> 
+                    </div>
+                    
+ 
+                    
+                    <div class="btn_wrap">
+                            <button type="button" class="btn_red btn_300">Rental with a driver</button>
+                    </div>  
+                    
+                </div> 
+                <!--// 본문삽입 --> 
+            </div>
+		</article>
+	</div>
+	<footer>
+		<div class="inner_footer">
+			<div class="sitemap">
+				<ul>
+					<li><a href="#">COMPANY</a> ㅣ</li>
+					<li><a href="#">USER AGREEMENT</a> ㅣ</li>
+					<li><a href="#">CONTACT US</a></li>
+				</ul>
+			</div>
+
+			<div class="sns">
+				<ul>
+					<li>
+						<a class="twitter" href="#" target="_blank"><img src="../../images/common/img_footer_sns_twitter.png"></a>
+					</li>
+					<li>
+						<a class="facebook" href="#" target="_blank"><img src="../../images/common/img_footer_sns_facebook.png"></a>
+					</li>
+					<li>
+						<a class="blog" href="#" target="_blank"><img src="../../images/common/img_footer_sns_blog.png"></a>
+					</li>					
+				</ul>
+			</div>
+
+			<div class="information">
+				<span class="entrepreneur_info">
+					LOTTE rental co.,ltd. | President : Pyo, Hyun-Myung | Business Registration # : 214-87-79183
+				</span>
+				<span class="address">Communication Service # : 2010-Gyunggi Anyang 420 | Address : 8F Shinwonvision Tower 898. Hogye-dong, Dongan-Gu, Anyang </span>
+				<span class="phone">Main Contact 1588-1230 | FAX 02-2141-9022</span>
+				<span class="copyright">copyright ⓒ 2016 LOTTE rental co.ltd.All Rrights Reserved.</span>
+			</div>
+
+			<div class="certifications">
+				<ul>
+					<li>
+						<img src="../../images/common/img_footer_cert_1.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_2.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_3.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_4.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_5.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_6.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_7.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_8.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_9.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_10.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_11.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_12.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_13.png">
+					</li>	
+				</ul>
+			</div>
+		
+			<div class="big-banner">
+				<img src="../../images/common/img_footer_big_banner.png">
+			</div>
+		</div>
+	</footer>
+
+
+    
+<!-- Layer : dimm -->
+<div class="dimm"></div>  
+    
+ 
+
+
+<!-- Layer : 기간선택 -->
+<div id="cal3" class="layer layer_b">
+    <div class="layer_tit">
+        <h2>Date & Time</h2>
+        <a href="#"  class="btn_layer_close"><img src="../../../rent_pc/images/common/btn_layer_close.png" alt="레이어 팝업 닫힘"></a>
+    </div>
+    <div class="layer_con">
+        <div class="wrap_cal"> 
+            <div class="left_cal">
+                <h6>Pickup Date & Time</h6>
+                <div class="calendar_b">
+                </div>
+                <div class="cal_date">
+                    <strong class="date"></strong>
+                    <span class="select">
+                        
+                        <select id="hh1" class="sel_hour">
+                            <option value="00" selected="selected">00h</option>
+                            <option value="01">01h</option>
+                            <option value="02">02h</option>
+                            <option value="03">03h</option>
+                        </select>
+                    </span>
+                    <span class="select">
+                        
+                        <select id="mm1" class="sel_minute">
+                            <option value="00" selected="selected">00m</option>
+                            <option value="01">01m</option>
+                            <option value="02">02m</option>
+                            <option value="03">03m</option>
+                        </select>
+                    </span>
+                </div>
+            </div>
+            <div class="arrow"></div>
+            <div class="right_cal">
+                <h6>Return Date & Time</h6>
+                <div class="calendar_b">
+                </div>
+                <div class="cal_date">
+                    <strong class="date">YYYY-MM-DD</strong>
+                    <span class="select">
+                        
+                        <select id="hh1" class="sel_hour">
+                            <option value="00" selected="selected">00h</option>
+                            <option value="01">01h</option>
+                            <option value="02">02h</option>
+                            <option value="03">03h</option>
+                        </select>
+                    </span>
+                    <span class="select">
+                        
+                        <select id="mm1" class="sel_minute">
+                            <option value="00" selected="selected">00m</option>
+                            <option value="01">01m</option>
+                            <option value="02">02m</option>
+                            <option value="03">03m</option>
+                        </select>
+                    </span>
+                </div>
+            </div>                                            
+        </div>
+        <ul class="txt_list ml100">
+            <li class="red">
+                서울권역은 현재시간부터 4시간, 대전/충청/세종 및 광주/전라지역은 3시간, 그 외 권역은 6시간 이후 예약이 가능 합니다
+            </li>
+        </ul>
+        <div class="layer_foot nb">
+            <a href="#" class="btn_layer_close btn_cal_confirm btn_red btn_200">확인</a>
+            <!--
+                비활성화 시
+                <a href="#" class="btn_layer_close btn_cal_confirm btn_red btn_200 disabled">확인</a>
+            -->
+        </div>  
+    </div>
+</div> 
+    
+
+
+</body>
+</html>

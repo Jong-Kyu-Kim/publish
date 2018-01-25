@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+/****************************************/
+/*	Name: LOTTE HOTEL
+/*	PART: SITE COMMON STYLE
+/*	Version: 1.0
+/*	Author: LeeYumi
+/****************************************/
+
+/*Float Release*/
+.ex {*zoom:1;}
+.ex:after {display:block; content:""; clear:both;}
+
+/* brand story */
+.bStory_box .story_info {padding:430px 30px 10px; background:url(/front/img/ko/brand/img_bStory01.jpg) 0 0 no-repeat #ebeae9;}
+.bStory_box .story_info .tit2dep {height:21px; background:url(/front/img/ko/brand/img_bstory_h2tit.png) 0 0 no-repeat;}
+.bStory_box .split.col3 {border-left:1px solid #dfdfdf;}
+.bStory_box .split.col3 .colSec {width:197px; padding:10px 19px 8px 19px; margin:0; border-right:1px solid #dfdfdf; font-style:italic; }
+.bStory_box .split.col3 .colSec > strong {display:block; margin-bottom:16px; color:#58504a; font-weight:normal;}
+.bStory_box .service_info .colSec {width:470px; height:200px; }
+.bStory_box .service_info .colSec.txt_dsc {position:relative; width:220px; margin-bottom:0}
+.bStory_box .service_info .infoList {border-top:1px solid #e4e4e4; border-bottom:1px solid #e4e4e4; }
+.bStory_box .service_info .infoList .split.col2 {padding:20px 0; background:url(/front/img/com/bg_dot3x1_ccc.png) 0 0 repeat-x;}
+.bStory_box .service_info .infoList .split.col2:first-child {background:none;}
+.bStory_box .service_info .infoList .tit3dep {margin:5px 0 9px; font-weight:normal;}
+.bStory_box .more {position:absolute; left:0; bottom:0; font-style:italic;}
+
+/*List Tipe*/
+/*Img List */
+.infoList_line li {margin-top:30px; border-bottom:1px solid #444;}
+.infoList_line li:first-child {margin:0}
+.img_infoList {}
+.img_infoList dt {float:left; padding:15px 10px 0 15px;  width:230px; max-height:80px; color:#333; font-weight:bold;}
+.img_infoList .listExplain {padding:15px 0 4px 260px; background:#fcfcfc;}
+.img_infoList .listExplain .txt_dsc {margin-bottom:10px; color:#333;}
+
+/* service > accommodation */
+.menuBox {border:1px solid #ccc; border-right:0;}
+.menuBox.split > .colSec:first-child {width:236px;}
+.menuBox.split > .colSec {width:235px; height:210px; overflow-y:scroll; margin:0; border-right:1px solid #ccc;}
+.menuBox.split.col2 > .colSec {width:353px;}
+.menuBox.split.col2 > .colSec:first-child {width:354px;}
+.menuBox .lst_menu li a {display:block; padding:7px 15px 8px; color:#333;}
+.menuBox .lst_menu li a.on {color:#fff; background-color:#666;}
+.serviceView {padding-top:52px; padding-bottom:10px; border:1px solid #ccc; border-top:0; background:url(/front/img/com/bg_grad1x11_666.png) 0 0 repeat-x #f5f5f5; }
+.facilt4_box.serviceView > .split.col2 {margin-bottom:0; background-position:472px 0; *padding-bottom:10px;}
+.facilt4_box.serviceView > .split.col2 > .colSec {width: 434px; padding:0 20px 0 19px; margin-top:-35px;}
+.facilt4_box.serviceView > .split.col2 > .colSec.simple_info {width:205px; padding:0 15px; margin-top:-4px;}
+.facilt4_box.serviceView .bigimg_box {margin-bottom:15px;}
+.facilt4_box.serviceView .info_list {float:left; width:100%; margin:0;}
+.facilt4_box.serviceView .info_list.type02 {padding-top:0;}
+.facilt4_box.serviceView .info_list li {margin-bottom:17px;}
+.facilt4_box.serviceView .info_list.type02 li {margin-bottom:11px;}
+.facilt4_box.serviceView .info_list.type02 li strong {width:55px; padding-right:15px}
+.facilt4_box.serviceView .info_list.type02 li span {width:135px;}
+.facilt4_box.serviceView .txt_dsc {margin-bottom:40px; *margin-bottom:30px; color:#222;}
+.facilt4_box.serviceView .more {position:absolute; right:0; bottom:-30px; *bottom:0; font-weight:bold; text-decoration:underline; color:#66574a;}
+.facilt4_box.serviceView img {display:block; margin:4px 0 16px; border:1px solid #cecece;}
+.facilt4_box.serviceView img + .info_list.type02 {background:none;}
+
+
+/* FONT-FAMILY */
+.bStory_box .split.col3 .colSec > strong,
+.bStory_box .more,
+.ex{font-family: Georgia;}
+.ex{font-family:Malgun Gothic;}
+.ex{font-family:arial;}
+
+/** FONT_SIZE **/
+/* font-size:11px */
+.facilt4_box.serviceView .info_list li strong,
+.facilt4_box.serviceView .more,
+.ex {font-size:11px;}
+
+/* font-size:12px */
+.ex{font-size:12px;}
+
+/* font-size:13px */
+.facilt4_box.serviceView .info_list.type02 li span,
+.ex{font-size:13px;}
+
+/* font_size:14px */
+.ex{font-size:14px;}
+
+/* font_size:15px */
+.ex{font-size:15px;}
+
+/* font_size:16px */
+.ex{font-size:16px;}
+
+/* font_size:18px */
+.ex {font-size:18px}
+
+/* font_size:20px */
+.bStory_box .service_info .infoList .tit3dep,
+.ex {font-size:20px}
+
+/* font_size:24px */
+.ex{font-size:24px;}
+
+/* font_size:25px */
+.ex{font-size:25px;}
+
+/* font_size:26px */
+.bStory_box .split.col3 .colSec > strong,
+.ex{font-size:26px;}
+
+/* font_size:30px */
+.ex{font-size:30px;}
+
+
+/** LINE-HEIGHT **/
+/*line-height:15px;*/
+.menuBox .lst_menu li a,
+.ex{line-height:15px;}
+
+/*line-height:17px;*/
+.facilt4_box.serviceView .info_list li strong,
+.facilt4_box.serviceView .info_list.type02 li span,
+.ex{line-height:17px;}
+
+/*line-height:18px;*/
+.bStory_box .split.col3 .colSec,
+.ex{line-height:18px;}
+
+/* line-height:20px */
+.facilt4_box.serviceView .info_list li span,
+.ex {line-height:20px;}
+
+/* line-height:22px */
+.ex {line-height:22px;}
+
+/* line-height:24px */
+.ex {line-height:24px;}
+
+/* line-height:25px */
+.ex {line-height:25px;}
+
+/* line-height:29px */
+.ex {line-height:29px;}

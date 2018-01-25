@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>롯데렌터카 - 기본 가이드 | Publishing Guide -</title>
+<link rel="stylesheet" type="text/css" href="../../../../mbKor/css/reset.css">
+<link rel="stylesheet" type="text/css" href="../../../../mbKor/css/common.css">
+<link rel="stylesheet" type="text/css" href="../../com/css/guide.css">
+
+<script type="text/javascript" src="../../../com/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../../../com/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="../../com/js/d_menu.js"></script>
+<script type="text/javascript" src="../../com/js/d_jquery.js"></script>
+<script type="text/javascript" src="../../../../mbKor/js/ui.js"></script>
+<script type="text/javascript" src="../../../../mbKor/js/calendar.m.js"></script>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+
+<body>
+
+<div title="스킵메뉴" class="skipMenu">
+    <a href="#skipContent">본문 내용 바로가기</a>
+</div>
+<hr>
+<div id="wrapGuide">
+	<!-- HEADER s --><script type="text/javascript">TopArea();gnbBox_init(2);</script><!-- HEADER e //-->
+    <hr>
+    <div id="wgContainer" class="layout2 clfix">
+    	<!-- LNB s --><script type="text/javascript">LeftMenuMobile();lnb_menu('1','1');</script><!-- LNB e //-->
+        <div id="wgContent" class="clfix">
+            <div class="titArea">
+                <h1 class="gtit">레이어팝업</h1>
+                <!--<p><script type="text/javascript">map.print(1,1,1);</script></p> -->
+            </div>
+            
+            <div id="skipContent" class="wgDsc">
+            	<!-- 여기서부터 내용 s -->
+
+				<div class="section cordView">
+					<!-- <h3 class="gtit">■ 탭메뉴</h3> -->
+					<div class="dscBox type01">
+						<ul class="lstDsc">
+							<li><strong>레이어팝업 - 달력 1개</strong><br>
+								<div class="panel">
+									<section> 
+										<h3 class="mb10">기간 선택</h3> 
+										<div class="rent_popWrap big mt5 mb5"> <!-- 작은 화면시 big 클래스 제거 -->
+											<div class="innerBox rentBox">
+												<input type="hidden" id="" class="rent_date" value="">
+												<input type="hidden" id="" class="rent_hour" value="">
+												<input type="hidden" id="" class="rent_minute" value="">
+												<a href="#none" class="cal1 btn_layer noData"><!-- Default class="noData" -->
+													<span class="tit">대여일시</span>
+													<span class="date"></span>
+													<span class="hour"></span>
+													<span class="minute"></span>
+												</a>
+											</div>
+											<div class="innerBox returnBox">
+												<input type="hidden" id="" class="return_date" value="">
+												<input type="hidden" id="" class="return_hour" value="">
+												<input type="hidden" id="" class="return_minute" value="">                                            
+												<a href="#none" class="cal1 btn_layer noData"><!-- Default class="noData" -->
+													<span class="tit">반납일시</span>
+													<span class="date"></span>
+													<span class="hour"></span>
+													<span class="minute"></span>
+												</a>
+											</div>
+										</div>
+										<ul class="txt_list">
+											<li class="red f12">
+												대여시간이 24시간 이상인 경우에만 할인이 적용됩니다.
+											</li>
+										</ul>
+									</section>
+									<!-- //기간 선택 -->
+									<div id="cal1" class="layer layer_b">
+										<div class="layer_tit">
+											<h2>기간선택</h2>
+											<a href="#" class="btn_layer_close"><img src="../../images/common/btn_layer_close.png" alt="닫기"></a>
+										</div>
+										<div class="layer_con">
+											<div class="wrap_cal">
+												<div class="calendar_b limit">
+												</div>
+												<div class="cal_date rent">
+													<h6>대여일시</h6>
+													<strong class="date">YYYY/MM/DD</strong>
+													<span class="select">
+														<select id="" title="" class="sel_hour">
+															<option value="00" selected="selected">00시</option>
+															<option value="01">01시</option>
+															<option value="02">02시</option>
+															<option value="03">03시</option>
+															<option value="04">04시</option>
+															<option value="05">05시</option>
+															<option value="06">06시</option>
+															<option value="07">07시</option>
+															<option value="08">08시</option>
+															<option value="09">09시</option>
+															<option value="10">10시</option>
+															<option value="11">11시</option>
+															<option value="12">12시</option>
+															<option value="13">13시</option>
+															<option value="14">14시</option>
+															<option value="15">15시</option>
+															<option value="16">16시</option>
+															<option value="17">17시</option>
+															<option value="18">18시</option>
+															<option value="19">19시</option>
+															<option value="20">20시</option>
+															<option value="21">21시</option>
+															<option value="22">22시</option>
+															<option value="23">23시</option>
+														</select>
+													</span>
+													<span class="select">
+														<select id="" title="" class="sel_minute">
+															<option value="00" selected="selected">00분</option>
+															<option value="10">10분</option>
+															<option value="20">20분</option>
+															<option value="30">30분</option>
+															<option value="40">40분</option>
+															<option value="50">50분</option>
+														</select>
+													</span>
+												</div>             
+												<div class="cal_date return">
+													<h6>대여일시</h6>
+													<strong class="date">YYYY/MM/DD</strong>
+													<span class="select">
+														<select id="" title="" class="sel_hour">
+															<option value="00" selected="selected">00시</option>
+															<option value="01">01시</option>
+															<option value="02">02시</option>
+															<option value="03">03시</option>
+															<option value="04">04시</option>
+															<option value="05">05시</option>
+															<option value="06">06시</option>
+															<option value="07">07시</option>
+															<option value="08">08시</option>
+															<option value="09">09시</option>
+															<option value="10">10시</option>
+															<option value="11">11시</option>
+															<option value="12">12시</option>
+															<option value="13">13시</option>
+															<option value="14">14시</option>
+															<option value="15">15시</option>
+															<option value="16">16시</option>
+															<option value="17">17시</option>
+															<option value="18">18시</option>
+															<option value="19">19시</option>
+															<option value="20">20시</option>
+															<option value="21">21시</option>
+															<option value="22">22시</option>
+															<option value="23">23시</option>
+														</select>
+													</span>
+													<span class="select">
+														<select id="" title="" class="sel_minute">
+															<option value="00" selected="selected">00분</option>
+															<option value="10">10분</option>
+															<option value="20">20분</option>
+															<option value="30">30분</option>
+															<option value="40">40분</option>
+															<option value="50">50분</option>
+														</select>
+													</span>
+												</div> 
+											</div>
+											<ul class="txt_list">
+												<li class="red">서울권역은 현재시간부터 4시간, 대전/충청/세종 및 광주/전라지역은 3시간, 그 외 권역은 6시간 이후 예약이 가능 합니다.</li>
+											</ul>            
+											<div class="btn_wrap">
+												<a href="#" class="btn_cal_confirm btn_red btn_230">확인</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<pre class="brush: html;">
+									<section> 
+										<h3 class="mb10">기간 선택</h3> 
+										<div class="rent_popWrap big mt5 mb5"> <!-- 작은 화면시 big 클래스 제거 -->
+											<div class="innerBox rentBox">
+												<input type="hidden" id="" class="rent_date" value="">
+												<input type="hidden" id="" class="rent_hour" value="">
+												<input type="hidden" id="" class="rent_minute" value="">
+												<a href="#none" class="cal1 btn_layer noData"><!-- Default class="noData" -->
+													<span class="tit">대여일시</span>
+													<span class="date"></span>
+													<span class="hour"></span>
+													<span class="minute"></span>
+												</a>
+											</div>
+											<div class="innerBox returnBox">
+												<input type="hidden" id="" class="return_date" value="">
+												<input type="hidden" id="" class="return_hour" value="">
+												<input type="hidden" id="" class="return_minute" value="">                                            
+												<a href="#none" class="cal1 btn_layer noData"><!-- Default class="noData" -->
+													<span class="tit">반납일시</span>
+													<span class="date"></span>
+													<span class="hour"></span>
+													<span class="minute"></span>
+												</a>
+											</div>
+										</div>
+										<ul class="txt_list">
+											<li class="red f12">
+												대여시간이 24시간 이상인 경우에만 할인이 적용됩니다.
+											</li>
+										</ul>
+									</section>
+									<!-- //기간 선택 -->
+									<div id="cal1" class="layer layer_b">
+										<div class="layer_tit">
+											<h2>기간선택</h2>
+											<a href="#" class="btn_layer_close"><img src="../../images/common/btn_layer_close.png" alt="닫기"></a>
+										</div>
+										<div class="layer_con">
+											<div class="wrap_cal">
+												<div class="calendar_b limit">
+												</div>
+												<div class="cal_date rent">
+													<h6>대여일시</h6>
+													<strong class="date">YYYY/MM/DD</strong>
+													<span class="select">
+														<select id="" title="" class="sel_hour">
+															<option value="00" selected="selected">00시</option>
+															<option value="01">01시</option>
+															<option value="02">02시</option>
+															<option value="03">03시</option>
+															<option value="04">04시</option>
+															<option value="05">05시</option>
+															<option value="06">06시</option>
+															<option value="07">07시</option>
+															<option value="08">08시</option>
+															<option value="09">09시</option>
+															<option value="10">10시</option>
+															<option value="11">11시</option>
+															<option value="12">12시</option>
+															<option value="13">13시</option>
+															<option value="14">14시</option>
+															<option value="15">15시</option>
+															<option value="16">16시</option>
+															<option value="17">17시</option>
+															<option value="18">18시</option>
+															<option value="19">19시</option>
+															<option value="20">20시</option>
+															<option value="21">21시</option>
+															<option value="22">22시</option>
+															<option value="23">23시</option>
+														</select>
+													</span>
+													<span class="select">
+														<select id="" title="" class="sel_minute">
+															<option value="00" selected="selected">00분</option>
+															<option value="10">10분</option>
+															<option value="20">20분</option>
+															<option value="30">30분</option>
+															<option value="40">40분</option>
+															<option value="50">50분</option>
+														</select>
+													</span>
+												</div>             
+												<div class="cal_date return">
+													<h6>대여일시</h6>
+													<strong class="date">YYYY/MM/DD</strong>
+													<span class="select">
+														<select id="" title="" class="sel_hour">
+															<option value="00" selected="selected">00시</option>
+															<option value="01">01시</option>
+															<option value="02">02시</option>
+															<option value="03">03시</option>
+															<option value="04">04시</option>
+															<option value="05">05시</option>
+															<option value="06">06시</option>
+															<option value="07">07시</option>
+															<option value="08">08시</option>
+															<option value="09">09시</option>
+															<option value="10">10시</option>
+															<option value="11">11시</option>
+															<option value="12">12시</option>
+															<option value="13">13시</option>
+															<option value="14">14시</option>
+															<option value="15">15시</option>
+															<option value="16">16시</option>
+															<option value="17">17시</option>
+															<option value="18">18시</option>
+															<option value="19">19시</option>
+															<option value="20">20시</option>
+															<option value="21">21시</option>
+															<option value="22">22시</option>
+															<option value="23">23시</option>
+														</select>
+													</span>
+													<span class="select">
+														<select id="" title="" class="sel_minute">
+															<option value="00" selected="selected">00분</option>
+															<option value="10">10분</option>
+															<option value="20">20분</option>
+															<option value="30">30분</option>
+															<option value="40">40분</option>
+															<option value="50">50분</option>
+														</select>
+													</span>
+												</div> 
+											</div>
+											<ul class="txt_list">
+												<li class="red">서울권역은 현재시간부터 4시간, 대전/충청/세종 및 광주/전라지역은 3시간, 그 외 권역은 6시간 이후 예약이 가능 합니다.</li>
+											</ul>            
+											<div class="btn_wrap">
+												<a href="#" class="btn_cal_confirm btn_red btn_230">확인</a>
+											</div>
+										</div>
+									</div>
+								</pre>
+							</li>
+							<li><strong>레이어팝업</strong><br>
+								<div class="panel">
+									<!-- 지점 선택 -->
+									<section>
+										<h3 class="mb10">지점 선택</h3>
+										<div class="deliveryWrap">                                  
+											<input type="checkbox" name="" id="chk1" class="ds_check"><label for="chk1" class="mr5"><span class="icon"></span>딜리버리 서비스(DS)</label>
+											<span>
+												<a href="layerEtcDv" class="layerEtcDv btn_tooltip btn_layer">툴팁</a>
+											</span>
+											<span class="btn_myStore"><a href="#layerMyStore" class="layerMyStore btn_layer btn_white small">나의 지점</a></span>
+
+											<!-- 딜리버리 서비스 체크시 노출 영역 -->
+											<div class="inner ds_radio mt5">
+												<input type="radio" name="s_selLocation" id="s_selLocation1">
+												<label for="s_selLocation1" class="mr20"><span class="icon"></span>대여 + 반납</label>
+
+												<input type="radio" name="s_selLocation" id="s_selLocation2">
+												<label for="s_selLocation2" class="mr20"><span class="icon"></span>대여</label>
+
+												<input type="radio" name="s_selLocation" id="s_selLocation3">
+												<label for="s_selLocation3" class="mr20"><span class="icon"></span>반납</label>
+											</div>
+											<!-- //딜리버리 서비스 체크시 노출 영역 -->
+										</div> 
+										<div class="rent_popWrap areaBox mt10 mb5">
+											<div class="innerBox rentBox">
+												<a href="#layerSelBranch" class="layerSelBranch noData btn_layer "><!-- Default class="noData" -->
+													<span class="tit">대여지점</span>
+												</a>
+											</div>
+											<div class="innerBox returnBox">
+												<a href="#layerSelBranchDS" class="layerSelBranch noData btn_layer">
+													<span class="tit">반납지점</span>
+													<!-- <span class="area">논현(학동역)</span> -->
+												</a>
+											</div>
+										</div>
+										<ul class="txt_list mb30">
+											<li class="red f12">
+												대여지점과 다른 지점으로 반납하실 경우 별도의 수수료가 부가됩니다.
+											</li>
+										</ul>
+									</section>
+									<!-- //지점 선택 -->
+								</div>
+								<pre class="brush: html;">
+									<!-- 지점 선택 -->
+									<section class="mb40">
+										<h3 class="mb10">지점 선택</h3>
+										<div class="deliveryWrap">                                  
+											<input type="checkbox" name="" id="chk1" class="ds_check"><label for="chk1" class="mr5"><span class="icon"></span>딜리버리 서비스(DS)</label>
+											<span>
+												<a href="layerEtcDv" class="layerEtcDv btn_tooltip btn_layer">툴팁</a>
+											</span>
+											<span class="btn_myStore"><a href="#layerMyStore" class="layerMyStore btn_layer btn_white small">나의 지점</a></span>
+
+											<!-- 딜리버리 서비스 체크시 노출 영역 -->
+											<div class="inner ds_radio mt5">
+												<input type="radio" name="s_selLocation" id="s_selLocation1">
+												<label for="s_selLocation1" class="mr20"><span class="icon"></span>대여 + 반납</label>
+
+												<input type="radio" name="s_selLocation" id="s_selLocation2">
+												<label for="s_selLocation2" class="mr20"><span class="icon"></span>대여</label>
+
+												<input type="radio" name="s_selLocation" id="s_selLocation3">
+												<label for="s_selLocation3" class="mr20"><span class="icon"></span>반납</label>
+											</div>
+											<!-- //딜리버리 서비스 체크시 노출 영역 -->
+										</div> 
+										<div class="rent_popWrap areaBox mt10 mb5">
+											<div class="innerBox rentBox">
+												<a href="#layerSelBranch" class="layerSelBranch noData btn_layer "><!-- Default class="noData" -->
+													<span class="tit">대여지점</span>
+												</a>
+											</div>
+											<div class="innerBox returnBox">
+												<a href="#layerSelBranchDS" class="layerSelBranch noData btn_layer">
+													<span class="tit">반납지점</span>
+													<!-- <span class="area">논현(학동역)</span> -->
+												</a>
+											</div>
+										</div>
+										<ul class="txt_list mb30">
+											<li class="red f12">
+												대여지점과 다른 지점으로 반납하실 경우 별도의 수수료가 부가됩니다.
+											</li>
+										</ul>
+									</section>
+									<!-- //지점 선택 -->
+								</pre>
+							</li>
+						</ul>
+					</div>
+					<div class="dscBox type01">
+						<ul class="lstDsc">
+							<li><strong>레이어팝업</strong><br>
+								<div class="panel">
+									<a href="#layer_s1" title="레이어 팝업 열림" class="layer_s1 btn_layer">작은레이어1</a>
+									<button title="레이어 팝업 열림" class="layer_s2 btn_layer">작은레이어2</button>
+									<a href="#layer_b1" title="레이어 팝업 열림" class="layer_b1 btn_layer">큰레이어1</a>
+									<button title="레이어 팝업 열림" class="layer_b2 btn_layer">큰레이어2</button> 
+									<div id="layer_b1" class="layer layer_b">
+										<div class="layer_tit">
+											<h2>큰레이어1</h2>
+											<a href="#" class="btn_layer_close"><img src="http://t.lotterentacar.net/publish/images/cmmn/btn_layer_close.png" alt="닫기"></a>
+										</div>
+										<div class="layer_con">
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+										</div>
+									</div>
+									<div id="layer_b2" class="layer layer_b">
+										<div class="layer_tit">
+											<h2>큰레이어2</h2>
+											<a href="#" class="btn_layer_close"><img src="http://t.lotterentacar.net/publish/images/cmmn/btn_layer_close.png" alt="닫기"></a>
+										</div>
+										<div class="layer_con">
+											1레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											2레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											3레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											4레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											5레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											6레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        
+											7레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											8레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											9레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+										</div>
+									</div>        
+									<div id="layer_s1" class="layer layer_s">
+										<div class="layer_tit">
+											<h2>작은 레이어 1</h2>
+											<a href="#" class="btn_layer_close"><img src="http://t.lotterentacar.net/publish/images/cmmn/btn_layer_close.png" alt="닫기"></a>
+										</div>
+										<div class="layer_con">
+											<h3>tests</h3>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용
+										</div>
+									</div>         
+									<div id="layer_s2" class="layer layer_s">
+										<div class="layer_tit">
+											<h2>작은 레이어 2</h2>
+											<a href="#" class="btn_layer_close"><img src="http://t.lotterentacar.net/publish/images/cmmn/btn_layer_close.png" alt="닫기"></a>
+										</div>
+										<div class="layer_con">
+											<h3>tests</h3>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용
+										</div>
+									</div>
+
+								</div>
+								<pre class="brush: html;">
+									<!--레이어 열림 버튼의 첫번째 클래스명과 열리는 레이어팝업 아이디 속성을 같게 해주세요. -->
+									<a href="#layer_s1" title="레이어 팝업 열림" class="layer_s1 btn_layer">작은레이어1</a>
+									<button title="레이어 팝업 열림" class="layer_s2 btn_layer">작은레이어2</button>
+									<a href="#layer_b1" title="레이어 팝업 열림" class="layer_b1 btn_layer">큰레이어1</a>
+									<button title="레이어 팝업 열림" class="layer_b2 btn_layer">큰레이어2</button> 
+									<div id="layer_b1" class="layer layer_b">
+										<div class="layer_tit">
+											<h2>큰레이어1</h2>
+											<a href="#" class="btn_layer_close"><img src="http://t.lotterentacar.net/publish/images/cmmn/btn_layer_close.png" alt="닫기"></a>
+										</div>
+										<div class="layer_con">
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+										</div>
+									</div>
+									<div id="layer_b2" class="layer layer_b">
+										<div class="layer_tit">
+											<h2>큰레이어2</h2>
+											<a href="#" class="btn_layer_close"><img src="http://t.lotterentacar.net/publish/images/cmmn/btn_layer_close.png" alt="닫기"></a>
+										</div>
+										<div class="layer_con">
+											1레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											2레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											3레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											4레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											5레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											6레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        
+											7레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											8레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											9레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>        
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용<br>
+										</div>
+									</div>        
+									<div id="layer_s1" class="layer layer_s">
+										<div class="layer_tit">
+											<h2>작은 레이어 1</h2>
+											<a href="#" class="btn_layer_close"><img src="http://t.lotterentacar.net/publish/images/cmmn/btn_layer_close.png" alt="닫기"></a>
+										</div>
+										<div class="layer_con">
+											<h3>tests</h3>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용
+										</div>
+									</div>         
+									<div id="layer_s2" class="layer layer_s">
+										<div class="layer_tit">
+											<h2>작은 레이어 2</h2>
+											<a href="#" class="btn_layer_close"><img src="http://t.lotterentacar.net/publish/images/cmmn/btn_layer_close.png" alt="닫기"></a>
+										</div>
+										<div class="layer_con">
+											<h3>tests</h3>
+											레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용레이어내용
+										</div>
+									</div>
+
+								</pre>
+                            </li>               
+                        </ul>
+                    </div>              
+                </div>                     
+                <!-- 여기서부터 내용 e -->
+            </div><!--// wgDsc div -->
+        </div><!--// wgContent div -->
+        
+    </div><!--// wgContainer div  -->
+    
+</div><!--// wrapGuide div -->
+</body>
+</html>

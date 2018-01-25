@@ -1,0 +1,768 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>롯데렌터카 - 탭/버튼 가이드 | Publishing Guide -</title>
+<link rel="stylesheet" type="text/css" href="../../../../pcKor/css/reset.css">
+<link rel="stylesheet" type="text/css" href="../../../../pcKor/css/common.css">
+<link rel="stylesheet" type="text/css" href="../../com/css/guide.css">
+
+<script type="text/javascript" src="../../../com/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../../../com/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="../../com/js/d_menu.js"></script>
+<script type="text/javascript" src="../../com/js/d_jquery.js"></script>
+<script type="text/javascript" src="../../../../pcKor/js/ui.js"></script>
+
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body>
+
+<div title="스킵메뉴" class="skipMenu">
+    <a href="#skipContent">본문 내용 바로가기</a>
+</div>
+<hr>
+<div id="wrapGuide">
+	<!-- HEADER s --><script type="text/javascript">TopArea();gnbBox_init(1);</script><!-- HEADER e //-->
+    <hr>
+    <div id="wgContainer" class="layout2 clfix">
+    	<!-- LNB s --><script type="text/javascript">LeftMenuRULE();lnb_menu('7','1');</script><!-- LNB e //-->
+        <div id="wgContent" class="clfix">
+            <div class="titArea">
+                <h1 class="gtit">탭/버튼 가이드</h1>
+                <!--<p><script type="text/javascript">map.print(1,1,1);</script></p> -->
+            </div>
+            
+            <div id="skipContent" class="wgDsc">
+            	<!-- 여기서부터 내용 s -->
+
+                <div class="section cordView">
+                	<h3 class="gtit">■ 탭메뉴</h3>
+                    <div class="dscBox type01">
+                        <ul class="lstDsc">
+                            <li><strong>대탭메뉴</strong><br>
+                                <div class="panel">
+                                    <div class="wrap_tab">
+                                        <ul class="tab_menu">
+                                            <li class="active"><a href="#tab-1">탭 1</a></li>
+                                            <li class=""><a href="#tab-2">탭 Two</a></li>
+                                            <li class=""><a href="#tab-3">탭 Three</a></li>
+                                            <li class=""><a href="#tab-4">탭 Four</a></li>
+                                        </ul>
+                                        <div class="tab_content" id="tab-1">1111</div>
+                                        <div class="tab_content" id="tab-2">2222</div>
+                                        <div class="tab_content" id="tab-3">3333</div>
+                                        <div class="tab_content" id="tab-4">4444</div>
+                                    </div>
+                                </div>
+                                <pre class="brush: html;">
+                                    &lt;div class="wrap_tab">
+                                        &lt;ul class="tab_menu">
+                                            &lt;li class="active">&lt;a href="#tab-1">탭 1&lt;/a>&lt;/li>
+                                            &lt;li class="">&lt;a href="#tab-2">탭 Two&lt;/a>&lt;/li>
+                                            &lt;li class="">&lt;a href="#tab-3">탭 Three&lt;/a>&lt;/li>
+                                            &lt;li class="">&lt;a href="#tab-4">탭 Four&lt;/a>&lt;/li>
+                                        &lt;/ul>
+                                        &lt;div class="tab_content" id="tab-1">1111&lt;/div>
+                                        &lt;div class="tab_content" id="tab-2">2222&lt;/div>
+                                        &lt;div class="tab_content" id="tab-3">333&lt;/div>
+                                        &lt;div class="tab_content" id="tab-4">444&lt;/div>
+                                    &lt;/div>
+                                </pre>
+                            </li>               
+                            <li><strong>소탭메뉴</strong><br>
+                                <div class="panel">
+                                    <div class="wrap_stab">
+                                        <ul class="stab_menu">
+                                            <li class="active"><a href="#stab-1">sTab 1</a></li>
+                                            <li><a href="#stab-2">sTab Two</a></li>
+                                            <li><a href="#stab-3">sTab Three</a></li>
+                                            <li><a href="#stab-4">sTab Four</a></li>
+                                        </ul>
+                                        <div class="stab_content" id="stab-1">1111</div>
+                                        <div class="stab_content" id="stab-2">2222</div>
+                                        <div class="stab_content" id="stab-3">333</div>
+                                        <div class="stab_content" id="stab-4">444</div>
+                                    </div>
+                                </div>   
+                                <pre class="brush: html;">
+                                    &lt;div class="wrap_stab">
+                                        &lt;ul class="stab_menu">
+                                            &lt;li class="active">&lt;a href="#stab-1">sTab 1&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="#stab-2">sTab Two&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="#stab-3">sTab Three&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="#stab-4">sTab Four&lt;/a>&lt;/li>
+                                        &lt;/ul>
+                                        &lt;div class="stab_content" id="stab-1">1111&lt;/div>
+                                        &lt;div class="stab_content" id="stab-2">2222&lt;/div>
+                                        &lt;div class="stab_content" id="stab-3">333&lt;/div>
+                                        &lt;div class="stab_content" id="stab-4">444&lt;/div>
+                                    &lt;/div>
+                                </pre>                                                                
+                            </li>
+                             <li><strong>프로그레스 탭</strong><br>
+                                <div class="panel" style="width:1200px">
+                                    <ul class="process4 step2"> <!-- process4 : 4개유형 / step2 : 현재 스텝  -->
+                                        <li>
+                                            <em class="check"></em>
+                                            <span>차량 선택</span>
+                                        </li>
+                                        <li>
+                                            <em>02</em>
+                                            <strong>옵션 선택</strong>
+                                        </li>
+                                        <li>
+                                            <em>03</em>
+                                            <span>정보 입력</span>
+                                        </li>
+                                        <li>
+                                            <em>04</em>
+                                            <span>결제</span>
+                                        </li>
+                                    </ul>  
+                                </div>
+                                <pre class="brush: html;">
+                                    &lt;ul class="process4 step2"> &lt;!-- process4 : 4개유형 / step2 : 현재 스텝  -->
+                                        &lt;li>
+                                            &lt;em class="check">&lt;/em>
+                                            &lt;span>차량 선택&lt;/span>
+                                        &lt;/li>
+                                        &lt;li>
+                                            &lt;em>02&lt;/em>
+                                            &lt;strong>옵션 선택&lt;/strong>
+                                        &lt;/li>
+                                        &lt;li>
+                                            &lt;em>03&lt;/em>
+                                            &lt;span>정보 입력&lt;/span>
+                                        &lt;/li>
+                                        &lt;li>
+                                            &lt;em>04&lt;/em>
+                                            &lt;span>결제&lt;/span>
+                                        &lt;/li>
+                                    &lt;/ul> 
+                                </pre>
+                                <div class="panel" style="width:1200px">
+                                    <ul class="process3 step2"> <!-- process4 : 4개유형 / step2 : 현재 스텝  -->
+                                        <li>
+                                            <em class="check"></em>
+                                            <span>차량 선택</span>
+                                        </li>
+                                        <li>
+                                            <em>02</em>
+                                            <strong>옵션 선택</strong>
+                                        </li>
+                                        <li>
+                                            <em>03</em>
+                                            <span>정보 입력</span>
+                                        </li>
+                                    </ul>  
+                                </div>
+                                <pre class="brush: html;">
+                                    &lt;ul class="process3 step2"> &lt;!-- process3 : 3개유형 / step2 : 현재 스텝  -->
+                                        &lt;li>
+                                            &lt;em class="check">&lt;/em>
+                                            &lt;span>차량 선택&lt;/span>
+                                        &lt;/li>
+                                        &lt;li>
+                                            &lt;em>02&lt;/em>
+                                            &lt;strong>옵션 선택&lt;/strong>
+                                        &lt;/li>
+                                        &lt;li>
+                                            &lt;em>03&lt;/em>
+                                            &lt;span>정보 입력&lt;/span>
+                                        &lt;/li>
+                                    &lt;/ul> 
+                                </pre>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section cordView">
+                    <h3 class="gtit">■ 앵커, 버튼</h3>
+                    <div class="dscBox type01">
+                        <ul class="lstDsc">                                       
+                            <li><strong>anchor 태그 버튼</strong>
+                                <div class="panel">
+                                    <a href="" class="btn_white">흰버튼</a>
+                                    <a href="" class="btn_black">검은색버튼</a>
+                                    <a href="" class="btn_calendar">반납일시</a>
+                                    <a href="" class="btn_black disabled">검은색버튼 비활성화</a>
+                                    <a href="" class="btn_red">빨간버튼</a>   
+                                    <a href="" class="btn_red disabled">빨간버튼 비활성화</a>
+                                </div>
+                                <pre class="brush: html;">
+                                    &lt;a href="" class="btn_white">흰버튼&lt;/a>
+                                    &lt;a href="" class="btn_black">검은색버튼&lt;/a>
+                                    &lt;a href="" class="btn_calendar">반납일시&lt;/a>
+                                    &lt;a href="" class="btn_black disabled">검은색버튼 비활성화&lt;/a>
+                                    &lt;a href="" class="btn_red">빨간버튼&lt;/a>   
+                                    &lt;a href="" class="btn_red disabled">빨간버튼 비활성화&lt;/a>
+                                </pre> 
+                            </li>
+                            <li><strong>anchor 태그 큰 버튼</strong>
+                                <div class="panel">
+                                    <a href="" class="btn_white big">흰버튼</a>
+                                    <a href="" class="btn_black big">검은색버튼</a> 
+                                    <a href="" class="btn_black big disabled">검은색버튼 비활성화</a>
+                                    <a href="" class="btn_red big">빨간버튼</a>   
+                                    <a href="" class="btn_red big disabled">빨간버튼 비활성화</a>  
+                                </div>
+                                <pre class="brush: html;">
+                                    &lt;a href="" class="btn_white big">흰버튼&lt;/a>
+                                    &lt;a href="" class="btn_black big">검은색버튼&lt;/a> 
+                                    &lt;a href="" class="btn_black big disabled">검은색버튼 비활성화&lt;/a>
+                                    &lt;a href="" class="btn_red big">빨간버튼&lt;/a>   
+                                    &lt;a href="" class="btn_red big disabled">빨간버튼 비활성화&lt;/a>  
+                                </pre>
+                            </li>
+                            <li><strong>button 태그 버튼</strong>
+                                <div class="panel">
+                                    <button type="button" class="btn_white">흰버튼</button>
+                                    <button type="button" class="btn_black">검은색버튼</button>
+                                    <button type="button" class="btn_calendar">반납일시</button>
+                                    <button type="button" class="btn_black disabled" disabled="">검은색버튼 비활성화</button>
+                                    <button type="button" class="btn_red">빨간버튼</button>   
+                                    <button type="button" class="btn_red disabled" disabled="">빨간버튼 비활성화</button>    
+                                </div>
+                                <pre class="brush: html;">
+                                    &lt;button type="button" class="btn_white">흰버튼&lt;/button>
+                                    &lt;button type="button" class="btn_black">검은색버튼&lt;/button>
+                                    &lt;button type="button" class="btn_calendar">반납일시&lt;/button>
+                                    &lt;button type="button" class="btn_black disabled" disabled="">검은색버튼 비활성화&lt;/button>
+                                    &lt;button type="button" class="btn_red">빨간버튼&lt;/button>   
+                                    &lt;button type="button" class="btn_red disabled" disabled="">빨간버튼 비활성화&lt;/button>
+                                </pre>
+                            </li>
+                            <li><strong>button 태그 큰 버튼</strong>
+                                <div class="panel">
+                                    <button type="button" class="btn_white big">흰버튼</button>
+                                    <button type="button" class="btn_black big">검은색버튼</button>
+                                    <button type="button" class="btn_black big disabled" disabled="">검은색버튼 비활성화</button>
+                                    <button type="button" class="btn_red big">빨간버튼</button>   
+                                    <button type="button" class="btn_red big disabled" disabled="">빨간버튼 비활성화</button>
+                                </div>
+                                <pre class="brush: html;">
+                                    &lt;button type="button" class="btn_white big">흰버튼&lt;/button>
+                                    &lt;button type="button" class="btn_black big">검은색버튼&lt;/button>
+                                    &lt;button type="button" class="btn_black big disabled" disabled="">검은색버튼 비활성화&lt;/button>
+                                    &lt;button type="button" class="btn_red big">빨간버튼&lt;/button>   
+                                    &lt;button type="button" class="btn_red big disabled" disabled="">빨간버튼 비활성화&lt;/button>    
+                                </pre>
+                            </li>
+                            <li><strong>button 태그 큰 버튼</strong>
+                                <div class="panel">
+                                    <button type="button" class="btn_white big">흰버튼</button>
+                                    <button type="button" class="btn_black big">검은색버튼</button>
+                                    <button type="button" class="btn_black big disabled" disabled="">검은색버튼 비활성화</button>
+                                    <button type="button" class="btn_red big">빨간버튼</button>   
+                                    <button type="button" class="btn_red big disabled" disabled="">빨간버튼 비활성화</button>
+                                </div>
+                                <pre class="brush: html;">
+                                    &lt;button type="button" class="btn_white big">흰버튼&lt;/button>
+                                    &lt;button type="button" class="btn_black big">검은색버튼&lt;/button>
+                                    &lt;button type="button" class="btn_black big disabled" disabled="">검은색버튼 비활성화&lt;/button>
+                                    &lt;button type="button" class="btn_red big">빨간버튼&lt;/button>   
+                                    &lt;button type="button" class="btn_red big disabled" disabled="">빨간버튼 비활성화&lt;/button>    
+                                </pre>
+                            </li>                            
+                            <li><strong>버튼 정렬</strong><br>
+                                <div class="panel">
+                                    <div class="btn_wrap">
+                                        <span class="left">
+                                            <a href="#" class="btn_white">좌측버튼</a>
+                                        </span> 
+                                        <span class="right">
+                                            <a href="#" class="btn_white">우측버튼</a>
+                                        </span> 
+                                    </div>
+                                    <br>
+                                    <div class="btn_wrap"> 
+                                        <span class="center">
+                                            <a href="#" class="btn_white">가운데</a>
+                                            <a href="#" class="btn_white">가운데</a>
+                                        </span> 
+                                    </div> 
+                                </div>                                
+                                <pre class="brush: html;">
+                                    &lt;div class="btn_wrap">
+                                        &lt;span class="left">
+                                            &lt;a href="#" class="btn_white">좌측버튼&lt;/a>
+                                        &lt;/span> 
+                                        &lt;span class="right">
+                                            &lt;a href="#" class="btn_white">우측버튼&lt;/a>
+                                        &lt;/span> 
+                                    &lt;/div>
+                                    &lt;br>
+                                    &lt;div class="btn_wrap"> 
+                                        &lt;span class="center">
+                                            &lt;a href="#" class="btn_white">가운데&lt;/a>
+                                            &lt;a href="#" class="btn_white">가운데&lt;/a>
+                                        &lt;/span> 
+                                    &lt;/div> 
+                                </pre>
+                            </li>
+                            <li><strong>페이징</strong><br>
+                                <div class="panel">
+                                    <div class="paging">
+                                        <a href="#" class="btn_first">처음</a>
+                                        <a href="#" class="btn_prev">이전</a>
+                                        <em>1</em><!-- 현재 페이지 일경우-->
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">4</a>
+                                        <a href="#">5</a>
+                                        <a href="#">6</a>
+                                        <a href="#">7</a>
+                                        <a href="#">8</a>
+                                        <a href="#">9</a>
+                                        <a href="#">10</a>
+                                        <a href="#" class="btn_next">다음</a>
+                                        <a href="#" class="btn_last">맨끝</a>
+                                    </div>
+                                </div>                                
+                                <pre class="brush: html;">
+                                    &lt;div class="paging">
+                                        &lt;a href="#" class="btn_first">처음&lt;/a>
+                                        &lt;a href="#" class="btn_prev">이전&lt;/a>
+                                        &lt;em>1&lt;/em>&lt;!-- 현재 페이지 일경우-->
+                                        &lt;a href="#">2&lt;/a>
+                                        &lt;a href="#">3&lt;/a>
+                                        &lt;a href="#">4&lt;/a>
+                                        &lt;a href="#">5&lt;/a>
+                                        &lt;a href="#">6&lt;/a>
+                                        &lt;a href="#">7&lt;/a>
+                                        &lt;a href="#">8&lt;/a>
+                                        &lt;a href="#">9&lt;/a>
+                                        &lt;a href="#">10&lt;/a>
+                                        &lt;a href="#" class="btn_next">다음&lt;/a>
+                                        &lt;a href="#" class="btn_last">맨끝&lt;/a>
+                                    &lt;/div>
+                                </pre>
+                            </li>                            
+                        </ul>
+                    </div>
+                    <div class="section cordView">
+                        <!--<h3 class="gtit">■ 앵커, 버튼</h3>-->
+                        <div class="dscBox type01">
+                            <ul class="lstDsc">                                       
+                                <li><strong>아코디언 메뉴</strong>
+                                    <div class="panel">
+                                        <div class="qaList">
+                                            <ul> 
+                                                <li> 
+                                                    <a href="#" class="">
+                                                        <span class="q">Q1</span>
+                                                        빠른 서비스를 이용하기 위해서는 어떻게 해야하나요 
+                                                    </a>
+                                                    <div class="answer">
+                                                        홈페이지에서는 바른 서비스를 위한 예약홈페이지에서는 바른 서비스를 위한 예약 홈페이지에서는 바른 서비스를 위한 예약 홈페이지에서는 바른 서비스를 위한 예약 홈페이지에서는 바른 서비스를 위한 예약 
+                                                    </div>
+                                                </li> 
+                                                <li> 
+                                                    <a href="#" class="">
+                                                        <span class="q">Q2</span>
+                                                        빠른 서비스를 이용하기 위해서는 어떻게 해야하나요 빠른 서비스를 이용하기 위해서는 어떻게 해야하나요 빠른 서비스를 이용하기 위해서는 어떻게 해야하나요 빠른 서비스를 이용하기 위해서는 어떻게 해야하나요 
+                                                    </a>
+                                                    <div class="answer">
+                                                        홈페이지에서는 바른 서비스를 위한 예약홈페이지에서는 바른 서비스를 위한 예약 홈페이지에서는 바른 서비스를 위한 예약 홈페이지에서는 바른 서비스를 위한 예약 홈페이지에서는 바른 서비스를 위한 예약 
+                                                    </div>
+                                                </li>
+                                                <li> 
+                                                    <a href="#" class="">
+                                                        <span class="q">Q3</span>
+                                                        빠른 서비스를 이용하기 위해서는 어떻게 해야하나요 
+                                                    </a>
+                                                    <div class="answer">
+                                                        홈페이지에서는 바른 서비스를 위한 예약홈페이지에서는 바른 서비스를 위한 예약 홈페이지에서는 바른 서비스를 위한 예약 홈페이지에서는 바른 서비스를 위한 예약 홈페이지에서는 바른 서비스를 위한 예약 
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>                                        
+                                    </div>
+                                    <pre class="brush: html;">
+                                        <div class="qaList">
+                                            <ul> 
+                                                <li> 
+                                                    <a href="#" class="">
+                                                        <span class="q">Q1</span>
+                                                        빠른 서비스를 이용하기 위해서는 어떻게 해야하나요 
+                                                    </a>
+                                                    <div class="answer">
+                                                        홈페이지에서는 바른 서비스를 위한 예약홈페이지에서는 바른 서비스를 위한 예약 홈페이지에서는 바른 서비스를 위한 예약 홈페이지에서는 바른 서비스를 위한 예약 홈페이지에서는 바른 서비스를 위한 예약 
+                                                    </div>
+                                                </li> 
+                                                <li> 
+                                                    <a href="#" class="">
+                                                        <span class="q">Q2</span>
+                                                        빠른 서비스를 이용하기 위해서는 어떻게 해야하나요 빠른 서비스를 이용하기 위해서는 어떻게 해야하나요 빠른 서비스를 이용하기 위해서는 어떻게 해야하나요 빠른 서비스를 이용하기 위해서는 어떻게 해야하나요 
+                                                    </a>
+                                                    <div class="answer">
+                                                        홈페이지에서는 바른 서비스를 위한 예약홈페이지에서는 바른 서비스를 위한 예약 홈페이지에서는 바른 서비스를 위한 예약 홈페이지에서는 바른 서비스를 위한 예약 홈페이지에서는 바른 서비스를 위한 예약 
+                                                    </div>
+                                                </li>
+                                                <li> 
+                                                    <a href="#" class="">
+                                                        <span class="q">Q3</span>
+                                                        빠른 서비스를 이용하기 위해서는 어떻게 해야하나요 
+                                                    </a>
+                                                    <div class="answer">
+                                                        홈페이지에서는 바른 서비스를 위한 예약홈페이지에서는 바른 서비스를 위한 예약 홈페이지에서는 바른 서비스를 위한 예약 홈페이지에서는 바른 서비스를 위한 예약 홈페이지에서는 바른 서비스를 위한 예약 
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>                                     
+                                    </pre>
+                                </li>
+                                <li><strong>차 목록, 필터</strong>
+                                    <div class="panel">
+                                        <div class="filter">
+                                            <button type="button" class="btn_filter"><span>필터</span></button>
+                                            <div class="grid" style=" display: none;">
+                                                <table class="tb_row">
+                                                    <caption></caption>
+                                                    <colgroup>
+                                                        <col style="width:105px" />
+                                                        <col style="width:auto" /> 
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">차량 유형</th>
+                                                            <td>
+                                                                <ul class="radio_filter">
+                                                                    <li>
+                                                                        <input type="checkbox" id="check1-1">
+                                                                        <label for="check1-1" class=""><span class="icon"></span>전체</label> 
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox" id="check1-2">
+                                                                        <label for="check1-2" class=""><span class="icon"></span>소형</label> 
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox" id="check1-3">
+                                                                        <label for="check1-3" class=""><span class="icon"></span>중형</label> 
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox" id="check1-4">
+                                                                        <label for="check1-4" class=""><span class="icon"></span>대형</label> 
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox" id="check1-5">
+                                                                        <label for="check1-5" class=""><span class="icon"></span>승합</label> 
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox" id="check1-6">
+                                                                        <label for="check1-6" class="mr15"><span class="icon"></span>SUV/RV</label> 
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox" id="check1-7">
+                                                                        <label for="check1-7" class=""><span class="icon"></span>수입차</label> 
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox" id="check1-8">
+                                                                        <label for="check1-8" class=""><span class="icon"></span>인기 수입차</label> 
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox" id="check1-9">
+                                                                        <label for="check1-9" class=""><span class="icon"></span>전기차</label> 
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox" id="check1-10">
+                                                                        <label for="check1-10" class=""><span class="icon"></span>캐릭터카</label>  
+                                                                    </li>
+                                                                </ul>
+                                                                
+                                                            </td>
+                                                        </tr> 
+                                                        <tr>
+                                                            <th scope="row">연료 유형</th>
+                                                            <td>
+                                                                <ul class="radio_filter">
+                                                                    <li>
+                                                                        <input type="checkbox" id="check2-1">
+                                                                        <label for="check2-1" class="mr15"><span class="icon"></span>전체</label> 
+                                                                    </li>
+                                                                    <li> 
+                                                                        <input type="checkbox" id="check2-2">
+                                                                        <label for="check2-2" class="mr15"><span class="icon"></span>휘발유</label> 
+                                                                        </li>
+                                                                    <li> 
+                                                                        <input type="checkbox" id="check2-3">
+                                                                        <label for="check2-3" class="mr15"><span class="icon"></span>경유</label>
+                                                                    </li>
+                                                                    <li> 
+                                                                        <input type="checkbox" id="check2-4">
+                                                                        <label for="check2-4" class="mr15"><span class="icon"></span>LPG</label> 
+                                                                    </li>
+                                                                    <li> 
+                                                                        <input type="checkbox" id="check2-5">
+                                                                        <label for="check2-5" class="mr15"><span class="icon"></span>전기차</label> 
+                                                                    </li>
+                                                                    <li> 
+                                                                        <input type="checkbox" id="check2-6">
+                                                                        <label for="check2-6" class="mr15"><span class="icon"></span>하이브리드</label> 
+                                                                    </li>
+                                                                </ul>
+                                                                
+                                                            </td>
+                                                        </tr> 
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="list_car">
+                                            <ul>
+                                                <li>
+                                                    <dl>
+                                                        <dt><strong class="tit">1,000~2,000CC이하 승용차</strong></dt>
+                                                        <dd> 
+                                                            <div class="img">
+                                                                <img src="../../../../pcKor/images/common/thumb_188x124.png" alt=""><span class="tag_promo"><em>프로모션</em></span>
+                                                            </div>
+                                                            <div class="tag">
+                                                                <span class="tag_compact">소형</span>
+                                                                <span class="tag_gas">휘발유</span>
+                                                            </div>
+                                                            <p class="txt">가솔린 | 4인승, 4도어 | 대형가방 2개</p>
+                                                            <ul class="option">
+                                                                <li class="none">[보험 불포함]</li>
+                                                                <li>5만원</li>
+                                                                <li>30만원</li>
+                                                            </ul>
+                                                            <strong class="price">25,000<em>원</em></strong>
+                                                            <del class="price2">25,000<em>원</em></del>
+                                                            <button type="button" class="btn_book btn_black">예약</button>
+                                                        </dd>
+                                                    </dl>
+                                                </li>
+                                                <li>
+                                                    <dl>
+                                                        <dt><strong class="tit">1,000~2,000CC이하 승용차</strong></dt>
+                                                        <dd> 
+                                                            <div class="img">
+                                                                <img src="../../../../pcKor/images/common/thumb_188x124.png" alt="">
+                                                            </div>
+                                                            <div class="tag">
+                                                                <span class="tag_compact">소형</span>
+                                                                <span class="tag_gas">휘발유</span>
+                                                            </div>
+                                                            <p class="txt">가솔린 | 4인승, 4도어 | 대형가방 2개</p>
+                                                            <ul class="option">
+                                                                <li class="none">[보험 불포함]</li>
+                                                                <li>5만원</li>
+                                                                <li>30만원</li>
+                                                            </ul>
+                                                            <strong class="price">25,000<em>원</em></strong>
+                                                            <del class="price2">25,000<em>원</em></del>
+                                                            <button type="button" class="btn_book btn_black">예약</button>
+                                                        </dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="no_car"> <!--예약가능한 차량이 없을 경우-->
+                                                    <dl>
+                                                        <dt><strong class="tit">1,000~2,000CC이하 승용차</strong></dt>
+                                                        <dd> 
+                                                            <div class="img">
+                                                                <img src="../../../../pcKor/images/common/thumb_188x124.png" alt="">
+                                                            </div>
+                                                            <div class="tag">
+                                                                <span class="tag_compact">소형</span>
+                                                                <span class="tag_gas">휘발유</span>
+                                                            </div>
+                                                            <p class="txt">가솔린 | 4인승, 4도어 | 대형가방 2개</p>
+                                                            <ul class="option">
+                                                                <li class="none">[보험 불포함]</li>
+                                                                <li>5만원</li>
+                                                                <li>30만원</li>
+                                                            </ul>
+                                                            <strong class="price">25,000<em>원</em></strong>
+                                                            <del class="price2">25,000<em>원</em></del>
+                                                            <button type="button" class="btn_black btn_book disabled" disabled>예약</button>
+                                                        </dd>
+                                                    </dl>
+                                                </li>
+                                            </ul>
+                                        </div>                                    
+                                    </div>
+                                    <pre class="brush: html;">
+                                            &lt;div class="filter">
+                                                &lt;button type="button" class="btn_filter">&lt;span>필터&lt;/span>&lt;/button>
+                                                &lt;div class="grid" style=" display: none;">
+                                                    &lt;table class="tb_row">
+                                                        &lt;caption>&lt;/caption>
+                                                        &lt;colgroup>
+                                                            &lt;col style="width:105px" />
+                                                            &lt;col style="width:auto" /> 
+                                                        &lt;/colgroup>
+                                                        &lt;tbody>
+                                                            &lt;tr>
+                                                                &lt;th scope="row">차량 유형&lt;/th>
+                                                                &lt;td>
+                                                                    &lt;ul class="radio_filter">
+                                                                        &lt;li>
+                                                                            &lt;input type="checkbox" id="check1-1">
+                                                                            &lt;label for="check1-1" class="">&lt;span class="icon">&lt;/span>전체&lt;/label> 
+                                                                        &lt;/li>
+                                                                        &lt;li>
+                                                                            &lt;input type="checkbox" id="check1-2">
+                                                                            &lt;label for="check1-2" class="">&lt;span class="icon">&lt;/span>소형&lt;/label> 
+                                                                        &lt;/li>
+                                                                        &lt;li>
+                                                                            &lt;input type="checkbox" id="check1-3">
+                                                                            &lt;label for="check1-3" class="">&lt;span class="icon">&lt;/span>중형&lt;/label> 
+                                                                        &lt;/li>
+                                                                        &lt;li>
+                                                                            &lt;input type="checkbox" id="check1-4">
+                                                                            &lt;label for="check1-4" class="">&lt;span class="icon">&lt;/span>대형&lt;/label> 
+                                                                        &lt;/li>
+                                                                        &lt;li>
+                                                                            &lt;input type="checkbox" id="check1-5">
+                                                                            &lt;label for="check1-5" class="">&lt;span class="icon">&lt;/span>승합&lt;/label> 
+                                                                        &lt;/li>
+                                                                        &lt;li>
+                                                                            &lt;input type="checkbox" id="check1-6">
+                                                                            &lt;label for="check1-6" class="mr15">&lt;span class="icon">&lt;/span>SUV/RV&lt;/label> 
+                                                                        &lt;/li>
+                                                                        &lt;li>
+                                                                            &lt;input type="checkbox" id="check1-7">
+                                                                            &lt;label for="check1-7" class="">&lt;span class="icon">&lt;/span>수입차&lt;/label> 
+                                                                        &lt;/li>
+                                                                        &lt;li>
+                                                                            &lt;input type="checkbox" id="check1-8">
+                                                                            &lt;label for="check1-8" class="">&lt;span class="icon">&lt;/span>인기 수입차&lt;/label> 
+                                                                        &lt;/li>
+                                                                        &lt;li>
+                                                                            &lt;input type="checkbox" id="check1-9">
+                                                                            &lt;label for="check1-9" class="">&lt;span class="icon">&lt;/span>전기차&lt;/label> 
+                                                                        &lt;/li>
+                                                                        &lt;li>
+                                                                            &lt;input type="checkbox" id="check1-10">
+                                                                            &lt;label for="check1-10" class="">&lt;span class="icon">&lt;/span>캐릭터카&lt;/label>  
+                                                                        &lt;/li>
+                                                                    &lt;/ul>
+                                                                    
+                                                                &lt;/td>
+                                                            &lt;/tr> 
+                                                            &lt;tr>
+                                                                &lt;th scope="row">연료 유형&lt;/th>
+                                                                &lt;td>
+                                                                    &lt;ul class="radio_filter">
+                                                                        &lt;li>
+                                                                            &lt;input type="checkbox" id="check2-1">
+                                                                            &lt;label for="check2-1" class="mr15">&lt;span class="icon">&lt;/span>전체&lt;/label> 
+                                                                        &lt;/li>
+                                                                        &lt;li> 
+                                                                            &lt;input type="checkbox" id="check2-2">
+                                                                            &lt;label for="check2-2" class="mr15">&lt;span class="icon">&lt;/span>휘발유&lt;/label> 
+                                                                            &lt;/li>
+                                                                        &lt;li> 
+                                                                            &lt;input type="checkbox" id="check2-3">
+                                                                            &lt;label for="check2-3" class="mr15">&lt;span class="icon">&lt;/span>경유&lt;/label>
+                                                                        &lt;/li>
+                                                                        &lt;li> 
+                                                                            &lt;input type="checkbox" id="check2-4">
+                                                                            &lt;label for="check2-4" class="mr15">&lt;span class="icon">&lt;/span>LPG&lt;/label> 
+                                                                        &lt;/li>
+                                                                        &lt;li> 
+                                                                            &lt;input type="checkbox" id="check2-5">
+                                                                            &lt;label for="check2-5" class="mr15">&lt;span class="icon">&lt;/span>전기차&lt;/label> 
+                                                                        &lt;/li>
+                                                                        &lt;li> 
+                                                                            &lt;input type="checkbox" id="check2-6">
+                                                                            &lt;label for="check2-6" class="mr15">&lt;span class="icon">&lt;/span>하이브리드&lt;/label> 
+                                                                        &lt;/li>
+                                                                    &lt;/ul>
+                                                                    
+                                                                &lt;/td>
+                                                            &lt;/tr> 
+                                                        &lt;/tbody>
+                                                    &lt;/table>
+                                                &lt;/div>
+                                            &lt;/div>
+                                            &lt;div class="list_car">
+                                                &lt;ul>
+                                                    &lt;li>
+                                                        &lt;dl>
+                                                            &lt;dt>&lt;strong class="tit">1,000~2,000CC이하 승용차&lt;/strong>&lt;/dt>
+                                                            &lt;dd> 
+                                                                &lt;div class="img">
+                                                                    &lt;img src="../../images/common/thumb_188x124.png" alt="">&lt;span class="tag_promo">&lt;em>프로모션&lt;/em>&lt;/span>
+                                                                &lt;/div>
+                                                                &lt;div class="tag">
+                                                                    &lt;span class="tag_compact">소형&lt;/span>
+                                                                    &lt;span class="tag_gas">휘발유&lt;/span>
+                                                                &lt;/div>
+                                                                &lt;p class="txt">가솔린 | 4인승, 4도어 | 대형가방 2개&lt;/p>
+                                                                &lt;ul class="option">
+                                                                    &lt;li class="none">[보험 불포함]&lt;/li>
+                                                                    &lt;li>5만원&lt;/li>
+                                                                    &lt;li>30만원&lt;/li>
+                                                                &lt;/ul>
+                                                                &lt;strong class="price">25,000&lt;em>원&lt;/em>&lt;/strong>
+                                                                &lt;del class="price2">25,000&lt;em>원&lt;/em>&lt;/del>
+                                                                &lt;button type="button" class="btn_book btn_black">예약&lt;/button>
+                                                            &lt;/dd>
+                                                        &lt;/dl>
+                                                    &lt;/li>
+                                                    &lt;li>
+                                                        &lt;dl>
+                                                            &lt;dt>&lt;strong class="tit">1,000~2,000CC이하 승용차&lt;/strong>&lt;/dt>
+                                                            &lt;dd> 
+                                                                &lt;div class="img">
+                                                                    &lt;img src="../../images/common/thumb_188x124.png" alt="">
+                                                                &lt;/div>
+                                                                &lt;div class="tag">
+                                                                    &lt;span class="tag_compact">소형&lt;/span>
+                                                                    &lt;span class="tag_gas">휘발유&lt;/span>
+                                                                &lt;/div>
+                                                                &lt;p class="txt">가솔린 | 4인승, 4도어 | 대형가방 2개&lt;/p>
+                                                                &lt;ul class="option">
+                                                                    &lt;li class="none">[보험 불포함]&lt;/li>
+                                                                    &lt;li>5만원&lt;/li>
+                                                                    &lt;li>30만원&lt;/li>
+                                                                &lt;/ul>
+                                                                &lt;strong class="price">25,000&lt;em>원&lt;/em>&lt;/strong>
+                                                                &lt;del class="price2">25,000&lt;em>원&lt;/em>&lt;/del>
+                                                                &lt;button type="button" class="btn_book btn_black">예약&lt;/button>
+                                                            &lt;/dd>
+                                                        &lt;/dl>
+                                                    &lt;/li>
+                                                    &lt;li class="no_car"> &lt;!--예약가능한 차량이 없을 경우-->
+                                                        &lt;dl>
+                                                            &lt;dt>&lt;strong class="tit">1,000~2,000CC이하 승용차&lt;/strong>&lt;/dt>
+                                                            &lt;dd> 
+                                                                &lt;div class="img">
+                                                                    &lt;img src="../../images/common/thumb_188x124.png" alt="">
+                                                                &lt;/div>
+                                                                &lt;div class="tag">
+                                                                    &lt;span class="tag_compact">소형&lt;/span>
+                                                                    &lt;span class="tag_gas">휘발유&lt;/span>
+                                                                &lt;/div>
+                                                                &lt;p class="txt">가솔린 | 4인승, 4도어 | 대형가방 2개&lt;/p>
+                                                                &lt;ul class="option">
+                                                                    &lt;li class="none">[보험 불포함]&lt;/li>
+                                                                    &lt;li>5만원&lt;/li>
+                                                                    &lt;li>30만원&lt;/li>
+                                                                &lt;/ul>
+                                                                &lt;strong class="price">25,000&lt;em>원&lt;/em>&lt;/strong>
+                                                                &lt;del class="price2">25,000&lt;em>원&lt;/em>&lt;/del>
+                                                                &lt;button type="button" class="btn_black btn_book disabled" disabled>예약&lt;/button>
+                                                            &lt;/dd>
+                                                        &lt;/dl>
+                                                    &lt;/li>
+                                                &lt;/ul>
+                                            &lt;/div>                                            
+                                    </pre>                                     
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>                          
+                <!-- 여기서부터 내용 e -->
+            </div><!--// wgDsc div -->
+        </div><!--// wgContent div -->
+        
+    </div><!--// wgContainer div  -->
+    
+</div><!--// wrapGuide div -->
+</body>
+</html>

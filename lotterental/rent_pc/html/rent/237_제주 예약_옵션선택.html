@@ -1,0 +1,1849 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html dir="ltr" lang="ko" class="ie7"><![endif]-->
+<!--[if IE 8]><html dir="ltr" lang="ko" class="ie8"><![endif]-->
+<!--[if IE 9]><html dir="ltr" lang="ko" class="ie9"><![endif]-->
+<html dir="ltr" lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1200, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.min.js"></script>
+	<script src="../../js/html5shiv.js"></script>
+	<script src="../../js/core.js"></script>
+	<script src="../../js/ui.js"></script>
+    <script src="../../js/calendar.js"></script>
+</head>
+ 
+<body>
+	<header>
+		<div class="inner_header">
+			<div class="logo"><a href="#"><img src="../../images/common/logo.png"></a></div>
+			<ul id="extra_menu" class="extra_menu">
+				<!--// 비회원일 경우 -->
+				<li class="login"><a href="#">로그인</a></li>
+				<li class="join"><a href="#">회원가입</a></li>
+
+				<!--// 회원일 경우 -->
+				<li class="logout"><a href="#">로그아웃</a></li>
+				<li class="mypage">
+					<a class="btn_dropdown_menu" href="#">마이페이지</a>
+					<div class="dropdown_menu">
+						<a class="active" href="#">예약 및 이용 내역</a>
+						<a href="#">계약서 조회</a>
+						<a href="#">상담문의 내역</a>
+					</div>
+				</li>
+
+				<li class="language"><a href="#">ENGLISH</a></li>
+			</ul>
+		</div>
+		<div id="gnb" class="gnb">
+			<ul class="menus">
+				<li class="menu idx1">
+					<a href="#">빌릴 때</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">단기렌터카</a>
+							<ul>
+								<li>
+									<a href="#">실시간 예약</a>
+								</li>
+								<li class="btn_dropdown_menu" >
+									<a href="#">단기렌터카 서비스 안내</a>
+									<ul class="dropdown_menu">
+										<li>
+											<a href="#">대여 안내</a>
+										</li>
+										<li>
+											<a href="#">요금 안내</a>
+										</li>
+										<li>
+											<a href="#">부가 서비스 안내</a>
+										</li>
+										<li>
+											<a href="#">해외렌트 서비스 안내</a>
+										</li>
+										<li>
+											<a href="#">딜리버리 서비스 안내</a>
+										</li>
+										<li>
+											<a href="#">빠른 서비스 안내</a>
+										</li>
+										<li>
+											<a href="#">기사포함 서비스 안내</a>
+										</li>
+										<li>
+											<a href="#">보험대차 서비스 안내</a>
+										</li>
+									</ul>
+								</li>
+								<li class="btn_dropdown_menu">
+									<a href="#">롯데렌터카만의 서비스</a>
+									<ul class="dropdown_menu">
+										<li>
+											<a href="#">롯데 스마트픽 서비스</a>
+										</li>
+										<li>
+											<a href="#">패키지 상품</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">월간렌터카</a>
+							<ul>
+								<li>
+									<a href="#">대여 신청</a>
+								</li>
+								<li>
+									<a href="#">월간렌터카 서비스 안내</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">그린카(카셰어링)</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu idx2">
+					<a href="#">살 때</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">신차 장기 렌터카</a>
+							<ul>
+								<li>
+									<a href="#">간편 견적</a>
+								</li>
+								<li>
+									<a href="#">프로모션</a>
+								</li>
+								<li>
+									<a class="btn_dropdown_menu" href="#">신차 장기렌터카 서비스 안내</a>
+								</li>
+								<ul class="dropdown_menu">
+									<li>
+										<a href="#">신차장기렌터카 안내</a>
+									</li>
+									<li>
+										<a href="#">이용절차 및 Q&A</a>
+									</li>
+									<li>
+										<a href="#">LPG60 장기렌터카 안내</a>
+									</li>
+									<li>
+										<a href="#">전기차 장기렌터카 안내</a>
+									</li>
+									<li>
+										<a href="#">오토 체인지 프로그램</a>
+									</li>
+								</ul>
+								<li class="btn_dropdown_menu">
+									<a href="#">롯데렌터카만의 서비스</a>
+									<ul class="dropdown_menu">
+										<li>
+											<a href="#">오토매니저</a>
+										</li>
+										<li>
+											<a href="#">정비패키지</a>
+										</li>
+										<li>
+											<a href="#">오토 할부&오토 캐시백 </a>
+										</li>
+										<li>
+											<a href="#">제휴 카드 </a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="depth2">
+							<a href="#">중고차 장기렌터카</a>
+							<ul>
+								<li>
+									<a href="#">중고차 장기렌터카 검색</a>
+								</li>
+								<li>
+									<a href="#">중고차 장기렌터카 서비스 안내</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">승계 게시판</a>
+							<ul>
+								<li>
+									<a href="#">승계 매물 등록</a>
+								</li>
+								<li>
+									<a href="#">승계 매물 검색</a>
+								</li>
+								<li>
+									<a href="#">승계 게시판 서비스 안내</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">법인 장기렌터카</a>
+							<ul>
+								<li>
+									<a href="#">견적 상담</a>
+								</li>
+								<li>
+									<a href="#">법인 장기렌터카 서비스 안내</a>
+								</li>
+							</ul>
+						</li>
+						<li class="depth2">
+							<a href="#">오토리스</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu idx3">
+					<a href="#">팔 때</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">중고차 팔기</a>
+							<ul>
+								<li>
+									<a href="#">견적 상담</a>
+								</li>
+								<li class="btn_dropdown_menu" >
+									<a href="#">중고차 경매 서비스 안내</a>
+									<ul class="dropdown_menu">
+										<li>
+											<a href="#">경매 출품 안내</a>
+										</li>
+										<li>
+											<a href="#">입찰 안내</a>
+										</li>
+										<li>
+											<a href="#">판매가 출품 보장 안내</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="submenu">
+						<li class="depth2"><a href="#">오토옥션</a></li>
+					</ul>
+				</li>
+				<li class="menu idx4">
+					<a href="#">기기 장비렌탈</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">기기/장비렌탈</a>
+							<ul>
+								<li>
+									<a href="#">기기/장비렌탈 서비스 안내</a>
+								</li>
+								<li>
+									<a href="#">입찰 매각 공지</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="menu idx5">
+					<a href="#">이벤트</a>
+				</li>
+				<li class="menu idx6">
+					<a href="#">고객센터</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">고객 센터</a>
+							<ul>
+								<li>
+									<a href="#">지점 안내</a>
+								</li>
+								<li>
+									<a href="#">FAQ</a>
+								</li>
+								<li>
+									<a href="#">고객의견</a>
+								</li>
+								<li>
+									<a href="#">상담 문의</a>
+								</li>
+								<li>
+									<a href="#">공지&뉴스</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="gnb_open"></div>
+		<ul id="breadcrumb" class="breadcrumb">
+			<li class="path home"><a href="#"></a></li>
+			<li class="path">
+				<a class="dropdown_path_btn" href="#">빌릴 때</a>
+				<div class="dropdown_path">
+					<a class="active" href="#">빌릴 때</a>
+					<a href="#">살 때</a>
+					<a href="#">팔 때</a>
+					<a href="#">기기 장비렌탈</a>
+					<a href="#">이벤트</a>
+					<a href="#">고객센터</a>
+				</div>
+			</li>
+			<li class="path">
+				<a class="dropdown_path_btn" href="#">단기렌터카</a>
+				<div class="dropdown_path">
+					<a class="active" href="#">빌릴 때</a>
+					<a href="#">살 때</a>
+					<a href="#">팔 때</a>
+					<a href="#">기기 장비렌탈</a>
+					<a href="#">이벤트</a>
+					<a href="#">고객센터</a>
+				</div>
+			</li>
+			<li class="path">
+				<a class="dropdown_path_btn" href="#">실시간 예약</a>
+				<div class="dropdown_path">
+					<a class="active" href="#">빌릴 때</a>
+					<a href="#">살 때</a>
+					<a href="#">팔 때</a>
+					<a href="#">기기 장비렌탈</a>
+					<a href="#">이벤트</a>
+					<a href="#">고객센터</a>
+				</div>
+			</li>
+		</ul>
+	</header>
+	<div id="container">
+		<!-- content -->
+		<article class="content">
+			<h2>제주 예약</h2>
+			<div class="content">
+                <!-- 본문삽입 --> 
+                <ul class="process4 step2"> <!--  step2 : 현재 스텝  -->
+                    <li>
+                        <em class="check"></em>
+                        <span>차량 선택</span>
+                    </li>
+                    <li>
+                        <em>02</em>
+                        <strong>옵션 선택</strong>
+                    </li>
+                    <li>
+                        <em>03</em>
+                        <span>정보 입력</span>
+                    </li> 
+                    <li>
+                        <em>04</em>
+                        <span>결제</span>
+                    </li> 
+                </ul>
+                
+                <div class="wrap_reservation">
+                    <div class="left3">
+                        <div class="box_schd">
+							<span>
+								<strong>제주 오토하우스</strong>
+								<em>2016/02/02 9시 00분</em>
+							</span>
+							<em class="ico_to">to</em>
+							<span>
+								<strong>제주 오토하우스</strong>
+								<em>2016/02/02 9시 00분</em>
+							</span>
+                        </div>
+                        <div class="box_car_info mb10">
+                            <h3>쉐보레 AVEO(G) 1.6</h3>
+                            <div class="img_car"><img src="../../images/common/thumb_350x230.png" alt=""></div>
+                        </div>
+                        
+                        <div class="box_price">
+                            <dl>
+                                <dt>대여금액</dt>
+                                <dd class="price">1,125,000<em>원</em></dd> 
+                                <dt>
+                                    할인금액
+                                    <span>가을맞이 전차종 할인 이벤트</span>
+                                </dt>
+                                <dd class="price">-100,000<em>원</em></dd> 
+                                <dt>
+                                    보험 및 기타 옵션
+                                    <span>보험 미적용</span>
+                                </dt>
+                                <dd class="price">0<em>원</em></dd> 
+                                <dt class="last">금액</dt>
+                                <dd class="last price">1,125,000<em>원</em></dd>
+                            </dl>
+                        </div>
+ 
+                    </div>
+                    <div class="right3">  
+                        
+                        <section class="option_event">
+                            <h3 class="mb20">이벤트/할인</h3>   
+                            <ul class="radio_vt">
+                                <li>
+                                    <input type="radio" id="rdoEvent1" name="rdoEvent">
+                                    <label for="rdoEvent1" class="mr15"><span class="icon"></span>회원 할인 (40%)</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="rdoEvent2" name="rdoEvent">
+                                    <label for="rdoEvent2" class="mr15"><span class="icon"></span>이벤트</label>  
+                                    <span class="select" style="width:297px">
+                                        <select id="" title="이벤트">
+                                            <option selected="selected">가을맞이 전차종 할인 이벤트</option>
+                                        </select>
+                                    </span> 
+                                </li>
+                                <li>
+                                    <input type="radio" id="rdoEvent3" name="rdoEvent">
+                                    <label for="rdoEvent3" class="mr15"><span class="icon"></span>쿠폰</label> 
+                                    <span class="select disabled" style="width:297px">
+                                        <select id="" title="쿠폰" disabled>
+                                            <option selected="selected">선택</option>
+                                        </select> 
+                                    </span> 
+                                </li>
+                            </ul>
+                            <ul class="txt_list">
+                                <li class="red">
+                                    할인은 회원 할인, 이벤트 할인, 쿠폰 할인 중 하나만 적용 가능하며 할인율은 대여요금에서만 적용됩니다.
+                                </li> 
+                            </ul>
+                        </section>
+                        
+                        <section class="option_tooltip">
+                            <div class="titleBox mb20">
+                              <h3>포인트<span class="txt_must"><em class="txt_point">*</em>포인트는 사용시점에서 즉시 차감됩니다.</span></h3>
+                              <span>
+                                <a href="#layerPoint" class="layerPoint btn_tooltip btn_layer">툴팁</a>
+                              </span>
+                            </div>
+                            
+							<p class="txt">L.POINT<span>(보유 포인트 : <strong>55,000</strong>) </span> <button type="button" class="layerLpoint btn_layer ml5 btn_white">본인인증</button></p>
+                            <input type="text" name="" value="" placeholder="사용하실 포인트를 입력해 주세요." style="width:295px;">
+                            <button type="button" class="btn_black">모두사용</button>
+
+                            <p class="txt">롯데렌터카 포인트 <span>(보유 포인트 : <strong>55,000</strong>) </span></p>
+                            <input type="text" name="" value="" placeholder="사용하실 포인트를 입력해 주세요." style="width:295px;">
+                            <button type="button" class="btn_black">모두사용</button> <!-- 비활성화 <button type="button" class="btn_black disabled" disabled>모두사용</button>  --> 
+                        </section>
+                        
+                        <section class="option_exemption">
+                            <div class="titleBox mb20">
+                              <h3>자차손해 면책 제도 (CDW)</h3>
+                              <span>
+                                <a href="#layerExemption" class="layerExemption btn_tooltip btn_layer">툴팁</a>
+                              </span>
+                            </div>
+                            
+                            <ul class="radio_hr">
+                                <li>
+                                    <input type="radio" id="rdoCDW1" name="rdoCDW">
+                                    <label for="rdoCDW1" class="mr15"><span class="icon"></span>보험 미적용 (0원)</label> 
+                                </li>
+                                <li>
+                                    <input type="radio" id="rdoCDW2" name="rdoCDW">
+                                    <label for="rdoCDW2" class="mr15"><span class="icon"></span>30만원 (16,000원)</label>  
+                                </li>
+                                <li>
+                                    <input type="radio" id="rdoCDW3" name="rdoCDW">
+                                    <label for="rdoCDW3" class="mr15"><span class="icon"></span>완전면책 (50,000원)</label>  
+                                </li>
+                            </ul> 
+                        </section>
+                        
+                        
+                        <section class="option_etc"> 
+                            <h3 class="mb20">기타 옵션</h3>
+                            <div class="wrap_option">
+                                <div class="left">
+                                    <h6>
+                                        내비게이션(무료)
+                                        <span>
+                                            <a href="#layerNav" class="layerNav btn_tooltip btn_layer">툴팁</a>
+                                        </span>
+                                    </h6>
+                                    <ul class="radio_vt">
+                                        <li>
+                                            <input type="checkbox" id="chkNav1">
+                                            <label for="chkNav1"><span class="icon"></span>한글 내비게이션</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="chkNav2">
+                                            <label for="chkNav2" class="mr15"><span class="icon"></span>영문 내비게이션</label>
+                                        </li>
+										<li>&nbsp;</li>
+                                    </ul>   
+                                </div>
+                                <div class="right">
+                                    <h6>
+                                        카시트(1일 7,000원 추가) 
+                                        <span>
+                                            <a href="#layerCarSeat" class="layerCarSeat btn_tooltip btn_layer">툴팁</a>
+                                        </span>
+                                    </h6>
+                                    <ul class="radio_vt">
+                                        <li>
+                                            <input type="checkbox" id="chkCarSeat1">
+                                            <label for="chkCarSeat1"><span class="icon"></span>영유아용</label>
+                                            
+                                            <span class="select floatR" style="width:180px">
+                                                <select id="" title="영유아용 개수선택">
+                                                    <option selected="selected">개수선택</option>
+                                                </select>
+                                            </span> 
+                                        </li> 
+                                        <li>
+                                            <input type="checkbox" id="chkCarSeat2">
+                                            <label for="chkCarSeat2"><span class="icon"></span>유아용</label>
+                                            
+                                            <span class="select floatR disabled" style="width:180px">
+                                                <select id="" title="유아용 개수선택" disabled>
+                                                    <option selected="selected">개수선택</option>
+                                                </select>
+                                            </span> 
+                                        </li> 
+                                        <li>
+                                            <input type="checkbox" id="chkCarSeat3">
+                                            <label for="chkCarSeat3"><span class="icon"></span>주니어용</label>
+                                            
+                                            <span class="select floatR disabled" style="width:180px">
+                                                <select id="" title="주니어용 개수선택" disabled>
+                                                    <option selected="selected">개수선택</option>
+                                                </select>
+                                            </span> 
+                                        </li> 
+                                    </ul>
+                                </div>
+                                <div class="left">
+                                    <h6>
+                                        유모차(1일 6,000원 추가)
+                                        <span>
+                                            <a href="#layerStroller" class="layerStroller btn_tooltip btn_layer">툴팁</a>
+                                        </span>
+                                    </h6>
+                                    <ul class="radio_vt">
+                                        <li>
+                                            <input type="checkbox" id="chkStroller1">
+                                            <label for="chkStroller1"><span class="icon"></span>절충형</label>
+                                            
+                                            <span class="select floatR disabled" style="width:180px">
+                                                <select id="" title="절충형 개수선택" disabled>
+                                                    <option selected="selected">개수선택</option>
+                                                </select>
+                                            </span> 
+                                        </li> 
+                                        <li>
+                                            <input type="checkbox" id="chkStroller2">
+                                            <label for="chkStroller2"><span class="icon"></span>휴대형</label>
+                                            
+                                            <span class="select floatR disabled" style="width:180px">
+                                                <select id="" title="휴대형 개수선택" disabled>
+                                                    <option selected="selected">개수선택</option>
+                                                </select>
+                                            </span> 
+                                        </li>  
+                                    </ul>
+                                </div>
+                                <div class="right">
+                                    <h6>
+                                        인스탁스(무료)
+                                        <span>
+                                            <a href="#layerInstax" class="layerInstax btn_tooltip btn_layer">툴팁</a>
+                                        </span>
+                                    </h6>
+                                    <ul class="radio_vt">
+                                        <li>
+                                            <input type="checkbox" id="chkIntax1">
+                                            <label for="chkIntax1"><span class="icon"></span>인스탁스 미니</label> 
+                                        </li> 
+                                        <li>
+                                            <input type="checkbox" id="chkIntax2">
+                                            <label for="chkIntax2"><span class="icon"></span>인스탁스 와이드</label> 
+                                        </li>  
+                                    </ul>
+                                </div>
+                                <div class="left">
+                                    <h6>
+                                        기타 (딜리버리 서비스  –  편도 15,000원 추가)
+                                        <span>
+                                            <a href="layerEtcDv" class="layerEtcDv btn_tooltip btn_layer">툴팁</a>
+                                        </span>
+                                    </h6>
+                                    <ul class="radio_vt">
+                                        <li>
+                                            <input type="checkbox" id="chkEtc1" disabled>
+                                            <label for="chkEtc1"><span class="icon"></span>딜리버리 서비스</label>
+                                             
+                                        </li>  
+                                    </ul>
+                                </div>
+                            </div>     
+                        </section>
+                        
+                        <div class="btn_wrap borderTop">
+							<a href="#" class="btn_gray btn_200">이전</a>
+							<a href="#" class="btn_red btn_200">다음</a>
+                        </div>
+
+                    </div>
+                </div>
+
+				<!--// 본문삽입 -->
+			</div>
+		</article>
+	</div>
+	<footer>
+		<div class="links">
+			<ul class="inner_links">		
+				<li class="link">
+					<a href="#">그린카</a>
+				</li>
+				<li class="link">
+					<a href="#">오토옥션</a>
+				</li>
+				<li class="link">
+					<a href="#">오토케어</a>
+				</li>
+				<li class="link">
+					<a href="#">오토리스</a>
+				</li>
+				<li class="link">
+					<a href="#">비즈케어</a>
+				</li>
+				<li id="familysite" class="familysite">
+					<a class="title btn_dropdown_menu" href="#">FAMILY SITE</a>
+				</li>
+			</ul>
+		</div>
+		<div class="familysite_dropdown_menu">
+			<ul class="menus">
+				<li class="menu">
+					<span class="menu_title">식품군</span>
+					<ul>					
+						<li>
+							<a href="#" target="_blank">롯데제과</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데칠성음료(음료BG)</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데푸드</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데리아</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데칠성음료(주류BG)</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데중앙연구소</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데아시히주류</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데유통사업본부</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu">
+					<span class="menu_title">관광군</span>
+					<ul>				
+						<li>
+							<a href="#" target="_blank">롯데호텔</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데월드</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">부산롯데호텔</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데제이티비</a>
+						</li>						
+					</ul>
+				</li>
+				<li class="menu">
+					<span class="menu_title">서비스군</span>
+					<ul>					
+						<li>
+							<a href="#" target="_blank">대홍기획</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데로지스틱스</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데물산</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데상사</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데자이어츠</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데시네마</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데정보통신</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데인제개발원</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">마이비</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">이비카드</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">현대정보기술</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu">
+					<span class="menu_title">유통군</span>
+					<ul>
+						<li>
+							<a href="#" target="_blank">롯데백화점</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데마트</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데면세점</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데슈퍼</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">코리아세븐</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데홈쇼핑</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데닷컴</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">FRL코리아</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데하이마트</a>
+						</li>	
+					</ul>
+				</li>
+				<li class="menu">
+					<span class="menu_title">건설군</span>
+					<ul>
+						<li>
+							<a href="#" target="_blank">롯데건설</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데건설 CM사업본부</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데알미늄</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데기공</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">캐논코리아비즈니스솔루션</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">한국후지필름</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데아시히주류</a>
+						</li>
+					</ul>					
+				</li>
+				<li class="menu">
+					<span class="menu_title">금융군</span>
+					<ul>
+
+						<li>
+							<a href="#" target="_blank">롯데카드</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데캐피탈</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데손해보험</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데자산개발</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데멤버스</a>
+						</li>	
+					</ul>
+				</li>
+				<li class="menu">
+					<span class="menu_title">유화군</span>
+					<ul>
+
+						<li>
+							<a href="#" target="_blank">롯데캐피칼</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">롯데엠알시</a>
+						</li>	
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="inner_footer">
+			<div class="sitemap">
+				<ul>
+					<li><a href="#">회사소개</a> ㅣ</li>
+					<li><a href="#">개인정보처리방침</a> ㅣ</li>
+					<li><a href="#">영상정보처리기기 운영관리방침</a> ㅣ</li>
+					<li><a href="#">이용약관</a> ㅣ</li>
+					<li><a href="#">사이버신문고</a> ㅣ</li>
+					<li><a href="#">인재채용</a> ㅣ</li>
+					<li><a href="#">무단이메일수집거부</a> ㅣ</li>
+					<li><a href="#">CONTACT US</a> ㅣ</li>
+					<li>
+						<a href="#">사이트맵</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="sns">
+				<ul>
+					<li>
+						<a class="twitter" href="#" target="_blank"><img src="../../images/common/img_footer_sns_twitter.png"></a>
+					</li>
+					<li>
+						<a class="facebook" href="#" target="_blank"><img src="../../images/common/img_footer_sns_facebook.png"></a>
+					</li>
+					<li>
+						<a class="blog" href="#" target="_blank"><img src="../../images/common/img_footer_sns_blog.png"></a>
+					</li>					
+				</ul>
+			</div>
+
+			<div class="information">
+				<span class="entrepreneur_info">
+					롯데렌탈㈜ | 대표이사 표현명 | 사업자등록번호 214-87-79183 | 통신판매업신고번호 : 제2010-경기안양-420호
+					<a class="btn_entrepreneur_info" href="#"><img src="../../images/common/btn_entrepreneur_info.png"></a>
+				</span>
+				<span class="address">경기도 안양시 동안구 전파로 88 신원비젼타워 8층 l 서울본사: 서울시 강남구 테헤란로 422 KT타워 6~9층</span>
+				<span class="phone">대표전화 1588-1230 | 해외 82-2-797-8000 | FAX 02-2141-9022 보험대차 연락처 및 일반상품렌탈 연락처 | 보험대차 1588-4920 | 일반상품렌탈 1577-5100+1</span>
+				<span class="copyright">copyright ⓒ 2016 LOTTE rental co.ltd.All Rrights Reserved.</span>
+			</div>
+
+			<div class="certifications">
+				<ul>
+					<li>
+						<img src="../../images/common/img_footer_cert_1.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_2.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_3.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_4.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_5.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_6.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_7.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_8.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_9.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_10.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_11.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_12.png">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_13.png">
+					</li>	
+				</ul>
+			</div>
+		
+			<div class="big-banner">
+				<img src="../../images/common/img_footer_big_banner.png">
+			</div>
+		</div>
+	</footer>
+    
+      
+<!-- Layer : dimm -->
+<div class="dimm"></div>  
+    
+
+     
+<!-- Layer : 기간선택 -->
+<div id="layerEditBook" class="layer layer_s">
+    <div class="layer_tit">
+        <h2>기간선택</h2>
+        <a href="#" class="btn_layer_close"><img src="../../images/common/btn_layer_close.png" alt="닫기"></a>
+    </div>
+    <div class="layer_con">
+        <!-- content -->
+        <div class="layer_padding"> 
+            
+            <!-- 기간 선택 -->
+            <section class="mb40"> 
+                <h3 class="mb20">기간 선택</h3> 
+                <div class="rent_popWrap mt5 mb5"> <!-- 작은 화면시 big 클래스 제거 -->
+                    <div class="innerBox rentBox">
+                        <input type="hidden" id="" class="rent_date" value="">
+                        <input type="hidden" id="" class="rent_hour" value="">
+                        <input type="hidden" id="" class="rent_minute" value="">
+                        <a href="#none" class="cal3 btn_layer noData"><!-- Default class="noData" -->
+                            <span class="tit">대여일시</span>
+                            <span class="date"></span>
+                            <span class="hour"></span>
+                            <span class="minute"></span>
+                        </a>
+                    </div>
+                    <div class="innerBox returnBox">
+                        <input type="hidden" id="" class="return_date" value="">
+                        <input type="hidden" id="" class="return_hour" value="">
+                        <input type="hidden" id="" class="return_minute" value="">                                            
+                        <a href="#none" class="cal3 btn_layer noData"><!-- Default class="noData" -->
+                            <span class="tit">반납일시</span>
+                            <span class="date"></span>
+                            <span class="hour"></span>
+                            <span class="minute"></span>
+                        </a>
+                    </div>
+                </div>
+                <ul class="txt_list mb30">
+                    <li class="red">
+                        대여시간이 24시간 이상인 경우에만 할인이 적용됩니다.
+                    </li>
+                </ul>
+            </section>
+            <!-- //기간 선택 -->
+            <!-- 지점 선택 -->
+            <section class="mb40">
+                <h3 class="mb20">지점 선택</h3>
+                <div class="deliveryWrap">						            
+
+                    <input type="checkbox" name="" id="chk1" class="ds_check"><label for="chk1" class="mr5"><span class="icon"></span>딜리버리 서비스(DS)</label>
+                    <span>
+                        <a href="#none" class="btn_tooltip">툴팁</a>	
+                    </span>
+
+                    <!-- 딜리버리 서비스 체크시 노출 영역 -->
+                    <div class="inner ds_radio">
+                        <input type="radio" name="s_selLocation" id="s_selLocation1">
+                        <label for="s_selLocation1" class="mr30"><span class="icon"></span>대여 + 반납</label>
+
+                        <input type="radio" name="s_selLocation" id="s_selLocation2">
+                        <label for="s_selLocation2" class="mr30"><span class="icon"></span>대여</label>
+
+                        <input type="radio" name="s_selLocation" id="s_selLocation3">
+                        <label for="s_selLocation3" class="mr30"><span class="icon"></span>반납</label>
+                    </div>
+                    <!-- //딜리버리 서비스 체크시 노출 영역 -->
+
+                </div>
+
+                <div class="rent_popWrap areaBox">
+                    <div class="innerBox rentBox">
+                      <a href="#layerSelBranch" class="layerSelBranch noData btn_layer "><!-- Default class="noData" -->
+                        <span class="tit">대여지점</span>
+                      </a>
+                    </div>
+                    <div class="innerBox returnBox">
+                      <a href="#layerSelBranchDS" class="layerSelBranchDS btn_layer">
+                        <span class="tit">반납지점</span>
+                        <span class="area">논현(학동역)</span>
+                      </a>
+                    </div>
+                </div>
+                <ul class="txt_list mb30">
+                    <li class="red">
+                        대여지점과 다른 지점으로 반납하실 경우 별도의 수수료가 부가됩니다.
+                    </li>
+                </ul>
+
+            </section>
+            <!-- //지점 선택 -->
+            <!-- 차량 선택 -->
+            <section>
+                <h3>차량 선택</h3>
+                <div class="sel_carWrap">
+                    <div class="innerBox normal">
+                        <div class="radio large">
+                            <input type="radio" name="s_selCar" id="s_selCar1">
+                            <label for="s_selCar1"><span class="icon"></span>일반예약</label>
+                        </div>
+                      <div class="desc_box">									  
+                        <ul class="txt_list mt10">
+                            <li class="gray">
+                                회원/비회원 모두 예약 가능
+                            </li>
+                            <li class="gray">
+                                특정 차종 지정 가능
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="innerBox saving">
+                        <div class="radio large">
+                            <input type="radio" name="s_selCar" id="s_selCar2">
+                            <label for="s_selCar2"><span class="icon"></span>알뜰카</label>
+                        </div>
+                        <div class="desc_box">
+                            <ul class="txt_list mt10">
+                                <li class="gray">
+                                    회원(로그인)만 예약 가능
+                                </li>
+                                <li class="gray">
+                                    차급만 선택 가능, 저렴한 가격
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //차량 선택 --> 
+
+            
+            
+        </div>
+        <!-- //content -->
+        <div class="layer_foot">
+            <a href="#">재검색</a>
+        </div>
+         
+    </div>
+</div>
+    
+    
+    
+
+<!-- Layer : 차량선택 -->
+<div id="layerSelCar" class="layer layer_b">
+    <div class="layer_tit">
+        <h2>차량 선택 수정</h2>
+        <a href="#" class="btn_layer_close"><img src="../../images/common/btn_layer_close.png" alt="닫기"></a>
+    </div>
+    <div class="layer_con">
+        <!-- content -->
+        <div class="layer_padding">   
+            
+            <div class="titleBox">
+                <h3>결과<span class="txt_result">(10)</span></h3>
+                <span class="sort">
+                    <input type="radio" id="radio1-1" name="radio3">
+                    <label for="radio1-1"><span class="icon"></span>가격순</label>
+                    <input type="radio" id="radio1-2" name="radio3">
+                    <label for="radio1-2"><span class="icon"></span>인기</label>
+                </span>
+            </div>
+
+            <div class="list_car">
+                <ul>
+                    <li>
+                        <dl>
+                            <dt><a href="#"><strong class="tit">1,000~2,000CC이하 승용차</strong></a></dt>
+                            <dd> 
+                                <div class="img">
+                                    <img src="../../images/common/thumb_188x124.png" alt=""><span class="tag_promo"><em>프로모션</em></span>
+                                </div>
+                                <div class="tag">
+                                    <span class="tag_compact">소형</span>
+                                    <span class="tag_gas">휘발유</span>
+                                </div>
+                                <p class="txt">가솔린 | 4인승, 4도어 | 대형가방 2개</p>
+                                <ul class="option">
+                                    <li class="none">[보험 불포함]</li>
+                                    <li>5만원</li>
+                                    <li>30만원</li>
+                                </ul>
+                                <strong class="price">25,000<em>원</em></strong>
+                                <del class="price2">25,000<em>원</em></del>
+                                <button type="button" class="btn_book btn_black">예약</button>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="#"><strong class="tit">1,000~2,000CC이하 승용차</strong></a></dt>
+                            <dd> 
+                                <div class="img">
+                                    <img src="../../images/common/thumb_188x124.png" alt="">
+                                </div>
+                                <div class="tag">
+                                    <span class="tag_compact">소형</span>
+                                    <span class="tag_gas">휘발유</span>
+                                </div>
+                                <p class="txt">가솔린 | 4인승, 4도어 | 대형가방 2개</p>
+                                <ul class="option">
+                                    <li class="none">[보험 불포함]</li>
+                                    <li>5만원</li>
+                                    <li>30만원</li>
+                                </ul>
+                                <strong class="price">25,000<em>원</em></strong>
+                                <del class="price2">25,000<em>원</em></del>
+                                <button type="button" class="btn_book btn_black">예약</button>
+                            </dd>
+                        </dl>
+                    </li> 
+                </ul>
+            </div> 
+        
+            <div class="paging">
+                <a href="#" class="btn_first">처음</a>
+                <a href="#" class="btn_prev">이전</a>
+                <em>1</em><!-- 현재 페이지 일경우-->
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+                <a href="#">9</a>
+                <a href="#">10</a>
+                <a href="#" class="btn_next">다음</a>
+                <a href="#" class="btn_last">맨끝</a>
+            </div>
+
+        </div>
+        <!-- //content --> 
+    </div>
+</div>
+
+    
+
+<!-- Layer : 포인트 안내 -->
+<div id="layerPoint" class="layer layer_s">
+    <div class="layer_tit">
+        <h2>회원 포인트 사용 안내</h2>
+        <a href="#" class="btn_layer_close"><img src="../../images/common/btn_layer_close.png" alt="닫기"></a>
+    </div>
+    <div class="layer_con">
+        <!-- content -->
+        <div class="layer_padding">   
+            <h3 class="mb25">회원 포인트</h3>
+            <ul class="txt_list">
+                <li class="check f14">
+                    회원 포인트(이하 ‘포인트’) 는 최소 50,000 포인트 이상 적립 되셔야 사용이 가능합니다.
+                </li>
+                <li class="check f14">
+                    포인트 사용은 30일 미만 단기 대여 시에만 사용이 가능 합니다
+                </li>
+                <li class="check f14">
+                    포인트 확인 후 예약화면에서 포인트 사용여부를 체크하시고 사용을 원하시는 포인트 만큼   입력합니다.<br>
+					<span class="txt_point">   (적립 기준 50,000 포인트 이상 되면 보여지는 숫자에서 50,000 포인트 이상 사용을 원하시는 포인트 만큼 입력 합니다.)</span>
+                </li>
+                <li class="check f14">
+                    대여일 당일 대여지점에서 포인트를 이용한 결제를 요청합니다.
+                </li>
+                <li class="check f14">
+                    포인트를 활용하여 대여금액을 결재한 금액에 대해서는 포인트 적립이 되지 않습니다.
+                </li>
+            </ul> 
+        </div>
+        <!-- //content --> 
+        <div class="layer_foot borderTop">
+            <a href="#" class="btn_red btn_200">확인</a>
+        </div>
+    </div>
+</div>
+    
+<!-- Layer : 자차손해 면책 -->
+<div id="layerExemption" class="layer layer_b">
+    <div class="layer_tit">
+        <h2>자차손해 면책 제도 안내 </h2>
+        <a href="#" class="btn_layer_close"><img src="../../images/common/btn_layer_close.png" alt="닫기"></a>
+    </div>
+    <div class="layer_con">
+        <!-- content -->
+        <div class="layer_padding">   
+            
+            <h3 class="mb25">자차손해 면책 제도(CDW)</h3>
+            <ul class="txt_list mb60">
+                <li class="check f14">차량 대여 중 귀책사유로 인해 발생하는 모든 차량 손해(손, 망실)는 고객님의 책임 입니다.</li>
+                <li class="check f14">단, 자차손해 면책제도(CDW)에 가입하시면 고객의 실수로 발생한 자차사고에 대한 보호를 받으실 수가 있으며, 가입은 고객님의 선택 사항입니다.</li>
+                <li class="check f14">대인 : 무한, 대물 : 2천만원, 차손 :1천 5백만원</li>
+            </ul>
+            
+            <h3 class="mb25">내륙 지역</h3> 
+            <ul class="txt_list mb60">
+                <li class="check f14">
+                    차량손해의 액수에 상관없이 사고건당 5만원~30만원으로 차량 손해에 대한 책임을 보호받을 수 있습니다. 단, 차량손해 면책제도의 면책금 가입종류에 따라 가입 요금이 다릅니다.
+                </li>
+                <li class="check f14">
+                    면책금 종류
+                    <ul class="txt_list mt5">
+                        <li class="bul f14">
+                            국산 차량 : 5만원, 30만원
+                        </li>
+                        <li class="bul f14">
+                            수입차량 : 30만원(단일 면책금 제도 운영)
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3 class="mb25">제주 지역 </h3>
+            <ul class="txt_list mb60">
+                <li class="check f14">
+                    면책금 종류
+                    <ul class="txt_list mt5">
+                        <li class="bul f14">
+                            국산차량 : 완전 면책 제도, 30만원
+                        </li>
+                        <li class="bul f14">
+                            수입차량 : 30만원(단일 면책금 제도 운영)
+                        </li>
+                        <li class="bul f14">
+                            완전 면책 제도는 차량 손해 액수에 상관없이  고객 부담금이 없으며, 차량 손해에 대한 책임을  보호 받을 수 있습니다.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+  
+            <h3 class="mb25">차량 수리비</h3> 
+            <ul class="txt_list">
+                <li class="check f14">
+                    차량 대여 중 귀책사유로 인해 발생하는 모든 차량 손해(손, 망실)는 고객님께서 차량 수리비를 지불하셔야 합니다.
+                </li>
+                <li class="check f14">
+                    휴차 보상 : 차량 손해 발생 시 수리기간동안 대여요금의 50%에 해당하는 휴차 보상료가 청구되면, 이는 고객님이 배상해야 합니다.
+                </li>
+                <li class="check f14">
+                    단, 차량손해 면책 제도에 가입하시면 자차 사고에 대한 보호를 받으실 수 있습니다. 차량 수리비가 면책금 가입 종류에 따라 가입된 면책금 미만인 경우 실비 정산을 하며, 가입된 면책금 이상인 경우 각각 가입하신 최고 면책금만 지불하시면 됩니다.
+                </li>
+            </ul>
+  
+        </div>
+        <!-- //content --> 
+        <div class="layer_foot borderTop">
+            <a href="#" class="btn_red btn_200">확인</a>
+        </div>
+    </div>
+</div>
+
+
+    
+<!-- Layer : 내비게이션 안내 -->
+<div id="layerNav" class="layer layer_s">
+    <div class="layer_tit">
+        <h2>내비게이션 대여 서비스 안내</h2>
+        <a href="#" class="btn_layer_close"><img src="../../images/common/btn_layer_close.png" alt="닫기"></a>
+    </div>
+    <div class="layer_con">
+        <!-- content -->
+        <div class="layer_padding">   
+            <h3 class="mb25">내비게이션</h3>
+            <ul class="txt_list">
+                <li class="check f14">
+                    고객님의 이용 편의를 위하여 2012년 3월 1일 부터 내비게이션을 무료로 제공해 드리고 있습니다.
+                </li>
+                <li class="check f14">
+                    내비게이션을 이용하면 지도를 준비하지 않으셔도 찾아가는 목적지를 최단거리로 표시하면서 연료비 절감 및 시간 활용이 용이 합니다. 
+                </li>
+            </ul> 
+        </div>
+        <!-- //content --> 
+        <div class="layer_foot borderTop">
+            <a href="#" class="btn_red btn_200">확인</a>
+        </div>
+    </div>
+</div>
+    
+
+<!-- Layer : 베이비 시트 안내 -->
+<div id="layerBabySeat" class="layer layer_s">
+    <div class="layer_tit">
+        <h2>베이비 시트 안내</h2>
+        <a href="#" class="btn_layer_close"><img src="../../images/common/btn_layer_close.png" alt="닫기"></a>
+    </div>
+    <div class="layer_con">
+        <!-- content -->
+        <div class="layer_padding">   
+            <h3 class="mb25">베이비 시트</h3>
+            <ul class="txt_list mb50">
+                <li class="check f14">
+                    내륙 베이비 시트 안내 내용 필요
+                </li>
+            </ul> 
+        </div>
+        <!-- //content --> 
+        <div class="layer_foot">
+            <a href="#" class="btn_red btn_200">확인</a>
+        </div>
+    </div>
+</div>
+    
+
+<!-- Layer : 기타 딜리버리서비스 안내 -->
+<div id="layerEtcDv" class="layer layer_b">
+    <div class="layer_tit">
+        <h2>딜리버리 서비스(DS) 안내</h2>
+        <a href="#" class="btn_layer_close"><img src="../../images/common/btn_layer_close.png" alt="닫기"></a>
+    </div>
+    <div class="layer_con">
+        <!-- content -->
+        <div class="layer_padding">   
+            
+            <h3 class="noBorder">딜리버리 서비스(DS) 이용고객 안내 사항</h3>
+            <div class="grid">
+                <table class="tb_row">
+                    <caption></caption>
+                    <colgroup>
+                        <col style="width:205px">
+                        <col style="width:auto"> 
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">대상</th>
+                            <td>롯데렌터카 회원(비회원은 회원가입 후 이용 가능)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">이용 금액</th>
+                            <td>정상가 : 15,000원 / 대여, 반납 별도</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">결제 방법</th>
+                            <td>임차인 본인 신용카드(법인카드 포함)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">서비스 가능 시간 및 지점</th>
+                            <td>
+                                <ul class="txt_list">
+                                    <li class="bul f14">
+                                        오전 09:30~18:00 (대여시간으로부터 48시간 이전 예약 필수) 
+                                    </li>
+                                    <li class="bul f14">
+                                        대여시간이 48시간 이내일 경우 지점으로 문의 후 딜리버리 서비스 가능여부 확인  
+                                        <ul class="txt_list">
+                                            <li class="gray">         
+                                            강남 지점 (02-3443-8000)
+                                            </li>
+                                            <li class="gray">
+                                            논현 지점 (02-511-1001)
+                                            </li>
+                                            <li class="gray">
+                                            잠실 지점 (02-2203-8000)
+                                            </li>
+                                            <li class="gray">
+                                            고속터미널 지점 (02-3444-8000)
+                                            </li>
+                                            <li class="gray">
+                                            구로 지점 (02-3664-8000)
+                                            </li>
+                                            <li class="gray">
+                                            강북지점 (02-922-8000)
+                                            </li>
+                                            <li class="gray">
+                                            서울역 지점 (02-715-0010)
+                                            </li>
+                                            <li class="gray">
+                                            여의도 지점 (02-785-8000)
+                                            </li>
+                                        </ul>    
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <ul class="txt_list mt5">
+                <li class="red">
+                    딜리버리 서비스는 고객연락 두절 시, 서비스 이용이 불가합니다. 고객연락처를 정확히 기입해 주시기 바랍니다.
+                </li>
+            </ul>
+            
+            <hr class="line">
+            
+            <ul class="txt_list mb50">
+                <li class="gray f14">
+                    DS는 <span class="txt_black">회원전용 서비스</span> 입니다.(비회원의 경우, 회원가입 후 이용 가능합니다.) 
+                    <ul class="txt_list mt5">
+                        <li class="gray f12">
+                            단, i-PIN인증 회원은 임대차계약서 작성을 위하여 주민번호 생성 작업을 요청 드릴 수 있습니다.
+                        </li>
+                    </ul>
+                </li>
+                <li class="gray f14">
+                    DS는 <span class="txt_black">예약자와 임차인이 동일</span> 하여야 하며, 상이할 경우 대여가 제한 될 수 있습니다.
+                </li>
+                <li class="gray f14">
+                    DS이용 시, 일부 지점은 배송시간이 제한 될 수 있습니다. <span class="txt_black"> (서비스 가능지역: 서울 전 지역)</span> 
+                </li>
+                <li class="gray f14">
+                    DS요금은 편도 15,000원(1회)이며, 20Km(반납시)초과시 추가요금이 부과됩니다.
+                </li>
+                <li class="gray f14">
+                    DS는 <span class="txt_black">임차인 본인의 신용카드와 포인트 결제만 가능</span>합니다.(차량대여 시 신용정보조회를 동반하는 현금(현금/무료이용권) 결제 불가합니다.)
+                </li>
+                <li class="gray f14">
+                    DS는 차량/기사 준비 및 이동시간을 고려하여 <span class="txt_black">사전예약필수 항목이며, 변경요청 시간에 따라 서비스가 제한 될 수 있습니다.(예약: 48시간 전)</span>
+                </li>
+                <li class="gray f14">
+                DS는     교통사정에 따라, 고객님이 지정해주신 시점에서 20~30분 이내에 도착 가능합니다.
+                </li>
+                <li class="gray f14">
+                    <span class="txt_black">차량인수(계약서 작성완료)시점부터 렌탈 시간에 포함됩니다.</span>
+                </li>
+                <li class="gray f14">
+                    차량색상, 차량번호 등 <span class="txt_black">고객의  단순변심으로 인한 교환, 취소의 경우 DS요금이 청구됩니다.</span>
+                </li>
+                <li class="gray f14">
+                    예약  시간 및 위치변경은 <span class="txt_point">3시간 전</span>까지만 요청가능하며, 관련 내용은 <span class="txt_point">해당지점으로 직접 문의</span>하셔야 합니다.
+                </li>
+                <li class="gray f14">
+                    DS는 <span class="txt_point">조기반납/ 반납지연/ 기간연장 시, 지점&고객 센터로 사전연락 필수</span> 서비스 입니다. 
+                    <ul class="txt_list mt5">
+                        <li class="gray f12">
+                            <span class="txt_point">지점&고객 센터로 사전 연락하지 않은 경우, DS 서비스가 제한</span>될 수 있습니다.
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+            
+            <h3 class="mb25">지역별 딜리버리 서비스 가능 지점 안내</h3>
+            <h5>서울</h5>
+            <div class="grid">
+                <table class="tb_col">
+                    <caption></caption>
+                    <colgroup>
+                        <col style="width:200px"> 
+                        <col style="width:auto"> 
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col"  class="bgGray2">가능지점</th>
+                            <th scope="col" class="bgGray2">딜리버리 가능 지역</th> 
+                        </tr> 
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="left noBorderL">강남 지점</th>
+                            <td rowspan="2" class="left">강남구, 서초구, 송파구, 성동구</td> 
+                        </tr> 
+                        <tr>
+                            <th class="left noBorderL">논현 지점</th>
+                        </tr>
+                        <tr>
+                            <th class="left noBorderL">잠실 지점</th>
+                            <td class="left">송파구, 강동구</td> 
+                        </tr>
+                        <tr>
+                            <th class="left noBorderL">고속터미널 지점</th>
+                            <td class="left">서초구, 관악구, 동작구, 용산구, 강남구</td> 
+                        </tr>
+                        <tr>
+                            <th class="left noBorderL">구로 지점</th>
+                            <td class="left">금천구, 관악구, 양천구, 동작구</td> 
+                        </tr>
+                        <tr>
+                            <th class="left noBorderL">강북 지점</th>
+                            <td class="left">성북구, 강북구, 도봉구, 노원구</td> 
+                        </tr>
+                        <tr>
+                            <th class="left noBorderL">서울역 지점</th>
+                            <td class="left">용산구, 마포구, 중구, 종로구, 서대문구, 동대문구</td> 
+                        </tr>
+                        <tr>
+                            <th class="left noBorderL">여의도 지점</th>
+                            <td class="left">강서구, 양천구, 영등포구, 동작구, 용산구</td> 
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <ul class="txt_list mt5">
+                <li class="red">
+                    사고 발생 시 DS로 반납 불가하며, 해당지점으로 반납해주여야 합니다.
+                </li>
+                <li class="red">
+                    차량 반납이전에 발생한 주차비, 과태료는 고객님 부담입니다.
+                </li>
+                <li class="red">
+                    딜리버리 주소지 입력 시, 서비스 가능 지점이 설정됩니다.
+                </li>
+                <li class="red">
+                    예약문의 : 롯데렌터카 지점 및 고객 센터 (T. 1588-1230)
+                </li>
+            </ul> 
+        </div>
+        <!-- //content --> 
+        <div class="layer_foot borderTop">
+            <a href="#" class="btn_red btn_200">확인</a>
+        </div>
+    </div>
+</div>
+    
+    
+    
+
+<!-- Layer : 빠른서비스 -->
+<div id="layerService" class="layer layer_b">
+    <div class="layer_tit">
+        <h2>빠른 서비스(Express) 안내 </h2>
+        <a href="#" class="btn_layer_close"><img src="../../images/common/btn_layer_close.png" alt="닫기"></a>
+    </div>
+    <div class="layer_con">
+        <!-- content -->
+        <div class="layer_padding">  
+            <h3>빠른(Express) 서비스 이용 안내</h3>
+            <p class="txt_express">
+                당사 회원중 홈페이지를 통해 사전에 예약, 개인 정보 수정/확인,이용요금 결제, 개인정보이용 동의서를 모두 완료한 고객에 한하여
+                차량 대여시 지점에서 간단한 본인확인(운전면허증)과 계약서 사인만으로 차량을 대여할 수 있는 획기적인 렌탈 서비스 입니다.
+                <span>빠른(Express) 서비스는 제주 지점에서만 운영됩니다. 내륙지점 확대 서비스는 향후 적용될 예정입니다.</span>
+            </p>
+            
+            <h3>이용 절차</h3>
+            <ol class="express_process">
+                <li class="list1">
+                    <strong>01. 예약</strong>
+                    <ul class="txt_list">
+                        <li class="black f14">홈페이지에서 빠른(Express) 차량예약을 한 뒤, 선결제, 개인정보 이용동의서,<br>
+                        개인정보 사전 업데이트(주소, 연락처,   면허정보 등)를 완료합니다.</li>
+                        <li class="red">홈페이지를 통해 예약하는 고객 및 상기 내용을 모두 완료한 고객에 한해 서비스를 이용하실 수 있습니다.</li>
+                    </ul>
+                </li>
+                <li class="list2">
+                    <strong>02. 지점 도착</strong>
+                    <ul class="txt_list">
+                        <li class="black f14">제주 공항 도착 후, 롯데렌터카 셔틀 버스 탑승 후 지점으로 이동합니다.</li>
+                        <li class="black f14">지점 도착 후 빠른(Express) 서비스 주차 안내도를 확인 (이름, 차번, 주차구역) 합니다.</li>
+                        <li class="black f14">해당 주차구역으로 이동합니다.</li>
+                        <li class="red">주차 전광판은 제주지점에서만 운영되고 있으며, 내륙지점은 직원을 통한 대여구역 안내 후 이동하게 됩니다.</li>
+                    </ul>
+                </li>
+                <li class="list3">
+                    <strong>03. 차량 대여</strong>
+                    <ul class="txt_list">
+                        <li class="black f14">차량 확인후 외부, 주유, 기능 설명 등을 안내 받습니다.</li>
+                        <li class="black f14">
+                        이후 면허증 확인과 계약서에 사인 한 뒤 차량을 대여합니다.</li>
+                        <li class="red">지점에서 차량 대여시 추가사항 (후 결제카드 변경, 추가 운전자 등록, 공동 임차인 등록, 계약내용 수정 등)발생시 <br> 지점에서 추가 업무가 발생 할 수 있고, 차량 반납 프로세스는 일반 고객과 동일합니다.</li>
+                    </ul>
+                </li>
+            </ol>
+ 
+        </div>
+        <!-- //content -->
+        <div class="layer_foot">
+            <a href="#" class="btn_red btn_200">확인</a>
+        </div> 
+    </div>
+</div>
+    
+    
+    
+
+<!-- Layer : 카시트 대여 서비스 안내 안내 -->
+<div id="layerCarSeat" class="layer layer_s">
+    <div class="layer_tit">
+        <h2>카시트 대여 서비스 안내</h2>
+        <a href="#" class="btn_layer_close"><img src="../../images/common/btn_layer_close.png" alt="닫기"></a>
+    </div>
+    <div class="layer_con">
+        <!-- content -->
+        <div class="layer_padding">   
+            <h3 class="noBorder">카시트 대여 안내 사항 </h3> 
+            <div class="grid mb10">
+                <table class="tb_col">
+                    <caption></caption>
+                    <colgroup>
+                        <col style="width:23%">
+                        <col style="width:auto">
+                        <col style="width:25%"> 
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">구분</th>
+                            <th scope="col">제품명</th>
+                            <th scope="col" class="type2">1일 대여요금<span>(VAT포함)</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>신생아용<br>(바구니용)</td>
+                            <td class="left">맥시코시 페블 + 패밀리픽스set</td>
+                            <td rowspan="3">7,000원</td>
+                        </tr> 
+                        <tr>
+                            <td>유아동용</td>
+                            <td class="left">다이치 퍼스트세븐 터치픽스</td> 
+                        </tr> 
+                        <tr>
+                            <td>주니어용</td>
+                            <td class="left">싸이벡스 솔루션 M-FIX</td> 
+                        </tr> 
+                    </tbody>
+                </table>
+            </div>
+
+            <ul class="txt_list">
+                <li class="black f14">대여요금은 1일 대여요금 X 사용일수(날짜기준, 7/22 10:00 ~ 7/23 10:00 대여 시 2일요금 계산)입니다.</li>
+                <li class="black f14">카시트와 유모차는 각각 1개씩만 대여 예약이 가능합니다. (1개 이상 이용을 원하시는 고객님은 고객 센터 및 제주지점으로 문의 부탁드립니다)</li>
+                <li class="black f14">기존 베이비 시트 예약고객은 정상적으로 베이비 시트 이용이 가능하며, 카시트로 변경을 원하시는 경우 예약 변경을 통해 옵션 변경이 가능합니다.</li>
+                <li class="black f14">카시트/유모차 관련 문의 또는 다른 제품을 원하시는 경우에는 [제주엔젤렌탈 (064-747-7174)]로 문의하시기 바랍니다.</li>
+            </ul>
+            
+            
+            
+        </div>
+        <!-- //content --> 
+        <div class="layer_foot borderTop">
+            <a href="#" class="btn_red btn_200">확인</a>
+        </div>
+    </div>
+</div>
+    
+    
+
+<!-- Layer : 유모차 대여 서비스 안내  -->
+<div id="layerStroller" class="layer layer_s">
+    <div class="layer_tit">
+        <h2>유모차 대여 서비스 안내 </h2>
+        <a href="#" class="btn_layer_close"><img src="../../images/common/btn_layer_close.png" alt="닫기"></a>
+    </div>
+    <div class="layer_con">
+        <!-- content -->
+        <div class="layer_padding">   
+            <h3 class="noBorder">유모차 대여 안내 사항</h3> 
+            <div class="grid mb10">
+                <table class="tb_col">
+                    <caption></caption>
+                    <colgroup>
+                        <col style="width:18%">
+                        <col style="width:auto">
+                        <col style="width:28%"> 
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">구분</th>
+                            <th scope="col">제품명</th>
+                            <th scope="col" class="type2">1일 대여요금<span>(VAT포함)</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>절충형</td>
+                            <td class="left">일글레시나 화이트트립 (블루진)</td>
+                            <td rowspan="2">6,000원</td>
+                        </tr> 
+                        <tr>
+                            <td>휴대용</td>
+                            <td class="left">엘레니어 세스토라이트</td> 
+                        </tr> 
+                    </tbody>
+                </table>
+            </div>
+
+            <ul class="txt_list">
+                <li class="black f14">대여요금은 1일 대여요금 X 사용일수(날짜기준, 7/22 10:00 ~ 7/23 10:00 대여 시 2일요금 계산)입니다.</li>
+                <li class="black f14">카시트와 유모차는 각각 1개씩만 대여 예약이 가능합니다. (1개 이상 이용을 원하시는 고객님은 고객센터 및 제주지점으로 문의 부탁드립니다)</li>
+                <li class="black f14">기존 베이비 시트 예약고객은 정상적으로 베이비 시트 이용이 가능하며, 카시트로 변경을 원하시는 경우 예약 변경을 통해 옵션 변경이 가능합니다.</li>
+                <li class="black f14">카시트/유모차 관련 문의 또는 다른 제품을 원하시는 경우에는 [제주엔젤렌탈(064-747-7174)]로 문의하시기 바랍니다.</li>
+            </ul> 
+        </div>
+        <!-- //content --> 
+        <div class="layer_foot borderTop">
+            <a href="#" class="btn_red btn_200">확인</a>
+        </div>
+    </div>
+</div>
+    
+    
+
+<!-- Layer : 인스탁스 대여 서비스 안내  -->
+<div id="layerInstax" class="layer layer_s">
+    <div class="layer_tit">
+        <h2>인스탁스 대여 서비스 안내 </h2>
+        <a href="#" class="btn_layer_close"><img src="../../images/common/btn_layer_close.png" alt="닫기"></a>
+    </div>
+    <div class="layer_con">
+        <!-- content -->
+        <div class="layer_padding">   
+            <h3 class="mb25">인스탁스</h3>
+            <ul class="txt_list">
+                <li class="check f14">후지필름 즉석카메라 '인스탁스 미니/ 와이드' 옵션을 선택하시고 제주 오토하우스 후지필름 부스에방문하시면 즉석카메라를 무료로 대여해 드립니다.<br>
+                    <ul class="txt_list">
+                        <li class="red f13">인스탁스 필름은 현장에서 별도로 구매하여 사용 해야 합니다.</li>
+                    </ul> 
+                </li>
+                 
+            </ul> 
+            
+            
+        </div>
+        <!-- //content --> 
+        <div class="layer_foot borderTop">
+            <a href="#" class="btn_red btn_200">확인</a>
+        </div>
+    </div>
+</div>
+    
+<!-- Layer : 기간선택 -->
+<div id="cal3" class="layer layer_b">
+    <div class="layer_tit">
+        <h2>기간 선택</h2>
+        <a href="#"  class="btn_layer_close"><img src="../../../rent_pc/images/common/btn_layer_close.png" alt="레이어 팝업 닫힘"></a>
+    </div>
+    <div class="layer_con">
+        <div class="wrap_cal"> 
+            <div class="left_cal">
+                <h6>대여일시</h6>
+                <div class="calendar_b">
+                </div>
+                <div class="cal_date">
+                    <strong class="date"></strong>
+                    <span class="select">
+                        <select id="hh1" class="sel_hour">
+                            <option value="00" selected="selected">00시</option>
+                            <option value="01">01시</option>
+                            <option value="02">02시</option>
+                            <option value="03">03시</option>
+                        </select>
+                    </span>
+                    <span class="select">
+                        <select id="mm1" class="sel_minute">
+                            <option value="00" selected="selected">00분</option>
+                            <option value="01">01분</option>
+                            <option value="02">02분</option>
+                            <option value="03">03분</option>
+                        </select>
+                    </span>
+                </div>
+            </div>
+            <div class="arrow"></div>
+            <div class="right_cal">
+                <h6>반납일시</h6>
+                <div class="calendar_b">
+                </div>
+                <div class="cal_date">
+                    <strong class="date">YYYY-MM-DD</strong>
+                    <span class="select">
+                        <select id="hh1" class="sel_hour">
+                            <option value="00" selected="selected">00시</option>
+                            <option value="01">01시</option>
+                            <option value="02">02시</option>
+                            <option value="03">03시</option>
+                        </select>
+                    </span>
+                    <span class="select">
+                        <select id="mm1" class="sel_minute">
+                            <option value="00" selected="selected">00분</option>
+                            <option value="01">01분</option>
+                            <option value="02">02분</option>
+                            <option value="03">03분</option>
+                        </select>
+                    </span>
+                </div>
+            </div>                                            
+        </div>
+        <ul class="txt_list ml100">
+            <li class="red">
+                서울권역은 현재시간부터 4시간, 대전/충청/세종 및 광주/전라지역은 3시간, 그 외 권역은 6시간 이후 예약이 가능 합니다
+            </li>
+        </ul>
+        <div class="layer_foot nb">
+            <a href="#" class="btn_layer_close btn_cal_confirm btn_red btn_200">확인</a>
+        </div>  
+    </div>
+</div> 
+ 
+
+
+
+<!-- Layer : L.POINT 온라인 사용인증 서비스 -->
+<div id="layerLpoint" class="layer layer_s">
+    <div class="layer_tit">
+        <h2>L.POINT 온라인 사용인증 서비스</h2>
+        <a href="#" class="btn_layer_close"><img src="../../images/common/btn_layer_close.png" alt="닫기"></a>
+    </div>
+    <div class="layer_con">
+        <!-- content -->
+        <div class="layer_padding">   
+            <p class="txt1">안전한 L.POINT 결제를 위해 고객님이 소지하신 포인트 카드의 본인 확인이 필요합니다.</p>
+
+
+			<div class="grid noBorderT mt30">
+				<table class="tb_noBorder">
+					<caption></caption>
+					<colgroup>
+						<col style="width:110px">
+						<col style="width:auto">  
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"><label for="">카드번호</label></th>
+							<td>
+								<input type="text" name="" id="" value="" style="width:64px;">
+								<ins class="hyphen">-</ins>
+								<input type="text" name="" id="" value="" style="width:64px;">
+								<ins class="hyphen">-</ins>
+								<input type="text" name="" id="" value="" style="width:64px;">
+								<ins class="hyphen">-</ins>
+								<input type="text" name="" id="" value="" style="width:64px;">
+							</td> 
+						</tr>   
+						<tr>
+							<th scope="row"><label for="">비밀번호</label></th>
+							<td>
+								<input type="password" name="" id="" value="" placeholder="L.POINT 비밀번호 입력" style="width:300px;">
+							</td> 
+						</tr> 
+					</tbody>
+				</table>
+			</div>
+
+			<div class="btn_wrap"> 
+					<a href="#" class="btn_gray btn_160">이전</a>
+					<a href="#" class="btn_red btn_160">다음</a>
+			</div>
+  
+			<ul class="txt_list">
+				<li class="black f14">본인 명의의 카드로만 조회 및 사용이 가능합니다.</li>
+				<li class="black f14">L.POINT 비밀번호는 영문/숫자 6~8자리로 구성됩니다.<br>(최초 설정은 L.POINT 에서 가능) <a href="#" class="btn_white">비밀번호 설정하기</a></li>
+				<li class="black f14">5회 이상 비밀번호 입력이 틀릴 경우 새로운 비밀번호 등록이 필요합니다.<br>비밀번호 설정하기 버튼을 눌러 L.POINT 서비스에서 설정해주세요.</li>
+				<li class="black f14">L.pay로 결제하시면 비밀번호 없이 편리하게 사용 가능합니다.</li>
+			</ul>
+  
+        </div>
+        <!-- //content -->  
+    </div>
+</div>     
+    
+
+
+</body>
+</html>

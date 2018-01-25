@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1200, initial-scale=1">
+
+	<title></title>
+	<link rel="stylesheet" href="../../css/style.css">
+	
+
+	<!--// jQuery core -->
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.min.js"></script>
+	<script src="../../js/html5shiv.js"></script>
+	<script src="../../js/core.js"></script>
+	<script src="../../js/ui.js"></script>
+	<style>
+		
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="inner_header">
+			<a href="#container" class="skip_nav">Skip to Content</a>
+			<a href="#" class="logo"><h1><img src="../../images/common/logo.png" alt="Lotte rent-a-car"></h1></a>
+			<a href="#" class="side_logo"><img src="../../images/common/logo_hertz.png" alt="hertz"></a>
+			<ul id="extra_menu" class="extra_menu">
+				<!--// 비회원일 경우 -->
+				<li class="login"><a href="#">Login</a></li>
+				<li class="join"><a href="#">Register</a></li>
+
+				<!--// 회원일 경우 -->
+				<li class="logout"><a href="#">My Reservation</a></li>
+				<li class="mypage_quick"><a href="#">Mypage</a></li>
+				<li class="language"><a href="#">KOREAN</a></li>
+			</ul>
+		</div>
+		<div id="gnb" class="gnb">
+			<ul class="menus">
+				<li class="menu idx1">
+					<a href="#">Reservations</a>
+				</li>
+				<li class="menu idx2">
+					<a href="#">Car rental</a>
+					<ul class="submenu">
+						<li class="depth2">
+							<a href="#">Rental information </a>
+							<ul>
+								<li>
+									<a href="#">Rental Cost Information</a>
+								</li>
+								<li>
+									<a href="#">Additional Rate</a>
+								</li>
+								<li>
+									<a href="#">Rental information for foreigner</a>
+								</li>
+								<li>
+									<a href="#">Overseas Reservation</a>
+								</li>
+								<li>
+									<a href="#">Chauffeured Service</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="menu idx3">
+					<a href="#">Location</a>
+				</li>
+			</ul>
+		</div>
+		<div class="gnb_open"></div>
+	</header>
+	<!-- container -->
+	<div id="container" class="mypage">
+		<!-- content -->
+		<h2 class="border pb5">My Branch</h2>
+		<p class="txt_gray">You can register up to 5 locations on your list.</p>
+		<p class="txt_gray mt5">You can choose locations quickly from "My Location List".</p>
+		<div class="branch_box mt70">
+			<div class="branch">
+				<h3>Register "My Location List"</h3>
+				<!--
+				<table class="area mt15">
+					<tr>
+						<td><a href="#seoul">서울</a></td>
+						<td><a href="#incheon">인천</a></td>
+						<td><a href="#gyeonggi">경기</a></td>
+						<td><a href="#gangwon">강원</a></td>
+						<td><a href="#chungbuk">충북</a></td>
+					</tr>
+					<tr>
+						<td><a href="#sejong">세종</a></td>
+						<td><a href="#chungnam">충남</a></td>
+						<td><a href="#daejeon">대전</a></td>
+						<td><a href="#jeonbuk">전북</a></td>
+						<td><a href="#jeonnam">전남</a></td>
+					</tr>
+					<tr>
+						<td><a href="#gwangju">광주</a></td>
+						<td><a href="#gyeongbuk">경북</a></td>
+						<td><a href="#daegu">대구</a></td>
+						<td><a href="#gyeongnam">경남</a></td>
+						<td><a href="#busan">부산</a></td>
+					</tr>
+					<tr>
+						<td><a href="#ulsan">울산</a></td>
+						<td><a href="#jeju">제주</a></td>
+						<td><a href="#airport">공항지점</a></td>
+						<td><a href="#station">역사지점</a></td>
+						<td><a href="#alltime">24시간 지점</a></td>
+					</tr>
+				</table>
+				-->
+				<ul class="area mt10">
+					<li><a href="#seoul">서울</a></li>
+					<li><a href="#incheon">인천/경기/강원</a></li>
+					<li><a href="#daejeon">대전/충청</a></li>
+					<li><a href="#gwangju">광주/전라</a></li>
+					<li><a href="#daegu">대구/부산/울산/경상</a></li>
+				</ul>
+				<div class="branch_list mt10 ml15">
+					<ul id="seoul">
+						<li><a href="#">강남</a></li>
+						<li><a href="#">강북</a></li>
+						<li><a href="#">강서</a></li>
+						<li><a href="#">고속터미널</a></li>
+						<li><a href="#">관악</a></li>
+						<li><a href="#">광화문</a></li>
+						<li><a href="#">구로</a></li>
+						<li><a href="#">구로디지털</a></li>
+						<li><a href="#">군자</a></li>
+						<li><a href="#">김포공항</a></li>
+						<li><a href="#">논현</a></li>
+						<li><a href="#">동대문</a></li>
+						<li><a href="#">마포</a></li>
+						<li><a href="#">사당</a></li>
+						<li><a href="#">서울역</a></li>
+						<li><a href="#">송파</a></li>
+						<li><a href="#">수서역</a></li>
+						<li><a href="#">수입차</a></li>
+						<li><a href="#">신도림 수입차</a></li>
+						<li><a href="#">양재</a></li>
+						<li><a href="#">여의도</a></li>
+						<li><a href="#">영등포</a></li>
+						<li><a href="#">은평</a></li>
+						<li><a href="#">천호</a></li>				
+					</ul>
+					<ul id="incheon">
+						<li><a href="#">계양</a></li>
+						<li><a href="#">남인천</a></li>
+						<li><a href="#">송도</a></li>
+						<li><a href="#">인천</a></li>
+						<li><a href="#">인천국제공항</a></li>						
+					<!--</ul>
+					<ul id="gyeonggi">-->
+						<li><a href="#">광명</a></li>
+						<li><a href="#">구리남양주</a></li>
+						<li><a href="#">김포신도시</a></li>
+						<li><a href="#">부천</a></li>
+						<li><a href="#">분당</a></li>
+						<li><a href="#">성남</a></li>
+						<li><a href="#">수원</a></li>
+						<li><a href="#">시흥</a></li>
+						<li><a href="#">안산</a></li>
+						<li><a href="#">안양</a></li>
+						<li><a href="#">오산</a></li>
+						<li><a href="#">용인</a></li>
+						<li><a href="#">의정부</a></li>
+						<li><a href="#">이천</a></li>
+						<li><a href="#">일산</a></li>
+						<li><a href="#">평택</a></li>
+						<li><a href="#">화성동탄</a></li>
+					<!--</ul>
+					<ul id="gangwon">-->
+						<li><a href="#">강릉</a></li>
+						<li><a href="#">속초</a></li>
+						<li><a href="#">원주</a></li>
+						<li><a href="#">춘천</a></li>
+					</ul>
+					<ul id="daejeon">
+						<li><a href="#">대전</a></li>
+						<li><a href="#">대전역</a></li>
+						<li><a href="#">유성</a></li>
+					<!--</ul>					
+					<ul id="sejong">-->
+						<li><a href="#">세종</a></li>
+					<!--</ul>					
+					<ul id="chungbuk">-->
+						<li><a href="#">청주</a></li>
+						<li><a href="#">충주</a></li>
+					<!--</ul>
+					<ul id="chungnam">-->
+						<li><a href="#">공주</a></li>
+						<li><a href="#">당진</a></li>
+						<li><a href="#">서산</a></li>
+						<li><a href="#">아산</a></li>
+						<li><a href="#">천안</a></li>
+					</ul>
+					<ul id="gwangju">
+						<li><a href="#">광주(장기렌터카)</a></li>
+						<li><a href="#">광주공항</a></li>
+						<li><a href="#">광주상무(터미널)</a></li>
+						<li><a href="#">광주송정KTX</a></li>
+						<li><a href="#">동광주</a></li>
+					<!--</ul>					
+					<ul id="jeonbuk">-->
+						<li><a href="#">군산</a></li>
+						<li><a href="#">익산</a></li>
+						<li><a href="#">전주</a></li>				
+					<!--</ul>
+					<ul id="jeonnam">-->
+						<li><a href="#">광양</a></li>
+						<li><a href="#">목포</a></li>
+						<li><a href="#">목포역</a></li>
+						<li><a href="#">순천</a></li>
+						<li><a href="#">순천역</a></li>
+						<li><a href="#">여수</a></li>
+						<li><a href="#">여수공항</a></li>
+					</ul>
+					<ul id="daegu">
+						<li><a href="#">동대구</a></li>
+						<li><a href="#">서대구</a></li>
+					<!--</ul>
+					<ul id="busan">-->
+						<li><a href="#">김해공항</a></li>
+						<li><a href="#">부산역</a></li>
+						<li><a href="#">해운대</a></li>
+					<!--</ul>
+					<ul id="ulsan">-->
+						<li><a href="#">울산</a></li>
+						<li><a href="#">울산공항</a></li>
+						<li><a href="#">울산KTX</a></li>				
+					<!--</ul>
+					<ul id="gyeongbuk">-->
+						<li><a href="#">경주</a></li>
+						<li><a href="#">구미</a></li>
+						<li><a href="#">포항</a></li>
+						<li><a href="#">포항KTX</a></li>				
+					<!--</ul>
+					<ul id="gyeongnam">-->
+						<li><a href="#">거제</a></li>
+						<li><a href="#">사천공항</a></li>
+						<li><a href="#">서창원</a></li>
+						<li><a href="#">진주</a></li>
+						<li><a href="#">창원</a></li>				
+					</ul>					
+					<!--<ul id="jeju">
+						<li><a href="#">제주 오토하우스</a></li>
+						<li><a href="#">제주롯데호텔</a></li>
+					</ul>
+					<ul id="airport">
+						<li><a href="#">광주공항</a></li>
+						<li><a href="#">김포공항</a></li>
+						<li><a href="#">김해공항</a></li>
+						<li><a href="#">사천공항</a></li>
+						<li><a href="#">여수공항</a></li>
+						<li><a href="#">울산공항</a></li>
+						<li><a href="#">인천국제공항</a></li>
+					</ul>
+					<ul id="station">
+						<li><a href="#">광주송정KTX</a></li>
+						<li><a href="#">대전역</a></li>
+						<li><a href="#">목포역</a></li>
+						<li><a href="#">부산역</a></li>
+						<li><a href="#">서울역</a></li>
+						<li><a href="#">수서역</a></li>
+						<li><a href="#">순천역</a></li>
+						<li><a href="#">울산KTX</a></li>
+						<li><a href="#">포항KTX</a></li>				
+					</ul>
+					<ul id="alltime">
+						<li><a href="#">강남</a></li>
+						<li><a href="#">고속터미널</a></li>
+						<li><a href="#">서울역</a></li>
+						<li><a href="#">여의도</a></li>				
+					</ul>-->
+				</div>
+			</div>
+			<div class="mybranch">
+				<h3>My Branch List</h3>
+				<ul>
+					<li class="added">
+						<span class="added_area">Seoul</span>
+						<span class="added_branch">Gangnam</span>
+						<a href="#"><span class="ir">delete</span></a>
+					</li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+        <div class="btn_wrap">
+			<a href="#" class="btn_red btn_200">Submit</a>
+        </div>		        
+		<!-- content -->
+	</div>
+	<!-- container -->
+	<footer>
+		<div class="inner_footer">
+			<div class="sitemap">
+				<ul>
+					<li><a href="/fr/eng/content/211/main.do?mnCd=EN0401">COMPANY</a></li>
+					<li><a href="#">USER AGREEMENT</a></li>
+					<li><a href="#">CONTACT US</a></li>
+					<li><a href="#">SITE MAP</a></li>
+				</ul>
+			</div>
+			<div class="sns">
+				<ul>
+					<li>
+						<a class="twitter" href="#" target="_blank"><img src="../../images/common/img_footer_sns_twitter.png" alt="twitter"></a>
+					</li>
+					<li>
+						<a class="facebook" href="#" target="_blank"><img src="../../images/common/img_footer_sns_facebook.png" alt="facebook"></a>
+					</li>
+					<li>
+						<a class="blog" href="#" target="_blank"><img src="../../images/common/img_footer_sns_blog.png" alt="blog"></a>
+					</li>					
+				</ul>
+			</div>
+			<div class="information">
+				<ul class="entrepreneur_info">
+					<li>LOTTE rental co.ltd.</li>
+					<li>President : Pyo, Hyun-Myung</li>
+					<li>Business Registration # : 214-87-79183</li>
+				</ul>
+				<ul class="address">
+					<li>Communication Service # : 2010-Gyunggi Anyang 420</li>
+					<li>Address : 8F Shinwonvision Tower 898. Hogye-dong, Dongan-Gu, Anyang</li>
+				</ul>
+				<ul class="phone">
+					<li>Main Contact 1588-1230</li>
+					<li>FAX 02-2141-9022</li>
+				</ul>
+				<span class="copyright">copyright ⓒ 2016 LOTTE rental co.ltd.All Rrights Reserved.</span>
+			</div>
+
+			<div class="certifications">
+				<ul>
+					<li>
+						<img src="../../images/common/img_footer_cert_1.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_2.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_3.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_4.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_5.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_6.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_7.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_8.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_9.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_10.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_11.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_12.png" alt="">
+					</li>
+					<li>
+						<img src="../../images/common/img_footer_cert_13.png" alt="">
+					</li>	
+				</ul>
+			</div>
+		
+			<div class="big-banner">
+				<img src="../../images/common/img_footer_big_banner.png" alt="Asia No.1 Rental cars, LOTTE RENT-A-CAR! The Lotte rented car stands for Asia No.1 in Asia">
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		$(function(){
+			$('.area a').click(function(e){
+				e.preventDefault();
+				$('.area li').removeClass('active');
+				$(this).parent().addClass('active');
+				$('.branch_list ul').hide();
+				$($(this).attr('href')).show().find('li:first').focus();
+			});
+		})
+	</script>	
+</body>
+</html>

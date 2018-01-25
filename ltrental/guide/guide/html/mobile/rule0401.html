@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>롯데렌터카 - 기본 가이드 | Publishing Guide -</title>
+<link rel="stylesheet" type="text/css" href="../../../../mbKor/css/reset.css">
+<link rel="stylesheet" type="text/css" href="../../../../mbKor/css/common.css">
+<link rel="stylesheet" type="text/css" href="../../com/css/guide.css">
+
+<script type="text/javascript" src="../../../com/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../../../com/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="../../com/js/d_menu.js"></script>
+<script type="text/javascript" src="../../com/js/d_jquery.js"></script>
+<script type="text/javascript" src="../../../../mbKor/js/ui.js"></script>
+<script type="text/javascript" src="../../../../mbKor/js/calendar.m.js"></script>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+
+<body>
+
+<div title="스킵메뉴" class="skipMenu">
+    <a href="#skipContent">본문 내용 바로가기</a>
+</div>
+<hr>
+<div id="wrapGuide">
+	<!-- HEADER s --><script type="text/javascript">TopArea();gnbBox_init(2);</script><!-- HEADER e //-->
+    <hr>
+    <div id="wgContainer" class="layout2 clfix">
+    	<!-- LNB s --><script type="text/javascript">LeftMenuMobile();lnb_menu('4','1');</script><!-- LNB e //-->
+        <div id="wgContent" class="clfix">
+        	<div class="titArea">
+            	<h1 class="gtit">텍스트 가이드</h1>
+                <!--<p><script type="text/javascript">map.print(1,1,1);</script></p> -->
+            </div>
+            
+            <div id="skipContent" class="wgDsc">
+            	<!-- 여기서부터 내용 s -->
+
+                <div class="section cordView">
+                	<h3 class="gtit">■ 헤딩</h3>
+                    <div class="dscBox type01">
+                        <ul class="lstDsc">
+                            <li><strong>h2</strong><br>
+                                <div class="panel">
+                                    <h2>title</h2>
+                                </div>
+                                <pre class="brush: html;">
+                                    &lt;h2>h2 title&lt;/h2>
+                                </pre>
+                            </li>               
+                            <li><strong>h3</strong><br>
+                                <div class="panel">
+                                    <h3>title</h3>
+                                </div>
+                                <pre class="brush: html;">
+                                    &lt;h3>h3 title&lt;/h3>
+                                </pre>
+                            </li>                            
+                            <li><strong>h3 title 과 툴팁</strong><br>
+                                <div class="panel">
+                                    <div class="titleBox">
+                                        <h3>h3 title 과 툴팁</h3>
+                                        <span class="tooltip">
+                                            <a href="#none" class="btn_tooltip">툴팁</a>
+                                        </span>
+                                    </div>
+                                </div>   
+                                <pre class="brush: html;">
+                                    &lt;div class="titleBox">
+                                        &lt;h3>h3 title 과 툴팁&lt;/h3>
+                                        &lt;span class="tooltip">
+                                            &lt;a href="#none" class="btn_tooltip">툴팁&lt;/a>
+                                        &lt;/span>
+                                    &lt;/div>    
+                                </pre>                                                                
+                            </li>                                                 
+                            <li><strong>h3 title 과 툴팁</strong><br>
+								<div class="panel">
+									<h3>
+										H3 타이틀
+										<span class="tooltip">
+											<a href="#none" class="btn_tooltip">툴팁</a>
+										</span>
+									</h3> 
+								</div> 
+								<pre class="brush: html;">
+									<h3>
+										H3 타이틀
+										<span class="tooltip">
+											<a href="#none" class="btn_tooltip">툴팁</a>
+										</span>
+									</h3> 
+								</pre>                                                                
+                            </li>                             
+                            <li><strong>h4</strong><br>
+                                <div class="panel">
+                                    <h4>title</h4>
+                                </div>
+                                <pre class="brush: html;">
+                                    &lt;h4>h4 title&lt;/h4>
+                                </pre>
+                            </li>       
+                        </ul>
+                    </div>
+                </div>
+                <div class="section cordView">
+                    <h3 class="gtit">■ 텍스트 리스트</h3>
+                    <div class="dscBox type01">
+                        <ul class="lstDsc">
+							<li><strong>텍스트 리스트 - txt_list</strong>
+								<div class="panel">
+									<ul class="txt_list">
+										<li class="gray">
+											gray - 디폴트 폰트 사이즈 13px 
+										</li>
+										<li class="black"> 
+											black - 해당 차수만 이용 가능 (이월 없음)<br> 
+											※ 업그레이드 예약 후, 다른 대여건이 먼저 발생하면 차수가 변경될 수 있으니 유의하시기 바랍니다. 
+										</li>  
+										<li class="check">
+											check - 대형, 수입차, SUV/RV, 승합 차량은 업그레이드 대상에서 제외됩니다. 
+										</li>  
+										<li class="red">
+											red - 대형, 수입차, SUV/RV, 승합 차량은 업그레이드 대상에서 제외됩니다. 
+										</li>  
+										<li class="bul"> bul - 대형, 수입차, SUV/RV, 승합 차량은 업그레이드 대상에서 제외됩니다</li> 
+										<li class="red f12"> red f12 - 수입차, SUV/RV, 승합 차량은 업그레이드 대상에서 제외됩니다</li> 
+									</ul>
+								</div>
+								<pre class="brush: html;">
+									<ul class="txt_list">
+										<li class="gray">
+											gray - 디폴트 폰트 사이즈 13px 
+										</li>
+										<li class="black"> 
+											black - 해당 차수만 이용 가능 (이월 없음)<br> 
+											※ 업그레이드 예약 후, 다른 대여건이 먼저 발생하면 차수가 변경될 수 있으니 유의하시기 바랍니다. 
+										</li>  
+										<li class="check">
+											check - 대형, 수입차, SUV/RV, 승합 차량은 업그레이드 대상에서 제외됩니다. 
+										</li>  
+										<li class="red">
+											red - 대형, 수입차, SUV/RV, 승합 차량은 업그레이드 대상에서 제외됩니다. 
+										</li>  
+										<li class="bul"> bul - 대형, 수입차, SUV/RV, 승합 차량은 업그레이드 대상에서 제외됩니다</li> 
+										<li class="red f12"> red f12 - 수입차, SUV/RV, 승합 차량은 업그레이드 대상에서 제외됩니다</li> 
+									</ul>
+								</pre>
+                            </li>                         
+                        </ul>
+                    </div>
+                </div><!--// section div -->                               
+                <!-- 여기서부터 내용 e -->
+            </div><!--// wgDsc div -->
+        </div><!--// wgContent div -->
+        
+    </div><!--// wgContainer div  -->
+    
+</div><!--// wrapGuide div -->
+</body>
+</html>

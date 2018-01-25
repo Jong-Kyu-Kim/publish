@@ -1,0 +1,631 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	
+
+
+
+
+
+
+
+
+
+
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title> | 롯데렌터카 ADMINISTRATOR SYSTEM </title>
+	
+	<link rel="stylesheet" type="text/css" href="com/css/cm.import.css" >
+	
+	<script type="text/javascript" src="com/js/jquery-1.11.1.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="com/js/jquery.easing.1.3.js" charset="utf-8"></script>
+	<script type="text/javascript" src="com/js/datepicker.js"></script>
+	<script type="text/javascript" src="com/js/cm.jQuery.layerPop.js"></script>
+	<script type="text/javascript" src="com/js/cm.jQuery.ui.js" charset="utf-8"></script>
+	<!--<script type="text/javascript" src="com/js/cm.jQuery.design.js" charset="utf-8"></script>-->
+	<script type="text/javascript" src="resource/js/jquery.form.js" charset="utf-8"></script>
+	<script type="text/javascript" src="resource/js/cm.function.js" charset="utf-8"></script>
+	<script type="text/javascript" src="resource/js/cm.validate.js" charset="utf-8"></script>
+	<script type="text/javascript" src="resource/editor/js/service/HuskyEZCreator.js" charset="utf-8"></script>
+	<script type="text/javascript" src="resource/js/EgovMainMenu.js"></script>
+
+	<script type="text/javascript" src="/js/moment.js"></script>
+</head>
+<body class="line01">
+	<div class="skipMenu">
+		<a href="#container">본문으로 바로가기</a>
+	</div><!-- //skip_nav -->
+	<div id="wrap">
+		<!-- HEADER s -->
+		<div id="header">
+			<div class="inner">
+				<h1><a href="#"><img src="images/logo.png" alt="LOTTE rental"></a></h1>
+				<ul class="gnb">				
+					<li class="">
+						<a href="#">인재상</a>
+					</li>
+					<li class="">
+						<a href="#">채용절차 안내</a>
+					</li>
+					<li class="">
+						<a href="#">채용공고</a>
+					</li>
+					<li class="">
+						<a href="#">온라인입사지원</a>
+					</li>
+					<li class="">
+						<a href="#">온라인입사지원결과</a>
+					</li>
+				</ul>
+			</div>
+		</div><!-- //header end -->
+		<div class="img_top">
+			<img src="images/img_apply_top.jpg" alt="롯데렌탈의 입사지원 입니다. 여러분이 LOTTE rental의 미래입니다.">
+		</div>		
+		<!-- HEADER e //-->
+		<div id="container">
+			<div class="content">
+				<div class="tit_top">
+					<h2 class="h2tit">온라인입사지원</h2>
+					<p class="location"><a href="#">HOME</a> &gt; <a href="#">온라인입사지원</a></p>			
+				</div><!-- //tit_top end -->
+				<ul class="process">
+					<li>
+						<a href="#"><span>01. 기본 인적 사항</span></a>
+					</li>
+					<li>
+						<a href="#"><span>02. 학력/경력 사항</span></a>
+					</li>
+					<li class="current">
+						<a href="#"><span>03. 외국어/자격 사항</span></a>
+					</li>
+					<li>
+						<a href="#"><span>04. 자기소개</span></a>
+					</li>
+					<li>
+						<a href="#"><span>05. 완료</span></a>
+					</li>
+				</ul>	
+				<form id="defaultFrm" name="defaultFrm" action="/fr/kor/recruit/apply/insertLanguageForm.do?profileSrl=40016&amp;atchFileId=FILE0000000000000488" method="post">
+					<input id="pageIndex" name="pageIndex" type="hidden" value="1"/>
+					<input type="hidden" name="profileSrl" id="profileSrl" value="40016"/>
+
+					<h3>어학사항</h3>
+					<div id="language" class="grid">
+						<table class="tb_col">
+							<colgroup>
+								<col width="80" />
+								<col width="100" />
+								<col width="120" />
+								<col width="120" />
+								<col />
+								<col width="70" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th>외국어명</th>
+									<th>어학종류</th>
+									<th>취득점수</th>
+									<th>취득급수</th>
+									<th>취득일자</th>
+									<th>삭제</th>
+								</tr>			      	
+							</thead>
+							<tbody class="_item">			       
+								<tr class="items" no="0">
+									<td>
+										<select id="ddlLanguageTP" name="ddlLanguageTP" class="required" title="외국어명">
+											<option value="0">선택</option>
+
+
+											
+											
+											<option value="RS1501">그리스어</option>
+											
+
+
+
+											
+											
+											<option value="RS1502">네덜란드어</option>
+											
+
+
+
+											
+											
+											<option value="RS1503">노르웨이어</option>
+											
+
+
+
+											
+											
+											<option value="RS1504">독일어</option>
+											
+
+
+
+											
+											
+											<option value="RS1505">러시아어</option>
+											
+
+
+
+											
+											
+											<option value="RS1506">루마니아어</option>
+											
+
+
+
+											
+											
+											<option value="RS1507">마인어</option>
+											
+
+
+
+											
+											
+											<option value="RS1508">몽고어</option>
+											
+
+
+
+											
+											
+											<option value="RS1509">미얀마어</option>
+											
+
+
+
+											
+											
+											<option value="RS1510">베트남어</option>
+											
+
+
+
+											
+											
+											<option value="RS1511">세르비아어</option>
+											
+
+
+
+											
+											
+											<option value="RS1512">스웨덴어</option>
+											
+
+
+
+											
+											
+											<option value="RS1513">스페인어</option>
+											
+
+
+
+											
+											
+											<option value="RS1514">슬로바키아어</option>
+											
+
+
+
+											
+											
+											<option value="RS1515">아랍어</option>
+											
+
+
+
+											
+											<option selected="selected" value="RS1516">영어</option>
+											
+											
+
+
+
+											
+											
+											<option value="RS1517">유고어</option>
+											
+
+
+
+											
+											
+											<option value="RS1518">이란(페르시아)어</option>
+											
+
+
+
+											
+											
+											<option value="RS1519">이탈리아어</option>
+											
+
+
+
+											
+											
+											<option value="RS1520">일본어</option>
+											
+
+
+
+											
+											
+											<option value="RS1521">중국어</option>
+											
+
+
+
+											
+											
+											<option value="RS1522">체코어</option>
+											
+
+
+
+											
+											
+											<option value="RS1523">태국어</option>
+											
+
+
+
+											
+											
+											<option value="RS1524">터키어</option>
+											
+
+
+
+											
+											
+											<option value="RS1525">포르투갈어</option>
+											
+
+
+
+											
+											
+											<option value="RS1526">폴란드어</option>
+											
+
+
+
+											
+											
+											<option value="RS1527">프랑스어</option>
+											
+
+
+
+											
+											
+											<option value="RS1528">헝가리어</option>
+											
+
+
+
+											
+											
+											<option value="RS1529">히브리어</option>
+											
+
+
+
+											
+											
+											<option value="RS1530">힌디어</option>
+											
+											<option value="RS1531">기타</option>
+										</select>
+									</td>
+									<td>
+										<input class="i_text" id="ddlExam" name="ddlExam" type="text" size="12" value="오호" />
+									</td>
+									<td>
+										<input class="i_text" id="txtScore" name="txtScore" type="text" size="10" value="123" style="width:95%;" />
+									</td>
+									<td>
+										<input class="i_text" id="txtLanguageResult" name="txtLanguageResult" type="text" size="10" value="" style="width:95%;" />
+									</td>
+									<td>
+										<fieldset>
+											<legend>Data</legend>
+											<div id="calendar_wrap" class="chking">
+												<section class="cal_content">                    
+													<div class="cal_input">									            
+														<span>
+															<input id="dtExamDM" name="dtExamDM" class="datepicker_wrap" readonly="readonly" type="text" value=""/>
+															<a href="#" data-role="common-ui-layerPop-button" data-target="pop00" data-link="start"><img src="/publish/images/com/ico/ico_cal.gif" alt="취득일" ></a>
+														</span>									            
+													</div>                                                                          
+												</section>
+											</div>
+										</fieldset>
+									</td>
+									<td>
+										<a href="#" onclick="fn_del(this);return false;" class="_tr btn_default">삭제
+										</td>
+									</tr>
+
+							</tbody>
+						</table>
+						<div class="add_btn"><span>항목 추가시, 추가 버튼을 눌러주시기 바랍니다. <a href="#language" id="_addItem" class="_tr btn_default">추가</a></span></div>
+					</div>
+
+					<h3>자격/면허사항</h3>
+					<div id="license" class="grid">
+						<table class="tb_col">
+							<colgroup>
+							<col width="240" />
+							<col />
+							<col width="120" />
+							<col width="400" />
+							<col width="70" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th>자격명칭</th>
+									<th>자격증주관처</th>
+									<th>취득급수</th>
+									<th>취득일자</th>
+									<th>삭제</th>
+								</tr>
+							</thead>
+							<tbody>
+
+								<tr>
+									<td>
+										<input type="hidden" id="licenseCode" name="licenseCode" value="789" />
+										<input class="i_text" type="text" id="ddlLicense" name="ddlLicense" value="자격이다" style="width:160px" />
+										<a href="#" data-role="common-ui-layerPop-button" data-target="pop02" data-link="start" class="btn_default">검색</a>
+									</td>
+									<td>
+										<input class="i_text" id="txtLicenseORG" name="txtLicenseORG" type="text" size="10" value="주관처다" style="width:95%;" />
+									</td>
+									<td>
+										<input class="i_text" id="txtLicenseResult" name="txtLicenseResult" type="text" size="10" value="급수?" style="width:95%;" />
+									</td>
+									<td>
+										<fieldset>
+											<legend>Data</legend>
+											<div id="calendar_wrap" class="chking">
+												<section class="cal_content">                    
+													<div class="cal_input">													
+														<span>
+															<input id="dtLicenseDM" name="dtLicenseDM" class="datepicker_wrap" readonly="readonly" type="text" value=""/>
+															<a href="#" data-role="common-ui-layerPop-button" data-target="pop01" data-link="start"><img src="/publish/images/com/ico/ico_cal.gif" alt="취득일" ></a>
+														</span>													
+													</div>                                                                          
+												</section>
+											</div>
+										</fieldset>
+									</td>
+									<td>
+										<a href="#" onclick="fn_del2(this);return false;" class="_tr btn_default">삭제
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+						<div class="add_btn"><span>항목 추가시, 추가 버튼을 눌러주시기 바랍니다. <a href="#license" id="_addItem2" class="_tr btn_default">추가</a></span></div>
+					</div>
+					<div class="btn_page">
+						<a href="#" id="btn_goPrevStep" class="btn btnRed"><span>이전 단계</span></a>
+						<a href="#" id="btn_save" class="btn btnGray"><span>임시 저장</span></a>
+						<a href="#" id="btn_goNextStep" class="btn btnRed"><span>다음 단계</span></a>
+					</div>
+				</form>
+			</div>
+
+			<div class="layer_pop_wrap">
+				<div class="lay-pop lay-datepicker" id="pop02">
+					<div class="lay_wrap">
+						<p class="title">자격/면허 검색</p>
+						<div class="date_wrap1">
+							<form id="defaultFrm2" name="defaultFrm2" action="/fr/kor/recruit/apply/insertLanguageForm.do?profileSrl=40016&amp;atchFileId=FILE0000000000000488" method="post">
+								<input type="hidden" name="searchType" id="searchType" value="LC" />
+								<div class="search_field">
+									<div class="item">
+										자격명칭
+										<input class="i_text s_field" type="text" name="searchName" id="searchName" /> 
+										<a href="#" class="_searchCode btn_default" id="btn_searchCode" name="btn_searchCode">검색</a>
+									</div>
+								</div>
+								<br>
+								<div class="searchHeader">자격명칭</div>
+								<div class="searchResult" >
+									<table id="searchResult" name="searchResult">
+										<tr>
+											<td>검색어를 입력해주십시오</td>
+										</tr>
+									</table>
+								</div>
+								<br>
+								<div class="etc_input">
+									<div class="item">
+										<span>직접입력</span> 
+										<input class="i_text" type="text" name="directField" id="directField" /></a>
+									</div>
+									<p>검색이 되지 않을 경우 직접 입력해주세요.</p>
+								</div>
+								<div class="btn_page">
+									<a href="#" class="btn btnRed _directInsert" id="btn_insertCode" name="btn_insertCode">확인</a>
+								</div>
+							</form>
+						</div>
+						<a href="#" data-role="common-ui-layerPop-close" class="lay-close" id="layerClose" name="layerClose">X</a>
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<!-- BODY e //-->
+		</div><!-- //container end -->
+	</div>
+	<!-- FOOTER s -->
+	<div id="footer">
+		<div class="inner">
+			<div class="footer_logo">
+				<img src="images/footerlogo.jpg" alt="LOTTE rental"></a>
+			</div>
+			<div class="info">
+				<a href="#">개인정보 취급방침</a>
+				<ul>
+					<li>롯데렌탈(주)</li>
+					<li>대표이사 표현명</li>
+					<li>사업자등록번호 214-87-79183</li>
+					<li>대표전화 1588-1230</li>
+				</ul>
+				<address>경기도 안양시 동안구 호계동 898 신원비전타워 8층</address>
+				<address>서울사무소 : 서울시 강남구 대치동 890-20 KT타워 6~9층</address>
+				<p>Copyright(c) 2015  LOTTE rental. all rights reserved.</p>
+			</div>
+		</div>
+	</div>
+	<div class="layer_pop_wrap">
+		<div class="lay-pop lay-datepicker" id="pop00">
+			<div class="lay_wrap">
+				<p class="title">날짜 선택</p>
+				<div class="date_wrap">
+
+				</div>
+				<a href="#" data-role="common-ui-layerPop-close" class="lay-close">
+					<img src="/publish/images/ico/btn_pop_close.png" alt="닫기" />
+				</a>
+			</div>
+		</div>
+		<div class="lay-pop lay-datepicker" id="pop01">
+			<div class="lay_wrap">
+				<p class="title">날짜 선택</p>
+				<div class="date_wrap">
+
+				</div>
+				<a href="#" data-role="common-ui-layerPop-close" class="lay-close">
+					<img src="/publish/images/ico/btn_pop_close.png" alt="닫기" />
+				</a>
+			</div>
+		</div>
+		<div class="lay-pop lay-datepicker" id="pop02">
+			<div class="lay_wrap">
+				<p class="title">날짜 선택</p>
+				<div class="date_wrap">
+
+				</div>
+				<a href="#" data-role="common-ui-layerPop-close" class="lay-close">
+					<img src="/publish/images/ico/btn_pop_close.png" alt="닫기" />
+				</a>
+			</div>
+		</div>
+		<div class="lay-pop lay-datepicker" id="pop03">
+			<div class="lay_wrap">
+				<p class="title">날짜 선택</p>
+				<div class="date_wrap">
+
+				</div>
+				<a href="#" data-role="common-ui-layerPop-close" class="lay-close">
+					<img src="/publish/images/ico/btn_pop_close.png" alt="닫기" />
+				</a>
+			</div>
+		</div>
+		<div class="lay-pop lay-datepicker" id="pop04">
+			<div class="lay_wrap">
+				<p class="title">날짜 선택</p>
+				<div class="date_wrap">
+
+				</div>
+				<a href="#" data-role="common-ui-layerPop-close" class="lay-close">
+					<img src="/publish/images/ico/btn_pop_close.png" alt="닫기" />
+				</a>
+			</div>
+		</div>
+		<div class="lay-pop lay-datepicker" id="pop05">
+			<div class="lay_wrap">
+				<p class="title">날짜 선택</p>
+				<div class="date_wrap">
+
+				</div>
+				<a href="#" data-role="common-ui-layerPop-close" class="lay-close">
+					<img src="/publish/images/ico/btn_pop_close.png" alt="닫기" />
+				</a>
+			</div>
+		</div>
+		<div class="lay-pop lay-datepicker" id="pop06">
+			<div class="lay_wrap">
+				<p class="title">날짜 선택</p>
+				<div class="date_wrap">
+
+				</div>
+				<a href="#" data-role="common-ui-layerPop-close" class="lay-close">
+					<img src="/publish/images/ico/btn_pop_close.png" alt="닫기" />
+				</a>
+			</div>
+		</div>
+		<div class="lay-pop lay-datepicker" id="pop07">
+			<div class="lay_wrap">
+				<p class="title">날짜 선택</p>
+				<div class="date_wrap">
+
+				</div>
+				<a href="#" data-role="common-ui-layerPop-close" class="lay-close">
+					<img src="/publish/images/ico/btn_pop_close.png" alt="닫기" />
+				</a>
+			</div>
+		</div>
+		<div class="lay-pop lay-datepicker" id="pop08">
+			<div class="lay_wrap">
+				<p class="title">날짜 선택</p>
+				<div class="date_wrap">
+
+				</div>
+				<a href="#" data-role="common-ui-layerPop-close" class="lay-close">
+					<img src="/publish/images/ico/btn_pop_close.png" alt="닫기" />
+				</a>
+			</div>
+		</div>
+		<div class="lay-pop lay-datepicker" id="pop09">
+			<div class="lay_wrap">
+				<p class="title">날짜 선택</p>
+				<div class="date_wrap">
+
+				</div>
+				<a href="#" data-role="common-ui-layerPop-close" class="lay-close">
+					<img src="/publish/images/ico/btn_pop_close.png" alt="닫기" />
+				</a>
+			</div>
+		</div>
+	</div>
+	<form name="subFrm" id="subFrm">
+		<input type="hidden" name="atchFileId" id="subFrmAtchFileId"/>
+		<input type="hidden" name="fileSn" id="subFrmFileSn"/>
+	</form>
+	<iframe name="defaultFrame" id="defaultFrame" title="업무 처리용 프레임" width="0" height="0" style="display:none;"></iframe>
+	<!-- FOOTER e //-->
+</body>
+</html>

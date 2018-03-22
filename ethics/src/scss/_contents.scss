@@ -1,0 +1,329 @@
+#container.main {
+  .wrap_slider {
+    position: relative;
+    height: 840px;
+    overflow: hidden;
+    .wrap_slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 840px;
+      overflow: hidden;
+      .slide {
+        position: absolute;
+        float: left;
+        display: inline-block;
+        top: 0;
+        height: 840px;
+        background-position: center;
+        background-repeat: no-repeat;
+        @for $i from 1 through 3 {
+          &.slide#{$i} {
+            background-image: url(/images/main/bg_slide_#{$i}.jpg);
+            background-size: cover;
+          }
+        }
+      }
+    }
+  }
+  .title, .wrap_btn {
+    position: absolute;
+    width: 100%;
+    min-width: 930px;
+    text-align: center;
+    background-color: transparent;
+  }
+  .title {
+    p {
+      margin-top: 45px;
+      font-size: 16px;
+      color: #fff;
+    }
+  }
+  .wrap_btn {
+    padding-top: 0;
+    font-size: 0;
+    a {
+      display: inline-block;
+      margin: 0 30px;
+      width: 160px;
+      height: 183px;
+      @each $menu in (ceo, guidebook, faq, contact_us) {
+        &.#{$menu} {
+          background-image: url(/images/main/btn_#{$menu}.png);
+          &:hover {
+            background-image: url(/images/main/btn_#{$menu}_on.png);
+          }
+        }
+      }
+    }
+  }
+}
+
+img.ceo_message {
+  vertical-align: top;
+}
+.ceo_name {
+  text-align: right;
+}
+.contact_us {
+  .box {
+    overflow: hidden;
+    .ico {
+      float: left;
+      margin-right: 30px;
+    }
+  }
+  .info {
+    float: left;
+    width: 520px;
+    ul li span {
+      margin-right: 30px;
+      font-weight: 700;
+      letter-spacing: 13px;
+      &.email {
+        margin-right: 35px;
+        letter-spacing: 0;
+      }
+    }
+  }
+  a.report {
+    display: block;
+    margin-top: 15px;
+    width: 133px;
+    padding: 10px 0;
+    font-weight: 700;
+  }
+}
+
+.guidebook {
+  .tit_sub {
+    margin-bottom: 10px;
+  }
+  .box {
+    .tit_desc {
+      margin-bottom: 10px;
+      font-weight: 700;
+      color: #333;
+    }
+    .last {
+      margin-bottom: 20px;
+    }
+    button {
+      float: right;
+      width: 35px;
+      height: 35px;
+      border: $line;
+      &.btn_explan_show {
+        background: url(/images/news/arrow_guidebook.png) no-repeat center
+      }
+      &.btn_explan_hide {
+        background: url(/images/news/arrow_expanded_guidebook.png) no-repeat center
+      }
+    }
+    .explan {
+      display: none;
+      padding-top: 20px;
+      border-top: $line;
+      .tit_explan {
+        margin-bottom: 10px;
+        font-weight: 700;
+        color: $logo-green;
+      }
+    }
+  }
+}
+
+.wrap_search_faq {
+  padding:50px 0;
+  text-align: center;
+  background-color: #f7f7f7;
+  border: $line;
+  select {
+    width: 110px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  input[type=text] {
+    width: 240px;
+    height: 40px;
+  }
+  input[type=submit], a {
+    padding: 8.2px;
+    width: 120px;
+    vertical-align: bottom;
+    cursor: pointer;
+  }
+}
+
+ul {
+  &.list_faq {
+    .no_data {
+      padding: 20px 0;
+      text-align: center;
+      border: 1px solid #e9e9e9;
+      border-top: 0;
+    }
+    .question {
+      border: $line;
+      border-top: 0;
+      button {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: 682px center;
+        background-image: url(/images/consult/arrow_faq.png);
+        &.expanded {
+          background-image: url(/images/consult/arrow_expanded_faq.png);
+        }
+        p {
+          &:before {
+            content: 'Q.';
+            margin-right: 5px;
+            color: #008547;
+            line-height: 28px;
+            font-size: 20px;
+          }
+          padding: 20px;
+          padding-left: 47px;
+          width: 590px;
+          text-align: left;
+          text-indent: -27px;
+          font-weight: 700;
+        }
+      }
+    }
+    .answer {
+      display: none;
+      border: $line;
+      border-top: 0;
+      p {
+        &:before {
+          content: 'A.';
+          margin-right: 5px;
+          color: #008547;
+          line-height: 28px;
+          font-size: 20px;
+          font-weight: 700;
+        }
+      }
+      padding: 40px 20px;
+      padding-left: 47px;
+      background-color: #f7f7f7;
+      text-indent: -25px;
+    }
+  }
+  &.list_history {
+    display:inline-block;
+    padding: 30px 0;
+    width: 540px;
+    background: url(/images/management/bul.gif) left top no-repeat;
+    &.first {
+      min-height: 35px;
+      background-position: left 38px
+    }
+    &.one {
+      min-height: 35px;
+    }
+    &.last {
+      background-position: left bottom 42px
+    }
+    > li {
+      &:before {
+        content: '';
+        position: absolute;
+        top: 37px;
+        left: -2px;
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        background-color: $logo-green;
+      }
+      &:first-child {
+        //padding-top: 26.5px;
+        padding-top: 0;
+        &:before {
+          top: 7px;
+        }
+      }
+      position: relative;
+      padding: 30px 0 0 30px;
+      font-weight: 700;
+      ul li {
+        font-weight: 400;
+      }
+    }
+  }
+  &.list_sitemap {
+    width: 206px;
+    border-top: 2px solid $logo-green;
+    li {
+      &:first-child {
+        border-top: 0;
+      }
+      padding: 18px 0;
+      border-top: 1px solid #f7f7f7;
+      a {
+        color: #555;
+      }
+    }
+  }
+}
+
+.wrap_year {
+  position: relative;
+  padding: 0 30px;
+  border: $line;
+  border-top: none;
+  &:first-child {
+    border-top: $line;
+  }
+  .year {
+    display: inline-block;
+    margin: 30px 30px 30px 0;
+    line-height: 1;
+    vertical-align: top;
+    font-size: 35px;
+    color: $logo-green;
+    letter-spacing: -1px;
+  }
+}
+
+.wrap_sitemap {
+  display: inline-block;
+  float: left;
+  margin-left: 51px;
+  &.top {
+    height: 385px;
+  }
+  &.first {
+    margin-left: 0
+  }
+}
+
+.report_result {
+  .wrap_content {
+    text-align: center;
+  }
+  .box {
+    padding: 50px;
+  }
+  .table_input {
+    margin: 0 auto 30px;
+    width: 370px;
+  }
+}
+
+.report_complete {
+  .desc {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .box_input .wrap_box_input {
+    padding: 15px 20px;
+    input[type=radio] + label {
+      margin-right: 50px;
+      margin-bottom: 0;
+      width: auto;
+    }
+  }
+}

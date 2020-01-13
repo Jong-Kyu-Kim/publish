@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!--#include virtual="/_include/head.asp"-->
+<title>Fasoo Enterprise DRM - Fasoo.com</title>
+</head>
+<body>
+<!--#include virtual="/_include/header.asp"-->
+<!--#include virtual="/_include/visual_product_1.asp"-->
+@@include('../_include/lnb.html', { "menu": "product_1_1", "nav": "fed" })
+    <div id="content" class="product">
+        <h3><img src="/_images/product/img_fasoo_enterprise_drm_bi.png" alt="Fasoo Enterprise DRM"></h3>
+        <div class="info">
+            <div class="inner">
+                <p class="sub">통합 문서보안 솔루션</p>
+                <p class="desc">중요 내용을 담은 데이터 자체를 암호화해 허용된 권한 내에서만 사용하도록 제어하는 보안 솔루션입니다. <br>데이터 중심의 보안 솔루션 Fasoo Enterprise DRM은 내부자 정보 유출 위협은 물론 사이버 공격에 대응하는 <br>최고 수준의 통합 문서보안 솔루션으로 각광받으며 전 세계적으로 도입이 확산되고 있습니다.</p>
+            </div>
+        </div>
+        <div class="visual_top">
+            <p class="small">국내 1위를 넘어, 글로벌 시장에서도 인정받는 국가대표 데이터 보안 솔루션</p>
+        </div>
+        <div class="function">
+            <ul>
+                <li>
+                    <div class="inner">
+                        <div>
+                            <img src="/_images/product/img_fasoo_enterprise_drm_1.png">
+                        </div>                        
+                        <div>
+                            <p class="title">이미 증명된 강력한 전방위적 보안</p>  
+                            <p class="desc">사내 문서들에 대한 보호/권한제어/추적/관리뿐만 아니라, <br>화면 정보, 인쇄물, 모바일 기기까지 다양한 사용환경을 고려한 <br>전방위적 보안 기능을 제공합니다.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">
+                        <div>
+                            <p class="title">생산성과 보안을 한번에</p>  
+                            <p class="desc">어떠한 환경에서도 사용성에 제한 없이 보안이 적용된 문서를 <br>안전하고 편리하게 사용할 수 있습니다.</p>
+                        </div>
+                        <div>
+                            <img src="/_images/product/img_fasoo_enterprise_drm_2.png" alt="">
+                        </div>
+                    </div>                    
+                </li>
+                <li>
+                    <div class="inner">
+                        <div>
+                            <img src="/_images/product/img_fasoo_enterprise_drm_3.png">
+                        </div>                        
+                        <div>
+                            <p class="title">예외 상황까지 고려한 정책 최적화</p>  
+                            <p class="desc">조직 내부에서 불가피하게 발생하는 예외 상황들에 대해 <br>유연하면서도 안전하게 대응합니다.</p>
+                        </div>
+                    </div>
+                </li>                
+            </ul>
+        </div>
+        <div class="structure">
+            <h4>제품 구성도</h4>
+            <img src="/_images/product/img_fasoo_enterprise_drm_structure.png" alt="">
+        </div>          
+        <div class="btn">
+            <a href="#" class="arrow_r_b">브로셔 다운로드</a>
+        </div>
+        <div class="visual_bottom">
+            <div class="inner">
+                <p>더많은 내용을 원하시면 이메일 문의를 해주세요.</p>
+                <div class="btn">
+                    <a href="#" class="arrow_r_w">문의하기</a>
+                </div>            
+            </div>
+        </div>
+    </div>
+<!--#include virtual="/_include/footer.asp"-->
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!--#include virtual="/_include/head.asp"-->
+<title>AnalyticDID - Fasoo.com</title>
+</head>
+<body>
+<!--#include virtual="/_include/header.asp"-->
+<!--#include virtual="/_include/visual_product_5.asp"-->
+@@include('../_include/lnb.html', { "menu": "product_5", "nav": "analytic_did" })
+    <div id="content" class="product">
+        <h3><img src="/_images/product/img_analytic_did_bi.png" alt="AnalyticDID"></h3>
+        <div class="info">
+            <div class="inner">
+                <p class="sub">개인정보 비식별화 솔루션</p>
+                <p class="desc">Analytic DID는 최적의 알고리즘이 적용된 개인정보 비식별화 솔루션입니다. 의사 결정에 도움을 줄 수 있도록 <br>빅데이터 분석의 효용성과 위험에 대한 다양한 지표를 가시화해 제공하며, 권한 및 정책에 따른 사용 관리 및 <br>익명화 위임 등을 통해 효율적인 업무 프로세스를 지원합니다. 이와 함께 개인정보보호법, 빅데이터 진흥법, <br>HIPAA 등 빅데이터 활성화 관련 국내/외 컴플라이언스를 완벽하게 지원합니다.</p>
+            </div>
+        </div>
+        <div class="visual_top">
+            <p>4차산업혁명의 핵심, 빅데이터 활용을 극대화하는 방법</p>
+        </div>
+        <div class="function">
+            <ul>
+                <li>
+                    <div class="inner">
+                        <div>
+                            <img src="/_images/product/img_analytic_did_1.png" alt="">
+                        </div>                        
+                        <div>
+                            <p class="title">효울적인 빅데이터의 활용</p>  
+                            <p class="desc">데이터 활용과 개인정보 유출방지 두마리 토끼를 다 잡아, <br>안전하고 신뢰할 수 있는 빅데이터 사용 환경을 구축해 드립니다.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">
+                        <div>
+                            <p class="title">다양한 프라이버시 모델 제공</p>  
+                            <p class="desc">각종 데이터의 성격, 유형, 활용 목적 등에 따라 다양한 <br>프라이버스 모델을 제공하고, 빅데이터 분석의 효용성과 <br>위험에 대한 지표들을 제공합니다.</p>
+                        </div>
+                        <div>
+                            <img src="/_images/product/img_analytic_did_2.png" alt="">
+                        </div>
+                    </div>                    
+                </li>
+                <li>
+                    <div class="inner">
+                        <div>
+                            <img src="/_images/product/img_analytic_did_3.png" alt="">
+                        </div>
+                        
+                        <div>
+                            <p class="title"> 비식별 조치 지원 컨설팅</p>  
+                            <p class="desc">민간, 의료, 공공 등 다양한 분야에서 국내 최대 비식별 컨설팅 및 <br>재식별 위험 진단 컨설팅을 수행하며 빅데이터 보안 시장에서의 <br>입지를 확고히 하고 있습니다.</p>
+                        </div>
+                    </div>
+                </li>                    
+            </ul>
+        </div>
+        <div class="structure">
+            <h4>제품 구성도</h4>
+            <img src="/_images/product/img_analytic_did_structure.png" alt="">
+        </div>
+        <div class="btn">
+            <a href="/document" class="btn_arrwow arrow_r_b">브로셔 다운로드</a>
+        </div>
+        <div class="visual_bottom">
+            <div class="inner">
+                <p>더많은 내용을 원하시면 이메일 문의를 해주세요.</p>
+                <div class="btn">
+                    <a href="#" class="btn_arrow arrow_r_w">문의하기</a>
+                </div>            
+            </div>
+        </div>
+    </div>
+<!--#include virtual="/_include/footer.asp"-->
+</body>
+</html>

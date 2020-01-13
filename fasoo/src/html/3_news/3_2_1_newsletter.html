@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('../_include/head.html', {"title": "뉴스레터 - Fasoo.com"})
+</head>
+<body>
+@@include('../_include/header.html')
+@@include('../_include/visual.html', { "menu": "news" })
+@@include('../_include/lnb.html', { "menu": "news", "nav": "newsletter" })
+    <div id="content" class="newsletter">
+        <div class="inner">
+            <h3>뉴스레터</h3>
+            <ul class="list">
+                <li>
+                    <a href="#">
+                        <div class="item">
+                            <p class="title">파수닷컴, 정보보호컨설팅 사업 인수로 최고수준의 종합컨설팅서비스 제공</p>
+                            <p class="cont">정부는 지난 31일 판교 스타트업 캠퍼스에서 열린 '데이터 경제 활성화 규제혁신 현장방문 행사'를 개최했으며, 문재인 대통령을 비롯한 주요 정부부처 관계자들이 참석한 가운데 데이터 경제를 이끌어 가기 위한 규제 혁신 및 산업 육성 방안에 대해 논의했습니다. 본 행사에서 파수닷컴은 유일한 보안 솔루션 업체로 참여해 개인을...</p>
+                            <span class="date">2018.08.17</span>
+                        </div>
+                    </a>                
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="item">
+                            <p class="title">파수닷컴, 정보보호컨설팅 사업 인수로 최고수준의 종합컨설팅서비스 제공</p>
+                            <p class="cont">정부는 지난 31일 판교 스타트업 캠퍼스에서 열린 '데이터 경제 활성화 규제혁신 현장방문 행사'를 개최했으며, 문재인 대통령을 비롯한 주요 정부부처 관계자들이 참석한 가운데 데이터 경제를 이끌어 가기 위한 규제 혁신 및 산업 육성 방안에 대해 논의했습니다. 본 행사에서 파수닷컴은 유일한 보안 솔루션 업체로 참여해 개인을...</p>
+                            <span class="date">2018.08.17</span>
+                        </div>
+                    </a>                
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="item">
+                            <p class="title">파수닷컴, 정보보호컨설팅 사업 인수로 최고수준의 종합컨설팅서비스 제공</p>
+                            <p class="cont">정부는 지난 31일 판교 스타트업 캠퍼스에서 열린 '데이터 경제 활성화 규제혁신 현장방문 행사'를 개최했으며, 문재인 대통령을 비롯한 주요 정부부처 관계자들이 참석한 가운데 데이터 경제를 이끌어 가기 위한 규제 혁신 및 산업 육성 방안에 대해 논의했습니다. 본 행사에서 파수닷컴은 유일한 보안 솔루션 업체로 참여해 개인을...</p>
+                            <span class="date">2018.08.17</span>
+                        </div>
+                    </a>                
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="item">
+                            <p class="title">파수닷컴, 정보보호컨설팅 사업 인수로 최고수준의 종합컨설팅서비스 제공</p>
+                            <p class="cont">정부는 지난 31일 판교 스타트업 캠퍼스에서 열린 '데이터 경제 활성화 규제혁신 현장방문 행사'를 개최했으며, 문재인 대통령을 비롯한 주요 정부부처 관계자들이 참석한 가운데 데이터 경제를 이끌어 가기 위한 규제 혁신 및 산업 육성 방안에 대해 논의했습니다. 본 행사에서 파수닷컴은 유일한 보안 솔루션 업체로 참여해 개인을...</p>
+                            <span class="date">2018.08.17</span>
+                        </div>
+                    </a>                
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="item">
+                            <p class="title">파수닷컴, 정보보호컨설팅 사업 인수로 최고수준의 종합컨설팅서비스 제공</p>
+                            <p class="cont">정부는 지난 31일 판교 스타트업 캠퍼스에서 열린 '데이터 경제 활성화 규제혁신 현장방문 행사'를 개최했으며, 문재인 대통령을 비롯한 주요 정부부처 관계자들이 참석한 가운데 데이터 경제를 이끌어 가기 위한 규제 혁신 및 산업 육성 방안에 대해 논의했습니다. 본 행사에서 파수닷컴은 유일한 보안 솔루션 업체로 참여해 개인을...</p>
+                            <span class="date">2018.08.17</span>
+                        </div>
+                    </a>                
+                </li>                                                               
+            </ul>
+            <ul class="pagination">
+                <li class="prev"><a href="#">이전</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li class="next"><a href="#">다음</a></li>
+            </ul>
+        </div>
+    </div>
+@@include('../_include/footer.html')
+<script>
+    $(function() {
+        $('.list a').click(function() {
+            var $this = $(this),
+                $parent = $this.parent();
+            
+            if ($parent.hasClass('expanded')) {
+                $parent.removeClass('expanded');
+                $this.next('.cont').hide();
+            }
+
+            else {
+                $parent.addClass('expanded');
+                $this.next('.cont').show();
+            }            
+        })
+    })
+</script>
+</body>
+</html>

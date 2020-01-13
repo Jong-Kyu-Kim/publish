@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!--#include virtual="/_include/head.asp"-->
+<title>경영진 소개 - Fasoo.com</title>
+</head>
+<body>
+<!--#include virtual="/_include/header.asp"-->
+<!--#include virtual="/_include/visual_about.asp"-->
+@@include('../_include/lnb.html', { "menu": "about", "nav": "leadership" })
+    <div id="content" class="leadership">        
+        <h3>경영진 소개</h3>
+        <div class="section leadership1">
+            <div class="inner">
+                <div class="wrapper">
+                    <span class="name under_line"><strong>조규곤</strong> 대표이사</span>
+                    <div class="desc">
+                        <p>"2020년에는 글로벌 100대 소프트웨어 기업으로 우뚝 설 것입니다."</p>
+                        <p>조규곤 대표는 창립 초기부터 세계적인 소프트웨어를 만드는 것이 회사를 설립한 궁극적인 목표였다. 세계 IT 강국인 미국에서 대한민국이 만든 소프트웨어를 믿고 살 수 있도록 만들고 싶다는 생각이다. 조대표는 사업 초창기부터 지금까지 미국 시장의 문을 두드리고 있으며, 국내 어떤 소프트웨어 기업도 넘지 못하고 있는 미국 시장의 문턱을 넘어가고 있다.</p>
+                        <p>그는 한국정보보호산업협회(KISIA) 회장, IT Leaders Club 회장, 금융보안포럼 부회장, IEEE Seoul Section 부회장, 한국 DRM협의회(KODIA) 회장으로 활동한 바 있으며, 현재 인액터스 코리아 이사, KGIT협회(Korea Global IT) 회장으로 활발히 활동하고 있다. 또한 정보보호 및 관련 산업 발전에 크게 이바지함을 인정받아 정보통신장관표창, SW산업발전 유공 정부포상 대통령표창, 정보보호유공 산업포장을 수상한 바 있다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section leadership2">
+            <div class="inner">
+                <div class="wrapper">
+                    <span class="name under_line"><strong>이강만</strong> 부사장</span>
+                    <div class="desc">
+                        <p>이강만 부사장은 한국의 대표적인 소프트웨어제품 해외사업 및 마케팅 전문가 중의 한 명으로 20년 이상의 경험을 보유하고 있다.</p>
+                        <p>파수닷컴의 Global Sales 본부장으로서 해외사업 및 국내외 마케팅전략 수립 및 실행을 위해 노력하고 있다. 이부사장은 파수닷컴에 조인하기 이전에 한국의 대표 소프트웨어 기업인 티맥스소프트에서 미국법인장, 전략마케팅본부장, 해외사업본부장, 엔터프라이즈사업본부장 등을 역임하면서 회사의 성장에 큰 역할을 한 것으로 인정받았다. 또한 디지털 사이니지 기업인 인텔리안시스템즈의 총괄부사장을 맡기도 했으며, 소프트웨어 업계에 뛰어들기 전에는 10여년간 KOTRA에 몸담으면서 뉴욕과 서울 등지에서 한국제품의 해외시장 진출을 위한 마케팅 전문가로 활약했다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section leadership3">
+            <div class="inner">
+                <div class="wrapper">
+                    <span class="name under_line"><strong>이지수</strong> 전무</span>
+                    <div class="desc">
+                        <p>이지수 전무는 IT업계에서 대표적인 재무통으로 꼽힌다.</p>
+                        <p>이전무는 파수닷컴 경영지원본부장 겸 최고재무책임자(CFO)로서 비즈니스 실행과 전략 실행을 지원하고 재무운영의 전문성을 구축했다. 또한 빠르게 변화하는 비즈니스 상황에 따라 전략을 효율적으로 수정해가며 파수닷컴의 성장에 기여하고 있다.</p>
+                        <p>이전무는 서울대학교 수학교육과를 졸업하고 한국과학기술원(KAIST) 수학과 석사 학위를 받은 이전무는 삼성 SDS를 거쳐 파수닷컴 초창기 맴버로 영입됐다.</p>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section leadership4">
+            <div class="inner">
+                <div class="wrapper">
+                    <span class="name under_line"><strong>윤덕상</strong> 전무</span>
+                    <div class="desc">
+                        <p>20년 이상 IT 전문기업의 시스템 및 보안을 총괄한 윤덕상 전무는 2017년 1월에 파수닷컴 전략사업부장으로 영입됐다. 그 동안 쌓아온 노하우를 바탕으로, 안전한 IT환경 유지를 위한 통합보안시스템 구축 사업을 적극적으로 추진하고 있다.</p>                    
+                        <p>윤전무는 파수닷컴 근무 이전에 삼성SDS, 시큐아이닷컴, 롯데정보통신, KT DS에서 근무한 바 있다. 아태정보보안리더십(ISLA), K-ICT 정보보호대상 특별상 등을 수상한 바 있으며, 현재 한국 CISO 협의회 운영위원, 한국정보보호학회 부회장, CPO포럼 운영위원 등으로 적극적으로 활동하고 있다.</p>
+                        <p>윤전무는 고려대학교 수학과를 졸업하고 고려대학교 정보보호대학원에서 석∙박사 학위를 받았다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>                        
+    </div>
+<!--#include virtual="/_include/footer.asp"-->
+</body>
+</html>

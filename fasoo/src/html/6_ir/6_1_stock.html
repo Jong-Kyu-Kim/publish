@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('../_include/head.html', { "title": "주가정보 - Fasoo" })
+</head>
+<body>
+@@include('../_include/header.html')
+@@include('../_include/visual.html', { "menu": "ir" })
+@@include('../_include/lnb.html', { "menu": "ir", "nav": "stock" })
+    <div id="content" class="ir">        
+        <h3>주가정보</h3>
+        <iframe frameborder="0" height="1085" name="list" scrolling="no" src="http://www.fasoo.com:8088/stock/WebContent/stockInfo.jsp?wmode=transparent" width="700" wmode="Opaque"></iframe>
+    </div>
+@@include('../_include/footer.html')
+</body>
+</html>

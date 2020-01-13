@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/styles/jquery-ui.min.css">
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/content.css" />
+    <script src="/scripts/jquery-1.11.3.min.js"></script>
+    <script src="/scripts/jquery-ui.min.js"></script>
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/location.js"></script>
+    <title>브로슈어 - Fasoo</title>
+    <meta property="og:type" content="website" />
+</head>
+<body>
+<div id="header">
+    <a href="#content" class="skip">본문 바로가기</a>
+    <div class="right">
+        <div class="inner">
+            <ul>
+                <li class="support"><a href="http://osc.fasoo.com/" target="_blank">Support</a></li>
+                <li class="family">
+                    <a href="#">Family Site</a>
+                    <ul>
+                        <li><a href="https://www.digitalpage.me/" target="_blank">DigitalPage</a></li>
+                        <li><a href="http://www.fasooblock.com/" target="_blank">FasooBlock</a></li>
+                        <li><a href="http://sparrowfasoo.com/" target="_blank">Sparrow</a></li>
+                        <li><a href="http://www.wrapsody.com/" target="_blank">Wrapsody</a></li>
+                        <li><a href="http://recruit.fasoo.com/" target="_blank">채용사이트</a></li>
+                    </ul>
+                </li>
+                <!-- <li class="search"><a href="#">Search</a></li> -->
+            </ul>            
+        </div>
+    </div>
+    <div class="inner">
+        <h1><a href="/">Fasoo</a></h1>
+        <ul id="gnb">
+            <li class="_product">
+                <a href="/products/fasoo-solution-overview">제품</a>
+                <ul class="depth2">
+                    <li class="security">
+                        <a href="#">데이터 보안</a>
+                        <ul class="depth3">
+                            <li>
+                                <a href="/products/fasoo-data-security-framework">데이터 보안 프레임워크<br><strong>Fasoo Data Security Framework</strong></a>
+                                <ul class="depth4">
+                                    <li><a href="/products/fasoo-data-radar">데이터 식별 및 분류<br><strong>Fasoo Data Radar</strong></a></li>
+                                    <li><a href="/products/fasoo-riskview">사용자 행동 기반 위험 관리<br><strong>Fasoo RiskView</strong></a></li>
+                                    <li>
+                                        <a href="/products/fasoo-enterprise-drm">통합 문서보안<br><strong>Fasoo Enterprise DRM</strong></a>
+                                        <ul class="depth5">
+                                            <li><a href="/products/fasoo-secure-node">PC 문서보안 | <strong>FSN</strong></a></li>
+                                            <li><a href="/products/fasoo-secure-document">서버 문서보안 | <strong>FSD</strong></a></li>
+                                            <li><a href="/products/fasoo-secure-exchange">외부 전달 문서보안 | <strong>FSE</strong></a></li>
+                                            <li><a href="/products/fasoo-eprint">인쇄 보안 | <strong>FEP</strong></a></li>
+                                            <li><a href="/products/fasoo-approval-system-tool">예외 정책 관리 결재 시스템 | <strong>FAST</strong></a></li>
+                                            <li><a href="/products/fasoo-secure-mail-gateway">메일 기반 DLP | <strong>FSMG</strong></a></li>
+                                            <li><a href="/products/fasoo-secure-web">웹 보안 | <strong>FSW</strong></a></li>
+                                            <li><a href="/products/fasoo-secure-screen">화면 보안 | <strong>FSS</strong></a></li>
+                                            <li><a href="/products/fasoo-mobile-solution">모바일 보안 | <strong>FMS</strong></a></li>                                                
+                                            <li><a href="/products/fasoo-usage-tracer">문서 추적 및 통합 로그 관리 | <strong>FUT</strong></a></li>
+                                            <li><a href="/products/fasoo-onnara-drm">온나라 문서보안 | <strong>FOD</strong></a></li>
+                                            <li><a href="/products/pii-filter-for-onnara">온나라 개인정보보호 | <strong>FPF-O</strong></a></li>                                                
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="/products/fasoo-total-privacy-solution">통합 개인정보보호<br><strong>Fasoo Total Privacy Solution</strong></a>
+                                        <ul class="depth5">
+                                            <li><a href="/products/pii-manager">PC 개인정보보호 | <strong>FPM</strong></a></li>
+                                            <li><a href="/products/pii-filter">서버 개인정보보호 | <strong>FPF</strong></a></li>
+                                            <li><a href="/products/fasoo-eprint-for-privacy">출력물 개인정보보호 | <strong>FEP-P</strong></a></li>
+                                            <li><a href="/products/fasoo-edata-manager-for-privacy">개인정보 접속기록 관리 | <strong>FEM-P</strong></a></li>                                                
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="document">
+                        <a href="#">엔터프라이즈 문서 플랫폼</a>
+                        <ul class="depth3">
+                            <li><a href="/products/wrapsody">문서 자산화, 보안, 협업 플랫폼<br><strong>Wrapsody</strong></a></li>
+                        </ul>
+                    </li>
+                    <li class="eco">
+                        <a href="#">외부 협업 플랫폼</a>
+                        <ul class="depth3">
+                            <li><a href="/products/wrapsody-eco">데이터 중심의 외부 협업 플랫폼<br><strong>Wrapsody eCo</strong></a></li>
+                        </ul>
+                    </li>                        
+                    <li class="de_id">
+                        <a href="#">개인정보 비식별화</a>
+                        <ul class="depth3">
+                            <li><a href="/products/analyticdid">개인정보 비식별화<br><strong>AnalyticDID</strong></a></li>
+                            <li><a href="/products/analyticdid-de-identification-service">개인정보 비식별 처리 컨설팅 서비스<br><strong>ADS</strong></a></li>
+                        </ul>
+                    </li>
+                    <li class="block">
+                        <a href="#">진본 증명 플랫폼</a>
+                        <ul class="depth3">
+                            <li><a href="/products/fasooblock">블록체인 기반 진본 증명 플랫폼<br><strong>FasooBlock</strong></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">서비스</a>
+                <ul class="depth2">
+                    <li><a href="/services/data-security-consulting">데이터 보안 컨설팅</a></li>
+                    <li><a href="/services/information-security-consulting">정보보호 컨설팅</a></li>
+                    <li><a href="/services/system-integration">시스템 통합</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">뉴스 & 이벤트</a>
+                <ul class="depth2">
+                    <li><a href="/press-release">보도자료</a></li>
+                    <li><a href="/newsletter">뉴스레터</a></li>
+                    <li><a href="/promotion">프로모션</a></li>
+                    <li><a href="/event/upcoming">행사</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">자료실</a>
+                <ul class="depth2">
+                    <li><a href="/document">문서</a></li>
+                    <li><a href="/video/product">비디오</a></li>
+                    <li><a href="/webtoon/fasaeng">웹툰</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">회사소개</a>
+                <ul class="depth2">
+                    <li><a href="/about-us">About Us</a></li>                        
+                    <li><a href="/leadership">경영진 소개</a></li>
+                    <li><a href="/history">연혁</a></li>
+                    <li><a href="/customers">고객사</a></li>
+                    <li><a href="/partners">파트너사</a></li>
+                    <li><a href="/recruit">인재채용</a></li>
+                    <li><a href="/support">문의하기</a></li>
+                    <li><a href="/contact-us">오시는길</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">IR</a>
+                <ul class="depth2">
+                    <li><a href="/stock-quotes">주가정보</a></li>                        
+                    <li><a href="/disclosure">공시정보</a></li>
+                    <li><a href="/financial-information">재무정보</a></li>
+                    <li><a href="/audit-reports">감사 및 영업보고서</a></li>
+                    <li><a href="/analyst-reports">애널리스트리포트</a></li>
+                    <li><a href="/industry-trends">관련산업동향</a></li>
+                </ul>                
+            </li>
+        </ul>        
+        <!-- <button>
+            <span></span>
+            <span></span>
+            <span>메뉴</span>
+        </button> -->
+    </div>
+</div>
+<!-- <button class="close"></button> -->
+
+    <div id="visual" class="data">
+        <h2>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            자료실
+            
+            
+            
+            
+        </h2>
+        <p class="desc">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            Fasoo의 제품 및 기술 관련 정보를 공유 드립니다.
+            
+            
+            
+            
+        </p>
+    </div>
+<div id="lnb">
+    <div class="inner">
+        <ul >
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                <li class="active"><a href="/document">브로슈어</a></li>
+                <li ><a href="/video/company">비디오</a></li>
+                <li ><a href="/webtoon/fasaeng">웹툰</a></li>
+            
+            
+            
+
+            
+        </ul>
+    </div>
+</div>   
+    <div id="content" class="brochure">
+        <div class="inner">
+            <h3>브로슈어, Use Case, White Paper</h3>
+            <select name="" id="">
+                <option value="">전체</option>
+                <option value="0" selected>데이터 보안</option>
+                <option value="1">엔터프라이즈 문서 플랫폼</option>
+                <option value="2">외부 협업 플랫폼</option>
+                <option value="3">개인정보 비식별화</option>
+                <option value="4">진본증명플랫폼</option>
+            </select>            
+            <div class="list_wrap">
+                <h4>데이터 보안</h4>
+                <ul class="list">
+                    <li class="left top">
+                        <a href="#">
+                            <span class="thumb" style="background-image:url(/_images/data/img_brochure_fdsf.jpg)"></span>
+                            <div class="item">
+                                <p class="title">FDSF</p>
+                                <span class="desc">데이터 보안 프레임워크</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="top">
+                        <a href="#">
+                            <span class="thumb" style="background-image:url(/_images/data/img_brochure_fdr.jpg)"></span>
+                            <div class="item">
+                                <p class="title">FDR</p>
+                                <span class="desc">데이터 식별 및 분류</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="top">
+                        <a href="#">
+                            <span class="thumb" style="background-image:url(/_images/data/img_brochure_risk_view.jpg)"></span>
+                            <div class="item">
+                                <p class="title">RiskView</p>
+                                <span class="desc">사용자 행동 기반 위험 관리</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="top">
+                        <a href="#">
+                            <span class="thumb" style="background-image:url(/_images/data/img_brochure_fed.jpg)"></span>
+                            <div class="item">
+                                <p class="title">FED</p>
+                                <span class="desc">통합 문서보안</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="left">
+                        <a href="#">
+                            <span class="thumb" style="background-image:url(/_images/data/img_brochure_fsn.jpg)"></span>
+                            <div class="item">
+                                <p class="title">FSN</p>
+                                <span class="desc">PC 문서보안</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="thumb" style="background-image:url(/_images/data/img_brochure_fsd.jpg)"></span>
+                            <div class="item">
+                                <p class="title">FSD</p>
+                                <span class="desc">서버 문서보안</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="thumb" style="background-image:url(/_images/data/img_brochure_fse.jpg)"></span>
+                            <div class="item">
+                                <p class="title">FSE</p>
+                                <span class="desc">외부 전달 문서보안</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="thumb" style="background-image:url(/_images/data/img_brochure_eprint_1.jpg)"></span>
+                            <div class="item">
+                                <p class="title">ePrint</p>
+                                <span class="desc">인쇄 보안</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="left">
+                        <a href="#">
+                            <span class="thumb" style="background-image:url(/_images/data/img_brochure_fss.jpg)"></span>
+                            <div class="item">
+                                <p class="title">FSS</p>
+                                <span class="desc">화면 보안</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="thumb" style="background-image:url(/_images/data/img_brochure_fsw.jpg)"></span>
+                            <div class="item">
+                                <p class="title">FSW</p>
+                                <span class="desc">웹 보안</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="thumb" style="background-image:url(/_images/data/img_brochure_fms.jpg)"></span>
+                            <div class="item">
+                                <p class="title">FMS</p>
+                                <span class="desc">모바일 보안</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="thumb" style="background-image:url(/_images/data/img_brochure_fut.jpg)"></span>
+                            <div class="item">
+                                <p class="title">FUT</p>
+                                <span class="desc">문서 추적 및 통합 로그 관리</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="left top">
+                        <a href="#">
+                            <span class="thumb" style="background-image:url(/_images/data/img_brochure_onnara_drm.jpg)"></span>
+                            <div class="item">
+                                <p class="title">Fasoo 온나라 DRM</p>
+                                <span class="desc">온나라시스템 문서보안</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="top">
+                        <a href="#">
+                            <span class="thumb" style="background-image:url(/_images/data/img_brochure_pii_filter_for_onnara.jpg)"></span>
+                            <div class="item">
+                                <p class="title">PII Filter for 온나라</p>
+                                <span class="desc">온나라시스템 개인정보보호</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="left top">
+                        <a href="#">
+                            <span class="thumb" style="background-image:url(/_images/data/img_brochure_ftps.jpg)"></span>
+                            <div class="item">
+                                <p class="title">FTPS</p>
+                                <span class="desc">통합 개인정보보호</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="top">
+                        <a href="#">
+                            <span class="thumb" style="background-image:url(/_images/data/img_brochure_pii_manager.jpg)"></span>
+                            <div class="item">
+                                <p class="title">PII Manager</p>
+                                <span class="desc">PC 개인정보보호</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="top">
+                        <a href="#">
+                            <span class="thumb" style="background-image:url(/_images/data/img_brochure_pii_filter.jpg)"></span>
+                            <div class="item">
+                                <p class="title">PII Filter</p>
+                                <span class="desc">서버 개인정보보호</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="top">
+                        <a href="#">
+                            <span class="thumb" style="background-image:url(/_images/data/img_brochure_edata_manager.jpg)"></span>
+                            <div class="item">
+                                <p class="title">eData Manager</p>
+                                <span class="desc">개인정보 접속기록 관리</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="left">
+                        <a href="#">
+                            <span class="thumb" style="background-image:url(/_images/data/img_brochure_eprint_2.jpg)"></span>
+                            <div class="item">
+                                <p class="title">ePrint</p>
+                                <span class="desc">출력물 개인정보보호</span>
+                            </div>
+                        </a>
+                    </li>                    
+                </ul>
+            </div>
+            <!-- <div class="list_wrap">
+                <h4>온나라 시스템</h4>
+                <ul class="list">
+                    <li class="left top">
+                        <a href="#">
+                            <span class="thumb" style="background-image:url(/_images/data/img_brochure_onnara_drm.jpg)"></span>
+                            <div class="item">
+                                <p class="title">Fasoo 온나라 DRM</p>
+                                <span class="desc">온나라시스템 문서보안</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="top">
+                        <a href="#">
+                            <span class="thumb" style="background-image:url(/_images/data/img_brochure_pii_filter_for_onnara.jpg)"></span>
+                            <div class="item">
+                                <p class="title">PII Filter for 온나라</p>
+                                <span class="desc">온나라시스템 개인정보보호</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div> -->
+            <!-- <div class="list_wrap">
+                <h4>개인정보보호</h4>
+                <ul class="list">
+                    <li class="left top">
+                        <a href="#">
+                            <span class="thumb" style="background-image:url(/_images/data/img_brochure_ftps.jpg)"></span>
+                            <div class="item">
+                                <p class="title">FTPS</p>
+                                <span class="desc">통합 개인정보보호</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="top">
+                        <a href="#">
+                            <span class="thumb" style="background-image:url(/_images/data/img_brochure_pii_manager.jpg)"></span>
+                            <div class="item">
+                                <p class="title">PII Manager</p>
+                                <span class="desc">PC 개인정보보호</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="top">
+                        <a href="#">
+                            <span class="thumb" style="background-image:url(/_images/data/img_brochure_pii_filter.jpg)"></span>
+                            <div class="item">
+                                <p class="title">PII Filter</p>
+                                <span class="desc">서버 개인정보보호</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="top">
+                        <a href="#">
+                            <span class="thumb" style="background-image:url(/_images/data/img_brochure_edata_manager.jpg)"></span>
+                            <div class="item">
+                                <p class="title">eData Manager</p>
+                                <span class="desc">개인정보 접속기록 관리</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="left">
+                        <a href="#">
+                            <span class="thumb" style="background-image:url(/_images/data/img_brochure_eprint_2.jpg)"></span>
+                            <div class="item">
+                                <p class="title">ePrint</p>
+                                <span class="desc">출력물 개인정보보호</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div> -->
+            <div class="list_wrap">
+                <h4>엔터프라이즈 문서 플랫폼</h4>
+                <ul class="list">
+                    <li class="left top">
+                        <a href="#">
+                            <span class="thumb" style="background-image:url(/_images/data/img_brochure_wrapsody.jpg)"></span>
+                            <div class="item">
+                                <p class="title">Wrapsody</p>
+                                <span class="desc">문서 자산화, 협업, 보안 플랫폼</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="list_wrap">
+                <h4>외부 협업 플랫폼</h4>
+                <ul class="list">
+                    <li class="top">
+                        <a href="#">
+                            <span class="thumb" style="background-image:url(/_images/data/img_brochure_wrapsody_eco.jpg)"></span>
+                            <div class="item">
+                                <p class="title">Wrapsody eCo</p>
+                                <span class="desc">데이터 중심의 외부 협업 플랫폼</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="list_wrap">
+                <h4>개인정보 비식별화</h4>
+                <ul class="list">
+                    <li class="left top">
+                        <a href="#">
+                            <span class="thumb" style="background-image:url(/_images/data/img_brochure_analytic_did.jpg)"></span>
+                            <div class="item">
+                                <p class="title">Analytic DID</p>
+                                <span class="desc">개인정보 비식별화</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="top">
+                        <a href="#">
+                            <span class="thumb" style="background-image:url(/_images/data/img_brochure_ads.jpg)"></span>
+                            <div class="item">
+                                <p class="title">ADS</p>
+                                <span class="desc">개인정보 비식별 처리 컨설팅 서비스</span>
+                            </div>
+                        </a>
+                    </li>                           
+                </ul>
+            </div>
+            <div class="list_wrap">
+                <h4>블록체인 기반 진본 증명 플랫폼</h4>
+                <ul class="list">
+                    <li class="left top">
+                        <a href="#">
+                            <span class="thumb" style="background-image:url(/_images/data/img_brochure_fasoo_block.jpg)"></span>
+                            <div class="item">
+                                <p class="title">Fasoo Block</p>
+                                <span class="desc">블록체인 기반 진본 증명 플랫폼</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>            
+        </div>
+    </div>
+    <div id="footer">
+        <div class="inner">
+            <ul class="nav">
+                <li>
+                    <a href="/products/fasoo-solution-overview">제품</a>
+                    <ul>
+                        <li><a href="/products/fasoo-solution-overview">파수 솔루션 개요</a></li>
+                        <li><a href="/products/fasoo-data-security-framework">데이터 보안 솔루션</a></li>
+                        <li><a href="/products/fasoo-onnara-drm">온나라시스템 솔루션</a></li>
+                        <li><a href="/products/fasoo-total-privacy-solution">개인정보보호 솔루션</a></li>
+                        <li><a href="/products/wrapsody">엔터프라이즈 문서 플랫폼</a></li>
+                        <li><a href="/products/analyticdid">개인정보 비식별화</a></li>
+                        <li><a href="/products/fasooblock">진본 증명 플랫폼</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/services/data-security-consulting">서비스</a>
+                    <ul>
+                        <li><a href="/services/data-security-consulting">데이터 보안 컨설팅</a></li>
+                        <li><a href="/services/information-security-consulting">정보보호 컨설팅</a></li>
+                        <li><a href="/services/system-integration">시스템 통합</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/news">뉴스 & 이벤트</a>
+                    <ul>
+                        <li><a href="/news">보도자료</a></li>
+                        <li><a href="/newsletter-promotion">뉴스레터 · 프로모션</a></li>
+                        <li><a href="/event">이벤트</a></li>
+                        <li><a href="/webtoon">웹툰</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/document">자료실</a>
+                    <ul>
+                        <li><a href="/document">브로슈어</a></li>
+                        <li><a href="/video">비디오</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">회사소개</a>
+                    <ul>
+                        <li><a href="/about-us">About Us</a></li>
+                        <li><a href="/history">연혁</a></li>
+                        <li><a href="/leadership">경영진 소개</a></li>
+                        <li><a href="/customers">고객사</a></li>
+                        <li><a href="/partners">파트너사</a></li>
+                        <li><a href="/recruit">인재채용</a></li>
+                        <li><a href="/support">문의하기</a></li>
+                        <li><a href="/contact-us">오시는길</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="bottom">
+                <ul class="social">
+                    <li><a href="https://en.fasoo.com/" class="global" target="_blank">Fasoo</a></li>
+                    <li><a href="https://ko-kr.facebook.com/fasoo.korea/" class="facebook" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/user/FasooMarcom" class="youtube" target="_blank">YouTube</a></li>
+                    <li><a href="https://www.instagram.com/fasoo2020/" class="insta" target="_blank">Instagram</a></li>                                       
+                    <li><a href="https://blog.naver.com/fs0608" class="blog" target="_blank">Blog</a></li>
+                </ul>
+                <ul class="left">
+                    <li>© 2018 Fasoo.com.</li>
+                    <li><a href="/privacy-policy">개인정보처리방침</a></li>
+                    <li><a href="/terms-of-service">저작권정책</a></li>                    
+                    <!-- <li><a href="#">PC버전</a></li> -->
+                </ul>
+                <!-- <ul class="link">
+                    <li><a href="#">Support</a></li>
+                    <li>
+                        <label for="family">Family Site</label>
+                        <select name="" id="family">
+                            <option value="https://www.digitalpage.me/">DigitalPage</option>
+                            <option value="http://www.fasooblock.com/">FasooBlock</option>
+                            <option value="http://sparrowfasoo.com/">Sparrow</option>
+                            <option value="http://www.wrapsody.com/">Wrapsody</option>
+                            <option value="http://recruit.fasoo.com/">채용사이트</option>
+                        </select>                        
+                    </li>
+                </ul> -->
+                <!-- <span class="copyright">© 2018 Fasoo.com.</span> -->
+            </div>
+        </div>
+    </div>
+    <a href="#" id="upper">상단으로</a>
+    <div id="layer" class="layer_brochure">
+        <div class="close">
+            <a href="#" onclick="closeLayer(event)">레이어 닫기</a>
+        </div>        
+        <div class="left">
+            <div class="top">
+                <span class="title under_line">다운로드</span>
+                <span class="product">Fasoo Enterprise DRM</span>
+            </div>
+            <div class="bottom">
+                <p class="desc">파수닷컴의 제품에 대해 궁금하신 사항은 문의주세요</p>
+                <span class="tel">02-300-9100</span><span class="email">sales@sparrowfasoo.com</span>
+            </div>
+        </div>
+        <div class="right">
+            <form action="">
+                <div class="input_wrap">
+                    <div>
+                        <label for="name">성명 <span class="required">*</span></label>
+                        <input type="text" id="name">
+                    </div>
+                    <div>
+                        <label for="company">회사 <span class="required">*</span></label>
+                        <input type="text" id="company">
+                    </div>
+                    <div>
+                        <label for="dept">부서/직급 <span class="required">*</span></label>
+                        <input type="text" id="dept">
+                    </div>
+                    <div>
+                        <label for="tel">회사 연락처 <span class="required">*</span></label>
+                        <input type="text" id="tel">
+                    </div>
+                    <div>
+                        <label for="cel">핸드폰 <span class="required">*</span></label>
+                        <input type="text" id="cel">
+                    </div>
+                    <div>
+                        <label for="email">이메일 <span class="required">*</span></label>
+                        <input type="text" id="email">
+                    </div>
+                    <div>
+                        <label for="cont">문의내용 <span class="required">*</span></label>
+                        <textarea name="" id="cont" cols="30" rows="10"></textarea>
+                    </div>                    
+                </div>
+                <div class="agree_wrap">
+                    <p class="title">개인정보 수집 및 이용에 대한 안내 <span class="required">*</span></p>
+                    <p class="cont">
+                        ㈜파수닷컴(이하 '파수닷컴'이라 함)은 귀하의 개인정보보호를 매우 중요시하며, 귀하께서 파수닷컴이 제공하는 서비스(http://www.fasoo.com, 이하 '서비스'라 함)를 이용함과 동시에 파수닷컴에 제공한 개인정보가 보호 받을 수 있도록 최선을 다하고 있습니다.<br>
+                        이에 파수닷컴은 『정보통신망이용촉진 및정보보호등에관한법률』상의 개인정보보호규정 및 정보통신부가 제정한『개인정보보호지침』을 준수하고 있습니다.<br>
+                        파수닷컴은 본 개인정보취급방침을 통하여 귀하께서 제공하시는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며, 개인정보보호를 위해 어떠한 조치가 취해지고 있는지 알려드립니다.<br>
+                        또한, 파수닷컴 개인정보취급방침을 홈페이지 첫 화면에 공개함으로써 귀하께서 언제나 용이하게 보실 수 있도록 조치하고 있습니다. <br>
+                        파수닷컴의 개인 정보취급방침은 정부의 법률 및 지침 변경이나 파수닷컴 내부 방침 변경 등으로 인하여 수시로 변경될 수 있으며, 개인정보취급방침을 개정할 경우 홈페이지에 게시하여 개정된 사항을 쉽게 알아볼 수 있도록 하고 있습니다.<br>
+                        <br>
+                        파수닷컴의 개인정보취급방침은 다음과 같은 내용을 담고 있습니다.<br>
+                        <br>
+                        가.개인정보의 수집 및 이용목적<br>
+                        파수닷컴은 개인정보를 수집하여 최적의 서비스를 제공해드리기 위함이며, 수집된 정보는 서비스 제공이나 가입자가 사전에 동의한 사항 이외에는 어떠한 목적으로도 사용되지 않음을 알려드립니다.<br>
+                        <br>
+                        나.개인정보 수집항목<br>
+                        파수닷컴은 서비스제공을 위하여 필요한 최소한의 범위 내에서 개인정보를 수집합니다.<br>
+                        -필수항목:성함,회사,직급,회사연락처,핸드폰,이메일<br>
+                        -선택항목:문의사항<br>
+                        <br>
+                        다.개인정보의 보유 및 폐기<br>
+                        파수닷컴은 개인정보 수집 및 이용목적이 달성된 후에는 예외 없이 해당 정보를 지체 없이 파기합니다.<br>
+                        -제품 정보이용을 위해 입력하신 개인정보는 목적이 달성된 후 별도의 DB로 옮겨져(종이의 경우 별도의 서류함) 내부 방침 및 기타 관련 법령에 의한 정보보호 사유에 따라(보유 및 이용기간 참조) 일정 기간 저장된 후 파기되어집니다.<br>
+                    </p>
+                    <input type="checkbox" id="agree"><label for="agree">개인정보 수집 및 이용에 대해서 동의합니다.</label>                    
+                </div>
+                <div class="btn">
+                    <a href="#" onclick="downloadFile(event)">다운로드</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        var $brochure = $('.brochure .inner'),
+            $h4 = $brochure.find('h4'),
+            $listWrap =  $brochure.find('.list_wrap');        
+
+        $h4.eq(0).show();
+        $listWrap.eq(0).show();
+        $('.brochure select').selectmenu({
+            change: function() {
+                console.log('asfads')
+                var val = $(this).val();
+                if (val) {
+                    $listWrap.hide();
+                    $h4.eq(val).show();
+                    $listWrap.eq(val).show();
+                }
+
+                else {
+                    $h4.each(function(i){
+                        if (i > 0) {
+                            $(this).css({
+                                display: 'block',
+                                marginTop: 40
+                            });
+                        }
+                    })
+                    $listWrap.show();
+                }
+            }
+        });        
+
+        var $window = $(window),
+            $body = $('body'),
+            $layer = $('#layer'),
+            scrollTop = 0;
+
+        $('.list a').click(function(e) {
+            openLayer(e, this);
+        });
+
+        function closeLayer(e) {
+            e.preventDefault();            
+            $body.removeAttr('style');                
+            $layer.hide();
+            $('#dimmer').remove();
+            $('#header, #visual, #lnb, #content, #footer').show();
+            $window.scrollTop(scrollTop)
+        }
+
+        function openLayer(e, el) {
+            e.preventDefault();
+            var $left = $layer.find('.left'), 
+                $tel = $layer.find('.tel'),
+                $email = $layer.find('.email');
+            
+            $('#header, #visual, #lnb, #content, #footer').hide();
+            $layer.show();
+            scrollTop = $window.scrollTop();
+            $window.scrollTop(0)
+            $layer.find('.product').html($(el).find('.title').text());
+
+            switch ($(el).parents('.list').prev().text()) {
+                case '데이터 보안':
+                    $left.attr('class', 'left product_1');
+                    $tel.html('02-300-9090');
+                    $email.html('sales@fasoo.com');
+                    break;
+                case '온나라 시스템':
+                    $left.attr('class', 'left product_2');
+                    $tel.html('02-300-9090');
+                    $email.html('sales@fasoo.com');
+                    break;
+                case '개인정보보호':
+                    $left.attr('class', 'left product_3');
+                    $tel.html('02-300-9090');
+                    $email.html('sales@fasoo.com');
+                    break;                                                        
+                case '엔터프라이즈 문서 플랫폼':
+                    $left.attr('class', 'left product_4');
+                    $tel.html('02-300-9146');
+                    $email.html('wrapsody@fasoo.com');
+                    break;
+                case '외부 협업 플랫폼':
+                    $left.attr('class', 'left product_4');
+                    $tel.html('02-300-9146');
+                    $email.html('wrapsody@fasoo.com');
+                    break;                    
+                case '개인정보 비식별화':
+                    $left.attr('class', 'left product_5');
+                    $tel.html('02-300-9392');
+                    $email.html('ad-sales@fasoo.com');
+                    break;
+                case '블록체인 기반 진본 증명 플랫폼':
+                    $left.attr('class', 'left product_6');
+                    $tel.html('02-300-9066');
+                    $email.html('fasooblock@fasoo.com');
+                    break;
+            }
+            
+            // $layer.css({
+            //     display: 'block',
+            //     top: $window.scrollTop() + ($window.height() - $layer.height()) / 2,
+            //     left: ($window.width() - $layer.width()) / 2,
+            // });
+        }
+
+        function downloadFile(e) {
+            e.preventDefault();
+
+            var regExp = /[0-9]/;
+
+            if ($('#name').val() === '') {
+                alert('이름을 입력하세요.');
+                $('#name').focus();
+            }
+
+            else if ($('#name').val().length < 2){
+                alert('정확한 이름을 입력해주세요');
+                $('#name').focus();
+            }
+
+            else if (regExp.test($('#name').val())) {
+                alert('정확한 이름을 입력해주세요');
+                $('#name').focus();
+            }            
+
+            else if ($('#company').val() === '') {
+                alert('회사를 입력하세요.');
+                $('#company').focus();                
+            }
+            
+            else if ($('#dept').val() === '') {
+                alert('부서/직급을 입력하세요.');
+                $('#dept').focus();
+            }
+
+            else if ($('#tel').val() === '') {
+                alert('회사 연락처를 입력하세요.');
+                $('#tel').focus();
+            }
+
+            else if ($('#tel').val().length < 7) {
+                alert('회사 연락처를 정확히 입력해주세요');
+                $('#tel').focus();
+            }
+
+            else if ($('#cel').val().length === 0) {
+                alert('핸드폰 번호를 입력하세요.');
+                $('#cel').focus();
+            }
+
+            else if ($('#cel').val().length < 10) {
+                alert('핸드폰 번호를 정확히 입력해주세요');
+                $('#cel').focus();
+            }            
+
+            else if ($('#email').val().length === 0) {
+                alert('이메일을 입력하세요.');
+                $('#email').focus();
+            }
+
+            else if ($('#cont').val().length === 0) {
+                alert('문의내용을 입력하세요.');
+                $('#cont').focus();
+            }
+
+            else if (!$('#agree').prop('checked')) {
+                alert('개인정보 수집 및 이용에 동의해주세요.');
+                $('#agree').focus();
+            }
+
+            else {
+                closeLayer(e);
+                alert('다운로드');
+            }
+        }
+    </script>
+</body>
+</html>

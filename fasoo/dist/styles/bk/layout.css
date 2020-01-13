@@ -1,0 +1,77 @@
+body {min-width:1220px}
+.inner {margin:0 auto;width:1220px;}
+
+#header {margin:0 auto;height:84px;background-color:#fff;border-bottom:1px solid #e2e2e3}
+#header .skip {position:absolute;top:0;left:0;width:0;height:0;text-align:center;z-index:2;font-size:0;background-color:#fff;}
+#header .skip:focus {width:100%;height:40px;line-height:40px;font-size:16px;}
+#header h1 {float:left;margin-top:30px;background-image:url(/_images/common/logo.png)}
+#header h1 a {display:inline-block;width:96px;height:28px;vertical-align:top;font-size:0;}
+
+#header #gnb {display:inline-block;margin-left:65px;}
+#header #gnb a {color:#333}
+#header #gnb a:focus, #header #gnb a:hover {color:#0ba1e7}
+#header #gnb > li {position:relative;float:left;vertical-align:top;}
+#header #gnb > li > a {display:block;margin:0 auto;padding:0 44px;height:85px;line-height:85px;text-align:center;font-size:18px;font-weight:700}
+#header #gnb .depth2 {position:absolute;top:84px;height:0;overflow:hidden;z-index:1;border:1px solid transparent;}
+#header #gnb .depth2 > li {width:180px;background-color:#fff}
+#header #gnb .depth2 > li > a {display:block;padding:18px 0;text-align:center}
+#header #gnb > li:first-child .depth2 > li {position:relative;width:190px;font-size:0}
+#header #gnb > li:first-child .depth2 > li > a {padding-left:20px;padding-right:40px;text-align:left;}
+#header #gnb > li:first-child .depth2 > li > a:after {content:'›';position:absolute;top:3px;right:20px;line-height:52px;z-index:1;color:#333;font-size:30px;font-weight:300}
+#header #gnb > li:first-child .depth2 > li > a:hover:after {color:#0ba1e7}
+#header #gnb > li:first-child .depth2 > li.br > a:after {top:15px}
+#header #gnb > li:first-child .depth2 > li:first-child > a:after {content:none}
+#header #gnb .depth3 {position:absolute;top:9px;left:190px}
+#header #gnb .depth3 > li {width:300px;background-color:#fff}
+#header #gnb .depth3 > li > a {display:block;padding:7px 0 7px 20px;}
+
+#header .right {float:right;margin-top:25px}
+#header .right a {display:inline-block;margin-right:20px;width:188px;height:33px;vertical-align:top;line-height:33px;text-align:center;color:#0ba1e7;border:1px solid #0ba1e7}
+#header .right select {width:85px;height:35px;border:1px solid #333}
+
+#visual {height:300px;text-align:center;background-size:cover}
+#visual.product {background-image:url(/_images/product/img_visual_product.jpg)}
+#visual.news {background-image:url(/_images/news/img_visual_news.jpg)}
+#visual.data {background-image:url(/_images/data/img_visual_data.jpg)}
+#visual.about {background-image:url(/_images/about/img_visual_about.jpg)}
+#visual * {color:#fff}
+#visual h2 {display:inline-block;margin-top:90px;font-size:40px;font-weight:800}
+#visual .desc {font-size:18px;font-weight:700}
+
+#lnb {border-top:1px solid #b3b3b3;border-bottom:1px solid #b3b3b3}
+#lnb ul {margin:0 auto;text-align:center;overflow: hidden;font-size:0;}
+#lnb ul li {display:inline-block;width:152.5px;border-bottom:1px solid #fff}
+#lnb ul li.active {border-bottom:2px solid #0ba1e7}
+#lnb ul li a {display:inline-block;padding:20px 0;width:100%;text-align:center;letter-spacing:-.5px;font-size:18px;font-weight:700}
+#lnb ul li.active a {padding:20px 0 19px;color:#0ba1e7}
+
+#footer {padding:75px 0;background-color:#222}
+#footer .nav {overflow:hidden}
+#footer .nav > li {float:left;margin-left:167px;vertical-align:top}
+#footer .nav > li:first-child {margin:0}
+#footer .nav li > a {font-weight:700;color:#fff;}
+#footer .nav li > ul {margin-top:15px}
+#footer .nav li > ul > li > a {display:inline-block;padding:7px 0;font-weight:400;font-size:14px;color:#959595}
+
+#footer .bottom {margin-top:55px;padding-top:30px;overflow: hidden;border-top:1px solid #959595}
+#footer .bottom * {font-size:12px;font-weight:400;color:#959595}
+#footer .bottom ul {overflow: hidden;}
+#footer .bottom ul li {float:left;margin-left:25px}
+#footer .bottom ul li:first-child {margin-left:0}
+#footer .left {float:left}
+#footer .social {float:right}
+#footer .social *:before {content:'';display:inline-block;margin-right:10px;vertical-align: middle;background-image:url(/_images/common/ico_social.png)}
+#footer .social .facebook:before {width:18px;height:18px;}
+#footer .social .youtube:before {width:20px;height:14px;background-position: -18px 0}
+#footer .social .insta:before {width:18px;height:18px;background-position: 0 -18px}
+#footer .social .blog:before {width:18px;height:18px;background-position: -19px -18px}
+
+.overview + #footer,
+.event + #footer,
+.webtoon + #footer,
+.broshre + #footer,
+.video + #footer,
+.contact_us + #footer {margin-top:170px}
+
+#dimmer {position:absolute;top:0;left:0;width:100%;height:100%;opacity:.6;background-color:#000;z-index:2}
+#layer {position:absolute;display:none;overflow:hidden;z-index:3}

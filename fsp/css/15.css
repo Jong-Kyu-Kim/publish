@@ -1,0 +1,112 @@
+#addPermissionRulePopup .modal-content,
+#addPermissionRulePopup .modal-body {
+  overflow: visible;
+}
+
+#addPermissionRulePopup .modal-header {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+#addPermissionRulePopup .modal-body {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+#addPermissionRulePopup .modal-body table tbody>tr>td {
+  padding-right: 10px;
+}
+
+#addPermissionRulePopup .modal-body .color {
+  width: 33px;
+  height: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 0;
+  border-width: 1px;
+}
+
+#addPermissionRulePopup .modal-body .datepicker-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+#addPermissionRulePopup .modal-body .datepicker-wrapper span {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#addPermissionRulePopup .modal-body .datepicker-wrapper .inner_input_btn {
+  max-width: 120px;
+}
+
+#addPermissionRulePopup .modal-body .datepicker-wrapper .inner_input_btn>div {
+  width: calc(100% - 35px);
+  display: inline-block;
+}
+
+#addPermissionRulePopup .modal-body .datepicker-wrapper .inner_input_btn>div .react-datepicker-wrapper,
+#addPermissionRulePopup .modal-body .datepicker-wrapper .inner_input_btn>div .react-datepicker__input-container,
+#addPermissionRulePopup .modal-body .datepicker-wrapper .inner_input_btn>div input {
+  width: 100%;
+  border-radius: 0;
+}
+
+#addPermissionRulePopup .modal-body .datepicker-wrapper .inner_input_btn label {
+  display: inline-block !important;
+  width: 35px;
+  line-height: 30px;
+}
+
+#addPermissionRulePopup .modal-body .target-list {
+  height: 150px;
+  overflow-y: auto;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #d2d2d2;
+  background-color: #ffffff;
+  flex: 1;
+  margin-right: 10px;
+}
+
+#addPermissionRulePopup .modal-body .target-list p {
+  margin: 0 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+#addPermissionRulePopup .modal-body .target-list p button {
+  width: 15px;
+  height: 15px;
+}
+
+#addPermissionRulePopup .modal-body .target-list p button img {
+  vertical-align: baseline;
+}
+
+#addPermissionRulePopup .modal-body .target-list p:last-child {
+  margin-bottom: 0;
+}
+
+#addPermissionRulePopup .modal-body .target-list__wrapper {
+  display: flex;
+}
+
+#addPermissionRulePopup .modal-body .target-list__wrapper button {
+  flex: none;
+}
+
+#permissionClassification .dropdown-item a {
+  display: flex;
+}
+
+#permissionClassification .dropdown-item a span {
+  flex: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#permissionClassification .dropdown-item a .color {
+  flex: none;
+}

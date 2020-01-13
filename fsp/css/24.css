@@ -1,0 +1,474 @@
+@charset "UTF-8";
+
+.section-statistic .statistic__search {
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: solid 1px #d2d2d2;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  z-index: 2;
+}
+
+.section-statistic .statistic__search.active {
+  display: block;
+}
+
+.section-statistic .statistic__search .search__wrap {
+  vertical-align: middle;
+  padding: 10px;
+}
+
+.section-statistic .statistic__search .search__wrap:last-child {
+  text-align: right;
+}
+
+.section-statistic .statistic__search .search__wrap .dropdown__wrapper {
+  width: 100%;
+  max-width: 100%;
+}
+
+.section-statistic .statistic__search .search__wrap .dropdown__wrapper .dropdown__title {
+  width: calc(100% - 35px);
+}
+
+.section-statistic .statistic__search .search__wrap .dropdown__wrapper .dropdown-menu {
+  max-width: 200px;
+}
+
+.section-statistic .statistic__search .search__wrap .dropdown__wrapper .dropdown-item {
+  padding: 0;
+  border: 0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.section-statistic .statistic__search .search__wrap .dropdown__wrapper .dropdown-item .select-option_div {
+  border: 0;
+  min-width: 215px;
+  max-height: calc(100vh - 300px);
+  overflow-y: auto;
+}
+
+.section-statistic .statistic__search .btn-export {
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid #c9c9c9;
+}
+
+.section-statistic .statistic__search .btn-cal {
+  width: 35px;
+  height: 30px;
+  padding: 4px;
+}
+
+.section-statistic .statistic__search button.btn-search {
+  position: relative;
+}
+
+.section-statistic .statistic__search button.btn-search:before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url("/fdrui/images/icon_search_white.png") no-repeat center transparent;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.section-statistic .statistic__search .datepicker__wrapper {
+  width: calc(100% - 35px);
+  display: inline-block;
+}
+
+.section-statistic .statistic__search .react-datepicker-wrapper,
+.section-statistic .statistic__search .react-datepicker__input-container {
+  width: 100%;
+}
+
+.section-statistic .statistic__content {
+  height: 100%;
+  min-height: 520px;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-statistic .statistic__content .statistic__box {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.05);
+  float: left;
+  position: relative;
+}
+
+.section-statistic .statistic__content .statistic__box .chart-switch {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+}
+
+.section-statistic .statistic__content .statistic__box.no_result {
+  position: relative;
+}
+
+.section-statistic .statistic__content .statistic__box.no_result span {
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.section-statistic .statistic__content.type1 .statistic__box {
+  height: 48%;
+}
+
+.section-statistic .statistic__content.type1 .statistic__box:nth-child(1) {
+  width: calc(55% - 13px);
+  margin-right: 13px;
+}
+
+.section-statistic .statistic__content.type1 .statistic__box:nth-child(2) {
+  width: 45%;
+  float: right;
+}
+
+.section-statistic .statistic__content.type1 .statistic__box:last-child {
+  width: 100%;
+  height: calc(52% - 13px);
+  margin-top: 13px;
+  overflow: auto;
+}
+
+.section-statistic .statistic__content.type2 .statistic__box {
+  height: 48%;
+  width: calc(40% - 13px);
+  margin-right: 13px;
+}
+
+.section-statistic .statistic__content.type2 .statistic__box--wrap {
+  width: calc(40% - 13px);
+  margin-right: 13px;
+  float: left;
+  height: 100%;
+}
+
+.section-statistic .statistic__content.type2 .statistic__box--wrap>.statistic__box {
+  width: 100%;
+  height: 48%;
+}
+
+.section-statistic .statistic__content.type2 .statistic__box--wrap>.statistic__box:last-child {
+  height: calc(52% - 13px);
+  margin-top: 13px;
+}
+
+.section-statistic .statistic__content.type2 .statistic__box--wrap+.statistic__box {
+  width: 60%;
+  height: 100%;
+  margin-right: 0;
+}
+
+.section-statistic .statistic__encryption {
+  overflow: hidden;
+}
+
+.section-statistic .line__chart,
+.section-statistic .daily__line__chart {
+  position: relative;
+}
+
+.section-statistic .line__chart .btn-back,
+.section-statistic .daily__line__chart .btn-back {
+  position: absolute;
+  top: 10px;
+  right: 45px;
+}
+
+.section-statistic .line__chart .btn-plus,
+.section-statistic .daily__line__chart .btn-plus {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.section-statistic .pie__chart {
+  position: relative;
+  height: 100%;
+}
+
+.section-statistic .pie__chart .total {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: auto;
+  padding: 0 10px;
+  font-size: 13px;
+  color: #000;
+  text-align: center;
+  border: 1px solid #d2d2d2;
+  border-radius: 3px;
+}
+
+.section-statistic .dept__tree {
+  cursor: pointer;
+}
+
+.section-statistic .dept__tree:hover {
+  text-decoration: underline;
+}
+
+.section-statistic .search__wrap .inner_input_btn {
+  width: calc(50% - 10px);
+  display: inline-block;
+}
+
+.section-statistic .search__wrap .inner_input_btn>div:not(.react-datepicker-popper) {
+  width: calc(100% - 35px);
+  display: inline-block;
+}
+
+.section-statistic .search__wrap .inner_input_btn .react-datepicker-popper select {
+  width: 100px;
+}
+
+.section-statistic .search__wrap .inner_input_btn input {
+  width: 100%;
+}
+
+.section-statistic .search__wrap .inner_input_btn.select-target {
+  width: 100%;
+}
+
+.section-statistic .search__wrap .inner_input_btn.select-target input {
+  width: calc(100% - 35px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.section-statistic .search__wrap .month__span {
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+}
+
+.section-statistic .btn-right {
+  margin-top: 10px;
+  float: right;
+}
+
+.section-statistic .btn-encryption {
+  background-image: url("/fdrui/images/statistic_protection.png");
+}
+
+.section-statistic .sub__dept {
+  width: 16px;
+  height: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.section-statistic .sub__dept.on {
+  background-image: url("/fdrui/resources/images/bg_select.png");
+}
+
+.section-statistic .sub__dept.off {
+  background-image: url("/fdrui/resources/images/bg_select_on.png");
+}
+
+.section-statistic .monthly__dept table thead th {
+  border-bottom: none;
+  text-align: center;
+  padding: 0 10px;
+  white-space: nowrap;
+}
+
+.section-statistic .monthly__dept table thead th.fix {
+  width: 150px;
+  padding: 0 10px;
+}
+
+.section-statistic .monthly__dept table tbody .total__row td {
+  border-top: 3px solid #e0e0e0;
+  border-bottom: 3px solid #e0e0e0;
+}
+
+.section-statistic .monthly__dept table tbody td {
+  text-align: center;
+  padding: 0 10px;
+  white-space: nowrap;
+}
+
+.section-statistic .monthly__dept table tbody td.dept__name {
+  padding-left: 10px;
+  text-align: left;
+}
+
+.section-statistic .symbol th {
+  padding: 0 10px;
+  text-align: center;
+}
+
+.section-statistic .symbol th img {
+  width: 20px;
+  min-width: 20px;
+  max-width: 20px;
+}
+
+.section-statistic .symbol th.total {
+  border-top: 1px solid #ffffff;
+  position: sticky;
+  /* ie에서는 안먹히게 */
+  background-color: transparent;
+  /* for firefox */
+}
+
+.section-statistic .symbol th.total:before {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  top: -1px;
+  left: 0;
+}
+
+#lineChart.line__chart--popup {
+  position: fixed;
+  z-index: 500;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#lineChart.line__chart--popup .modal-dialog {
+  width: calc(100% - 160px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 80px;
+}
+
+#lineChart.line__chart--popup .modal-dialog .modal-content {
+  width: 100%;
+}
+
+#documentDetailModalForStatistic .popup-body-scroll {
+  min-height: 740px;
+}
+
+#documentDetailModalForStatistic .popup-body {
+  min-height: 650px;
+}
+
+#documentDetailModalForStatistic .modal-dialog {
+  width: 70%;
+}
+
+#documentDetailModalForStatistic .table-01 td:last-child {
+  padding: 0 10px;
+  text-align: center;
+}
+
+#documentDetailModalForStatistic .table-01 td:last-child button {
+  padding: 0 5px;
+}
+
+#documentDetailModalForStatistic .pagination-nopadding {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#documentDetailModalForStatistic .pagination-nopadding ul {
+  margin-bottom: 0px;
+}
+
+#documentDetailModalForStatistic .cls__badge {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #d1c0a5;
+  border: 1px solid #000000;
+  border-radius: 3px;
+}
+
+.encryption__line__chart {
+  position: relative;
+}
+
+.encryption__line__chart .btn-encryption-zoom-out {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: none;
+}
+
+.encryption__line__chart .btn-encryption-zoom-out.visible {
+  display: block;
+}
+
+.btn-daily-zoom-out {
+  display: none;
+}
+
+.btn-daily-zoom-out.visible {
+  display: block;
+}
+
+.line__chart--popup .btn-daily-zoom-out {
+  top: 2px;
+  right: 30px;
+  position: absolute;
+}
+
+.btn-search-close {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  right: 9px;
+  top: 9px;
+  z-index: 1;
+  background: url("/fdrui/images/icon_search_close.png") no-repeat center transparent;
+  background-size: cover;
+}
+
+.btn-search-close:focus,
+.btn-search-close:hover,
+.btn-search-close:active {
+  background: url("/fdrui/images/icon_search_close.png") no-repeat center transparent;
+  box-shadow: none;
+}
+
+.risk__level {
+  display: flex;
+  border: 1px solid #e0e0e0;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+.risk__level.no-risk {
+  flex-direction: row-reverse;
+}
+
+.risk__level>div {
+  flex: 1;
+  line-height: 30px;
+  display: flex;
+}
+
+.risk__level>div>div {
+  flex: 0.5;
+}
+
+.risk__level>div>div.title {
+  text-align: center;
+}
+
+.risk__level>div.total>div {
+  flex: 1;
+}

@@ -1,0 +1,7 @@
+.device-type.select-option_div label {
+  display: block;
+}
+
+.device-type.select-option_div label+.sub-option label {
+  margin-top: 5px;
+}

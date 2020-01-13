@@ -1,0 +1,105 @@
+.searching__input {
+  position: relative;
+}
+
+.searching__input .react-autosuggest__container {
+  padding: 5px 7px;
+  background-color: #eeeeee;
+  border-bottom: solid 1px #dddddd;
+}
+
+.searching__input .react-autosuggest__container input {
+  border: none;
+  border-radius: 5px;
+}
+
+.searching__input span.input-button {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  background: url("/fdrui/images/icon_search_black.png") no-repeat center transparent;
+  background-size: contain;
+}
+
+.searching__result .result__badge {
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  color: #666666;
+  padding: 11px 0;
+}
+
+.searching__result .c-blue {
+  color: #51a1cf;
+}
+
+.searching__result .result__wrapper {
+  height: 504px;
+  overflow-y: auto;
+  padding: 0 10px;
+}
+
+.searching__result .result__list {
+  padding: 11px 8px;
+  border: solid 1px #dddddd;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.searching__result .result__list input[type=checkbox] {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 10;
+  margin: 0;
+}
+
+.searching__result .result__list.active {
+  border-color: #51a1cf;
+}
+
+.searching__result .result__list .result__line {
+  margin-bottom: 8px;
+}
+
+.searching__result .result__list .result__line:last-child {
+  margin-bottom: 0;
+}
+
+.searching__result .result__list .result__line span {
+  display: inline-block;
+  vertical-align: middle;
+  border: solid 1px #cccccc;
+  border-radius: 10px;
+  padding: 0 9px;
+  font-size: 11px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.82;
+  letter-spacing: normal;
+  text-align: left;
+  color: #999999;
+}
+
+.searching__result--none {
+  padding-top: 212px;
+}
+
+.searching__result--none h4 {
+  font-size: 13px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  color: #cccccc;
+  margin-top: 23px;
+}

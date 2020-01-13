@@ -1,0 +1,136 @@
+.section-ruleset.detail .inspection-wrapper {
+  height: calc(100% - 40px);
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+.section-ruleset.detail .btn__container {
+  margin-bottom: 8px;
+}
+
+.section-ruleset.detail .btn__container .btn-back {
+  margin-right: 30px;
+}
+
+.section-ruleset.detail .btn__container .btn-edit {
+  margin-right: -1px;
+}
+
+.section-ruleset.detail table {
+  font-size: 12px;
+  line-height: 2.92;
+}
+
+.section-ruleset.detail table th {
+  width: 320px;
+  height: calc(283px / 8);
+  background-color: #f9f9f9;
+  color: #666666;
+  border: 1px solid #dddddd;
+  padding-left: 49px;
+  background-repeat: no-repeat;
+  background-position: center left 18px;
+}
+
+.section-ruleset.detail table th.name {
+  background-image: url("/fdrui/images/baseline_book_black.png");
+}
+
+.section-ruleset.detail table th.desc {
+  background-image: url("/fdrui/images/baseline_text_black.png");
+}
+
+.section-ruleset.detail table th.range {
+  background-image: url("/fdrui/images/baseline_devices_black.png");
+}
+
+.section-ruleset.detail table th.target {
+  background-image: url("/fdrui/images/baseline_people_black.png");
+}
+
+.section-ruleset.detail table th.period {
+  background-image: url("/fdrui/images/baseline_period_black.png");
+}
+
+.section-ruleset.detail table th.date {
+  background-image: url("/fdrui/images/baseline_date_black.png");
+}
+
+.section-ruleset.detail table th.inspection {
+  background-image: url("/fdrui/images/baseline_ruleset_black.png");
+}
+
+.section-ruleset.detail table th.treat {
+  background-image: url("/fdrui/images/baseline_security_black.png");
+}
+
+.section-ruleset.detail table th.masking {
+  background-image: url("/fdrui/images/baseline_format_paint_black.png");
+}
+
+.section-ruleset.detail table th.reg {
+  background-image: url("/fdrui/images/baseline_featured_play_list_black.png");
+}
+
+.section-ruleset.detail table th.beenhere {
+  background-image: url("/fdrui/images/baseline_beenhere_black.png");
+}
+
+.section-ruleset.detail table th.condition {
+  background-image: url("/fdrui/images/baseline_condition_black.png");
+}
+
+.section-ruleset.detail table th.value {
+  background-image: url("/fdrui/images/baseline_value_black.png");
+}
+
+.section-ruleset.detail table th.encryption {
+  background-image: url("/fdrui/images/baseline_encryption_black.png");
+}
+
+.section-ruleset.detail table th.classification {
+  background-image: url("/fdrui/images/baseline_classification_black.png");
+}
+
+.section-ruleset.detail table th.deletion {
+  background-image: url("/fdrui/images/baseline_deletion_black.png");
+}
+
+.section-ruleset.detail table th.isolation {
+  background-image: url("/fdrui/images/baseline_isolation_black.png");
+}
+
+.section-ruleset.detail table th.pii {
+  background-image: url("/fdrui/images/baseline_pii_black.png");
+}
+
+.section-ruleset.detail table th.protection {
+  background-image: url("/fdrui/images/baseline_protection_black.png");
+}
+
+.section-ruleset.detail table td {
+  width: calc(100% - 255px);
+  color: #000;
+  border: 1px solid #dddddd;
+  padding: 10px 15px;
+  line-height: normal;
+  background-color: #fff;
+  word-break: break-all;
+}
+
+.section-ruleset.detail table td b {
+  font-weight: bold;
+}
+
+.section-ruleset.detail table td .detail__list {
+  margin-bottom: 10px;
+}
+
+.section-ruleset.detail table td .detail__list:last-child {
+  margin-bottom: 0;
+}
+
+.section-ruleset.detail table tr:last-child th,
+.section-ruleset.detail table tr:last-child td {
+  border-bottom: 0;
+}

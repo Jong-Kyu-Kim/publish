@@ -1,0 +1,156 @@
+#addSchedulePopup .modal-content {
+  overflow: visible;
+}
+
+#addSchedulePopup .modal-dialog {
+  width: 700px;
+}
+
+#addSchedulePopup .popup-body-scroll {
+  overflow-y: visible;
+}
+
+#addSchedulePopup .dropdown.open .dropdown-toggle {
+  background-image: url("/fdrui/resources/images/bg_select_up.png");
+}
+
+#addSchedulePopup .dropdown-toggle {
+  text-align: left;
+  min-width: 105px;
+  vertical-align: middle;
+  color: #666;
+  background: #fff url("/fdrui/resources/images/bg_select.png") 100% 50% no-repeat;
+  border: 1px solid #d3d3d3;
+  padding-right: 25px;
+}
+
+#addSchedulePopup .dropdown-toggle .caret {
+  display: none;
+}
+
+#addSchedulePopup .dropdown-menu {
+  min-width: 100%;
+}
+
+#addSchedulePopup .day-input {
+  width: 50px;
+  margin-right: 5px;
+}
+
+#addSchedulePopup select {
+  width: 105px;
+}
+
+.inspection__add .react-datepicker__navigation {
+  min-width: 10px;
+  height: 10px;
+  outline: 0;
+}
+
+.inspection__add .react-datepicker__navigation--next {
+  right: 10px;
+}
+
+.inspection__add .react-datepicker__navigation--previous {
+  left: 10px;
+}
+
+.inspection__add .react-datepicker__navigation:hover,
+.inspection__add .react-datepicker__navigation:active {
+  background-color: transparent;
+}
+
+.inspection__add .react-datepicker__input-container input {
+  width: 147px;
+}
+
+.inspection__add .dropdown {
+  display: inline-block;
+  position: relative;
+  margin: 0 5px;
+}
+
+.inspection__add .dropdown.open .dropdown-toggle {
+  background: #fff url("/fdrui/resources/images/bg_select_up.png") 100% 50% no-repeat;
+}
+
+.inspection__add .dropdown.open .dropdown-menu {
+  display: block;
+}
+
+.inspection__add .dropdown-toggle {
+  text-align: left;
+  min-width: 105px;
+  vertical-align: middle;
+  color: #666;
+  background: #fff url("/fdrui/resources/images/bg_select.png") 100% 50% no-repeat;
+  border: 1px solid #d3d3d3;
+  padding-right: 25px;
+  padding-left: 5px;
+}
+
+.inspection__add .dropdown-toggle .caret {
+  display: none;
+}
+
+.inspection__add .dropdown-toggle:hover {
+  background: #fff url("/fdrui/resources/images/bg_select.png") 100% 50% no-repeat;
+}
+
+.inspection__add .dropdown-toggle:disabled,
+.inspection__add .dropdown-toggle:disabled:hover {
+  background-color: #f3f3f3;
+}
+
+.inspection__add .dropdown-toggle.date-dropdown+.dropdown-menu {
+  min-width: 320px;
+  border-top-width: 1px;
+  margin-top: -1px;
+}
+
+.inspection__add .dropdown-toggle.date-dropdown+.dropdown-menu li {
+  min-width: 42px;
+  display: inline-block;
+}
+
+.inspection__add .dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  max-height: 100px;
+  overflow: auto;
+  border: 1px solid #d3d3d3;
+  background-color: #fff;
+  border-top-width: 0;
+  box-sizing: border-box;
+}
+
+.inspection__add .dropdown-menu li {
+  padding: 5px 6px;
+  background-color: #ffffff;
+}
+
+.inspection__add .dropdown-menu li input {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.inspection__add .condition__td>select,
+.inspection__add .condition__td>input {
+  width: 100px !important;
+}
+
+.inspection__add .condition__td label {
+  margin-left: 10px;
+}
+
+.inspection__add .day-input {
+  width: 50px;
+  margin: 0 5px;
+}
+
+.inspection__add .time_picker-container {
+  height: 28px;
+  display: inline-block;
+}

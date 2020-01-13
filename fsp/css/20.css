@@ -1,0 +1,84 @@
+.title__select {
+  float: right;
+}
+
+.title__select>* {
+  display: inline-block;
+}
+
+.title__select select {
+  width: auto;
+  margin-left: 10px;
+}
+
+.devicestatus_search {
+  margin-top: 8px;
+  border: 1px solid #d3d3d3;
+  padding: 13px;
+  height: calc(100% - 200px);
+}
+
+.section-devicestatus .react-autosuggest__container {
+  width: 100%;
+}
+
+.section-devicestatus .contents-colum.right-column {
+  width: calc(100% - 345px);
+}
+
+.section-devicestatus .contents-colum.right-column.search-close {
+  width: 100%;
+}
+
+.section-devicestatus .title__select {
+  float: right;
+}
+
+.section-devicestatus .title__select>* {
+  display: inline-block;
+}
+
+.section-devicestatus .title__select select {
+  width: auto;
+  margin-left: 10px;
+}
+
+.section-devicestatus .scroll_div {
+  position: relative;
+}
+
+.section-devicestatus .btn-search-close {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  right: 0;
+  top: 1px;
+  background: url("/fdrui/images/icon_search_close.png") no-repeat center transparent;
+  background-size: cover;
+}
+
+.section-devicestatus .btn-search-open {
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid #c9c9c9;
+  margin-right: 19px;
+}
+
+#addDevicePopup .modal-dialog {
+  width: 500px;
+}
+
+#addDevicePopup .popup-body>div {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#addDevicePopup .popup-body>div span {
+  width: 20%;
+}
+
+#addDevicePopup .popup-body>div input {
+  width: 80%;
+}

@@ -1,0 +1,50 @@
+#header h1#logo {
+  margin: 0;
+}
+
+#header .language {
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+#gnb>ul>li .nav__ruleSet {
+  background-image: url("/fdrui/images/nav_ruleset.png");
+  background-position: center left 22px;
+}
+
+#gnb>ul>li .nav__documentUsageLog {
+  background-image: url("/fdrui/images/nav_log.png");
+  background-position: center left 19px;
+}
+
+#gnb>ul>li .nav__userRight {
+  background: url("/fdrui/resources/images/fdr_iconsprites.png") top -630px left -11px;
+}
+
+#gnb>ul>li:hover .nav__ruleSet,
+#gnb>ul>li.active .nav__ruleSet {
+  background-image: url("/fdrui/images/nav_ruleset_active.png");
+}
+
+#gnb>ul>li:hover .nav__documentUsageLog,
+#gnb>ul>li.active .nav__documentUsageLog {
+  background-image: url("/fdrui/images/nav_log_active.png");
+}
+
+#gnb>ul>li:hover .nav__userRight,
+#gnb>ul>li.active .nav__userRight {
+  background-position: top -630px left -62px;
+}
+
+#gnb>ul>li>ul li>ul {
+  display: none;
+}
+
+#gnb>ul>li>ul li:hover>ul {
+  display: block;
+  padding: 0;
+}
+
+#gnb>ul>li>ul li:hover>ul:hover {
+  background-color: #fafafa;
+}

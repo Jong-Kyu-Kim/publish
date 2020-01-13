@@ -1,0 +1,72 @@
+.select-option_date {
+  margin-top: 10px;
+  position: relative;
+}
+
+.select-option_date>* {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.select-option_date .date__label {
+  min-width: 20%;
+}
+
+.select-option_date .react-datepicker__navigation {
+  min-width: 10px;
+  height: 10px;
+  outline: 0;
+}
+
+.select-option_date .react-datepicker__navigation--next {
+  right: 10px;
+}
+
+.select-option_date .react-datepicker__navigation--previous {
+  left: 10px;
+}
+
+.select-option_date .react-datepicker__navigation:hover,
+.select-option_date .react-datepicker__navigation:active {
+  background-color: transparent;
+}
+
+.select-option_date .react-datepicker-popper[data-placement^="bottom"] {
+  margin-top: 0;
+  padding-top: 10px;
+}
+
+.select-option_date .react-datepicker__input-container input {
+  width: 100px;
+}
+
+.select-option_date label.btn {
+  min-width: 55px;
+  height: 30px;
+  line-height: 32px;
+  color: #fff;
+  background-color: #2e353c;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  box-sizing: border-box;
+  padding: 0 8px;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.select-option_div.flex-box.show {
+  display: flex !important;
+  align-items: center;
+  min-height: auto;
+}
+
+.select-option_div.flex-box.show input {
+  flex: 1;
+  margin-right: 5px;
+}
+
+.select-option_div.flex-box.show select {
+  max-width: 100px;
+}

@@ -1,0 +1,466 @@
+@charset "utf-8";
+
+/* ==========================================================================
+   tree
+   ========================================================================== */
+
+.selectGroup {
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5px 0 10px 25px;
+  overflow: auto;
+}
+.selectGroup ul {
+  padding-left: 15px;
+  color: #333;
+}
+.selectGroup li {
+  white-space: nowrap;
+}
+.selectGroup li:last-child {
+  border-bottom: 0;
+}
+.selectGroup li div {
+  position: relative;
+  height: 28px;
+  line-height: 28px;
+}
+.selectGroup li p {
+  display: inline-block;
+  padding-right: 5px;
+  cursor: pointer;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/*.selectGroup li span.tree + p {font-weight:600;}*/
+/* .selectGroup li .type {}
+.selectGroup li .iconAdmin {}
+.selectGroup li .iconLeader {} */
+.selectGroup li span.tree {
+  position: absolute;
+  top: 5px;
+  left: -18px;
+  content: '';
+  width: 14px;
+  height: 20px;
+  background: url('../../resources/images/icons.png') -523px -60px no-repeat;
+  content: '';
+  vertical-align: middle;
+  cursor: pointer;
+}
+.selectGroup li.on > div > span.tree {
+  background-position: -503px -60px;
+}
+.selectGroup li p:before {
+  display: inline-block;
+  margin-right: 8px;
+  width: 18px;
+  height: 16px;
+  background: url('../../resources/images/icons.png') -360px -60px repeat-x;
+  vertical-align: middle;
+  content: '';
+}
+.selectGroup li p.dept:before {
+  background: url('../../resources/images/icon_sprites.png') -132px -176px
+    repeat-x;
+  /* -163px */
+}
+.selectGroup li p.user:before {
+  background: url('../../resources/images/icon_sprites.png') -132px -215px
+    repeat-x;
+}
+.selectGroup ul {
+  display: none;
+}
+.selectGroup li.on > ul {
+  display: block;
+}
+.selectGroup li input {
+  opacity: 0;
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 0;
+  height: 0;
+  line-height: 0;
+}
+/*.selectGroup li input:checked + p, .selectGroup li input:checked + a + p {color:#51a1cf;}*/
+.selectGroup li input:checked + p:before,
+.selectGroup li input:checked + span + p:before,
+.selectGroup li input:checked + div > span + p:before {
+  background-position: -380px -60px;
+}
+.selectGroup li input:checked + p.dept:before,
+.selectGroup li input:checked + span + p.dept:before,
+.selectGroup li input:checked + div > p.dept:before,
+.selectGroup li input:checked + div > span + p.dept:before {
+  background-position: -163px -176px;
+}
+.selectGroup li input:checked + p.user:before,
+.selectGroup li input:checked + span + p.user:before,
+.selectGroup li input:checked + div > p.user:before {
+  background-position: -163px -215px;
+}
+.selectGroup li input:checked + p,
+.selectGroup li input:checked + span + p,
+.selectGroup li input:checked + div > span + p {
+  font-weight: 600;
+}
+
+.selectGroup li input:disabled + p:before,
+.selectGroup li input:disabled + span + p:before,
+.selectGroup li input:disabled + div > span + p:before {
+  background-position: -540px -37px;
+}
+.selectGroup li input:disabled + p.dept:before,
+.selectGroup li input:disabled + span + p.dept:before,
+.selectGroup li input:disabled + div > span + p.dept:before {
+  background-position: -132px -176px;
+}
+.selectGroup li input:disabled + p.user:before,
+.selectGroup li input:disabled + span + p.user:before,
+.selectGroup li input:disabled + div > p.user:before {
+  background-position: -132px -215px;
+}
+.selectGroup li input:disabled + p,
+.selectGroup li input:disabled + span + p,
+.selectGroup li input:disabled + div > p {
+  color: #aaa;
+  cursor: default;
+}
+.selectGroup li input:disabled + p,
+.selectGroup li input:disabled + span + p,
+.selectGroup li input:disabled + div > p {
+  opacity: 0.555;
+  cursor: default;
+}
+
+.groupList .btnW {
+  height: 35px;
+  padding-top: 13px;
+  padding-left: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.groupList .btnW .button + .button {
+  margin-left: 7px;
+}
+.groupList .btnW + .selectGroup {
+  top: 100px;
+}
+
+.groupView {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 271px;
+  right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background: #fff;
+  overflow: auto;
+  transition: all 0.5s cubic-bezier(0.64, 0.19, 0.15, 1);
+}
+.AXSplit-cols .groupView {
+  position: relative;
+  float: right;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background: #fff;
+  overflow: auto;
+  transition: all 0.5s cubic-bezier(0.64, 0.19, 0.15, 1);
+}
+
+.groupView .title {
+  position: relative;
+  height: 50px;
+  border-bottom: 1px solid #ddd;
+}
+.groupView .title > p {
+  padding: 16px 310px 0 20px;
+  color: #333;
+  font-weight: 600;
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.groupView .title > p span {
+  padding-left: 4px;
+}
+.groupView .title .right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 20px;
+}
+.moveList .groupView td {
+  cursor: pointer;
+}
+.moveList.asidOpen .groupView {
+  right: 365px;
+}
+
+.groupView .titW {
+  position: relative;
+  height: 73px;
+  padding-top: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.groupView .titW > p {
+  height: 36px;
+  padding: 0 20px 0 20px;
+  color: #333;
+  font-weight: 600;
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.groupView .titW > p em {
+  padding: 0 4px;
+}
+.groupView .titW > p .button {
+  margin-left: 4px;
+  margin-right: 30px;
+}
+.groupView .titW .btnW {
+  padding: 0 20px;
+}
+
+.groupView .titW .row {
+  position: relative;
+  margin: 0 20px 15px 20px;
+  color: #333;
+  font-weight: 600;
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.groupView .titW .row:nth-of-type(1) > span {
+  display: inline-block;
+  max-width: calc(100% - 440px);
+  vertical-align: middle;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.groupView .titW .row:nth-of-type(2) > span {
+  display: inline-block;
+  max-width: calc(100% - 470px);
+  vertical-align: middle;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.groupView .titW > .row em {
+  padding: 0 4px;
+}
+.groupView .titW > .row > .button {
+  margin-left: 4px;
+  margin-right: 30px;
+}
+.groupView .titW > .row > .btnW {
+  padding: 0;
+}
+.groupView .titW > .row .right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.groupView .topArea {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.groupView .txt {
+  display: inline-block;
+  color: #333;
+}
+.groupView .titW + .groupSelList {
+  top: 90px;
+}
+.groupView .titW .btnClose {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 20px;
+  height: 20px;
+  background: url('../../resources/images/icons.png') -190px -250px no-repeat;
+  text-indent: -9999em;
+}
+
+.groupSelList {
+  position: absolute;
+  top: 51px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  overflow: auto;
+}
+.groupDetail > li {
+  padding: 15px 15px 0 15px;
+  margin-bottom: 10px;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.groupInfo {
+  overflow: hidden;
+}
+.groupInfo:firsh-of-type li {
+  margin-top: 0;
+}
+.groupInfo li {
+  max-width: 100%;
+  display: inline-block;
+  margin-bottom: 10px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+.groupInfo li:last-child {
+  margin-right: 0;
+}
+.groupInfo li > strong {
+  display: inline-block;
+  margin-right: 1px;
+  margin-bottom: 5px;
+  min-height: 18px;
+  padding: 0 8px;
+  border: 1px solid #ccc;
+  line-height: 17px;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 10px;
+  color: #999;
+}
+.groupInfo li > span {
+  max-width: 100%;
+  display: inline-block;
+  padding-left: 9px;
+  margin-bottom: 5px;
+  word-wrap: break-word;
+}
+
+.groupSelDetail {
+  margin-top: -5px;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+em.licenseSt {
+  display: inline-block;
+  text-indent: -999em;
+  vertical-align: middle;
+  width: 7px;
+  height: 7px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+em.licenseSt.normal {
+  background-color: #00b0ff;
+}
+em.licenseSt.over {
+  background-color: #0052be;
+}
+em.licenseSt.notUse {
+  background-color: #b8b8b8;
+}
+em.licenseSt.disabled {
+  background-color: #ed9618;
+}
+/* ==========================================================================
+   @media
+   ========================================================================== */
+
+@media only screen and (max-width: 1680px) {
+  .homeArea .step1 {
+    width: 260px;
+  }
+  .homeArea .step2 {
+    width: calc(100% - 570px);
+  }
+  .homeArea .step3 {
+    width: 310px;
+  }
+  .homeArea .graphBoxs {
+    width: calc(100% - 10px);
+  }
+  .listThumb > li {
+    width: 25%;
+  }
+  .asidOpen.moveList .listThumb > li {
+    width: 33.33%;
+  }
+  .listThumb.logPrint > li {
+    width: 33.33%;
+  }
+  .asidOpen.moveList .listThumb.logPrint > li {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .printNew .printPrice em {
+    width: 50px;
+  }
+  .printNew .printPrice .ui-spinner .spinner {
+    width: 50px;
+  }
+  .listVeiw {
+    width: 100%;
+    margin-right: 0;
+  }
+  .listVeiw > li {
+    width: 100%;
+  }
+  .listVeiw > li:nth-child(2n -1) {
+    margin-right: 0;
+  }
+  .listThumb.logPrint > li {
+    width: 50%;
+  }
+  .asidOpen.moveList .listThumb.logPrint > li {
+    width: 100%;
+  }
+  .water_modify > ul > li.step3 .con td label {
+    margin-right: 20px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .homeArea .step1 {
+    width: 260px;
+  }
+  .homeArea .step2 {
+    float: right;
+    width: calc(100% - 260px);
+  }
+  .homeArea .step3 {
+    display: none;
+  }
+  .listThumb > li {
+    width: 33.33%;
+  }
+  .asidOpen.moveList .listThumb > li {
+    width: 50%;
+  }
+}

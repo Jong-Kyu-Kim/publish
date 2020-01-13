@@ -1,0 +1,197 @@
+.protection-statistic .right-column .pie-chart_div>select{width: 300px !important;}
+
+.statistic-contents.regulated-statistic .contents-colum.right-column .line-chart_div >select{
+	width: 300px;
+	position: absolute;
+	right: 0;
+	top: 15px;
+	margin-top: 0;
+}
+
+.contents-title_div .sub-menu-list{
+    position: absolute;
+    top: 0;
+    left: 170px;
+    box-shadow: inset 0 -3px 0 0 #dcdcdc;
+}
+.contents-title_div .sub-menu-list>li{
+  float:left;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #9d9d9d;
+  box-sizing: border-box;
+  padding: 6px 25px;
+	box-shadow: inset 0 -3px 0 0 transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contents-title_div .sub-menu-list>li.active{
+  box-shadow: inset 0 -3px 0 0 #f3a32e;
+  color: #f3a32e;
+}
+.contents-title_div .sub-menu-list>li:hover {
+  color: #f3a32e;
+}
+
+.contents-colum.left-column hr.search-input-divider,
+.contents-colum.left-column .has-button.selectgroup +hr.search-input-divider{
+	position: absolute;
+    width: 100%;
+    left: 0;
+	display: block;
+	top :50px;
+
+    border-top: 1px solid #d3d3d3;
+}
+
+.inspection-box-wrap{
+	border: 1px solid #dcdcdc;
+	border-radius: 3px;
+}
+.inspection-box_div{
+	box-sizing: border-box;
+	padding: 0 18px 10px 18px;
+	border-bottom: 1px solid #dcdcdc;
+}
+.inspection-box_div>.title_h4{
+	padding: 13px 0;
+	margin-bottom: 0;
+}
+.inspection-box-wrap .inspection-box_div:last-child{border-bottom-width:0; }
+
+.inpsection-schedule-add-popup .table-02 tr>th,
+.inpsection-schedule-add-popup .table-02 tr>td{height: 40px;}
+.inpsection-schedule-add-popup .table-02 tr>td>div {display: inline;}
+.inpsection-schedule-add-popup .recursive>div{margin-bottom: 5px;}
+.inpsection-schedule-add-popup .recursive>div select{width: auto; max-width: 120px;}
+
+.inspect-result{
+	display: inline-block;
+	box-sizing: border-box;
+	padding-left: 20px;
+	position: relative;
+}
+.inspect-result:before{
+	content:'';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	left: 0;
+	top: 5px;
+	background-color: #a0a0a0;
+}
+.inspect-result.success:before{background-color: #2b8247;}
+.inspect-result.not-success:before{background-color:#f4b004;}
+.inspect-result.inspect-proceed:before{background-color:#6797d3; }
+.inspect-result.inspect-wait:before{background-color:#9578b4; }
+
+
+.afterTreat-add-popup .table-02 tr>td{height: 40px; position: relative;}
+.afterTreat-add-popup .table-02 tr>td.exception-route>span{
+    display: inline-block;
+    padding-top: 5px;
+	margin-bottom: 5px;
+}
+.afterTreat-add-popup .table-02 tr>td.exception-route >.button02.small.add {
+	position: absolute;
+	top: 10px;
+	right: 5px;
+	width: auto;
+}
+.afterTreat-add-popup .table-02 tr>td.exception-route>div{
+	padding-top: 5px;
+}
+.afterTreat-add-popup .table-02 tr>td.exception-route>div>input[type="text"]{
+	width: calc(100% - 90px);
+}
+.afterTreat-add-popup .table-02 tr>td.exception-route>div>input[type="text"]+.icon{margin-left: 10px;}
+
+.afterTreat-add-popup .table-02 tr>td>select{width: 150px;}
+
+.rule-add-popup .table-02 tr>td>input[type="text"]{width: calc(100% - 20px);}
+
+
+
+.setting-contents .contents-colum .title_h4 {
+    color: #000;
+    margin-top: 7px;
+    padding-bottom: 17px;
+}
+.setting-contents .contents-colum .top-info-divider {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 45px;
+    border-top: 1px solid #ddd;
+}
+.setting-contents .contents-colum .title_h4 > .button-wrap {
+    float: right;
+    position: relative;
+    top: -5px;
+    margin-right: 21px;
+}
+.setting-contents .contents-colum>div {
+    padding: 9px 17px;
+}
+.setting-contents .inspection-box_div>.title_h4>.button-wrap{margin-right: 0;}
+
+ .setting-contents .inspection-box_div>.manage-auth_div{}
+ .setting-contents .inspection-box_div>.manage-auth_div>div{
+	 float: left;
+	 width: 70%;
+	 box-sizing: border-box;
+	 padding-left: 10px;
+}
+ .setting-contents .inspection-box_div>.manage-auth_div>div.left-col{
+	width: 30%;
+	padding-left: 0;
+	padding-right: 10px;
+}
+ .setting-contents .inspection-box_div>.manage-auth_div>div>.box_div{
+	padding: 9px 17px;
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+    height: 440px;
+}
+ .setting-contents .inspection-box_div>.manage-auth_div>div .title_h4 {
+    position: relative;
+    margin-bottom: 0;
+}
+ .setting-contents .inspection-box_div>.manage-auth_div>div .title_h4:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: calc(100% + 34px);
+    height: 1px;
+    background-color: #ddd;
+    left: -17px;
+}
+ .setting-contents .inspection-box_div>.manage-auth_div>div .title_h4>button {
+    float: right;
+    position: relative;
+    top: -6px;
+}
+ .setting-contents .inspection-box_div>.manage-auth_div>div.left-col .search-list_div {
+    height: calc(100% - 45px);
+    padding-top: 12px;
+}
+ .setting-contents .inspection-box_div>.manage-auth_div>div.left-col .search-list_div>ul {
+    padding-top: 15px;
+    height: calc(100% - 50px);
+    overflow-y: auto;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./fdrui/resources/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./fdrui/resources/css/base.css">
+  <link rel="stylesheet" href="./fdrui/resources/css/style.css">
+  <link rel="stylesheet" href="./fdrui/resources/css/fdr_style.css">
+  <link rel="stylesheet" href="./fdrui/concat.css">
+  <link rel="stylesheet" href="./fsp/css/fsp_style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="./fsp/js/script.js"></script>
+
+  <title>Fasoo Smart Print</title>
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+      <div class="topArea"><a class="logoHome" id="btnLink">navigation</a>
+        <!-- <div class="familyLink">
+          <ul>
+            <li class="title_li">
+              <h5></h5>
+            </li>
+            <li><a href="/fdrui?lang=ko"><span class="img"><img src="/resources/images/fdrui.png" alt="logo"></span>
+                <p>Fasoo Data Radar</p>
+              </a></li>
+            <li><a href="/organui?lang=ko"><span class="img"><img src="/resources/images/organui.png" alt="logo"></span>
+                <p>조직 관리</p>
+              </a></li>
+            <li><a href="/deviceui?lang=ko"><span class="img"><img src="/resources/images/deviceui.png"
+                    alt="logo"></span>
+                <p>장치/저장소 관리</p>
+              </a></li>
+            <li><a href="/approvaluserui?lang=ko"><span class="img"><img src="/resources/images/approvaluserui.png"
+                    alt="logo"></span>
+                <p>관리 대장</p>
+              </a></li>
+            <li><a href="/approvalui?lang=ko"><span class="img"><img src="/resources/images/approvalui.png"
+                    alt="logo"></span>
+                <p>승인/반려</p>
+              </a></li>
+            <li><a href="/auditui?lang=ko"><span class="img"><img src="/resources/images/auditui.png" alt="logo"></span>
+                <p>감사</p>
+              </a></li>
+            <li><a href="/adminui?lang=ko"><span class="img"><img src="/resources/images/adminui.png" alt="logo"></span>
+                <p>관리자 설정</p>
+              </a></li>
+            <li><a href="/keystoreui?lang=ko"><span class="img"><img src="/resources/images/keystoreui.png"
+                    alt="logo"></span>
+                <p>암호키 관리</p>
+              </a></li>
+          </ul>
+        </div> -->
+        <div class="familyLinkDim"></div>
+        <h1 id="logo"><a href="/fdrui"><img src="./fsp/images/logo_fsp.png" alt="Fasoo Smart Print"></a></h1>
+        <div class="head_info">
+          <!-- <select class="language">
+            <option value="ko">KR</option>
+            <option value="en">EN</option>
+          </select> -->
+          <span class="user">Administrator (admin)</span>
+          <span class="logout" style="cursor: pointer;">로그아웃</span>
+        </div>
+      </div>
+      <div class="familyLinkW"></div>
+    </header>
+    <aside class="left_menu">
+      <nav id="gnb">
+        <ul>
+          <li>
+            <a class="menu1" title="전사 정책 관리" href="#">전사 정책 관리</a>
+            <ul>
+              <li><a href="#">전사 정책</a></li>
+              <li><a href="#">예외 대상</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="menu2" title="프린터 / 프로그램 관리" href="#">프린터 / 프로그램 관리</a>
+            <ul>
+              <li><a href="#">프린터 관리</a></li>
+              <li><a href="#">프로그램 관리</a></li>
+            </ul>
+          </li>
+          <li class="active">
+            <a class="menu3" title="워터마크 관리" href="#">워터마크 관리</a>
+            <ul>
+              <li>
+                <a href="#">워터마크 정책</a>
+                <ul>
+                  <li><a href="#">템플릿 설정</a></li>
+                  <li><a href="#">템플릿 적용</a></li>
+                </ul>
+              </li>
+              <li><a href="#">워터마크 편집기</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="menu4" title="인쇄 절감 관리" href="#">인쇄 절감 관리</a>
+            <ul>
+              <li><a href="#">템플릿 설정</a></li>
+              <li><a href="#">템플릿 적용</a></li>
+            </ul>
+          </li>
+          <li><a class="menu5" title="Pull Printing 관리" href="#">Pull Printing 관리</a>
+            <ul>
+              <li><a href="#">인쇄 작업 설정</a></li>
+              <li><a href="#">템플릿 설정</a></li>
+              <li><a href="#">템플릿 적용</a></li>
+              <li><a href="#">미출력 내역</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="menu6" title="검출 문서 처리" href="#">검출 문서 처리</a>
+            <ul>
+              <li>
+                <a href="#">패턴 설정</a>
+                <ul>
+                  <li><a href="#">중요 정보 패턴</a></li>
+                  <li><a href="#">중요 정보 검출</a></li>
+                </ul>
+              </li>
+              <li><a href="#">템플릿 설정</a></li>
+              <li><a href="#">템플릿 적용</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="menu7" title="로그 관리" href="#">로그 관리</a>
+            <ul>
+              <li><a href="#">정책 발급 내역</a></li>
+              <li><a href="#">인쇄 내역</a></li>
+              <li><a href="#">검출 내역</a></li>
+            </ul>
+          </li>
+          </li>
+          <li>
+            <a class="menu8" title="통계" href="#">통계</a>
+            <ul>
+              <li><a href="#">인쇄 통계</a></li>
+              <li><a href="#">검출 통계</a></li>
+              <li><a href="#">보고서</a></li>
+            </ul>
+          </li>
+          <li><a class="menu9" title="제품 관리" href="#">제품 관리</a>
+            <ul>
+              <li><a href="#">휴면 계정</a></li>
+              <li><a href="#">라이선스</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="locationArea activeSubTabs">
+      <ul id="location">
+        <!-- <li class="home">홈</li> -->
+        <li>Fasoo Smart Print</li>
+        <li>워터마크 관리</li>
+        <li>워터마크 정책</li>
+        <li>템플릿 설정</li>
+      </ul>
+      <div class="contents-title_div">
+        <h3 class="title_h3">템플릿 설정</h3>
+        <ul class="sub-menu-list group">
+          <li class="active">기본 정책 템플릿</span></li>
+          <li>워터마크 템플릿</span></li>
+          <li>프린터 템플릿</span></li>
+        </ul>
+      </div>
+    </div>
+    <div id="container">
+      <section id="contents" class="group section-ruleset">
+        <div class="ruleset-wrapper">
+          <div class="inspection-search">
+            <div class="search__count"><span class="mr10">기본 정책 템플릿</span>총 4개</div><button
+              class="btn btn-blue btn-add">신규 추가</button>
+          </div>
+          <div class="ruleset-box__wrapper">
+            <div class="ruleset-box ACTIVE">
+              <div class="ruleset__info">
+                <h4 class="ruleset__title name">프린터 드라이버명</h4><span>|</span>The discovery policy for EU entities regulated by the GDPR compliance(프린터설명) 
+              </div>
+              <h4 class="ruleset__title date">사용함</h4>
+              <div class="ruleset-setting">
+                <div class="dropdown btn-group"><button id="rulesetEdit" role="button" aria-haspopup="true"
+                    aria-expanded="false" type="button" class="btn-grad dropdown-round dropdown-toggle btn btn-default">
+                    <span class="caret"></span></button>
+                  <ul role="menu" class="dropdown-menu" aria-labelledby="rulesetEdit">
+                    <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1" href="#" class="edit">수정</a></li>
+                    <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1" href="#" class="remove">삭제</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="ruleset-box ACTIVE">
+              <div class="ruleset__info">
+                  <h4 class="ruleset__title name">프린터 드라이버명</h4><span>|</span>The discovery policy for EU entities regulated by the GDPR compliance(프린터설명) 
+              </div>
+              <h4 class="ruleset__title date">사용함</h4>
+              <div class="ruleset-setting">
+                <div class="dropdown btn-group"><button id="rulesetEdit" role="button" aria-haspopup="true"
+                    aria-expanded="false" type="button" class="btn-grad dropdown-round dropdown-toggle btn btn-default">
+                    <span class="caret"></span></button>
+                  <ul role="menu" class="dropdown-menu" aria-labelledby="rulesetEdit">
+                    <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1" href="#" class="edit">수정</a></li>
+                    <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1" href="#" class="remove">삭제</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="ruleset-box ACTIVE">
+              <div class="ruleset__info">
+                  <h4 class="ruleset__title name">프린터 드라이버명</h4><span>|</span>The discovery policy for EU entities regulated by the GDPR compliance(프린터설명) 
+              </div>
+              <h4 class="ruleset__title date">사용함</h4>
+              <div class="ruleset-setting">
+                <div class="dropdown btn-group"><button id="rulesetEdit" role="button" aria-haspopup="true"
+                    aria-expanded="false" type="button" class="btn-grad dropdown-round dropdown-toggle btn btn-default">
+                    <span class="caret"></span></button>
+                  <ul role="menu" class="dropdown-menu" aria-labelledby="rulesetEdit">
+                    <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1" href="#" class="edit">수정</a></li>
+                    <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1" href="#" class="remove">삭제</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="ruleset-box INACTIVE">
+              <div class="ruleset__info">
+                  <h4 class="ruleset__title name">프린터 드라이버명</h4><span>|</span>The discovery policy for EU entities regulated by the GDPR compliance(프린터설명) 
+              </div>
+              <h4 class="ruleset__title date">사용안함</h4>
+              <div class="ruleset-setting">
+                <div class="dropdown btn-group"><button id="rulesetEdit" role="button" aria-haspopup="true"
+                    aria-expanded="false" type="button" class="btn-grad dropdown-round dropdown-toggle btn btn-default">
+                    <span class="caret"></span></button>
+                  <ul role="menu" class="dropdown-menu" aria-labelledby="rulesetEdit">
+                    <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1" href="#" class="edit">수정</a></li>
+                    <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1" href="#" class="remove">삭제</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="inner__loading"></div>
+  </div>
+</body>
+
+</html>

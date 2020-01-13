@@ -1,0 +1,55 @@
+.upload-popup .modal-dialog {
+  width: 400px;
+}
+
+.upload-popup .popup-body-scroll {
+  background-color: #ffffff;
+}
+
+.upload-popup .ctl__box {
+  display: flex;
+  align-items: center;
+}
+
+.upload-popup .ctl__box .fake__input {
+  width: 300px;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  padding: 0 5px;
+  background-color: #ffffff;
+}
+
+.upload-popup .btn-upload {
+  height: 30px;
+  line-height: 30px;
+}
+
+.manage-popup .pattern-group {
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+
+.manage-popup .pattern-group-top {
+  display: flex;
+  align-items: center;
+}
+
+.manage-popup .pattern-group-top span {
+  margin-right: auto;
+}
+
+.manage-popup .pattern-group-list {
+  margin-top: 20px;
+}
+
+.manage-popup .pattern-group-list .list {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.manage-popup .pattern-group-list .list input {
+  flex: 1;
+  margin-right: 10px;
+}

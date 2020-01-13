@@ -1,0 +1,206 @@
+#addTargetPopup .react-autosuggest__container {
+  width: 100%;
+}
+
+#addTargetPopup .modal-dialog {
+  width: 710px;
+}
+
+#addTargetPopup .include__sub {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+#addTargetPopup .add-target__content {
+  position: relative;
+}
+
+#addTargetPopup .popup-body {
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+
+#addTargetPopup .popup-body-scroll {
+  padding: 11px 15px 17px;
+  max-height: none;
+}
+
+#addTargetPopup .popup-body .btn-right {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 7px;
+}
+
+#addTargetPopup .popup-body .btn-right img {
+  margin-right: -5px;
+}
+
+#addTargetPopup .sub-title {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #898989;
+  padding: 14px 17px;
+}
+
+#addTargetPopup .add-target__wrapper {
+  overflow: hidden;
+}
+
+#addTargetPopup .add-target__tabs {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+#addTargetPopup .add-target__tabs li {
+  float: left;
+  text-align: center;
+  width: 50%;
+  padding: 10px 0 8px;
+  cursor: pointer;
+  border-bottom: 2px solid #eeeeee;
+}
+
+#addTargetPopup .add-target__tabs li.active {
+  border-bottom-color: #2e353c;
+}
+
+#addTargetPopup .add-target__left {
+  width: 318px;
+  height: 619px;
+  float: left;
+  background-color: #ffffff;
+  border: solid 1px #dddddd;
+}
+
+#addTargetPopup .add-target__right {
+  width: 318px;
+  height: 619px;
+  float: right;
+  background-color: #ffffff;
+  border: solid 1px #dddddd;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+#addTargetPopup .add-target__right .result__list {
+  padding: 20px 25px 11px 8px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  position: relative;
+  background-color: #51a1cf;
+}
+
+#addTargetPopup .add-target__right .result__list .btn-remove {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 10;
+  margin: 0;
+  width: 10px;
+  height: 10px;
+  background: url("/fdrui/images/icon_remove_target.png") no-repeat center transparent;
+  background-size: cover;
+}
+
+#addTargetPopup .add-target__right .result__list .target__result {
+  flex: 1;
+  display: inline-block;
+  vertical-align: middle;
+  word-break: break-all;
+}
+
+#addTargetPopup .add-target__right .result__list .result__line {
+  margin-bottom: 8px;
+  color: #ffffff;
+  display: -webkit-flex;
+  display: flex;
+}
+
+#addTargetPopup .add-target__right .result__list .result__line:last-child {
+  margin-bottom: 0;
+}
+
+#addTargetPopup .add-target__right .result__list .result__line span {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #2184b9;
+  border-radius: 10px;
+  padding: 0 9px;
+  font-size: 11px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.82;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  margin-right: 11px;
+  height: 20px;
+}
+
+#addTargetPopup .add-target__content {
+  height: calc(100% - 38px);
+  overflow-y: auto;
+}
+
+#addTargetPopup .add-target__content .select_div {
+  margin-top: 0;
+  border: none;
+  border-bottom: 1px solid #dddddd;
+  padding: 11px 30px 11px 20px;
+  font-size: 13px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #51a1cf;
+  background-position: center right 5px;
+  display: -webkit-flex;
+  display: flex;
+}
+
+#addTargetPopup .add-target__content .select_div b {
+  color: #333333;
+  margin-right: 19px;
+}
+
+#addTargetPopup .add-target__content .select_div .dept__result {
+  width: calc(100% - 60px);
+  display: inline-block;
+  vertical-align: middle;
+  word-break: break-all;
+  flex: 1;
+}
+
+#addTargetPopup .add-target__content .select_div.none {
+  color: #999999;
+}
+
+#addTargetPopup .add-target__content .select_div.on {
+  background-image: url("/fdrui/resources/images/bg_select_up.png");
+}
+
+#addTargetPopup .add-target__content .select-option_div {
+  border-bottom: 1px solid #dddddd;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  height: 462px;
+  max-height: 462px;
+}

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="./fdrui/resources/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./fdrui/resources/css/base.css">
+  <link rel="stylesheet" href="./fdrui/resources/css/style.css">
+  <link rel="stylesheet" href="./fdrui/resources/css/fdr_style.css">
+  <link rel="stylesheet" href="./fdrui/concat.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+  <link rel="stylesheet" href="./fsp/css/fsp_style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
+  <script src="./fsp/js/script.js"></script>
+
+  <title>Fasoo Smart Print</title>
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+      <div class="topArea"><a class="logoHome" id="btnLink">navigation</a>
+        <div class="familyLink">
+          <ul>
+            <li class="title_li">
+              <h5></h5>
+            </li>
+            <li><a href="/fdrui?lang=ko"><span class="img"><img src="/resources/images/fdrui.png" alt="logo"></span>
+                <p>Fasoo Data Radar</p>
+              </a></li>
+            <li><a href="/organui?lang=ko"><span class="img"><img src="/resources/images/organui.png" alt="logo"></span>
+                <p>조직 관리</p>
+              </a></li>
+            <li><a href="/deviceui?lang=ko"><span class="img"><img src="/resources/images/deviceui.png"
+                    alt="logo"></span>
+                <p>장치/저장소 관리</p>
+              </a></li>
+            <li><a href="/approvaluserui?lang=ko"><span class="img"><img src="/resources/images/approvaluserui.png"
+                    alt="logo"></span>
+                <p>관리 대장</p>
+              </a></li>
+            <li><a href="/approvalui?lang=ko"><span class="img"><img src="/resources/images/approvalui.png"
+                    alt="logo"></span>
+                <p>승인/반려</p>
+              </a></li>
+            <li><a href="/auditui?lang=ko"><span class="img"><img src="/resources/images/auditui.png" alt="logo"></span>
+                <p>감사</p>
+              </a></li>
+            <li><a href="/adminui?lang=ko"><span class="img"><img src="/resources/images/adminui.png" alt="logo"></span>
+                <p>관리자 설정</p>
+              </a></li>
+            <li><a href="/keystoreui?lang=ko"><span class="img"><img src="/resources/images/keystoreui.png"
+                    alt="logo"></span>
+                <p>암호키 관리</p>
+              </a></li>
+          </ul>
+        </div>
+        <div class="familyLinkDim"></div>
+        <h1 id="logo"><a href="/fdrui"><img src="./fsp/images/logo_fsp.png" alt="Fasoo Smart Print"></a></h1>
+        <div class="head_info">
+          <!-- <select class="language">
+            <option value="ko">KR</option>
+            <option value="en">EN</option>
+          </select> -->
+          <span class="user">Administrator (admin)</span>
+          <span class="logout" style="cursor: pointer;">로그아웃</span>
+        </div>
+      </div>
+      <div class="familyLinkW"></div>
+    </header>
+    <aside class="left_menu">
+      <nav id="gnb">
+        <ul>
+          <li>
+            <a class="menu1" title="전사 정책 관리" href="#">전사 정책 관리</a>
+            <ul>
+              <li><a href="#">전사 정책</a></li>
+              <li><a href="#">예외 대상</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="menu2" title="프린터 / 프로그램 관리" href="#">프린터 / 프로그램 관리</a>
+            <ul>
+              <li><a href="#">프린터 관리</a></li>
+              <li><a href="#">프로그램 관리</a></li>
+            </ul>
+          </li>
+          <li class="active">
+            <a class="menu3" title="워터마크 관리" href="#">워터마크 관리</a>
+            <ul>
+              <li>
+                <a href="#">워터마크 정책</a>
+                <ul>
+                  <li><a href="#">템플릿 설정</a></li>
+                  <li><a href="#">템플릿 적용</a></li>
+                </ul>
+              </li>
+              <li><a href="#">워터마크 편집기</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="menu4" title="인쇄 절감 관리" href="#">인쇄 절감 관리</a>
+            <ul>
+              <li><a href="#">템플릿 설정</a></li>
+              <li><a href="#">템플릿 적용</a></li>
+            </ul>
+          </li>
+          <li><a class="menu5" title="Pull Printing 관리" href="#">Pull Printing 관리</a>
+            <ul>
+              <li><a href="#">인쇄 작업 설정</a></li>
+              <li><a href="#">템플릿 설정</a></li>
+              <li><a href="#">템플릿 적용</a></li>
+              <li><a href="#">미출력 내역</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="menu6" title="검출 문서 처리" href="#">검출 문서 처리</a>
+            <ul>
+              <li>
+                <a href="#">패턴 설정</a>
+                <ul>
+                  <li><a href="#">중요 정보 패턴</a></li>
+                  <li><a href="#">중요 정보 검출</a></li>
+                </ul>
+              </li>
+              <li><a href="#">템플릿 설정</a></li>
+              <li><a href="#">템플릿 적용</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="menu7" title="로그 관리" href="#">로그 관리</a>
+            <ul>
+              <li><a href="#">정책 발급 내역</a></li>
+              <li><a href="#">인쇄 내역</a></li>
+              <li><a href="#">검출 내역</a></li>
+            </ul>
+          </li>
+          </li>
+          <li>
+            <a class="menu8" title="통계" href="#">통계</a>
+            <ul>
+              <li><a href="#">인쇄 통계</a></li>
+              <li><a href="#">검출 통계</a></li>
+              <li><a href="#">보고서</a></li>
+            </ul>
+          </li>
+          <li><a class="menu9" title="제품 관리" href="#">제품 관리</a>
+            <ul>
+              <li><a href="#">휴면 계정</a></li>
+              <li><a href="#">라이선스</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="locationArea">
+      <ul id="location">
+        <!-- <li class="home">홈</li> -->
+        <li>Fasoo Smart Print</li>
+        <li>워터마크 관리</li>
+        <li>워터마크 정책</li>
+        <li>템플릿 적용</li>
+      </ul>
+      <div class="contents-title_div">
+        <h3 class="title_h3">템플릿 적용</h3>
+      </div>
+    </div>
+    <div id="container">
+      <section id="contents" class="group section-ruleset">
+        <div class="ruleset-wrapper">
+          <div class="inspection-search for_cldp">
+            <div class="search__count"><span class="mr10">템플릿 적용 대상 목록</span></div>
+            <button class="btn btn-blue btn-add" onclick="popupOpen()">신규 추가</button>
+            <button class="btn btn-blue btn-remove">삭제</button>
+          </div>
+          <div class="ruleset-box__wrapper">
+            <div class="table-box cls-table">
+              <table class="table-01">
+                <colgroup>
+                  <col width="50px">
+                  <col>
+                  <col>
+                  <col>
+                  <col>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>
+                      <input type="checkbox" class="checkboxImg" id="check01">
+                      <label for="check01">
+                        <span class="icon check"></span>
+                      </label>
+                    </th>
+                    <th>대상</th>
+                    <th>기본 정책 템플릿</th>
+                    <th>워터마크 템플릿</th>
+                    <th>프린터 템플릿</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="checkboxImg" id="check02">
+                      <label for="check02">
+                        <span class="icon check"></span>
+                      </label>
+                    </td>
+                    <td>BWS contractor 이상 ( 하위부서 포함) </td>
+                    <td>Default</td>
+                    <td>BWS contractor</td>
+                    <td>All printer drivers</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="checkboxImg" id="check03">
+                      <label for="check03">
+                        <span class="icon check"></span>
+                      </label>
+                    </td>
+                    <td>BWS contractor 이상 ( 하위부서 포함) </td>
+                    <td>Default</td>
+                    <td>BWS contractor</td>
+                    <td>All printer drivers</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="checkboxImg" id="check05">
+                      <label for="check05">
+                        <span class="icon check"></span>
+                      </label>
+                    </td>
+                    <td>BWS contractor 이상 ( 하위부서 포함) </td>
+                    <td>Default</td>
+                    <td>BWS contractor</td>
+                    <td>All printer drivers</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="inner__loading"></div>
+    <div role="dialog">
+      <div class="modal-backdrop fade in"></div>
+      <div role="dialog" tabindex="-1" class="popup_div extra-width template fade in modal" style="transform: translate(0px, 0px);">
+        <div class="modal-dialog">
+          <div class="modal-content" role="document">
+            <div class="popup-header modal-header">
+              <h3 class="title_h3">템플릿 적용 대상 추가</h3>
+              <span class="icon delete-white" onclick="popupClose()">닫기</span>
+            </div>
+            <div class="popup-desc">
+              <p>템플릿 적용 대상을 선택하고, 적용 템플릿을 선택해주세요</p>
+            </div>
+            <div class="popup-body-scroll modal-body">
+              <div class="popup-body pb5">
+                <div class="box_div left">
+                  <div class="tab-menu">
+                    <ul>
+                      <li class="active"><a href="#">조직도</a></li>
+                      <li><a href="#">사용자</a></li>
+                    </ul>
+                    <div id="group"></div>
+                    <div id="user" style="display:none"></div>
+                  </div>
+
+                  <div class="bottom">
+                    <input type="checkbox" class="checkboxImg" id="check99">
+                    <label for="check99">
+                      <span class="icon check"></span>
+                      <span>하위 부서 포함</span>                    
+                    </label>
+                  </div>
+                </div>
+                <div class="box_div right">
+                  <div>
+                    <span>적용대상</span>
+                    <input type="text" disabled>
+                  </div>
+                  <div>
+                    <span>기본 정책 템플릿</span>
+                    <div class="dropdown__wrapper">
+                      <div class="dropdown__title">정책 이름</div>
+                      <div class="dropdown btn-group">
+                        <button id="selectOptionForSearch" role="button" aria-haspopup="true"
+                          aria-expanded="false" type="button" class="btn-grad dropdown-toggle btn btn-default">
+                          <span class="caret"></span>
+                        </button>
+                        <ul role="menu" class="dropdown-menu" aria-labelledby="selectOptionForSearch">
+                          <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                              href="#">정책 이름</a></li>
+                          <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                              href="#">정책 설명</a></li>
+                          <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                              href="#">적용 대상</a></li>
+                        </ul>
+                      </div>
+                    </div>                    
+                  </div>
+                  <div>
+                    <span>워터마크 템플릿</span>
+                    <div class="dropdown__wrapper">
+                      <div class="dropdown__title">정책 이름</div>
+                      <div class="dropdown btn-group">
+                        <button id="selectOptionForSearch" role="button" aria-haspopup="true"
+                          aria-expanded="false" type="button" class="btn-grad dropdown-toggle btn btn-default">
+                          <span class="caret"></span>
+                        </button>
+                        <ul role="menu" class="dropdown-menu" aria-labelledby="selectOptionForSearch">
+                          <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                              href="#">정책 이름</a></li>
+                          <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                              href="#">정책 설명</a></li>
+                          <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                              href="#">적용 대상</a></li>
+                        </ul>
+                      </div>
+                    </div>                    
+                  </div>
+                  <div>
+                    <span>프린터 템플릿</span>
+                    <div class="dropdown__wrapper">
+                      <div class="dropdown__title">정책 이름</div>
+                      <div class="dropdown btn-group">
+                        <button id="selectOptionForSearch" role="button" aria-haspopup="true"
+                          aria-expanded="false" type="button" class="btn-grad dropdown-toggle btn btn-default">
+                          <span class="caret"></span>
+                        </button>
+                        <ul role="menu" class="dropdown-menu" aria-labelledby="selectOptionForSearch">
+                          <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                              href="#">정책 이름</a></li>
+                          <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                              href="#">정책 설명</a></li>
+                          <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                              href="#">적용 대상</a></li>
+                        </ul>
+                      </div>
+                    </div>                    
+                  </div>                  
+                </div>
+              </div>
+              <div class="bottom__btns">
+                <button class="btn btn-blue btn-select wide">확인</button>
+                <button class="btn btn-blue btn-cancel wide">취소</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+
+    $('#group').jstree({
+      'plugins' : [ 'checkbox' ],
+      'core' : {
+        'data' : [
+          {
+            a_attr: { class: 'group' },
+            text : '품질 본부',
+            state : { disabled: true },
+          },         
+          {
+            a_attr: { class: 'group' },
+            text : '개발 본부',
+            state : { opened : true, selected : false },
+            children : [
+              {
+                a_attr: { class: 'team' },
+                text : '개발 1팀'
+              },
+              {
+                a_attr: { class: 'team' },
+                text : '개발 2팀',
+                state : { disabled: true },
+              },
+              {
+                a_attr: { class: 'team' },
+                text : '개발 3팀',
+                state : { opened : true },
+                children : [
+                  '김광훈 (iris)',
+                  {
+                    text : '김지현 (kim)',
+                    state : { disabled: true },
+                  },                                    
+                ]
+              },
+              {
+                a_attr: { class: 'team' },
+                text : '개발 4팀',
+              },              
+            ]
+          },
+          {
+            a_attr: { class: 'group' },
+            text : 'GS 본부'
+          },
+          {
+            a_attr: { class: 'group' },
+            text : 'GS 본부'
+          },    
+          {
+            a_attr: { class: 'group' },
+            text : 'GS 본부'
+          },    
+          {
+            a_attr: { class: 'group' },
+            text : 'GS 본부'
+          },    
+          {
+            a_attr: { class: 'group' },
+            text : 'GS 본부'
+          },    
+          {
+            a_attr: { class: 'group' },
+            text : 'GS 본부'
+          },    
+          {
+            a_attr: { class: 'group' },
+            text : 'GS 본부'
+          },    
+          {
+            a_attr: { class: 'group' },
+            text : 'GS 본부'
+          },              
+          {
+            a_attr: { class: 'group' },
+            text : 'GS 본부'
+          },    
+          {
+            a_attr: { class: 'group' },
+            text : 'GS 본부'
+          },    
+          {
+            a_attr: { class: 'group' },
+            text : 'GS 본부'
+          },    
+          {
+            a_attr: { class: 'group' },
+            text : 'GS 본부'
+          },    
+          {
+            a_attr: { class: 'group' },
+            text : 'GS 본부'
+          },    
+          {
+            a_attr: { class: 'group' },
+            text : 'GS 본부'
+          },    
+          {
+            a_attr: { class: 'group' },
+            text : 'GS 본부'
+          },    
+          {
+            a_attr: { class: 'group' },
+            text : 'GS 본부'
+          },    
+          {
+            a_attr: { class: 'group' },
+            text : 'GS 본부'
+          },    
+          {
+            a_attr: { class: 'group' },
+            text : 'GS 본부'
+          },    
+        ]
+    } });    
+  </script>
+</body>
+
+</html>

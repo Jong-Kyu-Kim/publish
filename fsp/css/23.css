@@ -1,0 +1,33 @@
+.select-option_div.ip-box {
+  min-height: auto;
+}
+
+.select-option_div.ip-box .btns {
+  display: flex;
+  align-items: center;
+}
+
+.select-option_div.ip-box .btns span {
+  flex: 1;
+}
+
+.select-option_div.ip-box .ip {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.select-option_div.ip-box .ips {
+  margin-top: 10px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.select-option_div.ip-box .ip input {
+  flex: 1;
+  margin-right: 10px;
+  max-width: 80%;
+}
+
+.select-option_div.ip-box .ip:last-child {
+  margin-bottom: 0;
+}

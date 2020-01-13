@@ -1,0 +1,51 @@
+#addTargetServerPopup .modal-dialog {
+  width: 710px;
+}
+
+#addTargetServerPopup .popup-body {
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+
+#addTargetServerPopup .popup-body-scroll {
+  padding: 11px 15px 17px;
+  max-height: none;
+}
+
+#addTargetServerPopup .popup-body .btn-right {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 7px;
+}
+
+#addTargetServerPopup .popup-body .btn-right img {
+  margin-right: -5px;
+}
+
+#addTargetServerPopup .popup-body table.table-01 th,
+#addTargetServerPopup .popup-body table.table-01 td {
+  padding: 3px 10px;
+}
+
+#addTargetServerPopup .popup-body table.table-01 th:first-child,
+#addTargetServerPopup .popup-body table.table-01 td:first-child {
+  text-align: center;
+}
+
+#addTargetServerPopup .sub-title {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #898989;
+  padding: 14px 17px;
+}

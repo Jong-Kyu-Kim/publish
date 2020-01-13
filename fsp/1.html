@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./fdrui/resources/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./fdrui/resources/css/base.css">
+  <link rel="stylesheet" href="./fdrui/resources/css/style.css">
+  <link rel="stylesheet" href="./fdrui/resources/css/fdr_style.css">
+  <link rel="stylesheet" href="./fdrui/concat.css">
+  <link rel="stylesheet" href="./fsp/css/fsp_style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="./fsp/js/script.js"></script>
+
+  <title>Fasoo Smart Print</title>
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+      <div class="topArea"><a class="logoHome" id="btnLink">navigation</a>
+        <!-- <div class="familyLink">
+          <ul>
+            <li class="title_li">
+              <h5></h5>
+            </li>
+            <li><a href="/fdrui?lang=ko"><span class="img"><img src="/resources/images/fdrui.png" alt="logo"></span>
+                <p>Fasoo Data Radar</p>
+              </a></li>
+            <li><a href="/organui?lang=ko"><span class="img"><img src="/resources/images/organui.png" alt="logo"></span>
+                <p>조직 관리</p>
+              </a></li>
+            <li><a href="/deviceui?lang=ko"><span class="img"><img src="/resources/images/deviceui.png"
+                    alt="logo"></span>
+                <p>장치/저장소 관리</p>
+              </a></li>
+            <li><a href="/approvaluserui?lang=ko"><span class="img"><img src="/resources/images/approvaluserui.png"
+                    alt="logo"></span>
+                <p>관리 대장</p>
+              </a></li>
+            <li><a href="/approvalui?lang=ko"><span class="img"><img src="/resources/images/approvalui.png"
+                    alt="logo"></span>
+                <p>승인/반려</p>
+              </a></li>
+            <li><a href="/auditui?lang=ko"><span class="img"><img src="/resources/images/auditui.png" alt="logo"></span>
+                <p>감사</p>
+              </a></li>
+            <li><a href="/adminui?lang=ko"><span class="img"><img src="/resources/images/adminui.png" alt="logo"></span>
+                <p>관리자 설정</p>
+              </a></li>
+            <li><a href="/keystoreui?lang=ko"><span class="img"><img src="/resources/images/keystoreui.png"
+                    alt="logo"></span>
+                <p>암호키 관리</p>
+              </a></li>
+          </ul>
+        </div> -->
+        <div class="familyLinkDim"></div>
+        <h1 id="logo"><a href="#"><img src="./fsp/images/logo_fsp.png" alt="Fasoo Smart Print"></a></h1>
+        <div class="head_info">
+          <!-- <select class="language">
+            <option value="ko">KR</option>
+            <option value="en">EN</option>
+          </select> -->
+          <span class="user">Administrator (admin)</span>
+          <span class="logout" style="cursor: pointer;">로그아웃</span>
+        </div>
+      </div>
+      <div class="familyLinkW"></div>
+    </header>
+    <aside class="left_menu">
+      <nav id="gnb">
+        <ul>
+          <li class="active">
+            <a class="menu1" title="전사 정책 관리" href="#">전사 정책 관리</a>
+            <ul>
+              <li><a href="#">전사 정책</a></li>
+              <li><a href="#">예외 대상</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="menu2" title="프린터 / 프로그램 관리" href="#">프린터 / 프로그램 관리</a>
+            <ul>
+              <li><a href="#">프린터 관리</a></li>
+              <li><a href="#">프로그램 관리</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="menu3" title="워터마크 관리" href="#">워터마크 관리</a>
+            <ul>
+              <li>
+                <a href="#">워터마크 정책</a>
+                <ul>
+                  <li><a href="#">템플릿 설정</a></li>
+                  <li><a href="#">템플릿 적용</a></li>
+                </ul>
+              </li>
+              <li><a href="#">워터마크 편집기</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="menu4" title="인쇄 절감 관리" href="#">인쇄 절감 관리</a>
+            <ul>
+              <li><a href="#">템플릿 설정</a></li>
+              <li><a href="#">템플릿 적용</a></li>
+            </ul>
+          </li>
+          <li><a class="menu5" title="Pull Printing 관리" href="#">Pull Printing 관리</a>
+            <ul>
+              <li><a href="#">인쇄 작업 설정</a></li>
+              <li><a href="#">템플릿 설정</a></li>
+              <li><a href="#">템플릿 적용</a></li>
+              <li><a href="#">미출력 내역</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="menu6" title="검출 문서 처리" href="#">검출 문서 처리</a>
+            <ul>
+              <li>
+                <a href="#">패턴 설정</a>
+                <ul>
+                  <li><a href="#">중요 정보 패턴</a></li>
+                  <li><a href="#">중요 정보 검출</a></li>
+                </ul>
+              </li>
+              <li><a href="#">템플릿 설정</a></li>
+              <li><a href="#">템플릿 적용</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="menu7" title="로그 관리" href="#">로그 관리</a>
+            <ul>
+              <li><a href="#">정책 발급 내역</a></li>
+              <li><a href="#">인쇄 내역</a></li>
+              <li><a href="#">검출 내역</a></li>
+            </ul>
+          </li>
+          </li>
+          <li>
+            <a class="menu8" title="통계" href="#">통계</a>
+            <ul>
+              <li><a href="#">인쇄 통계</a></li>
+              <li><a href="#">검출 통계</a></li>
+              <li><a href="#">보고서</a></li>
+            </ul>
+          </li>
+          <li><a class="menu9" title="제품 관리" href="#">제품 관리</a>
+            <ul>
+              <li><a href="#">휴면 계정</a></li>
+              <li><a href="#">라이선스</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="locationArea">
+      <ul id="location">
+        <!-- <li class="home">홈</li> -->
+        <li>Fasoo Smart Print</li>
+        <li>워터마크 관리</li>
+        <li>워터마크 정책</li>
+        <li>템플릿 설정</li>
+        <li>기본 정책 템플릿 추가</li>
+      </ul>
+      <div class="contents-title_div">
+        <h3 class="title_h3">기본 정책 템플릿 추가</h3>
+      </div>
+    </div>
+    <div id="container">
+      <section id="contents" class="group section-ruleset edit">
+        <div class="btn__container edit">
+          <button class="btn btn-grad btn-rect btn-back" title="템플릿 목록으로 돌아가기">
+            <img src="./fdrui/images/icon_back.png" alt="템플릿 목록으로 돌아가기">
+          </button>
+          <div class="btn__right">
+            <button class="btn btn-blue btn-select wide">확인</button>
+            <button class="btn btn-blue btn-cancel wide">취소</button>
+          </div>
+        </div>
+        <div class="ruleset-wrapper">
+          <table class="edit__table">
+            <tbody>
+              <tr>
+                <th>이름</th>
+                <td class="box">
+                  <input type="text" class="full-size" title="이름" name="name" max="60" minlength="1" maxlength="60" required>
+                </td>
+              </tr>
+              <tr>
+                <th>설명</th>
+                <td class="box">
+                  <input type="text" class="full-size" title="설명" max="60" min="1" minlength="1" maxlength="60" name="description" value="">
+                </td>
+              </tr>
+              <tr>
+                <th>오프라인 로그인</th>
+                <td class="box">
+                  <div class="ruleset-options">
+                    <div class="option p10">
+                      <div class="option-top mb0">
+                        <div class="checkbox__box switch-style">
+                          <label class="inner__label">
+                            <input type="checkbox" class="hidden" name="useEncryptionStatus" value="Y" checked>
+                            <div class="icon"></div>
+                            <span>사용 안함</span>                            
+                          </label>
+                        </div>
+                      </div>
+                      <label for="">오프라인 로그인 유효기간</label>
+                      <input type="number" title="오프라인 로그인 유효기간" style="width:50px" id="" maxlength="7"> (분)
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>일반 문서 인쇄 설정</th>
+                <td>
+                  <input type="radio" name="scanAll">
+                  <label><span>워터마크 인쇄</span></label>
+
+                  <input type="radio" name="scanAll">
+                  <label><span>일반 인쇄</span></label>
+
+                  <input type="radio" name="scanAll">
+                  <label><span>사용자 선택</span></label>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <span>보안 문서 인쇄 설정</span>
+                  <span class="sub">인쇄/워터마크 인쇄 권한이 있는 경우</span>
+                </th>
+                <td>
+                  <input type="radio" name="scanAll">
+                  <label><span>워터마크 인쇄</span></label>
+
+                  <input type="radio" name="scanAll">
+                  <label><span>일반 인쇄</span></label>
+
+                  <input type="radio" name="scanAll">
+                  <label><span>사용자 선택</span></label>
+                </td>
+              </tr>
+              <tr>
+                <th>인쇄 시 결재</th>
+                <td>
+                  <input type="checkbox" class="checkboxImg" id="check01">
+                  <label for="check01">
+                    <span class="icon check"></span>
+                    <span>인쇄 시 필수 결재 진행</span>                    
+                  </label>
+                  <input type="checkbox" class="checkboxImg" id="check02" disabled>
+                  <label for="check02">
+                    <span class="icon check"></span>
+                    <span>워터마크 예외 신청 허용</span>                    
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <th>프로그램별 예외 설정</th>
+                <td class="box">
+                  <div class="ruleset-options tbl">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>
+                            <input type="checkbox" id="check03" class="checkboxImg">
+                            <label for="check03"><span class="icon check"></span></label>
+                          </th>
+                          <th>프로그램</th>
+                          <th>프로세스 이름</th>
+                          <th>일반문서 인쇄설정</th>
+                          <th>보안문서 인쇄설정</th>
+                          <th>인쇄 시 필수 결제 진행</th>
+                          <th>워터마크 예외 신청 허용</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                              <input type="checkbox" id="check04" class="checkboxImg">
+                              <label for="check04"><span class="icon check"></span></label>
+                          </td>
+                          <td>Adobe PDF converter</td>
+                          <td>notepad.exe</td>
+                          <td>
+                            <div class="dropdown__wrapper disabled">
+                              <div class="dropdown__title">예외 설정 안함</div>
+                              <div class="dropdown btn-group">
+                                <button id="selectOptionForSearch" role="button" aria-haspopup="true"
+                                  aria-expanded="false" type="button" class="btn-grad dropdown-toggle btn btn-default">
+                                  <span class="caret"></span>
+                                </button>
+                                <ul role="menu" class="dropdown-menu" aria-labelledby="selectOptionForSearch">
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 이름</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 설명</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">적용 대상</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="dropdown__wrapper">
+                              <div class="dropdown__title">정책 이름</div>
+                              <div class="dropdown btn-group">
+                                <button id="selectOptionForSearch" role="button" aria-haspopup="true"
+                                  aria-expanded="false" type="button" class="btn-grad dropdown-toggle btn btn-default">
+                                  <span class="caret"></span>
+                                </button>
+                                <ul role="menu" class="dropdown-menu" aria-labelledby="selectOptionForSearch">
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 이름</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 설명</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">적용 대상</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="dropdown__wrapper">
+                              <div class="dropdown__title">정책 이름</div>
+                              <div class="dropdown btn-group">
+                                <button id="selectOptionForSearch" role="button" aria-haspopup="true"
+                                  aria-expanded="false" type="button" class="btn-grad dropdown-toggle btn btn-default">
+                                  <span class="caret"></span>
+                                </button>
+                                <ul role="menu" class="dropdown-menu" aria-labelledby="selectOptionForSearch">
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 이름</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 설명</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">적용 대상</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="dropdown__wrapper">
+                              <div class="dropdown__title">정책 이름</div>
+                              <div class="dropdown btn-group">
+                                <button id="selectOptionForSearch" role="button" aria-haspopup="true"
+                                  aria-expanded="false" type="button" class="btn-grad dropdown-toggle btn btn-default">
+                                  <span class="caret"></span>
+                                </button>
+                                <ul role="menu" class="dropdown-menu" aria-labelledby="selectOptionForSearch">
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 이름</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 설명</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">적용 대상</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" id="check05" class="checkboxImg">
+                            <label for="check05"><span class="icon check"></span></label>
+                          </td>
+                          <td>Adobe PDF converter</td>
+                          <td>notepad.exe</td>
+                          <td>
+                            <div class="dropdown__wrapper">
+                              <div class="dropdown__title">정책 이름</div>
+                              <div class="dropdown btn-group">
+                                <button id="selectOptionForSearch" role="button" aria-haspopup="true"
+                                  aria-expanded="false" type="button" class="btn-grad dropdown-toggle btn btn-default">
+                                  <span class="caret"></span>
+                                </button>
+                                <ul role="menu" class="dropdown-menu" aria-labelledby="selectOptionForSearch">
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 이름</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 설명</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">적용 대상</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="dropdown__wrapper">
+                              <div class="dropdown__title">정책 이름</div>
+                              <div class="dropdown btn-group">
+                                <button id="selectOptionForSearch" role="button" aria-haspopup="true"
+                                  aria-expanded="false" type="button" class="btn-grad dropdown-toggle btn btn-default">
+                                  <span class="caret"></span>
+                                </button>
+                                <ul role="menu" class="dropdown-menu" aria-labelledby="selectOptionForSearch">
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 이름</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 설명</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">적용 대상</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="dropdown__wrapper">
+                              <div class="dropdown__title">정책 이름</div>
+                              <div class="dropdown btn-group">
+                                <button id="selectOptionForSearch" role="button" aria-haspopup="true"
+                                  aria-expanded="false" type="button" class="btn-grad dropdown-toggle btn btn-default">
+                                  <span class="caret"></span>
+                                </button>
+                                <ul role="menu" class="dropdown-menu" aria-labelledby="selectOptionForSearch">
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 이름</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 설명</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">적용 대상</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="dropdown__wrapper">
+                              <div class="dropdown__title">정책 이름</div>
+                              <div class="dropdown btn-group">
+                                <button id="selectOptionForSearch" role="button" aria-haspopup="true"
+                                  aria-expanded="false" type="button" class="btn-grad dropdown-toggle btn btn-default">
+                                  <span class="caret"></span>
+                                </button>
+                                <ul role="menu" class="dropdown-menu" aria-labelledby="selectOptionForSearch">
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 이름</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 설명</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">적용 대상</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" id="check06" class="checkboxImg">
+                            <label for="check06"><span class="icon check"></span></label>
+                          </td>
+                          <td>Adobe PDF converter</td>
+                          <td>notepad.exe</td>
+                          <td>
+                            <div class="dropdown__wrapper">
+                              <div class="dropdown__title">정책 이름</div>
+                              <div class="dropdown btn-group">
+                                <button id="selectOptionForSearch" role="button" aria-haspopup="true"
+                                  aria-expanded="false" type="button" class="btn-grad dropdown-toggle btn btn-default">
+                                  <span class="caret"></span>
+                                </button>
+                                <ul role="menu" class="dropdown-menu" aria-labelledby="selectOptionForSearch">
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 이름</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 설명</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">적용 대상</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="dropdown__wrapper">
+                              <div class="dropdown__title">정책 이름</div>
+                              <div class="dropdown btn-group">
+                                <button id="selectOptionForSearch" role="button" aria-haspopup="true"
+                                  aria-expanded="false" type="button" class="btn-grad dropdown-toggle btn btn-default">
+                                  <span class="caret"></span>
+                                </button>
+                                <ul role="menu" class="dropdown-menu" aria-labelledby="selectOptionForSearch">
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 이름</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 설명</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">적용 대상</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="dropdown__wrapper">
+                              <div class="dropdown__title">정책 이름</div>
+                              <div class="dropdown btn-group">
+                                <button id="selectOptionForSearch" role="button" aria-haspopup="true"
+                                  aria-expanded="false" type="button" class="btn-grad dropdown-toggle btn btn-default">
+                                  <span class="caret"></span>
+                                </button>
+                                <ul role="menu" class="dropdown-menu" aria-labelledby="selectOptionForSearch">
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 이름</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 설명</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">적용 대상</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="dropdown__wrapper">
+                              <div class="dropdown__title">정책 이름</div>
+                              <div class="dropdown btn-group">
+                                <button id="selectOptionForSearch" role="button" aria-haspopup="true"
+                                  aria-expanded="false" type="button" class="btn-grad dropdown-toggle btn btn-default">
+                                  <span class="caret"></span>
+                                </button>
+                                <ul role="menu" class="dropdown-menu" aria-labelledby="selectOptionForSearch">
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 이름</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 설명</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">적용 대상</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" id="check07" class="checkboxImg">
+                            <label for="check07"><span class="icon check"></span></label>
+                          </td>
+                          <td>Adobe PDF converter</td>
+                          <td>notepad.exe</td>
+                          <td>
+                            <div class="dropdown__wrapper">
+                              <div class="dropdown__title">정책 이름</div>
+                              <div class="dropdown btn-group">
+                                <button id="selectOptionForSearch" role="button" aria-haspopup="true"
+                                  aria-expanded="false" type="button" class="btn-grad dropdown-toggle btn btn-default">
+                                  <span class="caret"></span>
+                                </button>
+                                <ul role="menu" class="dropdown-menu" aria-labelledby="selectOptionForSearch">
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 이름</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 설명</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">적용 대상</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="dropdown__wrapper">
+                              <div class="dropdown__title">정책 이름</div>
+                              <div class="dropdown btn-group">
+                                <button id="selectOptionForSearch" role="button" aria-haspopup="true"
+                                  aria-expanded="false" type="button" class="btn-grad dropdown-toggle btn btn-default">
+                                  <span class="caret"></span>
+                                </button>
+                                <ul role="menu" class="dropdown-menu" aria-labelledby="selectOptionForSearch">
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 이름</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 설명</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">적용 대상</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="dropdown__wrapper">
+                              <div class="dropdown__title">정책 이름</div>
+                              <div class="dropdown btn-group">
+                                <button id="selectOptionForSearch" role="button" aria-haspopup="true"
+                                  aria-expanded="false" type="button" class="btn-grad dropdown-toggle btn btn-default">
+                                  <span class="caret"></span>
+                                </button>
+                                <ul role="menu" class="dropdown-menu" aria-labelledby="selectOptionForSearch">
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 이름</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 설명</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">적용 대상</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="dropdown__wrapper">
+                              <div class="dropdown__title">정책 이름</div>
+                              <div class="dropdown btn-group">
+                                <button id="selectOptionForSearch" role="button" aria-haspopup="true"
+                                  aria-expanded="false" type="button" class="btn-grad dropdown-toggle btn btn-default">
+                                  <span class="caret"></span>
+                                </button>
+                                <ul role="menu" class="dropdown-menu" aria-labelledby="selectOptionForSearch">
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 이름</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 설명</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">적용 대상</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" id="check08" class="checkboxImg">
+                            <label for="check08"><span class="icon check"></span></label>
+                          </td>
+                          <td>Adobe PDF converter</td>
+                          <td>notepad.exe</td>
+                          <td>
+                            <div class="dropdown__wrapper">
+                              <div class="dropdown__title">정책 이름</div>
+                              <div class="dropdown btn-group">
+                                <button id="selectOptionForSearch" role="button" aria-haspopup="true"
+                                  aria-expanded="false" type="button" class="btn-grad dropdown-toggle btn btn-default">
+                                  <span class="caret"></span>
+                                </button>
+                                <ul role="menu" class="dropdown-menu" aria-labelledby="selectOptionForSearch">
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 이름</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 설명</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">적용 대상</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="dropdown__wrapper">
+                              <div class="dropdown__title">정책 이름</div>
+                              <div class="dropdown btn-group">
+                                <button id="selectOptionForSearch" role="button" aria-haspopup="true"
+                                  aria-expanded="false" type="button" class="btn-grad dropdown-toggle btn btn-default">
+                                  <span class="caret"></span>
+                                </button>
+                                <ul role="menu" class="dropdown-menu" aria-labelledby="selectOptionForSearch">
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 이름</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 설명</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">적용 대상</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="dropdown__wrapper">
+                              <div class="dropdown__title">정책 이름</div>
+                              <div class="dropdown btn-group">
+                                <button id="selectOptionForSearch" role="button" aria-haspopup="true"
+                                  aria-expanded="false" type="button" class="btn-grad dropdown-toggle btn btn-default">
+                                  <span class="caret"></span>
+                                </button>
+                                <ul role="menu" class="dropdown-menu" aria-labelledby="selectOptionForSearch">
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 이름</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 설명</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">적용 대상</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="dropdown__wrapper">
+                              <div class="dropdown__title">정책 이름</div>
+                              <div class="dropdown btn-group">
+                                <button id="selectOptionForSearch" role="button" aria-haspopup="true"
+                                  aria-expanded="false" type="button" class="btn-grad dropdown-toggle btn btn-default">
+                                  <span class="caret"></span>
+                                </button>
+                                <ul role="menu" class="dropdown-menu" aria-labelledby="selectOptionForSearch">
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 이름</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">정책 설명</a></li>
+                                  <li role="presentation" class="dropdown-item"><a role="menuitem" tabindex="-1"
+                                      href="#">적용 대상</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>워터마크 종류 사용자 선택</th>
+                <td>
+                  <div class="checkbox__box switch-style">
+                    <label class="inner__label">
+                      <input type="checkbox" class="hidden" name="useEncryptionStatus" value="Y" >
+                      <div class="icon"></div>
+                      <span>허용함</span>
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>워터마크 인쇄 로그</th>
+                <td>
+                  <div class="checkbox__box switch-style">
+                    <label class="inner__label">
+                      <input type="checkbox" class="hidden" name="useEncryptionStatus" value="Y" >
+                      <div class="icon"></div>
+                      <span>전송함</span>                      
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>인쇄 로그</th>
+                <td>
+                  <div class="checkbox__box switch-style">
+                    <label class="inner__label">
+                      <input type="checkbox" class="hidden" name="useEncryptionStatus" value="Y" >
+                      <div class="icon"></div>
+                      <span>전송 안함</span>                      
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>로그 형식</th>
+                <td class="box">
+                  <div class="ruleset-options">
+                    <div class="option p0">
+                      <div class="option-top mb0 p10 pb0">
+                        <input type="checkbox" id="check10" class="checkboxImg">
+                        <label for="check10">
+                          <span class="icon check"></span>
+                          <span>텍스트</span>                          
+                        </label>
+                      </div>
+                      <div class="p10">
+                        <input type="radio" name="text">
+                        <label><span>전체</span></label>
+                        
+                        <input type="radio" name="text">
+                        <label><span>첫 페이지</span></label>
+
+                        <input type="radio" name="text">
+                        <label><span>홀수 페이지만</span></label>
+
+                        <input type="radio" name="text">
+                        <label><span>홀수 페이지만</span></label>
+
+                        <input type="radio" name="text">
+                        <label><span>짝수 페이지만</span></label>
+
+                        <input type="radio" name="text">
+                        <label><span>기타설정</span></label>
+                      </div>
+                      <div class="option-bottom p10">
+                        <input type="radio" name="text">
+                        <label><span>매 <input type="text" style="width:50px" id=""> 페이지마다 (최소 2페이지)</span></label>
+
+                        <input type="radio" name="text">
+                        <label><span>첫 페이지부터 <input type="text" style="width:50px" id="" disabled> 페이지까지</span></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ruleset-options">
+                    <div class="option p0">
+                      <div class="option-top mb0 p10 pb0">
+                        <input type="checkbox" id="check11" class="checkboxImg">
+                        <label for="check11">
+                          <span class="icon check"></span>
+                          <span>이미지</span>                          
+                        </label>
+                      </div>
+                      <div class="p10">
+                        <input type="radio" name="image"disabled >
+                        <label><span>전체</span></label>
+                        
+                        <input type="radio" name="image">
+                        <label><span>첫 페이지</span></label>
+
+                        <input type="radio" name="image">
+                        <label><span>홀수 페이지만</span></label>
+
+                        <input type="radio" name="image">
+                        <label><span>홀수 페이지만</span></label>
+
+                        <input type="radio" name="image">
+                        <label><span>짝수 페이지만</span></label>
+
+                        <input type="radio" name="image">
+                        <label><span>기타설정</span></label>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+    <div class="inner__loading"></div>
+  </div>
+</body>
+
+</html>

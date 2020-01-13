@@ -1,0 +1,145 @@
+.scanbatch_schedulebox {
+  display: inline-block;
+  margin-left: 20px;
+  width: calc(100% - 300px);
+}
+
+.section-inspection.new .inspection-wrapper {
+  height: calc(100% - 40px);
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+.section-inspection.new ul.dropdown-menu {
+  max-width: 350px;
+}
+
+.section-inspection.new ul.dropdown-menu li a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.section-inspection.new table tr td .dropdown__wrapper {
+  min-width: 300px;
+  width: auto;
+  max-width: 800px;
+  line-height: normal;
+}
+
+.section-inspection.new table tr td .dropdown__wrapper .dropdown__title {
+  width: calc(100% - 35px);
+}
+
+.section-inspection.new table tr td .dropdown__wrapper+.btn-rule-add {
+  margin-left: 10px;
+}
+
+.section-inspection.new table tr td .td__container {
+  background-color: #eee;
+  border: 1px solid #d2d2d2;
+  border-radius: 3px;
+  margin: 7px 0;
+}
+
+.section-inspection.new table tr td .td__container>div {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 14px;
+}
+
+.section-inspection.new table tr td .td__container>div.limited {
+  padding-bottom: 5px;
+}
+
+.section-inspection.new table tr td .td__container>div:last-child {
+  border-left: 1px solid #d2d2d2;
+  box-sizing: border-box;
+}
+
+.section-inspection.new table tr td .td__container>div label {
+  display: block;
+  margin: 0;
+}
+
+.section-inspection.new table tr td .td__container>div label .btn-folder {
+  margin-top: 5px;
+  float: right;
+}
+
+.section-inspection.new table tr td .td__container>div ul {
+  overflow: auto;
+  background-color: #fff;
+  border-radius: 3px;
+  border: solid 1px #d2d2d2;
+  padding: 10px 11px;
+}
+
+.section-inspection.new table tr td .td__container>div ul li {
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.section-inspection.new table tr td .td__container>div ul li:last-child {
+  margin-bottom: 0;
+}
+
+.section-inspection.new table tr td .td__container>div ul .folder .btn-delete {
+  width: 13px;
+  height: 13px;
+  background: url("/fdrui/images/icon_close_black.png") no-repeat center transparent;
+  background-size: contain;
+  border: 0;
+  padding: 0;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+.section-inspection.new table tr td .td__container>div ul .folder input {
+  width: calc(100% - 30px);
+}
+
+.section-inspection.new table tr td .td__container>div ul.target__folder {
+  height: 121px;
+}
+
+.section-inspection.new table tr td .td__container>div ul.notarget__folder {
+  height: 92px;
+}
+
+.section-inspection.new table tr td .td__container>div ul.target__folder__server {
+  height: auth;
+  max-height: 220px;
+  margin-bottom: 10px;
+}
+
+.section-inspection.new table tr td .td__container>div ul.notarget__folder__server {
+  height: auth;
+  max-height: 220px;
+  margin-bottom: 10px;
+}
+
+.section-inspection.new .inner_input_btn>div {
+  width: calc(100% - 35px);
+  display: inline-block;
+}
+
+.section-inspection.new .inner_input_btn>div .react-datepicker-wrapper,
+.section-inspection.new .inner_input_btn>div .react-datepicker__input-container,
+.section-inspection.new .inner_input_btn>div input {
+  width: 100%;
+}
+
+.section-inspection.new .inner_input_btn label {
+  display: inline-block !important;
+  width: 35px;
+  line-height: 30px;
+}
+
+#dateDropdown {
+  height: auto;
+  min-height: 32px;
+  max-width: 310px;
+  line-height: 16px;
+}

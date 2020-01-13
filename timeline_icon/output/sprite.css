@@ -1,0 +1,342 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-chevron-down_24 {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 24px;
+  height: 24px;
+}
+.icon-chevron-up_24 {
+  background-image: url(sprite.png);
+  background-position: -24px 0px;
+  width: 24px;
+  height: 24px;
+}
+.icon-chevrons-down_24 {
+  background-image: url(sprite.png);
+  background-position: 0px -24px;
+  width: 24px;
+  height: 24px;
+}
+.icon-chevrons-up_24 {
+  background-image: url(sprite.png);
+  background-position: -24px -24px;
+  width: 24px;
+  height: 24px;
+}
+.icon-branch_white_18 {
+  background-image: url(sprite.png);
+  background-position: 0px -48px;
+  width: 18px;
+  height: 18px;
+}
+.icon-checkbox_16 {
+  background-image: url(sprite.png);
+  background-position: -108px -36px;
+  width: 16px;
+  height: 16px;
+}
+.icon-alert-triangle {
+  background-image: url(sprite.png);
+  background-position: -126px -84px;
+  width: 14px;
+  height: 14px;
+}
+.icon-alert-triangle_green {
+  background-image: url(sprite.png);
+  background-position: -126px -70px;
+  width: 14px;
+  height: 14px;
+}
+.icon-branch {
+  background-image: url(sprite.png);
+  background-position: -126px -56px;
+  width: 14px;
+  height: 14px;
+}
+.icon-branch_green {
+  background-image: url(sprite.png);
+  background-position: -126px -42px;
+  width: 14px;
+  height: 14px;
+}
+.icon-edit-3 {
+  background-image: url(sprite.png);
+  background-position: -126px -28px;
+  width: 14px;
+  height: 14px;
+}
+.icon-edit-3_green {
+  background-image: url(sprite.png);
+  background-position: -126px -14px;
+  width: 14px;
+  height: 14px;
+}
+.icon-link-2 {
+  background-image: url(sprite.png);
+  background-position: -126px 0px;
+  width: 14px;
+  height: 14px;
+}
+.icon-link-2_green {
+  background-image: url(sprite.png);
+  background-position: 0px -102px;
+  width: 14px;
+  height: 14px;
+}
+.icon-message-square {
+  background-image: url(sprite.png);
+  background-position: -98px -102px;
+  width: 14px;
+  height: 14px;
+}
+.icon-message-square_green {
+  background-image: url(sprite.png);
+  background-position: -84px -102px;
+  width: 14px;
+  height: 14px;
+}
+.icon-rotate-new {
+  background-image: url(sprite.png);
+  background-position: -70px -102px;
+  width: 14px;
+  height: 14px;
+}
+.icon-rotate-new_green {
+  background-image: url(sprite.png);
+  background-position: -56px -102px;
+  width: 14px;
+  height: 14px;
+}
+.icon-shield {
+  background-image: url(sprite.png);
+  background-position: -42px -102px;
+  width: 14px;
+  height: 14px;
+}
+.icon-shield_green {
+  background-image: url(sprite.png);
+  background-position: -28px -102px;
+  width: 14px;
+  height: 14px;
+}
+.icon-tag {
+  background-image: url(sprite.png);
+  background-position: -14px -102px;
+  width: 14px;
+  height: 14px;
+}
+.icon-tag_green {
+  background-image: url(sprite.png);
+  background-position: -14px -116px;
+  width: 14px;
+  height: 14px;
+}
+.icon-trash-2 {
+  background-image: url(sprite.png);
+  background-position: 0px -116px;
+  width: 14px;
+  height: 14px;
+}
+.icon-trash-2_green {
+  background-image: url(sprite.png);
+  background-position: -126px -98px;
+  width: 14px;
+  height: 14px;
+}
+.icon-unlock {
+  background-image: url(sprite.png);
+  background-position: -28px -116px;
+  width: 14px;
+  height: 14px;
+}
+.icon-unlock_green {
+  background-image: url(sprite.png);
+  background-position: -112px -102px;
+  width: 14px;
+  height: 14px;
+}
+.icon-cheked_16 {
+  background-image: url(sprite.png);
+  background-position: -108px -84px;
+  width: 16px;
+  height: 16px;
+}
+.icon-edit_16 {
+  background-image: url(sprite.png);
+  background-position: -108px -68px;
+  width: 16px;
+  height: 16px;
+}
+.icon-__24 {
+  background-image: url(sprite.png);
+  background-position: -48px -24px;
+  width: 24px;
+  height: 24px;
+}
+.icon-__green_24 {
+  background-image: url(sprite.png);
+  background-position: -48px 0px;
+  width: 24px;
+  height: 24px;
+}
+.icon-alert-octagon {
+  background-image: url(sprite.png);
+  background-position: -90px -84px;
+  width: 18px;
+  height: 18px;
+}
+.icon-alert-octagon_green {
+  background-image: url(sprite.png);
+  background-position: -72px -84px;
+  width: 18px;
+  height: 18px;
+}
+.icon-branch {
+  background-image: url(sprite.png);
+  background-position: -54px -84px;
+  width: 18px;
+  height: 18px;
+}
+.icon-branch_green {
+  background-image: url(sprite.png);
+  background-position: -36px -84px;
+  width: 18px;
+  height: 18px;
+}
+.icon-alert-octagon_circle {
+  background-image: url(sprite.png);
+  background-position: -18px -48px;
+  width: 18px;
+  height: 18px;
+}
+.icon-info_circle {
+  background-image: url(sprite.png);
+  background-position: -108px -18px;
+  width: 18px;
+  height: 18px;
+}
+.icon-tag_circle {
+  background-image: url(sprite.png);
+  background-position: -108px 0px;
+  width: 18px;
+  height: 18px;
+}
+.icon-download {
+  background-image: url(sprite.png);
+  background-position: -18px -84px;
+  width: 18px;
+  height: 18px;
+}
+.icon-download_green {
+  background-image: url(sprite.png);
+  background-position: 0px -84px;
+  width: 18px;
+  height: 18px;
+}
+.icon-eye {
+  background-image: url(sprite.png);
+  background-position: -90px -54px;
+  width: 18px;
+  height: 18px;
+}
+.icon-eye_green {
+  background-image: url(sprite.png);
+  background-position: -90px -36px;
+  width: 18px;
+  height: 18px;
+}
+.icon-info {
+  background-image: url(sprite.png);
+  background-position: -90px -18px;
+  width: 18px;
+  height: 18px;
+}
+.icon-info_green {
+  background-image: url(sprite.png);
+  background-position: -90px 0px;
+  width: 18px;
+  height: 18px;
+}
+.icon-message-square {
+  background-image: url(sprite.png);
+  background-position: -72px -66px;
+  width: 18px;
+  height: 18px;
+}
+.icon-message-square_green {
+  background-image: url(sprite.png);
+  background-position: -54px -66px;
+  width: 18px;
+  height: 18px;
+}
+.icon-rotate-new {
+  background-image: url(sprite.png);
+  background-position: -36px -66px;
+  width: 18px;
+  height: 18px;
+}
+.icon-rotate-new_green {
+  background-image: url(sprite.png);
+  background-position: -18px -66px;
+  width: 18px;
+  height: 18px;
+}
+.icon-tag {
+  background-image: url(sprite.png);
+  background-position: 0px -66px;
+  width: 18px;
+  height: 18px;
+}
+.icon-tag_green {
+  background-image: url(sprite.png);
+  background-position: -72px -36px;
+  width: 18px;
+  height: 18px;
+}
+.icon-trash-2 {
+  background-image: url(sprite.png);
+  background-position: -72px -18px;
+  width: 18px;
+  height: 18px;
+}
+.icon-trash-2_green {
+  background-image: url(sprite.png);
+  background-position: -72px 0px;
+  width: 18px;
+  height: 18px;
+}
+.icon-usage {
+  background-image: url(sprite.png);
+  background-position: -54px -48px;
+  width: 18px;
+  height: 18px;
+}
+.icon-usage_green {
+  background-image: url(sprite.png);
+  background-position: -36px -48px;
+  width: 18px;
+  height: 18px;
+}
+.icon-x_16 {
+  background-image: url(sprite.png);
+  background-position: -108px -52px;
+  width: 16px;
+  height: 16px;
+}

@@ -1,0 +1,150 @@
+@charset 'utf-8';
+
+@font-face {
+	font-family: 'NotoSans';
+	font-style: normal;
+	font-weight: 900;
+	src: url(/resources/font/NotoSans-Black.eot);
+	src: url(/resources/font/NotoSans-Black.eot?#iefix) format('embedded-opentype'),
+	url(/resources/font/NotoSans-Black.woff2) format('woff2'),
+	url(/resources/font/NotoSans-Black.woff) format('woff'),
+	url(/resources/font/NotoSans-Black.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'NotoSans';
+	font-style: normal;
+	font-weight: 800;
+	src: url(/resources/font/NotoSans-Bold.eot);
+	src: url(/resources/font/NotoSans-Bold.eot?#iefix) format('embedded-opentype'),
+	url(/resources/font/NotoSans-Bold.woff2) format('woff2'),
+	url(/resources/font/NotoSans-Bold.woff) format('woff'),
+	url(/resources/font/NotoSans-Bold.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'NotoSans';
+	font-style: normal;
+	font-weight: 700;
+	src: url(/resources/font/NotoSans-Medium.eot);
+	src: url(/resources/font/NotoSans-Medium.eot?#iefix) format('embedded-opentype'),
+	url(/resources/font/NotoSans-Medium.woff2) format('woff2'),
+	url(/resources/font/NotoSans-Medium.woff) format('woff'),
+	url(/resources/font/NotoSans-Medium.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'NotoSans';
+	font-style: normal;
+	font-weight: 600;
+	src: url(/resources/font/NotoSans-Regular.eot);
+	src: url(/resources/font/NotoSans-Regular.eot?#iefix) format('embedded-opentype'),
+	url(/resources/font/NotoSans-Regular.woff2) format('woff2'),
+	url(/resources/font/NotoSans-Regular.woff) format('woff'),
+	url(/resources/font/NotoSans-Regular.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'NotoSans';
+	font-style: normal;
+	font-weight: 500;
+	src: url(/resources/font/NotoSans-DemiLight.eot);
+	src: url(/resources/font/NotoSans-DemiLight.eot?#iefix) format('embedded-opentype'),
+	url(/resources/font/NotoSans-DemiLight.woff2) format('woff2'),
+	url(/resources/font/NotoSans-DemiLight.woff) format('woff'),
+	url(/resources/font/NotoSans-DemiLight.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'NotoSans';
+	font-style: normal;
+	font-weight: 400;
+	src: url(/resources/font/NotoSans-Light.eot);
+	src: url(/resources/font/NotoSans-Light.eot?#iefix) format('embedded-opentype'),
+	url(/resources/font/NotoSans-Light.woff2) format('woff2'),
+	url(/resources/font/NotoSans-Light.woff) format('woff'),
+	url(/resources/font/NotoSans-Light.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'NotoSans';
+	font-style: normal;
+	font-weight: 300;
+	src: url(/resources/font/NotoSans-Thin.eot);
+	src: url(/resources/font/NotoSans-Thin.eot?#iefix) format('embedded-opentype'),
+	url(/resources/font/NotoSans-Thin.woff2) format('woff2'),
+	url(/resources/font/NotoSans-Thin.woff) format('woff'),
+	url(/resources/font/NotoSans-Thin.ttf) format('truetype');
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+input, select, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+  	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	position: relative;
+	min-width: 1160px;
+}
+
+body, a {	
+	font-family: 'NotoSans', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.75;
+	color: #616161;
+}
+
+strong {
+  font-weight: 700;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+caption {
+	font-size: 0;
+}
+
+option {
+	height:20px
+}

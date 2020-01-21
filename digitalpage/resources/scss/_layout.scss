@@ -1,0 +1,318 @@
+.skip {
+  display: none;
+  text-align: center;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.inner {
+  margin: 0 auto;
+  width: 1100px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;  
+  height: 80px;
+  border-bottom: 1px solid rgba(242,242,242,.2);
+  background-color: transparent;
+  transition: all .2s;
+  z-index: 1;
+  > .inner {
+    padding: 0 30px;
+    > * {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    h1 {
+      background: url('/resources/img/logo_transparent.png') no-repeat;
+      a {
+        display: block;
+        width: 242px;
+        height: 40px;
+        font-size: 0;        
+      }      
+    }
+  }
+  ul > li {
+    position: relative;
+    display: inline-block;
+  }
+  nav {
+    margin-left: 172px;
+    > ul {      
+      > li {
+        margin-left: 32px;
+        > a {
+          display: inline-block;
+          height: 78px;
+          line-height: 78px;
+          color: #c2c2c2;
+          border-bottom: 2px solid transparent;
+        }
+        &:hover > a {
+          color: #fff;
+          border-color: #fff;
+        }
+        &:hover > ul {
+          display: block;
+        }
+        > ul {
+          position: absolute;
+          top: 60px;
+          left: -20px;
+          display: none;  
+          padding: 15px 20px;
+          width: 175px;
+          line-height: 36px;
+          z-index: 1;
+          background-color: #fff;
+          border: $border;
+          border-radius: 5px;
+          > li {
+            display: block;
+            a {
+              color: #2e2e2e;
+            }
+          }
+        }
+      }  
+    }
+  }
+  .member {
+    li {
+      margin-left: 20px;
+      a {
+        display: inline-block;
+        padding: 0 25px;
+        height: 38px;
+        line-height: 38px;
+        color: #fff;
+        border-radius: 5px;
+        border: 1px solid transparent;
+        background-color: $purple;
+      }
+      &:first-child a {
+        background-color: rgba(255, 255, 255, .15);
+      }
+    }
+  }
+  &.on {
+    background-color: #fff;    
+    border-color:#e8e8e8;
+    h1 {
+      background: url('/resources/img/logo.png') no-repeat;
+    }
+    nav ul > li > a {
+      color: $dark;
+    }
+    .member {
+      li {
+        &:first-child a {
+          color: $dark;
+          border-color: #e8e8e8;
+        }
+      }
+    }
+  }
+}
+
+#visual {
+  padding-top: 80px;
+  height: 270px;
+  text-align: center;
+  background-size: cover;
+  * {
+    color: #fff;
+  }
+  h2 {
+    margin-top: 75px;
+    font-size: 46px;
+    font-weight: 700;
+  }
+}
+
+#nav {
+  border-bottom: $border;
+  ul {
+    overflow: hidden;
+    li {
+      float: left;
+      a {
+        display: inline-block;
+        padding: 25px 30px;
+        color: $dark;
+        border-bottom: 2px solid transparent;
+        &.on, &:hover {
+          color: $purple;
+          border-color: $purple;
+        }
+      }
+    }
+  }
+}
+
+#links {
+  margin-top: 120px;
+  .inner {
+    > p {
+      font-size: 22px;
+      font-weight: 700;
+      color: $dark
+    }
+    > ul {
+      margin-top :30px;
+      padding: 5px 0;
+      font-size: 0;
+      li {
+        display: inline-block;
+        border: $border;
+        border-radius: 5px;
+        box-shadow: 0px 0px 30px 0 rgba(62,63,66,0.12);
+        &:nth-child(n+2) {
+          margin-left: 40px;
+        }
+        a {
+          display: inline-block;
+          padding: 40px 30px;
+          width: 180px;
+          height: 150px;
+          p {
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: 700;
+            color: $dark;
+          }
+        }
+      }
+    }
+  }
+}
+
+#plans {
+  margin-top: 120px;
+  padding-top: 65px;
+  height: 255px;
+  text-align: center;
+  background: url('/resources/img/bg_plans.png');
+  .inner {
+    p {
+      color: #fff;
+      &:first-child {
+        font-size: 34px;
+        margin-bottom: 15px;
+      }
+    }
+    div {
+      margin-top: 30px;
+      font-size: 0;
+      a {
+        display: inline-block;
+        margin: 0 15px;
+        width: 220px;
+        height: 56px;
+        line-height: 54px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        &:nth-child(1) {
+          color: #fff;
+        }
+        &:nth-child(2) {
+          color: $purple;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
+footer {
+  padding: 75px 0 45px;
+  background-color: #fafafa;
+  span {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: $light;
+  }
+  .inner {
+    div {
+      overflow: hidden;
+      > a {      
+        display: inline-block;
+        width: 242px;
+        height: 40px;
+        vertical-align: top;
+        font-size: 0;
+        background: url('/resources/img/logo.png') no-repeat;
+      }
+      nav {
+        float: right;
+        padding-bottom: 40px;
+        overflow: hidden;        
+        > ul {      
+          width: 420px;
+          overflow: hidden;
+          > li {
+            float: left;        
+            &:nth-child(-n+2) {
+              margin-right: 70px;
+              height: 316px;
+            }
+            &:nth-child(n+4) {
+              margin-top: 50px;
+            }
+            > a {
+              line-height: 24px;
+              font-weight: 700;
+              color: $dark;
+            }
+            > ul {
+              margin-top: 8px;
+              > li > a {
+                line-height: 40px;
+              }
+            }
+          }  
+        }
+      }
+      + div {
+        border-top: $border;
+        padding-top: 35px;
+        overflow: hidden;
+        > ul {
+          &:first-child {
+            float: left;
+            li {
+              float: left;
+              margin-right: 30px;  
+              a {
+                font-size: 14px;
+                color: $dark;
+              }
+            }
+          }
+          &:nth-child(2) {
+            float: right;
+            font-size: 0;
+            li {
+              display: inline-block;
+              margin-left: 15px;            
+              a {
+                display: inline-block;
+                width: 28px;
+                height: 28px;
+                font-size: 0;
+                &.facebook {
+                  background: url('/resources/img/ico_facebook.png') no-repeat;
+                }
+                &.youtube {
+                  background: url('/resources/img/ico_youtube.png') no-repeat;
+                }              
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

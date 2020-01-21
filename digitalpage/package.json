@@ -1,0 +1,10 @@
+{
+  "name": "www.digitalpage.me",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "live-server --no-browser",
+    "scss": "node-sass --watch resources/scss --output resources/css --source-map true --output-style compressed"
+  }
+}

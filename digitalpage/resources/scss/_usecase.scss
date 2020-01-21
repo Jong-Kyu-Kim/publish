@@ -1,0 +1,60 @@
+#visual.usecase {
+  background: url('/resources/img/usecase/bg_visual_usecase.png') no-repeat center;
+}
+#content {
+  &.usecase {    
+    h3 {
+      margin-top: 100px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 36px;
+      color: $dark;
+      + p {
+        margin-top:  10px;
+        text-align: center;
+      }
+    }
+    ul {
+      li {
+        margin-top: 170px;
+        overflow: hidden;
+        &:nth-child(odd) {
+          div:nth-child(2) {
+            text-align: right;
+          }
+        }        
+        div {
+          float: left;
+          width: 50%;
+          .num {
+            font-size: 32px;
+            font-weight: 700;
+            color: #14b4d6;
+          }
+          .subject {
+            line-height: 47px;
+            font-size: 32px;
+            font-weight: 700;
+            color: $dark;
+          }
+          .desc {
+            margin-top: 20px;
+          }
+          a {
+            display: inline-block;
+            margin-top: 25px;
+            font-size: 18px;
+            font-weight: 700;
+            color: $purple;
+            &::after {
+              @include arrow;
+            }
+          }
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

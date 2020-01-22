@@ -105,6 +105,10 @@ header {
     }
     nav ul > li > a {
       color: $dark;
+      &:hover, &:focus {
+        color: $purple;
+        border-color: $purple;
+      }
     }
     .member {
       li {
@@ -130,25 +134,34 @@ header {
     font-size: 46px;
     font-weight: 700;
   }
-}
-
-#nav {
-  border-bottom: $border;
-  ul {
-    overflow: hidden;
-    li {
-      float: left;
-      a {
+  + nav {
+    border-bottom: $border;
+    ul {
+      text-align: center;
+      overflow: hidden;
+      font-size: 0;
+      li {
         display: inline-block;
-        padding: 25px 30px;
-        color: $dark;
-        border-bottom: 2px solid transparent;
-        &.on, &:hover {
-          color: $purple;
-          border-color: $purple;
+        a {
+          display: inline-block;
+          padding: 25px 30px;
+          color: $dark;
+          border-bottom: 2px solid transparent;
+          &.on, &:hover, &:focus {
+            color: $purple;
+            border-color: $purple;
+          }
         }
       }
     }
+    + div {
+      margin-top: 120px;
+      overflow: hidden;
+    }
+  }
+  + div {
+    margin-top: 120px;
+    overflow: hidden;
   }
 }
 
@@ -182,6 +195,17 @@ header {
             font-size: 22px;
             font-weight: 700;
             color: $dark;
+          }
+          span {
+            &.cyan {
+              color: $cyan;
+            }
+            &.purple {
+              color: $purple;
+            }
+            &.blue {
+              color: $blue;
+            }            
           }
         }
       }
@@ -225,6 +249,7 @@ header {
     }
   }
 }
+
 footer {
   padding: 75px 0 45px;
   background-color: #fafafa;

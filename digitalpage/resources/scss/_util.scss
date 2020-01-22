@@ -1,25 +1,28 @@
 $dark: #2e2e2e;
 $light: #949494;
 $purple: #7852cc;
+$cyan: #14b4d6;
+$blue: #4f9bf5;
 $border: 1px solid #e8e8e8;
 
-@mixin subhead($color) {
-  padding: 4px 10px;
-  display: inline-block;
-  border-radius: 5px;
-  color: if($color == purple, $purple, if($color == cyan, #14b4d6, #4f9bf5));
-  @if $color == purple {
-    //color: $purple;
-    background-color: #ebe5f8;
-  }
-  @else if $color == cyan {
-    //color: #14b4d6;
-    background-color: #dcf4f9;
-  }
-  @else if $color == blue {
-    //color: #4f9bf5;
-    background-color: #e5f0fe;
-  }  
+@mixin subhead {
+  span:first-child {
+    padding: 4px 10px;
+    display: inline-block;
+    border-radius: 5px;
+    &.purple {
+      color: $purple;
+      background-color: #ebe5f8;
+    }
+    &.cyan {
+      color: $cyan;
+      background-color: #dcf4f9;
+    }
+    &.blue {
+      color: $blue;
+      background-color: #e5f0fe;
+    }
+  } 
 }
 
 @mixin arrow {

@@ -46,7 +46,7 @@
         text-align: center;
       }
     }
-    > div {
+    > section:nth-child(n+2) {
       margin-top: 120px;
     }
     .feature {
@@ -60,8 +60,8 @@
               content: '';
               position: absolute;
             }
-            span {
-              @include subhead(cyan);
+            @include subhead;
+            span {              
               + p {
                 margin-top: 20px;
                 line-height: 50px;
@@ -136,9 +136,9 @@
           &:nth-child(3) .inner {
             &::after {
               top: 180px;
-              left: -828px;
-              width: 698px;
-              height: 531px;
+              left: -1068px;
+              width: 1068px;
+              height: 551px;
               background: url('/resources/img/main/img_feature_3.png') no-repeat;
             }
           }
@@ -172,17 +172,7 @@
                 height: 232px
               }
             }
-            .category {
-              &.purple {
-                @include subhead(purple);
-              }
-              &.cyan {
-                @include subhead(cyan);
-              }
-              &.blue {
-                @include subhead(blue);
-              }
-            }
+            @include subhead;
             .subject {
               margin: 12px 0 6px;
               max-height: 66px;
@@ -304,11 +294,10 @@
     }
     .price {
       text-align: center;
-      > ul {
-        margin-top: 45px;
+      > ul {        
         > li {
           display: inline-block;
-          margin: 0 20px;
+          margin: 45px 20px;
           vertical-align: top;
           width: 400px;
           border: $border;

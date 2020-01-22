@@ -1,0 +1,78 @@
+#visual.tips {
+  background: url('/resources/img/tips/bg_visual_tips.png') no-repeat center;
+}
+#left.tips {
+  float: left;
+  width: 250px;
+  height: 100%;
+  > ul {
+    > li {
+      &:nth-child(n+2) {
+        margin-top: 30px;
+      }      
+      > a {
+        font-size: 20px;
+        font-weight: 700;;
+        color: $dark;
+      }
+      > ul {
+        > li {
+          padding-left: 10px;
+          margin-top: 15px;
+          > a {
+            font-size: 16px;
+            color: $dark;
+            &.on, &:hover, &:focus {
+              color: $purple;
+              border-color: $purple;
+            }
+          }
+        }
+      }
+    }
+  }
+  + * {
+    float: left;
+    margin-left: 50px;
+    width: 800px;
+  }
+}
+#content {
+  &.tips {
+    .inner {
+      overflow: hidden;
+    }
+    h3, h4 {
+      font-weight: 700;
+      color: $dark;
+    }
+    h3 {
+      font-size: 32px;
+    }
+    h4 {
+      font-size: 22px;
+    }
+    img {
+      display: block;
+      margin-top: 30px;
+    }
+    section {
+      margin-top: 70px;
+      > ul {
+        > li {
+          margin-top: 35px;
+        }
+      }        
+    }
+    a {
+      float: right;
+      margin-top: 60px;
+      font-size: 18px;
+      font-weight: 700;
+      color: $purple;
+      &::after {
+        @include arrow;
+      }      
+    }
+  }
+}

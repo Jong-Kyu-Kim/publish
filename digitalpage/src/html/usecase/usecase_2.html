@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+  <link rel="stylesheet" href="/resources/css/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="/resources/js/script.js"></script>
+  <title>DIGITALPAGE</title>
+</head>
+
+<body>
+  @@include('../include/header.html')
+  <section id="visual" class="usecase">
+    <h2>Use Case</h2>
+    <p>어이, 유저 친구! 여기 보고 야무지게 행동해!</p>
+  </section>
+  <nav>
+    <ul>
+      <li><a href="/usecase/usecase_1.html">맛집 탐방기</a></li>
+      <li><a href="/usecase/usecase_2.html" class="on">마법의 회의록</a></li>
+      <li><a href="/usecase/usecase_3.html">소개팅 필승 카드</a></li>
+      <li><a href="/usecase/usecase_4.html">영화 공작소</a></li>
+      <li><a href="/usecase/usecase_5.html">육아 일기</a></li>
+      <li><a href="/usecase/usecase_6.html">여행 기록장</a></li>
+      <li><a href="/usecase/usecase_7.html">덕질 플래너</a></li>
+    </ul>
+  </nav>
+  <div class="inner">
+    <article id="content" class="usecase">
+      <h3>ACE 김대리, 어떻게 회의 내용을 모두 파악하고 있을까?</h3>
+      <p>디지털페이지로 모든 회의 내용을 접수하는 방법!?</p>
+      <ul>
+        <li>
+          <div>
+            <span class="num">01</span>
+            <p class="subject">#모든 #회의록 <br>#해시태그로 #관리하기</p>
+            <p class="desc">김대리는 회의 시작과 동시에  Web을 통해 디지털페이지에 <br>회의록을 적습니다. <br>회의록의 기본은 날짜와 주제태그!</p>
+            <a href="">태그 적용하기 확인</a>
+          </div>
+          <div>
+            <img src="/resources/img/usecase/img_usecase_1_1.png" alt="">
+          </div>            
+        </li>
+        <li>
+          <div>
+            <img src="/resources/img/usecase/img_usecase_1_2.png" alt="">
+          </div>            
+          <div>
+            <span class="num">02</span>
+            <p class="subject">#회의내용 #동료와 #공유하기</p>
+            <p class="desc">회의 후에는 디지털페이지 내 ‘페이지 공유’기능을 통해 회의 메모를 팀원들과 <br>공유합니다. 불참했던 회의록까지도 디지털페이지를 통해 팀원들에게 <br>공유 받습니다. 그리고 그 회의록들을 성격에 맞춰  연결하여 관리합니다. </p>
+            <a href="">페이지 보내기 확인</a>            
+          </div>
+        </li>
+        <li>            
+          <div>
+            <span class="num">03</span>
+            <p class="subject">#필요한 정보 #쉽고 <br>#빠르게 #찾기</p>
+            <p class="desc">디지털페이지는 기록된 모든 회의록을 보관하고, <br>회의 진행 날짜, 입력된 태그 및 정보만 알아도 <br>내가 필요한 정보를 쉽게 찾아줍니다.</p>
+            <a href="">페이지 검색 확인</a>              
+          </div>
+          <div>
+            <img src="/resources/img/usecase/img_usecase_1_3.png" alt="">
+          </div>
+        </li>                    
+      </ul>
+    </article>
+  </div>
+  <section id="links">
+    <div class="inner">
+      <p>관련 디지털페이지 꿀팁 보러가기!</p>
+      <ul>
+        <li>
+          <a href="">
+            <img src="/resources/img/usecase/ico_link_1.png" alt="">
+            <p>페이지 검색</p>
+            <span class="cyan">Basic</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="/resources/img/usecase/ico_link_1.png" alt="">
+            <p>페이지 보내기</p>
+            <span class="purple">Advanced</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="/resources/img/usecase/ico_link_2.png" alt="">
+            <p>페이지 검색</p>
+            <span class="purple">Advanced</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="/resources/img/usecase/ico_link_2.png" alt="">
+            <p>페이지 날짜 넣기</p>
+            <span class="cyan">Basic</span>
+          </a>
+        </li>                  
+      </ul>
+    </div>    
+  </section>
+  @@include('../include/plans.html')
+  @@include('../include/footer.html')
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+header {
+  &.member {
+    height: 100px;
+    line-height: 96px;
+    border-bottom: $border;
+    .inner {
+      text-align: center;
+      h1 {
+        background-image: url('/resources/img/logo_l.png');
+        a {
+          width: 300px;
+          height: 50px;
+        }
+      }
+    }
+    + .inner {      
+      margin-top: 150px;
+      width: 430px;
+      text-align: center;
+      h2 {
+        margin-bottom: 5px;
+        font-size: 22px;
+        font-weight: 700;
+        color: $dark;
+      }
+      .social {
+        padding: 30px 0 35px;
+        border-bottom: $border;
+        ul {
+          font-size: 0;
+          li {
+            display: inline-block;
+            margin-left: 20px;            
+            a {
+              display: block;
+              width: 56px;
+              height: 56px;
+              font-size: 0;
+              background-size: 100%;
+            }
+            &:nth-child(1) {
+              margin-left: 0px;
+              a {
+                background-image: url('/resources/img/member/ico_facebook.png');
+              }              
+            }
+            &:nth-child(2) a {
+              background-image: url('/resources/img/member/ico_naver.png');
+            }
+            &:nth-child(3) a {
+              background-image: url('/resources/img/member/ico_kakao.png');
+            }
+            &:nth-child(4) a {
+              background-image: url('/resources/img/member/ico_google.png');
+            }            
+          }
+        }
+      }
+      .form {
+        position: relative;
+        padding: 40px 0;
+        > div {
+          position: absolute;
+          display: block;
+          width: 100%;
+          text-align: center;
+          top: -16px;
+          span {
+            display: inline-block;
+            width: 50px;
+            color: $light;
+            background-color: #fff;
+          }
+        }
+        input[type=text], input[type=password] {
+          margin-bottom :20px;
+          padding: 15px 20px;
+          width: calc(100% - 40px);
+          border: $border;
+          border-radius: 5px;
+          + div {
+            text-align: left;
+            line-height: 56px;
+            input[type=checkbox] {
+              width: 0;
+              height: 0;
+              opacity: 0;
+              + label {
+                padding-left: 30px;
+                background: url('/resources/img/member/img_checkbox.png') no-repeat left center;
+                span {
+                  color: $purple;
+                }
+              }
+              &:checked + label {
+                background-image: url('/resources/img/member/img_checkbox_checked.png');
+              }
+            }
+            button {
+              display: block;
+              margin: 15px auto;
+              width: 190px;
+              height: 56px;
+              color: #fff;
+              border-radius: 5px;
+              background-color: $purple;
+              &.login {
+                margin: 0 auto;
+                float: right;
+              }
+              &.join {
+                width: 310px;                
+              }
+            }
+          }
+        }
+        a {
+          color: $purple;
+          font-weight: 700;
+        }
+        div {
+          &.forgot {
+            margin-top: 30px;
+          }
+          &.join, &.login {
+            margin-top: 20px;
+            p {
+              display: inline-block;
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

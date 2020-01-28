@@ -4,7 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "live-server --no-browser",
-    "scss": "node-sass --watch resources/scss --output resources/css --source-map true --output-style compressed"
+    "start": "live-server --no-browser assets"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.1.1",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.13.1"
   }
 }

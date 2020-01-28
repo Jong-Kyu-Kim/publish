@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+  <link rel="stylesheet" href="/resources/css/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="/resources/js/script.js"></script>
+  <title>DIGITALPAGE</title>
+</head>
+
+<body>
+  @@include('../include/header.html')
+  <section id="visual" class="usecase">
+    <h2>Use Case</h2>
+    <p>어이, 유저 친구! 여기 보고 야무지게 행동해!</p>
+  </section>
+  <nav>
+    <ul>
+      <li><a href="/usecase/usecase_1.html">맛집 탐방기</a></li>
+      <li><a href="/usecase/usecase_2.html">마법의 회의록</a></li>
+      <li><a href="/usecase/usecase_3.html">소개팅 필승 카드</a></li>
+      <li><a href="/usecase/usecase_4.html">영화 공작소</a></li>
+      <li><a href="/usecase/usecase_5.html">육아 일기</a></li>
+      <li><a href="/usecase/usecase_6.html" class="on">여행 기록장</a></li>
+      <li><a href="/usecase/usecase_7.html">덕질 플래너</a></li>
+    </ul>
+  </nav>
+  <div class="inner">
+    <article id="content" class="usecase">
+      <h3>나의 평생 여행일기, 디지털페이지</h3>
+      <p>나의 여행 데이터로 추천도 가능하지</p>
+      <ul>
+        <li>
+          <div>
+            <span class="num">01</span>
+            <p class="subject">여행 일정 제대로 짜기</p>
+            <p class="desc">오늘 방문할 곳을 목록화하여 쉽게 일정짜기</p>
+            <a href="">할일 관리하기 확인</a>
+          </div>
+          <div>
+            <img src="/resources/img/usecase/img_usecase_1_1.png" alt="">
+          </div>            
+        </li>
+        <li>
+          <div>
+            <img src="/resources/img/usecase/img_usecase_1_2.png" alt="">
+          </div>            
+          <div>
+            <span class="num">02</span>
+            <p class="subject">우선 사진만 찍자</p>
+            <p class="desc">여행지마다 쉽게 기록하도록 발자국을 먼저 남기고 나중에 메모하자</p>
+            <a href="">발자국 남기기 확인</a>            
+          </div>
+        </li>
+        <li>            
+          <div>
+            <span class="num">03</span>
+            <p class="subject">여행 작가로 거듭나세요</p>
+            <p class="desc">뒤늦게 작성해도 문제없어요.작성일자 변경으로 마치 지금 여행한 것처럼 메모하자</p>
+            <a href="">페이지 작성일 변경하기 확인</a>              
+          </div>
+          <div>
+            <img src="/resources/img/usecase/img_usecase_1_3.png" alt="">
+          </div>
+        </li>                    
+      </ul>
+    </article>
+  </div>
+  <section id="links">
+    <div class="inner">
+      <p>관련 디지털페이지 꿀팁 보러가기!</p>
+      <ul>
+        <li>
+          <a href="">
+            <img src="/resources/img/usecase/ico_link_1.png" alt="">
+            <p>페이지 생성 도우미</p>
+            <span class="cyan">Basic</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="/resources/img/usecase/ico_link_1.png" alt="">
+            <p>To-do list <br>작성 도우미 </p>
+            <span class="cyan">Basic</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="/resources/img/usecase/ico_link_1.png" alt="">
+            <p>오늘의 페이지 <br> 생성 도우미</p>
+            <span class="cyan">Basic</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="/resources/img/usecase/ico_link_2.png" alt="">
+            <p>페이지 보내기</p>
+            <span class="purple">Advanced</span>
+          </a>
+        </li>                  
+      </ul>
+    </div>    
+  </section>
+  @@include('../include/plans.html')
+  @@include('../include/footer.html')
+</body>
+
+</html>

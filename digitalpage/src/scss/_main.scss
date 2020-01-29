@@ -271,15 +271,18 @@
             padding-top: 80px;
             width: 315px;
             margin-left: 40px;
+            background-repeat: no-repeat;
+            background-size: 70px;
             &:nth-child(1) {
               margin-left: 0;
-              background: url('/resources/img/main/img_video_1.png') no-repeat;
+              background-image: url('/resources/img/main/img_video_1.png');
             }
             &:nth-child(2) {
-              background: url('/resources/img/main/img_video_2.png') no-repeat;
+              background-size: 55px;
+              background-image: url('/resources/img/main/img_video_2.png');
             }
             &:nth-child(3) {
-              background: url('/resources/img/main/img_video_3.png') no-repeat;
+              background-image: url('/resources/img/main/img_video_3.png');
             }
             > *:first-child {
               display: block;

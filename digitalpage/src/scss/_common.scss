@@ -167,7 +167,6 @@ header {
       }
     }
     + div {
-      position: relative;
       overflow: hidden;
     }
   }
@@ -178,16 +177,18 @@ header {
 
 #left {
   float: left;
+  padding-top: 120px;
   width: 250px;
   background-color: #fff;
   &.fixed {
     position: fixed;
+    top: 90px;
     + #content {
       margin-left: 300px;
     }
   }
   &.absolute {
-    position: absolute;
+    position: absolute;    
     + #content {
       margin-left: 300px;
     }

@@ -8,7 +8,7 @@ sass.compiler = require('node-sass');
 // var less = require('gulp-less');
 // var babel = require('gulp-babel');
 // var concat = require('gulp-concat');
-// var uglify = require('gulp-uglify');
+var uglify = require('gulp-uglify');
 // var rename = require('gulp-rename');
 // var cleanCSS = require('gulp-clean-css');
 //var del = require('del');
@@ -19,7 +19,7 @@ var paths = {
     dest: 'assets/resources/css/'
   },
   scripts: {
-    src: 'src/js/**/*.js',
+    src: 'src/js/*.js',
     dest: 'assets/resources/js/'
   },
   include: {
@@ -68,7 +68,7 @@ function include() {
 }
  
 function watch() {
-  //gulp.watch(paths.scripts.src, scripts);
+  gulp.watch(paths.scripts.src, scripts);
   gulp.watch(paths.styles.src, styles);
   gulp.watch(paths.include.src, include);
 }

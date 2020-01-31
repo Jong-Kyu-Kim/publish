@@ -19,7 +19,7 @@
           > a {
             font-size: 16px;
             color: $dark;
-            &.on, &:hover, &:focus {
+            &.on {
               color: $purple;
               border-color: $purple;
             }
@@ -39,21 +39,13 @@
     .inner {
       overflow: hidden;
     }
-    h3, h4 {
-      font-weight: 700;
-      color: $dark;
-    }
-    h3 {
-      font-size: 32px;
-    }
     h4 {
-      font-size: 22px;
       + p {
         margin-top: 10px;
       }
     }
     section {
-      margin-top: 70px;
+      padding-top: 70px;
       > ol {        
         > li {          
           margin-top: 35px;

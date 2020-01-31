@@ -3,9 +3,16 @@
 }
 #content {
   &.news {
+    h3 {
+      text-align: center;
+    }
     .list {
+      margin-top: 70px;
       li {
         border-bottom: $border;
+        &:first-child {
+          border-top: $border;
+        }
         a {
           display: block;
           padding: 40px 0;
@@ -76,6 +83,35 @@
       }
       .date {
         color: $light;
+      }
+    }
+    + ul {
+      margin-top: 80px;
+      li {
+        padding: 25px 0;
+        border-bottom: $border;
+        &:first-child {
+          border-top: $border;  
+        }
+        .subject {
+          display: inline-block;
+          margin-left: 30px;
+          font-weight: 700;
+        }
+        .date {
+          float: right;
+        }
+      }
+      + a {
+        display: block;
+        margin: 50px auto 0;
+        width: 120px;
+        height: 56px;
+        line-height: 54px;
+        text-align: center;        
+        color: #fff;
+        background-color: $purple;
+        border-radius: 5px;
       }
     }
   }

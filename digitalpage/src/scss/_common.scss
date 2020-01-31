@@ -9,6 +9,18 @@
   width: 1100px;
 }
 
+h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: $dark;
+}
+
+h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: $dark; 
+}
+
 header {
   position: fixed;
   top: 0;
@@ -46,7 +58,8 @@ header {
             display: inline-block;
             height: 78px;
             line-height: 78px;
-            color: #c2c2c2;
+            // color: #c2c2c2;
+            color: #fff;
             border-bottom: 2px solid transparent;
           }
           &:hover > a {
@@ -199,56 +212,6 @@ header {
   padding-top: 120px;
 }
 
-#links {
-  margin-top: 120px;
-  .inner {
-    > p {
-      font-size: 22px;
-      font-weight: 700;
-      color: $dark
-    }
-    > ul {
-      margin-top :30px;
-      padding: 5px 0;
-      font-size: 0;
-      li {
-        display: inline-block;
-        vertical-align: top;
-        border: $border;
-        border-radius: 5px;
-        box-shadow: 0px 0px 30px 0 rgba(62,63,66,0.12);
-        &:nth-child(n+2) {
-          margin-left: 40px;
-        }
-        a {
-          display: inline-block;
-          padding: 40px 30px;
-          width: 180px;
-          height: 150px;
-          p {
-            margin-top: 10px;
-            line-height: 31px;
-            font-size: 22px;
-            font-weight: 700;
-            color: $dark;
-          }
-          span {
-            &.cyan {
-              color: $cyan;
-            }
-            &.purple {
-              color: $purple;
-            }
-            &.blue {
-              color: $blue;
-            }            
-          }
-        }
-      }
-    }
-  }
-}
-
 #plans {
   margin-top: 120px;
   padding-top: 65px;
@@ -289,12 +252,6 @@ header {
 footer {
   padding: 75px 0 45px;
   background-color: #fafafa;
-  span {
-    display: block;
-    margin-top: 10px;
-    font-size: 14px;
-    color: $light;
-  }
   .inner {
     div {
       overflow: hidden;
@@ -338,10 +295,16 @@ footer {
       }
       + div {
         border-top: $border;
-        padding-top: 35px;
+        padding-top: 30px;
         overflow: hidden;
+        > span {
+          float: left;
+          margin: 3px 20px 0 0;
+          font-size: 14px;
+          color: $light;
+        }
         > ul {
-          &:first-child {
+          &:nth-child(2) {
             float: left;
             li {
               float: left;
@@ -352,7 +315,7 @@ footer {
               }
             }
           }
-          &:nth-child(2) {
+          &:nth-child(3) {
             float: right;
             font-size: 0;
             li {
@@ -363,12 +326,21 @@ footer {
                 width: 28px;
                 height: 28px;
                 font-size: 0;
+                &.global {
+                  background: url('/resources/img/ico_global.png') no-repeat;
+                }
                 &.facebook {
                   background: url('/resources/img/ico_facebook.png') no-repeat;
                 }
                 &.youtube {
                   background: url('/resources/img/ico_youtube.png') no-repeat;
-                }              
+                }
+                &.insta {
+                  background: url('/resources/img/ico_insta.png') no-repeat;
+                }
+                &.blog {
+                  background: url('/resources/img/ico_blog.png') no-repeat;
+                }                      
               }
             }
           }

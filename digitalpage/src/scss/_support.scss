@@ -36,17 +36,19 @@
 }
 #content.support {
   h3 {
-    font-size: 32px;
-    font-weight: 700;
     line-height: 47px;
-    color: $dark;
+  }
+  h4 {
     + p {
-      margin-top: 20px;
+      margin-top: 10px;
     }
   }
   section {
     &:nth-child(n+2) {
-      margin-top: 80px;
+      margin-top: 70px;
+    }
+    div {
+      margin-top: 40px;
     }
     ul {
       margin-top: 15px;
@@ -86,6 +88,18 @@
     textarea {
       height: 270px;
       resize: none;
+    }
+
+    button {
+      display: block;
+      margin: 0 auto;
+      width: 120px;
+      height: 56px;
+      line-height: 54px;
+      text-align: center;        
+      color: #fff;
+      background-color: $purple;
+      border-radius: 5px;
     }
   }
 }

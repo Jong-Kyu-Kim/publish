@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="js/scrolloverflow.min.js"></script>
+<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/html5shiv.min.js"></script>
+<![endif]-->
+<title>Document</title>
+</head>
+<body>
+	<div id="header">
+		<div class="wrapper">
+			<h1><a href="index.html"><img src="img/logo.png" alt="KOMIPO" /></a></h1>
+			<ul>
+				<li><a href="#">KOMIPO</a></li>
+				<li class="gov"><a href="#"><img src="img/gov3.jpg" alt="정부3.0" />정보공개</a></li>
+				<li class="work">
+					<a href="#">사업소개</a>
+					<ul class="depth2">
+						<li><a href="#">발전소</a></li>
+						<li><a href="#">국내사업</a></li>
+						<li><a href="#">해외사업</a></li>
+						<li><a href="sub.html">에너지신사업</a></li>
+					</ul>
+				</li>
+				<li><a href="#">경영공시</a></li>
+				<li><a href="#">열린경영</a></li>
+				<li><a href="#">동반성장</a></li>
+				<li><a href="#">홍보·참여</a></li>
+			</ul>
+			<div class="btn_area">
+				<button><img src="img/btn_search.jpg" alt="검색" class="btn_search"/></button>
+				<button><img src="img/btn_menu.jpg" alt="전체메뉴" class="btn_menu"/></button>			
+			</div>
+		</div>
+	</div>
+	
+	<div class="btn_active">
+		<div class="search"></div>
+		<div class="menu1">
+			<a href="#" class="menu_close"></a><br>
+			<a href="#" class="personal"></a><br>
+			<a href="#" class="depth"></a>
+		</div>
+		<div class="menu2">
+			<a href="#" class="menu_close"></a><br>
+			<a href="#" class="all"></a>
+		</div>
+	</div>
+	<div id="container">
+		<div class="visual section">
+			<div class="video_slide">
+				<video data-autoplay data-keepplaying loop muted>
+					<source src="video/main_boston.mp4" type="video/mp4">
+					<source src="video/main_boston.ogv" type="video/ogv">
+				</video>
+				<span class="grid"></span>
+				<div class="typo">
+					<img src="img/typo1_1.png" alt="" class="img1" /><br><br>
+					<img src="img/typo2_2.png" alt="" class="img2"/>
+				</div>
+				<div class="indicator">
+					<a href="#" ><img src="img/ico_indicator1_on.png" alt="" /></a>
+					<a href="#" class="go_on" style="z-index:2"><img src="img/ico_indicator2.png" alt="" /></a>
+					<a href="#"><img src="img/ico_indicator3.png" alt="" /></a>
+					<a href="#"><img src="img/ico_indicator4.png" alt="" /></a>
+				</div>
+				<div class="mouse">
+					<img src="img/ico_mouse.png" alt="" />
+				</div>
+				<div class="notice">
+
+				</div>
+			</div>
+
+			<div class="video_slide">
+				<video data-autoplay data-keepplaying loop muted>
+					<source src="video/main_seoul01.mp4" type="video/mp4">
+					<source src="video/main_seoul01.ogv" type="video/ogv">
+				</video>
+				<span class="grid"></span>
+				<div class="typo">
+					<img src="img/typo2_1.png" alt="" class="img1"/><br><br>
+					<img src="img/typo2_2.png" alt="" class="img2"/>
+				</div>
+				<div class="indicator">
+					<a href="#" class="go_on" style="z-index:2"><img src="img/ico_indicator1.png" alt=""/></a>
+					<a href="#"><img src="img/ico_indicator2_on.png" alt="" /></a>
+					<a href="#"><img src="img/ico_indicator3.png" alt="" /></a>
+					<a href="#"><img src="img/ico_indicator4.png" alt="" /></a>
+				</div>
+				<div class="mouse">
+					<img src="img/ico_mouse.png" alt="" />
+				</div>
+				<div class="notice">
+
+				</div>
+			</div>
+			<span class="dim"></span>
+		</div>
+
+		<div class="komico section">
+			<span class="dim"></span>
+			<img src="img/bg_komico.png" alt=""  />
+		</div>
+
+		<div class="comm section" style="display:block !important; height:906px !important">
+			<div class="wrapper">
+					<img src="img/comm1.jpg" alt="" class="comm_l"/>					
+				<div class="comm_r">
+					<img src="img/comm2.jpg" alt="" class="comm_r"/>					
+				</div>
+				<div class="comm_b">
+					<img src="img/comm3.jpg" alt="" class="comm_r1" />
+					<img src="img/comm4.jpg" alt="" class="comm_r2"/>	
+				</div>
+			</div>
+		</div>
+
+		<div class="comm2 section" style="display:block !important">
+			<div class="wrapper">
+				<div class="left">
+					<div>
+						<a style="cursor:pointer"><img src="img/btn_comm2_1.jpg" alt="" /></a>
+						<a style="cursor:pointer"><img src="img/btn_comm2_2.jpg" alt="" /></a>
+					</div>
+						<a style="cursor:pointer"><img src="img/btn_comm2_3.jpg" alt="" /></a>
+				</div>
+				<a style="cursor:pointer"><img src="img/btn_comm2_4.jpg" alt="" class="right" /></a>
+			</div>
+		</div>
+
+		<div class="state section" style="display:block !important">
+			<img src="img/img_state.jpg" alt="" />
+		</div>
+
+		<div class="map section" style="display:block !important">
+			<div class="korea">
+				<a href="#"></a>			
+			</div>
+			<div class="map_on">
+				<div>
+					<a href="#"></a>
+				</div>				
+				<img src="img/bg_map_on.png" alt="" />				
+			</div>
+			<span class="dim"></span>
+		</div>
+	</div>
+	<script type="text/javascript">
+	//<![CDATA[
+
+	$(window).resize(function(){
+		$('.visual .grid, .visual .video_slide').css('height',$(window).height());
+	})
+
+	$(document).mousewheel(function(event, delta) {
+		if (delta < 0) {
+			if($(window).scrollTop() <= 500) {
+				$('html, body').stop().animate({
+					'scrollTop':$(window).height()
+				},500);
+			};
+		}
+
+		else {
+			if($(window).scrollTop() <= $(window).height()) {
+				$('html, body').stop().animate({
+					'scrollTop':0
+				},500);
+			};
+		}
+	});
+
+	$(document).ready(function() {
+		$('.visual .grid, .visual .video_slide, .visual .dim').css('height',$(window).height());
+		$('#container').fullpage({
+			verticalCentered: true,
+			scrollBar: true,
+			afterLoad: function(anchorLink, index){
+				var loadedSection = $(this);
+				if (index >= 2){
+					$.fn.fullpage.setAllowScrolling(false);
+					$.fn.fullpage.setResponsive(true);
+				}
+			},
+
+			onLeave: function(index, nextIndex, direction){
+				var leavingSection = $(this);
+
+				if(index == 1 && direction =='down'){
+					$('.visual img').stop().animate({
+						'opacity':0
+					},300);
+
+					$('.visual .dim').css('display','inline-block')
+					.stop().animate({
+						'opacity':0.8
+					},600);
+
+					$('.notice').fadeOut(700);
+
+					$('.komico').stop().animate({
+						'opacity':1
+					},600);
+				}
+
+				if(index == 2 && direction == 'up'){
+					$('.visual img').stop().animate({
+						'opacity':1
+					},300);
+
+					$('.visual .dim').fadeOut(600);
+					$('.notice').fadeIn(700);
+
+					$('.komico').stop().animate({
+						'opacity':0
+					},600);
+				}
+
+				if(index == 2 && direction == 'down'){
+					$('.comm_l').stop().animate({
+						top:0,
+						opacity:1
+					},300);
+
+					$('.comm_r').stop().delay(300).animate({
+						top:0,
+						opacity:1
+					},300);
+
+					$('.comm_r1').stop().delay(400).animate({
+						top:0,
+						opacity:1
+					},300);
+
+					$('.comm_r2').stop().delay(500).animate({
+						top:0,
+						opacity:1
+					},300);
+				}
+
+			}
+		});
+	});
+
+	$(function(){
+		$('#header li.work').mouseenter(function(){
+			$('#header').stop().animate({'height':130},200);
+			$(this).find('.depth2').css('display','inline-block');
+		});
+
+		$('#header').mouseleave(function(){
+			$(this).stop().animate({'height':80});
+			$(this).css('heigth',80);
+			$(this).find('.depth2').css('display','none');
+		});
+
+		$('.visual .video_slide .img1').delay(400).animate({
+			top:0,
+			opacity:1
+		},700);
+
+		$('.visual .video_slide .img2').delay(700).animate({
+			top:0,
+			opacity:1
+		},700);
+
+		$('.visual .indicator img, .visual .mouse img').delay(1400).animate({
+			top:0,
+			opacity:1
+		},700);
+
+		var s = 0
+		$('.btn_search').click(function(){
+			s++;
+			if (s%2 == 0){
+				$(this).attr('src','img/btn_search.jpg');
+				$('.search').css('display','none');
+
+			}
+			else {
+				$(this).attr('src','img/btn_search_on.jpg');
+				$('.search').css('display','block');
+			}
+		});
+
+		$('.btn_menu').click(function(){
+			$('.btn_active').css('top',0);
+			$('.menu1').css('display','block');
+
+
+		});
+
+		$('.menu1 .personal').click(function(){
+			$('.menu1').css('display','none');
+			$('.menu2').css('display','block');
+		});
+
+		var d = 0;
+		$('.menu1 .depth').click(function(){
+			d++;
+			if (d%2 == 0){
+				$('.menu1').css('background-image','url(img/bg_menu1.png)');
+
+			}
+			else {
+				$('.menu1').css('background-image','url(img/bg_menu1_1.png)');
+			}
+		});
+
+		$('.menu2 .all').click(function(){
+			$('.menu1').css('display','block');
+			$('.menu2').css('display','none');
+		});
+
+
+		$('.menu_close').click(function(){
+			$('.btn_active').css('top',80);
+			$('.menu1, .menu2').css('display','none');
+		});
+
+		$('.map .korea a').click(function(e){
+			e.preventDefault();
+			$('.map_on').css('display','block');
+			$('.map .dim').css({
+				'width':'100%',
+				'height':1032
+			});
+		});
+
+		$('.map .map_on a').click(function(e){
+			e.preventDefault();
+			$('.map_on').css('display','none');
+			$('.map .dim').css({
+				'width':0,
+				'height':0
+			});
+		});
+
+		$('.notice').click(function(e){
+			e.preventDefault();
+			location.href='../mobile/main.html';
+		});
+
+		$('.comm2 img').each(function(i){
+			i++;
+			$(this).on({
+				'mouseenter':function(){
+					$(this).attr('src','img/btn_comm2_' + i + '_on.jpg');
+				},
+				'mouseleave':function(){
+					$(this).attr('src','img/btn_comm2_' + i + '.jpg');
+				}
+			})
+		});
+
+/*
+		$(document).on('mousewheel.disableScroll, scroll.disableScroll', function(e) {
+			console.log('asdfds');
+			e.preventDefault();
+			return;
+		});
+
+*/
+		$('.visual').each(function () {
+			var $video_slides = $(this).find('.video_slide'),
+				video_slideCount = $video_slides.length,
+				currentIndex = 0;
+
+			$video_slides.hide();
+			$video_slides.eq(currentIndex).fadeIn(100);
+			setInterval(showNextVideoSlide, 6000);
+
+			$('.indicator .go_on').click(function(){
+				showNextVideoSlide();
+			})
+
+			function showNextVideoSlide () {
+				var nextIndex = (currentIndex + 1) % video_slideCount;
+				$video_slides.eq(currentIndex).fadeOut(1000);
+				$video_slides.eq(nextIndex).fadeIn(500);
+				currentIndex = nextIndex;
+			}
+		});
+		//]]>
+	});
+	</script>
+</body>
+</html>
+
+

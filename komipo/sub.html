@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/html5shiv.min.js"></script>
+<![endif]-->
+<title>Document</title>
+</head>
+<body>
+	<div id="header">
+		<div class="wrapper">
+			<h1><a href="index.html"><img src="img/logo.png" alt="KOMIPO" /></a></h1>
+			<ul>
+				<li><a href="#">KOMIPO</a></li>
+				<li class="gov"><a href="#"><img src="img/gov3.jpg" alt="정부3.0" />정보공개</a></li>
+				<li class="work">
+					<a href="#">사업소개</a>
+					<ul class="depth2">
+						<li><a href="#">발전소</a></li>
+						<li><a href="#">국내사업</a></li>
+						<li><a href="#">해외사업</a></li>
+						<li><a href="#">에너지신사업</a></li>
+					</ul>
+				</li>
+				<li><a href="#">경영공시</a></li>
+				<li><a href="#">열린경영</a></li>
+				<li><a href="#">동반성장</a></li>
+				<li><a href="#">홍보·참여</a></li>
+			</ul>
+			<div class="btn_area">
+				<button><img src="img/btn_search.jpg" alt="검색" class="btn_search"/></button>
+				<button><img src="img/btn_menu.jpg" alt="전체메뉴" class="btn_menu"/></button>			
+			</div>
+		</div>
+	</div>
+	
+	<div class="btn_active">
+		<div class="search"></div>
+		<div class="menu1">
+			<a href="#" class="menu_close"></a><br>
+			<a href="#" class="personal"></a><br>
+			<a href="#" class="depth"></a>
+		</div>
+		<div class="menu2">
+			<a href="#" class="menu_close"></a><br>
+			<a href="#" class="all"></a>
+		</div>
+	</div>
+	<div id="container" class="sub" style="padding-top:80px">
+		<div class="facebook_active">
+			<img src="img/bg_facebook.png" alt="" />
+			<div>
+				<a href="#"></a>
+			</div>
+		</div>
+		<div class="sub1">
+			<div class="facebook">
+				<a href="#"></a>
+			</div>
+		</div>
+		<div class="sub2">
+			<div class="icon">
+				<img src="img/ico_sub1.jpg" alt="" />
+				<img src="img/ico_sub2.jpg" alt="" />
+				<img src="img/ico_sub3.jpg" alt="" />
+				<img src="img/ico_sub4.jpg" alt="" />
+				<img src="img/ico_sub5.jpg" alt="" />
+			</div>
+		</div>
+		<div class="dimm"></div>
+	</div>
+	<script type="text/javascript">
+	var	headerHeight = $('#header').height(),
+		slideHeight = $(window).width() / 2,
+		typoTop = (slideHeight - 260) / 2;
+
+	$(function(){
+		$('#header li.work').mouseenter(function(){
+			$('#header').stop().animate({'height':130},200);
+			$(this).find('.depth2').css('display','inline-block');
+		});
+
+		$('#header').mouseleave(function(){
+			$(this).stop().animate({'height':80});
+			$(this).css('heigth',80);
+			$(this).find('.depth2').css('display','none');
+		});
+		
+		var s = 0
+		$('.btn_search').click(function(){
+			s++;
+			if (s%2 == 0){
+				$(this).attr('src','img/btn_search.jpg');
+				$('.search').css('display','none');
+
+			}
+			else {
+				$(this).attr('src','img/btn_search_on.jpg');
+				$('.search').css('display','block');
+			}
+		});
+
+		$('.btn_menu').click(function(){
+			$('.btn_active').css('top',0);
+			$('.menu1').css('display','block');
+		});
+
+		$('.menu1 .personal').click(function(){
+			$('.menu1').css('display','none');
+			$('.menu2').css('display','block');
+		});
+
+		var d = 0;
+		$('.menu1 .depth').click(function(){
+			d++;
+			if (d%2 == 0){
+				$('.menu1').css('background-image','url(img/bg_menu1.png)');
+
+			}
+			else {
+				$('.menu1').css('background-image','url(img/bg_menu1_1.png)');
+			}
+		});
+
+		$('.menu2 .all').click(function(){
+			$('.menu1').css('display','block');
+			$('.menu2').css('display','none');
+		});
+
+		$('.menu_close').click(function(){
+			$('.btn_active').css('top',80);
+			$('.menu1, .menu2').css('display','none');
+		});
+
+		$('.facebook a').click(function(){
+			$('.facebook_active').css('display','block');
+			$('.dimm').css({
+				'width':'100%',
+				'height':$('#header').height() + $('#container').height()
+			});
+		});
+
+		$('.facebook_active a').click(function(){
+			$('.facebook_active').css('display','none');
+			$('.dimm').css({
+				'width':0,
+				'height':0
+			});
+		});
+
+		$('.sub2 img').each(function(i){
+			$(this).stop().delay(i*500).animate({
+				'opacity':1,
+				'top':0
+			});
+		})
+	});
+	</script>
+</body>
+</html>
+
+

@@ -1,0 +1,51 @@
+$dark: #28292b;
+$light: #797b82;
+$purple: #7852cc;
+$green: #25c16f;
+$cyan: #14b4d6;
+$blue: #4f9bf5;
+$red: #f6705e;
+$border: 1px solid #d7d8db;
+$border-light: 1px solid #eDeff3;
+
+@mixin subhead {
+  > span:first-child {
+    padding: 4px 10px;
+    display: inline-block;
+    border-radius: 5px;
+    &.purple {
+      color: $purple;
+      background-color: #ebe5f8;
+    }
+    &.cyan {
+      color: $cyan;
+      background-color: #dcf4f9;
+    }
+    &.blue {
+      color: $blue;
+      background-color: #e5f0fe;
+    }
+  } 
+}
+
+@mixin bold {
+  font-weight: 700;
+  color: $dark;
+}
+
+@mixin arrow {
+  content: '';
+  margin-left: 10px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  background: url('/resources/img/img_arrow_circle.png');
+}
+
+@mixin shadow {
+  transition: all .2s;
+  &:hover {    
+    box-shadow: 0px 0px 20px 5px rgba(62,63,66,0.12);
+  }
+}

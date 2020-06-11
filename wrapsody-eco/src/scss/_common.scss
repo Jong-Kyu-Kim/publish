@@ -1,0 +1,201 @@
+.skip {
+  display: none;
+  text-align: center;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.inner {
+  margin: 0 auto;
+  width: 1100px;
+}
+
+.btn {
+  display: inline-block;
+  width: 148px;  
+  height: 46px;
+  text-align: center;
+  line-height: 44px;
+  color: $green;
+  background-color: #fff;
+  border: 1px solid #fff;    
+  border-radius: 5px;
+  transition: all .2s;
+  &:hover  {
+    color: #fff;
+    background-color: $green;
+    border-color: $green;
+  }
+  &.primary {
+    color: #fff;
+    background-color: $green;
+    border-color: $green;
+    &:hover {
+      background-color: #2dd67c;
+      border-color: #2dd67c;
+    }
+  }
+  & + .btn {
+    margin-left: 17px;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;  
+  height: 80px;
+  border-bottom: 1px solid transparent;
+  background-color: transparent;
+  transition: all .2s;
+  z-index: 1;
+  > .inner {
+    padding: 0 30px;
+    > * {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    h1 {
+      background-image: url('/resources/img/img_logo.png');
+      background-repeat:  no-repeat;
+      background-size: 100%;
+      a {
+        display: block;
+        width: 156px;
+        height: 30px;
+        font-size: 0;
+      }      
+    }
+    ul > li {
+      position: relative;
+      display: inline-block;
+    }
+    nav {
+      margin-left: 370px;
+      > ul {
+        > li {
+          margin-left: 40px;
+          > a {
+            display: inline-block;
+            height: 78px;
+            line-height: 78px;
+            color: $dark;
+            border-bottom: 2px solid transparent;
+            transition: all .2s;
+            > span {
+              margin-left: 5px;
+              visibility: hidden;
+            }
+          }
+          &:hover > a {
+            color: $green;
+            border-color: $green;
+            > span {
+              visibility: visible;
+            }
+          }
+          &:hover > ul {
+            display: block;
+          }
+          > ul {
+            position: absolute;
+            top: 60px;
+            left: -20px;
+            display: none;  
+            padding: 15px 20px;
+            width: 175px;
+            line-height: 36px;
+            z-index: 1;
+            background-color: #fff;
+            border: $border;
+            border-radius: 5px;
+            > li {
+              display: block;
+              a {
+                color: #2e2e2e;
+                &:hover {
+                  color: $green;
+                }
+              }
+            }
+          }
+        }  
+      }
+      + div {
+        li {
+          margin-left: 20px;
+          a {
+            display: inline-block;
+            padding-left: 40px;
+            height: 16px;
+            line-height: 16px;
+            color: $green;
+            border-left: $border-light;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+  &.on {
+    background-color: #fff;    
+    border-color:#e8e8e8;
+  }
+}
+
+
+footer {
+  padding-bottom: 70px;
+  .inner {
+    overflow: hidden;
+    > span {
+      float: left;
+      margin: 3px 20px 0 0;
+      font-size: 14px;
+      color: $light;
+    }
+    > ul {
+      &:nth-child(2) {
+        float: left;
+        li {
+          float: left;
+          margin-right: 30px;  
+          a {
+            font-size: 14px;
+            color: $dark;
+          }
+        }
+      }
+      &:nth-child(3) {
+        float: right;
+        font-size: 0;
+        li {
+          display: inline-block;
+          margin-left: 20px;            
+          a {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            font-size: 0;
+            background-repeat: no-repeat;
+            background-size: 28px;
+            &.global {
+              background-image: url('/resources/img/ico_global.png');
+            }
+            &.facebook {
+              background-image: url('/resources/img/ico_facebook.png');
+            }
+            &.youtube {
+              background-image: url('/resources/img/ico_youtube.png');
+            }
+            &.insta {
+              background-image: url('/resources/img/ico_insta.png');
+            }
+            &.blog {
+              background-image: url('/resources/img/ico_blog.png');
+            }                      
+          }
+        }
+      }
+    }
+  }
+}

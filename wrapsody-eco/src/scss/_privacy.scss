@@ -1,0 +1,39 @@
+#content {
+  &.privacy {
+    section {
+      padding: 160px 0 120px;
+      .inner > ul > li {
+        margin-top: 80px;
+        table {
+          margin-top: 16px;
+          th, td {
+            padding: 5px 10px;
+            vertical-align: middle;
+            border: $border;
+          }
+          th {
+            text-align: center;
+            color: $dark;
+            background-color: #eee;
+          }
+        }
+        p {
+          margin-top: 16px
+        }
+        > ul {
+          > li {
+            margin-top: 30px;
+            li {
+              &:first-child {
+                margin-top: 16px;
+              }
+              p {
+                margin-top: 0;
+              }
+            } 
+          }
+        }
+      }
+    }    
+  }
+}

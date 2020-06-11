@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('./include/head.html')
+<body>
+  @@include('./include/header.html', { 'header': 'form' })
+  <div id="content" class="form">
+    <section>
+      <div class="inner">
+        <h2>궁금한 사항이 있으신가요?</h2>
+        <p>아래 정보를 남겨주시면 Wrapsody eCo 담당자 또는 리셀러가 연락드리겠습니다.</p>
+        <div>
+          <form action="">
+            <div>
+              <label for="">이름 <span>*</span></label>
+              <input type="text">
+              <p>이름을 입력하세요.</p>
+            </div>
+            <div>
+              <label for="">이메일 주소 <span>*</span></label>
+              <input type="text">
+              <p>이메일 주소를 입력하세요.</p>
+            </div>
+            <div>
+              <label for="">회사 이름 <span>*</span></label>
+              <input type="text">
+              <p>회사 이름을 입력하세요.</p>
+            </div>
+            <div>
+              <label for="">회사 규모 <span>*</span></label>
+              <select name="" id="">
+                <option value="" selected disabled>선택</option>
+                <option value="1">1 - 49</option>
+                <option value="50">50 - 499</option>
+                <option value="500">500 - 199</option>
+                <option value="2000">2000+</option>
+              </select>
+              <p>회사 규모를 선택해주세요.</p>
+            </div>
+            <div>
+              <label for="">메시지 <span>*</span></label>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <p>메시지를 입력해주세요.</p>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="agree">
+              <label for="agree">
+                <a rel="noopener noreferrer">이용 약관</a> 및 <a>개인정보처리방침</a>에 동의합니다.
+              </label>
+              <p>체크박스를 선택해주세요.</p>
+            </div>
+            <div>
+              <button class="btn primary">보내기</button>
+            </div>            
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  @@include('./include/footer.html')
+  <script>
+    $(function() {
+      $input = $('input, select, textarea');
+      $input.on('change keyup', function() {        
+        var $this = $(this);
+        console.log($this.val())
+        if ($this.val() || ($this.attr('type') === 'checkbox' && $this.prop('checked'))) {
+          $(this).parent().removeClass('red');
+        }
+      })
+
+      $('button').click(function(e) {
+        e.preventDefault();
+        $input.each(function(){
+          var $this = $(this);
+          if (!$this.val() || ($this.attr('type') === 'checkbox' && !$this.prop('checked'))) {
+            $(this).parent().addClass('red');
+          }
+        });
+        if ($(this).parent().siblings('.red').length === 0) {
+          console.log('sb')
+          document.form.submit();
+        }
+      })
+    })
+  </script>
+</body>
+
+</html>

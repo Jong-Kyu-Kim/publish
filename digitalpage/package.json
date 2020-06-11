@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "live-server --no-browser assets"
+    "start": "concurrently \"live-server --no-browser assets\" \"gulp\""
   },
   "devDependencies": {
     "gulp": "^4.0.2",

@@ -8,36 +8,74 @@
       font-weight: 700;
       font-size: 36px;
       color: $dark;
+      @include mobile {
+        margin-top: 30px;
+        font-size: 26px;
+        line-height: 36px;
+      }
       + p {
-        margin-top:  10px;
+        margin-top: 20px;
         text-align: center;
+        word-break: keep-all;
       }
     }
     ul {
       li {
-        margin-top: 170px;
+        margin-top: 80px;
         overflow: hidden;
+        @include mobile {
+          margin-top: 70px;
+          &:first-child {
+            margin-top: 50px;
+          }
+        }
         &:nth-child(odd) {
           div:nth-child(2) {
             text-align: right;
           }
-        }        
+        }
+        &:nth-child(even) {
+          div:nth-child(2) {
+            margin-left: 5%;
+            width: 45%;
+          }
+        }
         div {
           float: left;
           width: 50%;
+
+          @include mobile {
+            width: 100%;
+          }
           .num {
             font-size: 32px;
             font-weight: 700;
             color: #14b4d6;
+            @include mobile {
+              font-size: 26px;
+            }
           }
           .subject {
             line-height: 47px;
             font-size: 32px;
             font-weight: 700;
             color: $dark;
+            @include mobile {
+              font-size: 22px;
+              line-height: 32px;
+              br {
+                display: none;
+              }
+            }
           }
           .desc {
             margin-top: 20px;
+            @include mobile {
+              margin-top: 5px;
+              br {
+                display: none;
+              }
+            }
           }
           a {
             display: inline-block;
@@ -45,6 +83,10 @@
             font-size: 18px;
             font-weight: 700;
             color: $purple;
+            @include mobile {
+              margin: 15px 0 20px;
+              font-size: 16px;
+            }
             &::after {
               @include arrow;
             }
@@ -61,6 +103,9 @@
 
 #links {
   margin-top: 120px;
+  @include mobile {
+    margin-top: 60px;
+  }
   .inner {
     > p {
       font-size: 22px;
@@ -75,26 +120,56 @@
         display: inline-block;
         vertical-align: top;
         border: $border;
-        border-radius: 5px;
-        box-shadow: 0px 0px 30px 0 rgba(62,63,66,0.12);
+        border-radius: 8px;
+        box-shadow: 0px 0px 30px 0 rgba(62,63,66,0.05);
+        transition: background-color .2s;
+        &:hover {
+          box-shadow: 0px 0px 30px 0 rgba(62,63,66,0.15);
+        }
+        @include mobile {
+          width: 100%;
+        }
         &:nth-child(n+2) {
           margin-left: 40px;
+          @include mobile {
+            margin-top: 10px;
+            margin-left: 0;            
+          }
         }
         a {
           display: inline-block;
           padding: 20px 10px 40px;
           width: 220px;
           height: 170px;
+          text-align: center;
+          @include mobile {
+            padding: 0 15px 0 0;
+            width: calc(100% - 20px);
+            height: auto;
+            text-align: left;
+            img {
+              float: left;
+            }
+          }
           p {
-            margin-left: 15px;
             line-height: 31px;
-            font-size: 22px;
+            font-size: 20px;
             font-weight: 700;
             color: $dark;
+            @include mobile {
+              br {
+                display: none;
+              }
+              margin-top: 17px;
+              height: 31px;
+              font-size: 18px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
           }
           span {
             display: inline-block;
-            margin-left: 15px;
             &.cyan {
               color: $cyan;
             }

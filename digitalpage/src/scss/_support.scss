@@ -2,6 +2,9 @@
   background-image: url('/resources/img/support/bg_visual_support.png');
 }
 #left.support {
+  @include mobile {
+    display: none;
+  }
   > ul {
     > li {
       &:nth-child(n+2) {
@@ -32,11 +35,22 @@
     float: left;
     margin-left: 50px;
     width: 800px;
+    @include mobile {
+      margin-left: 0;
+      width: 100%;
+    }
   }
 }
 #content.support {
+  @include mobile {
+    padding-top: 30px;
+  }
   h3 {
     line-height: 47px;
+    @include mobile {
+      margin-top: 20px;
+      line-height: 26px;
+    }
   }
   h4 {
     + p {
@@ -45,10 +59,17 @@
   }
   section {
     &:nth-child(n+2) {
-      margin-top: 70px;
+      margin-top: 100px;
+      @include mobile {
+        margin-top: 60px;
+      }
     }
     div {
+      position: relative;
       margin-top: 40px;
+      @include mobile {
+        margin-top: 30px;  
+      }
     }
     ul {
       margin-top: 15px;
@@ -77,17 +98,65 @@
     label {
       display: block;
       margin: 40px 0 10px;
+      @include mobile {
+        margin: 0 0 5px;
+      }
+      + span {
+        @include mobile {
+          display: block;
+          width: 60%;
+          padding-right: calc(40% - 15px);
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
       + * {
         display: block;
         padding: 15px;
         width: calc(100% - 32px);
+        font-size: 16px;
         border: $border;
-        border-radius: 5px;     
+        border-radius: 8px;
+        &::-webkit-input-placeholder {
+          color: #aaa;
+        }        
+        @include mobile {
+          padding: 10px 15px;
+          -webkit-appearance: none;
+        }
+        + a {
+          position: absolute;
+          bottom: 10px;
+          right: 15px;
+          padding: 0 25px;
+          height: 38px;
+          line-height: 38px;
+          color: $dark;
+          border-radius: 8px;
+          border: $border;
+          transition: background-color .2s;
+          @include mobile {
+            bottom: 5px;
+            right: 3px;
+            padding: 0 10px;            
+          }
+        }
       }
     }
     textarea {
       height: 270px;
       resize: none;
+      &::-webkit-input-placeholder {
+        color: #aaa;
+      }
+      @include mobile {
+        height: 150px;
+      }
+    }
+
+    input[type=file] {
+      display: none;
     }
 
     button {
@@ -99,7 +168,18 @@
       text-align: center;        
       color: #fff;
       background-color: $purple;
-      border-radius: 5px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color .2s;
+      &:hover {
+        background-color: #8b5eef;
+      }
+      @include mobile {
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+        font-weight: 700;
+      }
     }
   }
 }

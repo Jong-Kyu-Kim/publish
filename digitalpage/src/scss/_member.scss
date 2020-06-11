@@ -6,17 +6,24 @@ header {
     .inner {
       text-align: center;
       h1 {
-        background-image: url('/resources/img/logo_l.png');
+        background-image: url('/resources/img/logo.png');
         a {
           width: 300px;
           height: 50px;
         }
+      }
+      > a {
+        display: none;
       }
     }
     + .inner {      
       margin-top: 150px;
       width: 430px;
       text-align: center;
+      @include mobile {
+        margin-top: 80px;
+        width: calc(100% - 60px);        
+      }
       h2 {
         margin-bottom: 5px;
         font-size: 22px;
@@ -30,7 +37,10 @@ header {
           font-size: 0;
           li {
             display: inline-block;
-            margin-left: 20px;            
+            margin-left: 20px;
+            @include mobile {
+              margin-left: 10px;
+            }
             a {
               display: block;
               width: 56px;
@@ -42,16 +52,28 @@ header {
               margin-left: 0px;
               a {
                 background-image: url('/resources/img/member/ico_facebook.png');
+                @include mobile {
+                  background-image: url('/resources/img/member/ico_facebook_m.png');
+                }
               }              
             }
             &:nth-child(2) a {
               background-image: url('/resources/img/member/ico_naver.png');
+              @include mobile {
+                background-image: url('/resources/img/member/ico_naver_m.png');
+              }
             }
             &:nth-child(3) a {
               background-image: url('/resources/img/member/ico_kakao.png');
+              @include mobile {
+                background-image: url('/resources/img/member/ico_kakao_m.png');
+              }
             }
             &:nth-child(4) a {
               background-image: url('/resources/img/member/ico_google.png');
+              @include mobile {
+                background-image: url('/resources/img/member/ico_google_m.png');
+              }
             }            
           }
         }
@@ -77,10 +99,22 @@ header {
           padding: 15px 20px;
           width: calc(100% - 40px);
           border: $border;
-          border-radius: 5px;
+          border-radius: 8px;
+          &::-webkit-input-placeholder {
+            color: #aaa;
+          }     
+          @include mobile {
+            padding: 10px 20px;
+            font-size: 16px;
+            -webkit-appearance: none;
+          }          
           + div {
             text-align: left;
             line-height: 56px;
+            @include mobile {
+              margin-bottom: 0px;
+              line-height: 26px;
+            }
             input[type=checkbox] {
               width: 0;
               height: 0;
@@ -88,12 +122,16 @@ header {
               + label {
                 padding-left: 30px;
                 background: url('/resources/img/member/img_checkbox.png') no-repeat left center;
-                span {
-                  color: $purple;
+                background-size: 20px;
+                @include mobile {
+                  background-image: url('/resources/img/member/img_checkbox_m.png');                  
                 }
               }
               &:checked + label {
                 background-image: url('/resources/img/member/img_checkbox_checked.png');
+                @include mobile {
+                  background-image: url('/resources/img/member/img_checkbox_checked_m.png');                  
+                }
               }
             }
             button {
@@ -102,14 +140,33 @@ header {
               width: 190px;
               height: 56px;
               color: #fff;
-              border-radius: 5px;
+              border-radius: 8px;
               background-color: $purple;
+              transition: background-color .2s;              
+              cursor: pointer;
+              &:hover {
+                background-color: #8b5eef;
+              }
+              @include mobile {
+                width: 100%;
+                height: 50px;
+                line-height: 50px;
+                font-size: 16px;
+                font-weight: 700;
+              }
               &.login {
                 margin: 0 auto;
                 float: right;
+                @include mobile {                  
+                  float: none;
+                  margin-top: 10px;
+                }
               }
               &.join {
-                width: 310px;                
+                width: 310px;
+                @include mobile {
+                  width: 100%;
+                }              
               }
             }
           }
@@ -117,13 +174,23 @@ header {
         a {
           color: $purple;
           font-weight: 700;
+          transition: background-color .2s;
+          &:hover {
+            color: #8b5eef;
+          }          
         }
         div {
-          &.forgot {
+          &.forgot {            
             margin-top: 30px;
+            @include mobile {
+              margin-top: 20px;
+            }
           }
           &.join, &.login {
             margin-top: 20px;
+            @include mobile {
+              margin-top: 10px;
+            }
             p {
               display: inline-block;
               margin-right: 5px;

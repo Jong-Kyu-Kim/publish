@@ -9,16 +9,30 @@
   width: 1100px;
 }
 
+@include mobile {
+	.inner {
+    position: relative;
+    padding: 0 30px;
+		width: calc(100% - 60px);
+	}
+}
+
 h3 {
   font-size: 32px;
   font-weight: 700;
   color: $dark;
+  @include mobile {
+    font-size: 26px;
+  }
 }
 
 h4 {
   font-size: 22px;
   font-weight: 700;
-  color: $dark; 
+  color: $dark;
+  @include mobile {
+    font-size: 18px;
+  }
 }
 
 header {
@@ -28,32 +42,78 @@ header {
   height: 80px;
   border-bottom: 1px solid rgba(242,242,242,.2);
   background-color: transparent;
-  transition: all .2s;
-  z-index: 1;
+  transition: background-color .2s;
+  z-index: 2;
+  @include mobile {
+    height: 63px !important;
+    line-height: !important;
+  }
   > .inner {
     padding: 0 30px;
+    @include mobile {
+      padding: 0 20px;
+      width: calc(100% - 40px);
+      height: 63px;
+      line-height: 60px;
+    }
     > * {
       display: inline-block;
       vertical-align: middle;
     }
     h1 {
       background: url('/resources/img/logo_transparent.png') no-repeat;
+      background-size: 100%;
       a {
         display: block;
         width: 242px;
         height: 40px;
-        font-size: 0;        
-      }      
+        font-size: 0;
+        @include mobile {
+          width: 202px !important;
+          height: 35px !important;
+        }
+      }
+      + a {
+        display: none;
+        float: right;
+        margin-top: 22px;
+        width: 20px;
+        height: 20px;
+        font-size: 0;
+        background: url('/resources/img/ico_menu.png') no-repeat;
+        background-size: 100%;
+        @include mobile {
+          display: block;
+        }
+        &.close {
+          margin-top: 24px;
+          width: 15px;
+          height: 15px;
+          background-image: url('/resources/img/ico_close.png');
+        }
+      }
     }
     ul > li {
       position: relative;
       display: inline-block;
     }
     nav {
-      margin-left: 172px;
+      margin-left: 120px;
       > ul {
         > li {
           margin-left: 32px;
+          &:nth-child(-n+2) {
+            > a::after {
+              content: '';
+              display: inline-block;
+              margin-left: 5px;
+              width: 10px;
+              height: 6px;
+              vertical-align: middle;
+              background: url('/resources/img/ico_dropdown_w.png') no-repeat;
+              background-size: 100%;
+            }
+          }         
           > a {
             display: inline-block;
             height: 78px;
@@ -76,14 +136,15 @@ header {
             display: none;  
             padding: 15px 20px;
             width: 175px;
-            line-height: 36px;
             z-index: 1;
             background-color: #fff;
             border: $border;
-            border-radius: 5px;
+            border-radius: 8px;
             > li {
               display: block;
               a {
+                display: block;
+                line-height: 36px;
                 color: #2e2e2e;
                 &:hover {
                   color: $purple;
@@ -95,37 +156,162 @@ header {
       }
       + div {
         li {
-          margin-left: 20px;
+          margin-left: 15px;
+          &:first-child {
+            margin-left: 33px;
+          }
           a {
             display: inline-block;
             padding: 0 25px;
             height: 38px;
             line-height: 38px;
             color: #fff;
-            border-radius: 5px;
+            border-radius: 8px;
             border: 1px solid transparent;
             background-color: $purple;
+            transition: all .2s;
+            &:hover {
+              background-color: #8b5eef;
+            }
           }
           &:first-child a {
             background-color: rgba(255, 255, 255, .15);
+            &:hover {
+              background-color: rgba(255, 255, 255, .35);
+            }
+          }
+        }
+      }
+    }
+    @include mobile {
+      nav {
+        position: fixed;
+        display: none;
+        top: 63px;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 63px);
+        overflow-y: auto;
+        background-color: #fff;
+        margin: 0;
+        > ul {
+          > li {
+            display: block;
+            margin: 0 30px;
+            &:nth-child(-n+2) {
+              > a {
+                &::after {
+                  content: '';
+                  position: absolute;
+                  top: 23px;
+                  right: 0;
+                  width: 16px;
+                  height: 10px;
+                  background: url('/resources/img/ico_dropdown.png') no-repeat;
+                  background-size: 100%;
+                }
+                &.on::after {
+                  background-image: url('/resources/img/ico_dropdown_on.png');
+                }
+              }
+            }
+            > a {
+              display: block;
+              height: 50px;
+              line-height: 50px;
+              font-size: 16px;
+              font-weight: 700;
+              color: #2e2e2e;
+              border: 0;
+              &:hover + * {
+                display: none;
+              }
+            }
+            &:hover > a + * {
+              display: none;
+            }
+            ul {
+              position: relative;
+              top: 0;
+              left: 0;
+              padding: 0;
+              margin-bottom: 10px;
+              display: none;
+              width: 100%;
+              border: 0;
+              li {
+                a {
+                  display: block;
+                  padding-left: 7px;
+                  height: 40px;
+                  line-height: 40px;
+                  font-size: 16px;
+                  color: #474747;
+                }
+              }
+            }
+          }
+        }
+        > div {
+          li {
+            display: block;
+            a {
+              display: block;
+              margin: 10px 30px 30px;
+              height: 50px;
+              line-height: 50px;
+              text-align: center;
+              color: #fff;
+              font-size: 16px;
+              font-weight: 700;
+              border-radius: 8px;
+              border: 1px solid $purple;
+              background-color: $purple;
+            }
+            &:first-child a {
+              margin-top: 20px;
+              margin-bottom: 10px;
+              color: $dark;
+              border: 1px solid #e0e0de;
+              background-color: rgba(255, 255, 255, .15);
+            }            
           }
         }
       }
     }
   }
-  &.on {
+  @include mobile {
+    > .inner {
+      padding: 0 20px;
+      width: calc(100% - 40px);
+      height: 63px;
+      line-height: 60px;
+    }
+  }
+  &.on, &.menu {
     background-color: #fff;    
     border-color:#e8e8e8;
     h1 {
       background-image: url('/resources/img/logo.png');
+      + a {
+        background-image: url('/resources/img/ico_menu_on.png');
+      }
     }
     nav {
-      ul > li {
+      > ul > li {
+        &:nth-child(-n+2) {
+          > a::after {
+            background-image: url('/resources/img/ico_dropdown_b.png');
+          }
+        }        
         > a {
           color: $dark;
           &:hover, &:focus {
             color: $purple;
             border-color: $purple;
+            &::after {
+              background-image: url('/resources/img/ico_dropdown_p.png');
+            }
           }
         }
         &:hover > a {
@@ -138,6 +324,10 @@ header {
           &:first-child a {
             color: $dark;
             border-color: #e8e8e8;
+            &:hover {
+              color: $purple;
+              border-color: $purple;
+            }
           }
         }
       }      
@@ -147,20 +337,36 @@ header {
 
 #visual {
   padding-top: 80px;
-  height: 270px;
+  height: 250px;
   text-align: center;
   background-size: cover;
   background-position: center;
+  @include mobile {
+    padding: 97px 0 40px;
+    height: auto;
+  }
   * {
     color: #fff;
   }
+  p {
+    @include mobile {
+      margin: 0 30px;
+    }
+  }
   h2 {
-    margin-top: 75px;
+    margin-top: 55px;
     font-size: 46px;
     font-weight: 700;
+    @include mobile {
+      margin-top: 0;
+      font-size: 30px;
+    }
   }
   + nav {
     border-bottom: $border;
+    @include mobile {
+      overflow-x: auto;
+    }    
     ul {
       text-align: center;
       overflow: hidden;
@@ -172,6 +378,9 @@ header {
           padding: 25px 30px;
           color: $dark;
           border-bottom: 2px solid transparent;
+          @include mobile {
+            padding: 15px 30px;
+          }
           &.on, &:hover, &:focus {
             color: $purple;
             border-color: $purple;
@@ -190,7 +399,7 @@ header {
 
 #left {
   float: left;
-  padding-top: 120px;
+  padding-top: 90px;
   width: 250px;
   background-color: #fff;
   &.fixed {
@@ -198,6 +407,9 @@ header {
     top: 90px;
     + #content {
       margin-left: 300px;
+      @include mobile {
+        margin-left: 0;
+      }
     }
   }
   &.absolute {
@@ -209,7 +421,10 @@ header {
 }
 
 #content {
-  padding-top: 120px;
+  padding-top: 80px;
+  @include mobile {
+    padding-top: 20px;
+  }
 }
 
 #plans {
@@ -217,18 +432,33 @@ header {
   padding-top: 65px;
   height: 255px;
   text-align: center;
-  background: url('/resources/img/bg_plans.png');
+  background: url('/resources/img/bg_plans.png') center;
+  @include mobile {
+    margin-top: 90px;
+    padding: 40px 0 50px;
+    height: auto;
+    background-position: left;
+    background-size: cover
+  }
   .inner {
     p {
       color: #fff;
       &:first-child {
-        font-size: 34px;
         margin-bottom: 15px;
+        font-size: 34px;
+        font-weight: 700;        
+        @include mobile {
+          font-size: 22px;
+          margin-bottom: 10px;
+        }
       }
     }
     div {
       margin-top: 30px;
       font-size: 0;
+      @include mobile {
+        margin-top: 10px;
+      }
       a {
         display: inline-block;
         margin: 0 15px;
@@ -236,7 +466,15 @@ header {
         height: 56px;
         line-height: 54px;
         border: 1px solid #fff;
-        border-radius: 5px;
+        border-radius: 8px;
+        @include mobile {
+          margin: 10px 0 0;
+          width: 100%;
+          height: 50px;
+          line-height: 46px;
+          font-size: 16px;
+          font-weight: 700;
+        }
         &:nth-child(1) {
           color: #fff;
         }
@@ -250,8 +488,16 @@ header {
 }
 
 footer {
-  padding: 75px 0 45px;
+  &.eng {
+    .inner div nav > ul {
+      width: 480px;
+    }
+  }
+  padding: 45px 0;
   background-color: #fafafa;
+  @include mobile {
+    padding: 40px 0 90px;
+  }
   .inner {
     div {
       overflow: hidden;
@@ -262,30 +508,58 @@ footer {
         vertical-align: top;
         font-size: 0;
         background: url('/resources/img/logo.png') no-repeat;
+        background-size: 100%;
+        @include mobile {
+          width: 202px;
+          height: 35px;
+        }
       }
       nav {
         float: right;
         padding-bottom: 40px;
-        overflow: hidden;        
+        overflow: hidden;
+        @include mobile {
+          float: none;
+        }
         > ul {      
           width: 420px;
           overflow: hidden;
+          @include mobile {
+            width: 100%;
+          }
           > li {
-            float: left;        
+            float: left;
+            @include mobile {
+              float: none;
+            }
             &:nth-child(-n+2) {
               margin-right: 70px;
               height: 316px;
+              @include mobile {
+                margin-top: 30px;
+                margin-right: 0;
+                height: auto;
+              }
             }
             &:nth-child(n+4) {
               margin-top: 50px;
             }
+            &:nth-child(n+3) {
+              @include mobile {
+                margin-top: 30px;
+              }
+            }            
             > a {
               line-height: 24px;
+              font-size: 16px;
               font-weight: 700;
-              color: $dark;
+              color: $dark;              
             }
             > ul {
               margin-top: 8px;
+              @include mobile {
+                margin-left: 7px;
+              }
               > li > a {
                 line-height: 40px;
               }
@@ -302,44 +576,87 @@ footer {
           margin: 3px 20px 0 0;
           font-size: 14px;
           color: $light;
+          @include mobile {
+            position: absolute;
+            bottom: -50px;
+          }
         }
         > ul {
           &:nth-child(2) {
             float: left;
+            @include mobile {
+              float: none;
+            }
             li {
               float: left;
-              margin-right: 30px;  
+              margin-right: 30px;
+              @include mobile {
+                float: none;
+                &:nth-child(n+2) {
+                  margin-top: 30px;
+                }
+              }
               a {
                 font-size: 14px;
                 color: $dark;
-              }
+                @include mobile {
+                  font-size: 16px;
+                  font-weight: 700;
+
+                }
+              }              
             }
           }
           &:nth-child(3) {
             float: right;
             font-size: 0;
+            @include mobile {
+              float: none;
+              margin-top: 30px;
+            }
             li {
               display: inline-block;
-              margin-left: 15px;            
+              margin-left: 15px;
+              @include mobile {
+                &:first-child {
+                  margin-left: 0;
+                }
+              }
               a {
                 display: inline-block;
                 width: 28px;
                 height: 28px;
                 font-size: 0;
+                background-size: 100%;
                 &.global {
-                  background: url('/resources/img/ico_global.png') no-repeat;
+                  background-image: url('/resources/img/ico_global.png');
+                  @include mobile {
+                    background-image: url('/resources/img/ico_global_m.png');
+                  }
                 }
                 &.facebook {
-                  background: url('/resources/img/ico_facebook.png') no-repeat;
+                  background-image: url('/resources/img/ico_facebook.png');
+                  @include mobile {
+                    background-image: url('/resources/img/ico_facebook_m.png');
+                  }
                 }
                 &.youtube {
-                  background: url('/resources/img/ico_youtube.png') no-repeat;
+                  background-image: url('/resources/img/ico_youtube.png');
+                  @include mobile {
+                    background-image: url('/resources/img/ico_youtube_m.png');
+                  }
                 }
                 &.insta {
-                  background: url('/resources/img/ico_insta.png') no-repeat;
+                  background-image: url('/resources/img/ico_insta.png');
+                  @include mobile {
+                    background-image: url('/resources/img/ico_insta_m.png');
+                  }
                 }
                 &.blog {
-                  background: url('/resources/img/ico_blog.png') no-repeat;
+                  background-image: url('/resources/img/ico_blog.png');
+                  @include mobile {
+                    background-image: url('/resources/img/ico_blog_m.png');
+                  }
                 }                      
               }
             }

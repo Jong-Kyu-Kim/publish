@@ -5,11 +5,33 @@ $cyan: #14b4d6;
 $blue: #4f9bf5;
 $border: 1px solid #e8e8e8;
 
+$breakpoint-mobile: 320px;
+$breakpoint-tablet: 758px;
+$breakpoint-desktop: 1024px;
+
+@mixin mobile {
+  @media (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-tablet - 1px}) {
+    @content;
+  }
+}
+
+// @mixin tablet {
+//   @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - 1px}) {
+//     @content;
+//   }
+// }
+
+@mixin desktop {
+  @media (min-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}
+
 @mixin subhead {
   span:first-child {
     padding: 4px 10px;
     display: inline-block;
-    border-radius: 5px;
+    border-radius: 8px;
     &.purple {
       color: $purple;
       background-color: #ebe5f8;
@@ -33,4 +55,8 @@ $border: 1px solid #e8e8e8;
   height: 30px;
   vertical-align: middle;
   background: url('/resources/img/img_arrow_circle.png');
+  background-size: 100%;
+  @include mobile {
+    background-image: url('/resources/img/img_arrow_circle_m.png');
+  }
 }

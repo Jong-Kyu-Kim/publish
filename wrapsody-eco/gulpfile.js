@@ -44,7 +44,10 @@ function clean() {
 function styles() {
   return gulp.src(paths.styles.src)
     .pipe(sourcemaps.init())
-    .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+    .pipe(sass({
+       outputStyle: 'compressed'
+       //outputStyle: 'expanded'
+    }).on('error', sass.logError))
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(paths.styles.dest));
 }

@@ -105,17 +105,15 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-body {
-	position: relative;
-	min-width: 1160px;
-}
-
 body, a {	
 	font-family: 'NotoSans', sans-serif;
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 1.75;
 	color: $light;
+	@include mobile {
+		font-size: 14px;
+	}
 }
 
 h2 {
@@ -124,6 +122,10 @@ h2 {
 	line-height: 140%;
 	font-size: 34px;
 	@include bold;
+	@include mobile {
+		margin: 10px 0;
+		font-size: 24px;
+	}
 	+ p {
 		margin-top: 10px;
 		text-align: center;

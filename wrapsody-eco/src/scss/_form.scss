@@ -3,6 +3,9 @@ header {
     >.inner {
       h1 {
         background-image: url('/resources/img/img_logo_form.png');
+        + span {
+          background-image: url('/resources/img/ico_menu.png');
+        }
       }
       nav {
         > ul {
@@ -11,9 +14,9 @@ header {
               color: #fff;
             }
             &:hover {
-             > a {
-               border-color: #fff;
-             }
+              > a {
+                border-color: #fff;
+              }
             }
           }
         }
@@ -21,25 +24,64 @@ header {
           li {
             a {
               color: #fff;
-
             }
           }
         }
       }
     }
     &.on {
-      background-color: #36bf7a;
-      border-color:  #36bf7a;
+      >.inner {
+        h1 {
+          background-image: url('/resources/img/img_logo.png');
+          + span {
+            background-image: url('/resources/img/ico_menu_on.png');
+            &.close {
+              background-image: url('/resources/img/ico_close.png');
+            }
+          }          
+        }
+        nav {
+          > ul {
+            > li {
+              > a {
+                color: #28292b;
+              }
+              &:hover {
+                > a {
+                  color: $green;
+                  border-color: $green;
+                }
+              }
+            }
+          }
+          + div {
+            li {
+              a {
+                color: $green;
+              }
+            }
+          }
+        }
+      }
     }    
   }
 }
 
 #content {
   &.form {
-    background: url('/resources/img/bg_form.png') top center no-repeat;
-    background-size: 100%;
+    background: url('/resources/img/bg_form.png') top right no-repeat;
+    @media (min-width: 1920px) {
+      background-size: 100%;
+    }    
+    @include mobile {
+      background-position: top -400px center;
+      background-size: cover;
+    }
     section {
       padding: 160px 0 120px;
+      @include mobile {
+        padding: 90px 0 60px;
+      }
       .inner {
         h2, h2 + p {
           color: #fff;
@@ -52,11 +94,22 @@ header {
           box-shadow: 0px 0px 60px rgba(62, 63, 66, 0.1);
           border-radius: 10px;
           background-color: #fff;
+          @include mobile {
+            padding: 30px 20px;
+            width: 100%;
+            box-sizing: border-box;
+          }
           div {
             float: left;
             width: 350px;
+            @include mobile {
+              width: 100%;
+            }            
             &:nth-child(even) {
               margin-left: 30px;
+              @include mobile {
+                margin-left: 0;
+              }
             }
             &:nth-child(n+3) {
               margin-top: 5px;
@@ -92,25 +145,40 @@ header {
               box-sizing: border-box;
               border: $border;
               border-radius: 5px;
+              @include mobile {
+                width: 100%;
+                box-sizing: border-box;
+                font-size: 16px;
+                -webkit-appearance: none;           
+              }
             }
             textarea {
               width: 730px;
               height: 120px;
               resize: none;
               overflow: auto;
+              @include mobile {
+                width: 100%;
+                box-sizing: border-box;
+                font-size: 16px;                
+              }              
             }
             input[type=checkbox] {
               display: none;
               & + label {
                 padding-left: 24px;
                 background-image: url('/resources/img/ico_checkbox.png');
-                background-position: top 5px left;
+                background-position: center left;
                 background-size: 16px;
                 background-repeat: no-repeat;
               }
               &:checked + label {
                 background-image: url('/resources/img/ico_checkbox_checked.png');
               }
+            }
+            button {
+              display: block;
+              margin: 0 auto;
             }
           }
         }

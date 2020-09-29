@@ -1,0 +1,51 @@
+.tree {
+  height: 370px;
+  border-top: $border-light;
+  > ul {    
+    > li {
+      > button {
+        padding: 0 26px !important;
+        + ul {
+          display: none;
+        }
+      }
+      button {
+        padding: 0 15px;
+        width: 100%;
+        height: 52px !important;
+        text-align: left;
+        cursor: default;
+        outline: none;
+        span {
+          color: $text-dark;
+        }
+        &:hover, &:focus {
+          background-color: #F2F4F7;
+        }
+        &:not(.caret) {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          &.checked {
+            background-color: rgba(40, 113, 245, 0.08) !important;
+          }
+          div {
+            display: flex;
+            align-items: center;
+            &:first-child {
+              margin-left: 25px;
+            }
+            &:last-child {
+              margin-right: 10px;
+            }            
+          }
+          .avatar {
+            + span {
+              width: auto
+            }            
+          }
+        }
+      }
+    }    
+  }
+}

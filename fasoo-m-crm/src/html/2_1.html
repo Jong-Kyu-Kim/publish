@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('./include/head.html', { 'title': '기업 정보' })
+<body>
+  <div id="container">
+    @@include('./include/sidebar.html')
+    <main class="scrollbar">
+      <header>
+        <div>
+          <h2>
+            <span class="current">기업 정보</span>            
+          </h2>
+          <a href="">
+            <span>마케팅 DB 조회</span>
+          </a>          
+        </div>
+  
+        <div>
+          <div>
+            <a href="./2_2.html" class="btn primary plus">
+              <span>기업 코드 신청</span>
+            </a>
+            <a href="./2_3.html" class="btn secondary cog">
+              <span>기업 정보 관리</span>
+            </a>
+          </div>
+          <div>
+            <input type="text" class="search global" placeholder="검색어를 입력하세요.">
+          </div>          
+        </div>
+  
+        <div>
+          <div>
+            <div class="dropdown">
+              <button class="filter">
+                <span>분류</span>
+                <span></span>
+              </button>
+              <div class="items">
+                <div class="check">
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="filter1-1" />
+                      <label for="filter1-1"><span>고객사</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="filter1-2"" />
+                      <label for="filter1-2"><span>매입사</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="filter1-3" />
+                      <label for="filter1-3"><span>협럭사</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="filter1-4" />
+                      <label for="filter1-4"><span>파트너사</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="filter1-5" />
+                      <label for="filter1-5"><span>영업</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="filter1-6" />
+                      <label for="filter1-6"><span>PM</span></label>
+                    </li>                
+                  </ul>
+                </div>
+                <div class="flex between">
+                  <button class="uncheck">
+                    <span>전체 선택 해제</span>
+                  </button>
+                  <button class="btn primary">
+                    <span>확인</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <button class="filter on"> <!-- 활성화 된 필터 class: on-->
+                <span>업종</span>
+                <span>사업기획 + 1</span> <!-- 첫번째 체크 항목 + 개수-->
+              </button>
+              <div class="items">
+                <div class="check">
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="filter2-1">
+                      <label for="filter2-1"><span>제품 담당</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="filter2-2">
+                      <label for="filter2-2"><span>사업 기획</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="filter2-3">
+                      <label for="filter2-3"><span>보안 담당</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="filter2-4">
+                      <label for="filter2-4"><span>유지 보수</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="filter2-5">
+                      <label for="filter2-5"><span>영업</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="filter2-6">
+                      <label for="filter2-6"><span>PM</span></label>
+                    </li>                
+                  </ul>
+                </div>
+                <div class="flex between">
+                  <button class="uncheck">
+                    <span>전체 선택 해제</span>
+                  </button>
+                  <button class="btn primary">
+                    <span>확인</span>
+                  </button>
+                </div>
+              </div>        
+            </div>
+          </div>
+        </div>
+  
+        <div class="mb0">
+          <div class="tabs" role="tablist">
+            <button role="tab" aria-selected="true" class="selected">
+              <span>전체 기업</span>                
+            </button>
+            <button role="tab" aria-selected="false">
+              <span>내 신청 내역</span>
+            </button>
+            <button role="tab" aria-selected="false">
+              <span>내 담당 기업</span>                
+            </button>            
+          </div>
+        </div>
+      </header>
+  
+      <div id="content">
+        <div class="table_sort">
+          <table>
+            <colgroup>
+              <col style="width:30%;" />
+              <col style="width:10%;" />
+              <col style="width:10%;" />
+              <col style="width:25%" />
+              <col style="width:25%;" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">
+                  <button>
+                    <span>기업명</span>
+                  </button>
+                </th>
+                <th scope="col">
+                  <button>
+                    <span>분류</span>
+                  </button>
+                </th>
+                <th scope="col">
+                  <button class="asc">
+                    <span>업종</span>
+                  </button>
+                </th>
+                <th scope="col">
+                  <button class="desc">
+                    <span>주소</span>
+                  </button>
+                </th>
+                <th scope="col">
+                  <button class="asc">
+                    <span>비고</span>
+                  </button>
+                </th>
+              </tr>
+            </thead>
+          </table>          
+          <table>
+            <colgroup>
+              <col style="width:30%;" />
+              <col style="width:10%;" />
+              <col style="width:10%;" />
+              <col style="width:25%" />
+              <col style="width:25%;" />
+            </colgroup>
+            <tbody>
+              
+              <tr>
+                <td>
+                  <a href="./2_4.html" class="avatar">
+                    <span class="group green">지제</span>
+                    <span>지제이텍</span>
+                  </a>               
+                </td>
+                <td>
+                  <span>고객사</span>
+                </td>
+                <td>
+                  <span>중소기업</span>
+                </td>
+                <td>
+                  <span>핀테크랩 8층 110호</span>
+                </td>
+                <td>
+                  <span></span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <a href="./2_4.html" class="avatar">
+                    <span class="group green">지제</span>
+                    <span>지제이텍</span>
+                  </a>               
+                </td>
+                <td>
+                  <span>고객사</span>
+                </td>
+                <td>
+                  <span>중소기업</span>
+                </td>
+                <td>
+                  <span>핀테크랩 8층 110호</span>
+                </td>
+                <td>
+                  <span></span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <a href="./2_4.html" class="avatar">
+                    <span class="group green">지제</span>
+                    <span>지제이텍</span>
+                  </a>               
+                </td>
+                <td>
+                  <span>고객사</span>
+                </td>
+                <td>
+                  <span>중소기업</span>
+                </td>
+                <td>
+                  <span>핀테크랩 8층 110호</span>
+                </td>
+                <td>
+                  <span></span>
+                </td>
+              </tr>
+              
+              <tr>
+                <td>
+                  <a href="./2_4.html" class="avatar">
+                    <span class="group green">지제</span>
+                    <span>지제이텍</span>
+                  </a>               
+                </td>
+                <td>
+                  <span>고객사</span>
+                </td>
+                <td>
+                  <span>중소기업</span>
+                </td>
+                <td>
+                  <span>핀테크랩 8층 110호</span>
+                </td>
+                <td>
+                  <span></span>
+                </td>
+              </tr>
+              
+              <tr>
+                <td>
+                  <a href="./2_4.html" class="avatar">
+                    <span class="group green">지제</span>
+                    <span>지제이텍</span>
+                  </a>               
+                </td>
+                <td>
+                  <span>고객사</span>
+                </td>
+                <td>
+                  <span>중소기업</span>
+                </td>
+                <td>
+                  <span>핀테크랩 8층 110호</span>
+                </td>
+                <td>
+                  <span></span>
+                </td>
+              </tr>
+              
+              <tr>
+                <td>
+                  <a href="./2_4.html" class="avatar">
+                    <span class="group green">지제</span>
+                    <span>지제이텍</span>
+                  </a>               
+                </td>
+                <td>
+                  <span>고객사</span>
+                </td>
+                <td>
+                  <span>중소기업</span>
+                </td>
+                <td>
+                  <span>핀테크랩 8층 110호</span>
+                </td>
+                <td>
+                  <span></span>
+                </td>
+              </tr>
+              
+              <tr>
+                <td>
+                  <a href="./2_4.html" class="avatar">
+                    <span class="group green">지제</span>
+                    <span>지제이텍</span>
+                  </a>               
+                </td>
+                <td>
+                  <span>고객사</span>
+                </td>
+                <td>
+                  <span>중소기업</span>
+                </td>
+                <td>
+                  <span>핀테크랩 8층 110호</span>
+                </td>
+                <td>
+                  <span></span>
+                </td>
+              </tr>              
+
+              <!-- 리스트  40개 -->
+              
+            </tbody>
+          </table>
+          <div class="pagination flex">
+            <ul>
+              <li>
+                <a href="" class="prev"><span>Prev</span></a>
+              </li>              
+              <li>
+                <a href="" class="current"><span>1</span></a>
+              </li>
+              <li>
+                <a href=""><span>2</span></a>
+              </li>
+              <li>
+                <a href=""><span>3</span></a>
+              </li>
+              <li>
+                <a href=""><span>4</span></a>
+              </li>
+              <li>
+                <a href=""><span>5</span></a>
+              </li>
+              <li>
+                <a href=""><span>6</span></a>
+              </li>
+              <li>
+                <a href="" class="next"><span>Next</span></a>
+              </li>
+            </ul>        
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>  
+</body>
+</html>

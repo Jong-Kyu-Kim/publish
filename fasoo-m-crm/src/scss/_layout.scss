@@ -1,0 +1,232 @@
+/* layout */
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+#container {
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+  //overflow: hidden;
+
+  #sidebar {
+    width: 240px;
+    height: 100%;
+    box-sizing: border-box;
+    z-index: 2;
+    border-right: $border-light;
+    background-color: #F7FAFC;
+    h1 {
+      padding: 42px 25px 24px;
+    }
+    nav {
+      > ul {
+        margin-top: 15px;
+        > li {
+          position: relative;
+          a {
+            &:hover {
+              background-color: #EAF1FE;
+              border-color: $primary;
+              span {
+                color: $primary;
+              }
+            }
+          }
+          > a {
+            display: block;
+            padding: 13px 10px 13px 57px;
+            box-sizing: border-box;
+            border-left: 3px solid transparent;
+            background: no-repeat left 25px top 12px;
+            span {
+              font-size: 14px;
+            }
+            &.toggle {
+              &::after {
+                content: '';
+                position: absolute;
+                top: 18px;
+                right: 25px;              
+                width: 10px;
+                height: 10px;
+                background: url(../svg/ico_caret_right.svg) no-repeat;
+              }
+              &.expanded {
+                &::after {
+                  top: 20px;
+                  background-image: url(../svg/ico_caret_down.svg)
+                }              
+              }              
+            }
+          }
+          &:nth-child(1) {
+            > a {
+              background-image: url(../svg/ico_chart_bar.svg);
+              &:hover {
+                background-image: url(../svg/ico_chart_bar_on.svg); 
+              }             
+            }        
+          }
+          &:nth-child(2) {
+            > a {
+              background-image: url(../svg/ico_building.svg); 
+              &:hover {
+                background-image: url(../svg/ico_building_on.svg); 
+              }
+            }        
+          }
+          &:nth-child(3) {
+            > a {
+              background-image: url(../svg/ico_crosshairs.svg);
+              &:hover {
+                background-image: url(../svg/ico_crosshairs_on.svg); 
+              }                
+            }        
+          }
+          &:nth-child(4) {
+            > a {
+              background-image: url(../svg/ico_bullseye.svg);
+              &:hover {
+                background-image: url(../svg/ico_bullseye_on.svg); 
+              }              
+            }        
+          }
+          &:nth-child(5) {
+            > a {
+              background-image: url(../svg/ico_chart_line.svg);
+              &:hover {
+                background-image: url(../svg/ico_chart_line_on.svg); 
+              }                 
+            }        
+          }
+          &:nth-child(6) {
+            > a {
+              background-image: url(../svg/ico_badge.svg);
+              &:hover {
+                background-image: url(../svg/ico_badge_on.svg); 
+              }
+            }        
+          }
+          &:nth-child(7) {
+            > a {
+              background-image: url(../svg/ico_check_square.svg); 
+              &:hover {
+                background-image: url(../svg/ico_check_square_on.svg); 
+              }              
+            }        
+          }
+          &:nth-child(8) {
+            > a {
+              background-image: url(../svg/ico_stack.svg);
+              &:hover {
+                background-image: url(../svg/ico_stack_on.svg); 
+              }
+            }        
+          }
+          &:nth-child(9) {
+            > a {
+              background-image: url(../svg/ico_dollar_square.svg);
+              &:hover {
+                background-image: url(../svg/ico_dollar_square_on.svg); 
+              }              
+            }        
+          }
+          &:nth-child(10) {
+            > a {
+              background-image: url(../svg/ico_sync.svg);
+              &:hover {
+                background-image: url(../svg/ico_sync_on.svg); 
+              }              
+            }        
+          }          
+          > ul {
+            display: none;
+            margin-bottom: 10px;
+            li {
+              a {
+                display: block;
+                padding: 10px 10px 10px 57px;
+                box-sizing: border-box;
+                &::before {
+                  content: '';
+                  display: inline-block;
+                  margin-right: 8px;
+                  width: 4px;
+                  height: 4px;
+                  vertical-align: middle;
+                  background-color: #74777A;
+                  border-radius: 4px;
+                }
+                &:hover {
+                  &::before {
+                    background-color: $primary;
+                  }
+                }                
+              }
+            }
+          }                        
+        }
+      }
+    }
+    + div {
+      width: calc(100% - 240px);
+    }
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    //margin-left: 240px;
+  
+    //height: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+  
+    header {
+      padding-top: 35px;
+      position: fixed;
+      top: 0;
+      left: 240px;
+      width: calc(100% - 240px);
+      min-width: 1040px;
+      background-color: $white;
+      z-index: 1;
+      > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 25px;
+        padding: 0 30px;
+        &:first-child {
+          margin-bottom: 35px;
+        }
+        &.mb0 {
+          margin-bottom: 0;
+          border-bottom: $border-light;
+        }
+        > div {
+          display: flex;
+          flex-wrap: wrap;
+          .dropdown {
+            margin-right: 10px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    
+    #content {
+      //padding-bottom: 70px;
+      display: flex;
+      flex-direction: column;
+      // top: 0;
+      min-width: 1040px;
+      // height: 100%;
+      // overflow: hidden;
+    }  
+  }
+}

@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('./include/head.html', { 'title': '기업 정보' })
+<body>
+  <div id="container">
+    @@include('./include/sidebar.html')
+    <main class="scrollbar">
+      <header>
+        <div>
+          <h2>
+            <a href="">
+              <span>기업 정보</span>
+            </a>            
+            <span class="current">(사)새대한공인중개사협회</span>            
+          </h2>
+          <a href="">
+            <span>마케팅 DB 조회</span>
+          </a>          
+        </div>
+        <div>
+          <div>
+            <div class="avatar">
+              <span class="red lg">대한</span>
+            </div>
+            <div class="flex">
+              <div>
+                <span>
+                  <strong>(사)대한간호협회</strong>                
+                </span>
+                <span>고객사·공공/정부투자기관</span>
+              </div>
+            </div>          
+          </div>
+          <div>
+            <button class="btn primary exclamation">
+              <span>제품 수주 정보</span>
+            </button>
+          </div>
+        </div>
+      </header>
+  
+      <div id="content" class="height">
+        <div class="form">
+          <div>
+            <div class="scrollbar">
+              <section>
+                <h3><span>기업 정보</span></h3>
+                <div class="table_form">
+                  <table style="width:640px;">
+                    <colgroup>
+                      <col style="width:190px" />
+                      <col />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th class="top">
+                          <span style="margin-top:7px;">기업명</span>
+                        </th>
+                        <td>
+                          <div class="flex start ">
+                            <div>
+                              <span>(사)새대한공인중개사협회</span>
+                              <button class="btn small dialog"  onclick="$('#company').dialog('open')">
+                                <span>변경</span>
+                              </button>
+                              <div class="flex" style="margin-top:10px;">
+                                <input type="checkbox">
+                                <label for="">
+                                  <span>해외 업체</span>
+                                </label>
+                              </div>
+                            </div>
+                          </div>                         
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>
+                          <span>법인 구분</span>
+                        </th>
+                        <td>
+                          <select id="ddlcorptype" class="ddlcommon">
+                            <option value="">미지정</option>
+                            <option value="Corp1">주식회사</option>
+                            <option value="Corp2">유한회사</option>
+                            <option value="Corp3" selected>합자회사</option>
+                            <option value="Corp4">유한책임회사</option>
+                            <option value="Corp5">사단법인</option>
+                            <option value="Corp6">재단법인</option>
+                            <option value="Corp7">학교법인</option>
+                            <option value="Corp8">사회복지법인</option>
+                            <option value="Corp9">의료법인</option>
+                            <option value="Corp10">회계법인</option>
+                            <option value="Corp11">개인사업자</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>
+                          <span>기업 분류</span>
+                        </th>
+                        <td>
+                          <select id="ddltype" class="ddlcommon">
+                            <option value="0">고객사</option>
+                            <option value="2" selected>매입사</option>
+                            <option value="4">협력사</option>
+                            <option value="6">파트너사</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>
+                          <span>업종</span>
+                        </th>
+                        <td>
+                          <select>
+                            <option value="F">금융기관</option>
+                            <option value="G">공공/정부투자기관</option>
+                            <option value="A">대기업</option>
+                            <option value="Z">중소기업</option>
+                            <option value="P">언론사</option>
+                            <option value="E">학교법인</option>
+                            <option value="O">기타</option>
+                          </select>   
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>
+                          <span>신용 등급</span>
+                        </th>
+                        <td>
+                          <select id="ddlrank" class="ddlcommon">
+                            <option value="">미지정</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                            <option value="J">J</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>
+                          <span>파트너 등급</span>
+                        </th>
+                        <td>
+                          <select id="ddlpartner" class="ddlcommon" disabled="disabled">
+                            <option value="">미지정</option>
+                            <option value="P">Premium</option>
+                            <option value="G">Gold</option>
+                            <option value="S">Silver</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>
+                          <span>사업자 번호</span>
+                        </th>
+                        <td>
+                          <div class="flex start">
+                            <div>
+                              <span>123-78-12121</span>
+                              <button class="btn small">
+                                <span>변경</span>
+                              </button>
+                            </div>
+                            <div class="flex start">
+                              <div>
+                                <input type="text">
+                              </div>
+                              <div class="flex start">                                
+                                <button class="btn primary" onclick="closeInput(this)">
+                                  <span>저장</span>
+                                </button>
+                                <button class="btn" onclick="">
+                                  <span>취소</span>
+                                </button>
+                              </div>
+                            </div>                             
+                          </div>                          
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>
+                          <span>모기업</span>
+                        </th>
+                        <td>
+                          <div class="flex start">
+                            <div>
+                              <span>새대한공인중개사협회</span>
+                              <button class="btn small">
+                                <span>변경</span>
+                              </button>
+                            </div>
+                            <div class="flex start">
+                              <div>
+                                <input type="text">
+                              </div>
+                              <div class="flex start">                                
+                                <button class="btn primary" onclick="closeInput(this)">
+                                  <span>저장</span>
+                                </button>
+                                <button class="btn" onclick="">
+                                  <span>취소</span>
+                                </button>
+                              </div>
+                            </div>                             
+                          </div>  
+                        </td>                    
+                      </tr>
+                      <tr>
+                        <th>
+                          <span>비고</span>
+                        </th>
+                        <td>
+                          <div class="flex start">
+                            <div>
+                              <span>비고</span>
+                              <button class="btn small">
+                                <span>변경</span>
+                              </button>
+                            </div>
+                            <div class="flex start">
+                              <div>
+                                <input type="text">
+                              </div>
+                              <div class="flex start">                                
+                                <button class="btn primary" onclick="closeInput(this)">
+                                  <span>저장</span>
+                                </button>
+                                <button class="btn" onclick="">
+                                  <span>취소</span>
+                                </button>
+                              </div>
+                            </div>                             
+                          </div> 
+                        </td>
+                      </tr>                      
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+              <section>
+                <h3><span>기업 담당자</span></h3>
+                <div class="table_form">
+                  <table>
+                    <colgroup>
+                      <col style="width:190px" />
+                      <col />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th class="top">
+                          <span>고객사 담당자</span>
+                        </th>
+                        <td>
+                          <div>
+                            <button class="btn small" onclick="$('#employee').dialog('open')">
+                              <span>추가</span>
+                            </button>
+                          </div>
+                          <div class="table_expand">
+                            <table>
+                              <colgroup>
+                                <col style="width:20px;" />
+                                <col />
+                                <col />
+                                <col />
+                                <col />
+                                <col />
+                              </colgroup>
+                              <thead>
+                                <tr>
+                                  <th scope="col"></th>
+                                  <th scope="col"><span>이름</span></th>
+                                  <th scope="col"><span>휴대전화</span></th>
+                                  <th scope="col"><span>담당제품</span></th>
+                                  <th scope="col"><span>구분</span></th>
+                                  <th scope="col"></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <i class="caret"></i>
+                                  </td>
+                                  <td>
+                                    <div class="avatar">
+                                      <span class="user">성하</span>
+                                      <span>차성하</span>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <span>010-2222-3333</span>
+                                  </td>
+                                  <td>
+                                    <span class="hover">Wrapsody 외 <strong>3</strong></span>
+                                    <span>FED, FDR, Wrapsody-eCo</span>
+                                  </td>
+                                  <td>
+                                    <span class="hover">제품 담당 외 <strong>2</strong></span>
+                                    <span>제품 담당, 제품 담당</span>
+                                  </td>
+                                  <td>
+                                    <div class="dropdown">
+                                      <button class="ellipsis_h"></button>
+                                      <div class="items">
+                                        <div>
+                                          <ul>
+                                            <li>
+                                              <button class="edit">
+                                                <span>수정</span>
+                                              </button>                            
+                                            </li>
+                                          </ul>
+                                          <ul>
+                                            <li>
+                                              <button class="remove">
+                                                <span>삭제</span>
+                                              </button>
+                                            </li>                          
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="detail">
+                                  <td colspan="6">
+                                    <div>
+                                      <div style="width:30%">
+                                        <span>직급</span>
+                                        <span>사원</span>
+                                      </div>
+                                      <div style="width:30%">
+                                        <span>부서</span>
+                                        <span>정보통신</span>
+                                      </div>
+                                      <div style="width:40%">
+                                        <span>이메일</span>
+                                        <span>gildongddddddd@fasoo.com</span>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div style="width:30%">
+                                        <span>전화번호</span>
+                                        <span>02-000-0000</span>
+                                      </div>
+                                      <div style="width:70%">
+                                        <span>기타 메모</span>
+                                        <span>8/1일부로 담당자 변경 8/1일부로 담당자 변경 8/1일부로 담당자 변경 8/1일부로 담당자 변경</span>
+                                      </div>
+                                    </div>             
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                  <td>
+                                    <i class="caret"></i>
+                                  </td>
+                                  <td>
+                                    <div class="avatar">
+                                      <span class="user">성하</span>
+                                      <span>차성하</span>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <span>010-2222-3333</span>
+                                  </td>
+                                  <td>
+                                    <span>Wrapsody</span>
+                                  </td>
+                                  <td>
+                                    <span>제품 담당</span>
+                                  </td>
+                                  <td>
+                                    <div class="dropdown">
+                                      <button class="ellipsis_h"></button>
+                                      <div class="items">
+                                        <div>
+                                          <ul>
+                                            <li>
+                                              <button class="edit">
+                                                <span>수정</span>
+                                              </button>                            
+                                            </li>
+                                          </ul>
+                                          <ul>
+                                            <li>
+                                              <button class="remove">
+                                                <span>삭제</span>
+                                              </button>
+                                            </li>                          
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="detail">
+                                  <td colspan="6">
+                                    <div>
+                                      <div style="width:30%">
+                                        <span>직급</span>
+                                        <span>사원</span>
+                                      </div>
+                                      <div style="width:30%">
+                                        <span>부서</span>
+                                        <span>정보통신</span>
+                                      </div>
+                                      <div style="width:40%">
+                                        <span>이메일</span>
+                                        <span>gildongddddddd@fasoo.com</span>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div style="width:30%">
+                                        <span>전화번호</span>
+                                        <span>02-000-0000</span>
+                                      </div>
+                                      <div style="width:70%">
+                                        <span>기타 메모</span>
+                                        <span>8/1일부로 담당자 변경 8/1일부로 담당자 변경 8/1일부로 담당자 변경</span>
+                                      </div>
+                                    </div>             
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                  <td>
+                                    <i class="caret"></i>
+                                  </td>
+                                  <td>
+                                    <div class="avatar">
+                                      <span class="user">성하</span>
+                                      <span>차성하</span>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <span>010-2222-3333</span>
+                                  </td>
+                                  <td>
+                                    <span>Wrapsody</span>
+                                  </td>
+                                  <td>
+                                    <span>제품 담당</span>
+                                  </td>
+                                  <td>
+                                    <div class="dropdown">
+                                      <button class="ellipsis_h"></button>
+                                      <div class="items">
+                                        <div>
+                                          <ul>
+                                            <li>
+                                              <button class="edit">
+                                                <span>수정</span>
+                                              </button>                            
+                                            </li>
+                                          </ul>
+                                          <ul>
+                                            <li>
+                                              <button class="remove">
+                                                <span>삭제</span>
+                                              </button>
+                                            </li>                          
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="detail">
+                                  <td colspan="6">
+                                    <div>
+                                      <div style="width:30%">
+                                        <span>직급</span>
+                                        <span>사원</span>
+                                      </div>
+                                      <div style="width:30%">
+                                        <span>부서</span>
+                                        <span>정보통신</span>
+                                      </div>
+                                      <div style="width:40%">
+                                        <span>이메일</span>
+                                        <span>gildongddddddd@fasoo.com</span>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div style="width:30%">
+                                        <span>전화번호</span>
+                                        <span>02-000-0000</span>
+                                      </div>
+                                      <div style="width:70%">
+                                        <span>기타 메모</span>
+                                        <span>8/1일부로 담당자 변경 8/1일부로 담당자 변경 8/1일부로 담당자 변경</span>
+                                      </div>
+                                    </div>             
+                                  </td>
+                                </tr>
+                                                                
+                              </tbody>
+                            </table>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+              <section>
+                <h3><span>기업 주소</span></h3>
+                <div class="table_form">
+                  <table style="width:640px;">
+                    <colgroup>
+                      <col style="width:190px" />
+                      <col />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th>
+                          <span>국가</span>
+                        </th>
+                        <td>
+                          <select id="ddlcountry" class="ddlcommon">
+                            <option value="한국">한국</option>
+                            <option value="중국">중국</option>
+                            <option value="동남아시아">동남아시아</option>
+                            <option value="남아공">남아공</option>
+                            <option value="북미">북미</option>
+                            <option value="남미">남미</option>
+                            <option value="유럽">유럽</option>
+                            <option value="기타">기타</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>
+                          <span>04505</span>
+                        </th>
+                        <td>
+                          <div class="flex start">
+                            <div>
+                              <span>비고</span>
+                              <button class="btn small">
+                                <span>변경</span>
+                              </button>
+                            </div>
+                            <div class="flex start">
+                              <div>
+                                <input type="text">
+                              </div>
+                              <div class="flex start">                                
+                                <button class="btn primary" onclick="closeInput(this)">
+                                  <span>저장</span>
+                                </button>
+                                <button class="btn" onclick="">
+                                  <span>취소</span>
+                                </button>
+                              </div>
+                            </div>                             
+                          </div> 
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>
+                          <span>기본주소</span>
+                        </th>
+                        <td>
+                          <div class="flex start">
+                            <div>
+                              <span>서울시 마포구 월드컵대로 99</span>
+                              <button class="btn small">
+                                <span>변경</span>
+                              </button>
+                            </div>
+                            <div class="flex start">
+                              <div>
+                                <input type="text">
+                              </div>
+                              <div class="flex start">                                
+                                <button class="btn primary" onclick="closeInput(this)">
+                                  <span>저장</span>
+                                </button>
+                                <button class="btn" onclick="">
+                                  <span>취소</span>
+                                </button>
+                              </div>
+                            </div>                             
+                          </div> 
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>
+                          <span>상세 주소 및 상세 건물명</span>
+                        </th>
+                        <td>
+                          <div class="flex start">
+                            <div>
+                              <span>1902호</span>
+                              <button class="btn small">
+                                <span>변경</span>
+                              </button>
+                            </div>
+                            <div class="flex start">
+                              <div>
+                                <input type="text">
+                              </div>
+                              <div class="flex start">                                
+                                <button class="btn primary" onclick="closeInput(this)">
+                                  <span>저장</span>
+                                </button>
+                                <button class="btn" onclick="">
+                                  <span>취소</span>
+                                </button>
+                              </div>
+                            </div>                             
+                          </div> 
+                        </td>
+                        <td>
+                        </td>
+                      </tr>                      
+                    </tbody>
+                  </table>
+                </div>              
+              </section>                        
+            </div>
+            
+            <div>
+              <section>
+                <h3><span>영업 활동 내역</span></h3>                
+                <div class="history">
+                  <div class="scrollbar">
+                    <div class="list">
+                      <ul>
+                        <li>
+                          <div class="flex between">
+                            <div class="flex">
+                              <div class="avatar">
+                                <span class="user">성하</span>
+                              </div>
+                              <div>
+                                <div>
+                                  <span>차성하님이 <strong>LEAD</strong>를 생성하였습니다.</span>
+                                </div>
+                                <div>
+                                  <span class="date">2020-08-11 16:40:29</span>
+                                </div>                                
+                              </div>
+                            </div>
+                            <div class="dropdown">
+                              <button class="ellipsis_v"></button>
+                              <div class="items">
+                                <div>
+                                  <ul>
+                                    <li>
+                                      <button class="edit">
+                                        <span>수정</span>
+                                      </button>                            
+                                    </li>
+                                  </ul>
+                                  <ul>
+                                    <li>
+                                      <button class="remove">
+                                        <span>삭제</span>
+                                      </button>
+                                    </li>                          
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <a href="">
+                              <div class="flex">
+                                <div class="avatar">
+                                  <span class="yellow">새대</span>
+                                </div>
+                                <div>
+                                  <div>
+                                    <span>
+                                      <strong>(사)새대한공인중개사협회 DRM Client 추가 구매 사업</strong>
+                                    </span>
+                                  </div>
+                                  <div>
+                                    <span>Project Code</span>
+                                    <span>O0027S20010</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="flex between">
+                            <div class="flex">
+                              <div class="avatar">
+                                <span class="user">성하</span>
+                              </div>
+                              <div>
+                                <div>
+                                  <span>차성하님이 <strong>확도</strong>를 변경하였습니다.</span>
+                                </div>
+                                <div>
+                                  <span class="date">2020-08-11 16:40:29</span>
+                                </div>                                
+                              </div>
+                            </div>
+                            <div class="dropdown">
+                              <button class="ellipsis_v"></button>
+                              <div class="items">
+                                <div>
+                                  <ul>
+                                    <li>
+                                      <button class="edit">
+                                        <span>수정</span>
+                                      </button>                            
+                                    </li>
+                                  </ul>
+                                  <ul>
+                                    <li>
+                                      <button class="remove">
+                                        <span>삭제</span>
+                                      </button>
+                                    </li>                          
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <a href="">
+                              <div class="flex">
+                                <div class="avatar">
+                                  <span class="yellow">새대</span>
+                                </div>
+                                <div>
+                                  <div>
+                                    <span>
+                                      <strong>(사)새대한공인중개사협회 DRM Client 추가 구매 사업</strong>
+                                    </span>
+                                  </div>
+                                  <div>
+                                    <span>Project Code</span>
+                                    <span>O0027S20010</span>
+                                  </div>
+                                  <div class="flex avatar">
+                                    <span class="rocket"></span>
+                                    <span>확도 70% > 90%</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="flex between">
+                            <div class="flex">
+                              <div class="avatar">
+                                <span class="user">성하</span>
+                              </div>
+                              <div>
+                                <div>
+                                  <span>차성하님이 <strong>사업단계</strong>를 변경하였습니다.</span>
+                                </div>
+                                <div>
+                                  <span class="date">2020-08-11 16:40:29</span>
+                                </div>                                
+                              </div>
+                            </div>
+                            <div class="dropdown">
+                              <button class="ellipsis_v"></button>
+                              <div class="items">
+                                <div>
+                                  <ul>
+                                    <li>
+                                      <button class="edit">
+                                        <span>수정</span>
+                                      </button>                            
+                                    </li>
+                                  </ul>
+                                  <ul>
+                                    <li>
+                                      <button class="remove">
+                                        <span>삭제</span>
+                                      </button>
+                                    </li>                          
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <a href="">
+                              <div class="flex">
+                                <div class="avatar">
+                                  <span class="yellow">새대</span>
+                                </div>
+                                <div>
+                                  <div>
+                                    <span>
+                                      <strong>(사)새대한공인중개사협회 DRM Client 추가 구매 사업</strong>
+                                    </span>
+                                  </div>
+                                  <div>
+                                    <span>Project Code</span>
+                                    <span>O0027S20010</span>
+                                  </div>
+                                  <div class="flex avatar">
+                                    <span class="flag"></span>
+                                    <span>사업화 > 수주</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="flex between">
+                            <div class="flex">
+                              <div class="avatar">
+                                <span class="user">성하</span>
+                              </div>
+                              <div>
+                                <div>
+                                  <span>차성하님이 <strong>LEAD</strong>를 변경하였습니다.</span>
+                                </div>
+                                <div>
+                                  <span class="date">2020-08-11 16:40:29</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="dropdown">
+                              <button class="ellipsis_v"></button>
+                              <div class="items">
+                                <div>
+                                  <ul>
+                                    <li>
+                                      <button class="edit">
+                                        <span>수정</span>
+                                      </button>                            
+                                    </li>
+                                  </ul>
+                                  <ul>
+                                    <li>
+                                      <button class="remove">
+                                        <span>삭제</span>
+                                      </button>
+                                    </li>                          
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <a href="">
+                              <div class="flex">
+                                <div class="avatar">
+                                  <span class="yellow">새대</span>
+                                </div>
+                                <div>
+                                  <div>
+                                    <span>
+                                      <strong>(사)새대한공인중개사협회 DRM Client 추가 구매 사업</strong>
+                                    </span>
+                                  </div>
+                                  <div>
+                                    <span>Project Code</span>
+                                    <span>O0027S20010</span>
+                                  </div>
+                                  <div class="flex">
+                                    <span class="avatar bill"></span>
+                                    <span>확도 70% > 90%</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </li>
+  
+                        <li>
+                          <div class="flex between">
+                            <div class="flex">
+                              <div class="avatar">
+                                <span class="user">성하</span>
+                              </div>
+                              <div>
+                                <span>차성하님이 <strong>LEAD</strong>를 변경하였습니다.</span>
+                                <span class="date">2020-08-11 16:40:29</span>
+                              </div>
+                            </div>
+                            <div class="dropdown">
+                              <button class="ellipsis_v"></button>
+                              <div class="items">
+                                <div>
+                                  <ul>
+                                    <li>
+                                      <button class="edit">
+                                        <span>수정</span>
+                                      </button>                            
+                                    </li>
+                                  </ul>
+                                  <ul>
+                                    <li>
+                                      <button class="remove">
+                                        <span>삭제</span>
+                                      </button>
+                                    </li>                          
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="memo">
+                            <span>변경사항 기록을 위한 테스트 회의록 의견을 남겨보았습니다. 테스트입니다. 테스트</span>
+                          </div>
+                        </li>                      
+                      </ul>
+                    </div>
+                  </div>
+                </div>                  
+              </section>
+            </div>
+          </div>          
+        </div>
+
+        <div id="company" class="dialog" title="모기업 추가">
+          <div>
+            <input type="text" class="search global" placeholder="검색어를 입력하세요.">
+          </div>
+          <div class="table_sort">
+            <table>
+              <colgroup>
+                <col style="width:40px;" />
+                <col style="width:210px;" />
+                <col />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th scope="col">
+                    <button class="asc">
+                      <span>기업명</span>
+                    </button>                    
+                  </th>
+                  <th scope="col">
+                    <button>
+                      <span>코드</span>
+                    </button>                    
+                  </th>
+                </tr>
+              </thead>
+            </table>      
+            <div class="scrollbar">
+              <table>
+                <colgroup>
+                  <col style="width:15px;" />
+                  <col style="width:235px;" />
+                  <col />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td>
+                      <div class="flex start">
+                        <input type="radio">
+                        <label for="" class="avatar">
+                          <span class="group green">지제</span>
+                          <span>지제이텍</span>
+                        </label>   
+                      </div>
+                    </td>
+                    <td>
+                      <span>SS</span>
+                    </td>
+                  </tr>
+        
+                  <tr>
+                    <td></td>
+                    <td>
+                      <div class="flex start">
+                        <input type="radio">
+                        <label for="" class="avatar">
+                          <span class="group green">지제</span>
+                          <span>지제이텍</span>
+                        </label>   
+                      </div>
+                    </td>
+                    <td>
+                      <span>SS</span>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td></td>
+                    <td>
+                      <div class="flex start">
+                        <input type="radio">
+                        <label for="" class="avatar">
+                          <span class="group green">지제</span>
+                          <span>지제이텍</span>
+                        </label>   
+                      </div>
+                    </td>
+                    <td>
+                      <span>SS</span>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td></td>
+                    <td>
+                      <div class="flex start">
+                        <input type="radio">
+                        <label for="" class="avatar">
+                          <span class="group green">지제</span>
+                          <span>지제이텍</span>
+                        </label>   
+                      </div>
+                    </td>
+                    <td>
+                      <span>SS</span>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td></td>
+                    <td>
+                      <div class="flex start">
+                        <input type="radio">
+                        <label for="" class="avatar">
+                          <span class="group green">지제</span>
+                          <span>지제이텍</span>
+                        </label>   
+                      </div>
+                    </td>
+                    <td>
+                      <span>SS</span>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td></td>
+                    <td>
+                      <div class="flex start">
+                        <input type="radio">
+                        <label for="" class="avatar">
+                          <span class="group green">지제</span>
+                          <span>지제이텍</span>
+                        </label>   
+                      </div>
+                    </td>
+                    <td>
+                      <span>SS</span>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td></td>
+                    <td>
+                      <div class="flex start">
+                        <input type="radio">
+                        <label for="" class="avatar">
+                          <span class="group green">지제</span>
+                          <span>지제이텍</span>
+                        </label>   
+                      </div>
+                    </td>
+                    <td>
+                      <span>SS</span>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td></td>
+                    <td>
+                      <div class="flex start">
+                        <input type="radio">
+                        <label for="" class="avatar">
+                          <span class="group green">지제</span>
+                          <span>지제이텍</span>
+                        </label>   
+                      </div>
+                    </td>
+                    <td>
+                      <span>SS</span>
+                    </td>
+                  </tr>          
+                                   
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>        
+
+        <div id="employee" class="dialog" title="기업 담당자 추가">
+          <div class="scrollbar">
+            <div class="table_form">
+              <table>
+                <colgroup>  
+                    <col style="width:95px;" />
+                    <col style="width:300px;"/>
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope="row">
+                      <span>이름</span>
+                    </th>
+                    <td>
+                      <input type="text" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <span>휴대전화</span>
+                    </th>
+                    <td>
+                      <input type="text" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <span>담당제품</span>                  
+                    </th>
+                    <td>
+                      <ul>
+                        <li>
+                          <input type="checkbox" name="" id="fed">
+                          <label for="fed"><span>FED</span></label>
+                        </li>
+                        <li>
+                          <input type="checkbox" name="" id="fdr">
+                          <label for="fdr"><span>FDR</span></label>
+                        </li>
+                        <li>
+                          <input type="checkbox" name="" id="wrapsody">
+                          <label for="wrapsody"><span>Wrapsody</span></label>
+                        </li>
+                        <li>
+                          <input type="checkbox" name="" id="eco">
+                          <label for="eco"><span>Wrapsody-eCo</span></label>
+                        </li>
+                        <li>
+                          <input type="checkbox" name="" id="adid">
+                          <label for="adid"><span>ADID</span></label>
+                        </li>
+                        <li>
+                          <input type="checkbox" name="" id="consulting">
+                          <label for="consulting"><span>컨설팅</span></label>
+                        </li>                      
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <span>구분</span>                  
+                    </th>
+                    <td>
+                      <ul>
+                        <li>
+                          <input type="checkbox" name="" id="">
+                          <label for=""><span>제품담당</span></label>
+                        </li>
+                        <li>
+                          <input type="checkbox" name="" id="">
+                          <label for=""><span>사업기획</span></label>
+                        </li>
+                        <li>
+                          <input type="checkbox" name="" id="">
+                          <label for=""><span>보안담당</span></label>
+                        </li>
+                        <li>
+                          <input type="checkbox" name="" id="">
+                          <label for=""><span>유지보수</span></label>
+                        </li>
+                        <li>
+                          <input type="checkbox" name="" id="">
+                          <label for=""><span>영업</span></label>
+                        </li>
+                        <li>
+                          <input type="checkbox" name="" id="">
+                          <label for=""><span>PM</span></label>
+                        </li>                                                                  
+                      </ul>                    
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <span>직급</span>                  
+                    </th>
+                    <td>
+                      <input type="text" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <span>부서</span>                  
+                    </th>
+                    <td>
+                      <input type="text" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <span>e-Mail</span>                  
+                    </th>
+                    <td>
+                      <input type="text" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <span>전화번호</span>                  
+                    </th>
+                    <td>
+                      <input type="text" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <span>기타메모</span>                  
+                    </th>
+                    <td>
+                      <textarea name="" id="" cols="30" rows="10" placeholder="기타 메모 사항을 남겨주세요."></textarea>
+                    </td>
+                  </tr>                                                                                                
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      @@include('./include/toast.html')
+    </main>
+  </div>
+  <script>
+    // toast('success', '성공');
+    // toast('error', '실패');
+  </script>  
+</body>
+</html>

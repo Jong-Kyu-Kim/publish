@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('./include/head.html', { 'title': 'LEAD' })
+<body>
+  <div id="container">
+    @@include('./include/sidebar.html')
+    <main class="scrollbar">
+      <header>
+        <div>
+          <h2>
+            <a href="">
+              <span>LEAD</span>
+            </a>            
+            <span class="current">LEAD 생성</span>            
+          </h2>
+          <a href="">
+            <span>마케팅 DB 조회</span>
+          </a>          
+        </div>
+      </header>
+  
+      <div id="content">
+        <div class="form">
+          <section>
+            <div>
+              <h3>
+                <span>LEAD 정보</span>
+              </h3>
+            </div>
+  
+            <div class="row">
+              <div class="col">
+                <label for="nlead_name">
+                  <span class="required">LEAD 이름</span>
+                </label>
+                <div>
+                  <input type="text" id="nlead_name" />
+                </div>
+              </div>            
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label for="naccount_name">
+                  <span class="required">고객사</span>
+                </label>
+                <div>
+                  <input type="text" id="naccount_name" placeholder="기업 찾기를 눌러 기업을 등록해주세요." />
+                  <button class="btn secondary" onclick="$('#company').dialog('open')">
+                    <span>기업 찾기</span>
+                  </button>
+                </div>
+              </div>            
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label for="norder_name">
+                  <span class="required">발주사</span>
+                </label>
+                <div>
+                  <input type="text" id="norder_name" placeholder="기업 찾기를 눌러 기업을 등록해주세요." />
+                  <button class="btn secondary" onclick="$('#company').dialog('open')">
+                    <span>기업 찾기</span>
+                  </button>
+                </div>
+              </div>            
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label for="npartner_name">
+                  <span>파트너사</span>
+                </label>
+                <div>
+                  <input type="text" id="npartner_name" placeholder="기업 찾기를 눌러 기업을 등록해주세요." />
+                  <button class="btn secondary" onclick="$('#company').dialog('open')">
+                    <span>기업 찾기</span>
+                  </button>
+                </div>
+              </div>            
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label for="nddlcampaign">
+                  <span class="required">유입 경로</span>
+                </label>
+                <div>
+                  <select id="nddlcampaign" class="ddlcommon">
+                    <option value="CAMP5">공식파트너</option>
+                    <option value="CAMP3">세미나</option>
+                    <option value="CAMP1">아웃바운드</option>
+                    <option value="CAMP6">에이전트</option>
+                    <option value="CAMP7">인바운드-이메일</option>
+                    <option value="CAMP2">인바운드-콜</option>
+                    <option value="CAMP8">인바운드-홈페이지</option>
+                    <option value="CAMP4">컨퍼런스</option>
+                  </select>                    
+                </div>
+              </div>
+    
+              <div class="col">
+                <label for="nddlsalesctg">
+                  <span class="required">매출 구분</span>
+                </label>
+                <div>
+                  <select id="nddlsalesctg" class="ddlcommon">
+                    <option value="S">제품판매</option>
+                    <option value="M">유지보수</option>
+                    <option value="C">보안컨설팅</option>
+                    <option value="A">ASP</option>
+                    <option value="O">기타</option>
+                    </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="flex between">
+                  <span>담당자</span>
+                    <button class="btn small" onclick="$('#radioEmployee').dialog('open');">
+                    <span>변경</span>
+                  </button>
+                </div>
+                <div class="table_expand">
+                  <table>
+                    <colgroup>
+                      <col />
+                      <col />
+                      <col />
+                      <col style="width:50px;" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col"><span>이름</span></th>
+                        <th scope="col"><span>직급</span></th>
+                        <th scope="col"><span>부서</span></th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="avatar">
+                            <span class="user">성하</span>
+                            <span>차성하</span>
+                          </div>
+                        </td>
+                        <td>
+                          <span>사원</span>
+                        </td>
+                        <td>
+                          <span>사업전략팀</span>
+                        </td>
+                        <td>
+                          <div class="dropdown">
+                            <button class="ellipsis_h"></button>
+                            <div class="items">
+                              <div>
+                                <ul>
+                                  <li>
+                                    <button class="edit">
+                                      <span>수정</span>
+                                    </button>                            
+                                  </li>
+                                </ul>
+                                <ul>
+                                  <li>
+                                    <button class="remove">
+                                      <span>삭제</span>
+                                    </button>
+                                  </li>                          
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>                  
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="flex between">
+                  <span>공유자</span>
+                  <button class="btn small" onclick="$('#checkEmployee').dialog('open');">
+                    <span>변경</span>
+                  </button>
+                </div>
+                <div class="table_expand">
+                  <table>
+                    <colgroup>
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col style="width:50px;" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col"><span>이름</span></th>
+                        <th scope="col"><span>직급</span></th>
+                        <th scope="col"><span>부서</span></th>
+                        <th scope="col"><span>전화번호</span></th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td colspan="5">
+                          <button class="add">
+                            <span>추가</span>                        
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="avatar">
+                            <span class="user">성하</span>
+                            <span>차성하</span>
+                          </div>
+                        </td>
+                        <td>
+                          <span>사원</span>
+                        </td>
+                        <td>
+                          <span>사업전략팀</span>
+                        </td>
+                        <td>
+                          <span>010-000-0000</span>
+                        </td>
+                        <td>
+                          <div class="dropdown">
+                            <button class="ellipsis_h"></button>
+                            <div class="items">
+                              <div>
+                                <ul>
+                                  <li>
+                                    <button class="edit">
+                                      <span>수정</span>
+                                    </button>                            
+                                  </li>
+                                </ul>
+                                <ul>
+                                  <li>
+                                    <button class="remove">
+                                      <span>삭제</span>
+                                    </button>
+                                  </li>                          
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>                  
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div>
+                  <label for="nddlstep">
+                    <span class="required">단계</span>
+                  </label>
+                  <a href="">
+                    <span class="question">?</span>
+                  </a>
+                </div>
+                <div class="selectmenu">
+                  <select id="nddlstep" class="ddlcommon">
+                    <option value="관심" data-class="grey">관심</option>
+                    <option value="정보수집" data-class="yellow">정보수집</option>
+                    <option value="사업화" data-class="green">사업화</option>
+                    <option value="벤더결정" data-class="purple">벤더결정</option>
+                    <option value="수주" data-class="blue">수주</option>
+                    <option value="DROP" data-class="red">포기,중단,실주</option>
+                    </select>
+                </div>              
+              </div>
+              <div class="col">
+                <div>
+                  <label for="nddlpercentage">
+                    <span class="required">확도 (%)</span>
+                  </label>
+                  <a href="">
+                    <span class="question">?</span>
+                  </a>
+                </div>
+                <div>
+                  <select id="nddlpercentage" class="ddlcommon">
+                    <option value="10">10%</option>
+                    <option value="50">50%</option>
+                    <option value="70">70%</option>
+                    <option value="90">90%</option>
+                    <option value="100">100%</option>
+                    </select>
+                </div>
+              </div>              
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label for="">
+                  <span class="required">예상 수주일</span>
+                </label>
+                <div class="datepicker">
+                  <input type="text" />
+                </div>              
+              </div>
+              <div class="col">
+                <label for="">
+                  <span class="required">예상 수주 금액</span>
+                </label>          
+                <div class="currency">
+                  <input type="text" />
+                </div>
+              </div>              
+            </div>
+
+            <div class="row" style="align-items:flex-start;">
+              <div class="col">
+                <label for="">
+                  <span class="required">예상 수주 금액 (외화)</span>
+                </label>
+                <div>
+                  <input type="text" />
+                  <select id="nddlcurrency" style="width:85px;">
+                    <option value="NA">N/A</option>
+                    <option value="KRW">KRW</option>
+                    <option value="USD">USD</option>
+                    <option value="JPY">JPY</option>
+                    <option value="ZAR">ZAR</option>
+                    </select>
+                </div>              
+              </div>
+              <div class="col">
+                <label for="">
+                  <span class="required">환율</span>
+                </label>          
+                <div class="currency">
+                  <input type="text" />
+                </div>
+                <div>
+                  <input type="checkbox" id="nleadlicensechk">
+                  <label for="nleadlicensechk">
+                    <span>라이선스 매출</span>
+                  </label>
+                </div>
+              </div>              
+            </div>              
+
+            <div class="row">
+              <div class="col">
+                <div class="flex between">
+                  <span class="required">고객사 담당자</span>
+                  <button class="btn small" onclick="$('#employee').dialog('open')">
+                    <span>추가</span>
+                  </button>
+                </div>
+                <div class="table_expand">
+                  <table>
+                    <colgroup>
+                      <col style="width:20px;" />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col style="width:50px;" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col"><span>이름</span></th>
+                        <th scope="col"><span>휴대전화</span></th>
+                        <th scope="col"><span>담당제품</span></th>
+                        <th scope="col"><span>구분</span></th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <i class="caret"></i>
+                        </td>
+                        <td>
+                          <div class="avatar">
+                            <span class="user">성하</span>
+                            <span>차성하</span>
+                          </div>
+                        </td>
+                        <td>
+                          <span>010-2222-3333</span>
+                        </td>
+                        <td>
+                          <span class="hover">Wrapsody 외 <strong>3</strong></span>
+                          <span>FED, FDR, Wrapsody-eCo</span>
+                        </td>
+                        <td>
+                          <span class="hover">제품 담당 외 <strong>2</strong></span>
+                          <span>제품 담당, 제품 담당</span>
+                        </td>
+                        <td>
+                          <div class="dropdown">
+                            <button class="ellipsis_h"></button>
+                            <div class="items">
+                              <div>
+                                <ul>
+                                  <li>
+                                    <button class="edit">
+                                      <span>수정</span>
+                                    </button>                            
+                                  </li>
+                                </ul>
+                                <ul>
+                                  <li>
+                                    <button class="remove">
+                                      <span>삭제</span>
+                                    </button>
+                                  </li>                          
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="detail">
+                        <td colspan="6">
+                          <div>
+                            <div style="width:30%">
+                              <span>직급</span>
+                              <span>사원</span>
+                            </div>
+                            <div style="width:30%">
+                              <span>부서</span>
+                              <span>정보통신</span>
+                            </div>
+                            <div style="width:40%">
+                              <span>이메일</span>
+                              <span>gildongddddddd@fasoo.com</span>
+                            </div>
+                          </div>
+                          <div>
+                            <div style="width:30%">
+                              <span>전화번호</span>
+                              <span>02-000-0000</span>
+                            </div>
+                            <div style="width:70%">
+                              <span>기타 메모</span>
+                              <span>8/1일부로 담당자 변경 8/1일부로 담당자 변경 8/1일부로 담당자 변경 8/1일부로 담당자 변경</span>
+                            </div>
+                          </div>             
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <i class="caret"></i>
+                        </td>
+                        <td>
+                          <div class="avatar">
+                            <span class="user">성하</span>
+                            <span>차성하</span>
+                          </div>
+                        </td>
+                        <td>
+                          <span>010-2222-3333</span>
+                        </td>
+                        <td>
+                          <span>Wrapsody</span>
+                        </td>
+                        <td>
+                          <span>제품 담당</span>
+                        </td>
+                        <td>
+                          <div class="dropdown">
+                            <button class="ellipsis_h"></button>
+                            <div class="items">
+                              <div>
+                                <ul>
+                                  <li>
+                                    <button class="edit">
+                                      <span>수정</span>
+                                    </button>                            
+                                  </li>
+                                </ul>
+                                <ul>
+                                  <li>
+                                    <button class="remove">
+                                      <span>삭제</span>
+                                    </button>
+                                  </li>                          
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="detail">
+                        <td colspan="6">
+                          <div>
+                            <div style="width:30%">
+                              <span>직급</span>
+                              <span>사원</span>
+                            </div>
+                            <div style="width:30%">
+                              <span>부서</span>
+                              <span>정보통신</span>
+                            </div>
+                            <div style="width:40%">
+                              <span>이메일</span>
+                              <span>gildongddddddd@fasoo.com</span>
+                            </div>
+                          </div>
+                          <div>
+                            <div style="width:30%">
+                              <span>전화번호</span>
+                              <span>02-000-0000</span>
+                            </div>
+                            <div style="width:70%">
+                              <span>기타 메모</span>
+                              <span>8/1일부로 담당자 변경 8/1일부로 담당자 변경 8/1일부로 담당자 변경</span>
+                            </div>
+                          </div>             
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>                  
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div>
+                  <span>관심 제품</span>
+                </div>
+                <div>
+                  <ul>
+                    <li>
+                      <input type="checkbox">
+                      <label for="">
+                        <span>FED</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for="">
+                        <span>FDR</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for="">
+                        <span>Wrapsody</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for="">
+                        <span>Wrapsody-eCo</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for="">
+                        <span>ADID</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for="">
+                        <span>컨설팅</span>
+                      </label>
+                    </li>
+                  </ul>
+              
+                </div>
+              </div>
+            </div>
+              
+          </section>
+          
+          <section>
+            <div class="flex end">
+              <a href="" class="btn secondary">
+                <span>취소</span>
+              </a>
+              <a href="" class="btn primary">
+                <span>확인</span>
+              </a>                        
+            </div>
+          </section>
+  
+        </div>
+
+        @@include('./include/dialog.html')
+      </div>
+    </main>
+  </div>
+</body>
+</html>

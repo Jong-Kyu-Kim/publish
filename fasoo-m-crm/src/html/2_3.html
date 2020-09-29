@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('./include/head.html', { 'title': '기업 정보' })
+<body>
+  <div id="container">
+    @@include('./include/sidebar.html')
+    <main class="scrollbar">
+      <header>
+        <div>
+          <h2>
+            <a href="">
+              <span>기업 정보</span>
+            </a>            
+            <span class="current">기업 코드 관리</span>            
+          </h2>
+          <a href="">
+            <span>마케팅 DB 조회</span>
+          </a>          
+        </div>
+      </header>
+  
+      <div id="content">
+        <div class="form">
+          <section>
+            <div>
+              <h3>
+                <button class="caret expanded">
+                  <span>기업 분류</span>
+                  <span>
+                    <strong>5</strong>
+                  </span>
+                </button>
+              </h3>              
+              <button class="btn small">
+                <span>추가</span>
+              </button>
+            </div>
+            <div class="table_expand">
+              <table>
+                <colgroup>
+                  <col style="width:270px;" />
+                  <col />
+                  <col style="width:135px;" />
+                </colgroup>
+                <thead>
+                  <tr>                    
+                    <th scope="col"><span>기업 분류</span></th>
+                    <th scope="col"><span>비고</span></th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colspan="3">
+                      <button class="add">
+                        <span>추가</span>
+                      </button>
+                    </td>
+                  </tr>            
+                </tbody>
+              </table>
+            </div>
+          </section>
+  
+          <section>
+            <div>
+              <h3>
+                <button class="caret expanded">
+                  <span>업종</span>
+                  <span>
+                    <strong>5</strong>
+                  </span>
+                </button>
+              </h3>
+              <button class="btn small">
+                <span>추가</span>
+              </button>
+            </div>
+            <div class="table_expand">
+              <table>
+                <colgroup>
+                  <col style="width:270px;" />
+                  <col />
+                  <col style="width:135px;" />
+                </colgroup>
+                <thead>
+                  <tr>                    
+                    <th scope="col"><span>기업 분류</span></th>
+                    <th scope="col"><span>비고</span></th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span>고객사</span></td>
+                    <td><span>기업분류</span></td>
+                    <td>
+                      <div class="dropdown">
+                        <button class="ellipsis_h"></button>
+                        <div class="items">
+                          <div>
+                            <ul>
+                              <li>
+                                <button class="edit">
+                                  <span>수정</span>
+                                </button>                            
+                              </li>
+                              <li>
+                                <button class="double_up">
+                                  <span>순서 가장 위로</span>
+                                </button>                            
+                              </li>
+                              <li>
+                                <button class="up">
+                                  <span>순서 위로</span>
+                                </button>                            
+                              </li>
+                              <li>
+                                <button class="down">
+                                  <span>순서 아래로</span>
+                                </button>                            
+                              </li>                            
+                              <li>
+                                <button class="double_down">
+                                  <span>순서 가장 아래로</span>
+                                </button>                            
+                              </li>
+                            </ul>
+                            <ul>
+                              <li>
+                                <button class="remove">
+                                  <span>삭제</span>
+                                </button>
+                              </li>                          
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="text">
+                    </td>
+                    <td>
+                      <input type="text">
+                    </td>
+                    <td>
+                      <div>
+                        <button class="btn primary">
+                          <span>저장</span>
+                        </button>
+                        <button class="btn">
+                          <span>취소</span>
+                        </button>                        
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section>
+            <div>
+              <h3>
+                <button class="caret expanded">
+                  <span>파트너 등급</span>
+                  <span>
+                    <strong>5</strong>
+                  </span>
+                </button>
+              </h3>
+              <button class="btn small">
+                <span>추가</span>
+              </button>
+            </div>
+            <div class="table_expand">
+              <table>
+                <colgroup>
+                  <col style="width:270px;" />
+                  <col />
+                  <col style="width:135px;" />
+                </colgroup>
+                <thead>
+                  <tr>                    
+                    <th scope="col"><span>기업 분류</span></th>
+                    <th scope="col"><span>비고</span></th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span>고객사</span></td>
+                    <td><span>기업분류</span></td>
+                    <td>
+                      <div class="dropdown">
+                        <button class="ellipsis_h"></button>
+                        <div class="items">
+                          <div>
+                            <ul>
+                              <li>
+                                <button class="edit">
+                                  <span>수정</span>
+                                </button>                            
+                              </li>
+                              <li>
+                                <button class="double_up">
+                                  <span>순서 가장 위로</span>
+                                </button>                            
+                              </li>
+                              <li>
+                                <button class="up">
+                                  <span>순서 위로</span>
+                                </button>                            
+                              </li>
+                              <li>
+                                <button class="down">
+                                  <span>순서 아래로</span>
+                                </button>                            
+                              </li>                            
+                              <li>
+                                <button class="double_down">
+                                  <span>순서 가장 아래로</span>
+                                </button>                            
+                              </li>
+                            </ul>
+                            <ul>
+                              <li>
+                                <button class="remove">
+                                  <span>삭제</span>
+                                </button>
+                              </li>                          
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span>고객사</span></td>
+                    <td><span>기업분류</span></td>
+                    <td>
+                      <div class="dropdown">
+                        <button class="ellipsis_h"></button>
+                        <div class="items">
+                          <div>
+                            <ul>
+                              <li>
+                                <button class="edit">
+                                  <span>수정</span>
+                                </button>                            
+                              </li>
+                              <li>
+                                <button class="double_up">
+                                  <span>순서 가장 위로</span>
+                                </button>                            
+                              </li>
+                              <li>
+                                <button class="up">
+                                  <span>순서 위로</span>
+                                </button>                            
+                              </li>
+                              <li>
+                                <button class="down">
+                                  <span>순서 아래로</span>
+                                </button>                            
+                              </li>                            
+                              <li>
+                                <button class="double_down">
+                                  <span>순서 가장 아래로</span>
+                                </button>                            
+                              </li>
+                            </ul>
+                            <ul>
+                              <li>
+                                <button class="remove">
+                                  <span>삭제</span>
+                                </button>
+                              </li>                          
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span>고객사</span></td>
+                    <td><span>기업분류</span></td>
+                    <td>
+                      <div class="dropdown">
+                        <button class="ellipsis_h"></button>
+                        <div class="items">
+                          <div>
+                            <ul>
+                              <li>
+                                <button class="edit">
+                                  <span>수정</span>
+                                </button>                            
+                              </li>
+                              <li>
+                                <button class="double_up">
+                                  <span>순서 가장 위로</span>
+                                </button>                            
+                              </li>
+                              <li>
+                                <button class="up">
+                                  <span>순서 위로</span>
+                                </button>                            
+                              </li>
+                              <li>
+                                <button class="down">
+                                  <span>순서 아래로</span>
+                                </button>                            
+                              </li>                            
+                              <li>
+                                <button class="double_down">
+                                  <span>순서 가장 아래로</span>
+                                </button>                            
+                              </li>
+                            </ul>
+                            <ul>
+                              <li>
+                                <button class="remove">
+                                  <span>삭제</span>
+                                </button>
+                              </li>                          
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="text">
+                    </td>
+                    <td>
+                      <input type="text">
+                    </td>
+                    <td>
+                      <div>
+                        <button class="btn primary">
+                          <span>저장</span>
+                        </button>
+                        <button class="btn">
+                          <span>취소</span>
+                        </button>                        
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span>고객사</span></td>
+                    <td><span>기업분류</span></td>
+                    <td>
+                      <div class="dropdown">
+                        <button class="ellipsis_h"></button>
+                        <div class="items">
+                          <div>
+                            <ul>
+                              <li>
+                                <button class="edit">
+                                  <span>수정</span>
+                                </button>                            
+                              </li>
+                              <li>
+                                <button class="double_up">
+                                  <span>순서 가장 위로</span>
+                                </button>                            
+                              </li>
+                              <li>
+                                <button class="up">
+                                  <span>순서 위로</span>
+                                </button>                            
+                              </li>
+                              <li>
+                                <button class="down">
+                                  <span>순서 아래로</span>
+                                </button>                            
+                              </li>                            
+                              <li>
+                                <button class="double_down">
+                                  <span>순서 가장 아래로</span>
+                                </button>                            
+                              </li>
+                            </ul>
+                            <ul>
+                              <li>
+                                <button class="remove">
+                                  <span>삭제</span>
+                                </button>
+                              </li>                          
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span>고객사</span></td>
+                    <td><span>기업분류</span></td>
+                    <td>
+                      <div class="dropdown">
+                        <button class="ellipsis_h"></button>
+                        <div class="items">
+                          <div>
+                            <ul>
+                              <li>
+                                <button class="edit">
+                                  <span>수정</span>
+                                </button>                            
+                              </li>
+                              <li>
+                                <button class="double_up">
+                                  <span>순서 가장 위로</span>
+                                </button>                            
+                              </li>
+                              <li>
+                                <button class="up">
+                                  <span>순서 위로</span>
+                                </button>                            
+                              </li>
+                              <li>
+                                <button class="down">
+                                  <span>순서 아래로</span>
+                                </button>                            
+                              </li>                            
+                              <li>
+                                <button class="double_down">
+                                  <span>순서 가장 아래로</span>
+                                </button>                            
+                              </li>
+                            </ul>
+                            <ul>
+                              <li>
+                                <button class="remove">
+                                  <span>삭제</span>
+                                </button>
+                              </li>                          
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span>고객사</span></td>
+                    <td><span>기업분류</span></td>
+                    <td>
+                      <div class="dropdown">
+                        <button class="ellipsis_h"></button>
+                        <div class="items">
+                          <div>
+                            <ul>
+                              <li>
+                                <button class="edit">
+                                  <span>수정</span>
+                                </button>                            
+                              </li>
+                              <li>
+                                <button class="double_up">
+                                  <span>순서 가장 위로</span>
+                                </button>                            
+                              </li>
+                              <li>
+                                <button class="up">
+                                  <span>순서 위로</span>
+                                </button>                            
+                              </li>
+                              <li>
+                                <button class="down">
+                                  <span>순서 아래로</span>
+                                </button>                            
+                              </li>                            
+                              <li>
+                                <button class="double_down">
+                                  <span>순서 가장 아래로</span>
+                                </button>                            
+                              </li>
+                            </ul>
+                            <ul>
+                              <li>
+                                <button class="remove">
+                                  <span>삭제</span>
+                                </button>
+                              </li>                          
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span>고객사</span></td>
+                    <td><span>기업분류</span></td>
+                    <td>
+                      <div class="dropdown">
+                        <button class="ellipsis_h"></button>
+                        <div class="items">
+                          <div>
+                            <ul>
+                              <li>
+                                <button class="edit">
+                                  <span>수정</span>
+                                </button>                            
+                              </li>
+                              <li>
+                                <button class="double_up">
+                                  <span>순서 가장 위로</span>
+                                </button>                            
+                              </li>
+                              <li>
+                                <button class="up">
+                                  <span>순서 위로</span>
+                                </button>                            
+                              </li>
+                              <li>
+                                <button class="down">
+                                  <span>순서 아래로</span>
+                                </button>                            
+                              </li>                            
+                              <li>
+                                <button class="double_down">
+                                  <span>순서 가장 아래로</span>
+                                </button>                            
+                              </li>
+                            </ul>
+                            <ul>
+                              <li>
+                                <button class="remove">
+                                  <span>삭제</span>
+                                </button>
+                              </li>                          
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>                                                                                                                              
+                </tbody>
+              </table>
+            </div>
+          </section>          
+  
+          <!-- <section>
+            <a href="" class="btn secondary">
+              <span>취소</span>
+            </a>
+            <a href="" class="btn primary">
+              <span>확인</span>
+            </a>          
+          </section> -->
+  
+        </div>
+      </div>
+    </main>
+  </div>  
+</body>
+</html>

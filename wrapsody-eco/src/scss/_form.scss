@@ -99,86 +99,118 @@ header {
             width: 100%;
             box-sizing: border-box;
           }
-          div {
-            float: left;
-            width: 350px;
-            @include mobile {
-              width: 100%;
-            }            
-            &:nth-child(even) {
-              margin-left: 30px;
-              @include mobile {
-                margin-left: 0;
-              }
-            }
-            &:nth-child(n+3) {
-              margin-top: 5px;
-            }
-            &:nth-child(n+5) {
-              margin-top: 5px;
-              margin-left: 0;
-              width: 100%;
-            }
-            &:last-child {
-              margin-top: 10px;
-            }
-            &.red {
+          > form {
+            .red {
               input, select, textarea {
                 border-color: $red;                
               }
               p {
                 visibility: visible;
               }
-            }      
-            span {
-              color: $green;
             }
-            p {
-              visibility: hidden;
-              color: $red;              
-            }
-            input, select, textarea {
-              display: block;
-              padding: 5px 10px;
-              width: 350px;              
-              height: 40px;
-              box-sizing: border-box;
-              border: $border;
-              border-radius: 5px;
-              @include mobile {
-                width: 100%;
+            > div {
+              //margin-bottom: 10px;
+              &:nth-child(2) {              
+                > label {
+                  display: block;
+                }
+                > div {
+                  float: left;
+                  width: 350px;                  
+                  &.right {
+                    height: 112px;
+                    margin-left: 40px;
+                    @include mobile {
+                      height: auto;
+                      margin: 0;
+                    }
+                  }
+                  @include mobile {
+                    width: 100%;
+                  }                            
+                }
+                label + input {
+                  display: inline-block;
+                  width: 240px;
+                  margin-left: 10px;
+                  height: 22px;
+                  vertical-align: middle;
+                  border-width: 0 0 1px 0;
+                  border-radius: 0;
+                }
+              }
+              &:nth-child(n+3) {
+                display: flex;
+                justify-content: space-between;
+                @include mobile {
+                  display: block;
+                }
+              }
+              &:last-child {
+                margin-top: 10px;
+              }
+              span {
+                color: $green;
+              }
+              p {
+                visibility: hidden;
+                color: $red;              
+              }
+              input[type=text], select, textarea {
+                display: block;
+                padding: 5px 10px;
+                width: 350px;              
+                height: 40px;
                 box-sizing: border-box;
-                font-size: 16px;
-                -webkit-appearance: none;           
+                border: $border;
+                border-radius: 5px;
+                @include mobile {
+                  width: 100%;
+                  box-sizing: border-box;
+                  font-size: 16px;
+                  -webkit-appearance: none;           
+                }
               }
-            }
-            textarea {
-              width: 730px;
-              height: 120px;
-              resize: none;
-              overflow: auto;
-              @include mobile {
-                width: 100%;
-                box-sizing: border-box;
-                font-size: 16px;                
-              }              
-            }
-            input[type=checkbox] {
-              display: none;
-              & + label {
-                padding-left: 24px;
-                background-image: url('/resources/img/ico_checkbox.png');
-                background-position: center left;
-                background-size: 16px;
-                background-repeat: no-repeat;
+              textarea {
+                width: 730px;
+                height: 120px;
+                resize: none;
+                overflow: auto;
+                @include mobile {
+                  width: 100%;
+                  box-sizing: border-box;
+                  font-size: 16px;                
+                }              
               }
-              &:checked + label {
-                background-image: url('/resources/img/ico_checkbox_checked.png');
+              input[type=checkbox] {
+                display: none;
+                & + label {
+                  padding-left: 24px;
+                  background-image: url('/resources/img/ico_checkbox.png');
+                  background-position: center left;
+                  background-size: 16px;
+                  background-repeat: no-repeat;
+                }
+                &:checked + label {
+                  background-image: url('/resources/img/ico_checkbox_checked.png');
+                }
               }
-            }
-            button {
-              display: block;
-              margin: 0 auto;
+              input[type=radio] {
+                + label {
+                  display: inline-block;
+                  margin: 5px 16px 7px 0;
+                  @include mobile {
+                    margin-bottom: 0;
+                  }
+                }
+              }
+              a {
+                text-decoration: underline;
+              }
+              button {
+                display: block;
+                margin: 0 auto;
+              }
             }
           }
         }

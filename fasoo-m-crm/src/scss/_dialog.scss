@@ -1,0 +1,213 @@
+div.dialog {
+  input[type=text].search.global {
+    padding: 0 15px 0 55px;
+    width: 100%;
+    height: 44px;
+    border: 0;
+    border-top: $border-light;
+    border-radius: 0;
+    background-position: left 25px center;
+    outline: none;
+  }
+  .table_sort {
+    padding: 0;
+    border-top: $border-light;
+    .scrollbar {
+      height: 333px;
+    }
+    table {
+      th {
+        padding-top: 0;
+        height: 30px;
+      }
+      tr {
+        td {
+          border: 0;
+        }        
+        &:last-child {
+          td {
+            border: 0;
+          }
+        }
+        label {
+          display: flex;
+          align-items: center;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .table_form {
+    padding: 15px 25px;
+    overflow: auto;
+    table {
+      tbody {
+        tr {
+          td {
+            input[type=text], textarea {
+              width: 100%;
+            }
+            ul {
+              margin: 10px 0;
+              li {
+                input[type=checkbox] + label {
+                  margin: 4px 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.no-title {
+    .flex.between {
+      padding: 0 25px;
+    }
+    .table_expand {
+      margin-top: 10px;
+      table {      
+        margin: 0 25px;
+        width: calc(100% - 50px);
+        tr {
+          &:last-child, &:nth-last-child(2) {
+            td {
+              border: 0;
+            }
+          }
+          &:last-child {
+            td {
+              border-top: $border-light;
+            }
+          }
+        }    
+      }
+      .scrollbar {
+        height: 300px;
+        table {
+          margin-top: 1px;
+        }
+      }
+    }
+    .selected_items {
+      padding: 0 25px;
+    }
+  }
+  &.text {
+    div {
+      outline: none;
+      p {
+        margin: 0 25px 10px;
+        &:first-child {
+          margin-top: 30px;
+        }
+        &:last-child {
+          margin-bottom: 30px;
+        }      
+      }
+    }
+  }
+}
+
+.ui-draggable .ui-dialog-titlebar {
+  cursor: move;
+}
+
+.ui-widget-content {  
+  background-color: $white;
+  border: $border-dark;
+  border-radius: 5px;
+  outline: none;
+}
+
+.ui-dialog {
+  box-shadow: 5px 5px 20px rgba(62, 63, 66, 0.12);
+  .ui-dialog-titlebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    background-color: #F0F2F5;
+    border-radius: 5px 5px 0px 0px;
+    .ui-dialog-title {
+      font-size: 16px;
+      font-weight: 700;      
+      color: $text-dark;
+    }
+    .ui-dialog-titlebar-close {
+      width: 14px;
+      height: 14px;      
+      font-size: 0;
+      background: url(../svg/ico_times.svg) no-repeat;
+    }
+  }  
+  .ui-dialog-content {
+    display: flex;
+    flex-direction: column;
+    //overflow: hidden;    
+    border: 0;
+    border-radius: 0;
+    &.no-title {
+      > div:first-child {
+        position: relative;
+        top: -40px;
+        padding-left: 25px;
+        display: flex;        
+        width: calc(100% - 65px);
+        width: max-content;
+      }
+    }
+  }
+  .ui-dialog-buttonpane {
+    padding: 15px 25px;
+    text-align: right;
+    background-color: $white;
+    border: 0;
+    border-top: $border-light;
+    border-radius: 0px 0px 5px 5px;
+    button {
+      padding: 10px 15px;
+      font-size: 14px;
+      font-weight: 700;
+      color: $text-dark;
+      background-color: $bg-secondary;
+      border-radius: 5px;
+      font-family: 'NotoSans', sans-serif;
+      transition: all .2s;
+      &:hover {
+        text-decoration: none;
+        background-color: #E3E5E8;
+      }
+      &:focus {
+        background-color: #D7D8DB;
+      }      
+      & + button {
+        margin-left: 10px;
+        color: $white;
+        background-color: $primary;
+        &:hover {
+          text-decoration: none;
+          background-color: #5F96FA;
+        }
+        &:focus {
+          background-color: #2560CC;
+        }
+      }
+    }
+  }
+} 
+
+.ui-widget-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #aaaaaa;
+  opacity: .3;  
+}
+
+.ui-front {
+  z-index: 100;
+}

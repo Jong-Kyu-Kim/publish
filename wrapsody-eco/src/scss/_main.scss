@@ -74,31 +74,34 @@
               }
             }
           }
-          ul {
-            overflow: hidden;
+          ul {            
+            font-size: 0;
             > li {          
-              float: left;
-              margin-top: 60px;
-              margin-left: 100px;
+              display: inline-block;
+              margin: 60px 50px 0;
               padding-top: 90px;
               width: 300px;
-              text-align: left;
+              text-align: center;
+              vertical-align: top;
               background-size: 60px;
-              background-repeat: no-repeat;              
+              background-repeat: no-repeat;
+              background-position: center top;
               @include mobile {
-                margin-top: 30px;
-                margin-left: 0;
+                margin: 30px 0;
                 padding-top: 80px;
                 width: 100%;
               }
-              @for $i from 1 through 6 {
+              @for $i from 1 through 7 {
                 &:nth-child(#{$i}) {
                   background-image: url('/resources/img/ico_feature_#{$i}.png');
                 }
               }
-              &:nth-child(3n-2) {
+              &:nth-child(3) {
                 margin-left: 0;
               }
+              &:nth-child(5) {
+                margin-right: 0;
+              }              
               p {
                 &:first-child {
                   margin-bottom: 16px;
@@ -109,6 +112,7 @@
                     font-size: 16px;
                   }
                 }
+                font-size: 16px;
               }
             }
           } 

@@ -1,0 +1,211 @@
+/* dropdown */
+
+.dropdown {
+  position: relative;
+  .filter {
+    display: flex;
+    align-items: center;
+    padding: 9px 15px;
+    border: $border-dark;
+    border-radius: 33px;    
+    span {
+      font-size: 14px;
+      font-weight: 700;
+      color: $text-dark;
+      & + span {
+        font-weight: 500;
+        margin-left: 7px;
+      }
+    }
+    &::after {
+      content: '';
+      position: relative;
+      display: inline-block;
+      margin-left: 5px;
+      width: 8px;
+      height: 4px;
+      background: url(../svg/ico_caret_down.svg) no-repeat;
+    }
+    &.on {
+      border-color: $primary;      
+      span {
+        color: $primary;
+      }
+      &::after {
+        background-image: url(../svg/ico_caret_down_on.svg);
+      }
+    }
+    + .items {
+      top: 45px;
+      left: 0;
+    }
+  }
+  .ellipsis_h, .ellipsis_v {
+    + .items {
+      top: 25px;
+      right: 0;
+      &.over {
+        top: auto;
+        bottom: 25px;
+      }
+    }
+  }
+  .items {
+    &.md {
+      width: 210px;
+    }
+    &.lg {
+      width: 430px;
+      .flex {
+        padding: 15px 25px 5px;
+        &.between {
+          align-items: center;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+        &.end {
+          border-top: $border-light;
+        }
+        > span {
+          font-size: 16px;
+          font-weight: 700;
+          color: $text-dark;
+        }
+      }
+      .search.global {
+        margin-top: 10px;
+        padding: 0 25px 0 50px;
+        width: 100%;
+        height: 44px;
+        border-radius: 0;
+        border-top: $border-light;
+        border-width: 1px 0 0 0;
+        background-position-x: 25px;
+      }
+    }    
+    &:not(.expanded) {
+      display: none;
+    }
+    position: absolute;    
+    width: 190px;
+    padding: 10px 0;
+    border: $border-dark;
+    border-radius: 5px;
+    background: $white;
+    box-shadow: 5px 5px 20px rgba(62, 63, 66, 0.12);
+    z-index: 1;
+    div {
+      &:not(.selected_items) {
+        &:not(.tree) {
+          li {
+            &:hover {
+              background-color: #F2F4F7;
+            } 
+          }                 
+        }        
+        ul {
+          position: relative;      
+          li {      
+            button {
+              padding: 0 15px;
+              width: 100%;
+              height: 34px;
+              text-align: left;
+              span {
+                vertical-align: top;
+              }
+              &.edit {
+                @include icon(before, edit);
+              }
+              &.up {
+                @include icon(before, arrow_up);
+              }
+              &.double_up {
+                @include icon(before, arrow_double_up);
+              }          
+              &.down {
+                @include icon(before, arrow_down);
+              }          
+              &.double_down {
+                @include icon(before, arrow_double_down);
+              }          
+              &.remove{
+                span {
+                  color: $text-danger;
+                }
+                @include icon(before, remove);
+              } 
+            }
+          }
+          & + ul {
+            margin-top: 10px;
+            padding-top: 10px;
+            &::before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 15px;
+              display: block;      
+              width: calc(100% - 30px);
+              height: 1px;          
+              background-color: #EDEFF3;
+            }
+          }
+        }
+      }
+      &.check {
+        ul {
+          li {
+            padding: 0 15px;
+            label {              
+              display: block;
+              height: 34px;
+              line-height: 30px;
+              span {
+                vertical-align: middle;
+                color: $text-dark;
+              }
+            }
+          }
+        }
+      }      
+      &.radio {
+        ul {
+          li {
+            input[type=radio] {
+              display: none;
+              + label {
+                display: block;
+                padding-left: 38px;
+                width: 100%;
+                box-sizing: border-box;
+                height: 34px;
+                line-height: 34px;
+                background: none;
+                span {
+                  color: $text-dark;
+                }
+              }
+              &:checked {
+                + label {
+                  background: url(../svg/ico_check.svg) no-repeat left 15px center;
+                  span {
+                    color: $primary;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }     
+      &.flex {
+        padding: 5px 15px;
+        .uncheck {
+          span {
+            color:  $text-danger;
+          }
+        }
+      }
+    }
+  }
+}

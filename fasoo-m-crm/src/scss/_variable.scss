@@ -1,0 +1,72 @@
+$primary: #2871F5;
+$white: #FFF;
+
+$text-secondary: #797B82;
+$text-success: #25C16F;
+$text-danger: #F6705E;
+$text-warning: #F6AA2E;
+$text-info: '';
+$text-dark: #28292B;
+$text-muted: #B1B5BA;
+
+$bg-secondary: #F0F2F5;
+// $bg-success: #46CA85;
+// $bg-danger: #F77E6E;
+// $bg-warning: #E5BE00;
+// $bg-info: #47C7C3;
+// $bg-dark: #454952;
+// $bg-muted: #F2F4F7;
+
+$border-light: 1px solid #EDEFF3;
+$border-dark: 1px solid #CBCED3;
+
+@mixin icon($arg, $url) {
+  &::#{$arg} {
+    content: '';
+    position: relative;
+    display: inline-block;
+    margin-#{if($arg == before, right, left)}: 5px;
+    width: 18px;
+    height: 18px;
+    background: url(../svg/ico_#{$url}.svg) no-repeat center;
+  }
+}
+
+@mixin  ellipsis {
+  display: inline-block;
+  // width: calc(100% - 40px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin tooltip {
+  cursor: pointer;
+  + span {
+    display: none;
+    //transition: all .2s;
+  }
+  &:hover {
+    + span {
+      position: absolute;
+      display: block;
+      padding: 5px 10px;
+      color: $white;
+      z-index: 1;
+      background-color: #454952;
+      white-space: nowrap;
+      border-radius: 5px;    
+      &::before {
+        content: '';
+        position: absolute;
+        top: -6px;
+        width: 0;
+        height: 0;
+        border-top: 0;
+        border-bottom: 12px solid #454952;
+        border-right: 12px solid transparent;
+        border-left: 12px solid  transparent;
+      }
+    }
+  }
+}

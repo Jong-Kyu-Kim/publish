@@ -1,0 +1,1556 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('./include/head.html', { 'title': 'LEAD' })
+<body>
+  <div id="container">
+    @@include('./include/sidebar.html')
+    <main class="scrollbar">
+      <header>
+        <div>
+          <h2>
+            <span class="current">LEAD</span>            
+          </h2>
+          <a href="">
+            <span>마케팅 DB 조회</span>
+          </a>          
+        </div>
+  
+        <div>
+          <div>
+            <a href="./3_2.html" class="btn primary plus">
+              <span>LEAD 생성</span>
+            </a>
+          </div>
+          <div>
+            <input type="text" class="search global" placeholder="검색어를 입력하세요.">
+          </div>          
+        </div>
+  
+        <div>
+          <div>
+            <div class="dropdown">
+              <button class="filter">
+                <span>기간</span>
+                <span></span>
+              </button>
+              <div class="items md">
+                <div class="radio">
+                  <ul>
+                    <li>
+                      <input type="radio" name="dateRange" id="thisYear">
+                      <label for="thisYear"><span>올해</span></label>
+                    </li>
+                    <li>
+                      <input type="radio" name="dateRange" id="prevMonth">
+                      <label for="prevMonth"><span>전월</span></label>
+                    </li>
+                    <li>
+                      <input type="radio" name="dateRange" id="thisMonth">
+                      <label for="thisMonth"><span>당월</span></label>
+                    </li>
+                    <li>
+                      <input type="radio" name="dateRange" id="quarter1">
+                      <label for="quarter1"><span>1분기</span></label>
+                    </li>
+                    <li>
+                      <input type="radio" name="dateRange" id="quarter2">
+                      <label for="quarter2"><span>2분기</span></label>
+                    </li>
+                    <li>
+                      <input type="radio" name="dateRange" id="quarter3">
+                      <label for="quarter3"><span>3분기</span></label>
+                    </li>
+                    <li>
+                      <input type="radio" name="dateRange" id="quarter4">
+                      <label for="quarter4"><span>4분기</span></label>
+                    </li>
+                    <li>
+                      <input type="radio" name="dateRange" id="half1">
+                      <label for="half1"><span>상반기</span></label>
+                    </li>
+                    <li>
+                      <input type="radio" name="dateRange" id="half2">
+                      <label for="half2"><span>하반기</span></label>
+                    </li>                                                            
+                  </ul>
+                </div>
+                <div class="date">
+                  <div>
+                    <label for=""><span>직접 입력</span></label>
+                  </div>                  
+                  <div class="datepicker">
+                    <input type="text" placeholder="yyyy-mm-dd" />
+                  </div>
+                  <div class="datepicker">
+                    <input type="text" placeholder="yyyy-mm-dd" />
+                  </div>
+                </div>
+                <div class="flex end">
+                  <button class="btn primary">
+                    <span>확인</span>
+                  </button>                  
+                </div>
+              </div>        
+            </div>
+
+            <div class="dropdown">
+              <button class="filter">
+                <span>본부</span>
+                <span></span>
+              </button>
+              <div class="items">
+                <div class="check">
+                  <ul>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>GS본부</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>NS1본부</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>NS2본부</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>NS3본부</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>SPARROW</span></label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="flex between">
+                  <button class="uncheck">
+                    <span>전체 선택 해제</span>
+                  </button>
+                  <button class="btn primary">
+                    <span>확인</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="dropdown">
+              <button class="filter">
+                <span>팀</span>
+                <span></span>
+              </button>
+              <div class="items">
+                <div class="check">
+                  <ul>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>GS사업팀</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>AE2팀</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>AM2팀</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>AE3팀</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>AE3팀</span></label>
+                    </li>                    
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>AM3팀</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>사업전략팀</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>컨설팅사업팀</span></label>
+                    </li>   
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>SP사업팀</span></label>
+                    </li>   
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>SP경영기획팀</span></label>
+                    </li>                                                               
+                  </ul>
+                </div>
+                <div class="flex between">
+                  <button class="uncheck">
+                    <span>전체 선택 해제</span>
+                  </button>
+                  <button class="btn primary">
+                    <span>확인</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="dropdown">
+              <button class="filter dialog">
+                <span>담당자</span>
+                <span></span>
+              </button>
+              <!-- <div class="items lg">
+                <div class="flex between"">
+                  <span>담당자 선택</span>
+                  <button class="close"></button>
+                </div>
+                <div>
+                  <input type="text" class="search global" placeholder="검색어를 입력하세요.">
+                </div>
+                <div class="tree scrollbar">
+                  <ul>
+                    <li>
+                      <button class="caret avatar">
+                        <span class="red">AE</span>
+                        <span>AE2팀</span>
+                      </button>
+                      <ul>
+                        <li>
+                          <button>
+                            <div>
+                              <input type="checkbox">
+                              <label for="" class="avatar">
+                                <span class="user">성하</span>
+                              </label>
+                              <span>차성하</span>
+                            </div>
+                            <div>
+                              <span>사원</span>
+                            </div>
+                          </button>
+                        </li>
+                        <li>
+                          <button>
+                            <div>
+                              <input type="checkbox">
+                              <label for="" class="avatar">
+                                <span class="user">태영</span>
+                              </label>                              
+                              <span>유태영</span>
+                            </div>
+                            <div>
+                              <span>대리</span>
+                            </div>
+                          </button>
+                        </li>
+                      </ul>                          
+                    </li>
+                    <li>
+                      <button class="caret avatar">
+                        <span class="purple">AE</span>
+                        <span>AE2팀</span>
+                      </button>
+                      <ul>
+                        <li>
+                          <button>
+                            <div>
+                              <input type="checkbox">
+                              <label for="" class="avatar">
+                                <span class="user">성하</span>
+                              </label>                              
+                              <span>차성하</span>
+                            </div>
+                            <div>
+                              <span>사원</span>
+                            </div>
+                          </button>
+                        </li>
+                        <li>
+                          <button>
+                            <div>
+                              <input type="checkbox">
+                              <label for="" class="avatar">
+                                <span class="user">태영</span>
+                              </label>                              
+                              <span>유태영</span>
+                            </div>
+                            <div>
+                              <span>대리</span>
+                            </div>
+                          </button>
+                        </li>
+                      </ul>                          
+                    </li>
+                    <li>
+                      <button class="caret avatar">
+                        <span class="yellow">AE</span>
+                        <span>AE2팀</span>
+                      </button>
+                      <ul>
+                        <li>
+                          <button>
+                            <div>
+                              <input type="checkbox">
+                              <label for="" class="avatar">
+                                <span class="user">성하</span>
+                              </label>                              
+                              <span>차성하</span>
+                            </div>
+                            <div>
+                              <span>사원</span>
+                            </div>
+                          </button>
+                        </li>
+                        <li>
+                          <button>
+                            <div>
+                              <input type="checkbox">
+                              <label for="" class="avatar">
+                                <span class="user">태영</span>
+                              </label>     
+                              <span>유태영</span>
+                            </div>
+                            <div>
+                              <span>대리</span>
+                            </div>
+                          </button>
+                        </li>
+                      </ul>                          
+                    </li>
+                    <li>
+                      <button class="caret avatar">
+                        <span class="cyan">AE</span>
+                        <span>AE2팀</span>
+                      </button>
+                      <ul>
+                        <li>
+                          <button>
+                            <div>
+                              <input type="checkbox">
+                              <label for="" class="avatar">
+                                <span class="user">성하</span>
+                              </label>   
+                              <span>차성하</span>
+                            </div>
+                            <div>
+                              <span>사원</span>
+                            </div>
+                          </button>
+                        </li>
+                        <li>
+                          <button>
+                            <div>
+                              <input type="checkbox">
+                              <label for="" class="avatar">
+                                <span class="user">태영</span>
+                              </label>     
+                              <span>유태영</span>
+                            </div>
+                            <div>
+                              <span>대리</span>
+                            </div>
+                          </button>
+                        </li>
+                      </ul>                          
+                    </li>                                                                                
+                    <li>
+                      <button class="caret avatar">
+                        <span class="blue">AE</span>
+                        <span>AE2팀</span>
+                      </button>
+                      <ul>
+                        <li>
+                          <button>
+                            <div>
+                              <input type="checkbox">
+                              <label for="" class="avatar">
+                                <span class="user">성하</span>
+                              </label>   
+                              <span>차성하</span>
+                            </div>
+                            <div>
+                              <span>사원</span>
+                            </div>
+                          </button>
+                        </li>
+                        <li>
+                          <button>
+                            <div>
+                              <input type="checkbox">
+                              <label for="" class="avatar">
+                                <span class="user">태영</span>
+                              </label>     
+                              <span>유태영</span>
+                            </div>
+                            <div>
+                              <span>대리</span>
+                            </div>
+                          </button>
+                        </li>
+                      </ul>                        
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="selected_items">
+                  <ul>
+                    <li>
+                      <button>
+                        <span>차성하</span>
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <span>유태영</span>
+                      </button>
+                    </li>                    
+                  </ul>
+                </div>
+                <div class="flex end">
+                  <button class="btn secondary">
+                    <span>취소</span>
+                  </button>
+                  <button class="btn primary">
+                    <span>확인</span>
+                  </button>                  
+                </div>
+              </div> -->
+            </div>
+            
+            <div class="dropdown">
+              <button class="filter">
+                <span>유입 경로</span>
+                <span></span>
+              </button>
+              <div class="items">
+                <div class="check">
+                  <ul>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>공식파트너</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>세미나</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>아웃바운드</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>에이전트</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>인바운드-이메일</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>인바운드-콜</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>인바운드-홈페이지</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>컨퍼런스</span></label>
+                    </li>                    
+                  </ul>
+                </div>
+                <div class="flex between">
+                  <button class="uncheck">
+                    <span>전체 선택 해제</span>
+                  </button>
+                  <button class="btn primary">
+                    <span>확인</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="dropdown">
+              <button class="filter on">
+                <span>단계</span>
+                <span>사업화 + 2</span>  <!-- 첫번째 체크 항목 + 개수-->
+              </button>
+              <div class="items">
+                <div class="check">
+                  <ul>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>관심</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>정보수집</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>사업화</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>벤더결정</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>수주</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>DROP</span></label>
+                    </li>                
+                  </ul>
+                </div>
+                <div class="flex between">
+                  <button class="uncheck">
+                    <span>전체 선택 해제</span>
+                  </button>
+                  <button class="btn primary">
+                    <span>확인</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+                        
+            <div class="dropdown">
+              <button class="filter on">
+                <span>확도</span>
+                <span>0%·10%·50%·70%·100%</span> <!-- 다른 필터와 달리 확도만 모든 체크된 항목 표시-->
+              </button>
+              <div class="items">
+                <div class="check">
+                  <ul>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>0%</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>10%</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>50%</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>70%</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>90%</span></label>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <label for=""><span>100%</span></label>
+                    </li>                
+                  </ul>
+                </div>
+                <div class="flex between">
+                  <button class="uncheck">
+                    <span>전체 선택 해제</span>
+                  </button>
+                  <button class="btn primary">
+                    <span>확인</span>
+                  </button>
+                </div>
+              </div>
+            </div>            
+          </div>
+        </div>
+  
+        <div class="mb0">
+          <div class="tabs" role="tablist">
+            <button role="tab" aria-selected="true" class="selected">
+              <span>전체 LEAD</span>                
+            </button>
+            <button role="tab" aria-selected="false">
+              <span>내 담당 LEAD</span>                
+            </button>
+          </div>
+          <div class="total">
+            <span>총 예상수주액</span>
+            <span>₩ 1,500,000,000</span>
+            <span class="question">?</span>
+            <span>(₩ 1,100,000,000 + ¥ 500,000 + $ 200,000)</span>
+          </div>
+        </div>
+      </header>
+  
+      <div id="content">
+        <div class="table_sort">
+          <table>
+            <colgroup>
+              <col />
+              <col style="width:10%;" />
+              <col style="width:10%;" />
+              <col style="width:6%;" />
+              <col style="width:7%;" />
+              <col style="width:7%;" />
+              <col style="width:7%;" />
+              <col style="width:7%;" />
+              <col style="width:6%;" />
+              <col style="width:11%;" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">
+                  <button>
+                    <span>LEAD 이름</span>
+                  </button>
+                </th>
+                <th scope="col">
+                  <button>
+                    <span>예상 수주일</span>
+                  </button>
+                </th>
+                <th scope="col">
+                  <button class="asc">
+                    <span>예상 수주액</span>
+                  </button>
+                </th>
+                <th scope="col">
+                  <button class="desc">
+                    <span>통화</span>
+                  </button>
+                </th>
+                <th scope="col">
+                  <button class="asc">
+                    <span>등록일</span>
+                  </button>
+                </th>
+                <th scope="col">
+                  <button class="asc">
+                    <span>본부</span>
+                  </button>
+                </th>
+                <th scope="col">
+                  <button class="desc">
+                    <span>담당자</span>
+                  </button>
+                </th>
+                <th scope="col">
+                  <button class="asc">
+                    <span>단계</span>
+                  </button>
+                </th>
+                <th scope="col">
+                  <button class="desc">
+                    <span>확도</span>
+                  </button>
+                </th>
+                <th scope="col">
+                  <button class="asc">
+                    <span>업데이트 날짜</span>
+                  </button>
+                </th>                
+              </tr>
+            </thead>
+          </table>          
+          <table>
+            <colgroup>
+              <col />
+              <col style="width:10%;" />
+              <col style="width:10%;" />
+              <col style="width:6%;" />
+              <col style="width:7%;" />
+              <col style="width:7%;" />
+              <col style="width:7%;" />
+              <col style="width:7%;" />
+              <col style="width:6%;" />
+              <col style="width:11%;" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="./3_3.html" class="avatar">
+                    <span class=" company red">Ve</span>
+                    <span>Verizon - Maintenance 2020</span>
+                  </a>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>
+                <td>
+                  <span>11,880,000</span>
+                </td>
+                <td>
+                  <span> ₩ </span>
+                </td>
+                <td>
+                  <span>2020.08.11</span>
+                </td>
+                <td>
+                  <span>GS사업</span>
+                </td>
+                <td>
+                  <span>손종곤</span>
+                </td>
+                <td>
+                  <span class="level grey">관심</span>
+                </td>
+                <td>
+                  <span>100%</span>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>                                                                                
+              </tr>
+
+              <tr>
+                <td>
+                  <a href="./3_3.html" class="avatar">
+                    <span class=" company red">Ve</span>
+                    <span>Verizon - Maintenance 2020</span>
+                  </a>                
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>
+                <td>
+                  <span>11,880,000</span>
+                </td>
+                <td>
+                  <span> ₩ </span>
+                </td>
+                <td>
+                  <span>2020.08.11</span>
+                </td>
+                <td>
+                  <span>GS사업</span>
+                </td>
+                <td>
+                  <span>손종곤</span>
+                </td>
+                <td>
+                  <span class="level yellow">정보수집</span>
+                </td>
+                <td>
+                  <span>100%</span>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>                                                                                
+              </tr>
+              
+              <tr>
+                <td>
+                  <a href="./3_3.html" class="avatar">
+                    <span class=" company red">Ve</span>
+                    <span>Verizon - Maintenance 2020</span>
+                  </a>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>
+                <td>
+                  <span>11,880,000</span>
+                </td>
+                <td>
+                  <span> ₩ </span>
+                </td>
+                <td>
+                  <span>2020.08.11</span>
+                </td>
+                <td>
+                  <span>GS사업</span>
+                </td>
+                <td>
+                  <span>손종곤</span>
+                </td>
+                <td>
+                  <span class="level green">사업화</span>
+                </td>
+                <td>
+                  <span>100%</span>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>                                                                                
+              </tr>
+              
+              <tr>
+                <td>
+                  <a href="./3_3.html" class="avatar">
+                    <span class=" company red">Ve</span>
+                    <span>Verizon - Maintenance 2020</span>
+                  </a>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>
+                <td>
+                  <span>11,880,000</span>
+                </td>
+                <td>
+                  <span> ₩ </span>
+                </td>
+                <td>
+                  <span>2020.08.11</span>
+                </td>
+                <td>
+                  <span>GS사업</span>
+                </td>
+                <td>
+                  <span>손종곤</span>
+                </td>
+                <td>
+                  <span class="level purple">벤더 결정</span>
+                </td>
+                <td>
+                  <span>100%</span>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>                                                                                
+              </tr>
+              
+              <tr>
+                <td>
+                  <a href="./3_3.html" class="avatar">
+                    <span class=" company red">Ve</span>
+                    <span>Verizon - Maintenance 2020</span>
+                  </a>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>
+                <td>
+                  <span>11,880,000</span>
+                </td>
+                <td>
+                  <span> ₩ </span>
+                </td>
+                <td>
+                  <span>2020.08.11</span>
+                </td>
+                <td>
+                  <span>GS사업</span>
+                </td>
+                <td>
+                  <span>손종곤</span>
+                </td>
+                <td>
+                  <span class="level blue">수주</span>
+                </td>
+                <td>
+                  <span>100%</span>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>                                                                                
+              </tr>
+
+              <tr>
+                <td>
+                  <a href="./3_3.html" class="avatar">
+                    <span class=" company red">Ve</span>
+                    <span>Verizon - Maintenance 2020</span>
+                  </a>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>
+                <td>
+                  <span>11,880,000</span>
+                </td>
+                <td>
+                  <span> ₩ </span>
+                </td>
+                <td>
+                  <span>2020.08.11</span>
+                </td>
+                <td>
+                  <span>GS사업</span>
+                </td>
+                <td>
+                  <span>손종곤</span>
+                </td>
+                <td>
+                  <span class="level red">DROP</span>
+                </td>
+                <td>
+                  <span>100%</span>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>                                                                                
+              </tr>              
+
+              <tr>
+                <td>
+                  <a href="./3_3.html" class="avatar">
+                    <span class=" company red">Ve</span>
+                    <span>Verizon - Maintenance 2020</span>
+                  </a>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>
+                <td>
+                  <span>11,880,000</span>
+                </td>
+                <td>
+                  <span> ₩ </span>
+                </td>
+                <td>
+                  <span>2020.08.11</span>
+                </td>
+                <td>
+                  <span>GS사업</span>
+                </td>
+                <td>
+                  <span>손종곤</span>
+                </td>
+                <td>
+                  <span class="level grey">관심</span>
+                </td>
+                <td>
+                  <span>100%</span>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>                                                                                
+              </tr>
+
+              <tr>
+                <td>
+                  <a href="./3_3.html" class="avatar">
+                    <span class=" company red">Ve</span>
+                    <span>Verizon - Maintenance 2020</span>
+                  </a>                
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>
+                <td>
+                  <span>11,880,000</span>
+                </td>
+                <td>
+                  <span> ₩ </span>
+                </td>
+                <td>
+                  <span>2020.08.11</span>
+                </td>
+                <td>
+                  <span>GS사업</span>
+                </td>
+                <td>
+                  <span>손종곤</span>
+                </td>
+                <td>
+                  <span class="level yellow">정보수집</span>
+                </td>
+                <td>
+                  <span>100%</span>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>                                                                                
+              </tr>
+              
+              <tr>
+                <td>
+                  <a href="./3_3.html" class="avatar">
+                    <span class=" company red">Ve</span>
+                    <span>Verizon - Maintenance 2020</span>
+                  </a>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>
+                <td>
+                  <span>11,880,000</span>
+                </td>
+                <td>
+                  <span> ₩ </span>
+                </td>
+                <td>
+                  <span>2020.08.11</span>
+                </td>
+                <td>
+                  <span>GS사업</span>
+                </td>
+                <td>
+                  <span>손종곤</span>
+                </td>
+                <td>
+                  <span class="level green">사업화</span>
+                </td>
+                <td>
+                  <span>100%</span>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>                                                                                
+              </tr>
+              
+              <tr>
+                <td>
+                  <a href="./3_3.html" class="avatar">
+                    <span class=" company red">Ve</span>
+                    <span>Verizon - Maintenance 2020</span>
+                  </a>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>
+                <td>
+                  <span>11,880,000</span>
+                </td>
+                <td>
+                  <span> ₩ </span>
+                </td>
+                <td>
+                  <span>2020.08.11</span>
+                </td>
+                <td>
+                  <span>GS사업</span>
+                </td>
+                <td>
+                  <span>손종곤</span>
+                </td>
+                <td>
+                  <span class="level purple">벤더 결정</span>
+                </td>
+                <td>
+                  <span>100%</span>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>                                                                                
+              </tr>
+              
+              <tr>
+                <td>
+                  <a href="./3_3.html" class="avatar">
+                    <span class=" company red">Ve</span>
+                    <span>Verizon - Maintenance 2020</span>
+                  </a>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>
+                <td>
+                  <span>11,880,000</span>
+                </td>
+                <td>
+                  <span> ₩ </span>
+                </td>
+                <td>
+                  <span>2020.08.11</span>
+                </td>
+                <td>
+                  <span>GS사업</span>
+                </td>
+                <td>
+                  <span>손종곤</span>
+                </td>
+                <td>
+                  <span class="level blue">수주</span>
+                </td>
+                <td>
+                  <span>100%</span>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>                                                                                
+              </tr>
+
+              <tr>
+                <td>
+                  <a href="./3_3.html" class="avatar">
+                    <span class=" company red">Ve</span>
+                    <span>Verizon - Maintenance 2020</span>
+                  </a>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>
+                <td>
+                  <span>11,880,000</span>
+                </td>
+                <td>
+                  <span> ₩ </span>
+                </td>
+                <td>
+                  <span>2020.08.11</span>
+                </td>
+                <td>
+                  <span>GS사업</span>
+                </td>
+                <td>
+                  <span>손종곤</span>
+                </td>
+                <td>
+                  <span class="level red">DROP</span>
+                </td>
+                <td>
+                  <span>100%</span>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>                                                                                
+              </tr>   
+              
+              <tr>
+                <td>
+                  <a href="./3_3.html" class="avatar">
+                    <span class=" company red">Ve</span>
+                    <span>Verizon - Maintenance 2020</span>
+                  </a>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>
+                <td>
+                  <span>11,880,000</span>
+                </td>
+                <td>
+                  <span> ₩ </span>
+                </td>
+                <td>
+                  <span>2020.08.11</span>
+                </td>
+                <td>
+                  <span>GS사업</span>
+                </td>
+                <td>
+                  <span>손종곤</span>
+                </td>
+                <td>
+                  <span class="level grey">관심</span>
+                </td>
+                <td>
+                  <span>100%</span>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>                                                                                
+              </tr>
+
+              <tr>
+                <td>
+                  <a href="./3_3.html" class="avatar">
+                    <span class=" company red">Ve</span>
+                    <span>Verizon - Maintenance 2020</span>
+                  </a>               
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>
+                <td>
+                  <span>11,880,000</span>
+                </td>
+                <td>
+                  <span> ₩ </span>
+                </td>
+                <td>
+                  <span>2020.08.11</span>
+                </td>
+                <td>
+                  <span>GS사업</span>
+                </td>
+                <td>
+                  <span>손종곤</span>
+                </td>
+                <td>
+                  <span class="level yellow">정보수집</span>
+                </td>
+                <td>
+                  <span>100%</span>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>                                                                                
+              </tr>
+              
+              <tr>
+                <td>
+                  <a href="./3_3.html" class="avatar">
+                    <span class=" company red">Ve</span>
+                    <span>Verizon - Maintenance 2020</span>
+                  </a>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>
+                <td>
+                  <span>11,880,000</span>
+                </td>
+                <td>
+                  <span> ₩ </span>
+                </td>
+                <td>
+                  <span>2020.08.11</span>
+                </td>
+                <td>
+                  <span>GS사업</span>
+                </td>
+                <td>
+                  <span>손종곤</span>
+                </td>
+                <td>
+                  <span class="level green">사업화</span>
+                </td>
+                <td>
+                  <span>100%</span>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>                                                                                
+              </tr>
+              
+              <tr>
+                <td>
+                  <a href="./3_3.html" class="avatar">
+                    <span class=" company red">Ve</span>
+                    <span>Verizon - Maintenance 2020</span>
+                  </a>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>
+                <td>
+                  <span>11,880,000</span>
+                </td>
+                <td>
+                  <span> ₩ </span>
+                </td>
+                <td>
+                  <span>2020.08.11</span>
+                </td>
+                <td>
+                  <span>GS사업</span>
+                </td>
+                <td>
+                  <span>손종곤</span>
+                </td>
+                <td>
+                  <span class="level purple">벤더 결정</span>
+                </td>
+                <td>
+                  <span>100%</span>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>                                                                                
+              </tr>
+              
+              <tr>
+                <td>
+                  <a href="./3_3.html" class="avatar">
+                    <span class=" company red">Ve</span>
+                    <span>Verizon - Maintenance 2020</span>
+                  </a>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>
+                <td>
+                  <span>11,880,000</span>
+                </td>
+                <td>
+                  <span> ₩ </span>
+                </td>
+                <td>
+                  <span>2020.08.11</span>
+                </td>
+                <td>
+                  <span>GS사업</span>
+                </td>
+                <td>
+                  <span>손종곤</span>
+                </td>
+                <td>
+                  <span class="level blue">수주</span>
+                </td>
+                <td>
+                  <span>100%</span>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>                                                                                
+              </tr>
+
+              <tr>
+                <td>
+                  <a href="./3_3.html" class="avatar">
+                    <span class=" company red">Ve</span>
+                    <span>Verizon - Maintenance 2020</span>
+                  </a>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>
+                <td>
+                  <span>11,880,000</span>
+                </td>
+                <td>
+                  <span> ₩ </span>
+                </td>
+                <td>
+                  <span>2020.08.11</span>
+                </td>
+                <td>
+                  <span>GS사업</span>
+                </td>
+                <td>
+                  <span>손종곤</span>
+                </td>
+                <td>
+                  <span class="level red">DROP</span>
+                </td>
+                <td>
+                  <span>100%</span>
+                </td>
+                <td>
+                  <span>2020.09.30</span>
+                </td>                                                                                
+              </tr>                 
+            </tbody>
+          </table>
+          <div class="pagination flex">
+            <ul>
+              <li>
+                <a href="" class="prev"><span>Prev</span></a>
+              </li>              
+              <li>
+                <a href="" class="current"><span>1</span></a>
+              </li>
+              <li>
+                <a href=""><span>2</span></a>
+              </li>
+              <li>
+                <a href=""><span>3</span></a>
+              </li>
+              <li>
+                <a href=""><span>4</span></a>
+              </li>
+              <li>
+                <a href=""><span>5</span></a>
+              </li>
+              <li>
+                <a href=""><span>6</span></a>
+              </li>
+              <li>
+                <a href="" class="next"><span>Next</span></a>
+              </li>
+            </ul>        
+          </div>          
+        </div>
+
+        <div id="checkEmployee" class="dialog" title="담당자 추가">
+          <div>
+            <input type="text" class="search global" placeholder="검색어를 입력하세요.">
+          </div>
+          <div class="tree scrollbar">
+            <ul>
+              <li>
+                <button class="caret avatar">
+                  <span class="red">AE</span>
+                  <span>AE2팀</span>
+                </button>
+                <ul>
+                  <li>
+                    <button>
+                      <div>
+                        <input type="checkbox">
+                        <label for="" class="avatar">
+                          <span class="user">성하</span>
+                        </label>
+                        <span>차성하</span>
+                      </div>
+                      <div>
+                        <span>사원</span>
+                      </div>
+                    </button>
+                  </li>
+                  <li>
+                    <button>
+                      <div>
+                        <input type="checkbox">
+                        <label for="" class="avatar">
+                          <span class="user">태영</span>
+                        </label>                              
+                        <span>유태영</span>
+                      </div>
+                      <div>
+                        <span>대리</span>
+                      </div>
+                    </button>
+                  </li>
+                </ul>                          
+              </li>
+              <li>
+                <button class="caret avatar">
+                  <span class="purple">AE</span>
+                  <span>AE2팀</span>
+                </button>
+                <ul>
+                  <li>
+                    <button>
+                      <div>
+                        <input type="checkbox">
+                        <label for="" class="avatar">
+                          <span class="user">성하</span>
+                        </label>                              
+                        <span>차성하</span>
+                      </div>
+                      <div>
+                        <span>사원</span>
+                      </div>
+                    </button>
+                  </li>
+                  <li>
+                    <button>
+                      <div>
+                        <input type="checkbox">
+                        <label for="" class="avatar">
+                          <span class="user">태영</span>
+                        </label>                              
+                        <span>유태영</span>
+                      </div>
+                      <div>
+                        <span>대리</span>
+                      </div>
+                    </button>
+                  </li>
+                </ul>                          
+              </li>
+              <li>
+                <button class="caret avatar">
+                  <span class="yellow">AE</span>
+                  <span>AE2팀</span>
+                </button>
+                <ul>
+                  <li>
+                    <button>
+                      <div>
+                        <input type="checkbox">
+                        <label for="" class="avatar">
+                          <span class="user">성하</span>
+                        </label>                              
+                        <span>차성하</span>
+                      </div>
+                      <div>
+                        <span>사원</span>
+                      </div>
+                    </button>
+                  </li>
+                  <li>
+                    <button>
+                      <div>
+                        <input type="checkbox">
+                        <label for="" class="avatar">
+                          <span class="user">태영</span>
+                        </label>     
+                        <span>유태영</span>
+                      </div>
+                      <div>
+                        <span>대리</span>
+                      </div>
+                    </button>
+                  </li>
+                </ul>                          
+              </li>
+              <li>
+                <button class="caret avatar">
+                  <span class="cyan">AE</span>
+                  <span>AE2팀</span>
+                </button>
+                <ul>
+                  <li>
+                    <button>
+                      <div>
+                        <input type="checkbox">
+                        <label for="" class="avatar">
+                          <span class="user">성하</span>
+                        </label>   
+                        <span>차성하</span>
+                      </div>
+                      <div>
+                        <span>사원</span>
+                      </div>
+                    </button>
+                  </li>
+                  <li>
+                    <button>
+                      <div>
+                        <input type="checkbox">
+                        <label for="" class="avatar">
+                          <span class="user">태영</span>
+                        </label>     
+                        <span>유태영</span>
+                      </div>
+                      <div>
+                        <span>대리</span>
+                      </div>
+                    </button>
+                  </li>
+                </ul>                          
+              </li>                                                                                
+              <li>
+                <button class="caret avatar">
+                  <span class="blue">AE</span>
+                  <span>AE2팀</span>
+                </button>
+                <ul>
+                  <li>
+                    <button>
+                      <div>
+                        <input type="checkbox">
+                        <label for="" class="avatar">
+                          <span class="user">성하</span>
+                        </label>   
+                        <span>차성하</span>
+                      </div>
+                      <div>
+                        <span>사원</span>
+                      </div>
+                    </button>
+                  </li>
+                  <li>
+                    <button>
+                      <div>
+                        <input type="checkbox">
+                        <label for="" class="avatar">
+                          <span class="user">태영</span>
+                        </label>     
+                        <span>유태영</span>
+                      </div>
+                      <div>
+                        <span>대리</span>
+                      </div>
+                    </button>
+                  </li>
+                </ul>                        
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="selected_items">
+            <ul>
+              <li>
+                <button>
+                  <span>차성하</span>
+                </button>
+              </li>
+              <li>
+                <button>
+                  <span>유태영</span>
+                </button>
+              </li>                    
+            </ul>
+          </div>
+        </div>        
+
+      </div>
+    </main>
+  </div>  
+</body>
+</html>

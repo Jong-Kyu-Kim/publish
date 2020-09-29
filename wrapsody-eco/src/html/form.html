@@ -11,42 +11,111 @@
         <div>
           <form action="">
             <div>
-              <label for="">이름 <span>*</span></label>
-              <input type="text">
-              <p>이름을 입력하세요.</p>
-            </div>
-            <div>
-              <label for="">이메일 주소 <span>*</span></label>
-              <input type="text">
-              <p>이메일 주소를 입력하세요.</p>
-            </div>
-            <div>
-              <label for="">회사 이름 <span>*</span></label>
-              <input type="text">
-              <p>회사 이름을 입력하세요.</p>
-            </div>
-            <div>
-              <label for="">회사 규모 <span>*</span></label>
-              <select name="" id="">
-                <option value="" selected disabled>선택</option>
-                <option value="1">1 - 49</option>
-                <option value="50">50 - 499</option>
-                <option value="500">500 - 199</option>
-                <option value="2000">2000+</option>
-              </select>
-              <p>회사 규모를 선택해주세요.</p>
-            </div>
-            <div>
               <label for="">메시지 <span>*</span></label>
               <textarea name="" id="" cols="30" rows="10"></textarea>
               <p>메시지를 입력해주세요.</p>
             </div>
+            <div class="from">
+              <label for="">어떤 경로를 통해 최근에 Wrapsody eCo를 접하셨나요? <span>*</span></label>
+              <div class="left">
+                <div>
+                    <input type="checkbox" id="chk1" data-value="행사">
+                    <label for="chk1">온/오프라인 행사</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="chk2" data-value="보도자료">
+                    <label for="chk2">보도자료/기사</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="chk3" data-value="키워드 광고">
+                    <label for="chk3">키워드 검색 광고 (네이버/다음/구글)</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="chk4" data-value="프로모션">
+                    <label for="chk4">Fasoo가 진행한 프로모션(eDM/온라인 배너 등)</label>                        
+                </div>
+              </div>
+              <div class="right">
+                <div>
+                    <input type="checkbox" id="chk5" data-value="SNS">
+                    <label for="chk5">SNS (블로그/인스타그램/페이스북/유튜브)</label>                        
+                </div>
+                <!--
+                <div>
+                    <input type="checkbox" id="chk6" data-value="홈페이지">
+                    <label for="chk6">Fasoo 홈페이지</label>
+                </div>
+                -->
+                <div>
+                    <input type="checkbox" id="chk7" data-value="뉴스레터">
+                    <label for="chk7">Fasoo 뉴스레터</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="chk8" data-value="기타">
+                    <label for="chk8">기타</label>
+                    <input type="text">
+                </div>
+              </div>
+              <input type="hidden" id="dfrom" name="dfrom">
+              <p>최소 1개의 유입 경로를 선택해 주세요.</p>
+            </div>   
+
             <div>
-              <input type="checkbox" name="" id="agree">
-              <label for="agree">
-                <a rel="noopener noreferrer">이용 약관</a> 및 <a>개인정보처리방침</a>에 동의합니다.
-              </label>
-              <p>체크박스를 선택해주세요.</p>
+              <div>
+                <label for="">이름 <span>*</span></label>
+                <input type="text">
+                <p>이름을 입력하세요.</p>
+              </div>
+              <div>
+                <label for="">이메일 주소 <span>*</span></label>
+                <input type="text">
+                <p>이메일 주소를 입력하세요.</p>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <label for="">회사 이름 <span>*</span></label>
+                <input type="text">
+                <p>회사 이름을 입력하세요.</p>
+              </div>
+              <div>
+                <label for="">회사 규모 <span>*</span></label>
+                <!-- <select name="" id="">
+                  <option value="" selected disabled>선택</option>
+                  <option value="1">1 - 49</option>
+                  <option value="50">50 - 499</option>
+                  <option value="500">500 - 199</option>
+                  <option value="2000">2000+</option>
+                </select> -->
+                <div>
+                  <input type="radio" name="rd" id="rd1" data-value="1">
+                  <label for="rd1">1 - 49</label>
+  
+                  <input type="radio" name="rd" id="rd2" data-value="50">
+                  <label for="rd2">50 - 499</label>
+  
+                  <input type="radio" name="rd" id="rd3" data-value="500">
+                  <label for="rd3">500 - 199</label>
+  
+                  <input type="radio" name="rd" id="rd4" data-value="2000">
+                  <label for="rd4">2000+</label>
+
+                  <input type="hidden" name="catname" id="catname">
+
+                  <p>회사 규모를 선택해주세요.</p>
+                </div>                
+              </div>
+            </div>
+         
+            <div>
+              <div>
+                <input type="checkbox" name="" id="agree">
+                <label for="agree">
+                  <a href="/terms.html" rel="noopener noreferrer" target="_blank">이용 약관</a> 및 <a href="/privacy.html" target="_blank">개인정보처리방침</a>에 동의합니다.
+                </label>
+                <p>체크박스를 선택해주세요.</p>
+              </div>
             </div>
             <div>
               <button class="btn primary">보내기</button>
@@ -63,25 +132,59 @@
       $input = $('input, select, textarea');
       $input.on('change keyup', function() {        
         var $this = $(this);
-        console.log($this.val())
+        //console.log($this.val())
         if ($this.val() || ($this.attr('type') === 'checkbox' && $this.prop('checked'))) {
           $(this).parent().removeClass('red');
         }
-      })
+      });
+
+      var $fromCheck = $('.from input[type=checkbox]');
+      var $fromText = $('.from input[type=text]');
+      var $dfrom = $('#dfrom');
+
+      var onChange = function() {
+        $dfrom.val('');
+        $fromCheck.each(function(i) {
+          var dot = $fromCheck.length - 1 ===  i ? ' - ' : ', '
+          if ($(this).prop('checked')) {
+            $dfrom.val($dfrom.val() + $(this).data().value + dot);
+          }                
+        });
+
+        if ($('#chk8').prop('checked')) {
+          $dfrom.val($dfrom.val() + $fromText.val());
+        }
+        //console.log($dfrom.val())
+      }
+
+      $fromCheck.change(onChange);
+
+      $('.from input[type=text]').on({
+        focusin: function() {
+          $('#chk8').prop('checked', true);
+        },
+        change: onChange
+      });      
+
+      $('form input[type=radio]').on({
+        click: function() {
+          $('#catname').val($(this).data().value)
+        }
+      });
 
       $('button').click(function(e) {
         e.preventDefault();
         $input.each(function(){
           var $this = $(this);
-          if (!$this.val() || ($this.attr('type') === 'checkbox' && !$this.prop('checked'))) {
+          if (!$this.val() || (($this.attr('type') === 'checkbox' || $this.attr('type') === 'radio') && !$this.prop('checked'))) {
             $(this).parent().addClass('red');
           }
         });
         if ($(this).parent().siblings('.red').length === 0) {
-          console.log('sb')
+          //console.log('sb')
           document.form.submit();
         }
-      })
+      });
     })
   </script>
 </body>
